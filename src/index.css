@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Montserrat:wght@200;300;400;500;600;700&family=Outfit:wght@200;300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cormorant", serif;
+  --font-body: "Outfit", sans-serif;
+  --font-alt: "Montserrat", sans-serif;
+
+  --color-brand-primary: var(--theme-primary);
+  --color-brand-secondary: var(--theme-secondary);
+  --color-brand-accent: var(--theme-accent);
+  --color-brand-ink: #050505;
+  --color-brand-paper: #f8fafc;
+  --color-brand-glass: rgba(255, 255, 255, 0.05);
+  --color-brand-glass-border: rgba(255, 255, 255, 0.1);
+
+  --animate-fade-up: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-fade-in: fade-in 1s ease-out forwards;
+  
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --color-primary-forest: #0B5D3E;
+    --color-primary-emerald: #167A58;
+    --color-primary-teal: #1E8A8A;
+    
+    /* Blue Shades */
+    --color-blue-ocean: #0284C7;
+    --color-blue-sky: #06B6D4;
+    --color-blue-aqua: #DDF7FC;
+    
+    /* Neutral Colors */
+    --color-neutral-black: #111827;
+    --color-neutral-dark: #374151;
+    --color-neutral-medium: #6B7280;
+    --color-neutral-light: #E5E7EB;
+    
+    /* Background Colors */
+    --color-bg-white: #FFFFFF;
+    --color-bg-soft: #FAFBFC;
+    --color-bg-luxury: #F5F7F9;
+    
+    /* Accent Colors */
+    --color-accent-gold: #D4A017;
+    --color-accent-beige: #F6E7C1;
+
+    /* SnapTrips Aesthetic Colors */
+    --color-deep-teal: #0F293E;
+    --color-brand-orange: #F37335;
+    --color-leaf-green: #4CAF50;
+    --color-soft-blue: #EBF4F6;
+
+    /* Default Luxury Theme (Mapped to new palette) */
+    --theme-primary: var(--color-primary-forest);
+    --theme-secondary: var(--color-blue-ocean);
+    --theme-accent: var(--color-accent-gold);
+    --theme-bg: var(--color-bg-luxury);
+    --theme-text: var(--color-neutral-black);
+  }
+
+  /* Destination Themes */
+  .theme-kerala {
+    --theme-primary: #10b981;
+    --theme-secondary: #6ee7b7;
+    --theme-accent: #047857;
+    --theme-bg: #022c22;
+  }
+
+  .theme-kashmir {
+    --theme-primary: #38bdf8;
+    --theme-secondary: #bae6fd;
+    --theme-accent: #0369a1;
+    --theme-bg: #082f49;
+  }
+
+  .theme-goa {
+    --theme-primary: #f59e0b;
+    --theme-secondary: #fde047;
+    --theme-accent: #b45309;
+    --theme-bg: #451a03;
+  }
+
+  .theme-rajasthan {
+    --theme-primary: #f97316;
+    --theme-secondary: #fed7aa;
+    --theme-accent: #c2410c;
+    --theme-bg: #431407;
+  }
+
+  .theme-switzerland {
+    --theme-primary: #e2e8f0;
+    --theme-secondary: #f8fafc;
+    --theme-accent: #94a3b8;
+    --theme-bg: #0f172a;
+  }
+
+  html {
+    scroll-behavior: auto; /* Handled by Lenis */
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font-body);
+    background-color: var(--theme-bg);
+    color: var(--theme-text);
+    overflow-x: hidden;
+    transition: background-color 1s ease-in-out;
+  }
+
+  ::selection {
+    background-color: var(--theme-primary);
+    color: var(--color-brand-ink);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+  
+  .font-alt {
+    font-family: var(--font-alt);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .glass-panel {
+    background: var(--color-brand-glass);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--color-brand-glass-border);
+    
+  }
+
+  .clay-card {
+    background-color: var(--color-bg-white);
+    border-radius: 2rem;
+    
+    transition: all 0.3s ease;
+  }
+  
+  .clay-card:hover {
+    
+  }
+
+  .clay-card-dark {
+    background-color: var(--color-primary-emerald);
+    border-radius: 2rem;
+    
+    transition: all 0.3s ease;
+  }
+  
+  .clay-card-dark:hover {
+    
+  }
+
+  .clay-btn-primary {
+    background-color: var(--color-primary-forest);
+    color: var(--color-accent-gold);
+    border-radius: 9999px;
+    
+    transition: all 0.3s ease;
+  }
+  
+  .clay-btn-primary:hover {
+    background-color: var(--color-primary-emerald);
+    
+  }
+
+  .clay-btn-secondary {
+    background-color: var(--color-blue-ocean);
+    color: white;
+    border-radius: 9999px;
+    
+    transition: all 0.3s ease;
+  }
+  
+  .clay-btn-secondary:hover {
+    background-color: var(--color-blue-sky);
+    
+  }
+
+  .clay-badge {
+    background-color: #ffffff;
+    
+  }
+}
+
+/* Hide scrollbar for clean luxury look */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+
