@@ -30,7 +30,7 @@ export function Hero({
 
     // Preload first frame to avoid white flash
     const img = new Image();
-    img.src = `/assets/${folder}/frame_001.png`;
+    img.src = `/assets/${folder}/frame_001.webp`;
 
     const tl = gsap.timeline({
       scrollTrigger: {

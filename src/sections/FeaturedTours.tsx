@@ -10,7 +10,7 @@ const tours = [
  rating: 4.8,
  duration: '3 Days',
  people: '2 - 4 Person',
- image: '/assets/maharashtra1.avif'
+ image: '/assets/maharashtra1.webp'
  },
  {
  id: 2,
@@ -20,7 +20,7 @@ const tours = [
  rating: 4.9,
  duration: '5 Days',
  people: '1 - 3 Person',
- image: '/assets/Tamil Nadu1.avif'
+ image: '/assets/Tamil Nadu1.webp'
  },
  {
  id: 3,
@@ -30,7 +30,7 @@ const tours = [
  rating: 5.0,
  duration: '7 Days',
  people: '2 - 6 Person',
- image: '/assets/Uttarakhand1.avif'
+ image: '/assets/Uttarakhand1.webp'
  },
 ]
 
@@ -60,7 +60,7 @@ export function FeaturedTours() {
  className="clay-card flex flex-col overflow-hidden group"
  >
  <div className="relative h-64 overflow-hidden rounded-t-[2rem] m-2">
- <img 
+ <img loading="lazy" 
  src={tour.image} 
  alt={tour.title} 
  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"

@@ -38,7 +38,7 @@ export function Footer() {
         <div className="relative z-10 grid gap-16 md:grid-cols-[1.5fr_1fr_1fr_1fr]">
           <div>
             <div className="flex items-center">
-              <img src="/logo.png" alt="Logaa Holiday" className="h-16 w-auto object-contain brightness-0 invert" />
+              <img loading="lazy" src="/logo.png" alt="Logaa Holiday" className="h-16 w-auto object-contain brightness-0 invert" />
             </div>
             <p className="mt-8 max-w-sm text-base text-[var(--color-blue-aqua)] leading-relaxed font-medium opacity-80">
               Cinematic, handcrafted journeys across the world's most unforgettable landscapes.

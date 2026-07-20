@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Calendar, ChevronRight, Flame, Star, Clock, Heart, MapPin, Utensils, Activity, Send, Gift, ShieldCheck, Headphones, Share2, User, X, Eye } from 'lucide-react';
 import { generateSlug } from '../lib/utils';
-import { packagesDatabase, getPackageDisplayTitle, getPackageLink } from './PackageDetails';
+import { packagesDatabase, getPackageDisplayTitle, getPackageLink, normalizeDurationOrder } from './PackageDetails';
 const destinationGroups = [
   {
     region: 'Tamil Nadu',
@@ -45,7 +45,7 @@ const shirdiPackages = [
     activities: 'Pilgrimage, Sightseeing',
     themes: 'Religious & Pilgrimage, Culture & Heritage',
     price: '10,500',
-    image: '/assets/shiridi/cards/chennaitoshirditrainflight4days.png'
+    image: '/assets/shiridi/shd1(small).webp'
   },
   {
     id: 2012,
@@ -55,7 +55,7 @@ const shirdiPackages = [
     activities: 'Pilgrimage, Sightseeing',
     themes: 'Religious & Pilgrimage, Culture & Heritage',
     price: '10,500',
-    image: '/assets/shiridi/cards/chennaitoshirdi1dayflightpackage.png'
+    image: '/assets/shiridi/shd2(small).webp'
   },
   {
     id: 2013,
@@ -65,7 +65,7 @@ const shirdiPackages = [
     activities: 'Pilgrimage, Sightseeing',
     themes: 'Religious & Pilgrimage, Culture & Heritage',
     price: '12,500',
-    image: '/assets/shiridi/cards/Chennai to Mumbai & Shirdi Flight Tour Package  2 Days  1 Night.png'
+    image: '/assets/shiridi/shd3(small).webp'
   },
   {
     id: 2014,
@@ -75,7 +75,7 @@ const shirdiPackages = [
     activities: 'Pilgrimage, Sightseeing',
     themes: 'Religious & Pilgrimage, Culture & Heritage',
     price: '5,500',
-    image: '/assets/shiridi/cards/Chennai to Shirdi, Ajanta & Ellora Flight Tour Package  3 Days  2 Nights.png'
+    image: '/assets/shiridi/shd4(small).webp'
   },
   {
     id: 2015,
@@ -85,7 +85,7 @@ const shirdiPackages = [
     activities: 'Pilgrimage, Sightseeing',
     themes: 'Religious & Pilgrimage, Culture & Heritage',
     price: '7,500',
-    image: '/assets/shiridi/cards/Chennai to Shirdi, Ajanta & Ellora Flight Tour Package  3 Days  2 Nights.png'
+    image: '/assets/shiridi/shd5(small).webp'
   },
   {
     id: 2016,
@@ -95,7 +95,7 @@ const shirdiPackages = [
     activities: 'Pilgrimage, Sightseeing',
     themes: 'Religious & Pilgrimage, Culture & Heritage',
     price: '8,500',
-    image: '/assets/shiridi/cards/Chennai to Shirdi & Pandharpur Flight Tour Package  3 Days  2 Nights.png'
+    image: '/assets/shiridi/shd6(small).webp'
   },
   {
     id: 2017,
@@ -105,7 +105,7 @@ const shirdiPackages = [
     activities: 'Pilgrimage, Sightseeing',
     themes: 'Religious & Pilgrimage, Culture & Heritage',
     price: '14,500',
-    image: '/assets/shiridi/cards/Chennai to Mumbai & Shirdi Flight Tour Package  2 Days  1 Night.png'
+    image: '/assets/shiridi/shd7(small).webp'
   },
   {
     id: 2018,
@@ -115,7 +115,7 @@ const shirdiPackages = [
     activities: 'Pilgrimage, Sightseeing',
     themes: 'Religious & Pilgrimage, Culture & Heritage',
     price: '16,500',
-    image: '/assets/shiridi/cards/Chennai to Shirdi & Nashik Flight Tour Package  3 Days  2 Nights.png'
+    image: '/assets/shiridi/shd8(small).webp'
   },
   {
     id: 2019,
@@ -125,7 +125,7 @@ const shirdiPackages = [
     activities: 'Pilgrimage, Sightseeing',
     themes: 'Religious & Pilgrimage, Culture & Heritage',
     price: '16,500',
-    image: '/assets/shiridi/cards/Chennai to Shirdi & Pandharpur Flight Tour Package  3 Days  2 Nights.png'
+    image: '/assets/shiridi/shd9(small).webp'
   },
   {
     id: 2020,
@@ -135,7 +135,7 @@ const shirdiPackages = [
     activities: 'Pilgrimage, Sightseeing',
     themes: 'Religious & Pilgrimage, Culture & Heritage',
     price: '18,500',
-    image: '/assets/shiridi/cards/Chennai to Shirdi, Nashik, Ajanta & Ellora Flight Tour Package  4 Days  3 Nights.png'
+    image: '/assets/shiridi/shd10(small).webp'
   },
   {
     id: 2021,
@@ -145,7 +145,7 @@ const shirdiPackages = [
     activities: 'Pilgrimage, Sightseeing',
     themes: 'Religious & Pilgrimage, Culture & Heritage',
     price: '16,500',
-    image: '/assets/shiridi/cards/Chennai to Shirdi & 2 Jyotirlinga Flight Tour Package  3 Days  2 Nights.png'
+    image: '/assets/shiridi/shd11(small).webp'
   },
   {
     id: 2022,
@@ -155,7 +155,7 @@ const shirdiPackages = [
     activities: 'Pilgrimage, Sightseeing',
     themes: 'Religious & Pilgrimage, Culture & Heritage',
     price: '18,500',
-    image: '/assets/shiridi/cards/Chennai to Shirdi & 3 Jyotirlinga Flight Tour Package  4 Days  3 Nights.png'
+    image: '/assets/shiridi/shd12(small).webp'
   },
   {
     id: 2023,
@@ -165,7 +165,7 @@ const shirdiPackages = [
     activities: 'Pilgrimage, Sightseeing',
     themes: 'Religious & Pilgrimage, Culture & Heritage',
     price: '16,500',
-    image: '/assets/shiridi/cards/Chennai to Shirdi & Lonavala Flight Tour Package  3 Days  2 Nights.png'
+    image: '/assets/shiridi/shd13(small).webp'
   },
   {
     id: 2024,
@@ -175,7 +175,7 @@ const shirdiPackages = [
     activities: 'Pilgrimage, Sightseeing',
     themes: 'Religious & Pilgrimage, Culture & Heritage',
     price: '16,500',
-    image: '/assets/shiridi/cards/Chennai to Shirdi, Ajanta & Ellora Flight Tour Package  3 Days  2 Nights.png'
+    image: '/assets/shiridi/shd14(small).webp'
   }
 ];
 
@@ -281,7 +281,7 @@ const kanyakumariPackages = [
  activities: 'House Boat, Elephant Safari, Beaches Sightseeing, Museums, Sightseeing',
  themes: 'Wildlife, Hill Stations & Valleys, Religious & Pilgrimage, Culture & Heritage, Beaches and Islands',
  price: 'On Request',
- image: '/assets/kerala/9 Night - 10 Days Kerala Tour Package cards.png'
+ image: '/assets/kerala/9 Night - 10 Days Kerala Tour Package cards.webp'
  },
  {
  id: 28,
@@ -301,7 +301,7 @@ const kanyakumariPackages = [
  activities: 'Sightseeing',
  themes: 'Religious & Pilgrimage, Culture & Heritage, Beaches and Islands',
  price: 'On Request',
- image: '/assets/chennai/10 Night - 11 Days Tamil Nadu Tour Package card.png'
+ image: '/assets/chennai/10 Night - 11 Days Tamil Nadu Tour Package card.webp'
  },
  {
  id: 30,
@@ -334,7 +334,7 @@ const cherrapunjiPackages = [
  activities: 'Caving, Sightseeing',
  themes: 'Hill Stations & Valleys, Culture & Heritage',
  price: 'On Request',
- image: '/assets/meghalaya1.avif'
+ image: '/assets/Tripura2.webp'
  },
  {
  id: 33,
@@ -344,7 +344,7 @@ const cherrapunjiPackages = [
  activities: 'Caving, Museums, Sightseeing',
  themes: 'Hill Stations & Valleys, Religious & Pilgrimage, Culture & Heritage',
  price: 'On Request',
- image: '/assets/assam1.avif'
+ image: '/assets/manipur2.webp'
  },
  {
  id: 34,
@@ -354,7 +354,7 @@ const cherrapunjiPackages = [
  activities: 'Caving, Jeep Safari, Elephant Safari, Sightseeing',
  themes: 'Wildlife, Hill Stations & Valleys, Culture & Heritage',
  price: 'On Request',
- image: '/assets/sikkim1.avif'
+ image: '/assets/Uttar Pradesh1.webp'
  },
  {
  id: 35,
@@ -364,7 +364,7 @@ const cherrapunjiPackages = [
  activities: 'Caving, Museums, Sightseeing',
  themes: 'Hill Stations & Valleys, Religious & Pilgrimage, Culture & Heritage',
  price: 'On Request',
- image: '/assets/mizoram1.avif'
+ image: '/assets/Mizoram2.webp'
  },
  {
  id: 36,
@@ -374,7 +374,7 @@ const cherrapunjiPackages = [
  activities: 'Caving, Sightseeing',
  themes: 'Hill Stations & Valleys, Religious & Pilgrimage, Culture & Heritage',
  price: 'On Request',
- image: '/assets/meghalaya1.avif'
+ image: '/assets/Tripura2.webp'
  },
  {
  id: 37,
@@ -384,7 +384,7 @@ const cherrapunjiPackages = [
  activities: 'Caving, Museums, Sightseeing',
  themes: 'Hill Stations & Valleys, Religious & Pilgrimage, Culture & Heritage',
  price: 'On Request',
- image: '/assets/assam1.avif'
+ image: '/assets/manipur2.webp'
  },
  {
  id: 38,
@@ -394,7 +394,7 @@ const cherrapunjiPackages = [
  activities: 'Jeep Safari, Elephant Safari, Museums, Sightseeing',
  themes: 'Wildlife, Hill Stations & Valleys, Religious & Pilgrimage, Culture & Heritage',
  price: 'On Request',
- image: '/assets/sikkim1.avif'
+ image: '/assets/Uttar Pradesh1.webp'
  },
  {
  id: 39,
@@ -404,7 +404,7 @@ const cherrapunjiPackages = [
  activities: 'Caving, Museums, Sightseeing',
  themes: 'Hill Stations & Valleys, Religious & Pilgrimage, Culture & Heritage',
  price: 'On Request',
- image: '/assets/mizoram1.avif'
+ image: '/assets/Mizoram2.webp'
  }
 ];
 
@@ -421,7 +421,7 @@ const guwahatiPackages = [
  activities: 'Jungle Safari, Jeep Safari, Elephant Safari, Sightseeing',
  themes: 'Wildlife, Religious & Pilgrimage, Culture & Heritage',
  price: 'On Request',
- image: '/assets/assam1.avif'
+ image: '/assets/manipur2.webp'
  },
  cherrapunjiPackages.find(p => p.id === 33)!,
  cherrapunjiPackages.find(p => p.id === 35)!,
@@ -458,80 +458,17 @@ const getDbPackage = (id: string) => {
 };
 
 const varanasiPackages = [
-  {
-    id: 2000,
-    title: 'Chennai to Varanasi Tour Package | 2 Days / 1 Night Kasi Flight Package',
-    duration: '2 Days / 1 Night',
-    destination: 'Varanasi',
-    activities: 'Pilgrimage, Sightseeing',
-    themes: 'Religious & Pilgrimage, Culture & Heritage',
-    price: '18,500',
-    image: '/assets/varanasi/cards/kasi1.png'
-  },
-  {
-    id: 2001,
-    title: 'Chennai to Ayodhya Tour Package | 2 Days / 1 Night Ayodhya Flight Package',
-    duration: '2 Days / 1 Night',
-    destination: 'Ayodhya',
-    activities: 'Pilgrimage, Sightseeing',
-    themes: 'Religious & Pilgrimage, Culture & Heritage',
-    price: '18,500',
-    image: '/assets/generated/ayodhya_ram_mandir_pkg.png'
-  },
-  {
-    id: 2002,
-    title: 'Chennai to Varanasi Tour Package | 3 Days / 2 Nights Kasi Flight Package',
-    duration: '3 Days / 2 Nights',
-    destination: 'Varanasi',
-    activities: 'Pilgrimage, Sightseeing',
-    themes: 'Religious & Pilgrimage, Culture & Heritage',
-    price: '23,500',
-    image: '/assets/varanasi/cards/kasi3.png'
-  },
-  {
-    id: 2003,
-    title: 'Chennai to Kasi & Ayodhya Tour Package | 3 Days / 2 Nights Flight Package',
-    duration: '3 Days / 2 Nights',
-    destination: 'Varanasi',
-    activities: 'Pilgrimage, Sightseeing',
-    themes: 'Religious & Pilgrimage, Culture & Heritage',
-    price: '27,500',
-    image: '/assets/varanasi/cards/kasi4.png'
-  },
-  {
-    id: 2004,
-    title: 'Chennai to Kasi & Gaya Tour Package | 5 Days / 4 Nights Flight Package',
-    duration: '5 Days / 4 Nights',
-    destination: 'Varanasi',
-    activities: 'Pilgrimage, Sightseeing',
-    themes: 'Religious & Pilgrimage, Culture & Heritage',
-    price: '34,500',
-    image: '/assets/varanasi/cards/kasi5.png'
-  },
-  {
-    id: 2005,
-    title: 'Chennai to Kasi, Gaya, Prayagraj & Ayodhya Tour Package | 6 Days / 5 Nights Flight Package',
-    duration: '6 Days / 5 Nights',
-    destination: 'Varanasi',
-    activities: 'Pilgrimage, Sightseeing',
-    themes: 'Religious & Pilgrimage, Culture & Heritage',
-    price: '39,500',
-    image: '/assets/varanasi/cards/kasi6.png'
-  },
-  {
-    id: 2006,
-    title: 'Chennai to Kasi Train Tour Package | 8 Days / 7 Nights Pilgrimage Package',
-    duration: '8 Days / 7 Nights',
-    destination: 'Varanasi',
-    activities: 'Pilgrimage, Sightseeing',
-    themes: 'Religious & Pilgrimage, Culture & Heritage',
-    price: '14,500',
-    image: '/assets/varanasi/cards/kasi7.png'
-  },
-   getDbPackage('18')!,
-  getDbPackage('20')!,
+  getDbPackage('2000')!,
+  getDbPackage('2001')!,
+  getDbPackage('2002')!,
+  getDbPackage('2003')!,
+  getDbPackage('2004')!,
+  getDbPackage('2005')!,
+  getDbPackage('2006')!,
+  getDbPackage('2007')!,
   getDbPackage('23')!,
-  getDbPackage('25')!
+  getDbPackage('2008')!,
+  getDbPackage('2009')!
 ];
 
 const rameshwaramPackages = [
@@ -547,9 +484,18 @@ const rameshwaramPackages = [
  activities: 'Sightseeing',
  themes: 'Religious & Pilgrimage, Culture & Heritage',
  price: 'On Request',
- image: '/assets/Uttarakhand1.avif'
+ image: '/assets/Uttarakhand1.webp'
  }
 ];
+
+// Normalize all hardcoded packages lists in TourCategory.tsx
+[shirdiPackages, punePackages, kanyakumariPackages, cherrapunjiPackages, shillongPackages, guwahatiPackages, varanasiPackages, rameshwaramPackages].forEach(arr => {
+  arr.forEach(p => {
+    if (!p) return;
+    if (p.title) p.title = normalizeDurationOrder(p.title);
+    if (p.duration) p.duration = normalizeDurationOrder(p.duration);
+  });
+});
 
 const maduraiPackages = Object.values(packagesDatabase).filter((p: any) => {
   const titleLower = (p.title || '').toLowerCase();
@@ -576,7 +522,96 @@ const maduraiPackages = Object.values(packagesDatabase).filter((p: any) => {
     const match = dur.match(/(\d+)\s*day/i);
     return match ? parseInt(match[1]) : 999;
   };
-  return getDays(a.duration) - getDays(b.duration);
+
+  const getPriority = (pkg: any) => {
+    const titleLower = pkg.title.toLowerCase();
+    const destLower = pkg.destination.toLowerCase();
+    
+    // Check if it's a flight/north package (push to bottom)
+    const isFlightOrNorth = titleLower.includes('flight') || 
+                            titleLower.includes('shirdi') || 
+                            titleLower.includes('kasi') || 
+                            titleLower.includes('gaya') || 
+                            titleLower.includes('ayodhya') ||
+                            destLower.includes('shirdi') || 
+                            destLower.includes('kasi') || 
+                            destLower.includes('gaya') || 
+                            destLower.includes('ayodhya');
+                            
+    if (isFlightOrNorth) return 1000 + getDays(pkg.duration);
+    
+    // Prioritize Ooty, Rameshwaram, Munnar, and Madurai Local
+    const isPreferred = titleLower.includes('ooty') || 
+                        titleLower.includes('rameshwaram') || 
+                        titleLower.includes('rameswaram') || 
+                        titleLower.includes('munnar') || 
+                        titleLower.includes('local') || 
+                        titleLower.includes('one day') || 
+                        titleLower.includes('1 day') || 
+                        titleLower.includes('kodaikanal') || 
+                        titleLower.includes('kanyakumari');
+                        
+    if (isPreferred) return getDays(pkg.duration);
+    
+    return 100 + getDays(pkg.duration);
+  };
+
+  return getPriority(a) - getPriority(b);
+});
+
+const chennaiPackages = Object.values(packagesDatabase).filter((p: any) => {
+  const titleLower = (p.title || '').toLowerCase();
+  const destLower = (p.overview?.destination || '').toLowerCase();
+  return titleLower.includes('chennai') || destLower.includes('chennai');
+}).map((p: any) => ({
+  id: parseInt(p.id),
+  title: getPackageDisplayTitle(p),
+  duration: p.overview?.duration || 'Various',
+  destination: p.overview?.destination || 'Various',
+  activities: p.overview?.activities || 'Various',
+  themes: p.overview?.themes || 'Various',
+  price: p.priceDetails?.amount || 'On Request',
+  image: p.image,
+  rating: p.rating,
+  reviews: p.reviews
+})).sort((a: any, b: any) => {
+  const getDays = (dur: string) => {
+    if (!dur) return 999;
+    const lowerDur = dur.toLowerCase();
+    if (lowerDur.includes('one day') || lowerDur.includes('1 day') || lowerDur.includes('full day')) return 1;
+    if (lowerDur.includes('half day')) return 0.5;
+    const match = dur.match(/(\d+)\s*day/i);
+    return match ? parseInt(match[1]) : 999;
+  };
+
+  const getPriority = (pkg: any) => {
+    const titleLower = pkg.title.toLowerCase();
+    const destLower = pkg.destination.toLowerCase();
+    
+    const isFlightOrNorth = titleLower.includes('flight') || 
+                            titleLower.includes('shirdi') || 
+                            titleLower.includes('kasi') || 
+                            titleLower.includes('gaya') || 
+                            titleLower.includes('ayodhya') ||
+                            destLower.includes('shirdi') || 
+                            destLower.includes('kasi') || 
+                            destLower.includes('gaya') || 
+                            destLower.includes('ayodhya');
+                            
+    if (isFlightOrNorth) return 1000 + getDays(pkg.duration);
+    
+    const isPreferred = titleLower.includes('local') || 
+                        titleLower.includes('pondicherry') || 
+                        titleLower.includes('ooty') || 
+                        titleLower.includes('rameshwaram') || 
+                        titleLower.includes('kanyakumari');
+                        
+    if (isPreferred) return getDays(pkg.duration);
+    
+    return 100 + getDays(pkg.duration);
+  };
+
+  return getPriority(a) - getPriority(b);
 });
 
 const ayodhyaPackages = Object.values(packagesDatabase).filter((p: any) => {
@@ -650,7 +685,7 @@ const TourCategory = () => {
       return `Chennai to ${placeDisplay} Tour`;
     }
     
-    if (placeKeyword === 'madurai' || placeKeyword === 'kerala') {
+    if (placeKeyword === 'madurai' || placeKeyword === 'kerala' || placeKeyword === 'chennai') {
       return `${placeDisplay} Tour`;
     }
     
@@ -679,39 +714,60 @@ const TourCategory = () => {
       }));
     }
     
-    switch(category) {
-      case 'shirdi-tours': return shirdiPackages;
-      case 'varanasi-tours': return varanasiPackages;
-      case 'pune-tours': return punePackages;
-      case 'kanyakumari-tours': return kanyakumariPackages;
-      case 'cherrapunji-tours': return cherrapunjiPackages;
-      case 'shillong-tours': return shillongPackages;
-      case 'guwahati-tours': return guwahatiPackages;
-      case 'ayodhya-tours': return ayodhyaPackages;
-      case 'rameshwaram-tours': return rameshwaramPackages;
-      case 'madurai-tours': return maduraiPackages;
-      case 'kerala-tours': return keralaPackages;
-      default: {
-        const placeKeyword = category.replace('-tours', '').toLowerCase();
-        const matched = Object.values(packagesDatabase).filter((p: any) => 
-          p.title.toLowerCase().includes(placeKeyword) || 
-          (p.overview?.destination || '').toLowerCase().includes(placeKeyword)
-        ).map((p: any) => ({
-          id: parseInt(p.id),
-          title: p.title,
-          duration: p.overview.duration,
-          destination: p.overview.destination,
-          activities: p.overview.activities,
-          themes: p.overview.themes,
-          price: p.priceDetails.amount,
-          image: p.image,
-          rating: p.rating,
-          reviews: p.reviews
-        }));
-        
-        return matched.length > 0 ? matched : mockPackages;
+    const result = (() => {
+      switch(category) {
+        case 'shirdi-tours': return shirdiPackages;
+        case 'varanasi-tours': return varanasiPackages;
+        case 'pune-tours': return punePackages;
+        case 'kanyakumari-tours': return kanyakumariPackages;
+        case 'cherrapunji-tours': return cherrapunjiPackages;
+        case 'shillong-tours': return shillongPackages;
+        case 'guwahati-tours': return guwahatiPackages;
+        case 'ayodhya-tours': return ayodhyaPackages;
+        case 'rameshwaram-tours': return rameshwaramPackages;
+        case 'madurai-tours': return maduraiPackages;
+        case 'kerala-tours': return keralaPackages;
+        case 'chennai-tours': return chennaiPackages;
+        default: {
+          const placeKeyword = category.replace('-tours', '').toLowerCase();
+          const matched = Object.values(packagesDatabase).filter((p: any) => 
+            p.title.toLowerCase().includes(placeKeyword) || 
+            (p.overview?.destination || '').toLowerCase().includes(placeKeyword)
+          ).map((p: any) => ({
+            id: parseInt(p.id),
+            title: p.title,
+            duration: p.overview.duration,
+            destination: p.overview.destination,
+            activities: p.overview.activities,
+            themes: p.overview.themes,
+            price: p.priceDetails.amount,
+            image: p.image,
+            rating: p.rating,
+            reviews: p.reviews
+          }));
+          
+          return matched.length > 0 ? matched : mockPackages;
+        }
       }
-    }
+    })();
+
+    return result.map((p: any) => {
+      if (!p) return p;
+      const dbPkg = packagesDatabase[p.id.toString()];
+      if (dbPkg) {
+        return {
+          ...p,
+          title: dbPkg.title || p.title,
+          image: dbPkg.image || p.image,
+          duration: dbPkg.overview?.duration || p.duration,
+          destination: dbPkg.overview?.destination || p.destination,
+          activities: dbPkg.overview?.activities || p.activities,
+          themes: dbPkg.overview?.themes || p.themes,
+          price: dbPkg.priceDetails?.amount || p.price
+        };
+      }
+      return p;
+    });
   }, [category, mockPackages]);
 
   const currentPackages = useMemo(() => {
@@ -739,9 +795,9 @@ const TourCategory = () => {
         const price = parseInt(priceStr);
         if (isNaN(price)) return false;
 
-        if (budgetFilter === 'Under ₹10,000' && price >= 10000) return false;
-        if (budgetFilter === '₹10,000 - ₹20,000' && (price < 10000 || price > 20000)) return false;
-        if (budgetFilter === 'Above ₹20,000' && price <= 20000) return false;
+        if (budgetFilter === 'Under â‚¹10,000' && price >= 10000) return false;
+        if (budgetFilter === 'â‚¹10,000 - â‚¹20,000' && (price < 10000 || price > 20000)) return false;
+        if (budgetFilter === 'Above â‚¹20,000' && price <= 20000) return false;
       }
       
       return true;
@@ -823,7 +879,7 @@ const TourCategory = () => {
  </div>
  </div>
 
- <div className="bg-white/95 backdrop-blur-xl rounded-2xl p-6 mb-8 border border-slate-100 sticky top-24 z-40 shadow-sm">
+ <div className="bg-white/95 backdrop-blur-xl rounded-2xl p-6 mb-8 border border-slate-100 shadow-sm">
  <h3 className="text-lg font-bold text-[var(--color-neutral-black)] mb-4">Search Packages</h3>
  <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
  <div className="md:col-span-1">
@@ -900,7 +956,7 @@ const TourCategory = () => {
   <meta itemProp="url" content={`https://www.logaaholidays.com${getPackageLink(pkg)}`} />
   
   {/* Image Section */}
-  <div className="relative w-full h-[220px] bg-slate-50 overflow-hidden">
+  <div className="relative w-full aspect-[322/372] bg-slate-50 overflow-hidden" style={{ aspectRatio: '322/372' }}>
     <Link 
       to={getPackageLink(pkg)} 
       className="w-full h-full block" 
@@ -1059,7 +1115,7 @@ const TourCategory = () => {
   <meta itemProp="url" content={`https://www.logaaholidays.com${getPackageLink(pkg)}`} />
   
   {/* Image Section */}
-  <div className="relative w-full h-[220px] bg-slate-50 overflow-hidden">
+  <div className="relative w-full aspect-[322/372] bg-slate-50 overflow-hidden" style={{ aspectRatio: '322/372' }}>
     <Link 
       to={getPackageLink(pkg)} 
       className="w-full h-full block" 
@@ -1184,7 +1240,7 @@ const TourCategory = () => {
 
   {/* Sidebar (Right) */}
   <div className="w-full lg:w-80 flex-shrink-0">
-  <div className="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 sticky top-[220px]">
+  <div className="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 sticky top-32">
     
     <div className="flex items-center gap-3 mb-6 border-b border-slate-100 pb-4">
       <div className="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center">
@@ -1319,7 +1375,7 @@ const TourCategory = () => {
             if (!pkg) return null;
             return (
               <div key={id} className="flex gap-4 p-3 border border-slate-100 rounded-2xl bg-white shadow-sm hover:shadow-md transition-shadow group">
-                <img src={pkg.image} alt={pkg.title} className="w-24 h-24 rounded-xl object-cover" />
+                <img loading="lazy" src={pkg.image} alt={pkg.title} className="w-24 h-24 rounded-xl object-cover" />
                 <div className="flex-1 flex flex-col justify-center">
                   <h4 className="text-sm font-bold text-slate-900 leading-snug mb-1">{pkg.title}</h4>
                   <div className="flex items-center gap-1.5 text-[11px] font-medium text-slate-500 mb-2">

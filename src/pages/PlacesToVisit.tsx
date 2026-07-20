@@ -44,7 +44,7 @@ export function PlacesToVisit() {
       {/* Hero Header */}
       <div className="relative h-[60vh] md:h-[70vh] w-full overflow-hidden bg-slate-900 mb-12">
         <div className="absolute inset-0 bg-black/50 z-10" />
-        <img 
+        <img loading="lazy" 
           src={dest.image} 
           alt={dest.name} 
           className="absolute inset-0 w-full h-full object-cover"
@@ -117,10 +117,10 @@ export function PlacesToVisit() {
                   <div key={place.id} className={`flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-10`}>
                     
                     {/* Image Block */}
-                    <Link to={`/place/${state}/${city}/${place.id}`} className="w-full md:w-1/2 relative group block cursor-pointer">
+                    <Link to={`/place/${state}/${place.id}`} className="w-full md:w-1/2 relative group block cursor-pointer">
                       <div className="absolute inset-0 bg-[var(--color-primary-forest)] rounded-[3rem] translate-x-4 translate-y-4 opacity-20 transition-transform group-hover:translate-x-6 group-hover:translate-y-6" />
                       <div className="relative h-[350px] lg:h-[450px] w-full rounded-[3rem] overflow-hidden shadow-2xl z-10 border-8 border-white">
-                        <img 
+                        <img loading="lazy" 
                           src={place.image} 
                           alt={place.name} 
                           className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
@@ -146,7 +146,7 @@ export function PlacesToVisit() {
                       </p>
                       
                       <Link 
-                        to={`/place/${state}/${city}/${place.id}`} 
+                        to={`/place/${state}/${place.id}`} 
                         className="inline-flex items-center gap-2 text-[var(--color-primary-forest)] font-bold hover:gap-4 transition-all"
                       >
                         Explore Tour Packages <ChevronRight className="w-5 h-5" />
@@ -161,9 +161,9 @@ export function PlacesToVisit() {
             // GRID VIEW (Masonry style cards)
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {filteredPlaces.map((place: any, idx: number) => (
-                <Link key={place.id} to={`/place/${state}/${city}/${place.id}`} className={`${clayCard} flex flex-col overflow-hidden group block cursor-pointer`}>
+                <Link key={place.id} to={`/place/${state}/${place.id}`} className={`${clayCard} flex flex-col overflow-hidden group block cursor-pointer`}>
                   <div className="relative h-56 m-3 rounded-[2rem] overflow-hidden">
-                    <img 
+                    <img loading="lazy" 
                       src={place.image} 
                       alt={place.name} 
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"

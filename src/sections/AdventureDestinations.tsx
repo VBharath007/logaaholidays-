@@ -2,10 +2,10 @@ import { motion } from 'framer-motion'
 import { Check } from 'lucide-react'
 
 const adventures = [
- { id: 1, city: 'MUMBAI', image: '/assets/maharashtra1.avif' },
- { id: 2, city: 'KEDARNATH', image: '/assets/Uttarakhand1.avif' },
- { id: 3, city: 'VARANASI', image: '/assets/Uttar Pradesh1.avif' },
- { id: 4, city: 'MADURAI', image: '/assets/Tamil Nadu1.avif' },
+ { id: 1, city: 'MUMBAI', image: '/assets/maharashtra1.webp' },
+ { id: 2, city: 'KEDARNATH', image: '/assets/Uttarakhand1.webp' },
+ { id: 3, city: 'VARANASI', image: '/assets/Uttar Pradesh1.webp' },
+ { id: 4, city: 'MADURAI', image: '/assets/Tamil Nadu1.webp' },
 ]
 
 export function AdventureDestinations() {
@@ -32,7 +32,7 @@ export function AdventureDestinations() {
  <Check className="w-4 h-4" strokeWidth={3} />
  </div>
  <div className="w-full h-full rounded-2xl overflow-hidden clay-card p-1.5">
- <img 
+ <img loading="lazy" 
  src={adv.image} 
  alt={adv.city} 
  className="w-full h-full object-cover rounded-xl"

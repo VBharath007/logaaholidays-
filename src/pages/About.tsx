@@ -15,9 +15,9 @@ export function About() {
  {/* 1. Hero Header */}
  <section className="relative h-[60vh] md:h-[70vh] min-h-[400px] w-full flex flex-col items-center justify-center text-center">
  <div className="absolute inset-0">
- <img 
- src='/assets/maharashtra1.avif' 
- alt="About Logaa Holidays" 
+ <img loading="lazy" 
+ src='/assets/madurai/mahal.webp' 
+ alt="About Logaa Holidays - Madurai" 
  className="w-full h-full object-cover"
  />
  <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-primary-forest)]/90 via-[var(--color-primary-forest)]/70 to-[var(--color-bg-luxury)]" />
@@ -45,9 +45,9 @@ export function About() {
  
  <div className="lg:col-span-5">
  <div className="rounded-3xl overflow-hidden ,0,0,0.2)] sticky top-32 border-4 border-white">
- <img 
- src='/assets/Uttar Pradesh1.avif' 
- alt="Premium Travel Experience with Logaa Holidays" 
+ <img loading="lazy" 
+ src='/assets/madurai/theppakulam.webp' 
+ alt="Event Management in Madurai Tamil Nadu" 
  className="w-full h-auto object-cover"
  />
  </div>
@@ -137,85 +137,7 @@ export function About() {
  </div>
  </section>
 
- {/* 4. Company Info Table */}
- <section className="max-w-7xl mx-auto px-6 mt-12">
- <div className="bg-white rounded-[3rem] p-8 md:p-12 ,0,0,0.05),-10px_-10px_30px_rgba(255,255,255,0.8),inset_2px_2px_5px_rgba(255,255,255,1)] border border-white">
- <h3 className="text-3xl font-bold text-[var(--color-neutral-black)] mb-8 font-display text-center">Company Information</h3>
- 
- <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
- 
- <div className="flex items-center gap-4 bg-slate-50 p-6 rounded-2xl border border-slate-100 ,0,0,0.02)]">
- <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-[var(--color-primary-forest)] flex-shrink-0">
- <User className="w-6 h-6" />
- </div>
- <div>
- <p className="text-xs text-slate-500 font-bold uppercase tracking-wider mb-1">Name of CEO</p>
- <p className="text-lg font-bold text-slate-800">Mr.Loganathan</p>
- </div>
- </div>
 
- <div className="flex items-center gap-4 bg-slate-50 p-6 rounded-2xl border border-slate-100 ,0,0,0.02)]">
- <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-[var(--color-primary-forest)] flex-shrink-0">
- <Building2 className="w-6 h-6" />
- </div>
- <div>
- <p className="text-xs text-slate-500 font-bold uppercase tracking-wider mb-1">Ownership Type</p>
- <p className="text-lg font-bold text-slate-800">Individual (Sole proprietorship)</p>
- </div>
- </div>
-
- <div className="flex items-center gap-4 bg-slate-50 p-6 rounded-2xl border border-slate-100 ,0,0,0.02)]">
- <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-[var(--color-primary-forest)] flex-shrink-0">
- <Calendar className="w-6 h-6" />
- </div>
- <div>
- <p className="text-xs text-slate-500 font-bold uppercase tracking-wider mb-1">Year of Establishment</p>
- <p className="text-lg font-bold text-slate-800">Since 2025</p>
- </div>
- </div>
-
- <div className="flex items-center gap-4 bg-slate-50 p-6 rounded-2xl border border-slate-100 ,0,0,0.02)]">
- <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-[var(--color-primary-forest)] flex-shrink-0">
- <FileText className="w-6 h-6" />
- </div>
- <div>
- <p className="text-xs text-slate-500 font-bold uppercase tracking-wider mb-1">GST No</p>
- <p className="text-lg font-bold text-slate-800">33BGYPL9079H1ZJ</p>
- </div>
- </div>
-
- <div className="md:col-span-2 flex items-start gap-4 bg-[var(--color-blue-ocean)]/5 p-6 rounded-2xl border border-[var(--color-blue-ocean)]/10 ,0,0,0.02)]">
- <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-[var(--color-blue-ocean)] flex-shrink-0 mt-1">
- <Briefcase className="w-6 h-6" />
- </div>
- <div>
- <p className="text-xs text-slate-500 font-bold uppercase tracking-wider mb-2">Services We Offer</p>
- <div className="flex flex-wrap gap-2">
- {[
- { name: 'Airline Ticketing Agents', id: 'flight-booking' },
- { name: 'Hotel Booking Agents', id: 'hotel-booking' },
- { name: 'Car & Coach Rental', id: 'car-coach-rental' },
- { name: 'Rail Ticketing Agents', id: 'railway-ticket-booking' },
- { name: 'Passport & Visa Services', id: 'passport-visa-service' },
- { name: 'Travel Insurance Agents', id: 'travel-insurance-service' },
- { name: 'Tour Operators', id: 'tour-operators' },
- { name: 'Bus Ticketing Services', id: 'car-coach-rental' }
- ].map(service => (
- <Link 
- key={service.name}
- to={`/services/${service.id}`}
- className="bg-white text-[var(--color-blue-ocean)] text-sm font-semibold px-3 py-1 rounded-lg border border-[var(--color-blue-ocean)]/20 hover:bg-[var(--color-blue-ocean)] hover:text-white transition-colors"
- >
- {service.name}
- </Link>
- ))}
- </div>
- </div>
- </div>
-
- </div>
- </div>
- </section>
 
  </div>
  )

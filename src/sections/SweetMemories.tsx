@@ -58,9 +58,9 @@ export function SweetMemories() {
  viewport={{ once: true }}
  className="relative w-full max-w-[400px] aspect-[4/5] rounded-[3rem] overflow-hidden clay-card p-2"
  >
- <img 
- src='/assets/himachal.avif' 
- alt="Mountain landscape" 
+ <img loading="lazy" 
+ src='/assets/madurai/mennachi amman temple.webp' 
+ alt="Meenakshi Amman Temple" 
  className="w-full h-full object-cover rounded-[2.5rem]"
  />
  </motion.div>
@@ -73,7 +73,7 @@ export function SweetMemories() {
  transition={{ delay: 0.6 }}
  className="absolute top-[20%] left-0 lg:-left-12 clay-badge bg-white p-3 rounded-2xl flex items-center gap-3 z-10"
  >
- <img src="https://i.pravatar.cc/150?img=32" alt="User" className="w-10 h-10 rounded-full object-cover" />
+ <img loading="lazy" src="https://i.pravatar.cc/150?img=32" alt="User" className="w-10 h-10 rounded-full object-cover" />
  <div>
  <p className="text-xs font-bold text-[var(--color-neutral-black)] mb-0.5">Karthik Surya</p>
  <div className="flex text-[var(--color-blue-ocean)] text-[10px]">★★★★★</div>
@@ -88,7 +88,7 @@ export function SweetMemories() {
  transition={{ delay: 0.7 }}
  className="absolute top-[50%] right-0 lg:-right-12 clay-badge bg-white p-3 rounded-2xl flex items-center gap-3 z-10"
  >
- <img src="https://i.pravatar.cc/150?img=44" alt="User" className="w-10 h-10 rounded-full object-cover" />
+ <img loading="lazy" src="https://i.pravatar.cc/150?img=44" alt="User" className="w-10 h-10 rounded-full object-cover" />
  <div>
  <p className="text-xs font-bold text-[var(--color-neutral-black)] mb-0.5">Priya Sharma</p>
  <div className="flex text-[var(--color-blue-ocean)] text-[10px]">★★★★★</div>
@@ -103,7 +103,7 @@ export function SweetMemories() {
  transition={{ delay: 0.8 }}
  className="absolute bottom-[20%] left-4 lg:left-0 clay-badge bg-white p-3 rounded-2xl flex items-center gap-3 z-10"
  >
- <img src="https://i.pravatar.cc/150?img=12" alt="User" className="w-10 h-10 rounded-full object-cover" />
+ <img loading="lazy" src="https://i.pravatar.cc/150?img=12" alt="User" className="w-10 h-10 rounded-full object-cover" />
  <div>
  <p className="text-xs font-bold text-[var(--color-neutral-black)] mb-0.5">Ramesh Kumar</p>
  <div className="flex text-[var(--color-blue-ocean)] text-[10px]">★★★★☆</div>

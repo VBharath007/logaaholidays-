@@ -8,10 +8,10 @@ import { useSEO } from '../hooks/useSEO'
 import { getPackageLink, packagesDatabase } from './PackageDetails'
 
 const places = [
-  { id: 'shirdi', name: 'Shirdi', images: ['/assets/shiridi/hero/shirdi1.jpg', '/assets/shiridi/hero/shirdi2.jpg', '/assets/shiridi/hero/shirdi3.jpg'] },
-  { id: 'varanasi', name: 'Varanasi', images: ['/assets/Uttar Pradesh1.avif', '/assets/Uttar Pradesh3.avif', '/assets/Uttar Pradesh4.avif'] },
-  { id: 'agra', name: 'Agra', images: ['/assets/Uttar Pradesh2.avif', '/assets/dehli/dehli.avif', '/assets/dehli/dehli2.avif'] },
-  { id: 'goldentriangle', name: 'Golden Triangle', images: ['/assets/dehli/dehli.avif', '/assets/dehli/dehli2.avif', '/assets/dehli/dehli3.jpg'] },
+  { id: 'shirdi', name: 'Shirdi', images: ['/assets/shiridi/hero/shirdi1.webp', '/assets/shiridi/hero/shirdi2.webp', '/assets/shiridi/hero/shirdi3.webp'] },
+  { id: 'varanasi', name: 'Varanasi', images: ['/assets/Uttar Pradesh1.webp', '/assets/Uttar Pradesh3.webp', '/assets/Uttar Pradesh4.webp'] },
+  { id: 'agra', name: 'Agra', images: ['/assets/Uttar Pradesh2.webp', '/assets/dehli/dehli.webp', '/assets/dehli/dehli2.webp'] },
+  { id: 'goldentriangle', name: 'Golden Triangle', images: ['/assets/dehli/dehli.webp', '/assets/dehli/dehli2.webp', '/assets/dehli/dehli3.webp'] },
 ]
 
 export function NorthIndiaPackage() {
@@ -54,8 +54,8 @@ export function NorthIndiaPackage() {
       <section className="relative h-[80vh] min-h-[600px] w-full bg-slate-900 rounded-b-[4rem]">
         {/* Background Aerial Image */}
         <div className="absolute inset-0 overflow-hidden rounded-b-[4rem]">
-          <img
-            src='/assets/megalaya1.avif'
+          <img loading="lazy"
+            src='/assets/megalaya1.webp'
             alt="North India Heritage"
             className="w-full h-full object-cover opacity-60"
           />
@@ -190,7 +190,7 @@ export function NorthIndiaPackage() {
           {/* Shirdi Card */}
           <div className="group relative rounded-[2.5rem] overflow-hidden bg-white shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-slate-100 flex flex-col h-[450px]">
             <div className="absolute inset-0">
-              <img src="/assets/maharashtra2.avif" alt="Shirdi Tour Packages" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <img loading="lazy" src="/assets/maharashtra2.webp" alt="Shirdi Tour Packages" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
             </div>
 
@@ -206,7 +206,7 @@ export function NorthIndiaPackage() {
           {/* Varanasi Card */}
           <div className="group relative rounded-[2.5rem] overflow-hidden bg-white shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-slate-100 flex flex-col h-[450px]">
             <div className="absolute inset-0">
-              <img src="/assets/Uttar Pradesh1.avif" alt="Varanasi Tour Packages" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <img loading="lazy" src="/assets/Uttar Pradesh1.webp" alt="Varanasi Tour Packages" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
             </div>
 

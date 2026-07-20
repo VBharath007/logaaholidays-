@@ -82,11 +82,10 @@ export function VideoScrub({ videoSrc }: VideoScrubProps) {
       <video
         ref={videoRef}
         src={videoSrc}
+        className="absolute inset-0 w-full h-full object-cover will-change-transform"
         muted
         playsInline
         preload="auto"
-        className="absolute inset-0 w-full h-full object-cover"
-        style={{ filter: 'brightness(0.6)' }}
       />
       {/* Timeline Indicator */}
       <div className="absolute bottom-10 left-10 right-10 h-1 bg-white/20 rounded-full overflow-hidden z-20 pointer-events-none">

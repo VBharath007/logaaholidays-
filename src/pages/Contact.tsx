@@ -35,8 +35,8 @@ export function Contact() {
  {/* 1. Hero Header */}
  <section className="relative h-[60vh] min-h-[500px] w-full flex flex-col items-center justify-center text-center">
  <div className="absolute inset-0">
- <img 
- src='/assets/kerala1.avif' 
+ <img loading="lazy" 
+ src='/assets/kerala1.webp' 
  alt="Travel Above Clouds" 
  className="w-full h-full object-cover"
  />
@@ -62,7 +62,7 @@ export function Contact() {
  <div className="relative z-10 flex justify-center">
  <div className="w-80 h-80 bg-[var(--color-primary-emerald)] rounded-[30%_70%_70%_30%/30%_30%_70%_70%] ,0,0,0.4),-10px_-10px_20px_rgba(255,255,255,0.05),inset_2px_2px_5px_rgba(255,255,255,0.1)] p-4 overflow-hidden animate-[spin_20s_linear_infinite]">
  <div className="w-full h-full rounded-[30%_70%_70%_30%/30%_30%_70%_70%] overflow-hidden animate-[spin_20s_linear_infinite_reverse]">
- <img src='/assets/kerala1.avif' alt="Wanderlust" className="w-full h-full object-cover scale-125" />
+ <img loading="lazy" src='/assets/kerala1.webp' alt="Wanderlust" className="w-full h-full object-cover scale-125" />
  </div>
  </div>
  {/* Center Compass */}
@@ -99,7 +99,7 @@ export function Contact() {
  <div className="grid md:grid-cols-3 gap-8 mt-16 items-center">
  {/* Card 1 */}
  <div className="bg-[var(--color-blue-ocean)] rounded-3xl p-4 h-[400px] flex flex-col relative overflow-hidden group border border-white/10">
- <img src='/assets/kerala1.avif' alt="Luxury Stays" className="w-full h-full object-cover rounded-2xl opacity-60 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-105" />
+ <img loading="lazy" src='/assets/kerala1.webp' alt="Luxury Stays" className="w-full h-full object-cover rounded-2xl opacity-60 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-105" />
  <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-primary-forest)] via-[var(--color-primary-forest)]/50 to-transparent"></div>
  <div className="absolute bottom-8 left-0 right-0 text-center z-10">
  <div className="w-16 h-16 rounded-full border border-white/30 mx-auto mb-4 flex items-center justify-center backdrop-blur-md bg-white/10">
@@ -127,7 +127,7 @@ export function Contact() {
 
  {/* Card 3 */}
  <div className="bg-[var(--color-blue-ocean)] rounded-3xl p-4 h-[400px] flex flex-col relative overflow-hidden group border border-white/10">
- <img src='/assets/himachal.avif' alt="Flight Booking" className="w-full h-full object-cover rounded-2xl opacity-60 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-105" />
+ <img loading="lazy" src='/assets/himachal.webp' alt="Flight Booking" className="w-full h-full object-cover rounded-2xl opacity-60 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-105" />
  <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-primary-forest)] via-[var(--color-primary-forest)]/50 to-transparent"></div>
  <div className="absolute bottom-8 left-0 right-0 text-center z-10">
  <div className="w-16 h-16 rounded-full border border-white/30 mx-auto mb-4 flex items-center justify-center backdrop-blur-md bg-white/10">
@@ -151,25 +151,25 @@ export function Contact() {
  <div className="max-w-6xl mx-auto px-6">
  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[150px]">
  <div className="col-span-1 row-span-2 rounded-2xl overflow-hidden ,0,0,0.5),-4px_-4px_10px_rgba(255,255,255,0.05)] border border-white/5 relative group">
- <img src='/assets/Uttar Pradesh1.avif' className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Paris" />
+ <img loading="lazy" src='/assets/Uttar Pradesh1.webp' className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Paris" />
  </div>
  <div className="col-span-2 row-span-1 rounded-2xl overflow-hidden ,0,0,0.5),-4px_-4px_10px_rgba(255,255,255,0.05)] border border-white/5 relative group">
- <img src='/assets/himachal.avif' className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Dubai" />
+ <img loading="lazy" src='/assets/himachal.webp' className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Dubai" />
  </div>
  <div className="col-span-1 row-span-1 rounded-2xl overflow-hidden ,0,0,0.5),-4px_-4px_10px_rgba(255,255,255,0.05)] border border-white/5 bg-[var(--color-primary-emerald)] flex items-center justify-center relative group">
- <img src='/assets/karnataka1.avif' className="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-500" alt="Beach" />
+ <img loading="lazy" src='/assets/karnataka1.webp' className="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-500" alt="Beach" />
  </div>
  <div className="col-span-1 row-span-1 rounded-2xl overflow-hidden ,0,0,0.5),-4px_-4px_10px_rgba(255,255,255,0.05)] border border-white/5 relative group">
- <img src='/assets/kerala1.avif' className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Venice" />
+ <img loading="lazy" src='/assets/kerala1.webp' className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Venice" />
  </div>
  <div className="col-span-1 row-span-2 rounded-2xl overflow-hidden ,0,0,0.5),-4px_-4px_10px_rgba(255,255,255,0.05)] border border-white/5 relative group">
- <img src='/assets/Tripura1.avif' className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Mountains" />
+ <img loading="lazy" src='/assets/Tripura2.webp' className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Mountains" />
  </div>
  <div className="col-span-2 row-span-2 rounded-2xl overflow-hidden ,0,0,0.5),-4px_-4px_10px_rgba(255,255,255,0.05)] border border-white/5 bg-[var(--color-primary-forest)] p-2">
- <img src='/assets/himachal.avif' className="w-full h-full object-cover rounded-xl" alt="Maldives" />
+ <img loading="lazy" src='/assets/himachal.webp' className="w-full h-full object-cover rounded-xl" alt="Maldives" />
  </div>
  <div className="col-span-1 row-span-1 rounded-2xl overflow-hidden ,0,0,0.5),-4px_-4px_10px_rgba(255,255,255,0.05)] border border-white/5 relative group">
- <img src='/assets/Mizoram1.avif' className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Cityscape" />
+ <img loading="lazy" src='/assets/Mizoram2.webp' className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Cityscape" />
  </div>
  </div>
  
@@ -328,7 +328,7 @@ export function Contact() {
  </div>
 
  <div className="w-full h-48 rounded-3xl overflow-hidden ,0,0,0.5),-4px_-4px_10px_rgba(255,255,255,0.05)] border border-white/5 relative group">
- <img src='/assets/Nagaland1.avif' alt="World Map" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+ <img loading="lazy" src='/assets/Nagaland1.webp' alt="World Map" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
  <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
  <div className="w-12 h-12 rounded-full bg-[var(--color-accent-gold)] ,165,57,0.5)] flex items-center justify-center animate-bounce">
  <MapPin className="w-6 h-6 text-[var(--color-neutral-black)]" />

@@ -3,9 +3,9 @@ import { Plane } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 const destinations = [
- { id: 1, name: 'Italy', listings: 5, image: '/assets/himachal.avif' },
- { id: 2, name: 'France', listings: 3, image: '/assets/manipur1.avif' },
- { id: 3, name: 'Maldives', listings: 7, image: '/assets/Tamil Nadu1.avif' },
+ { id: 1, name: 'Italy', listings: 5, image: '/assets/himachal.webp' },
+ { id: 2, name: 'France', listings: 3, image: '/assets/manipur2.webp' },
+ { id: 3, name: 'Maldives', listings: 7, image: '/assets/Tamil Nadu1.webp' },
 ]
 
 export function ExploreDestinations() {
@@ -49,7 +49,7 @@ export function ExploreDestinations() {
  >
  {/* Image top half */}
  <div className="w-full h-48 md:h-64 rounded-t-[2rem] overflow-hidden">
- <img src={dest.image} alt={dest.name} className="w-full h-full object-cover" />
+ <img loading="lazy" src={dest.image} alt={dest.name} className="w-full h-full object-cover" />
  </div>
  
  {/* Floating Badge */}

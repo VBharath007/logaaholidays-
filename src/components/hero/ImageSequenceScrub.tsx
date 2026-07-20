@@ -50,7 +50,7 @@ export function ImageSequenceScrub({ folder, frameCount, sectionId }: ImageSeque
       } else {
         const img = new Image();
         // Remove async decoding for critical frames to ensure they appear instantly when scrolled
-        img.src = `/assets/${folder}/frame_${targetIndex.toString().padStart(3, '0')}.png`;
+        img.src = `/assets/${folder}/frame_${targetIndex.toString().padStart(3, '0')}.webp`;
         img.onload = () => {
           imageCache.current[targetIndex] = img;
           if (latestRequestedFrame === targetIndex) {
@@ -69,18 +69,30 @@ export function ImageSequenceScrub({ folder, frameCount, sectionId }: ImageSeque
       // Preload first 10 frames instantly for initial scroll feel
       for (let i = 1; i <= Math.min(10, frameCount); i++) {
         const img = new Image();
-        img.src = `/assets/${folder}/frame_${i.toString().padStart(3, '0')}.png`;
+        img.src = `/assets/${folder}/frame_${i.toString().padStart(3, '0')}.webp`;
         imageCache.current[i] = img;
       }
       setIsLoaded(true); // Remove loading state once initial buffer is ready
       renderFrame(1); // Force draw first frame
 
       // Background preload ALL remaining frames so fast scrolling never breaks
-      for (let i = 11; i <= frameCount; i++) {
+      // BUT do it sequentially to prevent network congestion and lag
+      const loadNextFrame = (i: number) => {
+        if (i > frameCount) return;
         const img = new Image();
-        img.src = `/assets/${folder}/frame_${i.toString().padStart(3, '0')}.png`;
-        imageCache.current[i] = img;
-      }
+        img.src = `/assets/${folder}/frame_${i.toString().padStart(3, '0')}.webp`;
+        img.onload = () => {
+          imageCache.current[i] = img;
+          loadNextFrame(i + 1);
+        };
+        img.onerror = () => {
+          // If a frame fails to load, just skip to the next one
+          loadNextFrame(i + 1);
+        };
+      };
+      
+      // Start background sequential loading after initial batch
+      setTimeout(() => loadNextFrame(11), 500);
     };
     
     preloadFrames();

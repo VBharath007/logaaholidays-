@@ -17,8 +17,8 @@ export function ExperienceCompany() {
         >
           {/* Main Image in Clay Card */}
           <div className="clay-card rounded-[3rem] overflow-hidden aspect-[4/5] relative z-10 p-2">
-            <img 
-              src='/assets/megalaya1.avif' 
+            <img loading="lazy" 
+              src='/assets/megalaya1.webp' 
               alt="Couple traveling" 
               className="w-full h-full object-cover rounded-[2.5rem]" 
             />

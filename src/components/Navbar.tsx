@@ -23,13 +23,13 @@ const links: LinkItem[] = [
  {
  title: 'Maharashtra',
  items: [
- { href: '/north-india-tour-packages/shirdi-tours', label: 'Shirdi' }
+  { href: '/destination/maharashtra/shirdi', label: 'Shirdi' }
  ]
  },
  {
  title: 'Uttar Pradesh',
  items: [
- { href: '/north-india-tour-packages/varanasi-tours', label: 'Varanasi' }
+  { href: '/destination/uttar-pradesh/varanasi', label: 'Varanasi' }
  ]
  },
  {
@@ -47,22 +47,23 @@ const links: LinkItem[] = [
       {
         title: 'Tamil Nadu',
         items: [
-          { href: '/destination/tamilnadu/madurai-tourism', label: 'Madurai' },
-          { href: '/tour-packages/rameshwaram-tours', label: 'Rameswaram' },
-          { href: '/tour-packages/kanyakumari-tours', label: 'Kanyakumari' },
-          { href: '/tour-packages/ooty-tours', label: 'Ooty' },
-          { href: '/tour-packages/kodaikanal-tours', label: 'Kodaikanal' },
-          { href: '/tour-packages/chennai-tours', label: 'Chennai' },
+          { href: '/destination/tamilnadu/tamilnadu-tourism', label: 'Tamil Nadu Overview' },
+          { href: '/place/tamilnadu/madurai', label: 'Madurai' },
+          { href: '/place/tamilnadu/rameshwaram', label: 'Rameswaram' },
+          { href: '/place/tamilnadu/kanyakumari', label: 'Kanyakumari' },
+          { href: '/place/tamilnadu/ooty', label: 'Ooty' },
+          { href: '/place/tamilnadu/kodaikanal', label: 'Kodaikanal' },
+          { href: '/place/tamilnadu/chennai', label: 'Chennai' },
         ]
       },
       {
         title: 'Kerala',
         items: [
           { href: '/destination/kerala/kerala-tourism', label: 'Kerala Overview' },
-          { href: '/place/kerala/kerala-tourism/munnar', label: 'Munnar' },
-          { href: '/place/kerala/kerala-tourism/alleppey', label: 'Alleppey' },
-          { href: '/place/kerala/kerala-tourism/thekkady', label: 'Thekkady' },
-          { href: '/place/kerala/kerala-tourism/vagamon', label: 'Vagamon' },
+          { href: '/place/kerala/munnar', label: 'Munnar' },
+          { href: '/place/kerala/alleppey', label: 'Alleppey' },
+          { href: '/place/kerala/thekkady', label: 'Thekkady' },
+          { href: '/place/kerala/vagamon', label: 'Vagamon' },
         ]
       }
     ]
@@ -105,7 +106,7 @@ export function Navbar() {
  >
  <nav className="flex items-center justify-between relative">
  <Link to="/" className="flex items-center">
- <img src="/logo.png" alt="Logaa Holiday" className={`h-12 w-auto object-contain transition-all duration-300 ${!effectiveScrolled ? 'brightness-0 invert' : ''}`} />
+ <img loading="lazy" src="/logo.png" alt="Logaa Holiday" className={`h-12 w-auto object-contain transition-all duration-300 ${!effectiveScrolled ? 'brightness-0 invert' : ''}`} />
  </Link>
 
  {/* Desktop Nav */}

@@ -25,35 +25,35 @@ const TornPaperBottom = ({ fillClass = "fill-[var(--color-bg-luxury)]" }) => (
 
 const slides = [
   {
-    image: '/assets/service/madurai banner size.png',
+    image: '/assets/service/madurai banner size.webp',
     title: 'God\'s Own Country',
     subtitle: 'Experience the spiritual heart of South India with our exclusive packages.',
     cta: 'Explore Packages',
     link: '/tour-packages/madurai-tours'
   },
   {
-    image: '/assets/service/allepey.png',
+    image: '/assets/service/allepey.webp',
     title: 'Discover Kerala',
     subtitle: 'Unwind in the serene backwaters and lush green landscapes of Kerala.',
     cta: 'View Itineraries',
     link: '/tour-packages/kerala-tours'
   },
   {
-    image: '/assets/service/shirdi banner zize.png',
+    image: '/assets/service/shirdi banner zize.webp',
     title: 'Spiritual Shirdi',
     subtitle: 'Seek blessings and find peace in the divine land of Sai Baba.',
     cta: 'Plan Your Trip',
     link: '/tour-packages/shirdi-tours'
   },
   {
-    image: '/assets/service/kasi varanasai.png',
+    image: '/assets/service/kasi varanasai.webp',
     title: 'Holy Kasi',
     subtitle: 'Witness the eternal spiritual aura of Varanasi along the holy Ganges.',
     cta: 'Discover More',
     link: '/tour-packages/varanasi-tours'
   },
   {
-    image: '/assets/service/chenni.png',
+    image: '/assets/service/chenni.webp',
     title: 'Vibrant Chennai',
     subtitle: 'Explore the cultural capital and its beautiful coastlines.',
     cta: 'Start Journey',
@@ -174,7 +174,7 @@ export function Services() {
                 if (offset === 2) { nextSlide(); setTimeout(nextSlide, 100); }
               }}
             >
-              <img src={slide.image} className="w-full h-full object-cover pointer-events-none select-none" alt={slide.title} />
+              <img loading="lazy" src={slide.image} className="w-full h-full object-cover pointer-events-none select-none" alt={slide.title} />
 
               {/* Main slide gradient */}
               <motion.div
@@ -297,11 +297,10 @@ export function Services() {
 
       {/* 3. TRENDING DESTINATION (Mountain Background) */}
       <section className="relative py-32 bg-[var(--color-bg-soft)] overflow-hidden">
-        <div className="absolute inset-0 w-full h-[60%] bottom-0 z-0">
-          <img src='/assets/Tamil Nadu1.avif' alt="Mountain" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent" />
+        <div className="absolute inset-0 w-full h-full z-0">
+          <img loading="lazy" src='/assets/Tamil Nadu1.webp' alt="Mountain" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-bg-soft)] via-slate-900/40 to-slate-900" />
         </div>
-        <div className="absolute inset-0 w-full h-[40%] bg-[var(--color-bg-soft)] z-0" />
         <TornPaperTop />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 flex flex-col md:flex-row gap-12 pt-20">
@@ -326,38 +325,38 @@ export function Services() {
             </div>
 
             <div className="flex gap-4">
-              <img src='/assets/Tamil Nadu1.avif' className="w-40 h-24 object-cover rounded-2xl " alt="Preview" />
-              <img src='/assets/Uttarakhand1.avif' className="w-40 h-24 object-cover rounded-2xl " alt="Preview" />
+              <img loading="lazy" src='/assets/Tamil Nadu1.webp' className="w-40 h-24 object-cover rounded-2xl " alt="Preview" />
+              <img loading="lazy" src='/assets/Uttarakhand1.webp' className="w-40 h-24 object-cover rounded-2xl " alt="Preview" />
             </div>
           </div>
 
-          <div className="flex-1 flex justify-center items-end relative">
-            <img src='/assets/maharashtra1.avif' className="rounded-[4rem] border-8 border-white h-[400px] w-full object-cover" alt="Traveler view" />
+          <div className="flex-1 flex justify-center items-center relative">
+            <img loading="lazy" src='/assets/maharashtra1.webp' className="rounded-[3rem] border-[6px] border-white h-[400px] lg:h-[480px] w-full object-cover shadow-2xl" alt="Traveler view" />
           </div>
         </div>
-        <TornPaperBottom fillClass="fill-[var(--color-neutral-black)]" />
       </section>
 
       {/* 4. PRICE FOR TRAVEL THE WORLD (Pills) */}
-      <section className="relative py-40 bg-[var(--color-neutral-black)]">
-        <div className="absolute inset-0 opacity-40">
-          <img src='/assets/Mizoram1.avif' alt="Hot air balloon" className="w-full h-full object-cover" />
+      <section className="relative py-40 bg-[var(--color-neutral-black)] overflow-hidden">
+        <div className="absolute inset-0 opacity-40 z-0">
+          <img loading="lazy" src='/assets/Mizoram2.webp' alt="Hot air balloon" className="w-full h-full object-cover" />
         </div>
+        <TornPaperTop fillClass="fill-slate-900" />
 
-        <div className="relative z-10 max-w-6xl mx-auto px-6">
+        <div className="relative z-10 max-w-6xl mx-auto px-6 mt-10">
           <div className="text-center mb-16 bg-white/10 backdrop-blur-md p-6 rounded-3xl inline-block mx-auto left-1/2 -translate-x-1/2 relative border border-white/20">
             <h2 className="text-4xl font-display font-bold text-white"><span className="text-white/80 italic font-normal">Prices For</span> Travel The World</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {[
-              { name: 'Basic Travel', price: 499, img: '/assets/madurai 63 package/1day/Madurai to Courtallam 1day trip.png', duration: '1 Day Trip', hotel: '2 Star Hotel' },
-              { name: 'Standard Travel', price: 899, img: '/assets/madurai 63 package/3days/madurai-kumbakonam-navagrahatemple 3days tour.png', popular: true, duration: '3 Days / 2 Nights', hotel: '3 Star Hotel' },
-              { name: 'Premium Travel', price: 1499, img: '/assets/madurai 63 package/5days/Madurai → Munnar → Thekkady → Alleppey → Kochi 5 Days  4 Nights Tour Package.png', duration: '5 Days / 4 Nights', hotel: '4 Star Hotel' }
+              { name: 'Basic Travel', price: 499, img: '/assets/madurai/coutralam.png', duration: '1 Day Trip', hotel: '2 Star Hotel' },
+              { name: 'Standard Travel', price: 899, img: '/assets/madurai 63 package/3days/madurai-kumbakonam-navagrahatemple 3days tour.webp', popular: true, duration: '3 Days / 2 Nights', hotel: '3 Star Hotel' },
+              { name: 'Premium Travel', price: 1499, img: '/assets/madurai 63 package/5days/Madurai → Munnar → Thekkady → Alleppey → Kochi 5 Days  4 Nights Tour Package.webp', duration: '5 Days / 4 Nights', hotel: '4 Star Hotel' }
             ].map((plan, i) => (
               <div key={i} className={`clay-card rounded-full p-4 flex flex-col items-center bg-white ${plan.popular ? 'scale-105 border-4 border-[var(--color-accent-gold)]' : ''}`}>
                 <div className="w-full h-48 rounded-full overflow-hidden mb-6 relative">
-                  <img src={plan.img} className="w-full h-full object-cover" alt={plan.name} />
+                  <img loading="lazy" src={plan.img} className="w-full h-full object-cover" alt={plan.name} />
                   {plan.popular && <div className="absolute top-6 right-0 bg-[var(--color-accent-gold)] text-white px-4 py-1 rounded-l-full font-bold text-xs uppercase">Popular</div>}
                 </div>
                 <div className="text-center px-4 mb-8">
@@ -383,13 +382,13 @@ export function Services() {
       <section className="py-16 md:py-24 px-6 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-16 overflow-hidden">
         <div className="flex-1 relative w-full min-h-[450px] md:min-h-[550px] flex items-center justify-center">
           <div className="w-40 h-56 md:w-64 md:h-80 rounded-[2rem] md:rounded-[3rem] overflow-hidden absolute left-0 top-0 shadow-lg">
-            <img src='/assets/Uttarakhand1.avif' className="w-full h-full object-cover" alt="Travel" />
+            <img loading="lazy" src='/assets/Uttarakhand1.webp' className="w-full h-full object-cover" alt="Travel" />
           </div>
           <div className="w-40 h-56 md:w-64 md:h-80 rounded-[2rem] md:rounded-[3rem] overflow-hidden absolute right-0 bottom-0 shadow-lg">
-            <img src='/assets/himachal.avif' className="w-full h-full object-cover" alt="Travel" />
+            <img loading="lazy" src='/assets/himachal.webp' className="w-full h-full object-cover" alt="Travel" />
           </div>
           <div className="w-48 h-48 md:w-72 md:h-72 rounded-full overflow-hidden border-[6px] md:border-8 border-white relative z-10 shadow-2xl">
-            <img src='/assets/manipur1.avif' className="w-full h-full object-cover" alt="Travel" />
+            <img loading="lazy" src='/assets/manipur2.webp' className="w-full h-full object-cover" alt="Travel" />
           </div>
         </div>
 
@@ -457,7 +456,7 @@ export function Services() {
         </div>
 
         <div className="flex-1 relative">
-          <img src='/assets/Tripura1.avif' className="w-full max-w-[500px] h-[600px] object-cover rounded-[4rem] border-8 border-white" alt="Traveler" />
+          <img loading="lazy" src='/assets/Tripura2.webp' className="w-full max-w-[500px] h-[600px] object-cover rounded-[4rem] border-8 border-white" alt="Traveler" />
           <div className="absolute right-0 top-1/2 -translate-y-1/2 writing-vertical-rl text-7xl font-display font-bold text-white opacity-90">
             Summer!
           </div>
@@ -499,12 +498,12 @@ export function Services() {
         <div className="flex flex-col md:flex-row items-center gap-12 -mt-24 relative z-30">
           <div className="relative">
             <div className="w-64 h-64 rounded-3xl overflow-hidden clay-card border-8 border-white">
-              <img src='/assets/megalaya1.avif' alt="Client" className="w-full h-full object-cover" />
+              <img loading="lazy" src='/assets/megalaya1.webp' alt="Client" className="w-full h-full object-cover" />
             </div>
             
-            <img src="https://i.pravatar.cc/150?img=11" className="absolute -top-4 -right-8 w-12 h-12 rounded-full border-4 border-white " alt="Avatar" />
-            <img src="https://i.pravatar.cc/150?img=12" className="absolute top-1/2 -right-12 w-10 h-10 rounded-full border-4 border-white " alt="Avatar" />
-            <img src="https://i.pravatar.cc/150?img=13" className="absolute -bottom-4 -right-4 w-14 h-14 rounded-full border-4 border-white " alt="Avatar" />
+            <img loading="lazy" src="https://i.pravatar.cc/150?img=11" className="absolute -top-4 -right-8 w-12 h-12 rounded-full border-4 border-white " alt="Avatar" />
+            <img loading="lazy" src="https://i.pravatar.cc/150?img=12" className="absolute top-1/2 -right-12 w-10 h-10 rounded-full border-4 border-white " alt="Avatar" />
+            <img loading="lazy" src="https://i.pravatar.cc/150?img=13" className="absolute -bottom-4 -right-4 w-14 h-14 rounded-full border-4 border-white " alt="Avatar" />
           </div>
 
           <div className="text-left max-w-md bg-white p-8 rounded-3xl clay-card relative z-30">
@@ -521,7 +520,7 @@ export function Services() {
       {/* <section className="py-24 px-6 max-w-6xl mx-auto">
         <div className="clay-card rounded-[3rem] overflow-hidden flex flex-col md:flex-row bg-white relative z-20">
           <div className="flex-1 relative min-h-[400px]">
-            <img src='/assets/Mizoram1.avif' className="absolute inset-0 w-full h-full object-cover" alt="Contact" />
+            <img loading="lazy" src='/assets/Mizoram2.webp' className="absolute inset-0 w-full h-full object-cover" alt="Contact" />
             <div className="absolute inset-0 bg-[var(--color-primary-forest)]/40 flex flex-col justify-end p-10">
               <p className="text-white/90 font-display italic text-3xl mb-2">Hi there!</p>
               <h3 className="text-white font-bold text-4xl font-display">What can I do for you today?</h3>
@@ -551,7 +550,7 @@ export function Services() {
             {[1, 2, 3].map((item) => (
               <div key={item} className="bg-white/10 p-4 rounded-3xl backdrop-blur-sm border border-white/20 group cursor-pointer ">
                 <div className="h-48 rounded-2xl overflow-hidden mb-4 relative">
-                  <img src={`/assets/kerala1.avif`} className="w-full h-full object-cover transition-transform group-hover:scale-110" alt="Blog" />
+                  <img loading="lazy" src={`/assets/kerala1.webp`} className="w-full h-full object-cover transition-transform group-hover:scale-110" alt="Blog" />
                 </div>
                 <h4 className="text-white font-bold text-lg mb-2 line-clamp-2 group-hover:text-white/80 transition-colors">Top 10 International Destinations to Visit in 2026</h4>
                 <div className="flex items-center text-white/50 text-sm">

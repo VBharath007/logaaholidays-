@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ChevronRight, Phone, Clock, MapPin, Search, Calendar, Filter } from 'lucide-react';
 import { destinationsData } from '../data/destinationsData';
@@ -31,16 +31,50 @@ export function DestinationOverview() {
   const destNameLower = dest.name.toLowerCase();
   const relatedKeywords = [destNameLower, ...dest.placesToVisit.map((p: any) => p.name.toLowerCase())];
 
+  const isSouthState = dest.state === 'Tamil Nadu' || dest.state === 'Kerala';
+  const northKeywords = ['shirdi', 'shiridi', 'varanasi', 'kasi', 'kashi', 'ayodhya', 'pune', 'mumbai', 'nashik', 'nasik', 'pandharpur', 'mantralayam', 'delhi', 'agra', 'jaipur', 'guwahati', 'shillong', 'cherrapunji', 'sarnath', 'gaya', 'prayagraj'];
+
   const allRelatedPackages = Object.values(packagesDatabase).filter((p: any) => {
     const titleLower = (p.title || '').toLowerCase();
     const destLower = (p.overview?.destination || '').toLowerCase();
-    
-    return relatedKeywords.some(keyword => 
+
+    if (isSouthState) {
+      const isNorthPackage = northKeywords.some(kw => titleLower.includes(kw) || destLower.includes(kw));
+      if (isNorthPackage) return false;
+    }
+
+    return relatedKeywords.some(keyword =>
       titleLower.includes(keyword) || destLower.includes(keyword)
     );
   });
-  
-  const totalPackagesCount = allRelatedPackages.length;
+
+  const totalPackagesCount = useMemo(() => {
+    if (!city) return allRelatedPackages.length;
+    const cityBase = city.replace('-tourism', '');
+    
+    if (cityBase === 'tamilnadu') {
+      return Object.values(packagesDatabase).filter((p: any) => {
+        const titleLower = (p.title || '').toLowerCase();
+        const destLower = (p.overview?.destination || '').toLowerCase();
+        return titleLower.includes('madurai') || destLower.includes('madurai');
+      }).length;
+    }
+    
+    if (cityBase === 'kanyakumari') return 6;
+    if (cityBase === 'rameshwaram') return 5;
+    if (cityBase === 'shirdi') return 8;
+    if (cityBase === 'pune') return 5;
+    if (cityBase === 'varanasi') return 7;
+    
+    if (cityBase === 'kerala') {
+      return Object.values(packagesDatabase).filter((p: any) => {
+        const titleLower = (p.title || '').toLowerCase();
+        return ['munnar', 'thekkady', 'alleppey', 'vagamon', 'valparai', 'kumarakom', 'marayoor', 'kerala'].some(kw => titleLower.includes(kw));
+      }).length;
+    }
+    
+    return allRelatedPackages.length;
+  }, [city, allRelatedPackages]);
 
   let featuredPackages = dest.popularPackages
     .map((id: string) => packagesDatabase[id])
@@ -67,22 +101,56 @@ export function DestinationOverview() {
     placeFilter === 'All' || place.type === placeFilter
   );
 
+  const getCategoryLink = () => {
+    if (!city) return "/tour-packages";
+    const cityBase = city.replace('-tourism', '');
+    if (cityBase === 'tamilnadu') {
+      return "/tour-packages/madurai-tours";
+    }
+    const specificTours = ['madurai', 'kanyakumari', 'kerala', 'rameshwaram', 'varanasi', 'shirdi', 'ayodhya', 'guwahati', 'shillong', 'cherrapunji', 'pune'];
+    if (specificTours.includes(cityBase)) {
+      return `/tour-packages/${cityBase}-tours`;
+    }
+    // Fallbacks
+    const northIndia = ['varanasi', 'shirdi', 'ayodhya', 'prayagraj', 'gaya', 'kasi', 'guwahati', 'shillong', 'cherrapunji'];
+    if (northIndia.some(keyword => cityBase.includes(keyword))) {
+      return "/north-india-tour-packages";
+    }
+    return "/south-india-package";
+  };
+
   return (
     <div className="bg-[var(--color-bg-luxury)] min-h-screen pb-24 font-sans text-slate-800">
 
       {/* Hero Banner Section */}
-      <div className="relative h-[60vh] md:h-[70vh] w-full overflow-hidden bg-slate-900 mb-12">
+      <div className="relative h-[85vh] md:h-[100vh] w-full overflow-hidden bg-slate-900 mb-12">
         <div className="absolute inset-0 bg-black/40 z-10" />
-        <img
-          src={dest.image}
-          alt={dest.name}
-          className="absolute inset-0 w-full h-full object-cover"
-        />
+        {dest.heroVideo ? (
+          <video
+            key={dest.heroVideo}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+          >
+            <source src={dest.heroVideo} type="video/mp4" />
+          </video>
+        ) : (
+          <img loading="lazy"
+            src={dest.image}
+            alt={dest.name}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        )}
         <div className="absolute inset-0 z-20 flex flex-col justify-end pt-32 pb-16 px-6 max-w-7xl mx-auto">
           <div className="flex flex-wrap items-center gap-2 text-white/80 text-sm font-medium mb-4">
             <Link to="/" className="hover:text-white transition-colors">Home</Link>
             <ChevronRight className="w-4 h-4" />
-            <Link to="/south-india-package" className="hover:text-white transition-colors">Destinations</Link>
+            <Link to={(() => {
+              const northCities = ['shirdi', 'varanasi', 'ayodhya', 'guwahati', 'shillong', 'cherrapunji', 'kasi', 'prayagraj'];
+              return northCities.some(k => (city || '').includes(k)) ? '/north-india-tour-packages' : '/south-india-package';
+            })()} className="hover:text-white transition-colors">Destinations</Link>
             <ChevronRight className="w-4 h-4" />
             <span className="text-white">{dest.name}</span>
           </div>
@@ -109,15 +177,19 @@ export function DestinationOverview() {
             <h2 className="text-3xl font-display font-bold text-slate-800 mb-6">{dest.history.title}</h2>
             <p className="text-slate-600 leading-relaxed text-lg mb-8">{dest.history.description}</p>
 
-            <h2 className="text-3xl font-display font-bold text-[var(--color-blue-ocean)] mb-6">Major Attractions</h2>
-            <div className="flex flex-col gap-6">
-              {dest.majorAttractions.map((attr: any, idx: number) => (
-                <div key={idx} className={`${clayCard} p-6 border-l-4 border-l-[var(--color-primary-forest)]`}>
-                  <h3 className="text-xl font-bold text-slate-800 mb-2">{attr.title}</h3>
-                  <p className="text-slate-600">{attr.description}</p>
+            {dest.majorAttractions?.length > 0 && (
+              <>
+                <h2 className="text-3xl font-display font-bold text-[var(--color-blue-ocean)] mb-6">Major Attractions</h2>
+                <div className="flex flex-col gap-6">
+                  {dest.majorAttractions.map((attr: any, idx: number) => (
+                    <div key={idx} className={`${clayCard} p-6 border-l-4 border-l-[var(--color-primary-forest)]`}>
+                      <h3 className="text-xl font-bold text-slate-800 mb-2">{attr.title}</h3>
+                      <p className="text-slate-600">{attr.description}</p>
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
+              </>
+            )}
           </div>
 
           {/* Top Places to Visit Grid */}
@@ -131,8 +203,8 @@ export function DestinationOverview() {
                       key={type}
                       onClick={() => setPlaceFilter(type)}
                       className={`px-4 py-1.5 rounded-full text-sm font-bold transition-all ${placeFilter === type
-                          ? 'bg-[var(--color-primary-forest)] text-white shadow-md'
-                          : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                        ? 'bg-[var(--color-primary-forest)] text-white shadow-md'
+                        : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
                         }`}
                     >
                       {type}
@@ -140,8 +212,11 @@ export function DestinationOverview() {
                   ))}
                 </div>
               </div>
-              <Link to={`/places-to-visit/${state}/${city}`} className="text-[var(--color-primary-forest)] font-semibold hover:underline text-sm shrink-0 flex items-center gap-1">
-                View all <ChevronRight className="w-4 h-4" />
+              <Link
+                to={`/places-to-visit/${state}/${city}`}
+                className="text-sm font-bold bg-[var(--color-primary-forest)]/10 text-[var(--color-primary-forest)] hover:bg-[var(--color-primary-forest)] hover:text-white px-5 py-2.5 rounded-full transition-all hover:scale-105 shadow-sm border border-[var(--color-primary-forest)]/25 flex items-center gap-1.5 w-fit"
+              >
+                <span>View all</span> <ChevronRight className="w-4 h-4" />
               </Link>
             </div>
 
@@ -152,9 +227,9 @@ export function DestinationOverview() {
             ) : (
               <div className="grid grid-cols-1 gap-6">
                 {filteredPlaces.slice(0, 4).map((place: any) => (
-                  <Link key={place.id} to={`/place/${state}/${city}/${place.id}`} className={`${clayCard} overflow-hidden group flex flex-col md:flex-row cursor-pointer`}>
+                  <Link key={place.id} to={`/place/${state}/${place.id}`} className={`${clayCard} overflow-hidden group flex flex-col md:flex-row cursor-pointer`}>
                     <div className="relative h-56 md:h-auto md:w-2/5 m-2 md:m-3 rounded-[2rem] overflow-hidden shrink-0 min-h-[200px]">
-                      <img src={place.image} alt={place.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 absolute inset-0" />
+                      <img loading="lazy" src={place.image} alt={place.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 absolute inset-0" />
                       <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-[var(--color-primary-forest)] z-10 shadow-sm">
                         {place.type}
                       </div>
@@ -172,6 +247,40 @@ export function DestinationOverview() {
             )}
           </div>
 
+          {/* Promo Video Showcase Section */}
+          {dest.promoVideo && (
+            <div className="mt-12 mb-8">
+              <div className="bg-white rounded-[2.5rem] p-6 md:p-10 shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-slate-100 flex flex-col lg:flex-row items-center gap-8">
+                <div className="w-full lg:w-[35%] flex flex-col justify-center">
+                  <span className="text-xs font-black uppercase tracking-widest text-[var(--color-primary-forest)] mb-2 block">Experience {dest.name}</span>
+                  <h2 className="text-2xl md:text-3xl font-display font-bold text-slate-800 mb-4 leading-tight">
+                    Watch the Magic of {dest.name} Unfold
+                  </h2>
+                  <p className="text-slate-600 text-base leading-relaxed mb-6">
+                    Immerse yourself in a visual journey. Get a glimpse of the spectacular sights, rich culture, and breathtaking landscapes waiting for you.
+                  </p>
+                </div>
+                <div className="w-full lg:w-[65%] relative">
+                  <div className="absolute inset-0 bg-[var(--color-primary-forest)] rounded-[2.5rem] translate-x-3 translate-y-3 opacity-10" />
+                  <div className="relative rounded-[2.5rem] overflow-hidden shadow-xl border-4 border-white aspect-video">
+                    <video
+                      key={dest.promoVideo}
+                      controls
+                      loop
+                      muted
+                      autoPlay
+                      playsInline
+                      className="w-full h-full object-cover"
+                    >
+                      <source src={dest.promoVideo} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* Tour Packages Section */}
           <div className="mt-8">
             <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-6 gap-3">
@@ -179,16 +288,22 @@ export function DestinationOverview() {
                 <h2 className="text-2xl font-bold text-[var(--color-neutral-black)]">Popular Packages</h2>
                 <p className="text-slate-500 text-sm mt-1">{totalPackagesCount} packages available</p>
               </div>
-              <Link to="/tour-packages" className="text-[var(--color-blue-ocean)] text-sm font-bold hover:underline flex items-center gap-1 w-fit">
-                View all <ChevronRight className="w-4 h-4" />
+              <Link
+                to={getCategoryLink()}
+                className="text-sm font-bold bg-[var(--color-primary-forest)]/10 text-[var(--color-primary-forest)] hover:bg-[var(--color-primary-forest)] hover:text-white px-5 py-2.5 rounded-full transition-all hover:scale-105 shadow-sm border border-[var(--color-primary-forest)]/25 flex items-center gap-1.5 w-fit"
+              >
+                <span>View all</span> <ChevronRight className="w-4 h-4" />
               </Link>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {featuredPackages.slice(0, 4).map((pkg: any) => (
                 <Link key={pkg.id} to={getPackageLink(pkg)} className={`${clayCard} overflow-hidden group flex flex-col block cursor-pointer`}>
-                  <div className="relative h-48 m-2 rounded-[2rem] overflow-hidden">
-                    <img
+                  <div 
+                    className={`relative m-2 rounded-[2rem] overflow-hidden ${pkg.image?.includes('/assets/shiridi/') ? 'aspect-[322/372]' : 'h-48'}`}
+                    style={pkg.image?.includes('/assets/shiridi/') ? { aspectRatio: '322/372' } : {}}
+                  >
+                    <img loading="lazy"
                       src={pkg.image}
                       alt={pkg.title}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"

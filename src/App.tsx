@@ -44,6 +44,7 @@ function App() {
             <Route path="/south-india-package" element={<SouthIndiaPackage />} />
             <Route path="/destination/:state/:city" element={<DestinationOverview />} />
             <Route path="/places-to-visit/:state/:city" element={<PlacesToVisit />} />
+            <Route path="/place/:state/:placeId" element={<PlaceDetails />} />
             <Route path="/place/:state/:city/:placeId" element={<PlaceDetails />} />
             <Route path="/testimonials" element={<TestimonialsPage />} />
             <Route path="/contact" element={<Contact />} />

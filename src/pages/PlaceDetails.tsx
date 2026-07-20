@@ -7,9 +7,24 @@ import { generateSlug } from '../lib/utils';
 import { ComprehensiveEnquiryForm } from '../components/ComprehensiveEnquiryForm';
 
 export function PlaceDetails() {
-  const { state, city, placeId } = useParams();
+  const { state, city: cityParam, placeId } = useParams();
   const navigate = useNavigate();
-  
+
+  // Support both old /place/:state/:city/:placeId and new /place/:state/:placeId
+  // When city is absent, find which destination contains this placeId
+  const resolvedCity = (() => {
+    if (cityParam && destinationsData[cityParam]) return cityParam;
+    // Search all destinations for the placeId
+    if (placeId) {
+      const found = Object.keys(destinationsData).find(key =>
+        destinationsData[key].placesToVisit?.some((p: any) => p.id === placeId)
+      );
+      if (found) return found;
+    }
+    return cityParam;
+  })();
+
+  const city = resolvedCity;
   const dest = city && destinationsData[city] ? destinationsData[city] : null;
   const place = dest?.placesToVisit.find((p: any) => p.id === placeId);
 
@@ -33,9 +48,27 @@ export function PlaceDetails() {
   // Smart package matching: use explicit IDs if available, else keyword-match from packagesDatabase
   const getAllPackages = () => Object.values(packagesDatabase) as any[];
 
-  const featuredPackages = (() => {
-    // 1. If the place has explicit popularPackages IDs, use them
-    if (place.details?.popularPackages?.length) {
+  // Helper to parse duration string to days for sorting
+  const getDurationDays = (durationStr: string) => {
+    if (!durationStr) return 999;
+    const lower = durationStr.toLowerCase();
+    if (lower.includes('one day') || lower.includes('single day') || lower.includes('1 day') || lower === 'one') return 1;
+    const daysMatch = lower.match(/(\d+)\s*day/);
+    if (daysMatch) return parseInt(daysMatch[1], 10);
+    const nightsMatch = lower.match(/(\d+)\s*night/);
+    if (nightsMatch) return parseInt(nightsMatch[1], 10) + 1;
+    return 999;
+  };
+
+  const targetCityName = (dest.id === 'tamilnadu-tourism' || dest.id === 'kerala-tourism') && placeId ? place.name : dest.name;
+
+  // Find all packages that match this city/attraction for count and list
+  const matchedPackages = (() => {
+    const isSouthState = dest.state === 'Tamil Nadu' || dest.state === 'Kerala' || state === 'tamilnadu' || state === 'kerala';
+    const northKeywords = ['shirdi', 'shiridi', 'varanasi', 'kasi', 'kashi', 'ayodhya', 'pune', 'mumbai', 'nashik', 'nasik', 'pandharpur', 'mantralayam', 'delhi', 'agra', 'jaipur', 'guwahati', 'shillong', 'cherrapunji', 'sarnath', 'gaya', 'prayagraj'];
+
+    // 1. If the place has explicit popularPackages IDs, use them (unless it's Madurai, where we want to prioritize 1-day and other local packages dynamically)
+    if (place.details?.popularPackages?.length && targetCityName.toLowerCase() !== 'madurai') {
       return place.details.popularPackages
         .map((id: string) => packagesDatabase[id])
         .filter(Boolean);
@@ -48,25 +81,50 @@ export function PlaceDetails() {
       .filter((w: string) => w.length > 3)
       .map((w: string) => w.toLowerCase());
     
-    const cityName = dest.name.toLowerCase();
+    const cityName = targetCityName.toLowerCase();
     const allPkgs = getAllPackages();
     
     // Step 1: Find packages that explicitly match the place keywords
     const keywordMatches = allPkgs.filter((pkg: any) => {
       const titleLower = pkg.title.toLowerCase();
+      const destLower = (pkg.overview?.destination || '').toLowerCase();
+      if (isSouthState) {
+        const isNorthPackage = northKeywords.some(kw => titleLower.includes(kw) || destLower.includes(kw));
+        if (isNorthPackage) return false;
+      }
       return keywords.length > 0 && keywords.some((kw: string) => titleLower.includes(kw));
     });
 
     if (keywordMatches.length > 0) {
-      return keywordMatches.slice(0, 6);
+      return keywordMatches;
     }
     
     // Step 2: Fallback to general city packages if no exact place matches exist
     return allPkgs.filter((pkg: any) => {
       const titleLower = pkg.title.toLowerCase();
+      const destLower = (pkg.overview?.destination || '').toLowerCase();
+      if (isSouthState) {
+        const isNorthPackage = northKeywords.some(kw => titleLower.includes(kw) || destLower.includes(kw));
+        if (isNorthPackage) return false;
+      }
       const isOutbound = titleLower.includes('flight package') || titleLower.includes('from ' + cityName) || titleLower.includes(cityName + ' to ');
       return titleLower.includes(cityName) && !isOutbound;
-    }).slice(0, 6);
+    });
+  })();
+
+  // Sort matched packages by duration (ascending: 1 Day first)
+  const featuredPackages = [...matchedPackages].sort((a: any, b: any) => {
+    return getDurationDays(a.overview?.duration) - getDurationDays(b.overview?.duration);
+  });
+
+  // Calculate dynamic total count matching the city categories
+  const totalPackagesCount = (() => {
+    const searchName = targetCityName.toLowerCase();
+    return getAllPackages().filter((pkg: any) => {
+      const titleLower = (pkg.title || '').toLowerCase();
+      const destLower = (pkg.overview?.destination || '').toLowerCase();
+      return titleLower.includes(searchName) || destLower.includes(searchName);
+    }).length;
   })();
 
   const clayCard = "bg-white rounded-[2.5rem] shadow-[0_10px_30px_rgba(0,0,0,0.05),-10px_-10px_30px_rgba(255,255,255,0.8),inset_2px_2px_5px_rgba(255,255,255,1)] border border-white";
@@ -75,13 +133,34 @@ export function PlaceDetails() {
   // Other places in the same destination (excluding current)
   const otherPlaces = dest.placesToVisit.filter((p: any) => p.id !== placeId);
 
+  const getCategoryLink = () => {
+    const specificTours = ['madurai', 'kanyakumari', 'kerala', 'rameshwaram', 'varanasi', 'shirdi', 'ayodhya', 'guwahati', 'shillong', 'cherrapunji', 'pune', 'chennai', 'munnar', 'thekkady', 'alleppey', 'vagamon', 'ooty', 'kodaikanal'];
+    
+    // Check placeId first if it is a major city
+    if (placeId && specificTours.includes(placeId.toLowerCase())) {
+      return `/tour-packages/${placeId.toLowerCase()}-tours`;
+    }
+    
+    if (!city) return "/tour-packages";
+    const cityBase = city.replace('-tourism', '').toLowerCase();
+    if (specificTours.includes(cityBase)) {
+      return `/tour-packages/${cityBase}-tours`;
+    }
+    // Fallbacks
+    const northIndia = ['varanasi', 'shirdi', 'ayodhya', 'prayagraj', 'gaya', 'kasi', 'guwahati', 'shillong', 'cherrapunji'];
+    if (northIndia.some(keyword => cityBase.includes(keyword))) {
+       return "/north-india-tour-packages";
+    }
+    return "/south-india-package";
+  };
+
   return (
     <div className="bg-[var(--color-bg-luxury)] min-h-screen pb-24 font-sans text-slate-800">
       
       {/* Hero Banner Section */}
       <div className="relative h-[60vh] md:h-[70vh] w-full overflow-hidden bg-slate-900 mb-12">
         <div className="absolute inset-0 bg-black/50 z-10" />
-        <img 
+        <img loading="lazy" 
           src={place.image} 
           alt={place.name} 
           className="absolute inset-0 w-full h-full object-cover"
@@ -141,24 +220,102 @@ export function PlaceDetails() {
             </div>
           )}
 
+          {/* Sub-Attractions of the City */}
+          {(() => {
+            const subDestKey = `${placeId}-tourism`;
+            const subDest = destinationsData[subDestKey];
+            if (!subDest || !subDest.placesToVisit || subDest.placesToVisit.length === 0) return null;
+
+            // Filter out places that are far away (like Theni/Virudhunagar districts which are 70+ km away)
+            const localPlaces = subDest.placesToVisit.filter((subPlace: any) => {
+              const dist = subPlace.details?.distance || '';
+              if (dist.toLowerCase().includes('kilometer')) {
+                const match = dist.match(/(\d+)/);
+                if (match && parseInt(match[1], 10) > 30) {
+                  return false;
+                }
+              }
+              return true;
+            });
+
+            // Sort by rating desc to show the most iconic/highest-rated local attractions first
+            const sortedLocalPlaces = [...localPlaces].sort((a: any, b: any) => (b.rating || 0) - (a.rating || 0));
+
+            return (
+              <div className="mt-12 pt-12 border-t border-slate-200">
+                <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
+                  <div>
+                    <h2 className="text-3xl font-display font-bold text-slate-800">Top Places to Visit in {place.name}</h2>
+                    <p className="text-slate-500 text-sm mt-1">{localPlaces.length} attractions available</p>
+                  </div>
+                  <Link
+                    to={`/places-to-visit/${state}/${subDestKey}`}
+                    className="shrink-0 text-sm font-bold text-[var(--color-primary-forest)] hover:underline flex items-center gap-1 w-fit"
+                  >
+                    View All Places <ChevronRight className="w-4 h-4" />
+                  </Link>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {sortedLocalPlaces.slice(0, 4).map((subPlace: any) => (
+                    <Link
+                      key={subPlace.id}
+                      to={`/place/${state}/${subPlace.id}`}
+                      className="bg-white rounded-[2rem] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.03)] border border-slate-100 flex flex-col group hover:shadow-[0_15px_40px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300"
+                    >
+                      <div className="relative h-48 overflow-hidden">
+                        <img loading="lazy"
+                          src={subPlace.image}
+                          alt={subPlace.name}
+                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        />
+                        {subPlace.type && (
+                          <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-[var(--color-primary-forest)] z-10 shadow-sm">
+                            {subPlace.type}
+                          </div>
+                        )}
+                        {subPlace.rating && (
+                          <div className="absolute top-4 right-4 bg-black/40 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-bold text-white flex items-center gap-1">
+                            <Star className="w-3.5 h-3.5 text-amber-400 fill-current" />
+                            {subPlace.rating}
+                          </div>
+                        )}
+                      </div>
+                      <div className="p-6 flex flex-col flex-1">
+                        <h3 className="text-xl font-bold text-slate-800 mb-2 group-hover:text-[var(--color-primary-forest)] transition-colors">
+                          {subPlace.name}
+                        </h3>
+                        <p className="text-slate-500 text-sm line-clamp-3 leading-relaxed mb-4">
+                          {subPlace.description}
+                        </p>
+                        <span className="text-[var(--color-primary-forest)] font-bold text-sm mt-auto flex items-center gap-1">
+                          View details <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                        </span>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            );
+          })()}
+
           {/* Related Tour Packages Section */}
           {featuredPackages.length > 0 && (
             <div className="mt-12 pt-12 border-t border-slate-200">
               <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
                 <div>
                   <h2 className="text-3xl font-display font-bold text-slate-800">Popular {place.name.split(' ').slice(0, 2).join(' ')} Tour Packages</h2>
-                  <p className="text-slate-500 text-sm mt-1">{featuredPackages.length} packages available</p>
+                  <p className="text-slate-500 text-sm mt-1">{totalPackagesCount} packages available</p>
                 </div>
                 <Link
-                  to="/tour-packages"
-                  className="shrink-0 text-sm font-bold text-[var(--color-primary-forest)] hover:underline flex items-center gap-1 w-fit"
+                  to={getCategoryLink()}
+                  className="shrink-0 text-sm font-bold bg-[var(--color-primary-forest)]/10 text-[var(--color-primary-forest)] hover:bg-[var(--color-primary-forest)] hover:text-white px-5 py-2.5 rounded-full transition-all hover:scale-105 shadow-sm border border-[var(--color-primary-forest)]/20 flex items-center gap-1.5 w-fit"
                 >
-                  View All Packages <ChevronRight className="w-4 h-4" />
+                  <span>View All Packages</span> <ChevronRight className="w-4 h-4" />
                 </Link>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {featuredPackages.map((pkg: any) => {
+                {featuredPackages.slice(0, 4).map((pkg: any) => {
                   const views = pkg.views || Math.floor(2500 + ((pkg.id * 37) % 7500));
                   const badge = views > 7500 ? 'MOST BOOKED' : views > 5000 ? 'POPULAR' : 'TOP RATED';
                   const badgeColor = views > 7500 ? 'bg-gradient-to-r from-orange-500 to-red-500' : views > 5000 ? 'bg-purple-500' : 'bg-green-500';
@@ -181,7 +338,10 @@ export function PlaceDetails() {
                       className="bg-white rounded-[24px] flex flex-col shadow-[0_4px_20px_rgba(0,0,0,0.04)] group transition-all duration-300 hover:shadow-[0_12px_30px_rgb(0,0,0,0.08)] hover:-translate-y-1 overflow-hidden"
                     >
                       {/* Image Section */}
-                      <div className="relative w-full h-[220px] bg-slate-50 overflow-hidden">
+                      <div 
+                        className={`relative w-full bg-slate-50 overflow-hidden ${pkg.image?.includes('/assets/shiridi/') ? 'aspect-[322/372]' : 'h-[220px]'}`}
+                        style={pkg.image?.includes('/assets/shiridi/') ? { aspectRatio: '322/372' } : {}}
+                      >
                         <Link 
                           to={getPackageLink(pkg)} 
                           className="w-full h-full block" 
@@ -381,11 +541,11 @@ export function PlaceDetails() {
           {otherPlaces.map((otherPlace: any) => (
             <Link 
               key={otherPlace.id} 
-              to={`/place/${state}/${city}/${otherPlace.id}`}
+              to={`/place/${state}/${otherPlace.id}`}
               className={`${clayCard} min-w-[280px] md:min-w-[320px] max-w-[320px] flex flex-col overflow-hidden group snap-start shrink-0 block cursor-pointer`}
             >
               <div className="relative h-48 m-2 rounded-[2rem] overflow-hidden">
-                <img 
+                <img loading="lazy" 
                   src={otherPlace.image} 
                   alt={otherPlace.name} 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"

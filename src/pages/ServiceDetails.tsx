@@ -30,46 +30,46 @@ export function ServiceDetails() {
  const getHeroImage = (id: string) => {
  switch (id) {
  case 'tour-operators':
- return '/assets/Mizoram1.avif'; // Taj Mahal
+ return '/assets/Mizoram2.webp'; // Taj Mahal
  case 'car-coach-rental':
- return '/assets/manipur1.avif'; // Luxury SUV in landscape
+ return '/assets/manipur2.webp'; // Luxury SUV in landscape
  case 'flight-booking':
  return '/assets/services/flight.png';
  case 'railway-ticket-booking':
- return '/assets/maharashtra1.avif'; // Train station
+ return '/assets/maharashtra1.webp'; // Train station
  case 'passport-visa-service':
  return '/assets/services/visa.png';
  case 'travel-insurance-service':
  return '/assets/services/insurance.png';
  case 'event-management':
- return '/assets/Uttar Pradesh1.avif'; // Beautiful event setup
+ return '/assets/Uttar Pradesh1.webp'; // Beautiful event setup
  case 'hotel-booking':
- return '/assets/himachal.avif'; // Luxury resort pool
+ return '/assets/himachal.webp'; // Luxury resort pool
  default:
- return '/assets/karnataka1.avif';
+ return '/assets/karnataka1.webp';
  }
  };
 
  const getFeatureImage = (id: string) => {
  switch (id) {
  case 'tour-operators':
- return '/assets/megalaya1.avif'; // Kerala backwaters boat
+ return '/assets/megalaya1.webp'; // Kerala backwaters boat
  case 'car-coach-rental':
- return '/assets/karnataka1.avif'; // Premium car interior
+ return '/assets/karnataka1.webp'; // Premium car interior
  case 'flight-booking':
  return '/assets/services/flight.png';
  case 'railway-ticket-booking':
- return '/assets/Uttar Pradesh1.avif'; // Inside a train
+ return '/assets/Uttar Pradesh1.webp'; // Inside a train
  case 'passport-visa-service':
  return '/assets/services/visa.png';
  case 'travel-insurance-service':
  return '/assets/services/insurance.png';
  case 'event-management':
- return '/assets/karnataka1.avif'; // Crowd celebration
+ return '/assets/karnataka1.webp'; // Crowd celebration
  case 'hotel-booking':
- return '/assets/himachal.avif'; // Premium hotel room
+ return '/assets/himachal.webp'; // Premium hotel room
  default:
- return '/assets/himachal.avif';
+ return '/assets/himachal.webp';
  }
  };
 
@@ -161,7 +161,7 @@ export function ServiceDetails() {
  {/* Soft glow behind image */}
  <div className="absolute inset-0 bg-blue-200/50 rounded-full blur-[100px]"></div>
  
- <img 
+ <img loading="lazy" 
  src={heroImage} 
  alt={serviceTitle} 
  className="w-full h-full object-cover rounded-[3rem] ,77,140,0.3)] border-8 border-white/50 rotate-2 hover:rotate-0 transition-transform duration-700 z-10 relative"
@@ -183,7 +183,7 @@ export function ServiceDetails() {
  
  {/* Main Hero Visual Card */}
  <div className="w-full h-[400px] md:h-[500px] rounded-[2rem] overflow-hidden border-4 border-white relative group">
- <img src={heroImage} alt={serviceTitle} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+ <img loading="lazy" src={heroImage} alt={serviceTitle} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
  <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-deep-teal)]/80 via-transparent to-transparent opacity-60"></div>
  
  {/* Overlay Badge */}
@@ -284,7 +284,7 @@ export function ServiceDetails() {
  
  {/* Complementary feature image nicely placed */}
  <div className="w-full h-[250px] mt-10 rounded-2xl overflow-hidden border border-slate-100">
- <img src={featureImage} alt={`${serviceTitle} detail`} className="w-full h-full object-cover" />
+ <img loading="lazy" src={featureImage} alt={`${serviceTitle} detail`} className="w-full h-full object-cover" />
  </div>
  </div>
 
