@@ -28,7 +28,7 @@ export function Destinations() {
  <motion.button
  initial={{ opacity: 0, y: 50 }}
  whileInView={{ opacity: 1, y: 0 }}
- viewport={{ once: true }}
+ viewport={{ once: true, margin: "100px" }}
  transition={{ duration: 0.6, delay: i * 0.1 }}
  whileHover={{ y: -10, scale: 1.02 }}
  key={destination.id}

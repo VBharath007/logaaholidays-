@@ -11,7 +11,7 @@ export function ExperienceCompany() {
         <motion.div 
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, margin: "100px" }}
           transition={{ duration: 0.8 }}
           className="relative px-8 pb-8"
         >
@@ -42,7 +42,7 @@ export function ExperienceCompany() {
         <motion.div 
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, margin: "100px" }}
           transition={{ duration: 0.8 }}
         >
           <div className="flex items-center gap-2 text-blue-600 font-semibold tracking-wider text-sm mb-4 uppercase">

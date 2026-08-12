@@ -5,17 +5,18 @@ const columns = [
   {
     title: 'Destinations',
     links: [
+      { label: 'Tamil Nadu', href: '/destination/tamilnadu/tamilnadu-tourism' },
       { label: 'Kerala', href: '/destination/kerala/kerala-tourism' },
-      { label: 'Madurai', href: '/destination/tamilnadu/madurai-tourism' },
-      { label: 'Shirdi', href: '/tour-packages/shirdi-tours' },
-      { label: 'Varanasi', href: '/tour-packages/varanasi-tours' }
+      { label: 'Karnataka', href: '/destination/karnataka-tour-packages' },
+      { label: 'North India', href: '/north-india-tour-packages' },
+      
     ]
   },
   {
     title: 'Company',
     links: [
       { label: 'About Us', href: '/about-us' },
-      { label: 'Services', href: '/services' },
+      // { label: 'Services', href: '/services' },
       { label: 'Testimonials', href: '/testimonials' },
       { label: 'Contact', href: '/contact-us' }
     ]

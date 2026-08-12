@@ -4,12 +4,19 @@ import { ChevronRight, Phone, Clock, MapPin, Search, Calendar, Filter } from 'lu
 import { destinationsData } from '../data/destinationsData';
 import { packagesDatabase, getPackageLink } from './PackageDetails';
 import { generateSlug } from '../lib/utils';
+import { useSEO } from '../hooks/useSEO';
 import { ComprehensiveEnquiryForm } from '../components/ComprehensiveEnquiryForm';
 
 export function DestinationOverview() {
   const { state, city } = useParams();
   const dest = city && destinationsData[city] ? destinationsData[city] : null;
   const [placeFilter, setPlaceFilter] = useState('All');
+
+  useSEO(
+    dest?.seoTitle || (dest ? `${dest.name} Tour Packages | Logaa Holidays` : 'Destinations | Logaa Holidays'),
+    dest?.seoDescription || dest?.overview?.description || 'Explore our amazing destinations and tour packages.',
+    dest?.seoKeywords || ''
+  );
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -37,10 +44,24 @@ export function DestinationOverview() {
   const allRelatedPackages = Object.values(packagesDatabase).filter((p: any) => {
     const titleLower = (p.title || '').toLowerCase();
     const destLower = (p.overview?.destination || '').toLowerCase();
+    const idNum = parseInt(p.id);
+
+    if (dest.popularPackages?.includes(p.id)) {
+      return true;
+    }
 
     if (isSouthState) {
       const isNorthPackage = northKeywords.some(kw => titleLower.includes(kw) || destLower.includes(kw));
       if (isNorthPackage) return false;
+    }
+
+    if (dest.state === 'Karnataka') {
+      const karnatakaIds = ['3090', '3091', '3092', '3093', '3094', '3095', '3096'];
+      if (karnatakaIds.includes(p.id)) return true;
+    }
+
+    if (dest.state === 'International' || dest.state === 'Honeymoon') {
+      return dest.popularPackages?.includes(p.id) || false;
     }
 
     return relatedKeywords.some(keyword =>
@@ -61,6 +82,15 @@ export function DestinationOverview() {
     }
     
     if (cityBase === 'kanyakumari') return 6;
+    if (cityBase === 'madurai') {
+      return Object.values(packagesDatabase).filter((p: any) => {
+        const titleLower = (p.title || '').toLowerCase();
+        const destLower = (p.overview?.destination || '').toLowerCase();
+        const idNum = parseInt(p.id);
+        const maduraiKeywords = ['madurai', 'kumbakonam', 'trichy', 'thiruchendur', 'megamalai', 'thanjavur'];
+        return (idNum >= 2025 && idNum <= 2099) || maduraiKeywords.some(kw => titleLower.includes(kw) || destLower.includes(kw));
+      }).length;
+    }
     if (cityBase === 'rameshwaram') return 5;
     if (cityBase === 'shirdi') return 8;
     if (cityBase === 'pune') return 5;
@@ -70,6 +100,22 @@ export function DestinationOverview() {
       return Object.values(packagesDatabase).filter((p: any) => {
         const titleLower = (p.title || '').toLowerCase();
         return ['munnar', 'thekkady', 'alleppey', 'vagamon', 'valparai', 'kumarakom', 'marayoor', 'kerala'].some(kw => titleLower.includes(kw));
+      }).length;
+    }
+    
+    if (cityBase === 'cochin') {
+      return Object.values(packagesDatabase).filter((p: any) => {
+        const titleLower = (p.title || '').toLowerCase();
+        const destLower = (p.overview?.destination || '').toLowerCase();
+        return titleLower.includes('cochin') || destLower.includes('cochin') || titleLower.includes('kochi') || destLower.includes('kochi');
+      }).length;
+    }
+
+    if (['munnar', 'alleppey', 'thekkady', 'vagamon'].includes(cityBase)) {
+      return Object.values(packagesDatabase).filter((p: any) => {
+        const titleLower = (p.title || '').toLowerCase();
+        const destLower = (p.overview?.destination || '').toLowerCase();
+        return titleLower.includes(cityBase) || destLower.includes(cityBase);
       }).length;
     }
     
@@ -107,7 +153,7 @@ export function DestinationOverview() {
     if (cityBase === 'tamilnadu') {
       return "/tour-packages/madurai-tours";
     }
-    const specificTours = ['madurai', 'kanyakumari', 'kerala', 'rameshwaram', 'varanasi', 'shirdi', 'ayodhya', 'guwahati', 'shillong', 'cherrapunji', 'pune'];
+    const specificTours = ['madurai', 'kanyakumari', 'kerala', 'rameshwaram', 'varanasi', 'shirdi', 'ayodhya', 'guwahati', 'shillong', 'cherrapunji', 'pune', 'karnataka', 'andaman', 'chennai', 'munnar', 'alleppey', 'thekkady', 'vagamon', 'cochin'];
     if (specificTours.includes(cityBase)) {
       return `/tour-packages/${cityBase}-tours`;
     }
@@ -193,6 +239,7 @@ export function DestinationOverview() {
           </div>
 
           {/* Top Places to Visit Grid */}
+          {dest.placesToVisit && dest.placesToVisit.length > 0 && (
           <div className="mt-8">
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
               <div>
@@ -202,9 +249,9 @@ export function DestinationOverview() {
                     <button
                       key={type}
                       onClick={() => setPlaceFilter(type)}
-                      className={`px-4 py-1.5 rounded-full text-sm font-bold transition-all ${placeFilter === type
+                      className={`px-4 py-1.5 rounded-full text-sm font-semibold transition-all ${placeFilter === type
                         ? 'bg-[var(--color-primary-forest)] text-white shadow-md'
-                        : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                        : 'bg-white text-slate-600 hover:bg-slate-100 border border-slate-200'
                         }`}
                     >
                       {type}
@@ -226,8 +273,10 @@ export function DestinationOverview() {
               </div>
             ) : (
               <div className="grid grid-cols-1 gap-6">
-                {filteredPlaces.slice(0, 4).map((place: any) => (
-                  <Link key={place.id} to={`/place/${state}/${place.id}`} className={`${clayCard} overflow-hidden group flex flex-col md:flex-row cursor-pointer`}>
+                {filteredPlaces.slice(0, 4).map((place: any) => {
+                  const cityBase = city ? city.replace('-tourism', '') : '';
+                  return (
+                  <Link key={place.id} to={`/place/${state}/${cityBase}/${place.id}`} className={`${clayCard} overflow-hidden group flex flex-col md:flex-row cursor-pointer`}>
                     <div className="relative h-56 md:h-auto md:w-2/5 m-2 md:m-3 rounded-[2rem] overflow-hidden shrink-0 min-h-[200px]">
                       <img loading="lazy" src={place.image} alt={place.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 absolute inset-0" />
                       <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-[var(--color-primary-forest)] z-10 shadow-sm">
@@ -242,10 +291,12 @@ export function DestinationOverview() {
                       </span>
                     </div>
                   </Link>
-                ))}
+                );
+              })}
               </div>
             )}
           </div>
+          )}
 
           {/* Promo Video Showcase Section */}
           {dest.promoVideo && (
@@ -282,47 +333,59 @@ export function DestinationOverview() {
           )}
 
           {/* Tour Packages Section */}
-          <div className="mt-8">
-            <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-6 gap-3">
-              <div>
-                <h2 className="text-2xl font-bold text-[var(--color-neutral-black)]">Popular Packages</h2>
-                <p className="text-slate-500 text-sm mt-1">{totalPackagesCount} packages available</p>
-              </div>
-              <Link
-                to={getCategoryLink()}
-                className="text-sm font-bold bg-[var(--color-primary-forest)]/10 text-[var(--color-primary-forest)] hover:bg-[var(--color-primary-forest)] hover:text-white px-5 py-2.5 rounded-full transition-all hover:scale-105 shadow-sm border border-[var(--color-primary-forest)]/25 flex items-center gap-1.5 w-fit"
-              >
-                <span>View all</span> <ChevronRight className="w-4 h-4" />
-              </Link>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {featuredPackages.slice(0, 4).map((pkg: any) => (
-                <Link key={pkg.id} to={getPackageLink(pkg)} className={`${clayCard} overflow-hidden group flex flex-col block cursor-pointer`}>
-                  <div 
-                    className={`relative m-2 rounded-[2rem] overflow-hidden ${pkg.image?.includes('/assets/shiridi/') ? 'aspect-[322/372]' : 'h-48'}`}
-                    style={pkg.image?.includes('/assets/shiridi/') ? { aspectRatio: '322/372' } : {}}
-                  >
-                    <img loading="lazy"
-                      src={pkg.image}
-                      alt={pkg.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    />
-                  </div>
-                  <div className="p-5 pb-6 flex flex-col flex-1">
-                    <h3 className="text-lg font-bold text-[var(--color-blue-ocean)] mb-3 leading-tight group-hover:text-[var(--color-primary-forest)] transition-colors" title={pkg.title}>{pkg.title}</h3>
-                    <div className="flex items-center gap-2 text-slate-500 text-sm mb-6 mt-auto">
-                      <Clock className="w-4 h-4" />
-                      <span>{pkg.duration || pkg.overview?.duration}</span>
-                    </div>
-                    <div className={`${clayBtn} w-full py-3 flex justify-center text-sm`}>
-                      View Details
-                    </div>
-                  </div>
+          {totalPackagesCount > 0 ? (
+            <div className="mt-8">
+              <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-6 gap-3">
+                <div>
+                  <h2 className="text-2xl font-bold text-[var(--color-neutral-black)]">Popular Packages</h2>
+                  <p className="text-slate-500 text-sm mt-1">{totalPackagesCount} packages available</p>
+                </div>
+                <Link
+                  to={getCategoryLink()}
+                  className="text-sm font-bold bg-[var(--color-primary-forest)]/10 text-[var(--color-primary-forest)] hover:bg-[var(--color-primary-forest)] hover:text-white px-5 py-2.5 rounded-full transition-all hover:scale-105 shadow-sm border border-[var(--color-primary-forest)]/25 flex items-center gap-1.5 w-fit"
+                >
+                  <span>View all</span> <ChevronRight className="w-4 h-4" />
                 </Link>
-              ))}
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {featuredPackages.slice(0, 4).map((pkg: any) => (
+                  <Link key={pkg.id} to={getPackageLink(pkg)} className={`${clayCard} overflow-hidden group flex flex-col block cursor-pointer`}>
+                    <div 
+                      className={`relative m-2 rounded-[2rem] overflow-hidden ${pkg.image?.includes('/assets/shiridi/') ? 'aspect-[322/372]' : 'h-48'}`}
+                      style={pkg.image?.includes('/assets/shiridi/') ? { aspectRatio: '322/372' } : {}}
+                    >
+                      <img loading="lazy"
+                        src={pkg.image}
+                        alt={pkg.title}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      />
+                    </div>
+                    <div className="p-5 pb-6 flex flex-col flex-1">
+                      <h3 className="text-lg font-bold text-[var(--color-blue-ocean)] mb-3 leading-tight group-hover:text-[var(--color-primary-forest)] transition-colors" title={pkg.title}>{pkg.title}</h3>
+                      <div className="flex items-center gap-2 text-slate-500 text-sm mb-6 mt-auto">
+                        <Clock className="w-4 h-4" />
+                        <span>{pkg.duration || pkg.overview?.duration}</span>
+                      </div>
+                      <div className={`${clayBtn} w-full py-3 flex justify-center text-sm`}>
+                        View Details
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
             </div>
-          </div>
+          ) : (
+            <div className="mt-8 bg-[var(--color-deep-teal)] rounded-[2.5rem] p-6 shadow-xl relative overflow-hidden">
+                <div className="relative z-10">
+                  <div className="text-center mb-6 pt-4">
+                    <h3 className="text-3xl font-display font-bold text-white mb-3">Custom {dest.name} Packages Available</h3>
+                    <p className="text-white/80 max-w-2xl mx-auto">Our travel experts can design a personalized {dest.name} itinerary perfectly tailored to your requirements. Get a free quote today!</p>
+                  </div>
+                  <ComprehensiveEnquiryForm />
+                </div>
+            </div>
+          )}
 
         </div>
 

@@ -1,4 +1,190 @@
 export const destinationsData: Record<string, any> = {
+  'munnar-tourism': {
+    id: 'munnar-tourism',
+    name: 'Munnar',
+    image: '/assets/bharath/kerala.webp',
+    state: 'Kerala',
+    overview: {
+      title: 'Munnar Tourism',
+      description: 'Munnar is a breathtakingly beautiful hill station in Kerala, famous for its lush tea estates, rolling hills, and pleasant climate.'
+    },
+    history: {
+      title: 'Munnar History',
+      description: 'Munnar was once the summer resort of the erstwhile British administration in South India. It still retains its colonial charm.'
+    },
+    info: {
+      idealDuration: '2 Nights 3 Days',
+      nearestCity: 'Cochin',
+      bestTime: 'September to March',
+      weather: 'Cool and Pleasant',
+      internet: 'Good',
+      stdCode: '04865',
+      languages: 'Malayalam, English, Tamil',
+      festivals: 'Onam, Vishu',
+      tips: 'Carry warm clothing as evenings can get quite chilly.'
+    },
+    majorAttractions: [
+      { title: 'Eravikulam National Park', description: 'Home to the endangered Nilgiri Tahr.' },
+      { title: 'Tea Museum', description: 'Learn about the history and production of tea in Munnar.' }
+    ],
+    placesToVisit: [],
+    popularPackages: ['9001', '9002', '9003', '9004']
+  },
+  'alleppey-tourism': {
+    id: 'alleppey-tourism',
+    name: 'Alleppey',
+    image: '/assets/bharath/kerala hero.webp',
+    state: 'Kerala',
+    overview: {
+      title: 'Alleppey Tourism',
+      description: 'Alleppey, also known as Alappuzha, is famous for its backwater cruises, houseboat stays, and tranquil networks of canals.'
+    },
+    history: {
+      title: 'Alleppey History',
+      description: 'Described as the Venice of the East by Lord Curzon, Alleppey has always been a significant trading post and port town in Kerala.'
+    },
+    info: {
+      idealDuration: '1 Night 2 Days',
+      nearestCity: 'Cochin',
+      bestTime: 'September to March',
+      weather: 'Tropical',
+      internet: 'Good',
+      stdCode: '0477',
+      languages: 'Malayalam, English',
+      festivals: 'Nehru Trophy Boat Race, Onam',
+      tips: 'Book houseboats in advance during peak season.'
+    },
+    majorAttractions: [
+      { title: 'Alleppey Backwaters', description: 'Scenic network of lakes, canals, and rivers.' },
+      { title: 'Marari Beach', description: 'A beautiful and pristine beach near Alleppey.' }
+    ],
+    placesToVisit: [],
+    popularPackages: ['9001', '9002', '9003', '9004']
+  },
+  'thekkady-tourism': {
+    id: 'thekkady-tourism',
+    name: 'Thekkady',
+    image: '/assets/bharath/kerala.webp',
+    state: 'Kerala',
+    overview: {
+      title: 'Thekkady Tourism',
+      description: 'Thekkady is famous for the Periyar Wildlife Sanctuary, offering amazing elephant sightings, spice plantations, and nature walks.'
+    },
+    history: {
+      title: 'Thekkady History',
+      description: 'The region is deeply associated with the ancient spice trade and indigenous tribal communities that still inhabit parts of the forest.'
+    },
+    info: {
+      idealDuration: '1 Night 2 Days',
+      nearestCity: 'Cochin',
+      bestTime: 'September to April',
+      weather: 'Pleasant',
+      internet: 'Moderate',
+      stdCode: '04869',
+      languages: 'Malayalam, English, Tamil',
+      festivals: 'Onam',
+      tips: 'Pre-book your boat safari in Periyar Lake.'
+    },
+    majorAttractions: [
+      { title: 'Periyar National Park', description: 'Renowned elephant and tiger reserve.' },
+      { title: 'Spice Plantations', description: 'Explore vast estates growing cardamom, pepper, and cinnamon.' }
+    ],
+    placesToVisit: [],
+    popularPackages: ['9001', '9002', '9003', '9004']
+  },
+  'vagamon-tourism': {
+    id: 'vagamon-tourism',
+    name: 'Vagamon',
+    image: '/assets/bharath/kerala hero.webp',
+    state: 'Kerala',
+    overview: {
+      title: 'Vagamon Tourism',
+      description: 'Vagamon is a serene hill station known for its pine forests, rolling meadows, and tranquil ambiance away from city crowds.'
+    },
+    history: {
+      title: 'Vagamon History',
+      description: 'Discovered by the British for tea plantations, Vagamon has slowly developed into an eco-tourism hub.'
+    },
+    info: {
+      idealDuration: '1 Night 2 Days',
+      nearestCity: 'Cochin',
+      bestTime: 'September to May',
+      weather: 'Cool and Misty',
+      internet: 'Moderate',
+      stdCode: '04869',
+      languages: 'Malayalam, English',
+      festivals: 'Vagamon Orchid Festival',
+      tips: 'A great place for paragliding and trekking.'
+    },
+    majorAttractions: [
+      { title: 'Pine Forest', description: 'A vast expanse of beautiful pine trees.' },
+      { title: 'Vagamon Meadows', description: 'Lush green rolling hills perfect for relaxing.' }
+    ],
+    placesToVisit: [],
+    popularPackages: ['9001', '9002', '9003', '9004']
+  },
+  'cochin-tourism': {
+    id: 'cochin-tourism',
+    name: 'Cochin',
+    image: '/assets/bharath/kerala.webp',
+    state: 'Kerala',
+    overview: {
+      title: 'Cochin Tourism',
+      description: 'Cochin, or Kochi, is a bustling coastal city that serves as the commercial hub of Kerala, famous for its historic Fort Kochi area.'
+    },
+    history: {
+      title: 'Cochin History',
+      description: 'Often called the Queen of the Arabian Sea, Cochin has been an important spice trading center since the 14th century, attracting Arabs, Chinese, Portuguese, and British.'
+    },
+    info: {
+      idealDuration: '2 Nights 3 Days',
+      nearestCity: 'Cochin',
+      bestTime: 'October to March',
+      weather: 'Tropical',
+      internet: 'Excellent',
+      stdCode: '0484',
+      languages: 'Malayalam, English',
+      festivals: 'Cochin Carnival, Onam',
+      tips: 'Explore Fort Kochi on foot or by bicycle.'
+    },
+    majorAttractions: [
+      { title: 'Chinese Fishing Nets', description: 'Iconic fishing nets along the Fort Kochi beach.' },
+      { title: 'Mattancherry Palace', description: 'Also known as the Dutch Palace, featuring stunning Kerala murals.' }
+    ],
+    placesToVisit: [],
+    popularPackages: ['9001', '9002', '9003', '9004']
+  },
+  'chennai-tourism': {
+    id: 'chennai-tourism',
+    name: 'Chennai',
+    image: '/assets/chennai/chennai3.webp',
+    state: 'Tamil Nadu',
+    overview: {
+      title: 'Chennai Tourism',
+      description: 'Chennai, the capital of Tamil Nadu, is a vibrant metropolis that seamlessly blends traditional South Indian culture with modern lifestyle. Known for its classical dance, ancient temples, beautiful beaches, and bustling shopping districts.'
+    },
+    history: {
+      title: 'Chennai History',
+      description: 'Originally a group of villages, Chennai (formerly Madras) was established by the British East India Company in 1639. It grew into a major naval base and the administrative center of the Madras Presidency.'
+    },
+    info: {
+      idealDuration: '2 Nights 3 Days',
+      nearestCity: 'Chennai',
+      bestTime: 'October to March',
+      weather: 'Tropical',
+      internet: 'Excellent',
+      stdCode: '044',
+      languages: 'Tamil, English',
+      festivals: 'Pongal, Chennai Music Season',
+      tips: 'Summers can be extremely hot and humid, so carry light cotton clothes.'
+    },
+    majorAttractions: [
+      { title: 'Marina Beach', description: 'The second longest urban beach in the world.' },
+      { title: 'Kapaleeshwarar Temple', description: 'Ancient Shiva temple displaying classic Dravidian architecture.' }
+    ],
+    placesToVisit: [],
+    popularPackages: ['3001', '3002', '3003', '3004']
+  },
   'kovalam-tourism': {
     id: 'kovalam-tourism',
     name: 'Kovalam',
@@ -597,7 +783,7 @@ export const destinationsData: Record<string, any> = {
   'madurai-tourism': {
     id: 'madurai-tourism',
     name: 'Madurai',
-    image: '/assets/madurai/mennachi amman temple.webp',
+    image: '/assets/meenakshi amman temple.png',
     state: 'Tamil Nadu',
     overview: {
       title: 'Madurai Tourism',
@@ -782,7 +968,7 @@ export const destinationsData: Record<string, any> = {
         id: 'meenakshi-temple',
         name: 'Madurai Meenakshi Amman Temple',
         type: 'Temple',
-        image: '/assets/madurai/mennachi amman temple.webp',
+        image: '/assets/meenakshi amman temple.png',
         description: 'The old Meenakshi Amman temple is in Madurai, Tamil Nadu. It is near the southern bank of the Vaigai River. This building was constructed by builders between the years 1623 and 1655, and the brilliant design is famed all over the world.',
         rating: 4.9,
         details: {
@@ -1032,8 +1218,8 @@ export const destinationsData: Record<string, any> = {
       }
     ],
     popularPackages: [
-      '43', '44', '45', '46',
-      '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', 
+      '2025', '2026', '2027', '2028', '2029', '2030', '2031', '2032',
+      '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57',
       '58', '59', '60', '61', '62', '63', '64', '65', '66', '67', '68',
       '69', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79',
       '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90',
@@ -1385,7 +1571,7 @@ export const destinationsData: Record<string, any> = {
         id: 'madurai',
         name: 'Madurai',
         type: 'Temple City / Culture',
-        image: '/assets/madurai/mennachi amman temple.webp',
+        image: '/assets/meenakshi amman temple.png',
         description: 'Known as the "Athens of the East", Madurai is one of India\'s oldest continuously inhabited cities. Built around the historic Meenakshi Amman Temple, it is the cultural soul of Tamil Nadu.',
         rating: 4.9,
         details: {
@@ -1606,12 +1792,14 @@ export const destinationsData: Record<string, any> = {
 
   'shirdi': {
     id: 'shirdi',
-    name: 'Shirdi',
+    name: 'Shirdi Yatra & Pilgrimage',
     state: 'Maharashtra',
     image: '/assets/varanasi and shiridi/shirdi cover photo 1918x642.webp',
+    seoTitle: 'Shirdi Yatra & Pilgrimage Packages | Shirdi Travel',
+    seoDescription: 'Explore Shirdi Yatra and pilgrimage packages with detailed itineraries, temple visits, travel options and trusted holiday services.',
     overview: {
-      title: 'Shirdi – Abode of Sai Baba',
-      description: 'Shirdi is a holy town in the Ahmednagar district of Maharashtra, India, and is one of the most revered pilgrimage sites in the country. It is primarily known as the home of the spiritual master Sai Baba, who lived here from around 1858 until his death in 1918. Every year, millions of devotees from across India and the world visit Shirdi to seek the blessings of Sai Baba. The town is a symbol of communal harmony, as Sai Baba preached the oneness of God and the brotherhood of all mankind.'
+      title: 'Shirdi Yatra & Pilgrimage',
+      description: 'Shirdi is a holy town in the Ahmednagar district of Maharashtra, India, and is one of the most revered pilgrimage sites in the country. A Shirdi Yatra is a profound spiritual journey for devotees worldwide. Offering peace, miracles, and blessings, the Shirdi Pilgrimage attracts millions who seek solace at the sacred Shirdi Temple. Whether you are planning your Shirdi Travel by train or flight, our comprehensive Shirdi Yatra Packages and Shirdi Pilgrimage Packages ensure a seamless, divine experience.'
     },
     history: {
       title: 'History of Shirdi',
@@ -1736,7 +1924,7 @@ export const destinationsData: Record<string, any> = {
         }
       }
     ],
-    popularPackages: ['2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']
+    popularPackages: ['2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024']
   },
 
   'varanasi': {
@@ -2169,6 +2357,156 @@ export const destinationsData: Record<string, any> = {
       }
     ],
     popularPackages: []
+  },
+  'andaman-tourism': {
+    id: 'andaman-tourism',
+    name: 'Andaman',
+    image: '/assets/south india andaman/andaman front image.png',
+    heroImage: '/assets/south india andaman/andaman front image.png',
+    state: 'Andaman',
+    overview: {
+      title: 'Andaman Tourism',
+      description: 'Explore the beautiful beaches, coral islands, historic landmarks and tropical landscapes of the Andaman Islands.'
+    },
+    history: {
+      title: 'Andaman History',
+      description: 'The Andaman Islands have a rich history, particularly associated with India’s freedom struggle and the historic Cellular Jail.'
+    },
+    info: {
+      idealDuration: '7 Nights 8 Days',
+      nearestCity: 'Port Blair',
+      bestTime: 'October to May',
+      peakSeason: 'December to January',
+      weather: 'Tropical',
+      internet: 'Moderate',
+      stdCode: '03192',
+      languages: 'Bengali, Hindi, English, Tamil',
+      festivals: 'Island Tourism Festival',
+      tips: 'Carry valid government-issued photo identification. Mobile network coverage may be limited on some islands.'
+    },
+    majorAttractions: [
+      { title: 'Cellular Jail', description: 'An important national memorial associated with India’s freedom struggle.' },
+      { title: 'Radhanagar Beach', description: 'One of the most popular and beautiful beaches in the Andaman Islands.' },
+      { title: 'Baratang Limestone Caves', description: 'Famous limestone caves reachable via mangrove boat routes.' }
+    ],
+    placesToVisit: [],
+    popularPackages: ['9901', '9902', '9903', '9904', '9905', '9906']
+  },
+  'malaysia-tourism': {
+    id: 'malaysia-tourism',
+    name: 'Malaysia',
+    image: '/assets/malaysia_hero.png',
+    state: 'International',
+    overview: {
+      title: 'Malaysia Tourism',
+      description: 'Malaysia is a beautiful country known for its beaches, rainforests and mix of Malay, Chinese, Indian and European cultural influences.'
+    },
+    history: {
+      title: 'Malaysia History',
+      description: 'Malaysia has a rich cultural heritage shaped by the British Empire and indigenous influences.'
+    },
+    info: {
+      idealDuration: '4 Nights 5 Days',
+      nearestCity: 'Kuala Lumpur',
+      bestTime: 'December to April',
+      peakSeason: 'December',
+      weather: 'Tropical',
+      internet: 'Excellent',
+      stdCode: '+60',
+      languages: 'Malay, English',
+      festivals: 'Hari Raya, Chinese New Year, Deepavali',
+      tips: 'Always carry an umbrella as rain can be unpredictable.'
+    },
+    majorAttractions: [],
+    placesToVisit: [],
+    popularPackages: []
+  },
+  'singapore-tourism': {
+    id: 'singapore-tourism',
+    name: 'Singapore',
+    image: '/assets/singapore_hero.png',
+    state: 'International',
+    overview: {
+      title: 'Singapore Tourism',
+      description: 'Singapore is an island city-state off southern Malaysia, is a global financial center with a tropical climate and multicultural population.'
+    },
+    history: {
+      title: 'Singapore History',
+      description: 'Founded as a British trading colony in 1819, Singapore has grown into one of the world\'s most prosperous countries.'
+    },
+    info: {
+      idealDuration: '3 Nights 4 Days',
+      nearestCity: 'Singapore',
+      bestTime: 'Year-round',
+      peakSeason: 'December to June',
+      weather: 'Tropical',
+      internet: 'Excellent',
+      stdCode: '+65',
+      languages: 'English, Malay, Mandarin, Tamil',
+      festivals: 'Chinese New Year, National Day',
+      tips: 'Chewing gum is banned in Singapore. Be mindful of strict local laws.'
+    },
+    majorAttractions: [],
+    placesToVisit: [],
+    popularPackages: []
+  },
+  'bali-tourism': {
+    id: 'bali-tourism',
+    name: 'Bali',
+    image: '/assets/bali_hero.png',
+    state: 'International',
+    overview: {
+      title: 'Bali Tourism',
+      description: 'Bali is an Indonesian island known for its forested volcanic mountains, iconic rice paddies, beaches and coral reefs.'
+    },
+    history: {
+      title: 'Bali History',
+      description: 'Bali has a deeply spiritual and unique Hindu culture that influences every aspect of life on the island.'
+    },
+    info: {
+      idealDuration: '5 Nights 6 Days',
+      nearestCity: 'Denpasar',
+      bestTime: 'April to October',
+      peakSeason: 'July and August',
+      weather: 'Tropical',
+      internet: 'Good',
+      stdCode: '+62',
+      languages: 'Indonesian, Balinese, English',
+      festivals: 'Nyepi, Galungan',
+      tips: 'Respect the local culture and dress modestly when visiting temples.'
+    },
+    majorAttractions: [],
+    placesToVisit: [],
+    popularPackages: []
+  },
+  'thailand-tourism': {
+    id: 'thailand-tourism',
+    name: 'Thailand',
+    image: '/assets/thailand_hero.png',
+    state: 'International',
+    overview: {
+      title: 'Thailand Tourism',
+      description: 'Thailand is a Southeast Asian country. It\'s known for tropical beaches, opulent royal palaces, ancient ruins and ornate temples.'
+    },
+    history: {
+      title: 'Thailand History',
+      description: 'Formerly known as Siam, Thailand is the only Southeast Asian country that was never colonized by a European power.'
+    },
+    info: {
+      idealDuration: '4 Nights 5 Days',
+      nearestCity: 'Bangkok',
+      bestTime: 'November to early April',
+      peakSeason: 'December and January',
+      weather: 'Tropical',
+      internet: 'Excellent',
+      stdCode: '+66',
+      languages: 'Thai, English',
+      festivals: 'Songkran, Loy Krathong',
+      tips: 'Always show respect to the Thai Royal Family.'
+    },
+    majorAttractions: [],
+    placesToVisit: [],
+    popularPackages: []
   }
 };
 
@@ -2176,7 +2514,7 @@ export const destinationsData: Record<string, any> = {
 Object.keys(destinationsData).forEach(key => {
   const dest = destinationsData[key];
   if (!dest) return;
-  
+
   const normalizeText = (text: string): string => {
     if (!text) return text;
     let newText = text;
@@ -2204,7 +2542,7 @@ Object.keys(destinationsData).forEach(key => {
   if (dest.idealDuration) {
     dest.idealDuration = normalizeText(dest.idealDuration);
   }
-  
+
   if (dest.info && dest.info.idealDuration) {
     dest.info.idealDuration = normalizeText(dest.info.idealDuration);
   }

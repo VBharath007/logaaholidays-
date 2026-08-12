@@ -23,7 +23,7 @@ export function AdventureDestinations() {
  key={adv.id}
  initial={{ opacity: 0, scale: 0.9 }}
  whileInView={{ opacity: 1, scale: 1 }}
- viewport={{ once: true }}
+ viewport={{ once: true, margin: "100px" }}
  transition={{ delay: i * 0.1 }}
  className="flex flex-col items-center"
  >

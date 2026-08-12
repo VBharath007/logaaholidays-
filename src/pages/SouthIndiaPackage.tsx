@@ -47,35 +47,36 @@ const destinations = [
 
 const featuredPackages = [
   {
-    id: '43',
-    title: '6 Day Trip from Bangalore | Madurai, Rameshwaram, Kanyakumari, Kovalam & Trivandrum',
-    duration: '5 Nights / 6 Days',
-    price: '₹19,500',
-    image: '/assets/karnataka1.webp',
-    location: 'Madurai & Beyond'
-  },
-  {
-    id: '44',
-    title: '4 Day Trip from Bangalore | Madurai, Rameshwaram & Kanyakumari',
+    id: '9201',
+    title: 'Kerala Honeymoon Package',
     duration: '3 Nights / 4 Days',
-    price: '₹12,700',
-    image: '/assets/Bangalore.webp',
-    location: 'Madurai & Beyond'
+    price: '₹14,500',
+    image: '/assets/bharath/kerala.webp',
+    location: 'Kerala'
   },
   {
-    id: '45',
-    title: 'Chidambaram, Thanjavur & Kanchipuram Package for 5 days from Chennai',
+    id: '3090',
+    title: 'Tamil Nadu Tour Package',
+    duration: 'On Request',
+    price: 'On Request',
+    image: '/assets/Tamil Nadu1.webp',
+    location: 'Tamil Nadu'
+  },
+  {
+    id: '9005',
+    title: 'Kerala Popular Package',
     duration: '4 Nights / 5 Days',
-    price: '₹15,500',
-    image: '/assets/chennai/Chidambaram, Thanjavur & Kanchipuram Package for 5 days from Chennai card.webp',
-    location: 'Chidambaram'
+    price: '₹14,500',
+    image: '/assets/bharath/kerala.webp',
+    location: 'Kerala'
   },
   {
-    id: '46',
-    title: '9 Days Trip from Madurai | Madurai, Trichy, Thanjavur, Kumbakonam, Rameshwaram, Kanyakumari, Kovalam & Trivandrum',
-    duration: '8 Nights / 9 Days',
-    price: '₹34,495',
-    image: '/assets/megalaya1.webp',
+    id: '9006',
+    title: 'Kerala Houseboat & Hills',
+    duration: '5 Nights / 6 Days',
+    price: '₹18,500',
+    image: '/assets/bharath/kerala hero.webp',
+    location: 'Kerala'
   }
 ];
 
@@ -239,40 +240,7 @@ export function SouthIndiaPackage() {
 
       <SearchPackagesModal isOpen={isSearchModalOpen} onClose={() => setIsSearchModalOpen(false)} />
 
-      {/* Popular Destinations Section */}
-      <div className="max-w-7xl mx-auto px-6 mb-16 pt-16">
-        <div className="flex justify-between items-end mb-8">
-          <div className="flex items-center gap-2">
-            <Star className="w-5 h-5 text-[var(--color-primary-forest)] fill-current" />
-            <h2 className="text-2xl font-bold text-slate-800">Popular Destinations in South India</h2>
-          </div>
-          <Link to="/tour-packages" className="text-sm font-semibold text-[var(--color-primary-forest)] hover:underline flex items-center gap-1">
-            View all destinations <span>→</span>
-          </Link>
-        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4">
-          {destinations.map((dest) => (
-            <Link key={dest.id} to={`/place/${dest.stateSlug}/${dest.id}`} className="relative rounded-2xl overflow-hidden group cursor-pointer h-64 lg:h-48 shadow-lg block">
-              <img loading="lazy"
-                src={dest.image}
-                alt={dest.name}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
-
-              <button className="absolute top-3 right-3 text-white hover:text-red-500 transition-colors z-10" onClick={(e) => e.preventDefault()}>
-                <Heart className="w-5 h-5" />
-              </button>
-
-              <div className="absolute bottom-4 left-4 z-10 text-white">
-                <h3 className="text-xl font-bold mb-1">{dest.name}</h3>
-                <p className="text-xs text-white/90 mb-2">{dest.state}</p>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </div>
 
       {/* Featured Packages Section */}
       <div className="max-w-7xl mx-auto px-6 mb-16">

@@ -14,6 +14,9 @@ import { PackageDetails } from './pages/PackageDetails'
 import { TestimonialsPage } from './pages/TestimonialsPage'
 import { Contact } from './pages/Contact'
 import { SouthIndiaPackage } from './pages/SouthIndiaPackage'
+import { TamilNaduPackage } from './pages/TamilNaduPackage'
+import { KeralaPackage } from './pages/KeralaPackage'
+import { KarnatakaTourPackages } from './pages/KarnatakaTourPackages'
 import { DestinationOverview } from './pages/DestinationOverview'
 import { PlacesToVisit } from './pages/PlacesToVisit'
 import { PlaceDetails } from './pages/PlaceDetails'
@@ -42,6 +45,9 @@ function App() {
             <Route path="/north-india-tour-packages/:category/:packageSlug" element={<PackageDetails />} />
             <Route path="/packages/:packageSlug" element={<PackageDetails />} />
             <Route path="/south-india-package" element={<SouthIndiaPackage />} />
+            <Route path="/tamil-nadu-tour-packages" element={<TamilNaduPackage />} />
+            <Route path="/kerala-tour-packages" element={<KeralaPackage />} />
+            <Route path="/karnataka-tour-packages" element={<KarnatakaTourPackages />} />
             <Route path="/destination/:state/:city" element={<DestinationOverview />} />
             <Route path="/places-to-visit/:state/:city" element={<PlacesToVisit />} />
             <Route path="/place/:state/:placeId" element={<PlaceDetails />} />

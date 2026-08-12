@@ -17,7 +17,7 @@ export function ExploreDestinations() {
  <motion.div 
  initial={{ opacity: 0, x: -50 }}
  whileInView={{ opacity: 1, x: 0 }}
- viewport={{ once: true }}
+ viewport={{ once: true, margin: "100px" }}
  transition={{ duration: 0.8 }}
  className="max-w-md"
  >
@@ -43,7 +43,7 @@ export function ExploreDestinations() {
  key={dest.id}
  initial={{ opacity: 0, y: 50 }}
  whileInView={{ opacity: 1, y: 0 }}
- viewport={{ once: true }}
+ viewport={{ once: true, margin: "100px" }}
  transition={{ duration: 0.8, delay: i * 0.2 }}
  className={`relative flex flex-col items-center w-32 md:w-48 clay-card p-2 ${i === 1 ? 'mb-12' : ''}`}
  >

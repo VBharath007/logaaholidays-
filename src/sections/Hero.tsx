@@ -90,38 +90,39 @@ export function Hero({
         <div className="absolute inset-0 z-20 pointer-events-none flex items-center justify-center overflow-hidden">
           
           <div ref={text1Ref} className="absolute left-[10%] md:left-[15%] max-w-xl opacity-0 -translate-x-[100px]">
-            <h2 className="text-5xl md:text-7xl font-display font-bold text-white drop-shadow-xl mb-4">
-              Discover the <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">Extraordinary</span>
+            <h2 className="text-5xl md:text-7xl font-display font-extrabold text-white drop-shadow-2xl mb-4 leading-tight">
+              Madurai <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">No. 1</span> <br/>
+              Travel Agent
             </h2>
-            <p className="text-xl text-white/90 drop-shadow-md">Step into a world where every journey is a masterpiece.</p>
+            <p className="text-xl md:text-2xl text-white/90 drop-shadow-lg font-medium">Your trusted local experts for unforgettable tour experiences.</p>
           </div>
 
           <div ref={text2Ref} className="absolute right-[10%] md:right-[15%] max-w-xl opacity-0 translate-x-[100px] text-right">
-            <h2 className="text-5xl md:text-7xl font-display font-bold text-white drop-shadow-xl mb-4">
-              India's Rich <br/><span className="text-transparent bg-clip-text bg-gradient-to-l from-orange-400 to-red-500">Heritage</span>
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-white drop-shadow-xl mb-4">
+              Expert Travel Planners, <br/><span className="text-transparent bg-clip-text bg-gradient-to-l from-orange-400 to-red-500">Tailor-Made Tour Packages</span>
             </h2>
-            <p className="text-xl text-white/90 drop-shadow-md">Cinematic experiences through ancient temples and spiritual ghats.</p>
+            <p className="text-lg md:text-xl text-white/90 drop-shadow-md">Every holiday route we design comes from dedicated local experts who actually grew up right here in Madurai.</p>
           </div>
 
           <div ref={text3Ref} className="absolute left-[10%] md:left-[15%] max-w-xl opacity-0 -translate-x-[100px]">
-            <h2 className="text-5xl md:text-7xl font-display font-bold text-white drop-shadow-xl mb-4">
-              Handcrafted <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-600">Adventures</span>
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-white drop-shadow-xl mb-4">
+              Every Stay, Picked <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-600">Like It's for Our Own Family</span>
             </h2>
-            <p className="text-xl text-white/90 drop-shadow-md">Curated for travelers who seek more than just a checklist.</p>
+            <p className="text-lg md:text-xl text-white/90 drop-shadow-md">No copy-paste packages. We choose only what we'd book for someone we love.</p>
           </div>
 
           <div ref={text4Ref} className="absolute right-[10%] md:right-[15%] max-w-xl opacity-0 translate-x-[100px] text-right">
-            <h2 className="text-5xl md:text-7xl font-display font-bold text-white drop-shadow-xl mb-4">
-              Luxury <br/><span className="text-transparent bg-clip-text bg-gradient-to-l from-yellow-400 to-amber-600">Cruises</span>
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-white drop-shadow-xl mb-4">
+              Top Tour Operator, <br/><span className="text-transparent bg-clip-text bg-gradient-to-l from-yellow-400 to-amber-600">Authentic Madurai Experience</span>
             </h2>
-            <p className="text-xl text-white/90 drop-shadow-md">Experience the ultimate luxury on the high seas with our exclusive cruise packages.</p>
+            <p className="text-lg md:text-xl text-white/90 drop-shadow-md">Hotels,Local drivers,temple timings and Local Tips — we offer the best Madurai tour packages backed by deep local knowledge.</p>
           </div>
 
           <div ref={text5Ref} className="absolute left-[10%] md:left-[15%] max-w-xl opacity-0 -translate-x-[100px]">
-            <h2 className="text-5xl md:text-7xl font-display font-bold text-white drop-shadow-xl mb-4">
-              Your Journey <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-500">Begins Here</span>
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-white drop-shadow-xl mb-4">
+              Your Madurai Story <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-500">Starts With Us</span>
             </h2>
-            <p className="text-xl text-white/90 drop-shadow-md">Scroll down to explore all our exclusive packages.</p>
+            <p className="text-lg md:text-xl text-white/90 drop-shadow-md">Scroll on — genuine local know-how and honest hospitality await your holiday.</p>
           </div>
 
         </div>

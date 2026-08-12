@@ -8,7 +8,7 @@ import { useSEO } from '../hooks/useSEO'
 import { getPackageLink, packagesDatabase } from './PackageDetails'
 
 const places = [
-  { id: 'shirdi', name: 'Shirdi', images: ['/assets/shiridi/hero/shirdi1.webp', '/assets/shiridi/hero/shirdi2.webp', '/assets/shiridi/hero/shirdi3.webp'] },
+  { id: 'shirdi', name: 'Shirdi', images: ['/assets/shiridi/shd1(small).webp', '/assets/shiridi/shd2(small).webp', '/assets/shiridi/shd4(small).webp'] },
   { id: 'varanasi', name: 'Varanasi', images: ['/assets/Uttar Pradesh1.webp', '/assets/Uttar Pradesh3.webp', '/assets/Uttar Pradesh4.webp'] },
   { id: 'agra', name: 'Agra', images: ['/assets/Uttar Pradesh2.webp', '/assets/dehli/dehli.webp', '/assets/dehli/dehli2.webp'] },
   { id: 'goldentriangle', name: 'Golden Triangle', images: ['/assets/dehli/dehli.webp', '/assets/dehli/dehli2.webp', '/assets/dehli/dehli3.webp'] },
@@ -55,7 +55,7 @@ export function NorthIndiaPackage() {
         {/* Background Aerial Image */}
         <div className="absolute inset-0 overflow-hidden rounded-b-[4rem]">
           <img loading="lazy"
-            src='/assets/megalaya1.webp'
+            src='/assets/Uttar Pradesh4.webp'
             alt="North India Heritage"
             className="w-full h-full object-cover opacity-60"
           />
@@ -177,8 +177,7 @@ export function NorthIndiaPackage() {
         </div>
       </section>
 
-      {/* 3. Category Cards Section */}
-      <section className="px-6 py-16 max-w-[1000px] mx-auto">
+      <section className="px-6 py-16 max-w-[1200px] mx-auto">
         <div className="mb-12 text-center">
           <h2 className="text-3xl md:text-5xl font-display font-bold text-slate-900 mb-4 uppercase tracking-wide">
             Explore North India
@@ -186,7 +185,7 @@ export function NorthIndiaPackage() {
           <p className="text-slate-600 font-medium">Choose your spiritual journey</p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-10">
+        <div className="grid md:grid-cols-3 gap-8">
           {/* Shirdi Card */}
           <div className="group relative rounded-[2.5rem] overflow-hidden bg-white shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-slate-100 flex flex-col h-[450px]">
             <div className="absolute inset-0">
@@ -214,6 +213,22 @@ export function NorthIndiaPackage() {
               <h3 className="text-3xl font-display font-bold text-white mb-3 drop-shadow-md">Varanasi Tours</h3>
               <p className="text-white/90 text-sm mb-8 drop-shadow-md max-w-sm">Discover the spiritual heart of India with our premium Kasi packages.</p>
               <Link to="/north-india-tour-packages/varanasi-tours" className="inline-flex items-center justify-center w-full bg-[#89d4cf] text-slate-900 font-bold py-4 rounded-xl hover:bg-[#72c2bd] transition-colors shadow-lg">
+                Explore Tour
+              </Link>
+            </div>
+          </div>
+
+          {/* Golden Triangle Card */}
+          <div className="group relative rounded-[2.5rem] overflow-hidden bg-white shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-slate-100 flex flex-col h-[450px]">
+            <div className="absolute inset-0">
+              <img loading="lazy" src="/assets/dehli/dehli.webp" alt="Golden Triangle Tour Packages" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+            </div>
+
+            <div className="relative z-10 p-8 flex flex-col h-full justify-end text-center items-center">
+              <h3 className="text-3xl font-display font-bold text-white mb-3 drop-shadow-md">Golden Triangle</h3>
+              <p className="text-white/90 text-sm mb-8 drop-shadow-md max-w-sm">Explore the majestic heritage of Delhi, Agra, and Jaipur.</p>
+              <Link to="/north-india-tour-packages/golden-triangle-tours" className="inline-flex items-center justify-center w-full bg-[#89d4cf] text-slate-900 font-bold py-4 rounded-xl hover:bg-[#72c2bd] transition-colors shadow-lg">
                 Explore Tour
               </Link>
             </div>

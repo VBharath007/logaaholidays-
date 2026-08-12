@@ -76,7 +76,7 @@ function FeatureCard({ icon: Icon, title, description, delay }: FeatureCardProps
  <motion.div
  initial={{ opacity: 0, y: 50 }}
  whileInView={{ opacity: 1, y: 0 }}
- viewport={{ once: true }}
+ viewport={{ once: true, margin: "100px" }}
  transition={{ duration: 0.8, delay }}
  whileHover={{ y: -5 }}
  onMouseMove={handleMouseMove}

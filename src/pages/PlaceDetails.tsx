@@ -259,7 +259,7 @@ export function PlaceDetails() {
                   {sortedLocalPlaces.slice(0, 4).map((subPlace: any) => (
                     <Link
                       key={subPlace.id}
-                      to={`/place/${state}/${subPlace.id}`}
+                      to={`/place/${state}/${placeId}/${subPlace.id}`}
                       className="bg-white rounded-[2rem] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.03)] border border-slate-100 flex flex-col group hover:shadow-[0_15px_40px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300"
                     >
                       <div className="relative h-48 overflow-hidden">
@@ -538,10 +538,12 @@ export function PlaceDetails() {
         </div>
 
         <div className="flex overflow-x-auto gap-6 pb-8 snap-x hide-scrollbar">
-          {otherPlaces.map((otherPlace: any) => (
+          {otherPlaces.map((otherPlace: any) => {
+            const cityBase = resolvedCity ? resolvedCity.replace('-tourism', '') : '';
+            return (
             <Link 
               key={otherPlace.id} 
-              to={`/place/${state}/${otherPlace.id}`}
+              to={`/place/${state}/${cityBase}/${otherPlace.id}`}
               className={`${clayCard} min-w-[280px] md:min-w-[320px] max-w-[320px] flex flex-col overflow-hidden group snap-start shrink-0 block cursor-pointer`}
             >
               <div className="relative h-48 m-2 rounded-[2rem] overflow-hidden">
@@ -558,7 +560,8 @@ export function PlaceDetails() {
                 </span>
               </div>
             </Link>
-          ))}
+          );
+          })}
         </div>
       </div>
       

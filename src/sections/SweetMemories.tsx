@@ -7,23 +7,23 @@ export function SweetMemories() {
  <section className="py-24 px-6 bg-[var(--color-bg-white)] overflow-hidden">
  <div className="max-w-7xl mx-auto">
  <div className="text-center mb-20">
- <h2 className="text-4xl md:text-5xl font-display font-bold text-[var(--color-neutral-black)] mb-3">Travel to make sweet memories</h2>
- <p className="text-[var(--color-neutral-medium)] font-medium tracking-wide">Find trips that fit a flexible lifestyle</p>
+ <h2 className="text-4xl md:text-5xl font-display font-bold text-[var(--color-neutral-black)] mb-3">Experience the Soul of Tamil Nadu</h2>
+ <p className="text-[var(--color-neutral-medium)] font-medium tracking-wide">Discover the magic of Madurai with journeys crafted for unforgettable memories</p>
  </div>
 
  <div className="grid lg:grid-cols-2 gap-20 items-center">
  {/* Left Content */}
  <div className="space-y-12">
  {[
- { icon: Compass, title: 'Find trips that fit your freedom', desc: 'Traveling allows freedom and flexibility. Without strict schedules, you can easily alter plans.' },
- { icon: Calendar, title: 'Get back to nature by travel', desc: 'The world is an amazing place and you can find a unique definition for your unforgettable journey.' },
- { icon: UserCircle, title: 'Reignite those travel flashbacks', desc: 'Make the whole journey an adventure easily and remember those glorious times.' },
+ { icon: Compass, title: 'Immerse in Ancient Heritage', desc: 'Walk through the historic temple streets of Madurai and feel the vibrant culture that has thrived for centuries.' },
+ { icon: Calendar, title: 'Authentic Local Experiences', desc: 'From the majestic Meenakshi Amman Temple to hidden local spots, explore Tamil Nadu like a true local.' },
+ { icon: UserCircle, title: 'Unmatched South Indian Hospitality', desc: 'Every trip is thoughtfully designed to bring you the warmth, tradition, and culinary delights of Madurai.' },
  ].map((item, i) => (
  <motion.div 
  key={i}
  initial={{ opacity: 0, x: -30 }}
  whileInView={{ opacity: 1, x: 0 }}
- viewport={{ once: true }}
+ viewport={{ once: true, margin: "100px" }}
  transition={{ delay: i * 0.15 }}
  className="flex gap-6"
  >
@@ -40,12 +40,12 @@ export function SweetMemories() {
  <motion.div
  initial={{ opacity: 0, y: 20 }}
  whileInView={{ opacity: 1, y: 0 }}
- viewport={{ once: true }}
+ viewport={{ once: true, margin: "100px" }}
  transition={{ delay: 0.5 }}
  className="pt-4"
  >
  <Link to="/about" className="inline-flex px-8 py-3.5 text-sm font-bold text-white clay-btn-secondary">
- Find your explore
+ Discover Madurai
  </Link>
  </motion.div>
  </div>
@@ -55,11 +55,11 @@ export function SweetMemories() {
  <motion.div 
  initial={{ opacity: 0, scale: 0.95 }}
  whileInView={{ opacity: 1, scale: 1 }}
- viewport={{ once: true }}
+ viewport={{ once: true, margin: "100px" }}
  className="relative w-full max-w-[400px] aspect-[4/5] rounded-[3rem] overflow-hidden clay-card p-2"
  >
  <img loading="lazy" 
- src='/assets/madurai/mennachi amman temple.webp' 
+ src='/assets/meenakshi amman temple.png' 
  alt="Meenakshi Amman Temple" 
  className="w-full h-full object-cover rounded-[2.5rem]"
  />
@@ -69,7 +69,7 @@ export function SweetMemories() {
  <motion.div 
  initial={{ opacity: 0, x: -20 }}
  whileInView={{ opacity: 1, x: 0 }}
- viewport={{ once: true }}
+ viewport={{ once: true, margin: "100px" }}
  transition={{ delay: 0.6 }}
  className="absolute top-[20%] left-0 lg:-left-12 clay-badge bg-white p-3 rounded-2xl flex items-center gap-3 z-10"
  >
@@ -84,7 +84,7 @@ export function SweetMemories() {
  <motion.div 
  initial={{ opacity: 0, x: 20 }}
  whileInView={{ opacity: 1, x: 0 }}
- viewport={{ once: true }}
+ viewport={{ once: true, margin: "100px" }}
  transition={{ delay: 0.7 }}
  className="absolute top-[50%] right-0 lg:-right-12 clay-badge bg-white p-3 rounded-2xl flex items-center gap-3 z-10"
  >
@@ -99,7 +99,7 @@ export function SweetMemories() {
  <motion.div 
  initial={{ opacity: 0, y: 20 }}
  whileInView={{ opacity: 1, y: 0 }}
- viewport={{ once: true }}
+ viewport={{ once: true, margin: "100px" }}
  transition={{ delay: 0.8 }}
  className="absolute bottom-[20%] left-4 lg:left-0 clay-badge bg-white p-3 rounded-2xl flex items-center gap-3 z-10"
  >

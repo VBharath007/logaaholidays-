@@ -6,34 +6,34 @@ const popularPlaces = [
   { 
     id: 1, 
     name: 'Madurai Meenakshi Temple', 
-    location: 'Tamil Nadu, India', 
+    location: 'Madurai, Tamil Nadu, India', 
     price: 'On Request', 
-    image: '/assets/madurai/mennachi amman temple.webp',
-    link: '/tour-packages/madurai-tours'
+    image: '/assets/meenakshi amman temple.png',
+    link: '/place/tamilnadu/madurai/meenakshi-temple'
   },
   { 
     id: 2, 
-    name: 'Munnar Tea Estates', 
-    location: 'Kerala, India', 
+    name: 'Thirumalai Nayakkar Mahal', 
+    location: 'Madurai, Tamil Nadu, India', 
     price: 'On Request', 
-    image: '/assets/munnar.webp',
-    link: '/tour-packages/kerala-tours'
+    image: '/assets/madurai/mahal.webp',
+    link: '/place/tamilnadu/madurai/thirumalai-nayak'
   },
   { 
     id: 3, 
-    name: 'Shirdi Sai Baba Temple', 
-    location: 'Maharashtra, India', 
+    name: 'Alagar Kovil', 
+    location: 'Madurai, Tamil Nadu, India', 
     price: 'On Request', 
-    image: '/assets/varanasi and shiridi/Samadhi-Mandir-Sai-Baba-Photo-91-1320x880.webp',
-    link: '/tour-packages/shirdi-tours'
+    image: '/assets/madurai/alagarkovil.webp',
+    link: '/place/tamilnadu/madurai/alagar-koyil'
   },
   { 
     id: 4, 
-    name: 'Kashi Vishwanath Temple', 
-    location: 'Uttar Pradesh, India', 
+    name: 'Thiruparankundram Temple', 
+    location: 'Madurai, Tamil Nadu, India', 
     price: 'On Request', 
-    image: '/assets/varanasi and shiridi/kashivishwanathtemple.webp',
-    link: '/tour-packages/varanasi-tours'
+    image: '/assets/madurai/thirupurakundaram.webp',
+    link: '/place/tamilnadu/madurai/tirupparankundram'
   },
 ]
 
@@ -49,7 +49,7 @@ export function PopularPlaces() {
             <p className="text-[var(--color-neutral-dark)] text-sm tracking-wide">Let's enjoy this heaven on earth</p>
           </div>
           <p className="text-[var(--color-neutral-medium)] text-sm max-w-sm">
-            Discover our handpicked destinations featuring historic temple towns, tranquil backwaters, and misty hill stations. Click to explore customized packages.
+            Experience handpicked destinations with the Madurai Best Travel Agency. We offer customized tour packages featuring historic temple towns, tranquil backwaters, and misty hill stations.
           </p>
         </div>
 
@@ -65,7 +65,7 @@ export function PopularPlaces() {
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{ once: true, margin: "100px" }}
                 transition={{ delay: i * 0.1 }}
                 className="clay-card p-3 rounded-[2rem] h-full"
               >

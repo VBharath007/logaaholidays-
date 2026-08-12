@@ -33,7 +33,7 @@ export function BookTicketsBanner() {
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, margin: "100px" }}
           onClick={togglePlay}
           className="relative w-full h-[400px] md:h-[500px] rounded-[3rem] overflow-hidden clay-card p-2 group cursor-pointer"
         >
