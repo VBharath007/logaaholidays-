@@ -2399,11 +2399,11 @@ export const destinationsData: Record<string, any> = {
     state: 'International',
     overview: {
       title: 'Malaysia Tourism',
-      description: 'Malaysia is a beautiful country known for its beaches, rainforests and mix of Malay, Chinese, Indian and European cultural influences.'
+      description: 'Malaysia is a vibrant Southeast Asian country known for its breathtaking juxtaposition of modern cities and ancient rainforests. It is split into Peninsular Malaysia and East Malaysia (Malaysian Borneo), offering diverse landscapes ranging from the iconic Petronas Twin Towers in Kuala Lumpur to the pristine beaches of Langkawi and the biodiverse jungles of Borneo. Its multicultural heritage of Malay, Chinese, Indian, and indigenous cultures makes it a gastronomical and cultural paradise.'
     },
     history: {
       title: 'Malaysia History',
-      description: 'Malaysia has a rich cultural heritage shaped by the British Empire and indigenous influences.'
+      description: 'Malaysia\'s history is a tapestry of various empires and colonial influences. The ancient Srivijaya and Majapahit empires once held sway before the rise of the Malacca Sultanate in the 15th century, which became a vital trading hub. Successive colonization by the Portuguese, Dutch, and British left indelible marks on its architecture and society. Independence was achieved in 1957, leading to rapid modernization and the formation of the diverse nation it is today.'
     },
     info: {
       idealDuration: '4 Nights 5 Days',
@@ -2417,7 +2417,13 @@ export const destinationsData: Record<string, any> = {
       festivals: 'Hari Raya, Chinese New Year, Deepavali',
       tips: 'Always carry an umbrella as rain can be unpredictable.'
     },
-    majorAttractions: [],
+    majorAttractions: [
+      { title: 'Petronas Twin Towers', description: 'Once the tallest buildings in the world, these iconic 88-story twin skyscrapers in Kuala Lumpur feature a stunning skybridge and Islamic-inspired architecture.' },
+      { title: 'Batu Caves', description: 'A prominent Hindu shrine in Selangor consisting of massive limestone caves, guarded by a towering golden statue of Lord Murugan, accessible via 272 vibrant colored steps.' },
+      { title: 'Mount Kinabalu', description: 'The highest peak in Malaysia, located in a UNESCO World Heritage site in Sabah, offering spectacular trekking and a rich diversity of flora and fauna.' },
+      { title: 'Langkawi Sky Bridge', description: 'A thrilling 125-meter curved pedestrian cable-stayed bridge suspended high above the lush rainforest of Mount Mat Cincang.' },
+      { title: 'Penang Hill', description: 'Offering panoramic views of George Town and the Penang bridge, accessible via a historic funicular railway.' }
+    ],
     placesToVisit: [],
     popularPackages: []
   },
@@ -2428,11 +2434,11 @@ export const destinationsData: Record<string, any> = {
     state: 'International',
     overview: {
       title: 'Singapore Tourism',
-      description: 'Singapore is an island city-state off southern Malaysia, is a global financial center with a tropical climate and multicultural population.'
+      description: 'Singapore, officially the Republic of Singapore, is a sunny, tropical island city-state in maritime Southeast Asia. Renowned as a global financial hub, it seamlessly blends towering skyscrapers with lush green spaces, earning the moniker \'City in a Garden.\' It offers world-class attractions, an impeccable public transport system, and a melting pot of cultures—Chinese, Malay, Indian, and Eurasian—which is most vividly expressed in its incredible culinary scene and diverse neighborhoods.'
     },
     history: {
       title: 'Singapore History',
-      description: 'Founded as a British trading colony in 1819, Singapore has grown into one of the world\'s most prosperous countries.'
+      description: 'Originally known as Temasek (Sea Town), Singapore was established as a British trading post in 1819 by Sir Stamford Raffles. Its strategic location at the southern tip of the Malay Peninsula quickly turned it into a major port. After enduring Japanese occupation during World War II, Singapore joined the Federation of Malaysia in 1963 but became a fully independent republic in 1965. Under the leadership of Lee Kuan Yew, it rapidly transformed from a developing nation to a prosperous first-world economy.'
     },
     info: {
       idealDuration: '3 Nights 4 Days',
@@ -2446,7 +2452,13 @@ export const destinationsData: Record<string, any> = {
       festivals: 'Chinese New Year, National Day',
       tips: 'Chewing gum is banned in Singapore. Be mindful of strict local laws.'
     },
-    majorAttractions: [],
+    majorAttractions: [
+      { title: 'Gardens by the Bay', description: 'A spectacular futuristic nature park featuring the iconic Supertree Grove, the Cloud Forest, and the Flower Dome.' },
+      { title: 'Marina Bay Sands', description: 'An integrated resort notable for its striking ship-like rooftop structure featuring an infinity pool and the Skypark observation deck.' },
+      { title: 'Universal Studios Singapore', description: 'A premier theme park located on Sentosa Island, offering thrilling rides and attractions based on blockbuster movies.' },
+      { title: 'Singapore Botanic Gardens', description: 'A 164-year-old tropical garden and Singapore\'s first UNESCO World Heritage Site, famous for its National Orchid Garden.' },
+      { title: 'Singapore Flyer', description: 'One of the world\'s largest giant observation wheels, providing breathtaking 360-degree views of the city skyline and beyond.' }
+    ],
     placesToVisit: [],
     popularPackages: []
   },
@@ -2457,11 +2469,11 @@ export const destinationsData: Record<string, any> = {
     state: 'International',
     overview: {
       title: 'Bali Tourism',
-      description: 'Bali is an Indonesian island known for its forested volcanic mountains, iconic rice paddies, beaches and coral reefs.'
+      description: 'Bali, known as the \'Island of the Gods,\' is a province of Indonesia celebrated for its breathtaking landscapes that include lush, terraced rice paddies, volcanic mountains, and pristine beaches. Its unique Hindu culture infuses every aspect of daily life, evident in the thousands of intricate temples, colorful daily offerings, and captivating traditional dances. Bali offers a perfect blend of spiritual awakening, adventurous surfing, and luxurious relaxation.'
     },
     history: {
       title: 'Bali History',
-      description: 'Bali has a deeply spiritual and unique Hindu culture that influences every aspect of life on the island.'
+      description: 'Bali\'s history spans from early Paleolithic settlements to the powerful Majapahit Empire in the 14th century, which brought a massive influx of Javanese Hindu culture. While the rest of Indonesia embraced Islam, Bali retained its unique form of Hinduism. The island fell under Dutch colonial rule in the early 20th century before Indonesia declared independence in 1945. Today, Bali preserves its rich heritage while navigating its role as a premier global tourist destination.'
     },
     info: {
       idealDuration: '5 Nights 6 Days',
@@ -2475,7 +2487,13 @@ export const destinationsData: Record<string, any> = {
       festivals: 'Nyepi, Galungan',
       tips: 'Respect the local culture and dress modestly when visiting temples.'
     },
-    majorAttractions: [],
+    majorAttractions: [
+      { title: 'Uluwatu Temple', description: 'A spectacular Balinese sea temple perched on a steep cliff 70 meters above the Indian Ocean, famous for its sunset views and traditional Kecak fire dances.' },
+      { title: 'Sacred Monkey Forest Sanctuary', description: 'A lush jungle oasis in Ubud housing over a thousand long-tailed macaques alongside ancient temple ruins covered in banyan roots.' },
+      { title: 'Tanah Lot Temple', description: 'An iconic pilgrimage site situated on a dramatic rock formation rising out of the sea, heavily photographed during sunset.' },
+      { title: 'Tegallalang Rice Terrace', description: 'Famous for its beautiful scenes of rice paddies utilizing the traditional Balinese cooperative irrigation system known as Subak.' },
+      { title: 'Mount Batur', description: 'An active volcano offering popular sunrise trekking experiences, providing stunning panoramic views of the surrounding crater lake.' }
+    ],
     placesToVisit: [],
     popularPackages: []
   },
@@ -2486,11 +2504,11 @@ export const destinationsData: Record<string, any> = {
     state: 'International',
     overview: {
       title: 'Thailand Tourism',
-      description: 'Thailand is a Southeast Asian country. It\'s known for tropical beaches, opulent royal palaces, ancient ruins and ornate temples.'
+      description: 'Thailand, the \'Land of Smiles,\' is a captivating Southeast Asian kingdom known for its stunning tropical beaches, opulent royal palaces, ancient ruins, and highly ornate temples displaying figures of Buddha. It offers an intoxicating mix of hyper-modern cities like Bangkok and tranquil, culturally rich provinces like Chiang Mai. Thai cuisine, characterized by its complex interplay of spicy, sour, sweet, and salty flavors, is celebrated worldwide.'
     },
     history: {
       title: 'Thailand History',
-      description: 'Formerly known as Siam, Thailand is the only Southeast Asian country that was never colonized by a European power.'
+      description: 'Formerly known as Siam, Thailand holds the unique distinction of being the only Southeast Asian nation to have never been colonized by a European power. Its history is marked by powerful kingdoms such as Sukhothai and Ayutthaya, whose spectacular ruins still stand today. The Chakri dynasty, established in 1782, moved the capital to Bangkok and ushered in the modern era, carefully navigating international relations to maintain independence.'
     },
     info: {
       idealDuration: '4 Nights 5 Days',
@@ -2504,7 +2522,48 @@ export const destinationsData: Record<string, any> = {
       festivals: 'Songkran, Loy Krathong',
       tips: 'Always show respect to the Thai Royal Family.'
     },
-    majorAttractions: [],
+    majorAttractions: [
+      { title: 'The Grand Palace', description: 'The spectacular former residence of the Kings of Siam in Bangkok, featuring exquisite architecture and the highly revered Temple of the Emerald Buddha (Wat Phra Kaew).' },
+      { title: 'Phi Phi Islands', description: 'A group of stunning islands in the Andaman Sea, featuring towering limestone cliffs, turquoise waters, and vibrant marine life.' },
+      { title: 'Ayutthaya Historical Park', description: 'A UNESCO World Heritage site containing the magnificent ruins of the second capital of the Siamese Kingdom, founded in 1350.' },
+      { title: 'Wat Arun', description: 'An iconic riverside temple in Bangkok distinguished by its towering spires intricately decorated with colorful porcelain.' },
+      { title: 'Doi Suthep', description: 'A deeply sacred mountain featuring the gleaming Wat Phra That Doi Suthep temple, offering panoramic views of Chiang Mai city.' }
+    ],
+    placesToVisit: [],
+    popularPackages: []
+  },
+  'sri-lanka-tourism': {
+    id: 'sri-lanka-tourism',
+    name: 'Sri Lanka',
+    image: '/assets/srilankha.png',
+    state: 'International',
+    overview: {
+      title: 'Sri Lanka Tourism',
+      description: 'Sri Lanka, known as the \'Pearl of the Indian Ocean\', is an island nation celebrated for its diverse landscapes, ranging from rainforests and arid plains to highlands and pristine sandy beaches. It boasts a rich cultural heritage with eight UNESCO World Heritage Sites, abundant wildlife including elephants and leopards, and world-famous Ceylon tea plantations.'
+    },
+    history: {
+      title: 'Sri Lanka History',
+      description: 'With a documented history spanning over 3,000 years, Sri Lanka was a crucial stop on the ancient Silk Road. It has seen the rise and fall of great ancient kingdoms like Anuradhapura and Polonnaruwa, heavily influenced by the arrival of Buddhism. The island was later colonized by the Portuguese, Dutch, and British, gaining independence in 1948.'
+    },
+    info: {
+      idealDuration: '5 Nights 6 Days',
+      nearestCity: 'Colombo',
+      bestTime: 'December to March (West/South), April to September (East)',
+      peakSeason: 'December to March',
+      weather: 'Tropical',
+      internet: 'Good',
+      stdCode: '+94',
+      languages: 'Sinhala, Tamil, English',
+      festivals: 'Esala Perahera, Sinhala and Tamil New Year',
+      tips: 'Always remove shoes and hats when entering Buddhist temples.'
+    },
+    majorAttractions: [
+      { title: 'Sigiriya Rock Fortress', description: 'An ancient palace and fortress complex carved into a massive column of rock, renowned for its frescoes and water gardens.' },
+      { title: 'Temple of the Sacred Tooth Relic', description: 'Located in Kandy, this highly revered Buddhist temple houses the relic of the tooth of the Buddha.' },
+      { title: 'Yala National Park', description: 'Famous for having one of the highest leopard densities in the world, along with elephants, crocodiles, and diverse birdlife.' },
+      { title: 'Galle Fort', description: 'A beautifully preserved colonial-era fort built by the Portuguese and fortified by the Dutch, blending European architecture and South Asian traditions.' },
+      { title: 'Nine Arch Bridge', description: 'An iconic colonial-era railway bridge in Ella, famous for its spectacular setting amidst lush green tea fields.' }
+    ],
     placesToVisit: [],
     popularPackages: []
   }

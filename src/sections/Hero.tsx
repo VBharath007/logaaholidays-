@@ -113,9 +113,9 @@ export function Hero({
 
           <div ref={text4Ref} className="absolute right-[10%] md:right-[15%] max-w-xl opacity-0 translate-x-[100px] text-right">
             <h2 className="text-4xl md:text-5xl font-display font-bold text-white drop-shadow-xl mb-4">
-              Top Tour Operator, <br/><span className="text-transparent bg-clip-text bg-gradient-to-l from-yellow-400 to-amber-600">Authentic Madurai Experience</span>
+              Top Tour Operator, <br/><span className="text-transparent bg-clip-text bg-gradient-to-l from-yellow-400 to-amber-600">Madurai Experience</span>
             </h2>
-            <p className="text-lg md:text-xl text-white/90 drop-shadow-md">Hotels,Local drivers,temple timings and Local Tips — we offer the best Madurai tour packages backed by deep local knowledge.</p>
+            <p className="text-lg md:text-xl text-white/90 drop-shadow-md">Hotels,Cab drivers,temple timings and Local Tips — we offer the best Madurai tour packages backed by deep local knowledge.</p>
           </div>
 
           <div ref={text5Ref} className="absolute left-[10%] md:left-[15%] max-w-xl opacity-0 -translate-x-[100px]">

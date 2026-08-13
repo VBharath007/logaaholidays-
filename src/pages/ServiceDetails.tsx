@@ -1,21 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ChevronRight, MapPin, Phone, Mail, Navigation, Plane, Globe2, TreePine, Heart } from 'lucide-react';
-import { ComprehensiveEnquiryForm } from '../components/ComprehensiveEnquiryForm';
+import { ServiceEnquiryRouter } from '../components/forms/ServiceEnquiryRouter';
 
 export function ServiceDetails() {
  const { serviceId } = useParams<{ serviceId: string }>();
  const [serviceTitle, setServiceTitle] = useState('');
 
  const allServices = [
- 'Tour Operators',
  'Car & Coach Rental',
  'Flight Booking',
  'Railway Ticket Booking',
  'Passport & Visa Service',
- 'Travel Insurance Service',
- 'Event Management',
- 'Hotel Booking'
+ 'Travel Insurance Service'
  ];
 
  useEffect(() => {
@@ -32,11 +29,11 @@ export function ServiceDetails() {
  case 'tour-operators':
  return '/assets/Mizoram2.webp'; // Taj Mahal
  case 'car-coach-rental':
- return '/assets/manipur2.webp'; // Luxury SUV in landscape
+ return '/assets/services/car 1.png'; // Luxury SUV in landscape
  case 'flight-booking':
  return '/assets/services/flight.png';
  case 'railway-ticket-booking':
- return '/assets/maharashtra1.webp'; // Train station
+ return '/assets/services/train 2.png'; // Train station
  case 'passport-visa-service':
  return '/assets/services/visa.png';
  case 'travel-insurance-service':
@@ -55,11 +52,11 @@ export function ServiceDetails() {
  case 'tour-operators':
  return '/assets/megalaya1.webp'; // Kerala backwaters boat
  case 'car-coach-rental':
- return '/assets/karnataka1.webp'; // Premium car interior
+ return '/assets/services/car 2.png'; // Premium car interior
  case 'flight-booking':
  return '/assets/services/flight.png';
  case 'railway-ticket-booking':
- return '/assets/Uttar Pradesh1.webp'; // Inside a train
+ return '/assets/services/train 1.png'; // Inside a train
  case 'passport-visa-service':
  return '/assets/services/visa.png';
  case 'travel-insurance-service':
@@ -290,7 +287,7 @@ export function ServiceDetails() {
 
  {/* Comprehensive Enquiry Form */}
  <div className="mt-4">
- <ComprehensiveEnquiryForm />
+    <ServiceEnquiryRouter serviceId={serviceId || ''} />
  </div>
  
  </div>

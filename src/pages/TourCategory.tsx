@@ -7,7 +7,7 @@ import { packagesDatabase, getPackageDisplayTitle, getPackageLink, normalizeDura
 const destinationGroups = [
   {
     region: 'Tamil Nadu',
-    places: ['Madurai Tours', 'Rameshwaram Tours', 'Kanyakumari Tours', 'Ooty Tours', 'Kodaikanal Tours', 'Chennai Tours']
+    places: ['Madurai Tours', 'Rameshwaram Tours', 'Kanyakumari Tours', 'Ooty Tours', 'Kodaikanal Tours', 'Chennai Tours', 'Courtallam Tours', 'Pillayarpatti Tours', 'Tiruchendur Tours', 'Palani Tours', 'Trichy Tours', 'Thanjavur Tours']
   },
   {
     region: 'Kerala',

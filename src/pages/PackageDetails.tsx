@@ -189,22 +189,13 @@ const PackageInquiryForm = ({ packageTitle }: { packageTitle: string }) => {
                         <div className="flex gap-2">
                             <div className="relative flex-1 group">
                                 <Users2 className={iconClasses('adults')} />
-                                <select className={inputClasses('adults') + " appearance-none"} onFocus={() => setFocusedField('adults')} onBlur={() => setFocusedField(null)} required>
-                                    <option value="" className="bg-[var(--color-deep-teal)] text-white">Adults</option>
-                                    {[1, 2, 3, 4, 5, 6].map(n => <option key={n} value={n} className="bg-[var(--color-deep-teal)] text-white">{n}</option>)}
-                                </select>
+                                <input type="number" min="1" placeholder="Adults (12+)" className={inputClasses('adults')} onFocus={() => setFocusedField('adults')} onBlur={() => setFocusedField(null)} required />
                             </div>
                             <div className="relative flex-1">
-                                <select className="w-full bg-white/5 px-3 py-3.5 rounded-xl border border-white/10 outline-none text-sm font-medium text-white appearance-none hover:bg-white/10 transition-colors">
-                                    <option value="" className="bg-[var(--color-deep-teal)] text-white">Child</option>
-                                    {[0, 1, 2, 3, 4].map(n => <option key={n} value={n} className="bg-[var(--color-deep-teal)] text-white">{n}</option>)}
-                                </select>
+                                <input type="number" min="0" placeholder="Child (2-12)" className="w-full bg-white/5 px-3 py-3.5 rounded-xl border border-white/10 outline-none text-sm font-medium text-white placeholder-white/60 hover:bg-white/10 focus:border-white/30 focus:bg-white/10 transition-colors" />
                             </div>
                             <div className="relative flex-1">
-                                <select className="w-full bg-white/5 px-3 py-3.5 rounded-xl border border-white/10 outline-none text-sm font-medium text-white appearance-none hover:bg-white/10 transition-colors">
-                                    <option value="" className="bg-[var(--color-deep-teal)] text-white">Infant</option>
-                                    {[0, 1, 2, 3].map(n => <option key={n} value={n} className="bg-[var(--color-deep-teal)] text-white">{n}</option>)}
-                                </select>
+                                <input type="number" min="0" placeholder="Infant (0-2)" className="w-full bg-white/5 px-3 py-3.5 rounded-xl border border-white/10 outline-none text-sm font-medium text-white placeholder-white/60 hover:bg-white/10 focus:border-white/30 focus:bg-white/10 transition-colors" />
                             </div>
                         </div>
 
@@ -12612,7 +12603,7 @@ export const packagesDatabase: Record<string, any> = {
     '2028': {
         "title": "Madurai to Kanyakumari One Day Tour Package",
         "image": "/assets/kaniyakumari/vivekandhar.webp",
-        "heroImage": "/assets/madurai 63 package/1918x642/maduraitokanyakumari.webp",
+        "heroImage": "/assets//kaniyakumari/vivekandhar.webp",
         "overview": {
             "duration": "One Day",
             "destination": "Madurai",
@@ -21200,18 +21191,18 @@ export const packagesDatabase: Record<string, any> = {
         ],
         policies: { payment: 'No Down Payment, No Cost EMI on 3/6 months tenure available.', cancellation: 'Standard cancellation applies.' }
     },
-    '45': {
-        id: '45',
-        title: '9 Days Trip from Madurai | Madurai, Trichy, Thanjavur, Kumbakonam, Rameshwaram, Kanyakumari, Kovalam & Trivandrum',
-        image: "/assets/rameswaram/sm4.webp",
-        heroImage: "/assets/rameswaram/big5.webp",
-        overview: { duration: '8 Nights / 9 Days', destination: 'Madurai, Trichy, Thanjavur, Kumbakonam, Rameshwaram, Kanyakumari, Kovalam, Trivandrum', activities: 'Sightseeing', themes: 'Religious & Pilgrimage, Culture & Heritage' },
-        priceDetails: { label: 'Starts @', amount: 'Rs. 34495/-', status: 'On Request' },
-        itinerary: [{ day: 'Day 1', title: 'Arrival', description: 'Arrival and transfer to hotel.' }, { day: 'Day 2-9', title: 'Sightseeing', description: 'Guided tours as per itinerary.' }],
-        inclusions: ['Hotel', 'Transportation by A/C Bus/Cab.', 'Buffet Breakfast', 'All sightseeing as per the itinerary.'],
-        exclusions: ['Personal Expenses'],
-        policies: { payment: '20% Advance Percentage', cancellation: 'Standard cancellation applies.' }
-    },
+    // '45': {
+    //     id: '45',
+    //     title: '9 Days Trip from Madurai | Madurai, Trichy, Thanjavur, Kumbakonam, Rameshwaram, Kanyakumari, Kovalam & Trivandrum',
+    //     image: "/assets/rameswaram/sm4.webp",
+    //     heroImage: "/assets/rameswaram/big5.webp",
+    //     overview: { duration: '8 Nights / 9 Days', destination: 'Madurai, Trichy, Thanjavur, Kumbakonam, Rameshwaram, Kanyakumari, Kovalam, Trivandrum', activities: 'Sightseeing', themes: 'Religious & Pilgrimage, Culture & Heritage' },
+    //     priceDetails: { label: 'Starts @', amount: 'Rs. 34495/-', status: 'On Request' },
+    //     itinerary: [{ day: 'Day 1', title: 'Arrival', description: 'Arrival and transfer to hotel.' }, { day: 'Day 2-9', title: 'Sightseeing', description: 'Guided tours as per itinerary.' }],
+    //     inclusions: ['Hotel', 'Transportation by A/C Bus/Cab.', 'Buffet Breakfast', 'All sightseeing as per the itinerary.'],
+    //     exclusions: ['Personal Expenses'],
+    //     policies: { payment: '20% Advance Percentage', cancellation: 'Standard cancellation applies.' }
+    // },
     '3001': {
         id: '3001',
         title: 'Chennai Local Sightseeing Tour Package | Best City Highlights',

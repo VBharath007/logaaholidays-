@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Star, ShieldCheck, Heart, MapPin, Quote } from 'lucide-react'
 import { Link } from 'react-router-dom'
@@ -12,36 +13,7 @@ const TornPaperBottom = () => (
   </div>
 )
 
-// Avatar color palette
-const avatarColors = [
-  'bg-[var(--color-primary-forest)]',
-  'bg-[var(--color-blue-ocean)]',
-  'bg-amber-500',
-  'bg-rose-500',
-  'bg-violet-600',
-  'bg-emerald-600',
-  'bg-orange-500',
-  'bg-teal-600',
-]
 
-const AvatarCircle = ({ name, size = 'md', colorIdx = 0 }: { name: string; size?: 'sm' | 'md' | 'lg'; colorIdx?: number }) => {
-  const letter = name.charAt(0).toUpperCase()
-  const sizeClass = size === 'sm' ? 'w-10 h-10 text-sm' : size === 'lg' ? 'w-16 h-16 text-2xl' : 'w-14 h-14 text-lg'
-  return (
-    <div className={`${sizeClass} ${avatarColors[colorIdx % avatarColors.length]} rounded-full flex items-center justify-center font-bold text-white border-2 border-white shadow-md flex-shrink-0`}>
-      {letter}
-    </div>
-  )
-}
-
-const reviews = [
-  { id: 1, name: 'Murugesan Rajan', location: 'Madurai, Tamil Nadu', quote: 'Logaa Holidays moolama enga family trip plan pannathu romba super experience aaguthu. Trip fulla ellame perfect ah arrange panni kuduthanga. Hotels and cab service ellame top class. Romba thanks team, definitely recommend pannuven!' },
-  { id: 2, name: 'Selvi Annamalai', location: 'Coimbatore, Tamil Nadu', quote: 'Customer service romba nalla irunthuchu. Enga budget kula best package select panni thandhanga. Driver romba polite ah iruntharu, safety aana journey. Next trip kandipa Logaa Holidays la than book pannuven. Worth every single penny!' },
-  { id: 3, name: 'Karthikeyan Subramani', location: 'Chennai, Tamil Nadu', quote: 'I was looking for a travel agent that can provide excellent packages. I found Logaa Holidays to be the best. They helped me get the best deal within my budget. I can assure that they offer the best service as I have experienced it myself.' },
-  { id: 4, name: 'Kavitha Palaniswami', location: 'Trichy, Tamil Nadu', quote: 'Shirdi trip enga family ku life-time memory aaguthu. Logaa Holidays pakka professional ah handle panni kuduthanga. Hotel booking, darshan slot ellame ready ah irundhuchu. Nanbargalukku kandipa suggest pannuven!' },
-  { id: 5, name: 'Sundaram Pillai', location: 'Tirunelveli, Tamil Nadu', quote: 'Varanasi trip plan pannathe oru dream aaga irundhuchu. Logaa Holidays andha dream ya reality aaguthu. Ganga Aarti paakanum nu oru desire irundhuchu, athai kandipa fulfill panni kuduthanga. Nandri!' },
-  { id: 6, name: 'Meenakshi Govindarajan', location: 'Madurai, Tamil Nadu', quote: 'Romba nalla service. Enga Kerala tour la guide romba helpful ah iruntharu. Every spot ah proper explain panni kudutharu. Booking process simple ah irundhuchu. Romba satisfied with Logaa Holidays!' },
-]
 
 const featured = {
   name: 'Loganathan Pandi',
@@ -50,6 +22,17 @@ const featured = {
 }
 
 export function TestimonialsPage() {
+  useEffect(() => {
+    const scriptId = 'elfsight-platform-script'
+    if (!document.getElementById(scriptId)) {
+      const script = document.createElement('script')
+      script.id = scriptId
+      script.src = "https://elfsightcdn.com/platform.js"
+      script.async = true
+      document.body.appendChild(script)
+    }
+  }, [])
+
   return (
     <div className="bg-[var(--color-bg-luxury)] min-h-screen">
 
@@ -107,33 +90,10 @@ export function TestimonialsPage() {
           <p className="text-[var(--color-neutral-medium)]">Read what thousands of happy travelers have experienced.</p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {reviews.map((review, i) => (
-            <motion.div
-              key={review.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="clay-card bg-white p-8 rounded-3xl relative flex flex-col group transition-transform duration-300"
-            >
-              <div className="flex items-center gap-4 mb-6">
-                <AvatarCircle name={review.name} colorIdx={i} />
-                <div>
-                  <h4 className="font-bold text-[var(--color-blue-ocean)] text-lg leading-tight">{review.name}</h4>
-                  <div className="flex items-center text-xs text-[var(--color-neutral-medium)] font-bold mt-1">
-                    <MapPin className="w-3 h-3 mr-1" /> {review.location}
-                  </div>
-                </div>
-              </div>
-              <p className="text-[var(--color-neutral-medium)] text-sm leading-relaxed mb-6 flex-1 italic">
-                "{review.quote}"
-              </p>
-              <div className="flex text-[var(--color-blue-ocean)]">
-                <Star className="w-4 h-4 fill-current" /><Star className="w-4 h-4 fill-current" /><Star className="w-4 h-4 fill-current" /><Star className="w-4 h-4 fill-current" /><Star className="w-4 h-4 fill-current" />
-              </div>
-            </motion.div>
-          ))}
+        <div className="w-full relative z-30 mt-8">
+          <div className="bg-white/40 backdrop-blur-md border border-white/60 p-4 md:p-8 rounded-[3rem] shadow-[0_20px_40px_rgba(0,0,0,0.05)] w-full overflow-hidden">
+            <div className="elfsight-app-22ab9f17-1f97-4949-9b55-2d536f9f98ab" data-elfsight-app-lazy></div>
+          </div>
         </div>
       </section>
 
