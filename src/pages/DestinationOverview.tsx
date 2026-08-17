@@ -428,7 +428,7 @@ export function DestinationOverview() {
             <h3 className="text-xl font-bold text-white mb-2">Get our assistance</h3>
             <p className="text-emerald-100 mb-6 text-sm">Want us to call you for easy booking?</p>
             <p className="text-white/70 text-xs uppercase tracking-wider mb-1">Or call us at</p>
-            <p className="text-2xl font-bold text-white">+91 98865 25253</p>
+            <p className="text-2xl font-bold text-white">+91 7397329776</p>
           </div>
 
         </div>

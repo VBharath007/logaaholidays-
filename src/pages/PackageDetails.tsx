@@ -2771,7 +2771,7 @@ export const packagesDatabase: Record<string, any> = {
         "seoTitle": "Kerala Beaches Tour Package 8 Nights 9 Days | Logaa Holidays",
         "seoDescription": "Book an 8 Nights 9 Days Kerala Beaches Tour covering Cochin, Marari, Alleppey, Varkala, Kovalam and Trivandrum with beach resorts, houseboat options and private cab."
     }
-,
+    ,
 
 
     '9005': {
@@ -4206,93 +4206,93 @@ export const packagesDatabase: Record<string, any> = {
     },
 
     '8007': {
-    "title": "Delhi City Tour Package",
-    "badge": "Golden Triangle Tour",
-    "image": "/assets/SMK/Delhi City Tour.webp",
-    "heroImage": "/assets/SMK hero/Delhi City Tour.webp",
-    "overview": {
-        "duration": "2 Nights / 3 Days",
-        "destination": "Old Delhi and New Delhi",
-        "activities": "Sightseeing, Heritage, Monuments, Markets",
-        "themes": "Golden Triangle Tours"
-    },
-    "priceDetails": {
-        "amount": "On Request",
-        "type": "per person"
-    },
-    "itinerary": [
-        {
-            "day": "Day 1",
-            "title": "Delhi Arrival and New Delhi Sightseeing",
-            "activities": [
-                "Pickup from Delhi Airport or railway station and hotel check-in.",
-                "Depending on arrival time, visit:",
-                "\u2022 India Gate",
-                "\u2022 Kartavya Path",
-                "\u2022 Rashtrapati Bhavan photo stop",
-                "\u2022 Parliament House photo stop",
-                "\u2022 Birla Mandir",
-                "\u2022 Gurudwara Bangla Sahib",
-                "\u2022 Connaught Place",
-                "Overnight stay in Delhi."
-            ]
+        "title": "Delhi City Tour Package",
+        "badge": "Golden Triangle Tour",
+        "image": "/assets/SMK/Delhi City Tour.webp",
+        "heroImage": "/assets/SMK hero/Delhi City Tour.webp",
+        "overview": {
+            "duration": "2 Nights / 3 Days",
+            "destination": "Old Delhi and New Delhi",
+            "activities": "Sightseeing, Heritage, Monuments, Markets",
+            "themes": "Golden Triangle Tours"
         },
-        {
-            "day": "Day 2",
-            "title": "Old Delhi and South Delhi Sightseeing",
-            "activities": [
-                "After breakfast, visit:",
-                "\u2022 Raj Ghat",
-                "\u2022 Red Fort photo stop or visit",
-                "\u2022 Jama Masjid",
-                "\u2022 Chandni Chowk",
-                "\u2022 Humayun\u2019s Tomb",
-                "\u2022 Lotus Temple",
-                "\u2022 Qutub Minar",
-                "\u2022 Akshardham Temple, depending on opening schedule",
-                "Return to the hotel.",
-                "Overnight stay in Delhi."
-            ]
+        "priceDetails": {
+            "amount": "On Request",
+            "type": "per person"
         },
-        {
-            "day": "Day 3",
-            "title": "Delhi Departure",
-            "activities": [
-                "Breakfast, check-out and transfer to Delhi Airport or railway station."
-            ]
-        }
-    ],
-    "inclusions": [
-        "Hotel accommodation in the selected category",
-        "Daily breakfast",
-        "Dinner when the MAP plan is selected",
-        "Private AC vehicle for transfers and sightseeing",
-        "Airport or railway station pickup and drop",
-        "Driver allowance",
-        "Fuel, toll and parking as specified",
-        "Sightseeing according to the itinerary",
-        "Logaa Holidays travel support",
-        "Flight or train booking assistance"
-    ],
-    "exclusions": [
-        "\u274c Flight or train tickets unless included",
-        "\u274c Monument entrance fees",
-        "\u274c Local guide charges",
-        "\u274c Lunch and unmentioned meals",
-        "\u274c Camera and video fees",
-        "\u274c Personal expenses",
-        "\u274c Travel insurance",
-        "\u274c Additional sightseeing",
-        "\u274c Early check-in and late check-out",
-        "\u274c Anything not mentioned under inclusions"
-    ],
-    "highlights": [
-        "Destinations Covered: Old Delhi and New Delhi",
-        "Night Stay: 2 Nights in Delhi"
-    ],
-    "keywords": "Delhi city tour package, Delhi sightseeing package, Delhi 2 nights 3 days package, New Delhi Old Delhi tour, Delhi holiday package",
-    "seoTitle": "Delhi City Tour Package - 2 Nights / 3 Days | Logaa Holidays",
-    "seoDescription": "Book Delhi City Tour Package for 2 Nights and 3 Days covering Old Delhi, New Delhi attractions, India Gate, Qutub Minar, and Akshardham Temple.",
+        "itinerary": [
+            {
+                "day": "Day 1",
+                "title": "Delhi Arrival and New Delhi Sightseeing",
+                "activities": [
+                    "Pickup from Delhi Airport or railway station and hotel check-in.",
+                    "Depending on arrival time, visit:",
+                    "\u2022 India Gate",
+                    "\u2022 Kartavya Path",
+                    "\u2022 Rashtrapati Bhavan photo stop",
+                    "\u2022 Parliament House photo stop",
+                    "\u2022 Birla Mandir",
+                    "\u2022 Gurudwara Bangla Sahib",
+                    "\u2022 Connaught Place",
+                    "Overnight stay in Delhi."
+                ]
+            },
+            {
+                "day": "Day 2",
+                "title": "Old Delhi and South Delhi Sightseeing",
+                "activities": [
+                    "After breakfast, visit:",
+                    "\u2022 Raj Ghat",
+                    "\u2022 Red Fort photo stop or visit",
+                    "\u2022 Jama Masjid",
+                    "\u2022 Chandni Chowk",
+                    "\u2022 Humayun\u2019s Tomb",
+                    "\u2022 Lotus Temple",
+                    "\u2022 Qutub Minar",
+                    "\u2022 Akshardham Temple, depending on opening schedule",
+                    "Return to the hotel.",
+                    "Overnight stay in Delhi."
+                ]
+            },
+            {
+                "day": "Day 3",
+                "title": "Delhi Departure",
+                "activities": [
+                    "Breakfast, check-out and transfer to Delhi Airport or railway station."
+                ]
+            }
+        ],
+        "inclusions": [
+            "Hotel accommodation in the selected category",
+            "Daily breakfast",
+            "Dinner when the MAP plan is selected",
+            "Private AC vehicle for transfers and sightseeing",
+            "Airport or railway station pickup and drop",
+            "Driver allowance",
+            "Fuel, toll and parking as specified",
+            "Sightseeing according to the itinerary",
+            "Logaa Holidays travel support",
+            "Flight or train booking assistance"
+        ],
+        "exclusions": [
+            "\u274c Flight or train tickets unless included",
+            "\u274c Monument entrance fees",
+            "\u274c Local guide charges",
+            "\u274c Lunch and unmentioned meals",
+            "\u274c Camera and video fees",
+            "\u274c Personal expenses",
+            "\u274c Travel insurance",
+            "\u274c Additional sightseeing",
+            "\u274c Early check-in and late check-out",
+            "\u274c Anything not mentioned under inclusions"
+        ],
+        "highlights": [
+            "Destinations Covered: Old Delhi and New Delhi",
+            "Night Stay: 2 Nights in Delhi"
+        ],
+        "keywords": "Delhi city tour package, Delhi sightseeing package, Delhi 2 nights 3 days package, New Delhi Old Delhi tour, Delhi holiday package",
+        "seoTitle": "Delhi City Tour Package - 2 Nights / 3 Days | Logaa Holidays",
+        "seoDescription": "Book Delhi City Tour Package for 2 Nights and 3 Days covering Old Delhi, New Delhi attractions, India Gate, Qutub Minar, and Akshardham Temple.",
         "faq": [
             {
                 "question": "Is this Tamil Nadu tour package suitable for families and couples?",
@@ -4311,93 +4311,93 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "बिल्कुल। हम मदुरै या चेन्नई से पिकअप की सुविधा देते हैं और इन शहरों में आने वाली ट्रेन या फ्लाइट के समय का समन्वय करते हैं। हमारे ड्राइवर या गाइड स्टेशन या एयरपोर्ट पर आपसे मिलेंगे और टूर शुरू करेंगे, इसलिए आप तमिलनाडु के किसी भी प्रमुख शहर से आसानी से टूर में शामिल हो सकते हैं।"
             }
         ],
-    "id": "8007"
-},
+        "id": "8007"
+    },
     '8008': {
-    "title": "Delhi and Agra Heritage Package",
-    "badge": "Golden Triangle Tour",
-    "image": "/assets/SMK/Delhi & Agra Heritage.webp",
-    "heroImage": "/assets/SMK hero/Delhi & Agra Heritage.webp",
-    "overview": {
-        "duration": "3 Nights / 4 Days",
-        "destination": "Delhi and Agra",
-        "activities": "Sightseeing, Heritage, Taj Mahal",
-        "themes": "Golden Triangle Tours"
-    },
-    "priceDetails": {
-        "amount": "On Request",
-        "type": "per person"
-    },
-    "itinerary": [
-        {
-            "day": "Day 1",
-            "title": "Delhi Arrival",
-            "activities": [
-                "Pickup, hotel check-in and New Delhi sightseeing.",
-                "Visit India Gate, Rashtrapati Bhavan photo stop, Parliament House photo stop, Gurudwara Bangla Sahib and Connaught Place.",
-                "Overnight stay in Delhi."
-            ]
+        "title": "Delhi and Agra Heritage Package",
+        "badge": "Golden Triangle Tour",
+        "image": "/assets/SMK/Delhi & Agra Heritage.webp",
+        "heroImage": "/assets/SMK hero/Delhi & Agra Heritage.webp",
+        "overview": {
+            "duration": "3 Nights / 4 Days",
+            "destination": "Delhi and Agra",
+            "activities": "Sightseeing, Heritage, Taj Mahal",
+            "themes": "Golden Triangle Tours"
         },
-        {
-            "day": "Day 2",
-            "title": "Delhi Sightseeing",
-            "activities": [
-                "Visit Raj Ghat, Jama Masjid, Chandni Chowk, Red Fort area, Humayun\u2019s Tomb, Lotus Temple and Qutub Minar.",
-                "Overnight stay in Delhi."
-            ]
+        "priceDetails": {
+            "amount": "On Request",
+            "type": "per person"
         },
-        {
-            "day": "Day 3",
-            "title": "Delhi \u2013 Agra",
-            "activities": [
-                "Check out and proceed to Agra.",
-                "Visit:",
-                "\u2022 Taj Mahal",
-                "\u2022 Agra Fort",
-                "\u2022 Mehtab Bagh, depending on time",
-                "Check in at the hotel.",
-                "Overnight stay in Agra."
-            ]
-        },
-        {
-            "day": "Day 4",
-            "title": "Agra \u2013 Delhi Departure",
-            "activities": [
-                "After breakfast, check out and transfer to Delhi Airport or railway station."
-            ]
-        }
-    ],
-    "inclusions": [
-        "Hotel accommodation in the selected category",
-        "Daily breakfast",
-        "Dinner when the MAP plan is selected",
-        "Private AC vehicle for transfers and sightseeing",
-        "Airport or railway station pickup and drop",
-        "Driver allowance",
-        "Fuel, toll and parking as specified",
-        "Sightseeing according to the itinerary",
-        "Logaa Holidays travel support",
-        "Flight or train booking assistance"
-    ],
-    "exclusions": [
-        "\u274c Flight or train tickets unless included",
-        "\u274c Monument entrance fees",
-        "\u274c Local guide charges",
-        "\u274c Lunch and unmentioned meals",
-        "\u274c Camera and video fees",
-        "\u274c Personal expenses",
-        "\u274c Travel insurance",
-        "\u274c Additional sightseeing",
-        "\u274c Early check-in and late check-out",
-        "\u274c Anything not mentioned under inclusions"
-    ],
-    "highlights": [
-        "Destinations Covered: Delhi and Agra",
-        "Night Stay: 2 Nights Delhi and 1 Night Agra"
-    ],
-    "keywords": "Delhi Agra tour package, Delhi Agra 3 nights 4 days, Taj Mahal tour from Delhi, Delhi Agra heritage package, Golden triangle packages",
-    "seoTitle": "Delhi and Agra Heritage Package - 3 Nights / 4 Days | Logaa Holidays",
-    "seoDescription": "Book Delhi and Agra Heritage Package for 3 Nights 4 Days covering Old Delhi, New Delhi and Taj Mahal Agra.",
+        "itinerary": [
+            {
+                "day": "Day 1",
+                "title": "Delhi Arrival",
+                "activities": [
+                    "Pickup, hotel check-in and New Delhi sightseeing.",
+                    "Visit India Gate, Rashtrapati Bhavan photo stop, Parliament House photo stop, Gurudwara Bangla Sahib and Connaught Place.",
+                    "Overnight stay in Delhi."
+                ]
+            },
+            {
+                "day": "Day 2",
+                "title": "Delhi Sightseeing",
+                "activities": [
+                    "Visit Raj Ghat, Jama Masjid, Chandni Chowk, Red Fort area, Humayun\u2019s Tomb, Lotus Temple and Qutub Minar.",
+                    "Overnight stay in Delhi."
+                ]
+            },
+            {
+                "day": "Day 3",
+                "title": "Delhi \u2013 Agra",
+                "activities": [
+                    "Check out and proceed to Agra.",
+                    "Visit:",
+                    "\u2022 Taj Mahal",
+                    "\u2022 Agra Fort",
+                    "\u2022 Mehtab Bagh, depending on time",
+                    "Check in at the hotel.",
+                    "Overnight stay in Agra."
+                ]
+            },
+            {
+                "day": "Day 4",
+                "title": "Agra \u2013 Delhi Departure",
+                "activities": [
+                    "After breakfast, check out and transfer to Delhi Airport or railway station."
+                ]
+            }
+        ],
+        "inclusions": [
+            "Hotel accommodation in the selected category",
+            "Daily breakfast",
+            "Dinner when the MAP plan is selected",
+            "Private AC vehicle for transfers and sightseeing",
+            "Airport or railway station pickup and drop",
+            "Driver allowance",
+            "Fuel, toll and parking as specified",
+            "Sightseeing according to the itinerary",
+            "Logaa Holidays travel support",
+            "Flight or train booking assistance"
+        ],
+        "exclusions": [
+            "\u274c Flight or train tickets unless included",
+            "\u274c Monument entrance fees",
+            "\u274c Local guide charges",
+            "\u274c Lunch and unmentioned meals",
+            "\u274c Camera and video fees",
+            "\u274c Personal expenses",
+            "\u274c Travel insurance",
+            "\u274c Additional sightseeing",
+            "\u274c Early check-in and late check-out",
+            "\u274c Anything not mentioned under inclusions"
+        ],
+        "highlights": [
+            "Destinations Covered: Delhi and Agra",
+            "Night Stay: 2 Nights Delhi and 1 Night Agra"
+        ],
+        "keywords": "Delhi Agra tour package, Delhi Agra 3 nights 4 days, Taj Mahal tour from Delhi, Delhi Agra heritage package, Golden triangle packages",
+        "seoTitle": "Delhi and Agra Heritage Package - 3 Nights / 4 Days | Logaa Holidays",
+        "seoDescription": "Book Delhi and Agra Heritage Package for 3 Nights 4 Days covering Old Delhi, New Delhi and Taj Mahal Agra.",
         "faq": [
             {
                 "question": "Is this Tamil Nadu tour package suitable for families and couples?",
@@ -4416,104 +4416,104 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "बिल्कुल। हम मदुरै या चेन्नई से पिकअप की सुविधा देते हैं और इन शहरों में आने वाली ट्रेन या फ्लाइट के समय का समन्वय करते हैं। हमारे ड्राइवर या गाइड स्टेशन या एयरपोर्ट पर आपसे मिलेंगे और टूर शुरू करेंगे, इसलिए आप तमिलनाडु के किसी भी प्रमुख शहर से आसानी से टूर में शामिल हो सकते हैं।"
             }
         ],
-    "id": "8008"
-},
+        "id": "8008"
+    },
     '8009': {
-    "title": "Golden Triangle Express Package",
-    "badge": "Golden Triangle Tour",
-    "image": "/assets/SMK/Golden Triangle Express.webp",
-    "heroImage": "/assets/SMK hero/Golden Triangle Express.webp",
-    "overview": {
-        "duration": "4 Nights / 5 Days",
-        "destination": "Delhi, Agra and Jaipur",
-        "activities": "Sightseeing, Heritage, Culture",
-        "themes": "Golden Triangle Tours"
-    },
-    "priceDetails": {
-        "amount": "On Request",
-        "type": "per person"
-    },
-    "itinerary": [
-        {
-            "day": "Day 1",
-            "title": "Delhi Arrival",
-            "activities": [
-                "Pickup and New Delhi sightseeing.",
-                "Overnight stay in Delhi."
-            ]
+        "title": "Golden Triangle Express Package",
+        "badge": "Golden Triangle Tour",
+        "image": "/assets/SMK/Golden Triangle Express.webp",
+        "heroImage": "/assets/SMK hero/Golden Triangle Express.webp",
+        "overview": {
+            "duration": "4 Nights / 5 Days",
+            "destination": "Delhi, Agra and Jaipur",
+            "activities": "Sightseeing, Heritage, Culture",
+            "themes": "Golden Triangle Tours"
         },
-        {
-            "day": "Day 2",
-            "title": "Delhi Sightseeing",
-            "activities": [
-                "Explore Old Delhi and South Delhi attractions including Raj Ghat, Jama Masjid, Chandni Chowk, Humayun\u2019s Tomb, Lotus Temple and Qutub Minar.",
-                "Overnight stay in Delhi."
-            ]
+        "priceDetails": {
+            "amount": "On Request",
+            "type": "per person"
         },
-        {
-            "day": "Day 3",
-            "title": "Delhi \u2013 Agra",
-            "activities": [
-                "Proceed to Agra and visit the Taj Mahal and Agra Fort.",
-                "Overnight stay in Agra."
-            ]
-        },
-        {
-            "day": "Day 4",
-            "title": "Agra \u2013 Fatehpur Sikri \u2013 Jaipur",
-            "activities": [
-                "Check out and drive to Jaipur.",
-                "Visit Fatehpur Sikri en route, depending on available time.",
-                "Arrive in Jaipur and check in.",
-                "Evening free for local shopping.",
-                "Overnight stay in Jaipur."
-            ]
-        },
-        {
-            "day": "Day 5",
-            "title": "Jaipur Sightseeing \u2013 Delhi Departure",
-            "activities": [
-                "Visit:",
-                "\u2022 Amber Fort",
-                "\u2022 Jal Mahal photo stop",
-                "\u2022 City Palace",
-                "\u2022 Jantar Mantar",
-                "\u2022 Hawa Mahal photo stop",
-                "Later, transfer to Jaipur Airport, Jaipur Railway Station or Delhi."
-            ]
-        }
-    ],
-    "inclusions": [
-        "Hotel accommodation in the selected category",
-        "Daily breakfast",
-        "Dinner when the MAP plan is selected",
-        "Private AC vehicle for transfers and sightseeing",
-        "Airport or railway station pickup and drop",
-        "Driver allowance",
-        "Fuel, toll and parking as specified",
-        "Sightseeing according to the itinerary",
-        "Logaa Holidays travel support",
-        "Flight or train booking assistance"
-    ],
-    "exclusions": [
-        "\u274c Flight or train tickets unless included",
-        "\u274c Monument entrance fees",
-        "\u274c Local guide charges",
-        "\u274c Lunch and unmentioned meals",
-        "\u274c Camera and video fees",
-        "\u274c Personal expenses",
-        "\u274c Travel insurance",
-        "\u274c Additional sightseeing",
-        "\u274c Early check-in and late check-out",
-        "\u274c Anything not mentioned under inclusions"
-    ],
-    "highlights": [
-        "Destinations Covered: Delhi, Agra and Jaipur",
-        "Night Stay: 2 Nights Delhi, 1 Night Agra and 1 Night Jaipur"
-    ],
-    "keywords": "Golden Triangle 4 nights 5 days, Delhi Agra Jaipur tour, Express Golden Triangle package, India Golden Triangle tour",
-    "seoTitle": "Golden Triangle Express Package - 4 Nights / 5 Days | Logaa Holidays",
-    "seoDescription": "Experience the Golden Triangle Express Package covering Delhi, Agra, and Jaipur in 4 Nights and 5 Days.",
+        "itinerary": [
+            {
+                "day": "Day 1",
+                "title": "Delhi Arrival",
+                "activities": [
+                    "Pickup and New Delhi sightseeing.",
+                    "Overnight stay in Delhi."
+                ]
+            },
+            {
+                "day": "Day 2",
+                "title": "Delhi Sightseeing",
+                "activities": [
+                    "Explore Old Delhi and South Delhi attractions including Raj Ghat, Jama Masjid, Chandni Chowk, Humayun\u2019s Tomb, Lotus Temple and Qutub Minar.",
+                    "Overnight stay in Delhi."
+                ]
+            },
+            {
+                "day": "Day 3",
+                "title": "Delhi \u2013 Agra",
+                "activities": [
+                    "Proceed to Agra and visit the Taj Mahal and Agra Fort.",
+                    "Overnight stay in Agra."
+                ]
+            },
+            {
+                "day": "Day 4",
+                "title": "Agra \u2013 Fatehpur Sikri \u2013 Jaipur",
+                "activities": [
+                    "Check out and drive to Jaipur.",
+                    "Visit Fatehpur Sikri en route, depending on available time.",
+                    "Arrive in Jaipur and check in.",
+                    "Evening free for local shopping.",
+                    "Overnight stay in Jaipur."
+                ]
+            },
+            {
+                "day": "Day 5",
+                "title": "Jaipur Sightseeing \u2013 Delhi Departure",
+                "activities": [
+                    "Visit:",
+                    "\u2022 Amber Fort",
+                    "\u2022 Jal Mahal photo stop",
+                    "\u2022 City Palace",
+                    "\u2022 Jantar Mantar",
+                    "\u2022 Hawa Mahal photo stop",
+                    "Later, transfer to Jaipur Airport, Jaipur Railway Station or Delhi."
+                ]
+            }
+        ],
+        "inclusions": [
+            "Hotel accommodation in the selected category",
+            "Daily breakfast",
+            "Dinner when the MAP plan is selected",
+            "Private AC vehicle for transfers and sightseeing",
+            "Airport or railway station pickup and drop",
+            "Driver allowance",
+            "Fuel, toll and parking as specified",
+            "Sightseeing according to the itinerary",
+            "Logaa Holidays travel support",
+            "Flight or train booking assistance"
+        ],
+        "exclusions": [
+            "\u274c Flight or train tickets unless included",
+            "\u274c Monument entrance fees",
+            "\u274c Local guide charges",
+            "\u274c Lunch and unmentioned meals",
+            "\u274c Camera and video fees",
+            "\u274c Personal expenses",
+            "\u274c Travel insurance",
+            "\u274c Additional sightseeing",
+            "\u274c Early check-in and late check-out",
+            "\u274c Anything not mentioned under inclusions"
+        ],
+        "highlights": [
+            "Destinations Covered: Delhi, Agra and Jaipur",
+            "Night Stay: 2 Nights Delhi, 1 Night Agra and 1 Night Jaipur"
+        ],
+        "keywords": "Golden Triangle 4 nights 5 days, Delhi Agra Jaipur tour, Express Golden Triangle package, India Golden Triangle tour",
+        "seoTitle": "Golden Triangle Express Package - 4 Nights / 5 Days | Logaa Holidays",
+        "seoDescription": "Experience the Golden Triangle Express Package covering Delhi, Agra, and Jaipur in 4 Nights and 5 Days.",
         "faq": [
             {
                 "question": "Is this Tamil Nadu tour package suitable for families and couples?",
@@ -4532,114 +4532,114 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "बिल्कुल। हम मदुरै या चेन्नई से पिकअप की सुविधा देते हैं और इन शहरों में आने वाली ट्रेन या फ्लाइट के समय का समन्वय करते हैं। हमारे ड्राइवर या गाइड स्टेशन या एयरपोर्ट पर आपसे मिलेंगे और टूर शुरू करेंगे, इसलिए आप तमिलनाडु के किसी भी प्रमुख शहर से आसानी से टूर में शामिल हो सकते हैं।"
             }
         ],
-    "id": "8009"
-},
+        "id": "8009"
+    },
     '8010': {
-    "title": "Classic Golden Triangle Package",
-    "badge": "Golden Triangle Tour",
-    "image": "/assets/SMK/Classic Golden Triangle.webp",
-    "heroImage": "/assets/SMK hero/Classic Golden Triangle.webp",
-    "overview": {
-        "duration": "5 Nights / 6 Days",
-        "destination": "Delhi, Agra and Jaipur",
-        "activities": "Sightseeing, Heritage, Culture",
-        "themes": "Golden Triangle Tours"
-    },
-    "priceDetails": {
-        "amount": "On Request",
-        "type": "per person"
-    },
-    "itinerary": [
-        {
-            "day": "Day 1",
-            "title": "Delhi Arrival",
-            "activities": [
-                "Airport or railway station pickup.",
-                "Visit India Gate, Kartavya Path, Rashtrapati Bhavan photo stop, Parliament House photo stop and Gurudwara Bangla Sahib.",
-                "Overnight stay in Delhi."
-            ]
+        "title": "Classic Golden Triangle Package",
+        "badge": "Golden Triangle Tour",
+        "image": "/assets/SMK/Classic Golden Triangle.webp",
+        "heroImage": "/assets/SMK hero/Classic Golden Triangle.webp",
+        "overview": {
+            "duration": "5 Nights / 6 Days",
+            "destination": "Delhi, Agra and Jaipur",
+            "activities": "Sightseeing, Heritage, Culture",
+            "themes": "Golden Triangle Tours"
         },
-        {
-            "day": "Day 2",
-            "title": "Delhi Sightseeing",
-            "activities": [
-                "Visit Raj Ghat, Jama Masjid, Chandni Chowk, Red Fort area, Humayun\u2019s Tomb, Lotus Temple, Qutub Minar and other attractions according to time.",
-                "Overnight stay in Delhi."
-            ]
+        "priceDetails": {
+            "amount": "On Request",
+            "type": "per person"
         },
-        {
-            "day": "Day 3",
-            "title": "Delhi \u2013 Agra",
-            "activities": [
-                "Drive to Agra.",
-                "Visit Taj Mahal, Agra Fort and Mehtab Bagh depending on time.",
-                "Overnight stay in Agra."
-            ]
-        },
-        {
-            "day": "Day 4",
-            "title": "Agra \u2013 Fatehpur Sikri \u2013 Jaipur",
-            "activities": [
-                "Proceed to Jaipur via Fatehpur Sikri.",
-                "Check in at the hotel and enjoy the evening at leisure.",
-                "Overnight stay in Jaipur."
-            ]
-        },
-        {
-            "day": "Day 5",
-            "title": "Jaipur Sightseeing",
-            "activities": [
-                "Visit:",
-                "\u2022 Amber Fort",
-                "\u2022 Jal Mahal",
-                "\u2022 City Palace",
-                "\u2022 Jantar Mantar",
-                "\u2022 Hawa Mahal",
-                "\u2022 Albert Hall Museum photo stop",
-                "\u2022 Local handicraft market",
-                "Overnight stay in Jaipur."
-            ]
-        },
-        {
-            "day": "Day 6",
-            "title": "Jaipur \u2013 Delhi Departure",
-            "activities": [
-                "Check out and transfer to Jaipur or Delhi for the return journey."
-            ]
-        }
-    ],
-    "inclusions": [
-        "Hotel accommodation in the selected category",
-        "Daily breakfast",
-        "Dinner when the MAP plan is selected",
-        "Private AC vehicle for transfers and sightseeing",
-        "Airport or railway station pickup and drop",
-        "Driver allowance",
-        "Fuel, toll and parking as specified",
-        "Sightseeing according to the itinerary",
-        "Logaa Holidays travel support",
-        "Flight or train booking assistance"
-    ],
-    "exclusions": [
-        "\u274c Flight or train tickets unless included",
-        "\u274c Monument entrance fees",
-        "\u274c Local guide charges",
-        "\u274c Lunch and unmentioned meals",
-        "\u274c Camera and video fees",
-        "\u274c Personal expenses",
-        "\u274c Travel insurance",
-        "\u274c Additional sightseeing",
-        "\u274c Early check-in and late check-out",
-        "\u274c Anything not mentioned under inclusions"
-    ],
-    "highlights": [
-        "Destinations Covered: Delhi, Agra and Jaipur",
-        "Night Stay: 2 Nights Delhi, 1 Night Agra and 2 Nights Jaipur",
-        "Recommended For: Families and first-time North India travellers"
-    ],
-    "keywords": "Classic Golden Triangle tour, Delhi Agra Jaipur 5 nights 6 days, best golden triangle package, Golden Triangle tour for family",
-    "seoTitle": "Classic Golden Triangle Package - 5 Nights / 6 Days | Logaa Holidays",
-    "seoDescription": "Book Classic Golden Triangle Package for 5 Nights 6 Days. Explore Delhi, Agra, and Jaipur in a comfortable journey.",
+        "itinerary": [
+            {
+                "day": "Day 1",
+                "title": "Delhi Arrival",
+                "activities": [
+                    "Airport or railway station pickup.",
+                    "Visit India Gate, Kartavya Path, Rashtrapati Bhavan photo stop, Parliament House photo stop and Gurudwara Bangla Sahib.",
+                    "Overnight stay in Delhi."
+                ]
+            },
+            {
+                "day": "Day 2",
+                "title": "Delhi Sightseeing",
+                "activities": [
+                    "Visit Raj Ghat, Jama Masjid, Chandni Chowk, Red Fort area, Humayun\u2019s Tomb, Lotus Temple, Qutub Minar and other attractions according to time.",
+                    "Overnight stay in Delhi."
+                ]
+            },
+            {
+                "day": "Day 3",
+                "title": "Delhi \u2013 Agra",
+                "activities": [
+                    "Drive to Agra.",
+                    "Visit Taj Mahal, Agra Fort and Mehtab Bagh depending on time.",
+                    "Overnight stay in Agra."
+                ]
+            },
+            {
+                "day": "Day 4",
+                "title": "Agra \u2013 Fatehpur Sikri \u2013 Jaipur",
+                "activities": [
+                    "Proceed to Jaipur via Fatehpur Sikri.",
+                    "Check in at the hotel and enjoy the evening at leisure.",
+                    "Overnight stay in Jaipur."
+                ]
+            },
+            {
+                "day": "Day 5",
+                "title": "Jaipur Sightseeing",
+                "activities": [
+                    "Visit:",
+                    "\u2022 Amber Fort",
+                    "\u2022 Jal Mahal",
+                    "\u2022 City Palace",
+                    "\u2022 Jantar Mantar",
+                    "\u2022 Hawa Mahal",
+                    "\u2022 Albert Hall Museum photo stop",
+                    "\u2022 Local handicraft market",
+                    "Overnight stay in Jaipur."
+                ]
+            },
+            {
+                "day": "Day 6",
+                "title": "Jaipur \u2013 Delhi Departure",
+                "activities": [
+                    "Check out and transfer to Jaipur or Delhi for the return journey."
+                ]
+            }
+        ],
+        "inclusions": [
+            "Hotel accommodation in the selected category",
+            "Daily breakfast",
+            "Dinner when the MAP plan is selected",
+            "Private AC vehicle for transfers and sightseeing",
+            "Airport or railway station pickup and drop",
+            "Driver allowance",
+            "Fuel, toll and parking as specified",
+            "Sightseeing according to the itinerary",
+            "Logaa Holidays travel support",
+            "Flight or train booking assistance"
+        ],
+        "exclusions": [
+            "\u274c Flight or train tickets unless included",
+            "\u274c Monument entrance fees",
+            "\u274c Local guide charges",
+            "\u274c Lunch and unmentioned meals",
+            "\u274c Camera and video fees",
+            "\u274c Personal expenses",
+            "\u274c Travel insurance",
+            "\u274c Additional sightseeing",
+            "\u274c Early check-in and late check-out",
+            "\u274c Anything not mentioned under inclusions"
+        ],
+        "highlights": [
+            "Destinations Covered: Delhi, Agra and Jaipur",
+            "Night Stay: 2 Nights Delhi, 1 Night Agra and 2 Nights Jaipur",
+            "Recommended For: Families and first-time North India travellers"
+        ],
+        "keywords": "Classic Golden Triangle tour, Delhi Agra Jaipur 5 nights 6 days, best golden triangle package, Golden Triangle tour for family",
+        "seoTitle": "Classic Golden Triangle Package - 5 Nights / 6 Days | Logaa Holidays",
+        "seoDescription": "Book Classic Golden Triangle Package for 5 Nights 6 Days. Explore Delhi, Agra, and Jaipur in a comfortable journey.",
         "faq": [
             {
                 "question": "Is this Tamil Nadu tour package suitable for families and couples?",
@@ -4658,122 +4658,122 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "बिल्कुल। हम मदुरै या चेन्नई से पिकअप की सुविधा देते हैं और इन शहरों में आने वाली ट्रेन या फ्लाइट के समय का समन्वय करते हैं। हमारे ड्राइवर या गाइड स्टेशन या एयरपोर्ट पर आपसे मिलेंगे और टूर शुरू करेंगे, इसलिए आप तमिलनाडु के किसी भी प्रमुख शहर से आसानी से टूर में शामिल हो सकते हैं।"
             }
         ],
-    "id": "8010"
-},
+        "id": "8010"
+    },
     '8011': {
-    "title": "North India Heritage Package",
-    "badge": "Golden Triangle Tour",
-    "image": "/assets/SMK/North India Heritage.webp",
-    "heroImage": "/assets/SMK hero/North India Heritage.webp",
-    "overview": {
-        "duration": "6 Nights / 7 Days",
-        "destination": "Delhi, Mathura, Vrindavan, Agra, Jaipur, Ajmer and Pushkar",
-        "activities": "Sightseeing, Heritage, Culture, Piligrimage",
-        "themes": "Golden Triangle Tours"
-    },
-    "priceDetails": {
-        "amount": "On Request",
-        "type": "per person"
-    },
-    "itinerary": [
-        {
-            "day": "Day 1",
-            "title": "Delhi Arrival",
-            "activities": [
-                "Pickup and hotel check-in.",
-                "Visit India Gate, Rashtrapati Bhavan photo stop, Parliament House area and Gurudwara Bangla Sahib.",
-                "Overnight stay in Delhi."
-            ]
+        "title": "North India Heritage Package",
+        "badge": "Golden Triangle Tour",
+        "image": "/assets/SMK/North India Heritage.webp",
+        "heroImage": "/assets/SMK hero/North India Heritage.webp",
+        "overview": {
+            "duration": "6 Nights / 7 Days",
+            "destination": "Delhi, Mathura, Vrindavan, Agra, Jaipur, Ajmer and Pushkar",
+            "activities": "Sightseeing, Heritage, Culture, Piligrimage",
+            "themes": "Golden Triangle Tours"
         },
-        {
-            "day": "Day 2",
-            "title": "Delhi Sightseeing",
-            "activities": [
-                "Visit Raj Ghat, Jama Masjid, Chandni Chowk, Humayun\u2019s Tomb, Lotus Temple, Qutub Minar and Akshardham according to opening schedules.",
-                "Overnight stay in Delhi."
-            ]
+        "priceDetails": {
+            "amount": "On Request",
+            "type": "per person"
         },
-        {
-            "day": "Day 3",
-            "title": "Delhi \u2013 Mathura \u2013 Vrindavan \u2013 Agra",
-            "activities": [
-                "After breakfast, check out and proceed to Mathura and Vrindavan.",
-                "Visit selected temples according to time and local access.",
-                "Continue to Agra and check in.",
-                "Overnight stay in Agra."
-            ]
-        },
-        {
-            "day": "Day 4",
-            "title": "Agra \u2013 Fatehpur Sikri \u2013 Jaipur",
-            "activities": [
-                "Visit the Taj Mahal and Agra Fort.",
-                "Later, drive to Jaipur via Fatehpur Sikri.",
-                "Overnight stay in Jaipur."
-            ]
-        },
-        {
-            "day": "Day 5",
-            "title": "Jaipur Sightseeing",
-            "activities": [
-                "Visit Amber Fort, Jal Mahal, City Palace, Jantar Mantar, Hawa Mahal and local markets.",
-                "Overnight stay in Jaipur."
-            ]
-        },
-        {
-            "day": "Day 6",
-            "title": "Ajmer and Pushkar Excursion",
-            "activities": [
-                "Proceed for a full-day excursion to Ajmer and Pushkar.",
-                "Visit:",
-                "\u2022 Ajmer Dargah area",
-                "\u2022 Ana Sagar Lake viewpoint",
-                "\u2022 Pushkar Brahma Temple",
-                "\u2022 Pushkar Lake",
-                "\u2022 Local market",
-                "Return to Jaipur.",
-                "Overnight stay in Jaipur."
-            ]
-        },
-        {
-            "day": "Day 7",
-            "title": "Jaipur \u2013 Delhi Departure",
-            "activities": [
-                "After breakfast, check out and transfer to Jaipur Airport, Jaipur Railway Station, Delhi Airport or New Delhi Railway Station."
-            ]
-        }
-    ],
-    "inclusions": [
-        "Hotel accommodation in the selected category",
-        "Daily breakfast",
-        "Dinner when the MAP plan is selected",
-        "Private AC vehicle for transfers and sightseeing",
-        "Airport or railway station pickup and drop",
-        "Driver allowance",
-        "Fuel, toll and parking as specified",
-        "Sightseeing according to the itinerary",
-        "Logaa Holidays travel support",
-        "Flight or train booking assistance"
-    ],
-    "exclusions": [
-        "\u274c Flight or train tickets unless included",
-        "\u274c Monument entrance fees",
-        "\u274c Local guide charges",
-        "\u274c Lunch and unmentioned meals",
-        "\u274c Camera and video fees",
-        "\u274c Personal expenses",
-        "\u274c Travel insurance",
-        "\u274c Additional sightseeing",
-        "\u274c Early check-in and late check-out",
-        "\u274c Anything not mentioned under inclusions"
-    ],
-    "highlights": [
-        "Destinations Covered: Delhi, Mathura, Vrindavan, Agra, Jaipur, Ajmer and Pushkar",
-        "Night Stay: 2 Nights Delhi, 1 Night Agra and 3 Nights Jaipur"
-    ],
-    "keywords": "North India heritage package, Golden Triangle Ajmer Pushkar, Delhi Agra Jaipur Mathura Vrindavan package, 6 nights 7 days North India tour",
-    "seoTitle": "North India Heritage Package - 6 Nights / 7 Days | Logaa Holidays",
-    "seoDescription": "Book North India Heritage Package covering Delhi, Mathura, Vrindavan, Agra, Jaipur, Ajmer and Pushkar.",
+        "itinerary": [
+            {
+                "day": "Day 1",
+                "title": "Delhi Arrival",
+                "activities": [
+                    "Pickup and hotel check-in.",
+                    "Visit India Gate, Rashtrapati Bhavan photo stop, Parliament House area and Gurudwara Bangla Sahib.",
+                    "Overnight stay in Delhi."
+                ]
+            },
+            {
+                "day": "Day 2",
+                "title": "Delhi Sightseeing",
+                "activities": [
+                    "Visit Raj Ghat, Jama Masjid, Chandni Chowk, Humayun\u2019s Tomb, Lotus Temple, Qutub Minar and Akshardham according to opening schedules.",
+                    "Overnight stay in Delhi."
+                ]
+            },
+            {
+                "day": "Day 3",
+                "title": "Delhi \u2013 Mathura \u2013 Vrindavan \u2013 Agra",
+                "activities": [
+                    "After breakfast, check out and proceed to Mathura and Vrindavan.",
+                    "Visit selected temples according to time and local access.",
+                    "Continue to Agra and check in.",
+                    "Overnight stay in Agra."
+                ]
+            },
+            {
+                "day": "Day 4",
+                "title": "Agra \u2013 Fatehpur Sikri \u2013 Jaipur",
+                "activities": [
+                    "Visit the Taj Mahal and Agra Fort.",
+                    "Later, drive to Jaipur via Fatehpur Sikri.",
+                    "Overnight stay in Jaipur."
+                ]
+            },
+            {
+                "day": "Day 5",
+                "title": "Jaipur Sightseeing",
+                "activities": [
+                    "Visit Amber Fort, Jal Mahal, City Palace, Jantar Mantar, Hawa Mahal and local markets.",
+                    "Overnight stay in Jaipur."
+                ]
+            },
+            {
+                "day": "Day 6",
+                "title": "Ajmer and Pushkar Excursion",
+                "activities": [
+                    "Proceed for a full-day excursion to Ajmer and Pushkar.",
+                    "Visit:",
+                    "\u2022 Ajmer Dargah area",
+                    "\u2022 Ana Sagar Lake viewpoint",
+                    "\u2022 Pushkar Brahma Temple",
+                    "\u2022 Pushkar Lake",
+                    "\u2022 Local market",
+                    "Return to Jaipur.",
+                    "Overnight stay in Jaipur."
+                ]
+            },
+            {
+                "day": "Day 7",
+                "title": "Jaipur \u2013 Delhi Departure",
+                "activities": [
+                    "After breakfast, check out and transfer to Jaipur Airport, Jaipur Railway Station, Delhi Airport or New Delhi Railway Station."
+                ]
+            }
+        ],
+        "inclusions": [
+            "Hotel accommodation in the selected category",
+            "Daily breakfast",
+            "Dinner when the MAP plan is selected",
+            "Private AC vehicle for transfers and sightseeing",
+            "Airport or railway station pickup and drop",
+            "Driver allowance",
+            "Fuel, toll and parking as specified",
+            "Sightseeing according to the itinerary",
+            "Logaa Holidays travel support",
+            "Flight or train booking assistance"
+        ],
+        "exclusions": [
+            "\u274c Flight or train tickets unless included",
+            "\u274c Monument entrance fees",
+            "\u274c Local guide charges",
+            "\u274c Lunch and unmentioned meals",
+            "\u274c Camera and video fees",
+            "\u274c Personal expenses",
+            "\u274c Travel insurance",
+            "\u274c Additional sightseeing",
+            "\u274c Early check-in and late check-out",
+            "\u274c Anything not mentioned under inclusions"
+        ],
+        "highlights": [
+            "Destinations Covered: Delhi, Mathura, Vrindavan, Agra, Jaipur, Ajmer and Pushkar",
+            "Night Stay: 2 Nights Delhi, 1 Night Agra and 3 Nights Jaipur"
+        ],
+        "keywords": "North India heritage package, Golden Triangle Ajmer Pushkar, Delhi Agra Jaipur Mathura Vrindavan package, 6 nights 7 days North India tour",
+        "seoTitle": "North India Heritage Package - 6 Nights / 7 Days | Logaa Holidays",
+        "seoDescription": "Book North India Heritage Package covering Delhi, Mathura, Vrindavan, Agra, Jaipur, Ajmer and Pushkar.",
         "faq": [
             {
                 "question": "Is this Tamil Nadu tour package suitable for families and couples?",
@@ -4792,14 +4792,14 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "बिल्कुल। हम मदुरै या चेन्नई से पिकअप की सुविधा देते हैं और इन शहरों में आने वाली ट्रेन या फ्लाइट के समय का समन्वय करते हैं। हमारे ड्राइवर या गाइड स्टेशन या एयरपोर्ट पर आपसे मिलेंगे और टूर शुरू करेंगे, इसलिए आप तमिलनाडु के किसी भी प्रमुख शहर से आसानी से टूर में शामिल हो सकते हैं।"
             }
         ],
-    "id": "8011"
-},
+        "id": "8011"
+    },
 
     '8401': {
         "id": "8401",
         "title": "Kashmir Short Escape Package",
-        "image": "/assets/generated/kashmir_dal_lake_shikara.png",
-        "heroImage": "/assets/generated/kashmir_dal_lake_shikara.png",
+        "image": "/assets/SMK/Kashmir Short Escape Package 2 Nights  3 Days square.webp",
+        "heroImage": "/assets/SMK hero/Kashmir Short Escape Package 2 Nights 3 Days rectangle.webp",
         "rating": 4.8,
         "reviews": 182,
         "overview": {
@@ -4883,8 +4883,8 @@ export const packagesDatabase: Record<string, any> = {
     '8402': {
         "id": "8402",
         "title": "Kashmir Highlights Package",
-        "image": "/assets/jammu1.webp",
-        "heroImage": "/assets/jammu1.webp",
+        "image": "/assets/SMK/Beautiful Kashmir Package 4N5D square.webp",
+        "heroImage": "/assets/SMK hero/Kashmir Highlights Package 3N4D rectangle.webp",
         "rating": 4.9,
         "reviews": 245,
         "overview": {
@@ -4977,8 +4977,8 @@ export const packagesDatabase: Record<string, any> = {
     '8403': {
         "id": "8403",
         "title": "Beautiful Kashmir Package",
-        "image": "/assets/generated/kashmir_pahalgam_valley.png",
-        "heroImage": "/assets/generated/kashmir_pahalgam_valley.png",
+        "image": "/assets/SMK/Kashmir Highlights Package 3 Nights  4 Days square.webp",
+        "heroImage": "/assets/SMK hero/Beautiful Kashmir Package 4 Nights 5 Days rectangle.webp",
         "rating": 4.9,
         "reviews": 312,
         "overview": {
@@ -5079,8 +5079,8 @@ export const packagesDatabase: Record<string, any> = {
     '8404': {
         "id": "8404",
         "title": "Classic Kashmir Holiday Package",
-        "image": "/assets/jammu10.webp",
-        "heroImage": "/assets/jammu10.webp",
+        "image": "/assets/SMK/Kashmir Highlights Package 3N 4D square.webp",
+        "heroImage": "/assets/SMK hero/Beautiful Kashmir Package 4N5D rectangle.webp",
         "rating": 5.0,
         "reviews": 298,
         "overview": {
@@ -5190,8 +5190,8 @@ export const packagesDatabase: Record<string, any> = {
     '8405': {
         "id": "8405",
         "title": "Complete Kashmir Experience",
-        "image": "/assets/generated/kashmir_gulmarg_snow.png",
-        "heroImage": "/assets/generated/kashmir_gulmarg_snow.png",
+        "image": "/assets/SMK/Classic Kashmir Holiday Package 5N6Dsquare.webp",
+        "heroImage": "/assets/SMK hero/Kashmir Highlights Package 3 Nights  4 Days rectangle.webp",
         "rating": 5.0,
         "reviews": 415,
         "overview": {
@@ -6499,7 +6499,7 @@ export const packagesDatabase: Record<string, any> = {
         ],
         "id": "9704"
     }
-,
+    ,
 
     '9801': {
         "title": "Maldives Beach Honeymoon Package – 2 Nights / 3 Days",
@@ -6641,7 +6641,7 @@ export const packagesDatabase: Record<string, any> = {
         "title": "Maldives Beach Villa Honeymoon – 3 Nights / 4 Days",
         "badge": "Most Popular",
         "image": "/assets/MG/maldives12.png",
-        "heroImage": "/assets/MG/maldives2.png",
+        "heroImage": "/assets/MG hero/maldives2.png",
         "overview": {
             "duration": "3 Nights / 4 Days",
             "destination": "Maldives",
@@ -6775,7 +6775,7 @@ export const packagesDatabase: Record<string, any> = {
     '9803': {
         "title": "Beach Villa and Water Villa Honeymoon – 4 Nights / 5 Days",
         "image": "/assets/MG/maldives13.png",
-        "heroImage": "/assets/MG/maldives3.png",
+        "heroImage": "/assets/MG hero/maldives3.png",
         "overview": {
             "duration": "4 Nights / 5 Days",
             "destination": "Maldives",
@@ -6927,7 +6927,7 @@ export const packagesDatabase: Record<string, any> = {
         "title": "Premium Maldives Honeymoon Package – 5 Nights / 6 Days",
         "badge": "Premium",
         "image": "/assets/MG/maldives14.png",
-        "heroImage": "/assets/MG/maldives4.png",
+        "heroImage": "/assets/MG hero/maldives4.png",
         "overview": {
             "duration": "5 Nights / 6 Days",
             "destination": "Maldives",
@@ -7094,7 +7094,7 @@ export const packagesDatabase: Record<string, any> = {
         ],
         "id": "9804"
     }
-,
+    ,
 
     '9501': {
         "title": "Premium Shimla Honeymoon Package – 2 Nights / 3 Days",
@@ -7744,7 +7744,7 @@ export const packagesDatabase: Record<string, any> = {
         ],
         "id": "9504"
     }
-,
+    ,
 
     '9104': {
         "title": "Goa Honeymoon Package – 2 Nights / 3 Days",
@@ -8224,7 +8224,7 @@ export const packagesDatabase: Record<string, any> = {
         ],
         "id": "9107"
     }
-,
+    ,
 
 
     '9101': {
@@ -8364,7 +8364,7 @@ export const packagesDatabase: Record<string, any> = {
         ],
         "id": "9101"
     },
-    
+
     '9102': {
         "title": "North and South Goa Honeymoon – 3 Nights / 4 Days",
         "badge": "Most Popular",
@@ -8504,7 +8504,7 @@ export const packagesDatabase: Record<string, any> = {
         ],
         "id": "9102"
     },
-    
+
 
     '9601': {
         "title": "Port Blair Honeymoon Package – 2 Nights / 3 Days",
@@ -9117,7 +9117,7 @@ export const packagesDatabase: Record<string, any> = {
         ],
         "id": "9604"
     }
-,
+    ,
     '2000': {
         "title": "Chennai to Varanasi Tour Package | 2 Days / 1 Night Kasi Flight Package",
         "image": "/assets/kasi/card/kasicard1.webp",
@@ -10477,110 +10477,110 @@ export const packagesDatabase: Record<string, any> = {
         ],
         "id": "2009"
     },
-    '2010': {
-        "title": "Madurai to Shirdi Tour Package | 2 Days / 1 Night Flight Package",
-        "image": "/assets/shiridi/shd1(small).webp",
-        "heroImage": "/assets/shiridi/shd1.webp",
-        "overview": {
-            "duration": "2 Days / 1 Night",
-            "destination": "Shirdi",
-            "activities": "Pilgrimage, Sightseeing",
-            "themes": "Religious & Pilgrimage, Culture & Heritage"
-        },
-        "priceDetails": {
-            "amount": "16,500",
-            "type": "per person"
-        },
-        "itinerary": [
-            {
-                "day": "Day 01",
-                "title": "Madurai → Shirdi",
-                "activities": [
-                    "✈️ Departure from Madurai Airport",
-                    "🛬 Arrival at Shirdi Airport",
-                    "🚗 Transfer to Hotel & Check-in",
-                    "After refreshments, proceed for temple visit.",
-                    "Shirdi Sightseeing",
-                    "🛕 Shri Sai Baba Samadhi Mandir (VIP Darshan – Subject to Availability)",
-                    "🛕 Gurusthan",
-                    "🛕 Dwarkamai",
-                    "🏛️ Sai Baba Museum",
-                    "🛕 Chavadi",
-                    "🌳 Lendi Baug (Lendi Garden)",
-                    "🛕 Maruthi Temple",
-                    "🪔 Nandadeep",
-                    "🏨 Overnight Stay in Shirdi"
-                ]
-            },
-            {
-                "day": "Day 02",
-                "title": "Shirdi → Madurai",
-                "activities": [
-                    "Early Morning",
-                    "🙏 Kakad Aarti / Morning Darshan at Shri Sai Baba Temple",
-                    "Free Time",
-                    "🛍️ Shopping for Sai Baba Idols, Shawls, Prasad, Spiritual Books & Souvenirs",
-                    "En Route Visit",
-                    "🛕 Khandoba Temple",
-                    "Transfer to Shirdi Airport.",
-                    "✈️ Return Flight to Madurai Airport."
-                ]
-            }
-        ],
-        "inclusions": [
-            "Airport Pickup & Drop",
-            "Private A/C Vehicle for Transfers & Sightseeing",
-            "1 Night A/C Hotel Accommodation",
-            "Complimentary Breakfast",
-            "Sightseeing as per Itinerary",
-            "VIP Darshan Arrangement (Subject to Availability)",
-            "English, Hindi & Tamil Tour Assistance"
-        ],
-        "exclusions": [
-            "❌ Airfare (unless specifically included in the selected package)",
-            "❌ Lunch & Dinner",
-            "❌ Temple Donations & Special Poojas",
-            "❌ Entry Tickets (if applicable)",
-            "❌ Personal Expenses",
-            "❌ Laundry & Telephone Charges",
-            "❌ Travel Insurance",
-            "❌ Tips & Porter Charges",
-            "❌ Mineral Water",
-            "❌ Anything Not Mentioned in the Package Includes"
-        ],
-        "highlights": [
-            "2 Days / 1 Night Shirdi Pilgrimage",
-            "Direct Flight from Madurai",
-            "VIP Darshan of Shri Sai Baba Temple (Subject to Availability)",
-            "Kakad Aarti / Morning Darshan",
-            "Dwarkamai",
-            "Gurusthan",
-            "Chavadi",
-            "Lendi Baug (Lendi Garden)",
-            "Sai Baba Museum",
-            "Maruthi Temple",
-            "Nandadeep",
-            "Khandoba Temple",
-            "Airport Transfers & Local Sightseeing",
-            "Tamil, English & Hindi Tour Assistance"
-        ],
-        "keywords": "Madurai to Shirdi Tour Package, Shirdi Flight Package from Madurai, Direct Flight to Shirdi, Sai Baba Darshan Tour, Shirdi VIP Darshan Package, Madurai to Shirdi Pilgrimage, Shirdi Temple Tour, Sai Baba Tour Package, Best Shirdi Tour from Madurai, Logaa Holidays.",
-        "faq": [
-            {
-                "question": "Is the Shirdi pilgrimage tour suitable for families and elderly travelers?",
-                "questionTamil": "ஷீரடி சுற்றுலா பேக்கேஜ் குடும்பங்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Shirdi itinerary is typically 2–3 days, focused on visiting the Sai Baba temple and nearby shrines. We choose comfortable, family-friendly hotels in Shirdi. The schedule includes short transfers, making it easy for seniors and kids. We also cover Shani Shingnapur temple if interested, and our guides provide assistance during temple darshan.",
-                "answerTamil": "ஆம். ஷீரடி பயணத் திட்டம் பொதுவாக 2–3 நாட்கள் கொண்டது மற்றும் சாய் பாபா கோயில் மற்றும் அருகிலுள்ள கோயில்களைப் பார்வையிடுவதில் கவனம் செலுத்துகிறது. ஷீரடியில் வசதியான, குடும்பங்களுக்கு ஏற்ற ஹோட்டல்களைத் தேர்வு செய்கிறோம். பயணத் திட்டத்தில் குறுகிய போக்குவரத்து பயணங்கள் இடம்பெறுவதால், மூத்த குடிமக்கள் மற்றும் குழந்தைகளுக்கும் இது எளிதாக இருக்கும். விருப்பம் இருந்தால் ஷனி சிங்னாப்பூர் கோயிலையும் சுற்றுலாவில் சேர்க்கிறோம்."
-            },
-            {
-                "question": "Can we join the Shirdi tour from Chennai, Pune, or Mumbai?",
-                "questionTamil": "சென்னை அல்லது புனேயிலிருந்து ஷீரடி யாத்திரையில் இணைய முடியுமா?",
-                "answer": "Yes. You can join from Chennai, Pune, or Mumbai. Flights to Aurangabad or Mumbai and trains to Kopargaon and Shirdi are common routes. We arrange pickups at these points. For example, one option is a flight to Pune, a drive (3–4 hours) to Shirdi, and a return flight from Mumbai. We will coordinate whichever city is easiest for your travel.",
-                "answerTamil": "ஆம். நீங்கள் சென்னை, புனே அல்லது மும்பையிலிருந்து இணையலாம். அவுரங்காபாத் அல்லது மும்பிக்கு விமானம் மற்றும் கோபர்காவ்/ஷீரடிக்கு ரயில் ஆகியவை பொதுவான பயண வழிகளாகும். இந்த இடங்களில் பிக்கப் வசதியை ஏற்பாடு செய்கிறோம். உதாரணமாக, புனேக்கு விமானத்தில் வந்து, அங்கிருந்து ஷீரடிக்கு 3–4 மணி நேரம் சாலைப் பயணம் செய்து, திரும்பும் போது மும்பையிலிருந்து விமானத்தில் செல்லலாம்."
-            }
-        ],
-        "id": "2010"
-    },
+    // '2010': {
+    //     "title": "Madurai to Shirdi Tour Package | 2 Days / 1 Night Flight Package",
+    //     "image": "/assets/shiridi/shd1(small).webp",
+    //     "heroImage": "/assets/shiridi/shd1.webp",
+    //     "overview": {
+    //         "duration": "2 Days / 1 Night",
+    //         "destination": "Shirdi",
+    //         "activities": "Pilgrimage, Sightseeing",
+    //         "themes": "Religious & Pilgrimage, Culture & Heritage"
+    //     },
+    //     "priceDetails": {
+    //         "amount": "16,500",
+    //         "type": "per person"
+    //     },
+    //     "itinerary": [
+    //         {
+    //             "day": "Day 01",
+    //             "title": "Madurai → Shirdi",
+    //             "activities": [
+    //                 "✈️ Departure from Madurai Airport",
+    //                 "🛬 Arrival at Shirdi Airport",
+    //                 "🚗 Transfer to Hotel & Check-in",
+    //                 "After refreshments, proceed for temple visit.",
+    //                 "Shirdi Sightseeing",
+    //                 "🛕 Shri Sai Baba Samadhi Mandir (VIP Darshan – Subject to Availability)",
+    //                 "🛕 Gurusthan",
+    //                 "🛕 Dwarkamai",
+    //                 "🏛️ Sai Baba Museum",
+    //                 "🛕 Chavadi",
+    //                 "🌳 Lendi Baug (Lendi Garden)",
+    //                 "🛕 Maruthi Temple",
+    //                 "🪔 Nandadeep",
+    //                 "🏨 Overnight Stay in Shirdi"
+    //             ]
+    //         },
+    //         {
+    //             "day": "Day 02",
+    //             "title": "Shirdi → Madurai",
+    //             "activities": [
+    //                 "Early Morning",
+    //                 "🙏 Kakad Aarti / Morning Darshan at Shri Sai Baba Temple",
+    //                 "Free Time",
+    //                 "🛍️ Shopping for Sai Baba Idols, Shawls, Prasad, Spiritual Books & Souvenirs",
+    //                 "En Route Visit",
+    //                 "🛕 Khandoba Temple",
+    //                 "Transfer to Shirdi Airport.",
+    //                 "✈️ Return Flight to Madurai Airport."
+    //             ]
+    //         }
+    //     ],
+    //     "inclusions": [
+    //         "Airport Pickup & Drop",
+    //         "Private A/C Vehicle for Transfers & Sightseeing",
+    //         "1 Night A/C Hotel Accommodation",
+    //         "Complimentary Breakfast",
+    //         "Sightseeing as per Itinerary",
+    //         "VIP Darshan Arrangement (Subject to Availability)",
+    //         "English, Hindi & Tamil Tour Assistance"
+    //     ],
+    //     "exclusions": [
+    //         "❌ Airfare (unless specifically included in the selected package)",
+    //         "❌ Lunch & Dinner",
+    //         "❌ Temple Donations & Special Poojas",
+    //         "❌ Entry Tickets (if applicable)",
+    //         "❌ Personal Expenses",
+    //         "❌ Laundry & Telephone Charges",
+    //         "❌ Travel Insurance",
+    //         "❌ Tips & Porter Charges",
+    //         "❌ Mineral Water",
+    //         "❌ Anything Not Mentioned in the Package Includes"
+    //     ],
+    //     "highlights": [
+    //         "2 Days / 1 Night Shirdi Pilgrimage",
+    //         "Direct Flight from Madurai",
+    //         "VIP Darshan of Shri Sai Baba Temple (Subject to Availability)",
+    //         "Kakad Aarti / Morning Darshan",
+    //         "Dwarkamai",
+    //         "Gurusthan",
+    //         "Chavadi",
+    //         "Lendi Baug (Lendi Garden)",
+    //         "Sai Baba Museum",
+    //         "Maruthi Temple",
+    //         "Nandadeep",
+    //         "Khandoba Temple",
+    //         "Airport Transfers & Local Sightseeing",
+    //         "Tamil, English & Hindi Tour Assistance"
+    //     ],
+    //     "keywords": "Madurai to Shirdi Tour Package, Shirdi Flight Package from Madurai, Direct Flight to Shirdi, Sai Baba Darshan Tour, Shirdi VIP Darshan Package, Madurai to Shirdi Pilgrimage, Shirdi Temple Tour, Sai Baba Tour Package, Best Shirdi Tour from Madurai, Logaa Holidays.",
+    //     "faq": [
+    //         {
+    //             "question": "Is the Shirdi pilgrimage tour suitable for families and elderly travelers?",
+    //             "questionTamil": "ஷீரடி சுற்றுலா பேக்கேஜ் குடும்பங்களுக்கு ஏற்றதா?",
+    //             "answer": "Yes. The Shirdi itinerary is typically 2–3 days, focused on visiting the Sai Baba temple and nearby shrines. We choose comfortable, family-friendly hotels in Shirdi. The schedule includes short transfers, making it easy for seniors and kids. We also cover Shani Shingnapur temple if interested, and our guides provide assistance during temple darshan.",
+    //             "answerTamil": "ஆம். ஷீரடி பயணத் திட்டம் பொதுவாக 2–3 நாட்கள் கொண்டது மற்றும் சாய் பாபா கோயில் மற்றும் அருகிலுள்ள கோயில்களைப் பார்வையிடுவதில் கவனம் செலுத்துகிறது. ஷீரடியில் வசதியான, குடும்பங்களுக்கு ஏற்ற ஹோட்டல்களைத் தேர்வு செய்கிறோம். பயணத் திட்டத்தில் குறுகிய போக்குவரத்து பயணங்கள் இடம்பெறுவதால், மூத்த குடிமக்கள் மற்றும் குழந்தைகளுக்கும் இது எளிதாக இருக்கும். விருப்பம் இருந்தால் ஷனி சிங்னாப்பூர் கோயிலையும் சுற்றுலாவில் சேர்க்கிறோம்."
+    //         },
+    //         {
+    //             "question": "Can we join the Shirdi tour from Chennai, Pune, or Mumbai?",
+    //             "questionTamil": "சென்னை அல்லது புனேயிலிருந்து ஷீரடி யாத்திரையில் இணைய முடியுமா?",
+    //             "answer": "Yes. You can join from Chennai, Pune, or Mumbai. Flights to Aurangabad or Mumbai and trains to Kopargaon and Shirdi are common routes. We arrange pickups at these points. For example, one option is a flight to Pune, a drive (3–4 hours) to Shirdi, and a return flight from Mumbai. We will coordinate whichever city is easiest for your travel.",
+    //             "answerTamil": "ஆம். நீங்கள் சென்னை, புனே அல்லது மும்பையிலிருந்து இணையலாம். அவுரங்காபாத் அல்லது மும்பிக்கு விமானம் மற்றும் கோபர்காவ்/ஷீரடிக்கு ரயில் ஆகியவை பொதுவான பயண வழிகளாகும். இந்த இடங்களில் பிக்கப் வசதியை ஏற்பாடு செய்கிறோம். உதாரணமாக, புனேக்கு விமானத்தில் வந்து, அங்கிருந்து ஷீரடிக்கு 3–4 மணி நேரம் சாலைப் பயணம் செய்து, திரும்பும் போது மும்பையிலிருந்து விமானத்தில் செல்லலாம்."
+    //         }
+    //     ],
+    //     "id": "2010"
+    // },
     '2011': {
         "title": "Chennai to Shirdi Tour Package | Train + Flight | 4 Days / 3 Nights",
         "image": "/assets/shiridi/shd2(small).webp",
@@ -10704,7 +10704,7 @@ export const packagesDatabase: Record<string, any> = {
     '2012': {
         "title": "Chennai to Shirdi One Day Flight Tour Package",
         "image": "/assets/shiridi/shd3(small).webp",
-        "heroImage": "/assets/shiridi/shd3.webp",
+        "heroImage": "/assets/shiridi/shd14.webp",
         "overview": {
             "duration": "One Day",
             "destination": "Shirdi",
@@ -11032,7 +11032,7 @@ export const packagesDatabase: Record<string, any> = {
     '2015': {
         "title": "Chennai to Shirdi & Mantralayam Train Tour Package | 7 Days / 6 Nights Pilgrimage",
         "image": "/assets/shiridi/shd6(small).webp",
-        "heroImage": "/assets/shiridi/shd6.webp",
+        "heroImage": "/assets/Mantralayam.png",
         "overview": {
             "duration": "7 Days / 6 Nights",
             "destination": "Shirdi",
@@ -11979,7 +11979,7 @@ export const packagesDatabase: Record<string, any> = {
     '2022': {
         "title": "Chennai to Shirdi & 3 Jyotirlinga Flight Tour Package | 4 Days / 3 Nights",
         "image": "/assets/shiridi/shd13(small).webp",
-        "heroImage": "/assets/shiridi/shd13.webp",
+        "heroImage": "/assets/jyotiringa.png",
         "overview": {
             "duration": "4 Days / 3 Nights",
             "destination": "Shirdi",
@@ -12254,7 +12254,7 @@ export const packagesDatabase: Record<string, any> = {
     '2024': {
         "title": "Chennai to Shirdi, Ajanta & Ellora Flight Tour Package | 3 Days / 2 Nights",
         "image": "/assets/shiridi/shd15(small).webp",
-        "heroImage": "/assets/shiridi/shd15.webp",
+        "heroImage": "/assets/shiridi/shd13.webp",
         "overview": {
             "duration": "3 Days / 2 Nights",
             "destination": "Shirdi",
@@ -12753,7 +12753,7 @@ export const packagesDatabase: Record<string, any> = {
     '2030': {
         "title": "Madurai to Trichy & Thanjavur One Day Tour Package",
         "image": "/assets/thanjavur/thanjavur 1.webp",
-        "heroImage": "/assets/thanjavur/thanjavur hero 2.webp",
+        "heroImage": "/assets/thanjavur/thanjavur 2 hero.webp",
         "overview": {
             "duration": "One Day",
             "destination": "Madurai",
@@ -13215,7 +13215,7 @@ export const packagesDatabase: Record<string, any> = {
     '2035': {
         "title": "Madurai to Tiruchendur 2 Days / 1 Night Tour Package",
         "image": "/assets/thiruchendur/thiruchendur 3.webp",
-        "heroImage": "/assets/thiruchendur/thiruchendur 4 hero.webp",
+        "heroImage": "/assets/thiruchendur/thiruchendur 4 hero.png",
         "overview": {
             "duration": "2 Days / 1 Night",
             "destination": "Madurai",
@@ -15365,7 +15365,7 @@ export const packagesDatabase: Record<string, any> = {
     '2053': {
         "title": "Madurai to Kanyakumari & Thiruvananthapuram 3 Days / 2 Nights Tour Package",
         "image": "/assets/kaniyakumari/kumari amman temple.webp",
-        "heroImage": "/assets/madurai 63 package/1918x642/maduraikanyakumaritrivandrum3days.webp",
+        "heroImage": "/assets/thiruvananthapuram.jpg",
         "overview": {
             "duration": "3 Days / 2 Nights",
             "destination": "Madurai",
@@ -16443,8 +16443,8 @@ export const packagesDatabase: Record<string, any> = {
 
     '2063': {
         "title": "Madurai to Valparai, Athirappilly & Kochi 4 Days / 3 Nights Tour Package",
-        "image": "/assets/madurai 63 package/3days/valparai 3 days.webp",
-        "heroImage": "/assets/madurai 63 package/1918x642/Madurai → Valparai → Athirappilly → Kochi 4 Days  3 Nights Tour Package.webp",
+        "image": "/assets/lonavala.png",
+        "heroImage": "/assets/Athirappilly.png",
         "overview": {
             "duration": "4 Days / 3 Nights",
             "destination": "Madurai -> Valparai -> Athirappilly -> Kochi  -> Madurai",
@@ -16732,8 +16732,8 @@ export const packagesDatabase: Record<string, any> = {
     },
     '2065': {
         "title": "Madurai to Palani One Day Trip",
-        "image": "/assets/madurai 63 package/1day/MADURAI TO PALANI 1DAY.webp",
-        "heroImage": "/assets/madurai/thirupurakundaram.webp",
+        "image": "/assets/palani/palani 1.png",
+        "heroImage": "/assets/palani/palani 2.png",
         "overview": {
             "duration": "One Day",
             "destination": "Palani",
@@ -17070,7 +17070,7 @@ export const packagesDatabase: Record<string, any> = {
     '2070': {
         "title": "Madurai to Kanyakumari 2 Days / 1 Night Tour Package",
         "image": "/assets/kaniyakumari/Thiruvalluvar statue.webp",
-        "heroImage": "/assets/madurai 63 package/1918x642/maduraikanyakumaritrivandrum2days.webp",
+        "heroImage": "/assets/kanyakumari.jpg",
         "overview": {
             "duration": "2 Days / 1 Night",
             "destination": "Kanyakumari",
@@ -17692,8 +17692,8 @@ export const packagesDatabase: Record<string, any> = {
     },
     '2076': {
         "title": "Madurai to Valparai 2 Days / 1 Night Tour Package",
-        "image": "/assets/madurai 63 package/2day/madurai to Valparai 2days trip.webp",
-        "heroImage": "/assets/madurai 63 package/1918x642/maduraimunnarvegamon.webp",
+        "image": "/assets/valparai/valparai 1.png",
+        "heroImage": "/assets/valparai/valparai 2.png",
         "overview": {
             "duration": "2 Days / 1 Night",
             "destination": "Valparai",
@@ -17799,8 +17799,8 @@ export const packagesDatabase: Record<string, any> = {
     },
     '2077': {
         "title": "Madurai to Valparai 3 Days / 2 Nights Tour Package",
-        "image": "/assets/madurai 63 package/322x372/maduraimunnarmarayoor3day.webp",
-        "heroImage": "/assets/madurai 63 package/1918x642/maduraimunnarmarayoor3days.webp",
+        "image": "/assets/valparai/valparai 3.png",
+        "heroImage": "/assets/valparai/valparai 4.png",
         "overview": {
             "duration": "3 Days / 2 Nights",
             "destination": "Valparai",
@@ -17923,7 +17923,7 @@ export const packagesDatabase: Record<string, any> = {
     '2078': {
         "title": "Madurai → Tiruchendur → Kanyakumari 3 Days / 2 Nights Tour Package",
         "image": "/assets/kaniyakumari/thirparappu waterfalls.webp",
-        "heroImage": "/assets/madurai 63 package/1918x642/maduraithiruchendur2days.webp",
+        "heroImage": "/assets/tiruchendure.png",
         "overview": {
             "duration": "3 Days / 2 Nights",
             "destination": "Tiruchendur, Kanyakumari",
@@ -18206,7 +18206,7 @@ export const packagesDatabase: Record<string, any> = {
     '2081': {
         "title": "Madurai → Tiruchendur → Kanyakumari → Thiruvananthapuram 4 Days / 3 Nights Tour Package",
         "image": "/assets/kaniyakumari/vattakottai fort.webp",
-        "heroImage": "/assets/madurai 63 package/1918x642/maduraikanyakumaritrivandrum2days.webp",
+        "heroImage": "/assets/thiruvananthapuram famous place.png",
         "overview": { "duration": "4 Days / 3 Nights", "destination": "Tiruchendur, Kanyakumari, Thiruvananthapuram", "activities": "Pilgrimage, Sightseeing", "themes": "Religious & Pilgrimage, Culture & Heritage, Beaches and Islands" },
         "priceDetails": { "amount": "On Request", "type": "per person" },
         "itinerary": [
@@ -18306,7 +18306,7 @@ export const packagesDatabase: Record<string, any> = {
     '2084': {
         "title": "Madurai → Kanyakumari → Kovalam → Thiruvananthapuram 4 Days / 3 Nights Tour Package",
         "image": "/assets/kaniyakumari/vivekandhar.webp",
-        "heroImage": "/assets/madurai 63 package/1918x642/maduraikanyakumaritrivandrum3days.webp",
+        "heroImage": "/assets/kovalam.png",
         "overview": { "duration": "4 Days / 3 Nights", "destination": "Kanyakumari, Kovalam, Thiruvananthapuram", "activities": "Pilgrimage, Sightseeing, Beach", "themes": "Religious & Pilgrimage, Culture & Heritage, Beaches and Islands" },
         "priceDetails": { "amount": "On Request", "type": "per person" },
         "itinerary": [
@@ -18649,73 +18649,73 @@ export const packagesDatabase: Record<string, any> = {
             "cancellation": "Cancellations made 7+ days before: Full refund. Within 3-7 days: 50% refund. Less than 3 days: No refund."
         }
     },
-    '1008': {
-        "id": "1008",
-        "title": "Madurai to Kasi, Gaya & Prayagraj Tour Package | 5 Days / 4 Nights Flight Package",
-        "image": "/assets/kasi/card/kasicard9.webp",
-        "heroImage": "/assets/kasi/kasi9.webp",
-        "overview": {
-            "duration": "1 Night / 2 Days",
-            "destination": "Kasi, Gaya & Prayagraj | 5 Days / 4 Nights Flight Package",
-            "activities": "Sightseeing",
-            "themes": "Religious & Pilgrimage, Culture & Heritage, Nature & Wildlife"
-        },
-        "priceDetails": {
-            "label": "Starts @",
-            "amount": "On Request",
-            "status": "On Request"
-        },
-        "itinerary": [
-            {
-                "day": "Day 01",
-                "title": "Day 01 – Madurai → Varanasi (Kasi)",
-                "description": "✈️ Departure from Madurai Airport\n🛬 Arrival at Varanasi Airport\n🚗 Transfer to Hotel & Check-in\nTemple Darshan\n🛕 Shri Kashi Vishwanath Temple\n🛕 Kashi Vishalakshi Amman Temple\n🛕 Annapoorani Temple\nEvening Spiritual Experience\n🚤 Boat Ride on the Holy River Ganga\n🔥 Witness the Grand Ganga Aarti\n⚱️ Manikarnika Ghat\n⚱️ Harishchandra Ghat\n🌙 Sayana Aarti at Shri Kashi Vishwanath Temple\n🏨 Overnight Stay in Varanasi"
-            },
-            {
-                "day": "Day 02",
-                "title": "Day 02 – Varanasi → Gaya",
-                "description": "Early Morning\n🌊 Holy Bath in the River Ganga\n🙏 Perform Tharpanam (Optional)\nFree time for religious activities and shopping.\nAfter lunch, proceed to Gaya.\n🏨 Overnight Stay in Gaya"
-            },
-            {
-                "day": "Day 03",
-                "title": "Day 03 – Gaya → Bodh Gaya → Varanasi",
-                "description": "Ancestral Rituals\n🙏 Perform Pinda Daan / Shraddham (Optional)\nDress Code: Ladies – Saree | Gents – Dhoti\nGaya Sightseeing\n🛕 Vishnupad Temple\n🌳 Akshayavat (Sacred Banyan Tree)\nBodh Gaya Sightseeing\n🛕 Mahabodhi Temple\n🌳 Sacred Bodhi Tree\nProceed back to Varanasi.\n🏨 Overnight Stay in Varanasi"
-            },
-            {
-                "day": "Day 04",
-                "title": "Day 04 – Varanasi → Prayagraj (Allahabad) → Varanasi",
-                "description": "Breakfast at Hotel\nProceed to Prayagraj (Allahabad).\nPrayagraj Sightseeing\n🌊 Holy Bath at Triveni Sangam\n🙏 Veni Pooja / Dampathi Pooja (Optional)\n🛕 Sri Sayana Hanuman Temple\nReturn to Varanasi.\n🏨 Overnight Stay in Varanasi"
-            },
-            {
-                "day": "Day 05",
-                "title": "Day 05 – Varanasi → Madurai",
-                "description": "Breakfast at Hotel\nMorning Temple Visit\n🛕 Kala Bhairava Temple\nFree Time\n🛍️ Shopping for Banarasi Silk Sarees\n📿 Rudraksha Malas\n🪔 Brass Idols & Religious Articles\nCheck-out from the hotel.\n🚗 Transfer to Varanasi Airport.\n✈️ Return Flight to Madurai Airport."
-            }
-        ],
-        "inclusions": [
-            "Airport Pickup & Drop",
-            "Private A/C Vehicle for Transfers & Sightseeing",
-            "3 Nights Hotel"
-        ],
-        "exclusions": [
-            "Airfare (unless specifically included in the selected package)",
-            "Pinda Daan, Shraddham & Tharpanam Charges",
-            "Veni Pooja / Dampathi Pooja Charges",
-            "Temple Special Darshan Tickets",
-            "Lunch & Dinner",
-            "Entry Tickets (if applicable)",
-            "Personal Expenses",
-            "Laundry & Telephone Charges",
-            "Travel Insurance",
-            "Tips & Porter Charges",
-            "Mineral Water",
-            "Anything Not Mentioned in the Package Includes"
-        ],
-        "policies": {
-            "payment": "20% Advance at the time of booking. Balance before departure.",
-            "cancellation": "Cancellations made 7+ days before: Full refund. Within 3-7 days: 50% refund. Less than 3 days: No refund."
-        }
-    },
+    // '1008': {
+    //     "id": "1008",
+    //     "title": "Madurai to Kasi, Gaya & Prayagraj Tour Package | 5 Days / 4 Nights Flight Package",
+    //     "image": "/assets/kasi/card/kasicard9.webp",
+    //     "heroImage": "/assets/kasi/kasi9.webp",
+    //     "overview": {
+    //         "duration": "1 Night / 2 Days",
+    //         "destination": "Kasi, Gaya & Prayagraj | 5 Days / 4 Nights Flight Package",
+    //         "activities": "Sightseeing",
+    //         "themes": "Religious & Pilgrimage, Culture & Heritage, Nature & Wildlife"
+    //     },
+    //     "priceDetails": {
+    //         "label": "Starts @",
+    //         "amount": "On Request",
+    //         "status": "On Request"
+    //     },
+    //     "itinerary": [
+    //         {
+    //             "day": "Day 01",
+    //             "title": "Day 01 – Madurai → Varanasi (Kasi)",
+    //             "description": "✈️ Departure from Madurai Airport\n🛬 Arrival at Varanasi Airport\n🚗 Transfer to Hotel & Check-in\nTemple Darshan\n🛕 Shri Kashi Vishwanath Temple\n🛕 Kashi Vishalakshi Amman Temple\n🛕 Annapoorani Temple\nEvening Spiritual Experience\n🚤 Boat Ride on the Holy River Ganga\n🔥 Witness the Grand Ganga Aarti\n⚱️ Manikarnika Ghat\n⚱️ Harishchandra Ghat\n🌙 Sayana Aarti at Shri Kashi Vishwanath Temple\n🏨 Overnight Stay in Varanasi"
+    //         },
+    //         {
+    //             "day": "Day 02",
+    //             "title": "Day 02 – Varanasi → Gaya",
+    //             "description": "Early Morning\n🌊 Holy Bath in the River Ganga\n🙏 Perform Tharpanam (Optional)\nFree time for religious activities and shopping.\nAfter lunch, proceed to Gaya.\n🏨 Overnight Stay in Gaya"
+    //         },
+    //         {
+    //             "day": "Day 03",
+    //             "title": "Day 03 – Gaya → Bodh Gaya → Varanasi",
+    //             "description": "Ancestral Rituals\n🙏 Perform Pinda Daan / Shraddham (Optional)\nDress Code: Ladies – Saree | Gents – Dhoti\nGaya Sightseeing\n🛕 Vishnupad Temple\n🌳 Akshayavat (Sacred Banyan Tree)\nBodh Gaya Sightseeing\n🛕 Mahabodhi Temple\n🌳 Sacred Bodhi Tree\nProceed back to Varanasi.\n🏨 Overnight Stay in Varanasi"
+    //         },
+    //         {
+    //             "day": "Day 04",
+    //             "title": "Day 04 – Varanasi → Prayagraj (Allahabad) → Varanasi",
+    //             "description": "Breakfast at Hotel\nProceed to Prayagraj (Allahabad).\nPrayagraj Sightseeing\n🌊 Holy Bath at Triveni Sangam\n🙏 Veni Pooja / Dampathi Pooja (Optional)\n🛕 Sri Sayana Hanuman Temple\nReturn to Varanasi.\n🏨 Overnight Stay in Varanasi"
+    //         },
+    //         {
+    //             "day": "Day 05",
+    //             "title": "Day 05 – Varanasi → Madurai",
+    //             "description": "Breakfast at Hotel\nMorning Temple Visit\n🛕 Kala Bhairava Temple\nFree Time\n🛍️ Shopping for Banarasi Silk Sarees\n📿 Rudraksha Malas\n🪔 Brass Idols & Religious Articles\nCheck-out from the hotel.\n🚗 Transfer to Varanasi Airport.\n✈️ Return Flight to Madurai Airport."
+    //         }
+    //     ],
+    //     "inclusions": [
+    //         "Airport Pickup & Drop",
+    //         "Private A/C Vehicle for Transfers & Sightseeing",
+    //         "3 Nights Hotel"
+    //     ],
+    //     "exclusions": [
+    //         "Airfare (unless specifically included in the selected package)",
+    //         "Pinda Daan, Shraddham & Tharpanam Charges",
+    //         "Veni Pooja / Dampathi Pooja Charges",
+    //         "Temple Special Darshan Tickets",
+    //         "Lunch & Dinner",
+    //         "Entry Tickets (if applicable)",
+    //         "Personal Expenses",
+    //         "Laundry & Telephone Charges",
+    //         "Travel Insurance",
+    //         "Tips & Porter Charges",
+    //         "Mineral Water",
+    //         "Anything Not Mentioned in the Package Includes"
+    //     ],
+    //     "policies": {
+    //         "payment": "20% Advance at the time of booking. Balance before departure.",
+    //         "cancellation": "Cancellations made 7+ days before: Full refund. Within 3-7 days: 50% refund. Less than 3 days: No refund."
+    //     }
+    // },
     '1009': {
         "id": "1009",
         "title": "Madurai to Kasi, Gaya, Prayagraj & Ayodhya Tour Package | 6 Days / 5 Nights Flight Package",
@@ -18792,7 +18792,7 @@ export const packagesDatabase: Record<string, any> = {
         id: '1',
         title: 'Shirdi Flight Package From Madurai - Direct Flight - 2 Days',
         image: '/assets/shiridi/1.avif',
-         "heroImage": "/assets/shiridi/lendibaug.webp",
+        "heroImage": "/assets/shiridi/lendibaug.webp",
         overview: {
             duration: '1 Nights / 2 Days',
             destination: 'Shirdi',
@@ -19232,372 +19232,372 @@ export const packagesDatabase: Record<string, any> = {
             cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
         }
     },
-    '9': {
-        id: '9',
-        title: 'Shirdi Flight Package From Chennai 3 Days',
-        image: '/assets/generated/shirdi_aerial.png',
-        overview: {
-            duration: '2 Nights / 3 Days',
-            destination: 'Nashik, Shirdi, Trimbakeshwar, Shani Shingnapur',
-            activities: 'Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'Rs. 16500/-',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Chennai - Shirdi',
-                description: 'Departure at 05.15 am from Chennai Airport. Arrival 06.50 am at Pune Airport. Bus/Cab will start at Pune airport by 07.00 am and reaching Shirdi at 01.00 pm. Next 3 hours refreshment at Hotel. Evening Dharshan(V.I.P) of Saibaba Temple and visit other places of Gurusthan, Dwarakamai, Sai Museum, Chavadi, Lendi Garden. Night Halt at Shirdi.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Shirdi - Nashik',
-                description: 'Starting at Shirdi by 09.00 a.m drive to Nasik and having the Dharshan of Triyambakeshwar Temple (One of the Jyothirlingam). Visit the places of Panchavati, Kapaleshwar temple, Kalaram & Goraram Temple and Sita Guha. Evening return to Shirdi and night halt.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Shirdi - Pune - Chennai',
-                description: 'Morning darshan /Kakada Aarti of Saibaba Temple. Starting at Shirdi by 9.00 am and on the way visiting Shanisignapoor, Renuka Devi and Maha Ganapathy Temple. Reaching Pune Airport by 09.00 pm Boarding Flight at Pune airport by 11.00 pm Reaching Chennai Airport at 12.45 Am.'
-            }
-        ],
-        inclusions: [
-            'Hotel',
-            'Transportation by A/C Bus/Cab.',
-            'Two night stay at Shirdi in A/C room.',
-            'Buffet Breakfast or Fixed Menu',
-            'All sightseeing and excursion as per the itinerary.',
-            'Everyone must bring Original ID Proof at the time of travel.',
-            'English, Hindi and Tamil Guide for entire trip.',
-            'Special darshan will be arranged (subject to availability)',
-            'Please be at Airport 2 hours before the departure Time.'
-        ],
-        exclusions: [
-            'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
-        ],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '10': {
-        id: '10',
-        title: 'Shirdi And Pandaripur Flight Package From Chennai - 3 Days',
-        image: '/assets/generated/vitthal_idol.png',
-        overview: {
-            duration: '2 Nights / 3 Days',
-            destination: 'Pune, Shirdi, Pandharpur, Shani Shingnapur',
-            activities: 'Museums, Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'Rs. 16500/-',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Chennai - Shirdi',
-                description: 'Departure from Chennai Airport at 05.15 am Arrival 6.50 am at Pune Airport. Bus/Cab will start at Pune Airport by 7.00 am. Reaching Shirdi at 1.00 pm Next 3 hours refreshment at hotel. Evening Dharshan(V.I.P) of Saibaba Temple and visit other places of Gurusthan, Chavadi, Museum and Lendi Garden. Night halt at Shirdi.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Pandharpur',
-                description: 'Morning Dharshan/Kakkada Aarthi of Saibaba Temple. Starting at Shirdi 08.00 a.m and drive to Pandharpur on the way visit Shanisignapoor and Renuka Devi Temple. Reaching Pandharpur at 05.00 p.m. Evening Dharshan of Pandurangar Temple and Vitthal Rukmini Temple. Night halt at Pandharpur.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Pandharpur - Chennai',
-                description: 'Morning having the Dharshan of Lord Pandurangar. Free time of religious activities.Cab will start from Pandharpur at 09.00 a.m.on the way visiting Chinthamani Ganapathy Temple. Reaching Pune Airport by 09.00 p.m. Boarding Flight at Pune airport by 11.00 p.m. Reaching Chennai Airport at 12.45 a.m.'
-            }
-        ],
-        inclusions: [
-            'Hotel',
-            'Transportation by A/C Bus/Cab.',
-            'One night stay at Shirdi & One night at Pandaripur in A/C room.',
-            'Buffet Breakfast or Fixed Menu',
-            'All sightseeing and excursion as per the itinerary.',
-            'Everyone must bring Original ID Proof at the time of travel.',
-            'English, Hindi and Tamil Guide for entire trip.',
-            'Special darshan will be arranged (subject to availability)',
-            'Please be at Airport 2 hours before the departure Time.'
-        ],
-        exclusions: [
-            'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
-        ],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '11': {
-        id: '11',
-        title: 'Shirdi - Nashik - Ajanta - Ellora Package From Chennai 4 Days',
-        image: '/assets/generated/ajanta_caves.png',
-        overview: {
-            duration: '3 Nights / 4 Days',
-            destination: 'Nashik, Shirdi, Aurangabad, Ellora Caves, Ajanta Caves',
-            activities: 'Caving, Museums, Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage, Monuments & Historical Places'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'Rs. 18500/-',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Chennai - Shirdi',
-                description: 'Departure at 5.15 am at Chennai Airport. Arrival 6.50 am at Pune Airport. Bus/Cab will start at Pune Airport by 7.00 am and on the way visiting Shanisignapoor and reaching Shirdi at 4.00 pm Refreshment at hotel for 1 hour. Having the darshan of Saibaba and visit the places of Gurusthan, Dwarakamai, Chavadi, Sai Museum, Lendi Garden. Night halt at Shirdi.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Nashik',
-                description: 'Starting at Shirdi by 9.00 am drive to Nasik and having the darshan of Triyambakeshwar Temple (One of the Jyothirlingam). Visit the places of Panchavati, Kapaleshwar temple, Kalaram & Goraram Temple and Sita Guha. Evening return to Shirdi and night halt.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Aurangabad - Ajanta',
-                description: 'Morning dharshan / Kakada Aarti of Saibaba Temple and drive to Aurangabad. Visit the place of Ajanta Caves. Return and night halt at Aurangabad.'
-            },
-            {
-                day: 'Day 4',
-                title: 'Ellora - Pune - Chennai',
-                description: 'Starting at Aurangabad by 8.00 am and drive to Ellora Caves. After visit the caves and visit other places of Mini Tajmahal and Grineshwar Temple (one of the Jyothirlingam) drive to Pune. Reaching Pune Airport by 8.00 pm Boarding flight at Pune Airport 11.00 pm Reaching Chennai Airport at 12.45 am.'
-            }
-        ],
-        inclusions: [
-            'Hotel',
-            'Transportation by A/C Bus/Cab.',
-            'Two night stay at Shirdi in A/C room.',
-            'One night stay at Aurangabad in A/c room.',
-            'Buffet Breakfast or Fixed Menu',
-            'All sightseeing and excursion as per the itinerary.',
-            'Everyone must bring Original ID Proof at the time of travel.',
-            'English, Hindi and Tamil Guide for entire trip.',
-            'Special darshan will be arranged (subject to availability)',
-            'Ajanta Cave holiday on Monday and Ellora Cave holiday on Tuesday.'
-        ],
-        exclusions: [
-            'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
-        ],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '12': {
-        id: '12',
-        title: 'Shirdi - 2 Jyotirlinga Package From Chennai - 3 Days',
-        image: '/assets/generated/trimbakeshwar_temple.png',
-        overview: {
-            duration: '2 Nights / 3 Days',
-            destination: 'Pune, Shirdi, Trimbakeshwar, Aurangabad, Ellora Caves',
-            activities: 'Museums, Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'Rs. 16500/-',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Chennai - Shirdi',
-                description: 'Departure from Chennai Airport at 05.00 a.m. Arrival 06.40 a.m. at Pune Airport. Cab will start from Pune airport by 07.00 a.m. and proceed to visit Maha Ganapati Temple and Shani Shingnapur Temple. Reaching Shirdi at 04.00 p.m. Transfer to hotel. After refreshment Having darshan (V.I.P) of Saibaba Temple and other places of Gurusthan, Dwarakamai, Museum, Chavadi and Lendi Garden. Night halt at Shirdi.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Nashik',
-                description: 'Morning after breakfast proceed to Nasik. Having the Dharshan of Trimbakeshwar Temple (One of the Jyotirlinga). Visit the places of Panchavati, Kapaleshwar temple, Kalaram & Goraram Temple and Sita Guha. Evening return and night halt at Shirdi.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Pune - Chennai',
-                description: 'Morning after breakfast proceed to visit Ellora Caves. And having darshan of Grineshwar Temple (one of the Jyotirlinga). After darshan proceed to Pune. Reaching Pune Airport by 10.00 p.m. Boarding flight at Pune Airport by 00.10 a.m. Reaching Chennai Airport at 01.20 a.m.'
-            }
-        ],
-        inclusions: [
-            'Hotel',
-            'Transportation by A/C Bus/Cab.',
-            'Two nights stay at Shirdi in A/C room.',
-            'Buffet Breakfast or Fixed Menu',
-            'All sightseeing and excursion as per the itinerary.',
-            'Everyone must bring Original ID Proof at the time of travel.',
-            'English, Hindi and Tamil Guide for entire trip.',
-            'Special darshan will be arranged (subject to availability)'
-        ],
-        exclusions: [
-            'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
-        ],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '13': {
-        id: '13',
-        title: 'Shirdi - Jyotirlinga Package From Chennai 3 Night - 4 Days',
-        image: '/assets/generated/jyotirlinga_ellora_pkg.png',
-        overview: {
-            duration: '3 Nights / 4 Days',
-            destination: 'Pune, Shirdi, Trimbakeshwar, Aurangabad, Ellora Caves',
-            activities: 'Caving, Museums, Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'Rs. 18500/-',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Chennai - Shirdi',
-                description: 'Departure at 05.15 a.m at Chennai Airport. Arrival at 06.50 a.m. at Pune Airport. Cab will start at Pune Airport by 07.00 am and visit Bhimashankar (One of the Jyotirlingam) and drive to Shirdi. Reaching Shirdi at 06.00 p.m. Evening having Dharshan (V.I.P) of Saibaba Temple and visiting other places of Gurusthan, Dwarakamai, Chavadi, Sai Museum, Lendi Garden. Night halt at Shirdi.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Nashik',
-                description: 'Starting at Shirdi by 9.00 am drive to Nasik. Having the darshan of Thriyambakeshwar Temple (One of the Jyotirlingam). Visit the places of Panchavati, Kapaleshwar temple, Kalaram & Goraram Temple and Sita Guha. Evening return to Shirdi and night halt.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Shirdi - Aurangabad',
-                description: 'Morning having Dharshan / Kakada Aarti of Saibaba Temple. Starting at Shirdi by 09.00 a.m. and drive to Ellora Caves. After visit the caves and visit other places of Mini Tajmahal and Grineshwar Temple (one of the Jyotirlingam) night halt at Aurangabad.'
-            },
-            {
-                day: 'Day 4',
-                title: 'Aurangabad - Chennai',
-                description: 'Morning starting from Aurangabad at 09.00 a.m. and drive to Shani Shingnapoor having Dharshan of Shani Bhagavan Temple. After that visit Maha Ganapati Temple at Ranjangaon (Ashtavinayak Temple) and proceed to Pune. Reaching Pune Airport by 09.00 p.m. Boarding flight at Pune Airport by 11.00 p.m.Reaching Chennai Airport at 00.50 a.m.'
-            }
-        ],
-        inclusions: [
-            'Transportation by A/C Bus/Cab.',
-            'Three-night stay at Shirdi in A/C room.',
-            'Buffet Breakfast or Fixed Menu',
-            'All sightseeing and excursion as per the itinerary.',
-            'Everyone must bring Original ID Proof at the time of travel.',
-            'English, Hindi and Tamil Guide for entire trip.',
-            'Special darshan will be arranged (subject to availability)'
-        ],
-        exclusions: [
-            'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
-        ],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '14': {
-        id: '14',
-        title: 'Shirdi And Lonavala Package From Chennai 2 Night - 3 Days',
-        image: '/assets/generated/lonavala_pkg.png',
-        overview: {
-            duration: '2 Nights / 3 Days',
-            destination: 'Lonavala, Shirdi, Shani Shingnapur',
-            activities: 'Museums, Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'Rs. 16500/-',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Chennai - Shirdi',
-                description: 'Departure at 5.15 am from Chennai Airport. Arrival 06.50 am at Pune Airport. Bus/Cab will start at Pune airport by 07.00 am and drive to Shirdi. Reaching Shirdi at 1.00 pm Evening darshan of Saibaba Temple and visit other places of Gurusthan, Dwarakamai, Sai Museum, Chavadi, Lendi Garden. Night halt at Shirdi.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Lonavala',
-                description: 'Morning dharshan / Kakada Aarti of Saibaba Temple. Starting at Shirdi by 10.00 am and drive to Lonavala on the way visiting Shanisignapoor and Maha Ganapathy Temple. Reaching 5.00 pm at Lonavala. Evening having sightseeing at Sunset Point. Night halt at Hotel in Lonavala.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Lonavala - Chennai',
-                description: 'Morning having sightseeing of Karla Caves, Celebrity Wax Museum, Lion Point, Bhaja Caves, Rajmachi Fort, Tiger Leap and Shooting Point. Starting at Lonavala by 06.00 pm Reaching Pune Airport by 09.00 pm Boarding flight at Pune Airport by 11.00 pm Reaching Chennai Airport at 12.45 am.'
-            }
-        ],
-        inclusions: [
-            'Hotel',
-            'Sightseeing',
-            'Transportation by A/C Bus/Cab.',
-            'One night stay at Shirdi and One night at Lonavala in A/C room.',
-            'Buffet Breakfast or Fixed Menu',
-            'All sightseeing and excursion as per the itinerary.',
-            'Everyone must bring Original ID Proof at the time of travel.',
-            'English, Hindi and Tamil Guide for entire trip.',
-            'Special darshan will be arranged (subject to availability)'
-        ],
-        exclusions: [
-            'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
-        ],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '15': {
-        id: '15',
-        title: 'Shirdi - Ajanta - Ellora Package From Chennai 2 Night - 3 Days',
-        image: '/assets/shiridi/cards/Chennai to Shirdi, Ajanta & Ellora Flight Tour Package  3 Days  2 Nights.webp',
-        overview: {
-            duration: '2 Nights / 3 Days',
-            destination: 'Shirdi, Aurangabad, Ellora Caves, Ajanta Caves',
-            activities: 'Caving, Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage, Monuments & Historical Places'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'Rs. 16500/-',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Chennai - Shirdi',
-                description: 'Departure at 5.15 am at Chennai Airport. Arrival 6.50 am at Pune Airport. Bus/Cab will start at Pune Airport by 7.00 am and on the way visiting Shanisignapoor and reaching Shirdi at 4.00 pm Refreshment at hotel for 1 hour. Having the darshan of Saibaba and visit the places of Gurusthan, Dwarakamai, Chavadi, Sai Museum, Lendi Garden. Night halt at Shirdi.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Ajanta Caves',
-                description: 'Morning dharshan / Kakada Aarti of Saibaba Temple and drive to Aurangabad. Visit the place of Ajanta Caves. Return and night halt at Aurangabad.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Ellora Caves - Pune - Chennai',
-                description: 'Starting at Aurangabad by 8.00 am and drive to Ellora Caves. After visit the caves and visit other places of Mini Tajmahal and Grineshwar Temple (one of the Jyothirlingam) drive to Pune. Reaching Pune Airport by 8.00 pm Boarding flight at Pune Airport 11.00 pm Reaching Chennai Airport at 12.45 am'
-            }
-        ],
-        inclusions: [
-            'Hotel',
-            'Transportation by A/C Bus/Cab.',
-            'Two night stay at Shirdi in A/C room.',
-            'One night stay at Aurangabad in A/c room.',
-            'Buffet Breakfast or Fixed Menu',
-            'All sightseeing and excursion as per the itinerary.',
-            'Everyone must bring Original ID Proof at the time of travel.',
-            'English, Hindi and Tamil Guide for entire trip.',
-            'Special darshan will be arranged (subject to availability)',
-            'Ajanta Cave holiday on Monday and Ellora Cave holiday on Tuesday.'
-        ],
-        exclusions: [
-            'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
-        ],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
+    // '9': {
+    //     id: '9',
+    //     title: 'Shirdi Flight Package From Chennai 3 Days',
+    //     image: '/assets/generated/shirdi_aerial.png',
+    //     overview: {
+    //         duration: '2 Nights / 3 Days',
+    //         destination: 'Nashik, Shirdi, Trimbakeshwar, Shani Shingnapur',
+    //         activities: 'Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'Rs. 16500/-',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Chennai - Shirdi',
+    //             description: 'Departure at 05.15 am from Chennai Airport. Arrival 06.50 am at Pune Airport. Bus/Cab will start at Pune airport by 07.00 am and reaching Shirdi at 01.00 pm. Next 3 hours refreshment at Hotel. Evening Dharshan(V.I.P) of Saibaba Temple and visit other places of Gurusthan, Dwarakamai, Sai Museum, Chavadi, Lendi Garden. Night Halt at Shirdi.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Shirdi - Nashik',
+    //             description: 'Starting at Shirdi by 09.00 a.m drive to Nasik and having the Dharshan of Triyambakeshwar Temple (One of the Jyothirlingam). Visit the places of Panchavati, Kapaleshwar temple, Kalaram & Goraram Temple and Sita Guha. Evening return to Shirdi and night halt.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Shirdi - Pune - Chennai',
+    //             description: 'Morning darshan /Kakada Aarti of Saibaba Temple. Starting at Shirdi by 9.00 am and on the way visiting Shanisignapoor, Renuka Devi and Maha Ganapathy Temple. Reaching Pune Airport by 09.00 pm Boarding Flight at Pune airport by 11.00 pm Reaching Chennai Airport at 12.45 Am.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Hotel',
+    //         'Transportation by A/C Bus/Cab.',
+    //         'Two night stay at Shirdi in A/C room.',
+    //         'Buffet Breakfast or Fixed Menu',
+    //         'All sightseeing and excursion as per the itinerary.',
+    //         'Everyone must bring Original ID Proof at the time of travel.',
+    //         'English, Hindi and Tamil Guide for entire trip.',
+    //         'Special darshan will be arranged (subject to availability)',
+    //         'Please be at Airport 2 hours before the departure Time.'
+    //     ],
+    //     exclusions: [
+    //         'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
+    //     ],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '10': {
+    //     id: '10',
+    //     title: 'Shirdi And Pandaripur Flight Package From Chennai - 3 Days',
+    //     image: '/assets/generated/vitthal_idol.png',
+    //     overview: {
+    //         duration: '2 Nights / 3 Days',
+    //         destination: 'Pune, Shirdi, Pandharpur, Shani Shingnapur',
+    //         activities: 'Museums, Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'Rs. 16500/-',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Chennai - Shirdi',
+    //             description: 'Departure from Chennai Airport at 05.15 am Arrival 6.50 am at Pune Airport. Bus/Cab will start at Pune Airport by 7.00 am. Reaching Shirdi at 1.00 pm Next 3 hours refreshment at hotel. Evening Dharshan(V.I.P) of Saibaba Temple and visit other places of Gurusthan, Chavadi, Museum and Lendi Garden. Night halt at Shirdi.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Pandharpur',
+    //             description: 'Morning Dharshan/Kakkada Aarthi of Saibaba Temple. Starting at Shirdi 08.00 a.m and drive to Pandharpur on the way visit Shanisignapoor and Renuka Devi Temple. Reaching Pandharpur at 05.00 p.m. Evening Dharshan of Pandurangar Temple and Vitthal Rukmini Temple. Night halt at Pandharpur.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Pandharpur - Chennai',
+    //             description: 'Morning having the Dharshan of Lord Pandurangar. Free time of religious activities.Cab will start from Pandharpur at 09.00 a.m.on the way visiting Chinthamani Ganapathy Temple. Reaching Pune Airport by 09.00 p.m. Boarding Flight at Pune airport by 11.00 p.m. Reaching Chennai Airport at 12.45 a.m.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Hotel',
+    //         'Transportation by A/C Bus/Cab.',
+    //         'One night stay at Shirdi & One night at Pandaripur in A/C room.',
+    //         'Buffet Breakfast or Fixed Menu',
+    //         'All sightseeing and excursion as per the itinerary.',
+    //         'Everyone must bring Original ID Proof at the time of travel.',
+    //         'English, Hindi and Tamil Guide for entire trip.',
+    //         'Special darshan will be arranged (subject to availability)',
+    //         'Please be at Airport 2 hours before the departure Time.'
+    //     ],
+    //     exclusions: [
+    //         'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
+    //     ],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '11': {
+    //     id: '11',
+    //     title: 'Shirdi - Nashik - Ajanta - Ellora Package From Chennai 4 Days',
+    //     image: '/assets/generated/ajanta_caves.png',
+    //     overview: {
+    //         duration: '3 Nights / 4 Days',
+    //         destination: 'Nashik, Shirdi, Aurangabad, Ellora Caves, Ajanta Caves',
+    //         activities: 'Caving, Museums, Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage, Monuments & Historical Places'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'Rs. 18500/-',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Chennai - Shirdi',
+    //             description: 'Departure at 5.15 am at Chennai Airport. Arrival 6.50 am at Pune Airport. Bus/Cab will start at Pune Airport by 7.00 am and on the way visiting Shanisignapoor and reaching Shirdi at 4.00 pm Refreshment at hotel for 1 hour. Having the darshan of Saibaba and visit the places of Gurusthan, Dwarakamai, Chavadi, Sai Museum, Lendi Garden. Night halt at Shirdi.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Nashik',
+    //             description: 'Starting at Shirdi by 9.00 am drive to Nasik and having the darshan of Triyambakeshwar Temple (One of the Jyothirlingam). Visit the places of Panchavati, Kapaleshwar temple, Kalaram & Goraram Temple and Sita Guha. Evening return to Shirdi and night halt.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Aurangabad - Ajanta',
+    //             description: 'Morning dharshan / Kakada Aarti of Saibaba Temple and drive to Aurangabad. Visit the place of Ajanta Caves. Return and night halt at Aurangabad.'
+    //         },
+    //         {
+    //             day: 'Day 4',
+    //             title: 'Ellora - Pune - Chennai',
+    //             description: 'Starting at Aurangabad by 8.00 am and drive to Ellora Caves. After visit the caves and visit other places of Mini Tajmahal and Grineshwar Temple (one of the Jyothirlingam) drive to Pune. Reaching Pune Airport by 8.00 pm Boarding flight at Pune Airport 11.00 pm Reaching Chennai Airport at 12.45 am.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Hotel',
+    //         'Transportation by A/C Bus/Cab.',
+    //         'Two night stay at Shirdi in A/C room.',
+    //         'One night stay at Aurangabad in A/c room.',
+    //         'Buffet Breakfast or Fixed Menu',
+    //         'All sightseeing and excursion as per the itinerary.',
+    //         'Everyone must bring Original ID Proof at the time of travel.',
+    //         'English, Hindi and Tamil Guide for entire trip.',
+    //         'Special darshan will be arranged (subject to availability)',
+    //         'Ajanta Cave holiday on Monday and Ellora Cave holiday on Tuesday.'
+    //     ],
+    //     exclusions: [
+    //         'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
+    //     ],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '12': {
+    //     id: '12',
+    //     title: 'Shirdi - 2 Jyotirlinga Package From Chennai - 3 Days',
+    //     image: '/assets/generated/trimbakeshwar_temple.png',
+    //     overview: {
+    //         duration: '2 Nights / 3 Days',
+    //         destination: 'Pune, Shirdi, Trimbakeshwar, Aurangabad, Ellora Caves',
+    //         activities: 'Museums, Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'Rs. 16500/-',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Chennai - Shirdi',
+    //             description: 'Departure from Chennai Airport at 05.00 a.m. Arrival 06.40 a.m. at Pune Airport. Cab will start from Pune airport by 07.00 a.m. and proceed to visit Maha Ganapati Temple and Shani Shingnapur Temple. Reaching Shirdi at 04.00 p.m. Transfer to hotel. After refreshment Having darshan (V.I.P) of Saibaba Temple and other places of Gurusthan, Dwarakamai, Museum, Chavadi and Lendi Garden. Night halt at Shirdi.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Nashik',
+    //             description: 'Morning after breakfast proceed to Nasik. Having the Dharshan of Trimbakeshwar Temple (One of the Jyotirlinga). Visit the places of Panchavati, Kapaleshwar temple, Kalaram & Goraram Temple and Sita Guha. Evening return and night halt at Shirdi.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Pune - Chennai',
+    //             description: 'Morning after breakfast proceed to visit Ellora Caves. And having darshan of Grineshwar Temple (one of the Jyotirlinga). After darshan proceed to Pune. Reaching Pune Airport by 10.00 p.m. Boarding flight at Pune Airport by 00.10 a.m. Reaching Chennai Airport at 01.20 a.m.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Hotel',
+    //         'Transportation by A/C Bus/Cab.',
+    //         'Two nights stay at Shirdi in A/C room.',
+    //         'Buffet Breakfast or Fixed Menu',
+    //         'All sightseeing and excursion as per the itinerary.',
+    //         'Everyone must bring Original ID Proof at the time of travel.',
+    //         'English, Hindi and Tamil Guide for entire trip.',
+    //         'Special darshan will be arranged (subject to availability)'
+    //     ],
+    //     exclusions: [
+    //         'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
+    //     ],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '13': {
+    //     id: '13',
+    //     title: 'Shirdi - Jyotirlinga Package From Chennai 3 Night - 4 Days',
+    //     image: '/assets/generated/jyotirlinga_ellora_pkg.png',
+    //     overview: {
+    //         duration: '3 Nights / 4 Days',
+    //         destination: 'Pune, Shirdi, Trimbakeshwar, Aurangabad, Ellora Caves',
+    //         activities: 'Caving, Museums, Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'Rs. 18500/-',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Chennai - Shirdi',
+    //             description: 'Departure at 05.15 a.m at Chennai Airport. Arrival at 06.50 a.m. at Pune Airport. Cab will start at Pune Airport by 07.00 am and visit Bhimashankar (One of the Jyotirlingam) and drive to Shirdi. Reaching Shirdi at 06.00 p.m. Evening having Dharshan (V.I.P) of Saibaba Temple and visiting other places of Gurusthan, Dwarakamai, Chavadi, Sai Museum, Lendi Garden. Night halt at Shirdi.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Nashik',
+    //             description: 'Starting at Shirdi by 9.00 am drive to Nasik. Having the darshan of Thriyambakeshwar Temple (One of the Jyotirlingam). Visit the places of Panchavati, Kapaleshwar temple, Kalaram & Goraram Temple and Sita Guha. Evening return to Shirdi and night halt.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Shirdi - Aurangabad',
+    //             description: 'Morning having Dharshan / Kakada Aarti of Saibaba Temple. Starting at Shirdi by 09.00 a.m. and drive to Ellora Caves. After visit the caves and visit other places of Mini Tajmahal and Grineshwar Temple (one of the Jyotirlingam) night halt at Aurangabad.'
+    //         },
+    //         {
+    //             day: 'Day 4',
+    //             title: 'Aurangabad - Chennai',
+    //             description: 'Morning starting from Aurangabad at 09.00 a.m. and drive to Shani Shingnapoor having Dharshan of Shani Bhagavan Temple. After that visit Maha Ganapati Temple at Ranjangaon (Ashtavinayak Temple) and proceed to Pune. Reaching Pune Airport by 09.00 p.m. Boarding flight at Pune Airport by 11.00 p.m.Reaching Chennai Airport at 00.50 a.m.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Transportation by A/C Bus/Cab.',
+    //         'Three-night stay at Shirdi in A/C room.',
+    //         'Buffet Breakfast or Fixed Menu',
+    //         'All sightseeing and excursion as per the itinerary.',
+    //         'Everyone must bring Original ID Proof at the time of travel.',
+    //         'English, Hindi and Tamil Guide for entire trip.',
+    //         'Special darshan will be arranged (subject to availability)'
+    //     ],
+    //     exclusions: [
+    //         'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
+    //     ],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '14': {
+    //     id: '14',
+    //     title: 'Shirdi And Lonavala Package From Chennai 2 Night - 3 Days',
+    //     image: '/assets/generated/lonavala_pkg.png',
+    //     overview: {
+    //         duration: '2 Nights / 3 Days',
+    //         destination: 'Lonavala, Shirdi, Shani Shingnapur',
+    //         activities: 'Museums, Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'Rs. 16500/-',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Chennai - Shirdi',
+    //             description: 'Departure at 5.15 am from Chennai Airport. Arrival 06.50 am at Pune Airport. Bus/Cab will start at Pune airport by 07.00 am and drive to Shirdi. Reaching Shirdi at 1.00 pm Evening darshan of Saibaba Temple and visit other places of Gurusthan, Dwarakamai, Sai Museum, Chavadi, Lendi Garden. Night halt at Shirdi.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Lonavala',
+    //             description: 'Morning dharshan / Kakada Aarti of Saibaba Temple. Starting at Shirdi by 10.00 am and drive to Lonavala on the way visiting Shanisignapoor and Maha Ganapathy Temple. Reaching 5.00 pm at Lonavala. Evening having sightseeing at Sunset Point. Night halt at Hotel in Lonavala.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Lonavala - Chennai',
+    //             description: 'Morning having sightseeing of Karla Caves, Celebrity Wax Museum, Lion Point, Bhaja Caves, Rajmachi Fort, Tiger Leap and Shooting Point. Starting at Lonavala by 06.00 pm Reaching Pune Airport by 09.00 pm Boarding flight at Pune Airport by 11.00 pm Reaching Chennai Airport at 12.45 am.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Hotel',
+    //         'Sightseeing',
+    //         'Transportation by A/C Bus/Cab.',
+    //         'One night stay at Shirdi and One night at Lonavala in A/C room.',
+    //         'Buffet Breakfast or Fixed Menu',
+    //         'All sightseeing and excursion as per the itinerary.',
+    //         'Everyone must bring Original ID Proof at the time of travel.',
+    //         'English, Hindi and Tamil Guide for entire trip.',
+    //         'Special darshan will be arranged (subject to availability)'
+    //     ],
+    //     exclusions: [
+    //         'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
+    //     ],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '15': {
+    //     id: '15',
+    //     title: 'Shirdi - Ajanta - Ellora Package From Chennai 2 Night - 3 Days',
+    //     image: '/assets/shiridi/cards/Chennai to Shirdi, Ajanta & Ellora Flight Tour Package  3 Days  2 Nights.webp',
+    //     overview: {
+    //         duration: '2 Nights / 3 Days',
+    //         destination: 'Shirdi, Aurangabad, Ellora Caves, Ajanta Caves',
+    //         activities: 'Caving, Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage, Monuments & Historical Places'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'Rs. 16500/-',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Chennai - Shirdi',
+    //             description: 'Departure at 5.15 am at Chennai Airport. Arrival 6.50 am at Pune Airport. Bus/Cab will start at Pune Airport by 7.00 am and on the way visiting Shanisignapoor and reaching Shirdi at 4.00 pm Refreshment at hotel for 1 hour. Having the darshan of Saibaba and visit the places of Gurusthan, Dwarakamai, Chavadi, Sai Museum, Lendi Garden. Night halt at Shirdi.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Ajanta Caves',
+    //             description: 'Morning dharshan / Kakada Aarti of Saibaba Temple and drive to Aurangabad. Visit the place of Ajanta Caves. Return and night halt at Aurangabad.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Ellora Caves - Pune - Chennai',
+    //             description: 'Starting at Aurangabad by 8.00 am and drive to Ellora Caves. After visit the caves and visit other places of Mini Tajmahal and Grineshwar Temple (one of the Jyothirlingam) drive to Pune. Reaching Pune Airport by 8.00 pm Boarding flight at Pune Airport 11.00 pm Reaching Chennai Airport at 12.45 am'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Hotel',
+    //         'Transportation by A/C Bus/Cab.',
+    //         'Two night stay at Shirdi in A/C room.',
+    //         'One night stay at Aurangabad in A/c room.',
+    //         'Buffet Breakfast or Fixed Menu',
+    //         'All sightseeing and excursion as per the itinerary.',
+    //         'Everyone must bring Original ID Proof at the time of travel.',
+    //         'English, Hindi and Tamil Guide for entire trip.',
+    //         'Special darshan will be arranged (subject to availability)',
+    //         'Ajanta Cave holiday on Monday and Ellora Cave holiday on Tuesday.'
+    //     ],
+    //     exclusions: [
+    //         'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
+    //     ],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
     '16': {
         id: '16',
         title: 'Kasi Flight Package From Chennai 1 Night - 2 Days',
@@ -20000,311 +20000,311 @@ export const packagesDatabase: Record<string, any> = {
             cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
         }
     },
-    '23': {
-        id: '23',
-        title: 'Kasi - Ayodhya Flight Package From Madurai 2 Night - 3 Days',
-        image: "/assets/kasi/card/kasi8_1.webp",
-        heroImage: "/assets/kasi/kasi8.webp",
-        overview: {
-            duration: '2 Nights / 3 Days',
-            destination: 'Varanasi, Ayodhya',
-            activities: 'Museums, Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'Rs. 27500/-',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Arrival Madurai - Ayodhya',
-                description: 'Departure from Madurai Airport at 11.00 a.m. Arrival Ayodhya Airport at 05.00 p.m. Transfer to hotel. Visit the birth place Lord Rama, Shri Ramjanma Bhoomi and Hanuman Garhi Temple. Evening visit Kanak Bhawan and Ramkatha Museum. Night halt at Ayodhya.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Ayodhya - Varanasi',
-                description: 'After Breakfast starting @ 10.00 a.m. from Ayodhya and proceed to Kasi. Transfer to hotel. After refreshment having Dharshan of Lord Kasi Vishwanath, Kasi Visalakshi and Kasi Annapoorneswari Temples. Evening visit Ganga Aarti by boating on the way visiting Manikarneka Ghat and Harichandra Ghat. Having night Sayana Arati of Kasi Viswanath Temple. Night halt at Kasi.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Departure from Varanasi',
-                description: 'Morning holy bath in river Ganga and performing Tharpanam and having darshan of Kala Bhairavar Temple. Free time religious activities and shopping. Starting from Varanasi at 11.00 a.m. Reaching at Varanasi Airport at 01.00 p.m. Departure from Varanasi Airport at 02.25 p.m. Reaching Madurai Airport at 08.45 p.m.'
-            }
-        ],
-        inclusions: [
-            'Hotel',
-            'Transportation by A/C Bus/Cab.',
-            'One night stay at Ayodhya in A/c room.',
-            'One night stay at Varanasi in A/c room.',
-            'Buffet Breakfast or Fixed Menu',
-            'All sightseeing and excursion as per the itinerary.',
-            'Everyone must bring Original ID Proof at the time of travel.',
-            'English, Hindi and Tamil Guide for entire trip.',
-            'Please be at Airport 2 hours before the departure Time.'
-        ],
-        exclusions: [
-            'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
-        ],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '24': {
-        id: '24',
-        title: 'Kasi - Gaya Flight Package From Madurai 5 Days',
-        image: "/assets/kasi/card/kasicard9.webp",
-        heroImage: "/assets/kasi/kasi9.webp",
-        overview: {
-            duration: '4 Nights / 5 Days',
-            destination: 'Prayagraj, Varanasi, Gaya',
-            activities: 'Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'Rs. 34500/-',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Arrival Madurai - Varanasi',
-                description: 'Departure from Madurai Airport at 11.00 a.m. Arrival Varanasi Airport at 05.30 p.m. Transfer to hotel. Having Dharshan of Lord Kasi Vishwanath, Kasi Visalakshi and Kasi Annapoorneswari Temples. Evening visit Ganga Aarti by boating on the way visiting Manikarneka Ghat and Harichandra Ghat. Having night Sayana Arati of Kasi Viswanath Temple. Night halt at Kasi.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Gaya',
-                description: 'Morning holy bath in river Ganga and performing Tharpanam. Free time shopping and religious activities. After Lunch proceed to Gaya at 04.00 p.m. and night halt at Gaya.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Gaya',
-                description: 'Early Morning perform the some rituals Srartham or Pinda dana for your ancestors (Dress Code: Ladies – Sarees & Gents – Dhoti ). Dharshan of Vishnu padam Temple and visit Vatavruksh. Afternoon drive to Kasi on the way visiting Buddha Gaya. Night halt in Kasi.'
-            },
-            {
-                day: 'Day 4',
-                title: 'Allahabad',
-                description: 'Morning drive to Allahabad. Holy bath in Triveni sangam and performing Thambathi pooja / Veni Pooja in the meeting point of holy rivers of Ganga, Yamuna and Saraswathi. Having Dharshan of Sri Sayana Anjaneyar. Return and night halt at Kasi.'
-            },
-            {
-                day: 'Day 5',
-                title: 'Departure from Varanasi',
-                description: 'Morning having Dharshan of Kala Bhairavar Temple. Free time religious activities and shopping. Starting from Varanasi at 11.00 a.m. and reaching at Varanasi Airport at 01.00 p.m. Departure from Varanasi Airport at 02.55 p.m. Reaching Madurai Airport at 08.45 p.m.'
-            }
-        ],
-        inclusions: [
-            'Hotel',
-            'Transportation by A/C Bus/Cab.',
-            'Three nights stay at Kasi and One night stay at Gaya in A/c room.',
-            'Buffet Breakfast or Fixed Menu',
-            'All sightseeing and excursion as per the itinerary.',
-            'Everyone must bring Original ID Proof at the time of travel.',
-            'English, Hindi and Tamil Guide for entire trip.',
-            'Please be at Airport 2 hours before the departure Time.'
-        ],
-        exclusions: [
-            'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
-        ],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '25': {
-        id: '25',
-        title: 'Kasi - Gaya - Allahabad - Ayodhya Flight Package From Madurai 5 Night - 6 Days',
-        image: "/assets/kasi/card/kasi10_1.webp",
-        heroImage: "/assets/kasi/kasi10.webp",
-        overview: {
-            duration: '5 Nights / 6 Days',
-            destination: 'Prayagraj, Varanasi, Gaya, Ayodhya',
-            activities: 'Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'Rs. 39500/-',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Arrival Madurai - Ayodhya',
-                description: 'Departure from Madurai Airport at 11.00 a.m. Arrival Varanasi Airport at 05.30 p.m. and drive to Ayodhya. On arrival check in to Ayodhya Hotel, Proceed to visit the birth place of Lord Rama at Shri Ramjanma Bhoomi, Hanuman Garhi Temple. Night halt at Ayodhya.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Varanasi',
-                description: 'Morning after breakfast transfer to Varanasi (Kasi). On arrival Varanasi check into Hotel. After lunch proceed to Having Dharshan of Lord Kasi Vishwanath, Kasi Visalakshi and Kasi Annapoorneswari Temples. Evening visit Ganga Aarti by boating on the way visiting Manikarneka Ghat and Harichandra Ghat. Having night Sayana Arati of Kasi Viswanath Temple. Night halt at Kasi.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Gaya',
-                description: 'Morning holy bath in river Ganga and performing Tharpanam. Free time shopping and religious activities. Drive to Gaya at 02.00p.m. and night halt at Buddha Gaya.'
-            },
-            {
-                day: 'Day 4',
-                title: 'Gaya',
-                description: 'Morning 07:00 a.m perform some rituals Srartham or Pinda dana for your ancestors. (Dress Code: Ladies – Sarees & Gents – Dhoti ). Dharshan of Vishnu padam Temple and visit Vatavruksh. Afternoon drive to Kasi on the way visiting Buddha Gaya. Night halt in Kasi.'
-            },
-            {
-                day: 'Day 5',
-                title: 'Allahabad',
-                description: 'Morning drive to Allahabad. Holy bath in Triveni sangam and performing Thambathi pooja / Veni Pooja in the meeting point of holy rivers of Ganga, Yamuna and Saraswathi. Having darshan Sri Sayana Anjaneyar. Return and night halt at Kasi.'
-            },
-            {
-                day: 'Day 6',
-                title: 'Departure from Varanasi',
-                description: 'Morning having Dharshan of Kala Bhairavar Temple. and free time for Shopping. Starting from Varanasi at 11.00 a.m. Reaching at Varanasi Airport at 01.00 p.m. Departure from Varanasi Airport at 02.25 p.m. Reaching Madurai Airport at 08.45 p.m.'
-            }
-        ],
-        inclusions: [
-            'Hotel',
-            'Transportation by A/C Bus/Cab.',
-            'Three nights stay at Kasi in A/C Dlx room',
-            'One night stay at Ayodhya in A/C Dlx room',
-            'One night stay at Gaya in A/C Dlx room',
-            'Buffet Breakfast or Fixed Menu',
-            'All sightseeing and excursion as per the itinerary.',
-            'Everyone must bring Original ID Proof at the time of travel.',
-            'English, Hindi and Tamil Guide for entire trip.',
-            'Please be at Airport 2 hours before the departure Time.'
-        ],
-        exclusions: [
-            'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
-        ],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '26': {
-        id: '26',
-        title: 'Pilgrim Tour 03N - 04D',
-        image: "/assets/kaniyakumari/vivekandhar.webp",
-    heroImage: "/assets/madurai 63 package/1918x642/maduraitokanyakumari.webp",
-        overview: {
-            duration: '3 Nights / 4 Days',
-            destination: 'Kovalam, Thiruvananthapuram, Trivandrum, Kanyakumari...',
-            activities: 'Beaches Sightseeing, Museums, Sightseeing',
-            themes: 'Religious & Pilgrimage, Beaches and Islands'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'On Request',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Thiruvanthapurum to Kovalam (30 Min)',
-                description: 'On Arrival at Thiruvanthapurum Airport/Railway station, Report to our Driver then we proceed to Kovalam. Upon arrival check in at pre booked Hotel, day on leisure Evening after Sunset Kovalam. We offers an excellent diversity with Kovalam beach to suit all desires and occasions. Visit light house beach and Hawah beach. Overnight stay at Kovalam.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Kovalam - Thiruvanthapurum Sightseeing',
-                description: 'Moring after breakfast Proceed for sightseeing at Trivandrum. Visit Sree Padmanabhaswamy temple (16 km) which is 16th century temple dedicated to Lord Vishnu is the most impressive landmark of the city. Visit Trivandrum Zoo, Sree Chitra Art Gallery, Napier Museum-(16km) (Closed on Mondays, Wednesday, Govt Holidays, Visiting time :1.00 PM to 4.45 PM), Science and technology museum (Closed on Mondays) etc. Enjoy sun set in the evening relaxing on the beach. Overnight stay at the hotel.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Kovalam to Kanyakumari',
-                description: 'Morning after breakfast Start for full day Kanyakumari Excursion the southern tip of peninsular India, it offers a unique experience of sunrise & sunset. Visit rock memorial dedicated to Swami Vivekananda Mermorial, Kanyakumari Amman Temple, the Gandhi Memorial, Thiruvallur Statue Evening after Sunset and back to the hotel. Overnight halt at Kanyakumari.'
-            },
-            {
-                day: 'Day 4',
-                title: 'Kanyakumari to Trivendrum (03Hrs)',
-                description: 'After having the breakfast, pack your baggage\'s with a promise to return once again to this paradise.... Proceed on time to board your flight/train with sweet memories.'
-            }
-        ],
-        inclusions: [
-            'CP (Room + Breakfast)'
-        ],
-        exclusions: [],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '27': {
-        id: '27',
-        title: '9 Night - 10 Days Kerala Tour Package',
-        image: "/assets/kaniyakumari/padamannadhapuram palce.webp",
-        heroImage: "/assets/madurai 63 package/1918x642/maduraikanyakumaritrivandrum2days.webp",
-        overview: {
-            duration: '9 Nights / 10 Days',
-            destination: 'Kochi, Kovalam, Thekkady, Alleppey, Trivandrum...',
-            activities: 'House Boat, Elephant Safari, Beaches Sightseeing, Museums, Sightseeing',
-            themes: 'Wildlife, Hill Stations & Valleys, Religious & Pilgrimage, Culture & Heritage, Beaches and Islands'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'On Request',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Cochin',
-                description: 'On arrival at Cochin Airport/Station, transfer to Hotel, after freshup proceed for local Cochin sightseeing -Visit Chinese Fishing Net, Portuguese Synagogue, Mattancherry Spice Market, Bolgatti Palace. Evening by the serene Marine drive, and shop at Jewel Street. Once you are done touring, get back to the hotel for the night. Overnight stay at Cochin.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Cochin - Munnar Sightseeing (4Hrs)',
-                description: 'After breakfast proceed for the full day sightseeing of Munnar - Rajamalai ( Eravikulam National Park ) , Visit Cheyapara & Vallara waterfalls, Mattupatty Dam , Boating in Dam , Shooting point , Eco Point , Kundale Lake, View point & Green Carpet of Tea Gardern Etc. Overnight at Hotel In Munnar.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Munnar Sightseeing',
-                description: 'After Breakfast Proceed for the Sightseeing of Munnar Town , Tea Museum , Hydel Park , Rose Garden, Blossom Park, Potanmedu View Point, Old Munnar Town for shopping. a stroll on the Munnar lake. Back to hotel & Overnight stay at Munnar.'
-            },
-            {
-                day: 'Day 4',
-                title: 'Munnar – Thekkady (3Hrs)',
-                description: 'After enjoying the breakfast proceed to Thekkady which offers diverse attractions like Wildlife Sanctuary, Hill Station and Spice Plantation. Nature’s own little hideout nestled in the hills of Thekkady. Reach & check-in at the hotel and relax for a while amidst the comforts of your room. Visit the local spice market for some garden fresh spices and handicrafts. Overnight stay at the Hotel/Resort. Thekkady.'
-            },
-            {
-                day: 'Day 5',
-                title: 'Thekkady Sightseeing',
-                description: 'After having the delicious breakfast, proceed to the most attractive feature of Thekkady i.e. Periyar Wild life Sanctuary. Thekkady is the place where one can go for a Wildlife cruise to view a large variety of wildlife like Wild Elephants, Nilgiri Langur, Sambar Deer, Wild Bison, Wild Boar etc, and quite a lot of unique birds can also be spotted. Other Optional activities are spice plantation Tour, Bamboo Rafting, Trekking and Elephant ride. Overnight stay at the Hotel/Resort. Thekkady.'
-            },
-            {
-                day: 'Day 6',
-                title: 'Thekkady – Houseboat (4 ½ Hrs)',
-                description: 'After enjoying the breakfast proceed to the boat Jetty to board the beautifully decorated houseboats and begin the enchanting backwater cruising. The Kerala backwater is a unique product of Kerala and is found nowhere else in the world. Sparkling greens, emerald backwaters, coir-laden houseboats and magical beauty heals your mind and body as you travel to surreal Kerala. Overnight stay in the Houseboat. (Alleppey)'
-            },
-            {
-                day: 'Day 7',
-                title: 'Alleppey – Kovalam (5Hrs)',
-                description: 'After having the breakfast, proceed to Kovalam beach. Kovalam is known as the "Paradise of the South". This dreamland is an evergreen, serene, pleasant climatic and enticing beach destination. Reach & check-in at the hotel and relax for a while amidst the comforts of your room. Explore on your own to see how the everlasting sea touches the everlasting sky. Overnight stay at the Hotel/Resort.'
-            },
-            {
-                day: 'Day 8',
-                title: 'Kovalam – Trivandrum – Kovalam',
-                description: 'After the sumptuous breakfast proceed for the sightseeing of Trivandrum. The major attraction of Trivandrum is Padmanabhaswamy temple is the most religious icon of the city. Other sightseeing places are Kuthiramalika Palace Museum, Veli Tourist Village, Shangumugham Beach where one can watch the amazing sunset. Overnight stay at the Hotel/Resort.'
-            },
-            {
-                day: 'Day 9',
-                title: 'Kovalam - Kanyakumari (3Hrs)',
-                description: 'Enjoy the delicious breakfast later proceed to Kanyakumari the land of virgin goddess. Kanyakumari is an important pilgrim centre of India, it is famous for the Amman Temples, Mahatma Gandhi Memorial, Thiruvalluvar Statue,. End your day by watching the spectacular sunset there. Overnight stay at the Hotel/Resort. (Kanyakumari)'
-            },
-            {
-                day: 'Day 10',
-                title: 'Kanyakumari – Trivandrum',
-                description: 'After having the breakfast, pack your baggage\'s with a promise to return once again to this paradise.... Proceed on time to board your flight/train with sweet memories of your holiday.'
-            }
-        ],
-        inclusions: [
-            'CP (Room + Breakfast)'
-        ],
-        exclusions: [],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
+    // '23': {
+    //     id: '23',
+    //     title: 'Kasi - Ayodhya Flight Package From Madurai 2 Night - 3 Days',
+    //     image: "/assets/kasi/card/kasi8_1.webp",
+    //     heroImage: "/assets/kasi/kasi8.webp",
+    //     overview: {
+    //         duration: '2 Nights / 3 Days',
+    //         destination: 'Varanasi, Ayodhya',
+    //         activities: 'Museums, Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'Rs. 27500/-',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Arrival Madurai - Ayodhya',
+    //             description: 'Departure from Madurai Airport at 11.00 a.m. Arrival Ayodhya Airport at 05.00 p.m. Transfer to hotel. Visit the birth place Lord Rama, Shri Ramjanma Bhoomi and Hanuman Garhi Temple. Evening visit Kanak Bhawan and Ramkatha Museum. Night halt at Ayodhya.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Ayodhya - Varanasi',
+    //             description: 'After Breakfast starting @ 10.00 a.m. from Ayodhya and proceed to Kasi. Transfer to hotel. After refreshment having Dharshan of Lord Kasi Vishwanath, Kasi Visalakshi and Kasi Annapoorneswari Temples. Evening visit Ganga Aarti by boating on the way visiting Manikarneka Ghat and Harichandra Ghat. Having night Sayana Arati of Kasi Viswanath Temple. Night halt at Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Departure from Varanasi',
+    //             description: 'Morning holy bath in river Ganga and performing Tharpanam and having darshan of Kala Bhairavar Temple. Free time religious activities and shopping. Starting from Varanasi at 11.00 a.m. Reaching at Varanasi Airport at 01.00 p.m. Departure from Varanasi Airport at 02.25 p.m. Reaching Madurai Airport at 08.45 p.m.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Hotel',
+    //         'Transportation by A/C Bus/Cab.',
+    //         'One night stay at Ayodhya in A/c room.',
+    //         'One night stay at Varanasi in A/c room.',
+    //         'Buffet Breakfast or Fixed Menu',
+    //         'All sightseeing and excursion as per the itinerary.',
+    //         'Everyone must bring Original ID Proof at the time of travel.',
+    //         'English, Hindi and Tamil Guide for entire trip.',
+    //         'Please be at Airport 2 hours before the departure Time.'
+    //     ],
+    //     exclusions: [
+    //         'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
+    //     ],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '24': {
+    //     id: '24',
+    //     title: 'Kasi - Gaya Flight Package From Madurai 5 Days',
+    //     image: "/assets/kasi/card/kasicard9.webp",
+    //     heroImage: "/assets/kasi/kasi9.webp",
+    //     overview: {
+    //         duration: '4 Nights / 5 Days',
+    //         destination: 'Prayagraj, Varanasi, Gaya',
+    //         activities: 'Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'Rs. 34500/-',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Arrival Madurai - Varanasi',
+    //             description: 'Departure from Madurai Airport at 11.00 a.m. Arrival Varanasi Airport at 05.30 p.m. Transfer to hotel. Having Dharshan of Lord Kasi Vishwanath, Kasi Visalakshi and Kasi Annapoorneswari Temples. Evening visit Ganga Aarti by boating on the way visiting Manikarneka Ghat and Harichandra Ghat. Having night Sayana Arati of Kasi Viswanath Temple. Night halt at Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Gaya',
+    //             description: 'Morning holy bath in river Ganga and performing Tharpanam. Free time shopping and religious activities. After Lunch proceed to Gaya at 04.00 p.m. and night halt at Gaya.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Gaya',
+    //             description: 'Early Morning perform the some rituals Srartham or Pinda dana for your ancestors (Dress Code: Ladies – Sarees & Gents – Dhoti ). Dharshan of Vishnu padam Temple and visit Vatavruksh. Afternoon drive to Kasi on the way visiting Buddha Gaya. Night halt in Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 4',
+    //             title: 'Allahabad',
+    //             description: 'Morning drive to Allahabad. Holy bath in Triveni sangam and performing Thambathi pooja / Veni Pooja in the meeting point of holy rivers of Ganga, Yamuna and Saraswathi. Having Dharshan of Sri Sayana Anjaneyar. Return and night halt at Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 5',
+    //             title: 'Departure from Varanasi',
+    //             description: 'Morning having Dharshan of Kala Bhairavar Temple. Free time religious activities and shopping. Starting from Varanasi at 11.00 a.m. and reaching at Varanasi Airport at 01.00 p.m. Departure from Varanasi Airport at 02.55 p.m. Reaching Madurai Airport at 08.45 p.m.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Hotel',
+    //         'Transportation by A/C Bus/Cab.',
+    //         'Three nights stay at Kasi and One night stay at Gaya in A/c room.',
+    //         'Buffet Breakfast or Fixed Menu',
+    //         'All sightseeing and excursion as per the itinerary.',
+    //         'Everyone must bring Original ID Proof at the time of travel.',
+    //         'English, Hindi and Tamil Guide for entire trip.',
+    //         'Please be at Airport 2 hours before the departure Time.'
+    //     ],
+    //     exclusions: [
+    //         'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
+    //     ],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '25': {
+    //     id: '25',
+    //     title: 'Kasi - Gaya - Allahabad - Ayodhya Flight Package From Madurai 5 Night - 6 Days',
+    //     image: "/assets/kasi/card/kasi10_1.webp",
+    //     heroImage: "/assets/kasi/kasi10.webp",
+    //     overview: {
+    //         duration: '5 Nights / 6 Days',
+    //         destination: 'Prayagraj, Varanasi, Gaya, Ayodhya',
+    //         activities: 'Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'Rs. 39500/-',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Arrival Madurai - Ayodhya',
+    //             description: 'Departure from Madurai Airport at 11.00 a.m. Arrival Varanasi Airport at 05.30 p.m. and drive to Ayodhya. On arrival check in to Ayodhya Hotel, Proceed to visit the birth place of Lord Rama at Shri Ramjanma Bhoomi, Hanuman Garhi Temple. Night halt at Ayodhya.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Varanasi',
+    //             description: 'Morning after breakfast transfer to Varanasi (Kasi). On arrival Varanasi check into Hotel. After lunch proceed to Having Dharshan of Lord Kasi Vishwanath, Kasi Visalakshi and Kasi Annapoorneswari Temples. Evening visit Ganga Aarti by boating on the way visiting Manikarneka Ghat and Harichandra Ghat. Having night Sayana Arati of Kasi Viswanath Temple. Night halt at Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Gaya',
+    //             description: 'Morning holy bath in river Ganga and performing Tharpanam. Free time shopping and religious activities. Drive to Gaya at 02.00p.m. and night halt at Buddha Gaya.'
+    //         },
+    //         {
+    //             day: 'Day 4',
+    //             title: 'Gaya',
+    //             description: 'Morning 07:00 a.m perform some rituals Srartham or Pinda dana for your ancestors. (Dress Code: Ladies – Sarees & Gents – Dhoti ). Dharshan of Vishnu padam Temple and visit Vatavruksh. Afternoon drive to Kasi on the way visiting Buddha Gaya. Night halt in Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 5',
+    //             title: 'Allahabad',
+    //             description: 'Morning drive to Allahabad. Holy bath in Triveni sangam and performing Thambathi pooja / Veni Pooja in the meeting point of holy rivers of Ganga, Yamuna and Saraswathi. Having darshan Sri Sayana Anjaneyar. Return and night halt at Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 6',
+    //             title: 'Departure from Varanasi',
+    //             description: 'Morning having Dharshan of Kala Bhairavar Temple. and free time for Shopping. Starting from Varanasi at 11.00 a.m. Reaching at Varanasi Airport at 01.00 p.m. Departure from Varanasi Airport at 02.25 p.m. Reaching Madurai Airport at 08.45 p.m.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Hotel',
+    //         'Transportation by A/C Bus/Cab.',
+    //         'Three nights stay at Kasi in A/C Dlx room',
+    //         'One night stay at Ayodhya in A/C Dlx room',
+    //         'One night stay at Gaya in A/C Dlx room',
+    //         'Buffet Breakfast or Fixed Menu',
+    //         'All sightseeing and excursion as per the itinerary.',
+    //         'Everyone must bring Original ID Proof at the time of travel.',
+    //         'English, Hindi and Tamil Guide for entire trip.',
+    //         'Please be at Airport 2 hours before the departure Time.'
+    //     ],
+    //     exclusions: [
+    //         'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
+    //     ],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '26': {
+    //     id: '26',
+    //     title: 'Pilgrim Tour 03N - 04D',
+    //     image: "/assets/kaniyakumari/vivekandhar.webp",
+    //     heroImage: "/assets/madurai 63 package/1918x642/maduraitokanyakumari.webp",
+    //     overview: {
+    //         duration: '3 Nights / 4 Days',
+    //         destination: 'Kovalam, Thiruvananthapuram, Trivandrum, Kanyakumari...',
+    //         activities: 'Beaches Sightseeing, Museums, Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Beaches and Islands'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'On Request',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Thiruvanthapurum to Kovalam (30 Min)',
+    //             description: 'On Arrival at Thiruvanthapurum Airport/Railway station, Report to our Driver then we proceed to Kovalam. Upon arrival check in at pre booked Hotel, day on leisure Evening after Sunset Kovalam. We offers an excellent diversity with Kovalam beach to suit all desires and occasions. Visit light house beach and Hawah beach. Overnight stay at Kovalam.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Kovalam - Thiruvanthapurum Sightseeing',
+    //             description: 'Moring after breakfast Proceed for sightseeing at Trivandrum. Visit Sree Padmanabhaswamy temple (16 km) which is 16th century temple dedicated to Lord Vishnu is the most impressive landmark of the city. Visit Trivandrum Zoo, Sree Chitra Art Gallery, Napier Museum-(16km) (Closed on Mondays, Wednesday, Govt Holidays, Visiting time :1.00 PM to 4.45 PM), Science and technology museum (Closed on Mondays) etc. Enjoy sun set in the evening relaxing on the beach. Overnight stay at the hotel.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Kovalam to Kanyakumari',
+    //             description: 'Morning after breakfast Start for full day Kanyakumari Excursion the southern tip of peninsular India, it offers a unique experience of sunrise & sunset. Visit rock memorial dedicated to Swami Vivekananda Mermorial, Kanyakumari Amman Temple, the Gandhi Memorial, Thiruvallur Statue Evening after Sunset and back to the hotel. Overnight halt at Kanyakumari.'
+    //         },
+    //         {
+    //             day: 'Day 4',
+    //             title: 'Kanyakumari to Trivendrum (03Hrs)',
+    //             description: 'After having the breakfast, pack your baggage\'s with a promise to return once again to this paradise.... Proceed on time to board your flight/train with sweet memories.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'CP (Room + Breakfast)'
+    //     ],
+    //     exclusions: [],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '27': {
+    //     id: '27',
+    //     title: '9 Night - 10 Days Kerala Tour Package',
+    //     image: "/assets/kaniyakumari/padamannadhapuram palce.webp",
+    //     heroImage: "/assets/madurai 63 package/1918x642/maduraikanyakumaritrivandrum2days.webp",
+    //     overview: {
+    //         duration: '9 Nights / 10 Days',
+    //         destination: 'Kochi, Kovalam, Thekkady, Alleppey, Trivandrum...',
+    //         activities: 'House Boat, Elephant Safari, Beaches Sightseeing, Museums, Sightseeing',
+    //         themes: 'Wildlife, Hill Stations & Valleys, Religious & Pilgrimage, Culture & Heritage, Beaches and Islands'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'On Request',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Cochin',
+    //             description: 'On arrival at Cochin Airport/Station, transfer to Hotel, after freshup proceed for local Cochin sightseeing -Visit Chinese Fishing Net, Portuguese Synagogue, Mattancherry Spice Market, Bolgatti Palace. Evening by the serene Marine drive, and shop at Jewel Street. Once you are done touring, get back to the hotel for the night. Overnight stay at Cochin.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Cochin - Munnar Sightseeing (4Hrs)',
+    //             description: 'After breakfast proceed for the full day sightseeing of Munnar - Rajamalai ( Eravikulam National Park ) , Visit Cheyapara & Vallara waterfalls, Mattupatty Dam , Boating in Dam , Shooting point , Eco Point , Kundale Lake, View point & Green Carpet of Tea Gardern Etc. Overnight at Hotel In Munnar.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Munnar Sightseeing',
+    //             description: 'After Breakfast Proceed for the Sightseeing of Munnar Town , Tea Museum , Hydel Park , Rose Garden, Blossom Park, Potanmedu View Point, Old Munnar Town for shopping. a stroll on the Munnar lake. Back to hotel & Overnight stay at Munnar.'
+    //         },
+    //         {
+    //             day: 'Day 4',
+    //             title: 'Munnar – Thekkady (3Hrs)',
+    //             description: 'After enjoying the breakfast proceed to Thekkady which offers diverse attractions like Wildlife Sanctuary, Hill Station and Spice Plantation. Nature’s own little hideout nestled in the hills of Thekkady. Reach & check-in at the hotel and relax for a while amidst the comforts of your room. Visit the local spice market for some garden fresh spices and handicrafts. Overnight stay at the Hotel/Resort. Thekkady.'
+    //         },
+    //         {
+    //             day: 'Day 5',
+    //             title: 'Thekkady Sightseeing',
+    //             description: 'After having the delicious breakfast, proceed to the most attractive feature of Thekkady i.e. Periyar Wild life Sanctuary. Thekkady is the place where one can go for a Wildlife cruise to view a large variety of wildlife like Wild Elephants, Nilgiri Langur, Sambar Deer, Wild Bison, Wild Boar etc, and quite a lot of unique birds can also be spotted. Other Optional activities are spice plantation Tour, Bamboo Rafting, Trekking and Elephant ride. Overnight stay at the Hotel/Resort. Thekkady.'
+    //         },
+    //         {
+    //             day: 'Day 6',
+    //             title: 'Thekkady – Houseboat (4 ½ Hrs)',
+    //             description: 'After enjoying the breakfast proceed to the boat Jetty to board the beautifully decorated houseboats and begin the enchanting backwater cruising. The Kerala backwater is a unique product of Kerala and is found nowhere else in the world. Sparkling greens, emerald backwaters, coir-laden houseboats and magical beauty heals your mind and body as you travel to surreal Kerala. Overnight stay in the Houseboat. (Alleppey)'
+    //         },
+    //         {
+    //             day: 'Day 7',
+    //             title: 'Alleppey – Kovalam (5Hrs)',
+    //             description: 'After having the breakfast, proceed to Kovalam beach. Kovalam is known as the "Paradise of the South". This dreamland is an evergreen, serene, pleasant climatic and enticing beach destination. Reach & check-in at the hotel and relax for a while amidst the comforts of your room. Explore on your own to see how the everlasting sea touches the everlasting sky. Overnight stay at the Hotel/Resort.'
+    //         },
+    //         {
+    //             day: 'Day 8',
+    //             title: 'Kovalam – Trivandrum – Kovalam',
+    //             description: 'After the sumptuous breakfast proceed for the sightseeing of Trivandrum. The major attraction of Trivandrum is Padmanabhaswamy temple is the most religious icon of the city. Other sightseeing places are Kuthiramalika Palace Museum, Veli Tourist Village, Shangumugham Beach where one can watch the amazing sunset. Overnight stay at the Hotel/Resort.'
+    //         },
+    //         {
+    //             day: 'Day 9',
+    //             title: 'Kovalam - Kanyakumari (3Hrs)',
+    //             description: 'Enjoy the delicious breakfast later proceed to Kanyakumari the land of virgin goddess. Kanyakumari is an important pilgrim centre of India, it is famous for the Amman Temples, Mahatma Gandhi Memorial, Thiruvalluvar Statue,. End your day by watching the spectacular sunset there. Overnight stay at the Hotel/Resort. (Kanyakumari)'
+    //         },
+    //         {
+    //             day: 'Day 10',
+    //             title: 'Kanyakumari – Trivandrum',
+    //             description: 'After having the breakfast, pack your baggage\'s with a promise to return once again to this paradise.... Proceed on time to board your flight/train with sweet memories of your holiday.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'CP (Room + Breakfast)'
+    //     ],
+    //     exclusions: [],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
     '28': {
         id: '28',
         title: 'Madurai - Rameshwaram - Kanyakumari 4N 5D Tour',
@@ -20442,7 +20442,7 @@ export const packagesDatabase: Record<string, any> = {
     '30': {
         id: '30',
         title: 'Delightful Madurai - Rameswaram - Kanyakumari 3Night 4Days Tour',
-        image: "/assets/kaniyakumari/thirparappu waterfalls.webp",
+        image: "/assets/rameswaram/sm1.webp",
         heroImage: "/assets/rameswaram/big3.webp",
         overview: {
             duration: '3 Nights / 4 Days',
@@ -20543,654 +20543,654 @@ export const packagesDatabase: Record<string, any> = {
             cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
         }
     },
-    '32': {
-        id: '32',
-        title: 'Abode Of The Cloud - Shillong - 3N Tour',
-        image: '/assets/Tripura2.webp',
-        overview: {
-            duration: '3 Nights / 4 Days',
-            destination: 'Shillong, Cherrapunji, Nohkalikai Falls',
-            activities: 'Caving, Sightseeing',
-            themes: 'Hill Stations & Valleys, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'On Request',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Guwahati Airport / Rly Station – Shillong (100 kms / 03 hrs.)',
-                description: 'On arrival at Guwahati Airport / Railway Station & transfer to Shillong (4,900 ft.), which is called \'Scotland of the East". Enroute visit Umium Lake, a majestic placid lake with its surrounding sylvan hills. On arrival at Shillong, check in at your hotel. Overnight stay at Shillong.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Excursion to Cherrapunjee (60 kms / 3 hrs. One Way)',
-                description: 'After an early breakfast, proceed for a full-day excursion to Cherrapunjee (4,400 ft.), renowned as one of the wettest places on earth. En route, stop to admire the cascading Elephanta Falls, soak in the breathtaking vistas from Mawdok–Dympep Valley Viewpoint, and explore the unique Garden of Caves. On arrival, witness some of Cherrapunjee’s most spectacular natural wonders including the majestic Nohkalikai Falls (the tallest plunge waterfall in India), the enchanting Nohsngithiang Falls (Seven Sisters Falls), and the fascinating limestone formations inside the Mawsmai Caves. In the evening, drive back to Shillong for an Overnight stay at Shillong.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Shillong Sightseeing',
-                description: 'After breakfast visit Don Bosco Museum (Sunday closed), Ward’s Lake, Botanical Garden and Lady Hydari Park. Evening is free for personal activities. Overnight stay at Shillong.'
-            },
-            {
-                day: 'Day 4',
-                title: 'Shillong – Guwahati Airport / Rly Station (100 kms / 03 hrs.)',
-                description: 'After breakfast check out from the hotel & transfer to Guwahati Airport / Railway Station for your onward journey.'
-            }
-        ],
-        inclusions: [
-            'CP (Room + Breakfast)'
-        ],
-        exclusions: [],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '33': {
-        id: '33',
-        title: 'Eastern Meadows Shillong - Guwahati Tour',
-        image: '/assets/manipur2.webp',
-        overview: {
-            duration: '3 Nights / 4 Days',
-            destination: 'Guwahati, Shillong, Cherrapunji, Nohkalikai Falls',
-            activities: 'Caving, Museums, Sightseeing',
-            themes: 'Hill Stations & Valleys, Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'On Request',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Guwahati Airport / Rly Station – Shillong (100 kms / 03 hrs.)',
-                description: 'On arrival at Guwahati Airport / Railway Station & transfer to Shillong (4,900 ft.), which is called ‘Scotland of the East”. Enroute visit Umium Lake, a majestic placid lake with its surrounding sylvan hills. On arrival at Shillong, check in at your hotel. Overnight stay at Shillong.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Excursion to Cherrapunjee (60 kms / 3 hrs.)',
-                description: 'After an early breakfast, proceed for a full-day excursion to Cherrapunjee (4,400 ft.), renowned as one of the wettest places on earth. En route, stop to admire the cascading Elephanta Falls, soak in the breathtaking vistas from Mawdok–Dympep Valley Viewpoint, and explore the unique Garden of Caves. On arrival, witness some of Cherrapunjee’s most spectacular natural wonders including the majestic Nohkalikai Falls (the tallest plunge waterfall in India), the enchanting Nohsngithiang Falls (Seven Sisters Falls), and the fascinating limestone formations inside the Mawsmai Caves. In the evening, drive back to Shillong for an Overnight stay at Shillong.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Shillong Sightseeing – Guwahati (100 kms / 03 hrs.)',
-                description: 'After breakfast Check out from hotel and visit Don Bosco Museum (Sunday Closed) & Ward’s Lake. After that drive to Guwahati. Arrive and check in at your hotel. In evening we suggest an optional tour of Golden sunset cruise on the Brahmaputra (Direct Payment by own). Overnight stay at Guwahati.'
-            },
-            {
-                day: 'Day 4',
-                title: 'Hotel – Guwahati Airport / Rly Station',
-                description: 'After breakfast visit Kamakhya Temple (Notes -Timing 08:00 A.M till 01:00 P.M & 3:00 P.M till its gets dark). Transfer to Guwahati Airport / Railway Station for your onward journey. Note: Temple visit will depend on your departure time. It May be done on previous day'
-            }
-        ],
-        inclusions: [
-            'CP (Room + Breakfast)'
-        ],
-        exclusions: [],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '34': {
-        id: '34',
-        title: 'North-East Beauty Kaziranga - Shillong Tour',
-        image: '/assets/Uttar Pradesh1.webp',
-        overview: {
-            duration: '4 Nights / 5 Days',
-            destination: 'Shillong, Cherrapunji, Kaziranga, Kaziranga National Park...',
-            activities: 'Caving, Jeep Safari, Elephant Safari, Sightseeing',
-            themes: 'Wildlife, Hill Stations & Valleys, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'On Request',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Guwahati Airport / Rly Station – Kaziranga National Park (220 kms / 5 hrs.)',
-                description: 'On arrival at Guwahati Airport / Railway Station & transfer to Kaziranga National Park, the home of “One Horned Rhinoceros”, Enroute visit Maha Mrityunjay Temple. On arrival at Kaziranga Check in at your hotel. Evening is free for leisure. Overnight stay at Kaziranga.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Kaziranga National Park',
-                description: 'Early morning explores any one zone of Kaziranga National Park on back of Elephant. Apart from the Rhino, other species found are Hog Deer, Swamp Deer, Wild Buffalo, Elephants and if you are lucky then tiger also. It is also home to pelicans, storks and darters as there are a number of water bodies inside the Park. Return to the resort for breakfast. In the afternoon enjoy jeep safari through the National Park, later visit Kaziranga Orchid Park. Return to the hotel. Overnight stay at Kaziranga. \n\nImportant note: Elephant rides are all regulated and controlled by the forest Dept. Govt. of Assam. We do not have any control on the booking. Elephant rides & Jeep safari are subject to availability only.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Kaziranga National Park – Shillong (295 kms / 7 hrs.)',
-                description: 'After breakfast proceed for Shillong (4,900 ft.), called ‘Scotland of the East”. Enroute visit Umium Lake, a majestic placid lake with its surrounding sylvan hills. On arrival at Shillong, check in at your hotel. Back to the hotel. Overnight stay at Shillong.'
-            },
-            {
-                day: 'Day 4',
-                title: 'Excursion to Cherrapunjee (60 kms / 3 hrs.)',
-                description: 'After an early breakfast, proceed for a full-day excursion to Cherrapunjee (4,400 ft.), renowned as one of the wettest places on earth. En route, stop to admire the cascading Elephanta Falls, soak in the breathtaking vistas from Mawdok–Dympep Valley Viewpoint, and explore the unique Garden of Caves. On arrival, witness some of Cherrapunjee’s most spectacular natural wonders including the majestic Nohkalikai Falls (the tallest plunge waterfall in India), the enchanting Nohsngithiang Falls (Seven Sisters Falls), and the fascinating limestone formations inside the Mawsmai Caves. In the evening, drive back to Shillong for an Overnight stay at Shillong.'
-            },
-            {
-                day: 'Day 5',
-                title: 'Shilong – Guwahati Airport / Rly Station (100 kms / 3 hrs.)',
-                description: 'After breakfast check out from the hotel & transfer to Guwahati Airport / Railway Station for your onward journey.'
-            }
-        ],
-        inclusions: [
-            'CP (Room + Breakfast)'
-        ],
-        exclusions: [],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '35': {
-        id: '35',
-        title: 'Splendour Himalaya Shillong - Guwahati Tour',
-        image: '/assets/Mizoram2.webp',
-        overview: {
-            duration: '4 Nights / 5 Days',
-            destination: 'Shillong, Cherrapunji, Dawki, Guwahati, Nohkalikai Falls',
-            activities: 'Caving, Museums, Sightseeing',
-            themes: 'Hill Stations & Valleys, Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'On Request',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Guwahati Airport / Rly Station – Shillong (100 kms / 3 hrs.)',
-                description: 'On arrival at Guwahati Airport / Railway Station & transfer to Shillong (4,900 ft.), which is called ‘Scotland of the East” (100 kms 3 hrs). Enroute visit Umium Lake, a majestic placid lake with its surrounding sylvan hills. On arrival at Shillong, check in at your hotel. Overnight stay at Shillong.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Excursion to Cherrapunjee (60 kms / 3 hrs one way.)',
-                description: 'After an early breakfast, proceed for a full-day excursion to Cherrapunjee (4,400 ft.), renowned as one of the wettest places on earth. En route, stop to admire the cascading Elephanta Falls, soak in the breathtaking vistas from Mawdok–Dympep Valley Viewpoint, and explore the unique Garden of Caves. On arrival, witness some of Cherrapunjee’s most spectacular natural wonders including the majestic Nohkalikai Falls (the tallest plunge waterfall in India), the enchanting Nohsngithiang Falls (Seven Sisters Falls), and the fascinating limestone formations inside the Mawsmai Caves. In the evening, drive back to Shillong for an Overnight stay at Shillong.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Excursion to Dawki & Mawlynnong (120 kms / 4 hrs one way.)',
-                description: 'After early breakfast drive to Dawki, a small town near India Bangladesh border. Enjoy breathtaking view of the Umangot River. Later proceed to Mawlynnong – “Asia’s Cleanest Village”. Mawlynnong offers many interesting sights such as the living root bridge and another strange natural phenomenon of a boulder balancing on another small rock. Evening drive back to Shillong. Stay overnight at your hotel in Shillong.'
-            },
-            {
-                day: 'Day 4',
-                title: 'Shillong Sightseeing – Guwahati (100 kms / 3 hrs.)',
-                description: 'After breakfast check out from hotel and visit Don Bosco Museum (Sunday Closed) & Ward’s Lake. After that drive to Guwahati. Arrive and check in at hotel. In evening we suggest an optional tour of Golden sunset cruise on the Brahmaputra (Direct Payment by own). Overnight stay at Guwahati.'
-            },
-            {
-                day: 'Day 5',
-                title: 'Hotel – Guwahati Airport / Rly Station',
-                description: 'After breakfast visit Kamakhya Temple (Notes -Timing 08:00 A.M till 01:00 P.M & 3:00 P.M till its gets dark). Transfer to Guwahati Airport / Railway Station for your onward journey. Note: Temple visit will depend on your departure time. It May be done on previous day.'
-            }
-        ],
-        inclusions: [
-            'CP (Room + Breakfast)'
-        ],
-        exclusions: [],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '36': {
-        id: '36',
-        title: 'Scotland Of The East - Shillong 4N Tour',
-        image: '/assets/Tripura2.webp',
-        overview: {
-            duration: '4 Nights / 5 Days',
-            destination: 'Shillong, Cherrapunji, Dawki, Nohkalikai Falls',
-            activities: 'Caving, Sightseeing',
-            themes: 'Hill Stations & Valleys, Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'On Request',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Guwahati Airport / Rly Station – Shillong (100 kms / 03 hrs.)',
-                description: 'On arrival at Guwahati Airport / Railway Station & transfer to Shillong (4,900 ft.), which is called ‘Scotland of the East”. Enroute visit Umium Lake, a majestic placid lake with its surrounding sylvan hills. On arrival at Shillong, check in at your hotel. Overnight stay at Shillong.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Excursion to Cherrapunjee (60 kms / 3 hrs. One Way)',
-                description: 'After an early breakfast, proceed for a full-day excursion to Cherrapunjee (4,400 ft.), renowned as one of the wettest places on earth. En route, stop to admire the cascading Elephanta Falls, soak in the breathtaking vistas from Mawdok–Dympep Valley Viewpoint, and explore the unique Garden of Caves. On arrival, witness some of Cherrapunjee’s most spectacular natural wonders including the majestic Nohkalikai Falls (the tallest plunge waterfall in India), the enchanting Nohsngithiang Falls (Seven Sisters Falls), and the fascinating limestone formations inside the Mawsmai Caves. In the evening, drive back to Shillong for an Overnight stay at Shillong.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Excursion to Jowai (110 kms / 4-5 hrs. One Way)',
-                description: 'After early breakfast start full day excursion to Jowai, headquarters of the Jaintia Hills district is situated 66 kms away from Shillong, along the Shillong-Silchar national highway. A picturesque town circled by the majestic Myntdu River. Jowai was the summer capital of the Jaintia Kings, of Sutnga State. You will visit India’s most magical waterfall – Krang Suri, Meghalaya. A moment of silence to acknowledge how beautiful this waterfall is! Later drive to Tryshi Waterfalls, A bridge connects the waterfall’s surroundings with an expanse of green paddy fields. A breathtaking panoramic view of the Pynthor Nein is visible from the bridge. Next you will stop at Thadlaskein Lake where you can enjoy boating. Afternoon proceed to The Nartiang menhir measure 27 feet in height above the ground, 6 feet in breadth and 2 feet 6 inches in thickness. The monoliths represent the megalithic culture of the Hynniewtrep people. A 500 Years old temple of Durga is another attraction at Nartiang. Evening back to Shillong. Overnight stay at Shillong.'
-            },
-            {
-                day: 'Day 4',
-                title: 'Excursion to Dawki & Mawlynnong (120 kms / 4-5 hrs. One Way)',
-                description: 'After early breakfast drive to Dawki, a small town near India Bangladesh border. Enjoy breathtaking view of the Umangot River. Later proceed to Mawlynnong – “Asia’s Cleanest Village”. Mawlynnong offers many interesting sights such as the living root bridge and another strange natural phenomenon of a boulder balancing on another small rock. Evening drive back to Shillong. Stay overnight at your hotel in Shillong.\nNote - It is advisable to carry packed lunch.'
-            },
-            {
-                day: 'Day 5',
-                title: 'Shillong – Guwahati Airport / Rly Station (100 kms / 03 hrs.)',
-                description: 'After breakfast check out from the hotel & transfer to Guwahati Airport / Railway Station for your onward journey.'
-            }
-        ],
-        inclusions: [
-            'CP (Room + Breakfast)'
-        ],
-        exclusions: [],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '37': {
-        id: '37',
-        title: 'Peaks - Lakes Shillong - Guwahati Tour',
-        image: '/assets/manipur2.webp',
-        overview: {
-            duration: '4 Nights / 5 Days',
-            destination: 'Guwahati, Shillong, Cherrapunji, Nohkalikai Falls',
-            activities: 'Caving, Museums, Sightseeing',
-            themes: 'Hill Stations & Valleys, Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'On Request',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Guwahati Airport / Rly Station – Shillong (100 kms / 3 hrs.)',
-                description: 'On arrival at Guwahati Airport / Railway Station & transfer to Shillong (4,900 ft.), which is called \'Scotland of the East" (100 kms 3 hrs). Enroute visit Umium Lake, a majestic placid lake with its surrounding sylvan hills. On arrival at Shillong, check in at your hotel. Overnight stay at Shillong.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Excursion to Cherrapunjee (60 kms / 3 hrs one way.)',
-                description: 'After an early breakfast, proceed for a full-day excursion to Cherrapunjee (4,400 ft.), renowned as one of the wettest places on earth. En route, stop to admire the cascading Elephanta Falls, soak in the breathtaking vistas from Mawdok–Dympep Valley Viewpoint, and explore the unique Garden of Caves. On arrival, witness some of Cherrapunjee’s most spectacular natural wonders including the majestic Nohkalikai Falls (the tallest plunge waterfall in India), the enchanting Nohsngithiang Falls (Seven Sisters Falls), and the fascinating limestone formations inside the Mawsmai Caves. In the evening, drive back to Shillong for an Overnight stay at Shillong.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Shillong Sightseeing – Guwahati (100 kms / 3 hrs.)',
-                description: 'After breakfast visit Don Bosco Museum (Sunday Closed) & Ward’s Lake. After that drive to Guwahati. Arrive and check in at hotel. In evening we suggest an optional tour of Golden sunset cruise on the Brahmaputra (Direct Payment by own). Overnight stay at Guwahati'
-            },
-            {
-                day: 'Day 4',
-                title: 'Guwahati Local Sightseeing',
-                description: 'After breakfast out to visit Kamakhya Temple (Notes -Timing 08:00 A.M till 01:00 P.M & 3:00 P.M till its gets dark), Tirupati Balaji Temple, Nabagraha Temple, Assam State Museum (Closed on Monday), State Zoo cum Botanical Garden, Regional Science Centre and Sukreswar Temple (The 6th Jyotirlinga of Shiva). Overnight stay at Guwahati.'
-            },
-            {
-                day: 'Day 5',
-                title: 'Hotel – Guwahati Airport / Rly Station',
-                description: 'After breakfast check out from hotel & transfer to Guwahati Airport / Railway Station for your onward journey.'
-            }
-        ],
-        inclusions: [
-            'CP (Room + Breakfast)'
-        ],
-        exclusions: [],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '38': {
-        id: '38',
-        title: 'North East Triangle Kaziranga - Shillong - Guwahati Tour',
-        image: '/assets/Uttar Pradesh1.webp',
-        overview: {
-            duration: '5 Nights / 6 Days',
-            destination: 'Guwahati, Shillong, Cherrapunji, Kaziranga...',
-            activities: 'Jeep Safari, Elephant Safari, Museums, Sightseeing',
-            themes: 'Wildlife, Hill Stations & Valleys, Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'On Request',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Guwahati Airport / Rly Station – Kaziranga National Park (220 kms / 5 hrs.)',
-                description: 'On arrival at Guwahati Airport / Railway Station & transfer to Kaziranga National Park, the home of “One Horned Rhinoceros”, Enroute visit Maha Mrityunjay Temple. On arrival at Kaziranga Check in at your hotel. Evening is free for leisure. Overnight stay at Kaziranga.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Kaziranga National Park',
-                description: 'Early morning explores any one zone of Kaziranga National Park on back of Elephant. Apart from the Rhino, other species found are Hog Deer, Swamp Deer, Wild Buffalo, Elephants and if you are lucky then tiger also. It is also home to pelicans, storks and darters as there are a number of water bodies inside the Park. Return to the resort for breakfast. In the afternoon enjoy jeep safari through the National Park, later visit Kaziranga Orchid Park. Return to the hotel. Overnight stay at Kaziranga.\n\nImportant note: Elephant rides are all regulated and controlled by the forest Dept. Govt. of Assam. We do not have any control on the booking. Elephant rides & Jeep safari are subject to availability only.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Kaziranga National Park – Shillong (295 kms / 7 hrs.)',
-                description: 'After breakfast proceed for Shillong (4,900 ft.), which is called ‘Scotland of the East”. Enroute visit Umium Lake, a majestic placid lake with its surrounding sylvan hills. On arrival at Shillong, check in at your hotel. Evening is free for leisure. Overnight stay at Shillong.'
-            },
-            {
-                day: 'Day 4',
-                title: 'Excursion to Cherrapunjee (60 kms / 3 hrs one way.)',
-                description: 'After an early breakfast, proceed for a full-day excursion to Cherrapunjee (4,400 ft.), renowned as one of the wettest places on earth. En route, stop to admire the cascading Elephanta Falls, soak in the breathtaking vistas from Mawdok–Dympep Valley Viewpoint, and explore the unique Garden of Caves. On arrival, witness some of Cherrapunjee’s most spectacular natural wonders including the majestic Nohkalikai Falls (the tallest plunge waterfall in India), the enchanting Nohsngithiang Falls (Seven Sisters Falls), and the fascinating limestone formations inside the Mawsmai Caves. In the evening, drive back to Shillong for an Overnight stay at Shillong.'
-            },
-            {
-                day: 'Day 5',
-                title: 'Shillong Sightseeing – Guwahati (100 kms / 3 hrs.)',
-                description: 'After breakfast visit Don Bosco Museum (Sunday Closed) Ward’s Lake & Lady Hydari Park. Thereafter, drive to Guwahati. Arrive and check in at hotel. In evening we suggest an optional tour of Golden sunset cruise on the Brahmaputra (Direct Payment by own). Overnight stay at Guwahati'
-            },
-            {
-                day: 'Day 6',
-                title: 'Hotel – Guwahati Airport / Rly Station',
-                description: 'After breakfast visit Kamakhya Temple (Notes -Timing 08:00 A.M till 01:00 P.M & 3:00 P.M till its gets dark). Transfer to Guwahati Airport / Railway Station for your onward journey.\n\nNote: Temple visit will depend on your departure time. It May be done on previous day.'
-            }
-        ],
-        inclusions: [
-            'CP (Room + Breakfast)'
-        ],
-        exclusions: [],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '39': {
-        id: '39',
-        title: 'Splendour Himalaya Shillong - Guwahati 6 Days Tour',
-        image: '/assets/Mizoram2.webp',
-        overview: {
-            duration: '5 Nights / 6 Days',
-            destination: 'Guwahati, Shillong, Cherrapunji, Dawki, Nohkalikai Falls',
-            activities: 'Caving, Museums, Sightseeing',
-            themes: 'Hill Stations & Valleys, Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'On Request',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Guwahati Airport / Rly Station – Shillong (100 kms / 3 hrs.)',
-                description: 'On arrival at Guwahati Airport / Railway Station & transfer to Shillong (4,900 ft.), which is called \'Scotland of the East" (100 kms 3 hrs). Enroute visit Umium Lake, a majestic placid lake with its surrounding sylvan hills. On arrival at Shillong, check in at your hotel. Overnight stay at Shillong.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Excursion to Cherrapunjee (60 kms / 3 hrs one way.)',
-                description: 'After an early breakfast, proceed for a full-day excursion to Cherrapunjee (4,400 ft.), renowned as one of the wettest places on earth. En route, stop to admire the cascading Elephanta Falls, soak in the breathtaking vistas from Mawdok–Dympep Valley Viewpoint, and explore the unique Garden of Caves. On arrival, witness some of Cherrapunjee’s most spectacular natural wonders including the majestic Nohkalikai Falls (the tallest plunge waterfall in India), the enchanting Nohsngithiang Falls (Seven Sisters Falls), and the fascinating limestone formations inside the Mawsmai Caves. In the evening, drive back to Shillong for an Overnight stay at Shillong.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Excursion to Dawki & Mawlynnong (120 kms / 4-5 hrs. One Way)',
-                description: 'After early breakfast drive to Dawki, a small town near India Bangladesh border. Enjoy breathtaking view of the Umangot River. Later proceed to Mawlynnong – “Asia’s Cleanest Village”. Mawlynnong offers many interesting sights such as the living root bridge and another strange natural phenomenon of a boulder balancing on another small rock. Evening drive back to Shillong. Stay overnight at your hotel in Shillong.'
-            },
-            {
-                day: 'Day 4',
-                title: 'Shillong Sightseeing – Guwahati (100 kms / 3 hrs.)',
-                description: 'After breakfast visit Don Bosco Museum (Sunday Closed) Ward’s Lake & Lady Hydari Park. Thereafter, drive to Guwahati. Arrive and check in at hotel. In evening we suggest an optional tour of Golden sunset cruise on the Brahmaputra (Direct Payment by own). Overnight stay at Guwahati'
-            },
-            {
-                day: 'Day 5',
-                title: 'Guwahati Local Sightseeing',
-                description: 'After breakfast out to visit Kamakhya Temple (Notes -Timing 08:00 A.M till 01:00 P.M & 3:00 P.M till its gets dark), Tirupati Balaji Temple, Nabagraha Temple, Assam State Museum (Closed on Monday), State Zoo cum Botanical Garden, Regional Science Centre and Sukreswar Temple (The 6th Jyotirlinga of Shiva). Overnight stay at Guwahati.'
-            },
-            {
-                day: 'Day 6',
-                title: 'Hotel – Guwahati Airport / Rly Station',
-                description: 'After breakfast check out from hotel & transfer to Guwahati Airport / Railway Station for your onward journey.'
-            }
-        ],
-        inclusions: [
-            'CP (Room + Breakfast)'
-        ],
-        exclusions: [],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '40': {
-        id: '40',
-        title: 'The Rhino Land - Kaziranga - Guwahati Tour',
-        image: '/assets/manipur2.webp',
-        overview: {
-            duration: '3 Nights / 4 Days',
-            destination: 'Guwahati, Kaziranga, Kaziranga National Park',
-            activities: 'Jungle Safari, Jeep Safari, Elephant Safari, Sightseeing',
-            themes: 'Wildlife, Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'On Request',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Guwahati Airport / Rly Station – Kaziranga National Park (220 kms / 5 hrs.)',
-                description: 'On arrival at Guwahati Airport / Railway Station meet by our driver & transfer to Kaziranga National Park, the home of “One Horned Rhinoceros”, Check in at your hotel. Evening is free for leisure. Overnight stay at Kaziranga.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Kaziranga National Park',
-                description: 'Early morning explores any one zone of Kaziranga National Park on back of Elephant. Apart from the Rhino, other species found are Hog Deer, Swamp Deer, Wild Buffalo, Elephants and if you are lucky then tiger also. It is also home to pelicans, storks and darters as there are a number of water bodies inside the Park. Return to the resort for breakfast. In the afternoon enjoy jeep safari through the National Park, later visit Kaziranga Orchid Park. Return to the hotel. Overnight stay at Kaziranga.\n\nImportant note: Elephant rides are all regulated and controlled by the forest Dept. Govt. of Assam. We do not have any control on the booking. Elephant rides & Jeep safari are subject to availability only.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Kaziranga National Park – Guwahati (220 kms / 5 hrs.)',
-                description: 'After breakfast drive to Guwahati, enroute visit Maha Mritunjay Temple in Nagaon. Arrive and check in at your hotel. In evening we suggest an optional tour of Golden sunset cruise on the Brahmaputra (Direct Payment by own). Overnight stay at Guwahati.'
-            },
-            {
-                day: 'Day 4',
-                title: 'Hotel – Guwahati Airport / Rly Station',
-                description: 'After breakfast visit Kamakhya Temple (Notes -Timing 08:00 A.M till 01:00 P.M & 3:00 P.M till its gets dark). Transfer to Guwahati Airport / Railway Station for your onward journey.\n\nNote: Temple visit will depend on your departure time. It May be done on previous day.'
-            }
-        ],
-        inclusions: [
-            'CP (Room + Breakfast)'
-        ],
-        exclusions: [],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '41': {
-        id: '41',
-        title: 'Ayodhya Flight Package From Chennai 1 Night - 2 Days',
-        image: '/assets/generated/ayodhya_ram_mandir_pkg.png',
-        overview: {
-            duration: '1 Nights / 2 Days',
-            destination: 'Ayodhya',
-            activities: 'Museums, Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'Rs. 18500/-',
-            status: 'Inquire Now for Best Deals'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Arrival Chennai - Ayodhya',
-                description: 'Departure from Chennai Airport at 09.10 a.m. Arrival Ayodhya Airport at 11.35 a.m. Transfer to hotel. Visit the birth place Lord Rama, Shri Ramjanma Bhoomi and Hanuman Garhi Temple. Evening visit Kanak Bhawan and Ramkatha Museum.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Departure from Ayodhya',
-                description: 'Morning Free time for shopping and religious activities. After Lunch starting from Ayodhya and proceed to Airport. Reaching Ayodhya Airport at 03.00 p.m. Departure from Ayodhya Airport at 05.30 p.m. Reaching Chennai Airport at 08.00 p.m.'
-            }
-        ],
-        inclusions: [
-            'Hotel',
-            'Transportation by A/C Bus/Cab.',
-            'One night stay at Ayodhya in A/c room.',
-            'Buffet Breakfast or Fixed Menu',
-            'All sightseeing and excursion as per the itinerary.',
-            'Everyone must bring Original ID Proof at the time of travel.',
-            'English, Hindi and Tamil Guide for entire trip.',
-            'Please be at Airport 2 hours before the departure Time.'
-        ],
-        exclusions: [
-            'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
-        ],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '42': {
-        id: '42',
-        title: 'Madurai To Rameshwaram 1N 2D Tour',
-        image: "/assets/rameswaram/sm3.webp",
-        heroImage: "/assets/rameswaram/big5.webp",
-        overview: {
-            duration: '1 Nights / 2 Days',
-            destination: 'Madurai, Rameshwaram',
-            activities: 'Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'On Request',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Madurai - Rameswaram & Sightseeing',
-                description: 'Pick up from Madurai Airport or Junction Check in cab and Journey proceeding towards Rameshwaram visiting Ramanathaswamy temple - Five Faces Lord Hanuman Temple - Kothandaramaswamy Temple - Floating Stone - Agni Theertham - Dhanushkodi till entrance - Dr. APJ Abdul Kalam Memorial - Ramar Feet - stay at Rameshwaram.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Rameswaram - Madurai',
-                description: 'Pickup from Hotel at Rameshwaram and journey proceeding towards Madurai visiting local places like Lord Kallalagar Temple - Palamudhirchozai - Tiruparakundram Lord Karthik Temple - Thirumalai Naicker Palace - Meenakshi Amman Temple - Gandhi Museum [If time permits] - Drop at Madurai Airport or Junction.'
-            }
-        ],
-        inclusions: [
-            'EP (No Meal)'
-        ],
-        exclusions: [],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '43': {
-        id: '43',
-        title: '6 Day Trip from Bangalore | Madurai, Rameshwaram, Kanyakumari, Kovalam & Trivandrum',
-        image: "/assets/rameswaram/sm5.webp",
-        heroImage: "/assets/rameswaram/three.webp",
-        overview: {
-            duration: '5 Nights / 6 Days',
-            destination: 'Madurai, Rameshwaram, Kanyakumari, Kovalam, Trivandrum',
-            activities: 'Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Pick up at 6 AM from Bangalore - Madurai sightseeing',
-                description: 'Koodal algar temple, Madurai Meenakshi Amman temple.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Start at 9 AM - Madurai to Rameshwaram and Rameshwaram sightseeing',
-                description: 'Ramanathaswamy temple, Agniteertham, Pamban bridge, Panchmukhi hanuman mandir, Dhanushkodi.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Start at 9 AM - Rameshwaram to Kanyakumari and Kanyakumari sightseeing',
-                description: 'Vivekananda rock memorial, Kanyakumari beach, Sunset Point, Thiruvalluvar statue.'
-            },
-            {
-                day: 'Day 4',
-                title: 'Start at 9 AM - Kanyakumari to Kovalam and Kovalam sightseeing',
-                description: 'Padmanabhapuram palace, Thanumalayan or Suchindram temple, Samudra Beach, Lighthouse Beach.'
-            },
-            {
-                day: 'Day 5',
-                title: 'Start at 9 AM - Trivandrum sightseeing',
-                description: 'Anantha Padmanabha Temple, Napier Museum.'
-            },
-            {
-                day: 'Day 6',
-                title: 'Start at 8 AM - Trivandrum to Bangalore Drop',
-                description: 'Post breakfast checkout from Hotel & drop.'
-            }
-        ],
-        inclusions: [
-            'Selected AC vehicle for pick up & drop and sightseeing',
-            'Complimentary breakfast at selected hotel',
-            'Selected category hotel for accommodation (not applicable for 1-day trips)',
-            'First day breakfast is not covered as the hotel checkin timings would be at 12 PM',
-            'All the sightseeing will be on a private basis in AC vehicle',
-            'Entry tax, Toll, Parking charges, Driver allowance, Interstate tax if applicable',
-            'Home pick up & drop - within 7 KM\'s (From our location) complimentary home pick up and drop services will be provided',
-            'Total fares include GST'
-        ],
-        exclusions: [
-            'Meals other than mentioned (Lunch & Dinner) and any beverages',
-            'Local guide, Entrance fees to monuments, sight-seeing, parks and Sanctuaries and Safari charges',
-            'Items of personal nature viz. tips, laundry, travel insurance, camera fees, etc.',
-            'Early check-in or late checkout charges if applicable',
-            'Hotel Gala dinner charges in the event of Christmas and New year eve',
-            'Anything not specifically mentioned in the inclusion section'
-        ],
-        policies: { payment: '20% Advance Percentage', cancellation: 'Standard cancellation applies.' }
-    },
-    '44': {
-        id: '44',
-        title: '4 Day Trip from Bangalore| Madurai, Rameshwaram & Kanyakumari',
-        image: "/assets/rameswaram/sm1.webp",
-        heroImage: "/assets/rameswaram/big.webp",
-        overview: { duration: '3 Nights / 4 Days', destination: 'Madurai, Rameshwaram, Kanyakumari', activities: 'Sightseeing', themes: 'Religious & Pilgrimage', transport: 'Private Cab' },
-        priceDetails: { label: 'Starts @', amount: 'Rs. 12700/-', status: 'On Request' },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Pick up from Bangalore at 6 AM - Madurai sightseeing',
-                description: 'Koodal algar temple, Madurai Meenakshi Amman temple.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Start at 9 AM - Madurai to Rameshwaram and Rameshwaram sightseeing',
-                description: 'Ramanathaswamy temple, Agniteertham, Pamban bridge, Panchmukhi hanuman mandir, Dhanushkodi.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Start at 9 AM - Rameshwaram to Kanyakumari and Kanyakumari sightseeing',
-                description: 'Vivekananda rock memorial, Kanyakumari beach, Sunset Point, Tsunami monument, Thiruvalluvar statue.'
-            },
-            {
-                day: 'Day 4',
-                title: 'Start at 9 AM - Kanyakumari to Bangalore Drop',
-                description: 'Post breakfast checkout from Hotel & drop.'
-            }
-        ],
-        inclusions: [
-            'Selected AC vehicle for pick up & drop and sightseeing',
-            'Complimentary breakfast at selected hotel',
-            'Selected category hotel for accommodation (not applicable for 1-day trips)',
-            'First day breakfast is not covered as the hotel checkin timings would be at 12 PM.',
-            'All the sightseeing will be on a private basis in AC vehicle',
-            'Entry tax, Toll, Parking charges, Driver allowance, Interstate tax if applicable',
-            "Home pick up & drop - within 7 KM's (From our location - Rajajinagar 6th Block) complimentary home pick up and drop services will be provided. Anything above than this will have extra charges",
-            'Total fares include GST'
-        ],
-        exclusions: [
-            'Meals other than mentioned (Lunch & Dinner) and any beverages',
-            'Local guide, Entrance fees to monuments, sight-seeing, parks and Sanctuaries and Safari charges',
-            'Items of personal nature viz. tips, laundry, travel insurance, camera fees, etc.',
-            'Early check-in or late checkout charges if applicable',
-            'Hotel Gala dinner charges in the event of Christmas and New year eve',
-            'Anything not specifically mentioned in the inclusion section'
-        ],
-        policies: { payment: 'No Down Payment, No Cost EMI on 3/6 months tenure available.', cancellation: 'Standard cancellation applies.' }
-    },
+    // '32': {
+    //     id: '32',
+    //     title: 'Abode Of The Cloud - Shillong - 3N Tour',
+    //     image: '/assets/Tripura2.webp',
+    //     overview: {
+    //         duration: '3 Nights / 4 Days',
+    //         destination: 'Shillong, Cherrapunji, Nohkalikai Falls',
+    //         activities: 'Caving, Sightseeing',
+    //         themes: 'Hill Stations & Valleys, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'On Request',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Guwahati Airport / Rly Station – Shillong (100 kms / 03 hrs.)',
+    //             description: 'On arrival at Guwahati Airport / Railway Station & transfer to Shillong (4,900 ft.), which is called \'Scotland of the East". Enroute visit Umium Lake, a majestic placid lake with its surrounding sylvan hills. On arrival at Shillong, check in at your hotel. Overnight stay at Shillong.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Excursion to Cherrapunjee (60 kms / 3 hrs. One Way)',
+    //             description: 'After an early breakfast, proceed for a full-day excursion to Cherrapunjee (4,400 ft.), renowned as one of the wettest places on earth. En route, stop to admire the cascading Elephanta Falls, soak in the breathtaking vistas from Mawdok–Dympep Valley Viewpoint, and explore the unique Garden of Caves. On arrival, witness some of Cherrapunjee’s most spectacular natural wonders including the majestic Nohkalikai Falls (the tallest plunge waterfall in India), the enchanting Nohsngithiang Falls (Seven Sisters Falls), and the fascinating limestone formations inside the Mawsmai Caves. In the evening, drive back to Shillong for an Overnight stay at Shillong.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Shillong Sightseeing',
+    //             description: 'After breakfast visit Don Bosco Museum (Sunday closed), Ward’s Lake, Botanical Garden and Lady Hydari Park. Evening is free for personal activities. Overnight stay at Shillong.'
+    //         },
+    //         {
+    //             day: 'Day 4',
+    //             title: 'Shillong – Guwahati Airport / Rly Station (100 kms / 03 hrs.)',
+    //             description: 'After breakfast check out from the hotel & transfer to Guwahati Airport / Railway Station for your onward journey.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'CP (Room + Breakfast)'
+    //     ],
+    //     exclusions: [],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '33': {
+    //     id: '33',
+    //     title: 'Eastern Meadows Shillong - Guwahati Tour',
+    //     image: '/assets/manipur2.webp',
+    //     overview: {
+    //         duration: '3 Nights / 4 Days',
+    //         destination: 'Guwahati, Shillong, Cherrapunji, Nohkalikai Falls',
+    //         activities: 'Caving, Museums, Sightseeing',
+    //         themes: 'Hill Stations & Valleys, Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'On Request',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Guwahati Airport / Rly Station – Shillong (100 kms / 03 hrs.)',
+    //             description: 'On arrival at Guwahati Airport / Railway Station & transfer to Shillong (4,900 ft.), which is called ‘Scotland of the East”. Enroute visit Umium Lake, a majestic placid lake with its surrounding sylvan hills. On arrival at Shillong, check in at your hotel. Overnight stay at Shillong.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Excursion to Cherrapunjee (60 kms / 3 hrs.)',
+    //             description: 'After an early breakfast, proceed for a full-day excursion to Cherrapunjee (4,400 ft.), renowned as one of the wettest places on earth. En route, stop to admire the cascading Elephanta Falls, soak in the breathtaking vistas from Mawdok–Dympep Valley Viewpoint, and explore the unique Garden of Caves. On arrival, witness some of Cherrapunjee’s most spectacular natural wonders including the majestic Nohkalikai Falls (the tallest plunge waterfall in India), the enchanting Nohsngithiang Falls (Seven Sisters Falls), and the fascinating limestone formations inside the Mawsmai Caves. In the evening, drive back to Shillong for an Overnight stay at Shillong.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Shillong Sightseeing – Guwahati (100 kms / 03 hrs.)',
+    //             description: 'After breakfast Check out from hotel and visit Don Bosco Museum (Sunday Closed) & Ward’s Lake. After that drive to Guwahati. Arrive and check in at your hotel. In evening we suggest an optional tour of Golden sunset cruise on the Brahmaputra (Direct Payment by own). Overnight stay at Guwahati.'
+    //         },
+    //         {
+    //             day: 'Day 4',
+    //             title: 'Hotel – Guwahati Airport / Rly Station',
+    //             description: 'After breakfast visit Kamakhya Temple (Notes -Timing 08:00 A.M till 01:00 P.M & 3:00 P.M till its gets dark). Transfer to Guwahati Airport / Railway Station for your onward journey. Note: Temple visit will depend on your departure time. It May be done on previous day'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'CP (Room + Breakfast)'
+    //     ],
+    //     exclusions: [],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '34': {
+    //     id: '34',
+    //     title: 'North-East Beauty Kaziranga - Shillong Tour',
+    //     image: '/assets/Uttar Pradesh1.webp',
+    //     overview: {
+    //         duration: '4 Nights / 5 Days',
+    //         destination: 'Shillong, Cherrapunji, Kaziranga, Kaziranga National Park...',
+    //         activities: 'Caving, Jeep Safari, Elephant Safari, Sightseeing',
+    //         themes: 'Wildlife, Hill Stations & Valleys, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'On Request',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Guwahati Airport / Rly Station – Kaziranga National Park (220 kms / 5 hrs.)',
+    //             description: 'On arrival at Guwahati Airport / Railway Station & transfer to Kaziranga National Park, the home of “One Horned Rhinoceros”, Enroute visit Maha Mrityunjay Temple. On arrival at Kaziranga Check in at your hotel. Evening is free for leisure. Overnight stay at Kaziranga.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Kaziranga National Park',
+    //             description: 'Early morning explores any one zone of Kaziranga National Park on back of Elephant. Apart from the Rhino, other species found are Hog Deer, Swamp Deer, Wild Buffalo, Elephants and if you are lucky then tiger also. It is also home to pelicans, storks and darters as there are a number of water bodies inside the Park. Return to the resort for breakfast. In the afternoon enjoy jeep safari through the National Park, later visit Kaziranga Orchid Park. Return to the hotel. Overnight stay at Kaziranga. \n\nImportant note: Elephant rides are all regulated and controlled by the forest Dept. Govt. of Assam. We do not have any control on the booking. Elephant rides & Jeep safari are subject to availability only.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Kaziranga National Park – Shillong (295 kms / 7 hrs.)',
+    //             description: 'After breakfast proceed for Shillong (4,900 ft.), called ‘Scotland of the East”. Enroute visit Umium Lake, a majestic placid lake with its surrounding sylvan hills. On arrival at Shillong, check in at your hotel. Back to the hotel. Overnight stay at Shillong.'
+    //         },
+    //         {
+    //             day: 'Day 4',
+    //             title: 'Excursion to Cherrapunjee (60 kms / 3 hrs.)',
+    //             description: 'After an early breakfast, proceed for a full-day excursion to Cherrapunjee (4,400 ft.), renowned as one of the wettest places on earth. En route, stop to admire the cascading Elephanta Falls, soak in the breathtaking vistas from Mawdok–Dympep Valley Viewpoint, and explore the unique Garden of Caves. On arrival, witness some of Cherrapunjee’s most spectacular natural wonders including the majestic Nohkalikai Falls (the tallest plunge waterfall in India), the enchanting Nohsngithiang Falls (Seven Sisters Falls), and the fascinating limestone formations inside the Mawsmai Caves. In the evening, drive back to Shillong for an Overnight stay at Shillong.'
+    //         },
+    //         {
+    //             day: 'Day 5',
+    //             title: 'Shilong – Guwahati Airport / Rly Station (100 kms / 3 hrs.)',
+    //             description: 'After breakfast check out from the hotel & transfer to Guwahati Airport / Railway Station for your onward journey.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'CP (Room + Breakfast)'
+    //     ],
+    //     exclusions: [],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '35': {
+    //     id: '35',
+    //     title: 'Splendour Himalaya Shillong - Guwahati Tour',
+    //     image: '/assets/Mizoram2.webp',
+    //     overview: {
+    //         duration: '4 Nights / 5 Days',
+    //         destination: 'Shillong, Cherrapunji, Dawki, Guwahati, Nohkalikai Falls',
+    //         activities: 'Caving, Museums, Sightseeing',
+    //         themes: 'Hill Stations & Valleys, Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'On Request',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Guwahati Airport / Rly Station – Shillong (100 kms / 3 hrs.)',
+    //             description: 'On arrival at Guwahati Airport / Railway Station & transfer to Shillong (4,900 ft.), which is called ‘Scotland of the East” (100 kms 3 hrs). Enroute visit Umium Lake, a majestic placid lake with its surrounding sylvan hills. On arrival at Shillong, check in at your hotel. Overnight stay at Shillong.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Excursion to Cherrapunjee (60 kms / 3 hrs one way.)',
+    //             description: 'After an early breakfast, proceed for a full-day excursion to Cherrapunjee (4,400 ft.), renowned as one of the wettest places on earth. En route, stop to admire the cascading Elephanta Falls, soak in the breathtaking vistas from Mawdok–Dympep Valley Viewpoint, and explore the unique Garden of Caves. On arrival, witness some of Cherrapunjee’s most spectacular natural wonders including the majestic Nohkalikai Falls (the tallest plunge waterfall in India), the enchanting Nohsngithiang Falls (Seven Sisters Falls), and the fascinating limestone formations inside the Mawsmai Caves. In the evening, drive back to Shillong for an Overnight stay at Shillong.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Excursion to Dawki & Mawlynnong (120 kms / 4 hrs one way.)',
+    //             description: 'After early breakfast drive to Dawki, a small town near India Bangladesh border. Enjoy breathtaking view of the Umangot River. Later proceed to Mawlynnong – “Asia’s Cleanest Village”. Mawlynnong offers many interesting sights such as the living root bridge and another strange natural phenomenon of a boulder balancing on another small rock. Evening drive back to Shillong. Stay overnight at your hotel in Shillong.'
+    //         },
+    //         {
+    //             day: 'Day 4',
+    //             title: 'Shillong Sightseeing – Guwahati (100 kms / 3 hrs.)',
+    //             description: 'After breakfast check out from hotel and visit Don Bosco Museum (Sunday Closed) & Ward’s Lake. After that drive to Guwahati. Arrive and check in at hotel. In evening we suggest an optional tour of Golden sunset cruise on the Brahmaputra (Direct Payment by own). Overnight stay at Guwahati.'
+    //         },
+    //         {
+    //             day: 'Day 5',
+    //             title: 'Hotel – Guwahati Airport / Rly Station',
+    //             description: 'After breakfast visit Kamakhya Temple (Notes -Timing 08:00 A.M till 01:00 P.M & 3:00 P.M till its gets dark). Transfer to Guwahati Airport / Railway Station for your onward journey. Note: Temple visit will depend on your departure time. It May be done on previous day.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'CP (Room + Breakfast)'
+    //     ],
+    //     exclusions: [],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '36': {
+    //     id: '36',
+    //     title: 'Scotland Of The East - Shillong 4N Tour',
+    //     image: '/assets/Tripura2.webp',
+    //     overview: {
+    //         duration: '4 Nights / 5 Days',
+    //         destination: 'Shillong, Cherrapunji, Dawki, Nohkalikai Falls',
+    //         activities: 'Caving, Sightseeing',
+    //         themes: 'Hill Stations & Valleys, Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'On Request',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Guwahati Airport / Rly Station – Shillong (100 kms / 03 hrs.)',
+    //             description: 'On arrival at Guwahati Airport / Railway Station & transfer to Shillong (4,900 ft.), which is called ‘Scotland of the East”. Enroute visit Umium Lake, a majestic placid lake with its surrounding sylvan hills. On arrival at Shillong, check in at your hotel. Overnight stay at Shillong.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Excursion to Cherrapunjee (60 kms / 3 hrs. One Way)',
+    //             description: 'After an early breakfast, proceed for a full-day excursion to Cherrapunjee (4,400 ft.), renowned as one of the wettest places on earth. En route, stop to admire the cascading Elephanta Falls, soak in the breathtaking vistas from Mawdok–Dympep Valley Viewpoint, and explore the unique Garden of Caves. On arrival, witness some of Cherrapunjee’s most spectacular natural wonders including the majestic Nohkalikai Falls (the tallest plunge waterfall in India), the enchanting Nohsngithiang Falls (Seven Sisters Falls), and the fascinating limestone formations inside the Mawsmai Caves. In the evening, drive back to Shillong for an Overnight stay at Shillong.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Excursion to Jowai (110 kms / 4-5 hrs. One Way)',
+    //             description: 'After early breakfast start full day excursion to Jowai, headquarters of the Jaintia Hills district is situated 66 kms away from Shillong, along the Shillong-Silchar national highway. A picturesque town circled by the majestic Myntdu River. Jowai was the summer capital of the Jaintia Kings, of Sutnga State. You will visit India’s most magical waterfall – Krang Suri, Meghalaya. A moment of silence to acknowledge how beautiful this waterfall is! Later drive to Tryshi Waterfalls, A bridge connects the waterfall’s surroundings with an expanse of green paddy fields. A breathtaking panoramic view of the Pynthor Nein is visible from the bridge. Next you will stop at Thadlaskein Lake where you can enjoy boating. Afternoon proceed to The Nartiang menhir measure 27 feet in height above the ground, 6 feet in breadth and 2 feet 6 inches in thickness. The monoliths represent the megalithic culture of the Hynniewtrep people. A 500 Years old temple of Durga is another attraction at Nartiang. Evening back to Shillong. Overnight stay at Shillong.'
+    //         },
+    //         {
+    //             day: 'Day 4',
+    //             title: 'Excursion to Dawki & Mawlynnong (120 kms / 4-5 hrs. One Way)',
+    //             description: 'After early breakfast drive to Dawki, a small town near India Bangladesh border. Enjoy breathtaking view of the Umangot River. Later proceed to Mawlynnong – “Asia’s Cleanest Village”. Mawlynnong offers many interesting sights such as the living root bridge and another strange natural phenomenon of a boulder balancing on another small rock. Evening drive back to Shillong. Stay overnight at your hotel in Shillong.\nNote - It is advisable to carry packed lunch.'
+    //         },
+    //         {
+    //             day: 'Day 5',
+    //             title: 'Shillong – Guwahati Airport / Rly Station (100 kms / 03 hrs.)',
+    //             description: 'After breakfast check out from the hotel & transfer to Guwahati Airport / Railway Station for your onward journey.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'CP (Room + Breakfast)'
+    //     ],
+    //     exclusions: [],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '37': {
+    //     id: '37',
+    //     title: 'Peaks - Lakes Shillong - Guwahati Tour',
+    //     image: '/assets/manipur2.webp',
+    //     overview: {
+    //         duration: '4 Nights / 5 Days',
+    //         destination: 'Guwahati, Shillong, Cherrapunji, Nohkalikai Falls',
+    //         activities: 'Caving, Museums, Sightseeing',
+    //         themes: 'Hill Stations & Valleys, Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'On Request',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Guwahati Airport / Rly Station – Shillong (100 kms / 3 hrs.)',
+    //             description: 'On arrival at Guwahati Airport / Railway Station & transfer to Shillong (4,900 ft.), which is called \'Scotland of the East" (100 kms 3 hrs). Enroute visit Umium Lake, a majestic placid lake with its surrounding sylvan hills. On arrival at Shillong, check in at your hotel. Overnight stay at Shillong.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Excursion to Cherrapunjee (60 kms / 3 hrs one way.)',
+    //             description: 'After an early breakfast, proceed for a full-day excursion to Cherrapunjee (4,400 ft.), renowned as one of the wettest places on earth. En route, stop to admire the cascading Elephanta Falls, soak in the breathtaking vistas from Mawdok–Dympep Valley Viewpoint, and explore the unique Garden of Caves. On arrival, witness some of Cherrapunjee’s most spectacular natural wonders including the majestic Nohkalikai Falls (the tallest plunge waterfall in India), the enchanting Nohsngithiang Falls (Seven Sisters Falls), and the fascinating limestone formations inside the Mawsmai Caves. In the evening, drive back to Shillong for an Overnight stay at Shillong.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Shillong Sightseeing – Guwahati (100 kms / 3 hrs.)',
+    //             description: 'After breakfast visit Don Bosco Museum (Sunday Closed) & Ward’s Lake. After that drive to Guwahati. Arrive and check in at hotel. In evening we suggest an optional tour of Golden sunset cruise on the Brahmaputra (Direct Payment by own). Overnight stay at Guwahati'
+    //         },
+    //         {
+    //             day: 'Day 4',
+    //             title: 'Guwahati Local Sightseeing',
+    //             description: 'After breakfast out to visit Kamakhya Temple (Notes -Timing 08:00 A.M till 01:00 P.M & 3:00 P.M till its gets dark), Tirupati Balaji Temple, Nabagraha Temple, Assam State Museum (Closed on Monday), State Zoo cum Botanical Garden, Regional Science Centre and Sukreswar Temple (The 6th Jyotirlinga of Shiva). Overnight stay at Guwahati.'
+    //         },
+    //         {
+    //             day: 'Day 5',
+    //             title: 'Hotel – Guwahati Airport / Rly Station',
+    //             description: 'After breakfast check out from hotel & transfer to Guwahati Airport / Railway Station for your onward journey.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'CP (Room + Breakfast)'
+    //     ],
+    //     exclusions: [],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '38': {
+    //     id: '38',
+    //     title: 'North East Triangle Kaziranga - Shillong - Guwahati Tour',
+    //     image: '/assets/Uttar Pradesh1.webp',
+    //     overview: {
+    //         duration: '5 Nights / 6 Days',
+    //         destination: 'Guwahati, Shillong, Cherrapunji, Kaziranga...',
+    //         activities: 'Jeep Safari, Elephant Safari, Museums, Sightseeing',
+    //         themes: 'Wildlife, Hill Stations & Valleys, Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'On Request',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Guwahati Airport / Rly Station – Kaziranga National Park (220 kms / 5 hrs.)',
+    //             description: 'On arrival at Guwahati Airport / Railway Station & transfer to Kaziranga National Park, the home of “One Horned Rhinoceros”, Enroute visit Maha Mrityunjay Temple. On arrival at Kaziranga Check in at your hotel. Evening is free for leisure. Overnight stay at Kaziranga.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Kaziranga National Park',
+    //             description: 'Early morning explores any one zone of Kaziranga National Park on back of Elephant. Apart from the Rhino, other species found are Hog Deer, Swamp Deer, Wild Buffalo, Elephants and if you are lucky then tiger also. It is also home to pelicans, storks and darters as there are a number of water bodies inside the Park. Return to the resort for breakfast. In the afternoon enjoy jeep safari through the National Park, later visit Kaziranga Orchid Park. Return to the hotel. Overnight stay at Kaziranga.\n\nImportant note: Elephant rides are all regulated and controlled by the forest Dept. Govt. of Assam. We do not have any control on the booking. Elephant rides & Jeep safari are subject to availability only.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Kaziranga National Park – Shillong (295 kms / 7 hrs.)',
+    //             description: 'After breakfast proceed for Shillong (4,900 ft.), which is called ‘Scotland of the East”. Enroute visit Umium Lake, a majestic placid lake with its surrounding sylvan hills. On arrival at Shillong, check in at your hotel. Evening is free for leisure. Overnight stay at Shillong.'
+    //         },
+    //         {
+    //             day: 'Day 4',
+    //             title: 'Excursion to Cherrapunjee (60 kms / 3 hrs one way.)',
+    //             description: 'After an early breakfast, proceed for a full-day excursion to Cherrapunjee (4,400 ft.), renowned as one of the wettest places on earth. En route, stop to admire the cascading Elephanta Falls, soak in the breathtaking vistas from Mawdok–Dympep Valley Viewpoint, and explore the unique Garden of Caves. On arrival, witness some of Cherrapunjee’s most spectacular natural wonders including the majestic Nohkalikai Falls (the tallest plunge waterfall in India), the enchanting Nohsngithiang Falls (Seven Sisters Falls), and the fascinating limestone formations inside the Mawsmai Caves. In the evening, drive back to Shillong for an Overnight stay at Shillong.'
+    //         },
+    //         {
+    //             day: 'Day 5',
+    //             title: 'Shillong Sightseeing – Guwahati (100 kms / 3 hrs.)',
+    //             description: 'After breakfast visit Don Bosco Museum (Sunday Closed) Ward’s Lake & Lady Hydari Park. Thereafter, drive to Guwahati. Arrive and check in at hotel. In evening we suggest an optional tour of Golden sunset cruise on the Brahmaputra (Direct Payment by own). Overnight stay at Guwahati'
+    //         },
+    //         {
+    //             day: 'Day 6',
+    //             title: 'Hotel – Guwahati Airport / Rly Station',
+    //             description: 'After breakfast visit Kamakhya Temple (Notes -Timing 08:00 A.M till 01:00 P.M & 3:00 P.M till its gets dark). Transfer to Guwahati Airport / Railway Station for your onward journey.\n\nNote: Temple visit will depend on your departure time. It May be done on previous day.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'CP (Room + Breakfast)'
+    //     ],
+    //     exclusions: [],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '39': {
+    //     id: '39',
+    //     title: 'Splendour Himalaya Shillong - Guwahati 6 Days Tour',
+    //     image: '/assets/Mizoram2.webp',
+    //     overview: {
+    //         duration: '5 Nights / 6 Days',
+    //         destination: 'Guwahati, Shillong, Cherrapunji, Dawki, Nohkalikai Falls',
+    //         activities: 'Caving, Museums, Sightseeing',
+    //         themes: 'Hill Stations & Valleys, Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'On Request',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Guwahati Airport / Rly Station – Shillong (100 kms / 3 hrs.)',
+    //             description: 'On arrival at Guwahati Airport / Railway Station & transfer to Shillong (4,900 ft.), which is called \'Scotland of the East" (100 kms 3 hrs). Enroute visit Umium Lake, a majestic placid lake with its surrounding sylvan hills. On arrival at Shillong, check in at your hotel. Overnight stay at Shillong.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Excursion to Cherrapunjee (60 kms / 3 hrs one way.)',
+    //             description: 'After an early breakfast, proceed for a full-day excursion to Cherrapunjee (4,400 ft.), renowned as one of the wettest places on earth. En route, stop to admire the cascading Elephanta Falls, soak in the breathtaking vistas from Mawdok–Dympep Valley Viewpoint, and explore the unique Garden of Caves. On arrival, witness some of Cherrapunjee’s most spectacular natural wonders including the majestic Nohkalikai Falls (the tallest plunge waterfall in India), the enchanting Nohsngithiang Falls (Seven Sisters Falls), and the fascinating limestone formations inside the Mawsmai Caves. In the evening, drive back to Shillong for an Overnight stay at Shillong.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Excursion to Dawki & Mawlynnong (120 kms / 4-5 hrs. One Way)',
+    //             description: 'After early breakfast drive to Dawki, a small town near India Bangladesh border. Enjoy breathtaking view of the Umangot River. Later proceed to Mawlynnong – “Asia’s Cleanest Village”. Mawlynnong offers many interesting sights such as the living root bridge and another strange natural phenomenon of a boulder balancing on another small rock. Evening drive back to Shillong. Stay overnight at your hotel in Shillong.'
+    //         },
+    //         {
+    //             day: 'Day 4',
+    //             title: 'Shillong Sightseeing – Guwahati (100 kms / 3 hrs.)',
+    //             description: 'After breakfast visit Don Bosco Museum (Sunday Closed) Ward’s Lake & Lady Hydari Park. Thereafter, drive to Guwahati. Arrive and check in at hotel. In evening we suggest an optional tour of Golden sunset cruise on the Brahmaputra (Direct Payment by own). Overnight stay at Guwahati'
+    //         },
+    //         {
+    //             day: 'Day 5',
+    //             title: 'Guwahati Local Sightseeing',
+    //             description: 'After breakfast out to visit Kamakhya Temple (Notes -Timing 08:00 A.M till 01:00 P.M & 3:00 P.M till its gets dark), Tirupati Balaji Temple, Nabagraha Temple, Assam State Museum (Closed on Monday), State Zoo cum Botanical Garden, Regional Science Centre and Sukreswar Temple (The 6th Jyotirlinga of Shiva). Overnight stay at Guwahati.'
+    //         },
+    //         {
+    //             day: 'Day 6',
+    //             title: 'Hotel – Guwahati Airport / Rly Station',
+    //             description: 'After breakfast check out from hotel & transfer to Guwahati Airport / Railway Station for your onward journey.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'CP (Room + Breakfast)'
+    //     ],
+    //     exclusions: [],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '40': {
+    //     id: '40',
+    //     title: 'The Rhino Land - Kaziranga - Guwahati Tour',
+    //     image: '/assets/manipur2.webp',
+    //     overview: {
+    //         duration: '3 Nights / 4 Days',
+    //         destination: 'Guwahati, Kaziranga, Kaziranga National Park',
+    //         activities: 'Jungle Safari, Jeep Safari, Elephant Safari, Sightseeing',
+    //         themes: 'Wildlife, Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'On Request',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Guwahati Airport / Rly Station – Kaziranga National Park (220 kms / 5 hrs.)',
+    //             description: 'On arrival at Guwahati Airport / Railway Station meet by our driver & transfer to Kaziranga National Park, the home of “One Horned Rhinoceros”, Check in at your hotel. Evening is free for leisure. Overnight stay at Kaziranga.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Kaziranga National Park',
+    //             description: 'Early morning explores any one zone of Kaziranga National Park on back of Elephant. Apart from the Rhino, other species found are Hog Deer, Swamp Deer, Wild Buffalo, Elephants and if you are lucky then tiger also. It is also home to pelicans, storks and darters as there are a number of water bodies inside the Park. Return to the resort for breakfast. In the afternoon enjoy jeep safari through the National Park, later visit Kaziranga Orchid Park. Return to the hotel. Overnight stay at Kaziranga.\n\nImportant note: Elephant rides are all regulated and controlled by the forest Dept. Govt. of Assam. We do not have any control on the booking. Elephant rides & Jeep safari are subject to availability only.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Kaziranga National Park – Guwahati (220 kms / 5 hrs.)',
+    //             description: 'After breakfast drive to Guwahati, enroute visit Maha Mritunjay Temple in Nagaon. Arrive and check in at your hotel. In evening we suggest an optional tour of Golden sunset cruise on the Brahmaputra (Direct Payment by own). Overnight stay at Guwahati.'
+    //         },
+    //         {
+    //             day: 'Day 4',
+    //             title: 'Hotel – Guwahati Airport / Rly Station',
+    //             description: 'After breakfast visit Kamakhya Temple (Notes -Timing 08:00 A.M till 01:00 P.M & 3:00 P.M till its gets dark). Transfer to Guwahati Airport / Railway Station for your onward journey.\n\nNote: Temple visit will depend on your departure time. It May be done on previous day.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'CP (Room + Breakfast)'
+    //     ],
+    //     exclusions: [],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '41': {
+    //     id: '41',
+    //     title: 'Ayodhya Flight Package From Chennai 1 Night - 2 Days',
+    //     image: '/assets/generated/ayodhya_ram_mandir_pkg.png',
+    //     overview: {
+    //         duration: '1 Nights / 2 Days',
+    //         destination: 'Ayodhya',
+    //         activities: 'Museums, Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'Rs. 18500/-',
+    //         status: 'Inquire Now for Best Deals'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Arrival Chennai - Ayodhya',
+    //             description: 'Departure from Chennai Airport at 09.10 a.m. Arrival Ayodhya Airport at 11.35 a.m. Transfer to hotel. Visit the birth place Lord Rama, Shri Ramjanma Bhoomi and Hanuman Garhi Temple. Evening visit Kanak Bhawan and Ramkatha Museum.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Departure from Ayodhya',
+    //             description: 'Morning Free time for shopping and religious activities. After Lunch starting from Ayodhya and proceed to Airport. Reaching Ayodhya Airport at 03.00 p.m. Departure from Ayodhya Airport at 05.30 p.m. Reaching Chennai Airport at 08.00 p.m.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Hotel',
+    //         'Transportation by A/C Bus/Cab.',
+    //         'One night stay at Ayodhya in A/c room.',
+    //         'Buffet Breakfast or Fixed Menu',
+    //         'All sightseeing and excursion as per the itinerary.',
+    //         'Everyone must bring Original ID Proof at the time of travel.',
+    //         'English, Hindi and Tamil Guide for entire trip.',
+    //         'Please be at Airport 2 hours before the departure Time.'
+    //     ],
+    //     exclusions: [
+    //         'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
+    //     ],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '42': {
+    //     id: '42',
+    //     title: 'Madurai To Rameshwaram 1N 2D Tour',
+    //     image: "/assets/rameswaram/sm3.webp",
+    //     heroImage: "/assets/rameswaram/big5.webp",
+    //     overview: {
+    //         duration: '1 Nights / 2 Days',
+    //         destination: 'Madurai, Rameshwaram',
+    //         activities: 'Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'On Request',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Madurai - Rameswaram & Sightseeing',
+    //             description: 'Pick up from Madurai Airport or Junction Check in cab and Journey proceeding towards Rameshwaram visiting Ramanathaswamy temple - Five Faces Lord Hanuman Temple - Kothandaramaswamy Temple - Floating Stone - Agni Theertham - Dhanushkodi till entrance - Dr. APJ Abdul Kalam Memorial - Ramar Feet - stay at Rameshwaram.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Rameswaram - Madurai',
+    //             description: 'Pickup from Hotel at Rameshwaram and journey proceeding towards Madurai visiting local places like Lord Kallalagar Temple - Palamudhirchozai - Tiruparakundram Lord Karthik Temple - Thirumalai Naicker Palace - Meenakshi Amman Temple - Gandhi Museum [If time permits] - Drop at Madurai Airport or Junction.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'EP (No Meal)'
+    //     ],
+    //     exclusions: [],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '43': {
+    //     id: '43',
+    //     title: '6 Day Trip from Bangalore | Madurai, Rameshwaram, Kanyakumari, Kovalam & Trivandrum',
+    //     image: "/assets/rameswaram/sm5.webp",
+    //     heroImage: "/assets/rameswaram/three.webp",
+    //     overview: {
+    //         duration: '5 Nights / 6 Days',
+    //         destination: 'Madurai, Rameshwaram, Kanyakumari, Kovalam, Trivandrum',
+    //         activities: 'Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Pick up at 6 AM from Bangalore - Madurai sightseeing',
+    //             description: 'Koodal algar temple, Madurai Meenakshi Amman temple.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Start at 9 AM - Madurai to Rameshwaram and Rameshwaram sightseeing',
+    //             description: 'Ramanathaswamy temple, Agniteertham, Pamban bridge, Panchmukhi hanuman mandir, Dhanushkodi.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Start at 9 AM - Rameshwaram to Kanyakumari and Kanyakumari sightseeing',
+    //             description: 'Vivekananda rock memorial, Kanyakumari beach, Sunset Point, Thiruvalluvar statue.'
+    //         },
+    //         {
+    //             day: 'Day 4',
+    //             title: 'Start at 9 AM - Kanyakumari to Kovalam and Kovalam sightseeing',
+    //             description: 'Padmanabhapuram palace, Thanumalayan or Suchindram temple, Samudra Beach, Lighthouse Beach.'
+    //         },
+    //         {
+    //             day: 'Day 5',
+    //             title: 'Start at 9 AM - Trivandrum sightseeing',
+    //             description: 'Anantha Padmanabha Temple, Napier Museum.'
+    //         },
+    //         {
+    //             day: 'Day 6',
+    //             title: 'Start at 8 AM - Trivandrum to Bangalore Drop',
+    //             description: 'Post breakfast checkout from Hotel & drop.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Selected AC vehicle for pick up & drop and sightseeing',
+    //         'Complimentary breakfast at selected hotel',
+    //         'Selected category hotel for accommodation (not applicable for 1-day trips)',
+    //         'First day breakfast is not covered as the hotel checkin timings would be at 12 PM',
+    //         'All the sightseeing will be on a private basis in AC vehicle',
+    //         'Entry tax, Toll, Parking charges, Driver allowance, Interstate tax if applicable',
+    //         'Home pick up & drop - within 7 KM\'s (From our location) complimentary home pick up and drop services will be provided',
+    //         'Total fares include GST'
+    //     ],
+    //     exclusions: [
+    //         'Meals other than mentioned (Lunch & Dinner) and any beverages',
+    //         'Local guide, Entrance fees to monuments, sight-seeing, parks and Sanctuaries and Safari charges',
+    //         'Items of personal nature viz. tips, laundry, travel insurance, camera fees, etc.',
+    //         'Early check-in or late checkout charges if applicable',
+    //         'Hotel Gala dinner charges in the event of Christmas and New year eve',
+    //         'Anything not specifically mentioned in the inclusion section'
+    //     ],
+    //     policies: { payment: '20% Advance Percentage', cancellation: 'Standard cancellation applies.' }
+    // },
+    // '44': {
+    //     id: '44',
+    //     title: '4 Day Trip from Bangalore| Madurai, Rameshwaram & Kanyakumari',
+    //     image: "/assets/rameswaram/sm1.webp",
+    //     heroImage: "/assets/rameswaram/big.webp",
+    //     overview: { duration: '3 Nights / 4 Days', destination: 'Madurai, Rameshwaram, Kanyakumari', activities: 'Sightseeing', themes: 'Religious & Pilgrimage', transport: 'Private Cab' },
+    //     priceDetails: { label: 'Starts @', amount: 'Rs. 12700/-', status: 'On Request' },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Pick up from Bangalore at 6 AM - Madurai sightseeing',
+    //             description: 'Koodal algar temple, Madurai Meenakshi Amman temple.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Start at 9 AM - Madurai to Rameshwaram and Rameshwaram sightseeing',
+    //             description: 'Ramanathaswamy temple, Agniteertham, Pamban bridge, Panchmukhi hanuman mandir, Dhanushkodi.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Start at 9 AM - Rameshwaram to Kanyakumari and Kanyakumari sightseeing',
+    //             description: 'Vivekananda rock memorial, Kanyakumari beach, Sunset Point, Tsunami monument, Thiruvalluvar statue.'
+    //         },
+    //         {
+    //             day: 'Day 4',
+    //             title: 'Start at 9 AM - Kanyakumari to Bangalore Drop',
+    //             description: 'Post breakfast checkout from Hotel & drop.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Selected AC vehicle for pick up & drop and sightseeing',
+    //         'Complimentary breakfast at selected hotel',
+    //         'Selected category hotel for accommodation (not applicable for 1-day trips)',
+    //         'First day breakfast is not covered as the hotel checkin timings would be at 12 PM.',
+    //         'All the sightseeing will be on a private basis in AC vehicle',
+    //         'Entry tax, Toll, Parking charges, Driver allowance, Interstate tax if applicable',
+    //         "Home pick up & drop - within 7 KM's (From our location - Rajajinagar 6th Block) complimentary home pick up and drop services will be provided. Anything above than this will have extra charges",
+    //         'Total fares include GST'
+    //     ],
+    //     exclusions: [
+    //         'Meals other than mentioned (Lunch & Dinner) and any beverages',
+    //         'Local guide, Entrance fees to monuments, sight-seeing, parks and Sanctuaries and Safari charges',
+    //         'Items of personal nature viz. tips, laundry, travel insurance, camera fees, etc.',
+    //         'Early check-in or late checkout charges if applicable',
+    //         'Hotel Gala dinner charges in the event of Christmas and New year eve',
+    //         'Anything not specifically mentioned in the inclusion section'
+    //     ],
+    //     policies: { payment: 'No Down Payment, No Cost EMI on 3/6 months tenure available.', cancellation: 'Standard cancellation applies.' }
+    // },
     // '45': {
     //     id: '45',
     //     title: '9 Days Trip from Madurai | Madurai, Trichy, Thanjavur, Kumbakonam, Rameshwaram, Kanyakumari, Kovalam & Trivandrum',
@@ -21994,7 +21994,7 @@ export const packagesDatabase: Record<string, any> = {
         ],
         "id": "9204"
     }
-,
+    ,
 
     '8001': {
         "title": "Delhi – Mathura – Vrindavan – Agra Tour Package",
@@ -22794,7 +22794,7 @@ export const packagesDatabase: Record<string, any> = {
         ],
         "id": "5006"
     },
-'9001': {
+    '9001': {
         "title": "Kerala Honeymoon Package – 2 Nights / 3 Days",
         "image": "/assets/kerala1.webp",
         "heroImage": "/assets/TKK hero/kerala1.webp",
@@ -23655,7 +23655,7 @@ export const packagesDatabase: Record<string, any> = {
         "title": "Manali Explorer Package",
         "badge": "Manali Tour",
         "image": "/assets/SMK/Manali Explorer Package.webp",
-        "heroImage": "/assets/SMK hero/Manali Explorer Package.webp",
+        "heroImage": "/assets/SMK hero/manali explore package.png",
         "overview": {
             "duration": "3 Nights / 4 Days",
             "destination": "Manali, Solang Valley, Kullu, Naggar",
@@ -24208,7 +24208,7 @@ export const packagesDatabase: Record<string, any> = {
         "title": "Shimla Highlights Package",
         "badge": "Shimla Tour",
         "image": "/assets/SMK/Shimla.webp",
-        "heroImage": "/assets/SMK/Shimla.webp",
+        "heroImage": "/assets/SMK hero/Shimla.webp",
         "overview": {
             "duration": "2 Nights / 3 Days",
             "destination": "Shimla, Kufri",
@@ -24266,7 +24266,7 @@ export const packagesDatabase: Record<string, any> = {
         "title": "Scenic Shimla Holiday Package",
         "badge": "Shimla Tour",
         "image": "/assets/SMK/Scenic.webp",
-        "heroImage": "/assets/SMK/Scenic.webp",
+        "heroImage": "/assets/SMK hero/Scenic.webp",
         "overview": {
             "duration": "3 Nights / 4 Days",
             "destination": "Shimla, Kufri, Mashobra, Naldehra",
@@ -24466,7 +24466,7 @@ export const packagesDatabase: Record<string, any> = {
         "title": "Complete Himachal Package",
         "badge": "Shimla Tour",
         "image": "/assets/SMK/Complete Himachal.webp",
-        "heroImage": "/assets/SMK hero/complete Himachal.webp",
+        "heroImage": "/assets/SMK hero/Complete Himachal.webp",
         "overview": {
             "duration": "6 Nights / 7 Days",
             "destination": "Shimla, Kufri, Kullu, Manali, Solang Valley, Chandigarh",
@@ -26025,20 +26025,20 @@ const PackageDetails = () => {
                                         <p className="text-sm text-slate-500 md:ml-10">Common questions about this tour package</p>
                                     </div>
                                     <div className="flex bg-slate-100 p-1 rounded-xl self-start md:self-auto">
-                                        <button 
-                                            onClick={() => setFaqLang('english')} 
+                                        <button
+                                            onClick={() => setFaqLang('english')}
                                             className={`px-4 py-2 rounded-lg text-sm font-bold transition-all ${faqLang === 'english' ? 'bg-white text-[var(--color-brand-orange)] shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
                                         >
                                             English
                                         </button>
-                                        <button 
-                                            onClick={() => setFaqLang('tamil')} 
+                                        <button
+                                            onClick={() => setFaqLang('tamil')}
                                             className={`px-4 py-2 rounded-lg text-sm font-bold transition-all ${faqLang === 'tamil' ? 'bg-white text-[var(--color-brand-orange)] shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
                                         >
                                             தமிழ்
                                         </button>
-                                        <button 
-                                            onClick={() => setFaqLang('hindi')} 
+                                        <button
+                                            onClick={() => setFaqLang('hindi')}
                                             className={`px-4 py-2 rounded-lg text-sm font-bold transition-all ${faqLang === 'hindi' ? 'bg-white text-[var(--color-brand-orange)] shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
                                         >
                                             हिंदी
@@ -26048,42 +26048,42 @@ const PackageDetails = () => {
                                 <div className="space-y-3">
                                     {pkg.faq.map((item: any, idx: number) => {
                                         const displayQuestion = faqLang === 'tamil' && item.questionTamil ? item.questionTamil :
-                                                              faqLang === 'hindi' && item.questionHindi ? item.questionHindi :
-                                                              item.question;
-                                        
+                                            faqLang === 'hindi' && item.questionHindi ? item.questionHindi :
+                                                item.question;
+
                                         const displayAnswer = faqLang === 'tamil' && item.answerTamil ? item.answerTamil :
-                                                            faqLang === 'hindi' && item.answerHindi ? item.answerHindi :
-                                                            item.answer;
+                                            faqLang === 'hindi' && item.answerHindi ? item.answerHindi :
+                                                item.answer;
 
                                         return (
-                                        <div
-                                            key={idx}
-                                            className="border border-slate-200 rounded-2xl overflow-hidden transition-all duration-300"
-                                        >
-                                            <button
-                                                onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
-                                                className="w-full flex items-center justify-between gap-4 px-6 py-4 text-left bg-slate-50 hover:bg-slate-100 transition-colors"
+                                            <div
+                                                key={idx}
+                                                className="border border-slate-200 rounded-2xl overflow-hidden transition-all duration-300"
                                             >
-                                                <div className="flex flex-col gap-1">
-                                                    <span className="font-bold text-slate-800 text-sm md:text-base leading-snug">{displayQuestion}</span>
-                                                </div>
-                                                <span className={`flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-all duration-300 ${
-                                                    openFaq === idx
+                                                <button
+                                                    onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
+                                                    className="w-full flex items-center justify-between gap-4 px-6 py-4 text-left bg-slate-50 hover:bg-slate-100 transition-colors"
+                                                >
+                                                    <div className="flex flex-col gap-1">
+                                                        <span className="font-bold text-slate-800 text-sm md:text-base leading-snug">{displayQuestion}</span>
+                                                    </div>
+                                                    <span className={`flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-all duration-300 ${openFaq === idx
                                                         ? 'bg-[var(--color-brand-orange)] text-white rotate-180'
                                                         : 'bg-white border border-slate-200 text-slate-500'
-                                                }`}>
-                                                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                                                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                                                    </svg>
-                                                </span>
-                                            </button>
-                                            {openFaq === idx && (
-                                                <div className="px-6 py-5 bg-white border-t border-slate-100">
-                                                    <p className="text-slate-600 text-sm md:text-base leading-relaxed whitespace-pre-line">{displayAnswer}</p>
-                                                </div>
-                                            )}
-                                        </div>
-                                    )})}
+                                                        }`}>
+                                                        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                                                            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                                {openFaq === idx && (
+                                                    <div className="px-6 py-5 bg-white border-t border-slate-100">
+                                                        <p className="text-slate-600 text-sm md:text-base leading-relaxed whitespace-pre-line">{displayAnswer}</p>
+                                                    </div>
+                                                )}
+                                            </div>
+                                        )
+                                    })}
                                 </div>
                             </div>
                         )}

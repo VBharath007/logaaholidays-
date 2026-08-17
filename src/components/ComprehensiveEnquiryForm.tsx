@@ -4,8 +4,40 @@ import {
  Globe2, Clock, Users2, CreditCard, MessageSquare, Compass
 } from 'lucide-react';
 
+const stateDistrictsMap: Record<string, string[]> = {
+ 'Tamil Nadu': ['Chennai', 'Coimbatore', 'Madurai', 'Salem', 'Tiruchirappalli', 'Tirunelveli', 'Erode', 'Vellore', 'Thoothukudi', 'Dindigul', 'Thanjavur', 'Kanchipuram', 'Kanyakumari', 'Krishnagiri', 'Namakkal', 'Karur', 'Nagapattinam', 'Ramanathapuram', 'Sivagangai', 'Virudhunagar', 'Cuddalore', 'Villupuram', 'Tenkasi', 'Ranipet', 'Tirupattur', 'Ariyalur', 'Perambalur', 'Mayiladuthurai', 'Nilgiris', 'Tiruvannamalai', 'Tiruvallur', 'Dharmapuri'],
+ 'Kerala': ['Thiruvananthapuram', 'Kochi', 'Kozhikode', 'Thrissur', 'Kollam', 'Palakkad', 'Kannur', 'Idukki', 'Pathanamthitta', 'Alappuzha', 'Wayanad', 'Kasaragod', 'Kottayam', 'Malappuram'],
+ 'Karnataka': ['Bangalore', 'Mysore', 'Mangalore', 'Hubli', 'Belgaum', 'Shimoga', 'Dharwad', 'Tumkur', 'Chitradurga', 'Coorg', 'Hassan', 'Chikmagalur', 'Raichur', 'Bijapur', 'Gulbarga', 'Bellary', 'Udupi', 'Dakshina Kannada', 'Uttara Kannada', 'Kolar', 'Bagalkot', 'Gadag', 'Koppal', 'Haveri', 'Yadgir', 'Chamrajnagar', 'Mandya', 'Ramnagara', 'Bidar', 'Chikkaballapur'],
+ 'Andhra Pradesh': ['Visakhapatnam', 'Vijayawada', 'Tirupati', 'Guntur', 'Kurnool', 'Nellore', 'Rajahmundry', 'Kadapa', 'Anantapur', 'Kakinada', 'Eluru', 'Ongole', 'Chittoor', 'Srikakulam', 'Vizianagaram'],
+ 'Telangana': ['Hyderabad', 'Warangal', 'Nizamabad', 'Karimnagar', 'Khammam', 'Rangareddy', 'Medak', 'Nalgonda', 'Mahbubnagar', 'Adilabad'],
+ 'Maharashtra': ['Mumbai', 'Pune', 'Nashik', 'Nagpur', 'Aurangabad', 'Shirdi', 'Kolhapur', 'Solapur', 'Thane', 'Raigad', 'Satara', 'Ratnagiri', 'Sangli', 'Ahmednagar', 'Jalgaon', 'Latur', 'Osmanabad', 'Beed', 'Nanded', 'Akola', 'Amravati', 'Buldhana', 'Washim', 'Yavatmal', 'Gondiya', 'Bhandara', 'Chandrapur', 'Gadchiroli', 'Wardha', 'Hingoli', 'Parbhani', 'Dhule', 'Nandurbar'],
+ 'Rajasthan': ['Jaipur', 'Jodhpur', 'Udaipur', 'Jaisalmer', 'Bikaner', 'Ajmer', 'Alwar', 'Bharatpur', 'Kota', 'Sikar', 'Tonk', 'Barmer', 'Pali', 'Nagaur', 'Churu', 'Hanumangarh', 'Jhunjhunu', 'Sawai Madhopur'],
+ 'Gujarat': ['Ahmedabad', 'Surat', 'Vadodara', 'Rajkot', 'Bhavnagar', 'Jamnagar', 'Gandhinagar', 'Somnath', 'Dwarka', 'Kutch', 'Anand', 'Mehsana', 'Patan', 'Sabarkantha', 'Banaskantha', 'Porbandar'],
+ 'Goa': ['North Goa', 'South Goa'],
+ 'Uttar Pradesh': ['Lucknow', 'Varanasi', 'Agra', 'Prayagraj', 'Kanpur', 'Ayodhya', 'Mathura', 'Vrindavan', 'Meerut', 'Ghaziabad', 'Noida', 'Bareilly', 'Moradabad', 'Aligarh', 'Saharanpur', 'Gorakhpur', 'Jhansi', 'Muzaffarnagar', 'Bulandshahr'],
+ 'Madhya Pradesh': ['Bhopal', 'Indore', 'Gwalior', 'Jabalpur', 'Ujjain', 'Khajuraho', 'Pachmarhi', 'Orchha', 'Satna', 'Rewa', 'Sagar', 'Dewas', 'Ratlam', 'Chhindwara'],
+ 'Delhi': ['New Delhi', 'Central Delhi', 'North Delhi', 'South Delhi', 'East Delhi', 'West Delhi'],
+ 'West Bengal': ['Kolkata', 'Darjeeling', 'Siliguri', 'Howrah', 'Durgapur', 'Asansol', 'Murshidabad', 'Bardhaman', 'Jalpaiguri', 'Cooch Behar'],
+ 'Himachal Pradesh': ['Shimla', 'Manali', 'Dharamshala', 'Kullu', 'Mandi', 'Chamba', 'Solan', 'Sirmour', 'Kinnaur', 'Lahaul & Spiti'],
+ 'Uttarakhand': ['Dehradun', 'Rishikesh', 'Haridwar', 'Nainital', 'Mussoorie', 'Jim Corbett', 'Kedarnath', 'Badrinath', 'Auli', 'Lansdowne'],
+ 'Jammu & Kashmir': ['Srinagar', 'Gulmarg', 'Pahalgam', 'Sonamarg', 'Jammu', 'Leh', 'Kargil'],
+ 'Punjab': ['Amritsar', 'Ludhiana', 'Chandigarh', 'Jalandhar', 'Patiala', 'Bathinda', 'Anandpur Sahib'],
+ 'Haryana': ['Gurugram', 'Faridabad', 'Ambala', 'Panipat', 'Kurukshetra', 'Karnal', 'Rohtak'],
+ 'Bihar': ['Patna', 'Gaya', 'Bodh Gaya', 'Muzaffarpur', 'Bhagalpur', 'Nalanda', 'Rajgir', 'Vaishali'],
+ 'Odisha': ['Bhubaneswar', 'Puri', 'Cuttack', 'Konark', 'Sambalpur', 'Rourkela', 'Berhampur'],
+ 'Assam': ['Guwahati', 'Kaziranga', 'Jorhat', 'Dibrugarh', 'Silchar', 'Nagaon', 'Tezpur'],
+ 'Meghalaya': ['Shillong', 'Cherrapunji', 'Dawki', 'Mawlynnong', 'Tura'],
+ 'Sikkim': ['Gangtok', 'Pelling', 'Lachung', 'Lachen', 'Ravangla', 'Namchi'],
+ 'Andaman & Nicobar': ['Port Blair', 'Havelock Island', 'Neil Island', 'Baratang', 'Ross Island'],
+};
+
 export function ComprehensiveEnquiryForm() {
  const [focusedField, setFocusedField] = useState<string | null>(null);
+ const [tourCountry, setTourCountry] = useState('');
+ const [selectedState, setSelectedState] = useState('');
+ const [selectedDestination, setSelectedDestination] = useState('');
+ const [locState, setLocState] = useState('');
+ const [locCity, setLocCity] = useState('');
 
  const submitHandler = (e: React.FormEvent) => {
  e.preventDefault();
@@ -59,8 +91,10 @@ export function ComprehensiveEnquiryForm() {
  <Globe2 className={iconClasses('tourCountry')} />
  <select 
  className={inputClasses('tourCountry') + " appearance-none"} 
+ value={tourCountry}
  onFocus={() => setFocusedField('tourCountry')}
  onBlur={() => setFocusedField(null)}
+ onChange={(e) => { setTourCountry(e.target.value); setSelectedState(''); setSelectedDestination(''); }}
  required
  >
  <option value="" className="bg-[var(--color-deep-teal)] text-white">Select Country...</option>
@@ -70,21 +104,78 @@ export function ComprehensiveEnquiryForm() {
  </div>
  </div>
 
- {/* City to Travel */}
+ {/* India: State Dropdown */}
+ {tourCountry === 'India' && (
+ <div className="relative group">
+ <label className={labelClasses('state')}>State <span className="text-red-400">*</span></label>
+ <div className="relative">
+ <MapPin className={iconClasses('state')} />
+ <select
+ className={inputClasses('state') + " appearance-none"}
+ value={selectedState}
+ onFocus={() => setFocusedField('state')}
+ onBlur={() => setFocusedField(null)}
+ onChange={(e) => { setSelectedState(e.target.value); setSelectedDestination(''); }}
+ required
+ >
+ <option value="" className="bg-[var(--color-deep-teal)] text-white">Select State...</option>
+ {Object.keys(stateDistrictsMap).map(state => (
+   <option key={state} value={state} className="bg-[var(--color-deep-teal)] text-white">{state}</option>
+ ))}
+ </select>
+ </div>
+ </div>
+ )}
+
+ {/* India: District/Destination Dropdown */}
+ {tourCountry === 'India' && (
  <div className="relative group">
  <label className={labelClasses('cityToTravel')}>Destination City <span className="text-red-400">*</span></label>
  <div className="relative">
  <MapPin className={iconClasses('cityToTravel')} />
- <input 
- type="text" 
- placeholder="Where to?"
- className={inputClasses('cityToTravel')}
+ <select
+ className={inputClasses('cityToTravel') + " appearance-none"}
+ value={selectedDestination}
  onFocus={() => setFocusedField('cityToTravel')}
  onBlur={() => setFocusedField(null)}
- required 
- />
+ onChange={(e) => setSelectedDestination(e.target.value)}
+ required
+ >
+ <option value="" className="bg-[var(--color-deep-teal)] text-white">
+   {selectedState ? `Select District in ${selectedState}...` : 'Select State first...'}
+ </option>
+ {(stateDistrictsMap[selectedState] || []).map(district => (
+   <option key={district} value={district} className="bg-[var(--color-deep-teal)] text-white">{district}</option>
+ ))}
+ </select>
  </div>
  </div>
+ )}
+
+ {/* International: Destination Dropdown */}
+ {tourCountry === 'International' && (
+ <div className="relative group">
+ <label className={labelClasses('cityToTravel')}>Destination <span className="text-red-400">*</span></label>
+ <div className="relative">
+ <MapPin className={iconClasses('cityToTravel')} />
+ <select
+ className={inputClasses('cityToTravel') + " appearance-none"}
+ value={selectedDestination}
+ onFocus={() => setFocusedField('cityToTravel')}
+ onBlur={() => setFocusedField(null)}
+ onChange={(e) => setSelectedDestination(e.target.value)}
+ required
+ >
+ <option value="" className="bg-[var(--color-deep-teal)] text-white">Select Destination...</option>
+ <option value="Maldives" className="bg-[var(--color-deep-teal)] text-white">Maldives</option>
+ <option value="Singapore" className="bg-[var(--color-deep-teal)] text-white">Singapore</option>
+ <option value="Thailand" className="bg-[var(--color-deep-teal)] text-white">Thailand</option>
+ <option value="Dubai" className="bg-[var(--color-deep-teal)] text-white">Dubai</option>
+ <option value="Bali" className="bg-[var(--color-deep-teal)] text-white">Bali</option>
+ </select>
+ </div>
+ </div>
+ )}
 
  {/* Start City */}
  <div className="relative group">
@@ -158,28 +249,46 @@ export function ComprehensiveEnquiryForm() {
  
  <div className="flex-1 relative flex items-center">
  <Users2 className="absolute left-4 w-5 h-5 text-white/40" />
- <select className="w-full bg-transparent px-12 py-3 outline-none font-medium text-white cursor-pointer appearance-none" required>
- <option value="" className="bg-[var(--color-deep-teal)] text-white">Adults...</option>
- {[1,2,3,4,5,6,7,8].map(n => <option key={`a${n}`} value={n} className="bg-[var(--color-deep-teal)] text-white">{n} Adults</option>)}
- </select>
+ <input 
+ type="number" 
+ min="1"
+ placeholder="Adults" 
+ className="w-full bg-transparent px-12 py-3 outline-none font-medium text-white placeholder-white/60" 
+ required
+ />
  </div>
  
  <div className="hidden sm:block w-px bg-white/10 my-2"></div>
  
  <div className="flex-1 relative flex items-center">
- <select className="w-full bg-transparent px-6 py-3 outline-none font-medium text-white cursor-pointer appearance-none">
- <option value="" className="bg-[var(--color-deep-teal)] text-white">Children...</option>
- {[0,1,2,3,4].map(n => <option key={`c${n}`} value={n} className="bg-[var(--color-deep-teal)] text-white">{n} Children</option>)}
- </select>
+ <input 
+ type="number" 
+ min="0"
+ placeholder="Children" 
+ className="w-full bg-transparent px-6 py-3 outline-none font-medium text-white placeholder-white/60" 
+ />
  </div>
 
  <div className="hidden sm:block w-px bg-white/10 my-2"></div>
  
  <div className="flex-1 relative flex items-center">
- <select className="w-full bg-transparent px-6 py-3 outline-none font-medium text-white cursor-pointer appearance-none">
- <option value="" className="bg-[var(--color-deep-teal)] text-white">Infants...</option>
- {[0,1,2,3].map(n => <option key={`i${n}`} value={n} className="bg-[var(--color-deep-teal)] text-white">{n} Infants</option>)}
- </select>
+ <input 
+ type="text" 
+ placeholder="Child Age" 
+ className="w-full bg-transparent px-6 py-3 outline-none font-medium text-white placeholder-white/60" 
+ title="Specify child ages, e.g., 5, 8"
+ />
+ </div>
+
+ <div className="hidden sm:block w-px bg-white/10 my-2"></div>
+ 
+ <div className="flex-1 relative flex items-center">
+ <input 
+ type="number" 
+ min="0"
+ placeholder="Infants" 
+ className="w-full bg-transparent px-6 py-3 outline-none font-medium text-white placeholder-white/60" 
+ />
  </div>
 
  </div>
@@ -279,20 +388,46 @@ export function ComprehensiveEnquiryForm() {
  </div>
  </div>
 
- {/* Country & State */}
+ {/* Location: State */}
  <div className="relative group">
- <label className={labelClasses('location')}>Location <span className="text-red-400">*</span></label>
- <div className="flex gap-3 bg-white/5 p-2 rounded-2xl border border-white/10 transition-all duration-300 hover:border-white/20 hover:bg-white/10 focus-within:border-[var(--color-brand-orange)] ,115,53,0.3)]">
- <select className="flex-1 bg-transparent px-4 py-2 outline-none font-medium text-white cursor-pointer appearance-none" required>
- <option value="India" className="bg-[var(--color-deep-teal)] text-white">India</option>
- <option value="Other" className="bg-[var(--color-deep-teal)] text-white">Other</option>
+ <label className={labelClasses('locState')}>State <span className="text-red-400">*</span></label>
+ <div className="relative">
+ <MapPin className={iconClasses('locState')} />
+ <select
+ className={inputClasses('locState') + " appearance-none"}
+ value={locState}
+ onFocus={() => setFocusedField('locState')}
+ onBlur={() => setFocusedField(null)}
+ onChange={(e) => { setLocState(e.target.value); setLocCity(''); }}
+ required
+ >
+ <option value="" className="bg-[var(--color-deep-teal)] text-white">Select State...</option>
+ {Object.keys(stateDistrictsMap).map(state => (
+ <option key={state} value={state} className="bg-[var(--color-deep-teal)] text-white">{state}</option>
+ ))}
  </select>
- <div className="w-px bg-white/10 my-2"></div>
- <select className="flex-1 bg-transparent px-4 py-2 outline-none font-medium text-white cursor-pointer appearance-none" required>
- <option value="" className="bg-[var(--color-deep-teal)] text-white">State...</option>
- <option value="TN" className="bg-[var(--color-deep-teal)] text-white">Tamil Nadu</option>
- <option value="KL" className="bg-[var(--color-deep-teal)] text-white">Kerala</option>
- <option value="KA" className="bg-[var(--color-deep-teal)] text-white">Karnataka</option>
+ </div>
+ </div>
+
+ {/* Location: City/District */}
+ <div className="relative group">
+ <label className={labelClasses('locCity')}>City / District <span className="text-red-400">*</span></label>
+ <div className="relative">
+ <MapPin className={iconClasses('locCity')} />
+ <select
+ className={inputClasses('locCity') + " appearance-none"}
+ value={locCity}
+ onFocus={() => setFocusedField('locCity')}
+ onBlur={() => setFocusedField(null)}
+ onChange={(e) => setLocCity(e.target.value)}
+ required
+ >
+ <option value="" className="bg-[var(--color-deep-teal)] text-white">
+ {locState ? `Select City in ${locState}...` : 'Select State first...'}
+ </option>
+ {(stateDistrictsMap[locState] || []).map(city => (
+ <option key={city} value={city} className="bg-[var(--color-deep-teal)] text-white">{city}</option>
+ ))}
  </select>
  </div>
  </div>

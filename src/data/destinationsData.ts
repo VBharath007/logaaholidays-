@@ -1,16 +1,333 @@
 export const destinationsData: Record<string, any> = {
+  'kerala-tourism': {
+    id: 'kerala-tourism',
+    name: 'Kerala',
+    image: '/assets/bharath/kerala.webp',
+    state: 'Kerala',
+    heroVideo: '/assets/video/kerala 1 (2).mp4',
+    promoVideo: '/assets/video/kerala 1 (1).mp4',
+    overview: {
+      title: 'Kerala Tourism',
+      description: 'Known as "God\'s Own Country", Kerala is a tropical paradise on India\'s southwestern coast. With its serene backwaters, lush hill stations, ancient spice plantations, wildlife sanctuaries, and pristine beaches, Kerala offers an unmatched travel experience. From the misty tea gardens of Munnar to the tranquil houseboats of Alleppey and the wildlife-rich forests of Thekkady, every corner of Kerala is a visual feast.'
+    },
+    history: {
+      title: 'Kerala Heritage',
+      description: 'Kerala\'s history stretches back to ancient times, with its rich Dravidian culture, spice trade with Rome, Arabia, and China, and the influence of great dynasties including the Cheras, Zamorins of Calicut, and later the Portuguese, Dutch, and British. Kerala is also the birthplace of Kathakali dance, Kalaripayattu martial arts, and Ayurvedic medicine.'
+    },
+    info: {
+      idealDuration: '5 Nights 6 Days',
+      nearestCity: 'Cochin (International Airport)',
+      bestTime: 'September to March',
+      peakSeason: 'October to February',
+      weather: 'Tropical / Pleasant Hills',
+      internet: 'Good to Excellent',
+      stdCode: '0484 (Cochin)',
+      languages: 'Malayalam, English, Tamil',
+      festivals: 'Onam, Nehru Trophy Boat Race, Thrissur Pooram, Vishu',
+      tips: 'Start your Kerala trip from Cochin. Pre-book houseboats and carry light cotton clothes. Carry an umbrella during monsoon season.'
+    },
+    majorAttractions: [
+      { title: 'Alleppey Backwaters', description: 'The Venice of the East, famous for its houseboat cruises on the Kerala backwaters.' },
+      { title: 'Munnar Tea Estates', description: 'Endless rolling tea plantations and mist-covered mountains at 1,600m altitude.' },
+      { title: 'Periyar Wildlife Sanctuary', description: 'A spectacular wildlife reserve with boat safaris on Periyar Lake.' },
+      { title: 'Cochin - Fort Kochi', description: 'A historic port city with Chinese fishing nets, colonial architecture, and vibrant culture.' }
+    ],
+    placesToVisit: [
+      {
+        id: 'alleppey',
+        name: 'Alleppey (Alappuzha)',
+        type: 'Backwaters',
+        image: '/assets/KERALA/top place in kerala/aleppey.webp',
+        description: 'The "Venice of the East", Alleppey is famous for its network of backwaters, houseboat cruises, and the spectacular Nehru Trophy Boat Race. A must-visit for every Kerala traveler.',
+        rating: 4.9,
+        details: {
+          timings: 'Open all day',
+          entryFee: 'Houseboat charges vary',
+          distance: '85 km from Kochi',
+          duration: '1 - 2 Days',
+          transport: 'Private A/C Vehicle from Madurai',
+          tips: 'Book houseboats well in advance especially during peak season (Oct-Feb). Shikara rides are cheaper than full houseboats.',
+          sections: [
+            {
+              title: 'About Alleppey',
+              content: "Known as the 'Venice of the East', Alappuzha (Alleppey) is renowned for its picturesque backwaters, serene lagoons, and interconnected network of canals. It is the epicenter of Kerala's backwater tourism, attracting visitors worldwide to experience its traditional kettuvallam (houseboats) and vibrant village life along the waters."
+            },
+            {
+              title: 'History',
+              content: "Founded by Raja Kesavadasan in 1762, Alleppey has a rich history as a major port and trading center. Due to its strategic coastal location, it was once one of the busiest trade hubs on the Malabar Coast, dealing extensively in coir and spices. The unique canal system was built to transport goods directly to the port."
+            },
+            {
+              title: 'Timings and Rates',
+              content: "Houseboat cruises are generally available from 12:00 PM to 9:00 AM the next day. Day cruises usually run from 11:00 AM to 5:00 PM. Rates vary from ₹6,000 to ₹15,000+ per night depending on the season, number of rooms, and luxury level (Deluxe, Premium, Luxury). Shikara rides are available hourly for around ₹600-₹800/hour."
+            },
+            {
+              title: 'Other Details',
+              content: "The world-famous Nehru Trophy Boat Race is held here on the second Saturday of August every year on the Punnamada Lake, featuring magnificent snake boats (Chundan Vallams). Alleppey is also famous for its high-quality coir industry and the tranquil Marari Beach."
+            }
+          ],
+          popularPackages: []
+        }
+      },
+      {
+        id: 'munnar',
+        name: 'Munnar',
+        type: 'Hill Station',
+        image: '/assets/KERALA/top place in kerala/munnar2.webp',
+        description: 'One of Kerala\'s most popular hill stations, Munnar is known for its sprawling tea estates, mist-covered mountains, exotic wildlife, and cool pleasant climate throughout the year.',
+        rating: 4.8,
+        details: {
+          timings: 'Open all day',
+          entryFee: 'Tea Museum: ₹75 per person',
+          distance: '130 km from Madurai via Bodimettu',
+          duration: '2 - 3 Days',
+          transport: 'Private A/C Vehicle from Madurai',
+          tips: 'Best visited in the morning for clear views. Echo Point and Mattupetty Dam are must-visits.',
+          sections: [
+            {
+              title: 'About Munnar',
+              content: "Munnar is a breathtaking hill station nestled in the Western Ghats at an altitude of 1,600 meters. The name 'Munnar' means 'Three Rivers', referring to its location at the confluence of the Mudhirapuzha, Nallathanni, and Kundali rivers. It is famous for its endless rolling tea plantations, misty valleys, and cascading waterfalls."
+            },
+            {
+              title: 'History',
+              content: "Once the favored summer resort of the erstwhile British Government in South India, Munnar retains its colonial charm. Commercial tea planting was pioneered here by A.H. Sharp in the late 19th century, transforming the wild, forested hills into one of the world's highest tea-growing regions."
+            },
+            {
+              title: 'Timings and Rates',
+              content: "Tata Tea Museum: 9:00 AM - 4:00 PM (Closed Mondays), Entry Fee: ₹75. Eravikulam National Park: 7:30 AM - 4:00 PM, Entry Fee: ₹200 (Indians), ₹500 (Foreigners). Mattupetty Dam: 9:30 AM - 5:00 PM, Boating fee approx ₹700 for 15 mins (5 pax)."
+            },
+            {
+              title: 'Other Details',
+              content: "Munnar is home to the rare Neelakurinji flower which blooms once in 12 years (next expected in 2030), turning the hillsides blue. Eravikulam National Park is a crucial sanctuary for the endangered Nilgiri Tahr (mountain goat)."
+            }
+          ],
+          popularPackages: []
+        }
+      },
+      {
+        id: 'thekkady',
+        name: 'Thekkady',
+        type: 'Wildlife',
+        image: '/assets/KERALA/top place in kerala/thekkady.webp',
+        description: 'Home to the famous Periyar Wildlife Sanctuary, Thekkady is a paradise for wildlife enthusiasts. Spice plantations, elephant camps, Kathakali shows, and Periyar Lake boat safaris make this a complete Kerala experience.',
+        rating: 4.7,
+        details: {
+          timings: 'Sanctuary: 6:00 AM - 6:00 PM',
+          entryFee: '₹35 per person (Sanctuary Entry)',
+          distance: '145 km from Madurai',
+          duration: '1 - 2 Days',
+          transport: 'Private A/C Vehicle from Madurai',
+          tips: 'Book boat safari tickets in advance online. Visit Kumily market for buying authentic fresh spices.',
+          sections: [
+            {
+              title: 'About Thekkady',
+              content: "Thekkady is synonymous with the Periyar Wildlife Sanctuary, one of India's most fascinating natural wildlife reserves. It is a haven for nature lovers and wildlife enthusiasts, known for its thick evergreen forests, savanna grasslands, and the scenic Periyar Lake right in the center of the park."
+            },
+            {
+              title: 'History',
+              content: "The Periyar Lake, a core feature of the sanctuary, is entirely artificial. It was formed by the construction of the Mullaperiyar Dam in 1895 across the Periyar River by the British engineer John Pennycuick. The area was declared a sanctuary in 1950 and became a designated Tiger Reserve in 1978 under Project Tiger."
+            },
+            {
+              title: 'Timings and Rates',
+              content: "Periyar National Park Entry: 6:00 AM - 6:00 PM. Entry Fee: ₹35 for Indians, ₹500 for Foreigners. KTDC Boat Safari Timings: 7:30 AM, 9:30 AM, 11:15 AM, 1:45 PM, 3:30 PM. Boat Ticket: ₹250 approx (advance online booking highly recommended). Elephant Safari: Around ₹500 - ₹1500."
+            },
+            {
+              title: 'Other Details',
+              content: "Unlike many other national parks in India, wildlife viewing in Periyar is done primarily from a boat. Thekkady is also surrounded by fragrant spice plantations (cardamom, pepper, cinnamon). Evening cultural shows featuring traditional Kathakali dance and Kalaripayattu martial arts are highly recommended."
+            }
+          ],
+          popularPackages: []
+        }
+      },
+      {
+        id: 'vagamon',
+        name: 'Vagamon',
+        type: 'Hill Station',
+        image: '/assets/KERALA/top place in kerala/vagamon.webp',
+        description: 'A hidden gem in Kerala\'s Western Ghats, Vagamon is known for its rolling meadows, pine forests, tea gardens, waterfalls and paragliding opportunities. Perfect for a quiet, peaceful retreat.',
+        rating: 4.6,
+        details: {
+          timings: 'Open all day',
+          entryFee: 'No entry fee',
+          distance: '170 km from Madurai',
+          duration: '1 - 2 Days',
+          transport: 'Private A/C Vehicle from Madurai',
+          tips: 'Best time to visit is September to March. Paragliding season is from October to March.',
+          sections: [
+            {
+              title: 'About Vagamon',
+              content: "Vagamon (or Wagamon) is a tranquil, off-beat hill station hidden away in the Idukki district. Untouched by heavy commercialization, it is known for its lush green rolling meadows, mystical pine forests, cascading waterfalls, and misty valleys, making it an ideal destination for nature lovers seeking peace."
+            },
+            {
+              title: 'History',
+              content: "Vagamon was discovered and developed by the British who found the cool climate and fertile terrain ideal for tea plantations. Later, in the mid-20th century, Christian missionaries established the Kurisumala Ashram here, adding to its spiritual and peaceful aura."
+            },
+            {
+              title: 'Timings and Rates',
+              content: "Pine Forest & Vagamon Meadows: 8:30 AM - 5:30 PM. Entry Fee: ₹10 - ₹20. Kurisumala Ashram: Open for visitors during daytime. Adventure Sports: Paragliding costs vary between ₹3,500 to ₹5,000 per tandem flight depending on the operator."
+            },
+            {
+              title: 'Other Details',
+              content: "Vagamon is a major hub for adventure sports in South India, hosting an International Paragliding Festival annually. The region is famous for its religious harmony, symbolized by three prominent hills: Thangal Hill (Muslim), Murugan Hill (Hindu), and Kurisumala (Christian)."
+            }
+          ],
+          popularPackages: []
+        }
+      },
+      {
+        id: 'valparai',
+        name: 'Valparai',
+        type: 'Hill Station',
+        image: '/assets/KERALA/top place in kerala/valparai.webp',
+        description: 'A scenic hill station on the border of Tamil Nadu and Kerala, Valparai is famous for its lush tea and coffee plantations, the spectacular 40-hairpin bend road, Aliyar Dam, Monkey Falls, and rare wildlife.',
+        rating: 4.6,
+        details: {
+          timings: 'Open all day',
+          entryFee: 'No entry fee',
+          distance: '170 km from Madurai via Pollachi',
+          duration: '1 - 2 Days',
+          transport: 'Private A/C Vehicle from Madurai',
+          tips: 'The 40-hairpin bends drive is an experience in itself. Watch out for Lion-Tailed Macaques.',
+          sections: [
+            {
+              title: 'About Valparai',
+              content: "Though geographically situated in the Coimbatore district of Tamil Nadu, Valparai is culturally and touristically tied closely to the Kerala-Tamil Nadu border ecosystem. It is an unpolluted and pristine hill station enveloped in lush green tea estates, coffee plantations, and dense forest patches of the Anamalai Tiger Reserve."
+            },
+            {
+              title: 'History',
+              content: "Tea planting in Valparai was introduced by Ramasamy Mudaliyar and British planters, notably W. Wintil and Congreve, in the late 19th century. Over the decades, the thick jungles were systematically converted into one of South India's largest and most productive tea and coffee planting hubs."
+            },
+            {
+              title: 'Timings and Rates',
+              content: "Aliyar Dam (en route): 9:00 AM - 6:00 PM, Entry: ₹20. Monkey Falls (en route): 9:00 AM - 5:00 PM, Entry: ₹30. Sholayar Dam: Open during daylight hours. No specific entry fee for the town itself."
+            },
+            {
+              title: 'Other Details',
+              content: "The journey to Valparai from Pollachi involves navigating 40 spectacular, tightly-wound hairpin bends offering stunning views of the plains below. The region is highly biodiverse, known for sightings of the rare Lion-tailed Macaque, Great Hornbill, elephants, and leopards."
+            }
+          ],
+          popularPackages: []
+        }
+      },
+      {
+        id: 'kumarakom',
+        name: 'Kumarakom',
+        type: 'Backwaters',
+        image: '/assets/KERALA/top place in kerala/kumarakom.webp',
+        description: 'Situated on the shores of Vembanad Lake, Kumarakom is one of Kerala\'s most tranquil backwater destinations. Famous for its bird sanctuary, houseboat cruises, and lush coconut lagoons.',
+        rating: 4.8,
+        details: {
+          timings: 'Bird Sanctuary: 6:00 AM - 6:00 PM',
+          entryFee: 'Bird Sanctuary: ₹25 per person',
+          distance: '180 km from Madurai',
+          duration: '1 - 2 Days',
+          transport: 'Private A/C Vehicle from Madurai',
+          tips: 'Early morning is best for bird watching. Sunset over Vembanad Lake is breathtaking.',
+          sections: [
+            {
+              title: 'About Kumarakom',
+              content: "Set on the eastern banks of Vembanad Lake—the largest freshwater lake in Kerala—Kumarakom is a spectacular cluster of little islands. It is a premier backwater destination renowned for its luxury resorts, tranquil canals, mangrove forests, and paddy fields."
+            },
+            {
+              title: 'History',
+              content: "The area was once a massive, impenetrable mangrove forest. In the late 19th century, an English farmer named Alfred George Baker reclaimed a large tract of land from the lake, planted mangroves to prevent soil erosion, and laid the foundation for the region's agricultural and tourism development."
+            },
+            {
+              title: 'Timings and Rates',
+              content: "Kumarakom Bird Sanctuary: 6:00 AM - 5:00 PM. Entry Fee: ₹50 for Indians, ₹100 for Foreigners, Guide Fee extra. Houseboat rentals are similar to Alleppey, ranging from ₹7,000 to ₹18,000+ per night depending on luxury and capacity."
+            },
+            {
+              title: 'Other Details',
+              content: "The Kumarakom Bird Sanctuary is a favorite haunt of migratory birds like the Siberian Stork, egrets, darters, herons, and teals. It is best visited between November and February. The backwaters here are wider and feel more like a vast lake compared to the narrow canals of Alleppey."
+            }
+          ],
+          popularPackages: []
+        }
+      },
+      {
+        id: 'marayoor',
+        name: 'Marayoor',
+        type: 'Nature',
+        image: '/assets/KERALA/top place in kerala/marayoor.webp',
+        description: 'A unique destination near Munnar, Marayoor is home to India\'s only natural sandalwood forests, ancient stone-age dolmens (Muniyara), sugarcane fields, jaggery production, and the scenic Lakkam Waterfalls.',
+        rating: 4.5,
+        details: {
+          timings: 'Open all day',
+          entryFee: 'No entry fee',
+          distance: '160 km from Madurai via Bodimettu',
+          duration: '1 Day',
+          transport: 'Private A/C Vehicle from Madurai',
+          tips: 'Try fresh Marayoor jaggery — it\'s famous across India. Visit Lakkam Falls only during monsoon season.',
+          sections: [
+            {
+              title: 'About Marayoor',
+              content: "Located about 40 kilometers from Munnar, Marayoor is a unique destination enveloped in the rain-shadow region of the Western Ghats. It is distinct for its pristine natural sandalwood forests, sprawling sugarcane farms, and historical importance, offering a stark contrast to the tea gardens of Munnar."
+            },
+            {
+              title: 'History',
+              content: "Marayoor boasts a rich heritage that dates back to the Stone Age. The megalithic Dolmens (Muniyaras) found here belong to the Iron Age and were used as burial chambers. The region is also deeply tied to the epic Mahabharata, as it is believed the Pandavas stayed here during their exile."
+            },
+            {
+              title: 'Timings and Rates',
+              content: "Chinnar Wildlife Sanctuary (nearby): 8:00 AM - 5:00 PM (Entry approx ₹100, Trekking fees extra). Lakkam Waterfalls: 8:00 AM - 5:00 PM, Entry ₹20. Muniyara Dolmens: Open all day, no entry fee."
+            },
+            {
+              title: 'Other Details',
+              content: "Marayoor is the only place in Kerala that naturally grows sandalwood trees, which are heavily guarded by the forest department. The local Marayoor Jaggery (Sharkara) is famous across India for its high quality, unique taste, and dark color, holding a prestigious Geographical Indication (GI) tag."
+            }
+          ],
+          popularPackages: []
+        }
+      },
+      {
+        id: 'cochin',
+        name: 'Cochin (Kochi)',
+        type: 'City & Heritage',
+        image: '/assets/KERALA/top place in kerala/cochin.png',
+        description: 'The commercial capital of Kerala and the gateway to God\'s Own Country, Cochin (Kochi) is famous for its iconic Chinese Fishing Nets, historic Fort Kochi, Mattancherry Palace, vibrant spice markets, and backwater cruises on Vembanad Lake.',
+        rating: 4.8,
+        details: {
+          timings: 'Open all day',
+          entryFee: 'Fort Kochi: Free, Mattancherry Palace: ₹5, Jewish Synagogue: ₹5',
+          distance: 'Gateway city — starting point for Kerala tours',
+          duration: '1 - 2 Days',
+          transport: 'Taxi, Auto Rickshaw, Metro, Ferry',
+          tips: 'Explore Fort Kochi on foot or by bicycle. Take a ferry to Mattancherry for the most scenic experience. Evening Kathakali performances at Kerala Kathakali Centre are highly recommended.',
+          sections: [
+            {
+              title: 'About Cochin (Kochi)',
+              content: "Cochin, now officially known as Kochi, is the gateway to Kerala. A vibrant blend of old-world charm and modern energy, the city has been shaped by centuries of Arab, Chinese, Portuguese, Dutch, and British influence. Fort Kochi, the historic island area, remains the cultural heart of the city, lined with colonial-era buildings, art galleries, cafes, and the famous Chinese Fishing Nets."
+            },
+            {
+              title: 'History',
+              content: "Often called the 'Queen of the Arabian Sea', Cochin has been one of the most important spice trading ports in the world since the 14th century. The Portuguese, led by Pedro Álvares Cabral, established the first European colony in India here in 1500. The Dutch subsequently captured it in 1663, followed by the British in 1795. This multi-layered colonial history is reflected in the city's architecture, food, and culture."
+            },
+            {
+              title: 'Timings and Rates',
+              content: "Mattancherry Palace (Dutch Palace): 10:00 AM - 5:00 PM (Closed Fridays), Entry: ₹5. Paradesi Synagogue: 10:00 AM - 12:00 PM and 3:00 PM - 5:00 PM (Closed Saturdays and Jewish holidays), Entry: ₹5. Chinese Fishing Nets: Open 24 hours, No entry fee. Kerala Kathakali Centre: Shows at 5:00 PM & 6:30 PM, Entry: ₹250 - ₹350."
+            },
+            {
+              title: 'Other Details',
+              content: "Cochin is also a major hub for Kerala's backwater tourism and the departure point for most Kerala tour packages. The Cochin Carnival, held during the last week of December, transforms the city into a festival of colour, music, and culture. Marine Drive and the backwater ferry rides between Ernakulam and Fort Kochi are must-experiences."
+            }
+          ],
+          popularPackages: []
+        }
+      }
+    ],
+    popularPackages: ['9001', '9002', '9003', '9004', '9005', '9006']
+  },
   'munnar-tourism': {
     id: 'munnar-tourism',
     name: 'Munnar',
-    image: '/assets/bharath/kerala.webp',
+    image: '/assets/KERALA/top place in kerala/munnar2.webp',
     state: 'Kerala',
     overview: {
       title: 'Munnar Tourism',
-      description: 'Munnar is a breathtakingly beautiful hill station in Kerala, famous for its lush tea estates, rolling hills, and pleasant climate.'
+      description: 'Nestled in the Western Ghats at 1,600 meters, Munnar is a breathtaking hill station known for its pristine beauty and cool climate.\n\n• Landscape: Endless emerald-green tea plantations, misty valleys, and dense shola forests.\n• Climate: Cool and pleasant year-round (5°C to 25°C), offering a perfect retreat.\n• Key Attractions: Eravikulam National Park (home to the Nilgiri Tahr), Tata Tea Museum, Mattupetty Dam, and Echo Point.\n• Unique Highlight: Home to the rare Neelakurinji flower, which blooms once every 12 years (next in 2030).'
     },
     history: {
       title: 'Munnar History',
-      description: 'Munnar was once the summer resort of the erstwhile British administration in South India. It still retains its colonial charm.'
+      description: 'Munnar has a rich legacy that evolved from wild tribal forests to a prominent British summer resort.\n\n• Early Era: Originally inhabited by indigenous tribes like the Muthuvan and Malapandaram.\n• Plantation Boom: Commercial tea planting began in the 1890s by British pioneer A.H. Sharp.\n• Colonial Hub: Served as the official summer retreat for the British administration in South India.\n• Modern Era: Today, many tea estates are co-owned by the plantation workers themselves under the KDHP company.'
     },
     info: {
       idealDuration: '2 Nights 3 Days',
@@ -33,15 +350,15 @@ export const destinationsData: Record<string, any> = {
   'alleppey-tourism': {
     id: 'alleppey-tourism',
     name: 'Alleppey',
-    image: '/assets/bharath/kerala hero.webp',
+    image: '/assets/KERALA/top place in kerala/aleppey.webp',
     state: 'Kerala',
     overview: {
       title: 'Alleppey Tourism',
-      description: 'Alleppey, also known as Alappuzha, is famous for its backwater cruises, houseboat stays, and tranquil networks of canals.'
+      description: 'Officially known as Alappuzha, Alleppey is globally celebrated as the "Venice of the East," where life unfolds on tranquil waters.\n\n• Backwaters: A magical, ancient network of lakes, lagoons, rivers, and man-made canals.\n• Houseboats (Kettuvallam): Experience floating stays in traditional wooden boats equipped with modern amenities and local cuisine.\n• Marari Beach: A pristine and unspoiled coastline perfect for relaxation.\n• Mega Event: Hosts the spectacular Nehru Trophy Snake Boat Race every August on Punnamada Lake.'
     },
     history: {
       title: 'Alleppey History',
-      description: 'Described as the Venice of the East by Lord Curzon, Alleppey has always been a significant trading post and port town in Kerala.'
+      description: 'Alleppey was meticulously planned and built as a premier trading port, shaping its rich cultural identity.\n\n• Foundation: Established in 1762 by Raja Kesavadasan with a visionary network of canals for transport.\n• Golden Era: Became a booming 19th-century port trading pepper, cardamom, and coir with global merchants.\n• Coir Capital: Evolved into the undisputed world capital of coir (coconut fiber) manufacturing during the colonial period.\n• Nehru Trophy: Inaugurated in 1952 by PM Jawaharlal Nehru, elevating the local boat races to a national sporting spectacle.'
     },
     info: {
       idealDuration: '1 Night 2 Days',
@@ -64,15 +381,15 @@ export const destinationsData: Record<string, any> = {
   'thekkady-tourism': {
     id: 'thekkady-tourism',
     name: 'Thekkady',
-    image: '/assets/bharath/kerala.webp',
+    image: '/assets/KERALA/top place in kerala/thekkady.webp',
     state: 'Kerala',
     overview: {
       title: 'Thekkady Tourism',
-      description: 'Thekkady is famous for the Periyar Wildlife Sanctuary, offering amazing elephant sightings, spice plantations, and nature walks.'
+      description: 'Located in the Idukki district at 900 meters, Thekkady is a highly photogenic and unique wildlife destination.\n\n• Periyar Lake: Drift silently on a boat across the 26 sq.km artificial lake to view wildlife up close.\n• Wildlife Spotting: Famous for herds of wild elephants, sambar deer, Indian bison, and wild boar drinking at the lake\'s edge.\n• Spice Plantations: Surrounded by fragrant estates of cardamom, pepper, cinnamon, and nutmeg (ideal for guided walks).\n• Culture & Adventure: Offers Kathakali dance shows, Kalaripayattu martial arts, and tribal-guided jungle treks.'
     },
     history: {
       title: 'Thekkady History',
-      description: 'The region is deeply associated with the ancient spice trade and indigenous tribal communities that still inhabit parts of the forest.'
+      description: 'Thekkady’s history is a blend of ancient tribal heritage and monumental colonial engineering.\n\n• Ancient Roots: Home to indigenous tribal communities (Mannans, Paliyans) who lived in harmony with the forest for centuries.\n• Mullaperiyar Dam: Built in 1895 by British engineer John Pennycuick, this engineering marvel created the vast Periyar Lake.\n• Conservation: Declared a Game Reserve in 1899, upgraded to a Wildlife Sanctuary in 1950.\n• Project Tiger: Elevated to one of India’s premier Tiger Reserves in 1978, boasting over 900 elephants and a growing tiger population.'
     },
     info: {
       idealDuration: '1 Night 2 Days',
@@ -95,15 +412,15 @@ export const destinationsData: Record<string, any> = {
   'vagamon-tourism': {
     id: 'vagamon-tourism',
     name: 'Vagamon',
-    image: '/assets/bharath/kerala hero.webp',
+    image: '/assets/KERALA/top place in kerala/vagamon.webp',
     state: 'Kerala',
     overview: {
       title: 'Vagamon Tourism',
-      description: 'Vagamon is a serene hill station known for its pine forests, rolling meadows, and tranquil ambiance away from city crowds.'
+      description: 'Perched at 1,100 meters, Vagamon is one of South India\'s best-kept secrets, offering an uncommercialized and deeply peaceful retreat.\n\n• Landscape: Pure natural poetry with rolling emerald meadows, whispering pine forests, and misty valleys.\n• Harmony: Defined by three sacred hills—Thangal (Muslim), Murugan (Hindu), and Kurisumala (Christian)—symbolizing deep religious coexistence.\n• Adventure Hub: A premier paragliding destination hosting the internationally acclaimed Vagamon Paragliding Festival.\n• Activities: Perfect for trekking, camping under the stars, and boating at Vagamon Lake.'
     },
     history: {
       title: 'Vagamon History',
-      description: 'Discovered by the British for tea plantations, Vagamon has slowly developed into an eco-tourism hub.'
+      description: 'Vagamon\'s story transitions from colonial tea plantations to a world-renowned center for eco-tourism and spiritual retreat.\n\n• Colonial Roots: Developed by British planters in the late 19th century into neatly laid-out tea and rubber estates.\n• Spiritual Hub: In 1955, the famous Kurisumala Ashram was founded by Cistercian and Benedictine monks.\n• Unique Philosophy: The Ashram blends Syrian Christian monasticism with Indian Vedantic philosophy, drawing global scholars.\n• Modern Identity: Today, it is cherished equally as an adventure/eco-tourism hotspot and a place of interfaith pilgrimage.'
     },
     info: {
       idealDuration: '1 Night 2 Days',
@@ -126,15 +443,15 @@ export const destinationsData: Record<string, any> = {
   'cochin-tourism': {
     id: 'cochin-tourism',
     name: 'Cochin',
-    image: '/assets/bharath/kerala.webp',
+    image: '/assets/KERALA/top place in kerala/cochin.png',
     state: 'Kerala',
     overview: {
       title: 'Cochin Tourism',
-      description: 'Cochin, or Kochi, is a bustling coastal city that serves as the commercial hub of Kerala, famous for its historic Fort Kochi area.'
+      description: 'Kochi (Cochin) is Kerala\'s pulsating gateway—a dramatic coastal city where ancient heritage meets modern metropolis.\n\n• Fort Kochi & Mattancherry: A historic peninsula of winding lanes, colonial architecture, and centuries-old tiled rooftops.\n• Chinese Fishing Nets: Iconic, massive cantilever nets introduced around 1400 AD, silhouetted against the harbour sunset.\n• Heritage Sites: Home to the 1568 Paradesi Synagogue, Jew Town antiquities, and the mural-rich Dutch Palace.\n• Modern Vibe: Features a thriving IT corridor, the world-class Kochi-Muziris Biennale art festival, and vibrant Marine Drive.'
     },
     history: {
       title: 'Cochin History',
-      description: 'Often called the Queen of the Arabian Sea, Cochin has been an important spice trading center since the 14th century, attracting Arabs, Chinese, Portuguese, and British.'
+      description: 'Kochi’s history is a gripping saga of maritime glory, shaped by a catastrophic flood and centuries of global trade.\n\n• The Great Flood (1341): A massive flood created Kochi’s deep natural harbour, making it the most vital port on the coast.\n• First European Settlement: The Portuguese arrived in 1500, building Fort Manuel (1503) and St. Francis Church.\n• Colonial Era: Control shifted from the Portuguese to the Dutch in 1663, and then peacefully to the British in 1795.\n• Modern Transformation: Post-independence, the creation of the man-made Willingdon Island turned it into a major global container port.'
     },
     info: {
       idealDuration: '2 Nights 3 Days',
@@ -1227,300 +1544,300 @@ export const destinationsData: Record<string, any> = {
       '102', '103', '104', '105', '106', '107', '108', '109'
     ]
   },
-  'kerala-tourism': {
-    id: 'kerala-tourism',
-    name: 'Kerala',
-    image: '/assets/bharath/kerala.webp',
-    state: 'Kerala',
-    heroVideo: '/assets/video/kerala 1 (2).mp4',
-    promoVideo: '/assets/video/kerala 1 (1).mp4',
-    overview: {
-      title: 'Kerala Tourism',
-      description: 'Known as "God\'s Own Country", Kerala is a tropical paradise on India\'s southwestern coast. With its serene backwaters, lush hill stations, ancient spice plantations, wildlife sanctuaries, and pristine beaches, Kerala offers an unmatched travel experience. From the misty tea gardens of Munnar to the tranquil houseboats of Alleppey and the wildlife-rich forests of Thekkady, every corner of Kerala is a visual feast.'
-    },
-    history: {
-      title: 'Kerala Heritage',
-      description: 'Kerala\'s history stretches back to ancient times, with its rich Dravidian culture, spice trade with Rome, Arabia, and China, and the influence of great dynasties including the Cheras, Zamorins of Calicut, and later the Portuguese, Dutch, and British. Kerala is also the birthplace of Kathakali dance, Kalaripayattu martial arts, and Ayurvedic medicine.'
-    },
-    info: {
-      idealDuration: '3 Nights / 4 Days',
-      nearestCity: 'Kochi (Cochin)',
-      bestTime: 'September to March',
-      peakSeason: 'October to February',
-      weather: 'Tropical & Pleasant',
-      internet: 'Excellent',
-      stdCode: '0484',
-      languages: 'Malayalam, English, Tamil',
-      festivals: 'Onam, Thrissur Pooram, Vishu, Christmas, Eid',
-      tips: 'Book houseboats well in advance. Carry light cotton clothes. Try local Kerala meals on banana leaf.'
-    },
-    majorAttractions: [
-      {
-        title: 'Alleppey Backwaters',
-        description: 'The backwaters of Alleppey (Alappuzha) are a network of lagoons, lakes, and canals that run parallel to the Arabian Sea coast. A houseboat cruise through these backwaters is an iconic Kerala experience, offering stunning views of paddy fields, coconut groves, and village life.'
-      },
-      {
-        title: 'Munnar Tea Gardens',
-        description: 'Munnar is one of the most scenic hill stations in South India, famous for its endless stretches of tea plantations, misty mountains, exotic flora and fauna. The cool climate, rolling hills, and lush greenery make it a paradise for nature lovers and honeymooners.'
-      },
-      {
-        title: 'Periyar Wildlife Sanctuary',
-        description: 'Located in Thekkady, the Periyar Wildlife Sanctuary is one of India\'s most visited national parks. The stunning Periyar Lake at its heart is home to elephants, tigers, leopards, and over 260 species of birds. Boat safaris on the lake offer unforgettable wildlife encounters.'
-      },
-      {
-        title: 'Vagamon Hills',
-        description: 'Vagamon is a serene hill station nestled in the Western Ghats, famous for its rolling meadows, pine forests, waterfalls, and paragliding. Far from the crowds, it offers a peaceful escape into nature.'
-      }
-    ],
-    placesToVisit: [
-      {
-        id: 'alleppey',
-        name: 'Alleppey (Alappuzha)',
-        type: 'Backwaters',
-        image: '/assets/KERALA/top place in kerala/aleppey.webp',
-        description: 'The "Venice of the East", Alleppey is famous for its network of backwaters, houseboat cruises, and the spectacular Nehru Trophy Boat Race. A must-visit for every Kerala traveler.',
-        rating: 4.9,
-        details: {
-          timings: 'Open all day',
-          entryFee: 'Houseboat charges vary',
-          distance: '85 km from Kochi',
-          duration: '1 - 2 Days',
-          transport: 'Private A/C Vehicle from Madurai',
-          tips: 'Book houseboats well in advance especially during peak season (Oct-Feb). Shikara rides are cheaper than full houseboats.',
-          sections: [
-            {
-              title: 'About Alleppey',
-              content: "Known as the 'Venice of the East', Alappuzha (Alleppey) is renowned for its picturesque backwaters, serene lagoons, and interconnected network of canals. It is the epicenter of Kerala's backwater tourism, attracting visitors worldwide to experience its traditional kettuvallam (houseboats) and vibrant village life along the waters."
-            },
-            {
-              title: 'History',
-              content: "Founded by Raja Kesavadasan in 1762, Alleppey has a rich history as a major port and trading center. Due to its strategic coastal location, it was once one of the busiest trade hubs on the Malabar Coast, dealing extensively in coir and spices. The unique canal system was built to transport goods directly to the port."
-            },
-            {
-              title: 'Timings and Rates',
-              content: "Houseboat cruises are generally available from 12:00 PM to 9:00 AM the next day. Day cruises usually run from 11:00 AM to 5:00 PM. Rates vary from ₹6,000 to ₹15,000+ per night depending on the season, number of rooms, and luxury level (Deluxe, Premium, Luxury). Shikara rides are available hourly for around ₹600-₹800/hour."
-            },
-            {
-              title: 'Other Details',
-              content: "The world-famous Nehru Trophy Boat Race is held here on the second Saturday of August every year on the Punnamada Lake, featuring magnificent snake boats (Chundan Vallams). Alleppey is also famous for its high-quality coir industry and the tranquil Marari Beach."
-            }
-          ],
-          popularPackages: []
-        }
-      },
-      {
-        id: 'munnar',
-        name: 'Munnar',
-        type: 'Hill Station',
-        image: '/assets/KERALA/top place in kerala/munnar2.webp',
-        description: 'One of Kerala\'s most popular hill stations, Munnar is known for its sprawling tea estates, mist-covered mountains, exotic wildlife, and cool pleasant climate throughout the year.',
-        rating: 4.8,
-        details: {
-          timings: 'Open all day',
-          entryFee: 'Tea Museum: ₹75 per person',
-          distance: '130 km from Madurai via Bodimettu',
-          duration: '2 - 3 Days',
-          transport: 'Private A/C Vehicle from Madurai',
-          tips: 'Best visited in the morning for clear views. Echo Point and Mattupetty Dam are must-visits.',
-          sections: [
-            {
-              title: 'About Munnar',
-              content: "Munnar is a breathtaking hill station nestled in the Western Ghats at an altitude of 1,600 meters. The name 'Munnar' means 'Three Rivers', referring to its location at the confluence of the Mudhirapuzha, Nallathanni, and Kundali rivers. It is famous for its endless rolling tea plantations, misty valleys, and cascading waterfalls."
-            },
-            {
-              title: 'History',
-              content: "Once the favored summer resort of the erstwhile British Government in South India, Munnar retains its colonial charm. Commercial tea planting was pioneered here by A.H. Sharp in the late 19th century, transforming the wild, forested hills into one of the world's highest tea-growing regions."
-            },
-            {
-              title: 'Timings and Rates',
-              content: "Tata Tea Museum: 9:00 AM - 4:00 PM (Closed Mondays), Entry Fee: ₹75. Eravikulam National Park: 7:30 AM - 4:00 PM, Entry Fee: ₹200 (Indians), ₹500 (Foreigners). Mattupetty Dam: 9:30 AM - 5:00 PM, Boating fee approx ₹700 for 15 mins (5 pax)."
-            },
-            {
-              title: 'Other Details',
-              content: "Munnar is home to the rare Neelakurinji flower which blooms once in 12 years (next expected in 2030), turning the hillsides blue. Eravikulam National Park is a crucial sanctuary for the endangered Nilgiri Tahr (mountain goat)."
-            }
-          ],
-          popularPackages: []
-        }
-      },
-      {
-        id: 'thekkady',
-        name: 'Thekkady',
-        type: 'Wildlife',
-        image: '/assets/KERALA/top place in kerala/thekkady.webp',
-        description: 'Home to the famous Periyar Wildlife Sanctuary, Thekkady is a paradise for wildlife enthusiasts. Spice plantations, elephant camps, Kathakali shows, and Periyar Lake boat safaris make this a complete Kerala experience.',
-        rating: 4.7,
-        details: {
-          timings: 'Sanctuary: 6:00 AM - 6:00 PM',
-          entryFee: '₹35 per person (Sanctuary Entry)',
-          distance: '145 km from Madurai',
-          duration: '1 - 2 Days',
-          transport: 'Private A/C Vehicle from Madurai',
-          tips: 'Book boat safari tickets in advance online. Visit Kumily market for buying authentic fresh spices.',
-          sections: [
-            {
-              title: 'About Thekkady',
-              content: "Thekkady is synonymous with the Periyar Wildlife Sanctuary, one of India's most fascinating natural wildlife reserves. It is a haven for nature lovers and wildlife enthusiasts, known for its thick evergreen forests, savanna grasslands, and the scenic Periyar Lake right in the center of the park."
-            },
-            {
-              title: 'History',
-              content: "The Periyar Lake, a core feature of the sanctuary, is entirely artificial. It was formed by the construction of the Mullaperiyar Dam in 1895 across the Periyar River by the British engineer John Pennycuick. The area was declared a sanctuary in 1950 and became a designated Tiger Reserve in 1978 under Project Tiger."
-            },
-            {
-              title: 'Timings and Rates',
-              content: "Periyar National Park Entry: 6:00 AM - 6:00 PM. Entry Fee: ₹35 for Indians, ₹500 for Foreigners. KTDC Boat Safari Timings: 7:30 AM, 9:30 AM, 11:15 AM, 1:45 PM, 3:30 PM. Boat Ticket: ₹250 approx (advance online booking highly recommended). Elephant Safari: Around ₹500 - ₹1500."
-            },
-            {
-              title: 'Other Details',
-              content: "Unlike many other national parks in India, wildlife viewing in Periyar is done primarily from a boat. Thekkady is also surrounded by fragrant spice plantations (cardamom, pepper, cinnamon). Evening cultural shows featuring traditional Kathakali dance and Kalaripayattu martial arts are highly recommended."
-            }
-          ],
-          popularPackages: []
-        }
-      },
-      {
-        id: 'vagamon',
-        name: 'Vagamon',
-        type: 'Hill Station',
-        image: '/assets/KERALA/top place in kerala/vagamon.webp',
-        description: 'A hidden gem in Kerala\'s Western Ghats, Vagamon is known for its rolling meadows, pine forests, tea gardens, waterfalls and paragliding opportunities. Perfect for a quiet, peaceful retreat.',
-        rating: 4.6,
-        details: {
-          timings: 'Open all day',
-          entryFee: 'No entry fee',
-          distance: '170 km from Madurai',
-          duration: '1 - 2 Days',
-          transport: 'Private A/C Vehicle from Madurai',
-          tips: 'Best time to visit is September to March. Paragliding season is from October to March.',
-          sections: [
-            {
-              title: 'About Vagamon',
-              content: "Vagamon (or Wagamon) is a tranquil, off-beat hill station hidden away in the Idukki district. Untouched by heavy commercialization, it is known for its lush green rolling meadows, mystical pine forests, cascading waterfalls, and misty valleys, making it an ideal destination for nature lovers seeking peace."
-            },
-            {
-              title: 'History',
-              content: "Vagamon was discovered and developed by the British who found the cool climate and fertile terrain ideal for tea plantations. Later, in the mid-20th century, Christian missionaries established the Kurisumala Ashram here, adding to its spiritual and peaceful aura."
-            },
-            {
-              title: 'Timings and Rates',
-              content: "Pine Forest & Vagamon Meadows: 8:30 AM - 5:30 PM. Entry Fee: ₹10 - ₹20. Kurisumala Ashram: Open for visitors during daytime. Adventure Sports: Paragliding costs vary between ₹3,500 to ₹5,000 per tandem flight depending on the operator."
-            },
-            {
-              title: 'Other Details',
-              content: "Vagamon is a major hub for adventure sports in South India, hosting an International Paragliding Festival annually. The region is famous for its religious harmony, symbolized by three prominent hills: Thangal Hill (Muslim), Murugan Hill (Hindu), and Kurisumala (Christian)."
-            }
-          ],
-          popularPackages: []
-        }
-      },
-      {
-        id: 'valparai',
-        name: 'Valparai',
-        type: 'Hill Station',
-        image: '/assets/KERALA/top place in kerala/valparai.webp',
-        description: 'A scenic hill station on the border of Tamil Nadu and Kerala, Valparai is famous for its lush tea and coffee plantations, the spectacular 40-hairpin bend road, Aliyar Dam, Monkey Falls, and rare wildlife.',
-        rating: 4.6,
-        details: {
-          timings: 'Open all day',
-          entryFee: 'No entry fee',
-          distance: '170 km from Madurai via Pollachi',
-          duration: '1 - 2 Days',
-          transport: 'Private A/C Vehicle from Madurai',
-          tips: 'The 40-hairpin bends drive is an experience in itself. Watch out for Lion-Tailed Macaques.',
-          sections: [
-            {
-              title: 'About Valparai',
-              content: "Though geographically situated in the Coimbatore district of Tamil Nadu, Valparai is culturally and touristically tied closely to the Kerala-Tamil Nadu border ecosystem. It is an unpolluted and pristine hill station enveloped in lush green tea estates, coffee plantations, and dense forest patches of the Anamalai Tiger Reserve."
-            },
-            {
-              title: 'History',
-              content: "Tea planting in Valparai was introduced by Ramasamy Mudaliyar and British planters, notably W. Wintil and Congreve, in the late 19th century. Over the decades, the thick jungles were systematically converted into one of South India's largest and most productive tea and coffee planting hubs."
-            },
-            {
-              title: 'Timings and Rates',
-              content: "Aliyar Dam (en route): 9:00 AM - 6:00 PM, Entry: ₹20. Monkey Falls (en route): 9:00 AM - 5:00 PM, Entry: ₹30. Sholayar Dam: Open during daylight hours. No specific entry fee for the town itself."
-            },
-            {
-              title: 'Other Details',
-              content: "The journey to Valparai from Pollachi involves navigating 40 spectacular, tightly-wound hairpin bends offering stunning views of the plains below. The region is highly biodiverse, known for sightings of the rare Lion-tailed Macaque, Great Hornbill, elephants, and leopards."
-            }
-          ],
-          popularPackages: []
-        }
-      },
-      {
-        id: 'kumarakom',
-        name: 'Kumarakom',
-        type: 'Backwaters',
-        image: '/assets/KERALA/top place in kerala/kumarakom.webp',
-        description: 'Situated on the shores of Vembanad Lake, Kumarakom is one of Kerala\'s most tranquil backwater destinations. Famous for its bird sanctuary, houseboat cruises, and lush coconut lagoons.',
-        rating: 4.8,
-        details: {
-          timings: 'Bird Sanctuary: 6:00 AM - 6:00 PM',
-          entryFee: 'Bird Sanctuary: ₹25 per person',
-          distance: '180 km from Madurai',
-          duration: '1 - 2 Days',
-          transport: 'Private A/C Vehicle from Madurai',
-          tips: 'Early morning is best for bird watching. Sunset over Vembanad Lake is breathtaking.',
-          sections: [
-            {
-              title: 'About Kumarakom',
-              content: "Set on the eastern banks of Vembanad Lake—the largest freshwater lake in Kerala—Kumarakom is a spectacular cluster of little islands. It is a premier backwater destination renowned for its luxury resorts, tranquil canals, mangrove forests, and paddy fields."
-            },
-            {
-              title: 'History',
-              content: "The area was once a massive, impenetrable mangrove forest. In the late 19th century, an English farmer named Alfred George Baker reclaimed a large tract of land from the lake, planted mangroves to prevent soil erosion, and laid the foundation for the region's agricultural and tourism development."
-            },
-            {
-              title: 'Timings and Rates',
-              content: "Kumarakom Bird Sanctuary: 6:00 AM - 5:00 PM. Entry Fee: ₹50 for Indians, ₹100 for Foreigners, Guide Fee extra. Houseboat rentals are similar to Alleppey, ranging from ₹7,000 to ₹18,000+ per night depending on luxury and capacity."
-            },
-            {
-              title: 'Other Details',
-              content: "The Kumarakom Bird Sanctuary is a favorite haunt of migratory birds like the Siberian Stork, egrets, darters, herons, and teals. It is best visited between November and February. The backwaters here are wider and feel more like a vast lake compared to the narrow canals of Alleppey."
-            }
-          ],
-          popularPackages: []
-        }
-      },
-      {
-        id: 'marayoor',
-        name: 'Marayoor',
-        type: 'Nature',
-        image: '/assets/KERALA/top place in kerala/marayoor.webp',
-        description: 'A unique destination near Munnar, Marayoor is home to India\'s only natural sandalwood forests, ancient stone-age dolmens (Muniyara), sugarcane fields, jaggery production, and the scenic Lakkam Waterfalls.',
-        rating: 4.5,
-        details: {
-          timings: 'Open all day',
-          entryFee: 'No entry fee',
-          distance: '160 km from Madurai via Bodimettu',
-          duration: '1 Day',
-          transport: 'Private A/C Vehicle from Madurai',
-          tips: 'Try fresh Marayoor jaggery — it\'s famous across India. Visit Lakkam Falls only during monsoon season.',
-          sections: [
-            {
-              title: 'About Marayoor',
-              content: "Located about 40 kilometers from Munnar, Marayoor is a unique destination enveloped in the rain-shadow region of the Western Ghats. It is distinct for its pristine natural sandalwood forests, sprawling sugarcane farms, and historical importance, offering a stark contrast to the tea gardens of Munnar."
-            },
-            {
-              title: 'History',
-              content: "Marayoor boasts a rich heritage that dates back to the Stone Age. The megalithic Dolmens (Muniyaras) found here belong to the Iron Age and were used as burial chambers. The region is also deeply tied to the epic Mahabharata, as it is believed the Pandavas stayed here during their exile."
-            },
-            {
-              title: 'Timings and Rates',
-              content: "Chinnar Wildlife Sanctuary (nearby): 8:00 AM - 5:00 PM (Entry approx ₹100, Trekking fees extra). Lakkam Waterfalls: 8:00 AM - 5:00 PM, Entry ₹20. Muniyara Dolmens: Open all day, no entry fee."
-            },
-            {
-              title: 'Other Details',
-              content: "Marayoor is the only place in Kerala that naturally grows sandalwood trees, which are heavily guarded by the forest department. The local Marayoor Jaggery (Sharkara) is famous across India for its high quality, unique taste, and dark color, holding a prestigious Geographical Indication (GI) tag."
-            }
-          ],
-          popularPackages: []
-        }
-      }
-    ],
-    popularPackages: []
-  },
+  // 'kerala-tourism': {
+  //   id: 'kerala-tourism',
+  //   name: 'Kerala',
+  //   image: '/assets/bharath/kerala.webp',
+  //   state: 'Kerala',
+  //   heroVideo: '/assets/video/kerala 1 (2).mp4',
+  //   promoVideo: '/assets/video/kerala 1 (1).mp4',
+  //   overview: {
+  //     title: 'Kerala Tourism',
+  //     description: 'Known as "God\'s Own Country", Kerala is a tropical paradise on India\'s southwestern coast. With its serene backwaters, lush hill stations, ancient spice plantations, wildlife sanctuaries, and pristine beaches, Kerala offers an unmatched travel experience. From the misty tea gardens of Munnar to the tranquil houseboats of Alleppey and the wildlife-rich forests of Thekkady, every corner of Kerala is a visual feast.'
+  //   },
+  //   history: {
+  //     title: 'Kerala Heritage',
+  //     description: 'Kerala\'s history stretches back to ancient times, with its rich Dravidian culture, spice trade with Rome, Arabia, and China, and the influence of great dynasties including the Cheras, Zamorins of Calicut, and later the Portuguese, Dutch, and British. Kerala is also the birthplace of Kathakali dance, Kalaripayattu martial arts, and Ayurvedic medicine.'
+  //   },
+  //   info: {
+  //     idealDuration: '3 Nights / 4 Days',
+  //     nearestCity: 'Kochi (Cochin)',
+  //     bestTime: 'September to March',
+  //     peakSeason: 'October to February',
+  //     weather: 'Tropical & Pleasant',
+  //     internet: 'Excellent',
+  //     stdCode: '0484',
+  //     languages: 'Malayalam, English, Tamil',
+  //     festivals: 'Onam, Thrissur Pooram, Vishu, Christmas, Eid',
+  //     tips: 'Book houseboats well in advance. Carry light cotton clothes. Try local Kerala meals on banana leaf.'
+  //   },
+  //   majorAttractions: [
+  //     {
+  //       title: 'Alleppey Backwaters',
+  //       description: 'The backwaters of Alleppey (Alappuzha) are a network of lagoons, lakes, and canals that run parallel to the Arabian Sea coast. A houseboat cruise through these backwaters is an iconic Kerala experience, offering stunning views of paddy fields, coconut groves, and village life.'
+  //     },
+  //     {
+  //       title: 'Munnar Tea Gardens',
+  //       description: 'Munnar is one of the most scenic hill stations in South India, famous for its endless stretches of tea plantations, misty mountains, exotic flora and fauna. The cool climate, rolling hills, and lush greenery make it a paradise for nature lovers and honeymooners.'
+  //     },
+  //     {
+  //       title: 'Periyar Wildlife Sanctuary',
+  //       description: 'Located in Thekkady, the Periyar Wildlife Sanctuary is one of India\'s most visited national parks. The stunning Periyar Lake at its heart is home to elephants, tigers, leopards, and over 260 species of birds. Boat safaris on the lake offer unforgettable wildlife encounters.'
+  //     },
+  //     {
+  //       title: 'Vagamon Hills',
+  //       description: 'Vagamon is a serene hill station nestled in the Western Ghats, famous for its rolling meadows, pine forests, waterfalls, and paragliding. Far from the crowds, it offers a peaceful escape into nature.'
+  //     }
+  //   ],
+  //   placesToVisit: [
+  //     {
+  //       id: 'alleppey',
+  //       name: 'Alleppey (Alappuzha)',
+  //       type: 'Backwaters',
+  //       image: '/assets/KERALA/top place in kerala/aleppey.webp',
+  //       description: 'The "Venice of the East", Alleppey is famous for its network of backwaters, houseboat cruises, and the spectacular Nehru Trophy Boat Race. A must-visit for every Kerala traveler.',
+  //       rating: 4.9,
+  //       details: {
+  //         timings: 'Open all day',
+  //         entryFee: 'Houseboat charges vary',
+  //         distance: '85 km from Kochi',
+  //         duration: '1 - 2 Days',
+  //         transport: 'Private A/C Vehicle from Madurai',
+  //         tips: 'Book houseboats well in advance especially during peak season (Oct-Feb). Shikara rides are cheaper than full houseboats.',
+  //         sections: [
+  //           {
+  //             title: 'About Alleppey',
+  //             content: "Known as the 'Venice of the East', Alappuzha (Alleppey) is renowned for its picturesque backwaters, serene lagoons, and interconnected network of canals. It is the epicenter of Kerala's backwater tourism, attracting visitors worldwide to experience its traditional kettuvallam (houseboats) and vibrant village life along the waters."
+  //           },
+  //           {
+  //             title: 'History',
+  //             content: "Founded by Raja Kesavadasan in 1762, Alleppey has a rich history as a major port and trading center. Due to its strategic coastal location, it was once one of the busiest trade hubs on the Malabar Coast, dealing extensively in coir and spices. The unique canal system was built to transport goods directly to the port."
+  //           },
+  //           {
+  //             title: 'Timings and Rates',
+  //             content: "Houseboat cruises are generally available from 12:00 PM to 9:00 AM the next day. Day cruises usually run from 11:00 AM to 5:00 PM. Rates vary from ₹6,000 to ₹15,000+ per night depending on the season, number of rooms, and luxury level (Deluxe, Premium, Luxury). Shikara rides are available hourly for around ₹600-₹800/hour."
+  //           },
+  //           {
+  //             title: 'Other Details',
+  //             content: "The world-famous Nehru Trophy Boat Race is held here on the second Saturday of August every year on the Punnamada Lake, featuring magnificent snake boats (Chundan Vallams). Alleppey is also famous for its high-quality coir industry and the tranquil Marari Beach."
+  //           }
+  //         ],
+  //         popularPackages: []
+  //       }
+  //     },
+  //     {
+  //       id: 'munnar',
+  //       name: 'Munnar',
+  //       type: 'Hill Station',
+  //       image: '/assets/KERALA/top place in kerala/munnar2.webp',
+  //       description: 'One of Kerala\'s most popular hill stations, Munnar is known for its sprawling tea estates, mist-covered mountains, exotic wildlife, and cool pleasant climate throughout the year.',
+  //       rating: 4.8,
+  //       details: {
+  //         timings: 'Open all day',
+  //         entryFee: 'Tea Museum: ₹75 per person',
+  //         distance: '130 km from Madurai via Bodimettu',
+  //         duration: '2 - 3 Days',
+  //         transport: 'Private A/C Vehicle from Madurai',
+  //         tips: 'Best visited in the morning for clear views. Echo Point and Mattupetty Dam are must-visits.',
+  //         sections: [
+  //           {
+  //             title: 'About Munnar',
+  //             content: "Munnar is a breathtaking hill station nestled in the Western Ghats at an altitude of 1,600 meters. The name 'Munnar' means 'Three Rivers', referring to its location at the confluence of the Mudhirapuzha, Nallathanni, and Kundali rivers. It is famous for its endless rolling tea plantations, misty valleys, and cascading waterfalls."
+  //           },
+  //           {
+  //             title: 'History',
+  //             content: "Once the favored summer resort of the erstwhile British Government in South India, Munnar retains its colonial charm. Commercial tea planting was pioneered here by A.H. Sharp in the late 19th century, transforming the wild, forested hills into one of the world's highest tea-growing regions."
+  //           },
+  //           {
+  //             title: 'Timings and Rates',
+  //             content: "Tata Tea Museum: 9:00 AM - 4:00 PM (Closed Mondays), Entry Fee: ₹75. Eravikulam National Park: 7:30 AM - 4:00 PM, Entry Fee: ₹200 (Indians), ₹500 (Foreigners). Mattupetty Dam: 9:30 AM - 5:00 PM, Boating fee approx ₹700 for 15 mins (5 pax)."
+  //           },
+  //           {
+  //             title: 'Other Details',
+  //             content: "Munnar is home to the rare Neelakurinji flower which blooms once in 12 years (next expected in 2030), turning the hillsides blue. Eravikulam National Park is a crucial sanctuary for the endangered Nilgiri Tahr (mountain goat)."
+  //           }
+  //         ],
+  //         popularPackages: []
+  //       }
+  //     },
+  //     {
+  //       id: 'thekkady',
+  //       name: 'Thekkady',
+  //       type: 'Wildlife',
+  //       image: '/assets/KERALA/top place in kerala/thekkady.webp',
+  //       description: 'Home to the famous Periyar Wildlife Sanctuary, Thekkady is a paradise for wildlife enthusiasts. Spice plantations, elephant camps, Kathakali shows, and Periyar Lake boat safaris make this a complete Kerala experience.',
+  //       rating: 4.7,
+  //       details: {
+  //         timings: 'Sanctuary: 6:00 AM - 6:00 PM',
+  //         entryFee: '₹35 per person (Sanctuary Entry)',
+  //         distance: '145 km from Madurai',
+  //         duration: '1 - 2 Days',
+  //         transport: 'Private A/C Vehicle from Madurai',
+  //         tips: 'Book boat safari tickets in advance online. Visit Kumily market for buying authentic fresh spices.',
+  //         sections: [
+  //           {
+  //             title: 'About Thekkady',
+  //             content: "Thekkady is synonymous with the Periyar Wildlife Sanctuary, one of India's most fascinating natural wildlife reserves. It is a haven for nature lovers and wildlife enthusiasts, known for its thick evergreen forests, savanna grasslands, and the scenic Periyar Lake right in the center of the park."
+  //           },
+  //           {
+  //             title: 'History',
+  //             content: "The Periyar Lake, a core feature of the sanctuary, is entirely artificial. It was formed by the construction of the Mullaperiyar Dam in 1895 across the Periyar River by the British engineer John Pennycuick. The area was declared a sanctuary in 1950 and became a designated Tiger Reserve in 1978 under Project Tiger."
+  //           },
+  //           {
+  //             title: 'Timings and Rates',
+  //             content: "Periyar National Park Entry: 6:00 AM - 6:00 PM. Entry Fee: ₹35 for Indians, ₹500 for Foreigners. KTDC Boat Safari Timings: 7:30 AM, 9:30 AM, 11:15 AM, 1:45 PM, 3:30 PM. Boat Ticket: ₹250 approx (advance online booking highly recommended). Elephant Safari: Around ₹500 - ₹1500."
+  //           },
+  //           {
+  //             title: 'Other Details',
+  //             content: "Unlike many other national parks in India, wildlife viewing in Periyar is done primarily from a boat. Thekkady is also surrounded by fragrant spice plantations (cardamom, pepper, cinnamon). Evening cultural shows featuring traditional Kathakali dance and Kalaripayattu martial arts are highly recommended."
+  //           }
+  //         ],
+  //         popularPackages: []
+  //       }
+  //     },
+  //     {
+  //       id: 'vagamon',
+  //       name: 'Vagamon',
+  //       type: 'Hill Station',
+  //       image: '/assets/KERALA/top place in kerala/vagamon.webp',
+  //       description: 'A hidden gem in Kerala\'s Western Ghats, Vagamon is known for its rolling meadows, pine forests, tea gardens, waterfalls and paragliding opportunities. Perfect for a quiet, peaceful retreat.',
+  //       rating: 4.6,
+  //       details: {
+  //         timings: 'Open all day',
+  //         entryFee: 'No entry fee',
+  //         distance: '170 km from Madurai',
+  //         duration: '1 - 2 Days',
+  //         transport: 'Private A/C Vehicle from Madurai',
+  //         tips: 'Best time to visit is September to March. Paragliding season is from October to March.',
+  //         sections: [
+  //           {
+  //             title: 'About Vagamon',
+  //             content: "Vagamon (or Wagamon) is a tranquil, off-beat hill station hidden away in the Idukki district. Untouched by heavy commercialization, it is known for its lush green rolling meadows, mystical pine forests, cascading waterfalls, and misty valleys, making it an ideal destination for nature lovers seeking peace."
+  //           },
+  //           {
+  //             title: 'History',
+  //             content: "Vagamon was discovered and developed by the British who found the cool climate and fertile terrain ideal for tea plantations. Later, in the mid-20th century, Christian missionaries established the Kurisumala Ashram here, adding to its spiritual and peaceful aura."
+  //           },
+  //           {
+  //             title: 'Timings and Rates',
+  //             content: "Pine Forest & Vagamon Meadows: 8:30 AM - 5:30 PM. Entry Fee: ₹10 - ₹20. Kurisumala Ashram: Open for visitors during daytime. Adventure Sports: Paragliding costs vary between ₹3,500 to ₹5,000 per tandem flight depending on the operator."
+  //           },
+  //           {
+  //             title: 'Other Details',
+  //             content: "Vagamon is a major hub for adventure sports in South India, hosting an International Paragliding Festival annually. The region is famous for its religious harmony, symbolized by three prominent hills: Thangal Hill (Muslim), Murugan Hill (Hindu), and Kurisumala (Christian)."
+  //           }
+  //         ],
+  //         popularPackages: []
+  //       }
+  //     },
+  //     {
+  //       id: 'valparai',
+  //       name: 'Valparai',
+  //       type: 'Hill Station',
+  //       image: '/assets/KERALA/top place in kerala/valparai.webp',
+  //       description: 'A scenic hill station on the border of Tamil Nadu and Kerala, Valparai is famous for its lush tea and coffee plantations, the spectacular 40-hairpin bend road, Aliyar Dam, Monkey Falls, and rare wildlife.',
+  //       rating: 4.6,
+  //       details: {
+  //         timings: 'Open all day',
+  //         entryFee: 'No entry fee',
+  //         distance: '170 km from Madurai via Pollachi',
+  //         duration: '1 - 2 Days',
+  //         transport: 'Private A/C Vehicle from Madurai',
+  //         tips: 'The 40-hairpin bends drive is an experience in itself. Watch out for Lion-Tailed Macaques.',
+  //         sections: [
+  //           {
+  //             title: 'About Valparai',
+  //             content: "Though geographically situated in the Coimbatore district of Tamil Nadu, Valparai is culturally and touristically tied closely to the Kerala-Tamil Nadu border ecosystem. It is an unpolluted and pristine hill station enveloped in lush green tea estates, coffee plantations, and dense forest patches of the Anamalai Tiger Reserve."
+  //           },
+  //           {
+  //             title: 'History',
+  //             content: "Tea planting in Valparai was introduced by Ramasamy Mudaliyar and British planters, notably W. Wintil and Congreve, in the late 19th century. Over the decades, the thick jungles were systematically converted into one of South India's largest and most productive tea and coffee planting hubs."
+  //           },
+  //           {
+  //             title: 'Timings and Rates',
+  //             content: "Aliyar Dam (en route): 9:00 AM - 6:00 PM, Entry: ₹20. Monkey Falls (en route): 9:00 AM - 5:00 PM, Entry: ₹30. Sholayar Dam: Open during daylight hours. No specific entry fee for the town itself."
+  //           },
+  //           {
+  //             title: 'Other Details',
+  //             content: "The journey to Valparai from Pollachi involves navigating 40 spectacular, tightly-wound hairpin bends offering stunning views of the plains below. The region is highly biodiverse, known for sightings of the rare Lion-tailed Macaque, Great Hornbill, elephants, and leopards."
+  //           }
+  //         ],
+  //         popularPackages: []
+  //       }
+  //     },
+  //     {
+  //       id: 'kumarakom',
+  //       name: 'Kumarakom',
+  //       type: 'Backwaters',
+  //       image: '/assets/KERALA/top place in kerala/kumarakom.webp',
+  //       description: 'Situated on the shores of Vembanad Lake, Kumarakom is one of Kerala\'s most tranquil backwater destinations. Famous for its bird sanctuary, houseboat cruises, and lush coconut lagoons.',
+  //       rating: 4.8,
+  //       details: {
+  //         timings: 'Bird Sanctuary: 6:00 AM - 6:00 PM',
+  //         entryFee: 'Bird Sanctuary: ₹25 per person',
+  //         distance: '180 km from Madurai',
+  //         duration: '1 - 2 Days',
+  //         transport: 'Private A/C Vehicle from Madurai',
+  //         tips: 'Early morning is best for bird watching. Sunset over Vembanad Lake is breathtaking.',
+  //         sections: [
+  //           {
+  //             title: 'About Kumarakom',
+  //             content: "Set on the eastern banks of Vembanad Lake—the largest freshwater lake in Kerala—Kumarakom is a spectacular cluster of little islands. It is a premier backwater destination renowned for its luxury resorts, tranquil canals, mangrove forests, and paddy fields."
+  //           },
+  //           {
+  //             title: 'History',
+  //             content: "The area was once a massive, impenetrable mangrove forest. In the late 19th century, an English farmer named Alfred George Baker reclaimed a large tract of land from the lake, planted mangroves to prevent soil erosion, and laid the foundation for the region's agricultural and tourism development."
+  //           },
+  //           {
+  //             title: 'Timings and Rates',
+  //             content: "Kumarakom Bird Sanctuary: 6:00 AM - 5:00 PM. Entry Fee: ₹50 for Indians, ₹100 for Foreigners, Guide Fee extra. Houseboat rentals are similar to Alleppey, ranging from ₹7,000 to ₹18,000+ per night depending on luxury and capacity."
+  //           },
+  //           {
+  //             title: 'Other Details',
+  //             content: "The Kumarakom Bird Sanctuary is a favorite haunt of migratory birds like the Siberian Stork, egrets, darters, herons, and teals. It is best visited between November and February. The backwaters here are wider and feel more like a vast lake compared to the narrow canals of Alleppey."
+  //           }
+  //         ],
+  //         popularPackages: []
+  //       }
+  //     },
+  //     {
+  //       id: 'marayoor',
+  //       name: 'Marayoor',
+  //       type: 'Nature',
+  //       image: '/assets/KERALA/top place in kerala/marayoor.webp',
+  //       description: 'A unique destination near Munnar, Marayoor is home to India\'s only natural sandalwood forests, ancient stone-age dolmens (Muniyara), sugarcane fields, jaggery production, and the scenic Lakkam Waterfalls.',
+  //       rating: 4.5,
+  //       details: {
+  //         timings: 'Open all day',
+  //         entryFee: 'No entry fee',
+  //         distance: '160 km from Madurai via Bodimettu',
+  //         duration: '1 Day',
+  //         transport: 'Private A/C Vehicle from Madurai',
+  //         tips: 'Try fresh Marayoor jaggery — it\'s famous across India. Visit Lakkam Falls only during monsoon season.',
+  //         sections: [
+  //           {
+  //             title: 'About Marayoor',
+  //             content: "Located about 40 kilometers from Munnar, Marayoor is a unique destination enveloped in the rain-shadow region of the Western Ghats. It is distinct for its pristine natural sandalwood forests, sprawling sugarcane farms, and historical importance, offering a stark contrast to the tea gardens of Munnar."
+  //           },
+  //           {
+  //             title: 'History',
+  //             content: "Marayoor boasts a rich heritage that dates back to the Stone Age. The megalithic Dolmens (Muniyaras) found here belong to the Iron Age and were used as burial chambers. The region is also deeply tied to the epic Mahabharata, as it is believed the Pandavas stayed here during their exile."
+  //           },
+  //           {
+  //             title: 'Timings and Rates',
+  //             content: "Chinnar Wildlife Sanctuary (nearby): 8:00 AM - 5:00 PM (Entry approx ₹100, Trekking fees extra). Lakkam Waterfalls: 8:00 AM - 5:00 PM, Entry ₹20. Muniyara Dolmens: Open all day, no entry fee."
+  //           },
+  //           {
+  //             title: 'Other Details',
+  //             content: "Marayoor is the only place in Kerala that naturally grows sandalwood trees, which are heavily guarded by the forest department. The local Marayoor Jaggery (Sharkara) is famous across India for its high quality, unique taste, and dark color, holding a prestigious Geographical Indication (GI) tag."
+  //           }
+  //         ],
+  //         popularPackages: []
+  //       }
+  //     }
+  //   ],
+  //   popularPackages: []
+  // },
   'tamilnadu-tourism': {
     id: 'tamilnadu-tourism',
     name: 'Tamil Nadu',
@@ -1584,7 +1901,7 @@ export const destinationsData: Record<string, any> = {
           sections: [
             {
               title: 'About Madurai',
-              content: "Madurai is the cultural capital of Tamil Nadu, built around the majestic Meenakshi Amman Temple. It has been a major hub for trade and Tamil literature for over two millennia."
+              content: "Madurai, the cultural capital of Tamil Nadu, is famous for the magnificent Meenakshi Amman Temple and its rich Tamil heritage. With a history spanning over 2,000 years, Madurai is a historic destination known for its ancient temples, vibrant culture, Tamil literature, and traditional trade."
             },
             {
               title: 'History',
@@ -1847,7 +2164,7 @@ export const destinationsData: Record<string, any> = {
         }
       },
       {
-        id: 'dwarkamai',
+        id: 'dwarkamai-mosque',
         name: 'Dwarkamai Mosque',
         type: 'Historical',
         image: '/assets/varanasi and shiridi/dwarkamimosque.webp',
@@ -1908,7 +2225,7 @@ export const destinationsData: Record<string, any> = {
         id: 'lendi-baug',
         name: 'Lendi Baug (Garden)',
         type: 'Garden',
-        image: '/assets/varanasi and shiridi/lendibaugg.webp',
+        image: '/assets/varanasi and shiridi/lendibaug.webp',
         description: 'A beautiful garden personally tended by Sai Baba. It houses a nanda deep (sacred lamp) lit by Baba himself and a large banyan tree.',
         rating: 4.6,
         details: {
@@ -1931,7 +2248,8 @@ export const destinationsData: Record<string, any> = {
     id: 'varanasi',
     name: 'Varanasi (Kasi)',
     state: 'Uttar Pradesh',
-    image: '/assets/varanasi/hero/kasibanner1.webp',
+    image: '/assets/kasi/kasi11.webp',
+    heroVideo: '/assets/Kasihero.mp4',
     overview: {
       title: 'Varanasi (Kasi) – The Eternal City of India',
       description: 'Varanasi, also known as Kasi or Banaras, is one of the oldest continuously inhabited cities in the world and the holiest of the seven sacred cities (Sapta Puri) in Hinduism. Situated on the western bank of the sacred Ganges River in Uttar Pradesh, India, Varanasi is the spiritual heart of the country. It is believed that dying in Varanasi grants moksha (liberation from the cycle of birth and death). Every year, millions of pilgrims, saints, and tourists visit Varanasi to take a holy dip in the Ganges, witness the spectacular Ganga Aarti, and seek blessings at its ancient temples.'
@@ -2054,7 +2372,8 @@ export const destinationsData: Record<string, any> = {
           transport: 'Auto Rickshaw, Walking from Lanka Crossing',
           tips: 'The sunrise boat ride from Assi Ghat northward past all the ghats to Manikarnika is the single most iconic experience in Varanasi. Book a boat the evening before for ₹200-500 per person. Bring a light shawl for the early morning river breeze.',
           sections: [
-            { title: 'About Assi Ghat', content: 'Assi Ghat is named after the Assi River that meets the Ganges here. It is the southernmost major ghat and is different in character from the busy ghats upstream — it has a more relaxed, intellectual, and spiritual atmosphere. Morning yoga classes, devotional music, and Vedic discussions happen here daily. It is also the preferred ghat of many local scholars, students, and foreign visitors who want a quieter experience.' }
+            { title: 'About Assi Ghat', content: 'Assi Ghat is named after the Assi River that meets the Ganges here. It is the southernmost major ghat and is different in character from the busy ghats upstream — it has a more relaxed, intellectual, and spiritual atmosphere. Morning yoga classes, devotional music, and Vedic discussions happen here daily. It is also the preferred ghat of many local scholars, students, and foreign visitors who want a quieter experience.' },
+            { title: 'History', content: 'Assi Ghat is one of the oldest ghats in Varanasi. It finds mention in ancient Hindu scriptures including the Puranas and the Matsya Purana, making it thousands of years old in religious importance.\n\nIn medieval times, it was referenced in the inscriptions of the Gahadavala dynasty (11th–12th century) — the ruling kings who were major patrons of Varanasi. It also appeared in Varadaraja\'s Sanskrit work Giravana-padamanjari, written between 1600 and 1660 CE.\n\nFor most of its history, the area around Assi Ghat remained open land with trees and a natural riverbank. It was only in the 18th century that most of Varanasi\'s ghats, including Assi, were formally rebuilt and developed under Maratha patronage. These rulers invested heavily in constructing the stone steps, temples, and bathing platforms that define the ghats today.\n\nIn 1902, Queen Dulhin Radha Dulari Kunwar of the Sursand royal estate bought a large portion of the southern bank near Assi Ghat. She built a grand palace here (which today operates as Hotel Ganga View) and constructed the Lakshminarayana Temple beside it.\n\nThe ghat is also traditionally believed to be the place where the great saint-poet Tulsidas — who wrote the Ramcharitmanas — spent his final days and left his earthly body.\n\nSince 2014, Assi Ghat has hosted "Subah-e-Banaras" (Morning of Banaras), a daily cultural program at sunrise featuring Vedic chants, classical music, yoga, and prayers. This program has become a major attraction for both spiritual seekers and tourists from around the world.' }
           ]
         }
       },
@@ -2520,7 +2839,7 @@ export const destinationsData: Record<string, any> = {
       stdCode: '+66',
       languages: 'Thai, English',
       festivals: 'Songkran, Loy Krathong',
-      tips: 'Always show respect to the Thai Royal Family.'
+      tips: 'Respect Thai culture, traditions, and local customs during your visit.'
     },
     majorAttractions: [
       { title: 'The Grand Palace', description: 'The spectacular former residence of the Kings of Siam in Bangkok, featuring exquisite architecture and the highly revered Temple of the Emerald Buddha (Wat Phra Kaew).' },

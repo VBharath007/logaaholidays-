@@ -15,12 +15,15 @@ export function About() {
             {/* 1. Hero Header */}
             <section className="relative h-[60vh] md:h-[70vh] min-h-[400px] w-full flex flex-col items-center justify-center text-center">
                 <div className="absolute inset-0">
-                    <img loading="lazy"
-                        src='/assets/madurai/mahal.webp'
-                        alt="About Logaa Holidays - Madurai"
+                    <video
+                        src='/assets/services/Create_a_premium_cinematic_.mp4'
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
                         className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-primary-forest)]/90 via-[var(--color-primary-forest)]/70 to-[var(--color-bg-luxury)]" />
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-[var(--color-bg-luxury)]" />
                 </div>
 
                 <div className="relative z-10 px-6 mt-16">

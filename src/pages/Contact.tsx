@@ -61,7 +61,7 @@ export function Contact() {
                             CONTACT US
                         </h1>
                         <p className="text-lg md:text-xl text-white/90 font-medium tracking-widest ">
-                            Let's craft the perfect itinerary for your next unforgettable journey.
+                            Logaa Holdays - Customized Domestic & International Tour Packages From Madurai.
                         </p>
                     </motion.div>
                 </div>
@@ -326,12 +326,10 @@ export function Contact() {
                                 <div>
                                     <p className="text-white font-bold text-sm">Email</p>
                                     <p className="text-white/70 text-sm break-all">Logaaholidays@gmail.com</p>
-                                    <p className="text-white font-bold text-sm mt-4">Alt. Email</p>
-                                    <p className="text-white/70 text-sm break-all">bookinglogaaholidays@gmail.com</p>
                                 </div>
                             </div>
 
-                            <div className="flex items-start gap-4 group">
+                            {/* <div className="flex items-start gap-4 group">
                                 <div className="w-10 h-10 rounded-full bg-[var(--color-primary-emerald)] flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
                                     <Globe className="w-4 h-4 text-white" />
                                 </div>
@@ -344,7 +342,7 @@ export function Contact() {
                                         <a href="https://www.indianyellowpages.com/madurai/logaa-holidays-14465908/" className="text-white/70 text-xs break-all hover:text-[var(--color-accent-gold)] transition-colors" target="_blank" rel="noreferrer">Indian Yellow Pages Profile</a>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

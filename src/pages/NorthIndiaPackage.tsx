@@ -132,8 +132,8 @@ export function NorthIndiaPackage() {
                   key={place.id}
                   onClick={() => setActivePlace(place.id)}
                   className={`px-6 py-2.5 rounded-full text-sm font-bold uppercase tracking-wider transition-all duration-300 border-2 ${activePlace === place.id
-                      ? 'bg-[#89d4cf] border-[#89d4cf] text-slate-900 transform scale-105'
-                      : 'bg-transparent border-slate-300 text-slate-600 hover:border-slate-400'
+                    ? 'bg-[#89d4cf] border-[#89d4cf] text-slate-900 transform scale-105'
+                    : 'bg-transparent border-slate-300 text-slate-600 hover:border-slate-400'
                     }`}
                 >
                   {place.name}

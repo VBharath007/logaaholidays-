@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import { Star, ShieldCheck, Heart, MapPin, Quote } from 'lucide-react'
 import { Link } from 'react-router-dom'
@@ -16,20 +16,28 @@ const TornPaperBottom = () => (
 
 
 const featured = {
-  name: 'Loganathan Pandi',
+  name: 'Loganathan',
   location: 'Madurai, Tamil Nadu',
   quote: 'Logaa Holidays provided the most unforgettable pilgrimage experience for our entire family. The Shirdi trip was flawlessly organized — from the flight tickets to hotel, darshan slots, and cab arrangements. Everything was perfectly handled. I highly recommend Logaa Holidays for anyone planning a spiritual journey!',
 }
 
 export function TestimonialsPage() {
+  const widgetRef = useRef<HTMLDivElement>(null)
+
   useEffect(() => {
-    const scriptId = 'elfsight-platform-script'
-    if (!document.getElementById(scriptId)) {
-      const script = document.createElement('script')
-      script.id = scriptId
-      script.src = "https://elfsightcdn.com/platform.js"
-      script.async = true
-      document.body.appendChild(script)
+    if (!widgetRef.current) return
+
+    widgetRef.current.innerHTML = ''
+    const script = document.createElement('script')
+    script.src = 'https://cdn.trustindex.io/loader.js?12dd60a795cd35829506b31ef5b'
+    script.defer = true
+    script.async = true
+    widgetRef.current.appendChild(script)
+
+    return () => {
+      if (widgetRef.current) {
+        widgetRef.current.innerHTML = ''
+      }
     }
   }, [])
 
@@ -91,8 +99,8 @@ export function TestimonialsPage() {
         </div>
 
         <div className="w-full relative z-30 mt-8">
-          <div className="bg-white/40 backdrop-blur-md border border-white/60 p-4 md:p-8 rounded-[3rem] shadow-[0_20px_40px_rgba(0,0,0,0.05)] w-full overflow-hidden">
-            <div className="elfsight-app-22ab9f17-1f97-4949-9b55-2d536f9f98ab" data-elfsight-app-lazy></div>
+          <div className="bg-white/40 backdrop-blur-md border border-white/60 p-4 md:p-8 rounded-[3rem] shadow-[0_20px_40px_rgba(0,0,0,0.05)] w-full flex justify-center">
+            <div ref={widgetRef} className="w-full min-h-[300px]"></div>
           </div>
         </div>
       </section>

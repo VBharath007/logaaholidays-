@@ -13,7 +13,7 @@ export const TourOperatorsForm = () => {
         <h4 className="text-xl font-bold text-white mb-4">Personal Details</h4>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <TextInput icon={User} label="Full Name" placeholder="Your Name" required />
-          <TextInput icon={Phone} label="Mobile Number" placeholder="+91 98765 43210" required />
+          <TextInput icon={Phone} label="Mobile Number" placeholder="+91 7397329776" required />
           <TextInput icon={Mail} label="Email Address" type="email" placeholder="you@example.com" />
           <TextInput icon={MapPin} label="City / Current Location" placeholder="Your City" required />
         </div>

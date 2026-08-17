@@ -252,26 +252,7 @@ const punePackages = [
 ];
 
 const kanyakumariPackages = [
-  {
-    id: 26,
-    title: 'Pilgrim Tour 03N - 04D',
-    duration: '3 Nights / 4 Days',
-    destination: 'Kovalam, Thiruvananthapuram, Trivandrum, Kanyakumari...',
-    activities: 'Beaches Sightseeing, Museums, Sightseeing',
-    themes: 'Religious & Pilgrimage, Beaches and Islands',
-    price: 'On Request',
-    image: '/assets/generated/ramanathaswamy_temple.png'
-  },
-  {
-    id: 27,
-    title: '9 Night - 10 Days Kerala Tour Package',
-    duration: '9 Nights / 10 Days',
-    destination: 'Kochi, Kovalam, Thekkady, Alleppey, Trivandrum...',
-    activities: 'House Boat, Elephant Safari, Beaches Sightseeing, Museums, Sightseeing',
-    themes: 'Wildlife, Hill Stations & Valleys, Religious & Pilgrimage, Culture & Heritage, Beaches and Islands',
-    price: 'On Request',
-    image: '/assets/kerala/9 Night - 10 Days Kerala Tour Package cards.webp'
-  },
+  
   {
     id: 28,
     title: 'Madurai - Rameshwaram - Kanyakumari 4N 5D Tour',
@@ -455,7 +436,6 @@ const varanasiPackages = [
   getDbPackage('2005')!,
   getDbPackage('2006')!,
   getDbPackage('2007')!,
-  getDbPackage('23')!,
   getDbPackage('2008')!,
   getDbPackage('2009')!
 ];

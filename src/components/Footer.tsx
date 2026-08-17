@@ -173,7 +173,7 @@ export function Footer() {
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 text-xs font-medium text-white/50 tracking-wide">
           <p>© {new Date().getFullYear()} Logaa Holidays. All rights reserved.</p>
           <span className="hidden sm:inline">|</span>
-          <p className="flex items-center gap-1">Crafted with <Heart className="w-3 h-3 text-[#1F6F43] fill-[#1F6F43] mx-1" /> in Madurai</p>
+          <p className="flex items-center gap-1">Logaa Holidays – Trusted Tour & Travel Agency<Heart className="w-3 h-3 text-[#1F6F43] fill-[#1F6F43] mx-1" /> in Madurai</p>
         </div>
 
       </div>

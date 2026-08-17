@@ -3,26 +3,29 @@ import Lenis from 'lenis';
 
 export function useSmoothScroll() {
   useEffect(() => {
-    const lenis = new Lenis({
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      orientation: 'vertical',
-      gestureOrientation: 'vertical',
-      smoothWheel: true,
-      wheelMultiplier: 1,
-      touchMultiplier: 2,
-    });
-    (window as any).lenis = lenis;
+    // const lenis = new Lenis({
+    //   duration: 1.2,`` 
 
-    function raf(time: number) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
+      
+    
+    //   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    //   orientation: 'vertical',
+    //   gestureOrientation: 'vertical',
+    //   smoothWheel: true,
+    //   wheelMultiplier: 1,
+    //   touchMultiplier: 2,
+    // });
+    // (window as any).lenis = lenis;
 
-    requestAnimationFrame(raf);
+    // function raf(time: number) {
+    //   lenis.raf(time);
+    //   requestAnimationFrame(raf);
+    // }
 
-    return () => {
-      lenis.destroy();
-    };
+    // requestAnimationFrame(raf);
+
+    // return () => {
+    //   lenis.destroy();
+    // };
   }, []);
 }

@@ -29,7 +29,7 @@ export function ServiceDetails() {
  case 'tour-operators':
  return '/assets/Mizoram2.webp'; // Taj Mahal
  case 'car-coach-rental':
- return '/assets/services/car 1.png'; // Luxury SUV in landscape
+ return '/assets/services/car2.png'; // Luxury SUV in landscape
  case 'flight-booking':
  return '/assets/services/flight.png';
  case 'railway-ticket-booking':
@@ -37,7 +37,7 @@ export function ServiceDetails() {
  case 'passport-visa-service':
  return '/assets/services/visa.png';
  case 'travel-insurance-service':
- return '/assets/services/insurance.png';
+ return '/assets/services/travelinsurane.png';
  case 'event-management':
  return '/assets/Uttar Pradesh1.webp'; // Beautiful event setup
  case 'hotel-booking':
@@ -54,7 +54,7 @@ export function ServiceDetails() {
  case 'car-coach-rental':
  return '/assets/services/car 2.png'; // Premium car interior
  case 'flight-booking':
- return '/assets/services/flight.png';
+ return '/assets/services/aeroplane outside view.mp4';
  case 'railway-ticket-booking':
  return '/assets/services/train 1.png'; // Inside a train
  case 'passport-visa-service':
@@ -132,7 +132,7 @@ export function ServiceDetails() {
  <div className="flex flex-col items-center justify-center px-1">
  <Globe2 className="w-6 h-6 text-white/80 mb-2" />
  <span className="text-2xl font-bold text-white mb-1">28</span>
- <span className="text-[10px] md:text-xs text-white/70 uppercase tracking-wider">States</span>
+ <span className="text-[10px] md:text-xs text-white/70 uppercase tracking-wider">INDIAN STATES</span>
  </div>
  <div className="flex flex-col items-center justify-center px-1 border-l border-white/20 md:border-none">
  <TreePine className="w-6 h-6 text-white/80 mb-2" />
@@ -142,7 +142,7 @@ export function ServiceDetails() {
  <div className="flex flex-col items-center justify-center px-1">
  <MapPin className="w-6 h-6 text-white/80 mb-2" />
  <span className="text-2xl font-bold text-white mb-1">1000+</span>
- <span className="text-[10px] md:text-xs text-white/70 uppercase tracking-wider">Locations</span>
+ <span className="text-[10px] md:text-xs text-white/70 uppercase tracking-wider">TOURIST DESTINATIONS</span>
  </div>
  <div className="flex flex-col items-center justify-center px-1 border-l border-white/20 md:border-none">
  <Heart className="w-6 h-6 text-white/80 mb-2" />
@@ -279,9 +279,20 @@ export function ServiceDetails() {
  )}
  </div>
  
- {/* Complementary feature image nicely placed */}
+ {/* Complementary feature image/video nicely placed */}
  <div className="w-full h-[250px] mt-10 rounded-2xl overflow-hidden border border-slate-100">
+ {featureImage.endsWith('.mp4') ? (
+ <video
+ src={featureImage}
+ autoPlay
+ muted
+ loop
+ playsInline
+ className="w-full h-full object-cover"
+ />
+ ) : (
  <img loading="lazy" src={featureImage} alt={`${serviceTitle} detail`} className="w-full h-full object-cover" />
+ )}
  </div>
  </div>
 
@@ -376,7 +387,7 @@ export function ServiceDetails() {
  </div>
  <div className="flex items-center gap-3">
  <Phone className="w-5 h-5 shrink-0" />
- <p className="text-sm">+91 98765 43210</p>
+ <p className="text-sm">+91 7397329776</p>
  </div>
  </div>
 
