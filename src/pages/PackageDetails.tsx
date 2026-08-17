@@ -25698,10 +25698,24 @@ const PackageDetails = () => {
     const pkg = pkgRaw ? { ...pkgRaw, title: getPackageDisplayTitle(pkgRaw) } : undefined;
     const categoryInfo = getPackageCategory(pkg);
 
+    const faqSchema = pkg && pkg.faq && Array.isArray(pkg.faq) && pkg.faq.length > 0 ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": pkg.faq.map((item: any) => ({
+            "@type": "Question",
+            "name": item.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": item.answer
+            }
+        }))
+    } : undefined;
+
     useSEO(
         pkg ? pkg.title : 'Tour Package Details',
         pkg ? `Explore the best ${pkg.title} with Logaa Holidays.` : 'Tour Package Details',
-        pkg && pkg.keywords ? pkg.keywords : 'tour packages, logaa holidays'
+        pkg && pkg.keywords ? pkg.keywords : 'tour packages, logaa holidays',
+        faqSchema
     );
 
     const getRegionLink = () => {

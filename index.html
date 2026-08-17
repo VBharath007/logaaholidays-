@@ -3,14 +3,70 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
   <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="/logo.png" />
   <link rel="icon" type="image/png" sizes="512x512" href="/logo.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Logaa Holiday — cinematic, immersive travel experiences across India's most breathtaking destinations." />
-  <title>Logaa Holiday — Travel Beyond the Ordinary</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Logaa Holidays — Premium travel agency offering the best holiday packages, customized tours, and memorable travel experiences across India and beyond." />
+  <meta name="keywords" content="Logaa Holidays, travel agency, holiday packages, tour packages, honeymoon packages, travel experiences, India tours" />
+  <meta name="author" content="Logaa Holidays" />
+  <meta property="og:title" content="Logaa Holidays — Premium Tour & Holiday Packages" />
+  <meta property="og:description" content="Discover breathtaking destinations and exclusive holiday packages with Logaa Holidays. Book your dream trip today!" />
+  <meta property="og:type" content="website" />
+  
+  <title>Logaa Holidays — Premium Tour & Holiday Packages</title>
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Logaa Holidays",
+    "image": "https://logaaholidays.com/logo.png",
+    "@id": "https://logaaholidays.com",
+    "url": "https://logaaholidays.com",
+    "telephone": "",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "India",
+      "addressCountry": "IN"
+    },
+    "description": "Logaa Holidays offers premium and customized tour packages for families, couples, and adventurers."
+  }
+  </script>
+
+  <!-- Content Protection & DevTools Deterrent -->
+  <script>
+    // Disable right-click
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    // Disable image drag and drop
+    document.addEventListener('dragstart', event => {
+      if (event.target.nodeName.toUpperCase() === 'IMG') {
+        event.preventDefault();
+      }
+    });
+
+    // Basic DevTools and Save-As Deterrent
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'F12' || e.keyCode === 123) {
+        e.preventDefault();
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C' || e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67)) {
+        e.preventDefault();
+      }
+      if (e.ctrlKey && (e.key === 'U' || e.keyCode === 85)) {
+        e.preventDefault();
+      }
+      if (e.ctrlKey && (e.key === 'S' || e.keyCode === 83)) {
+        e.preventDefault();
+      }
+    });
+  </script>
 </head>
 
 <body>

@@ -126,6 +126,17 @@
     color: var(--theme-text);
     overflow-x: hidden;
     transition: background-color 1s ease-in-out;
+    user-select: none; /* Anti-copy */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  input, textarea, select, button {
+    user-select: auto;
+    -webkit-user-select: auto;
+    -moz-user-select: auto;
+    -ms-user-select: auto;
   }
 
   ::selection {

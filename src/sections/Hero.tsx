@@ -90,10 +90,10 @@ export function Hero({
         <div className="absolute inset-0 z-20 pointer-events-none flex items-center justify-center overflow-hidden">
           
           <div ref={text1Ref} className="absolute left-[10%] md:left-[15%] max-w-xl opacity-0 -translate-x-[100px]">
-            <h2 className="text-5xl md:text-7xl font-display font-extrabold text-white drop-shadow-2xl mb-4 leading-tight">
+            <h1 className="text-5xl md:text-7xl font-display font-extrabold text-white drop-shadow-2xl mb-4 leading-tight">
               Madurai <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">No. 1</span> <br/>
               Travel Agent
-            </h2>
+            </h1>
             <p className="text-xl md:text-2xl text-white/90 drop-shadow-lg font-medium">Your trusted local experts for unforgettable tour experiences.</p>
           </div>
 

@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-export function useSEO(title: string, description: string, keywords: string) {
+export function useSEO(title: string, description: string, keywords: string, schema?: object) {
   useEffect(() => {
     // Set document title
     document.title = title;
@@ -26,5 +26,26 @@ export function useSEO(title: string, description: string, keywords: string) {
       metaKeywords.setAttribute('content', keywords);
       document.head.appendChild(metaKeywords);
     }
-  }, [title, description, keywords]);
+
+    // Handle Schema markup
+    let schemaScript = document.getElementById('dynamic-schema');
+    if (schemaScript) {
+      schemaScript.remove();
+    }
+    
+    if (schema) {
+      schemaScript = document.createElement('script');
+      schemaScript.setAttribute('type', 'application/ld+json');
+      schemaScript.setAttribute('id', 'dynamic-schema');
+      schemaScript.textContent = JSON.stringify(schema);
+      document.head.appendChild(schemaScript);
+    }
+
+    return () => {
+      const currentSchema = document.getElementById('dynamic-schema');
+      if (currentSchema) {
+        currentSchema.remove();
+      }
+    };
+  }, [title, description, keywords, schema]);
 }
