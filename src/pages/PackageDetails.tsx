@@ -377,16 +377,60 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a romantic Coorg honeymoon package for 2 Nights and 3 Days with resort stay, private cab, Abbey Falls, Raja’s Seat and coffee-estate experiences.",
         "faq": [
             {
-                "question": "Is this Karnataka honeymoon package ideal for couples?",
-                "questionTamil": "இந்த கர்நாடகா ஹனிமூன் பேக்கேஜ் தம்பதிகளுக்கு ஏற்றதா?",
-                "answer": "Yes. The Karnataka honeymoon itinerary is designed for romance, featuring coffee-estate resorts, scenic waterfalls, and heritage stays. We include special honeymoon arrangements (flower decoration, candlelight dinner) and provide a private car so couples can travel at their own pace.",
-                "answerTamil": "ஆம். இந்த கர்நாடகா ஹனிமூன் பயணத் திட்டம் காதல் நிறைந்த அனுபவத்திற்காக வடிவமைக்கப்பட்டுள்ளது. காபி தோட்ட ரிசார்ட்கள், அழகிய நீர்வீழ்ச்சிகள் மற்றும் பாரம்பரிய தங்குமிடங்கள் இதில் அடங்கும். சிறப்பு ஹனிமூன் ஏற்பாடுகளை (மலர் அலங்காரம், மெழுகுவர்த்தி இரவு உணவு) உள்ளடக்கியதுடன், தம்பதிகள் நிதானமாகப் பயணிக்க ஒரு தனியார் காரையும் வழங்குகிறோம்."
+                "question": "Can I book the Premium Coorg Honeymoon Package – 2 Nights / 3 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "Logaa Holidays மூலம் மதுரையிலிருந்து Premium Coorg Honeymoon Package – 2 Nights / 3 Days-ஐ நான் முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं Logaa Holidays के साथ मदुरै से Premium Coorg Honeymoon Package – 2 Nights / 3 Days बुक कर सकता/सकती हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins from Mysore; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Mysore – Bylakuppe – Coorg – Mysore. The stay plan is Coorg – 2 Nights. Main experiences include Golden Temple and Bylakuppe visit, Kaveri Nisargadhama, Dubare Elephant Camp, Abbey Falls.",
+                "answerTamil": "ஆம். Logaa Holidays மதுரையை அடிப்படையாகக் கொண்ட tour operator ஆகும், மேலும் மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள தம்பதிகள் இந்த package-ஐ முன்பதிவு செய்யலாம். Land itinerary Mysore-ல் தொடங்குகிறது; final quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், மதுரையிலிருந்து அந்த pickup point-க்கு செல்லும் பயணம் தனியாக இருக்கும். திட்டமிடப்பட்ட route Mysore – Bylakuppe – Coorg – Mysore ஆகும். Stay plan Coorg – 2 Nights ஆகும். Main experiences include Golden Temple and Bylakuppe visit, Kaveri Nisargadhama, Dubare Elephant Camp, Abbey Falls.",
+                "answerHindi": "हाँ। Logaa Holidays मदुरै स्थित tour operator है, और मदुरै तथा पूरे तमिलनाडु से आने वाले couples इस package को बुक कर सकते हैं। Land itinerary Mysore से शुरू होती है; यदि final quotation में विशेष रूप से शामिल नहीं किया गया है, तो मदुरै से उस pickup point तक की यात्रा अलग से होगी। नियोजित route Mysore – Bylakuppe – Coorg – Mysore है। Stay plan Coorg – 2 Nights है। Main experiences include Golden Temple and Bylakuppe visit, Kaveri Nisargadhama, Dubare Elephant Camp, Abbey Falls."
             },
             {
-                "question": "Can we start the Karnataka honeymoon tour from Bangalore or Mysore?",
-                "questionTamil": "பெங்களூரு அல்லது மைசூரிலிருந்து கர்நாடகா ஹனிமூன் சுற்றுலாவைத் தொடங்க முடியுமா?",
-                "answer": "Absolutely. Bangalore and Mysore are the primary pickup points. If you arrive by flight or train from Chennai or another city, we will meet you at the Bangalore airport or Mysore railway station and begin the tour from there.",
-                "answerTamil": "நிச்சயமாக. பெங்களூரு மற்றும் மைசூர் ஆகியவை முக்கிய பிக்கப் இடங்கள். நீங்கள் சென்னை அல்லது பிற நகரங்களிலிருந்து விமானம் அல்லது ரயில் மூலம் வந்தால், பெங்களூரு விமான நிலையம் அல்லது மைசூர் ரயில் நிலையத்தில் உங்களைச் சந்தித்து அங்கிருந்து சுற்றுலாவைத் தொடங்குவோம்."
+                "question": "Is the Premium Coorg Honeymoon Package – 2 Nights / 3 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் ஹனிமூன் தம்பதிகளுக்கு Premium Coorg Honeymoon Package – 2 Nights / 3 Days பொருத்தமானதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले हनीमून कपल्स के लिए Premium Coorg Honeymoon Package – 2 Nights / 3 Days उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for Honeymoon Couples, Anniversary Couples and Short Romantic Holidays. It is structured as a Short Coffee Country Escape. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். இந்த itinerary மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள பிற நகரங்களிலிருந்து பயணம் செய்யும் couples-க்கு ஏற்றது. இந்த package Honeymoon Couples, Anniversary Couples and Short Romantic Holidays ஆகியோருக்கு ஏற்றது. இது Short Coffee Country Escape ஆக அமைக்கப்பட்டுள்ளது. Package pickup point-க்கு arrival மற்றும் departure travel final confirmed quotation-ஐப் பின்பற்றும்.",
+                "answerHindi": "हाँ। यह itinerary मदुरै और पूरे तमिलनाडु के अन्य शहरों से यात्रा करने वाले couples के लिए उपयुक्त है। यह package Honeymoon Couples, Anniversary Couples and Short Romantic Holidays के लिए उपयुक्त है। इसे Short Coffee Country Escape के रूप में तैयार किया गया है। Package pickup point तक arrival और departure travel final confirmed quotation के अनुसार होगा।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் accommodation மற்றும் breakfast சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस हनीमून package में accommodation और breakfast शामिल है?",
+                "answer": "Accommodation includes Two nights’ hotel or resort accommodation in Coorg; Accommodation in the selected room category. Daily breakfast.",
+                "answerTamil": "Accommodation includes Coorg-ல் Two nights’ hotel or resort accommodation; Accommodation in the selected room category. Daily breakfast.",
+                "answerHindi": "Accommodation includes Coorg में Two nights’ hotel or resort accommodation; Accommodation in the selected room category. Daily breakfast."
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் என்ன pickup, drop மற்றும் private transport சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस हनीमून package में कौन-कौन सी pickup, drop और private transport शामिल हैं?",
+                "answer": "Mysore pickup and drop. Private air-conditioned sedan. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "Mysore pickup and drop. Private air-conditioned sedan. மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளிலிருந்து பயணம் செய்யும் guests-க்கு, quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், listed pickup point-க்கு செல்லும் transport additional ஆகும்.",
+                "answerHindi": "Mysore pickup and drop. Private air-conditioned sedan. मदुरै या तमिलनाडु के अन्य हिस्सों से यात्रा करने वाले guests के लिए, यदि quotation में विशेष रूप से शामिल नहीं किया गया है, तो listed pickup point तक का transport additional होगा।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "Logaa Holidays Madurai honeymoon room decoration, cake அல்லது candlelight dinner ஏற்பாடு செய்ய முடியுமா?",
+                "questionHindi": "क्या Logaa Holidays Madurai honeymoon room decoration, cake या candlelight dinner की व्यवस्था कर सकता है?",
+                "answer": "Available romantic add-ons listed for this package include Welcome drink, Flower-bed decoration, Honeymoon cake, Fruit basket, Candlelight dinner. They are subject to the hotel, resort or operator policy and must be confirmed in the final quotation.",
+                "answerTamil": "Available romantic add-ons listed for this package include Welcome drink, Flower-bed decoration, Honeymoon cake, Fruit basket, Candlelight dinner. இவை hotel, resort அல்லது operator policy-க்கு உட்பட்டவை மற்றும் final quotation-ல் confirm செய்யப்பட வேண்டும்.",
+                "answerHindi": "Available romantic add-ons listed for this package include Welcome drink, Flower-bed decoration, Honeymoon cake, Fruit basket, Candlelight dinner. ये hotel, resort या operator policy के अधीन हैं और final quotation में confirm किए जाने चाहिए।"
+            },
+            {
+                "question": "What is not included in the package price?",
+                "questionTamil": "Package price-ல் எவை சேர்க்கப்படவில்லை?",
+                "questionHindi": "Package price में क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Flight, train and bus tickets, Lunch and dinner unless specifically included, Attraction entry tickets, Dubare boating and activity charges, Coffee plantation entry or guide charges, Nisargadhama entry charges. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "Key exclusions listed for this package include Flight, train and bus tickets, Lunch and dinner unless specifically included, Attraction entry tickets, Dubare boating and activity charges, Coffee plantation entry or guide charges, Nisargadhama entry charges. Inclusions-ல் குறிப்பாக குறிப்பிடப்படாத எந்த service-ம் extra ஆகக் கருதப்பட வேண்டும்.",
+                "answerHindi": "Key exclusions listed for this package include Flight, train and bus tickets, Lunch and dinner unless specifically included, Attraction entry tickets, Dubare boating and activity charges, Coffee plantation entry or guide charges, Nisargadhama entry charges. Inclusions के अंतर्गत विशेष रूप से उल्लेख नहीं की गई किसी भी service को extra माना जाना चाहिए।"
+            },
+            {
+                "question": "What are the main sightseeing experiences in this Karnataka honeymoon package?",
+                "questionTamil": "இந்த Karnataka honeymoon package-ல் முக்கியமான sightseeing experiences எவை?",
+                "questionHindi": "इस Karnataka honeymoon package में मुख्य sightseeing experiences कौन-कौन से हैं?",
+                "answer": "The package highlights include Golden Temple and Bylakuppe visit, Kaveri Nisargadhama, Dubare Elephant Camp, Abbey Falls, Raja’s Seat, Namdroling Monastery.",
+                "answerTamil": "The package highlights include Golden Temple and Bylakuppe visit, Kaveri Nisargadhama, Dubare Elephant Camp, Abbey Falls, Raja’s Seat, Namdroling Monastery.",
+                "answerHindi": "The package highlights include Golden Temple and Bylakuppe visit, Kaveri Nisargadhama, Dubare Elephant Camp, Abbey Falls, Raja’s Seat, Namdroling Monastery."
             }
         ],
         "id": "9301"
@@ -533,16 +577,60 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a romantic Mysore and Coorg honeymoon package for 3 Nights and 4 Days with palace, waterfalls, coffee estates, resort stay and private cab.",
         "faq": [
             {
-                "question": "Is this Karnataka honeymoon package ideal for couples?",
-                "questionTamil": "இந்த கர்நாடகா ஹனிமூன் பேக்கேஜ் தம்பதிகளுக்கு ஏற்றதா?",
-                "answer": "Yes. The Karnataka honeymoon itinerary is designed for romance, featuring coffee-estate resorts, scenic waterfalls, and heritage stays. We include special honeymoon arrangements (flower decoration, candlelight dinner) and provide a private car so couples can travel at their own pace.",
-                "answerTamil": "ஆம். இந்த கர்நாடகா ஹனிமூன் பயணத் திட்டம் காதல் நிறைந்த அனுபவத்திற்காக வடிவமைக்கப்பட்டுள்ளது. காபி தோட்ட ரிசார்ட்கள், அழகிய நீர்வீழ்ச்சிகள் மற்றும் பாரம்பரிய தங்குமிடங்கள் இதில் அடங்கும். சிறப்பு ஹனிமூன் ஏற்பாடுகளை (மலர் அலங்காரம், மெழுகுவர்த்தி இரவு உணவு) உள்ளடக்கியதுடன், தம்பதிகள் நிதானமாகப் பயணிக்க ஒரு தனியார் காரையும் வழங்குகிறோம்."
+                "question": "Can I book the Premium Mysore and Coorg Honeymoon Package – 3 Nights / 4 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "Logaa Holidays மூலம் மதுரையிலிருந்து Premium Mysore and Coorg Honeymoon Package – 3 Nights / 4 Days-ஐ நான் முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं Logaa Holidays के साथ मदुरै से Premium Mysore and Coorg Honeymoon Package – 3 Nights / 4 Days बुक कर सकता/सकती हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins from Mysore; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Mysore – Srirangapatna – Bylakuppe – Coorg – Mysore. The stay plan is Mysore 1 Night + Coorg 2 Nights. Main experiences include Mysore Palace and Chamundi Hills, Brindavan Gardens, Golden Temple, Bylakuppe, Nisargadhama and Dubare.",
+                "answerTamil": "ஆம். Logaa Holidays மதுரையை அடிப்படையாகக் கொண்ட tour operator ஆகும், மேலும் மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள தம்பதிகள் இந்த package-ஐ முன்பதிவு செய்யலாம். Land itinerary Mysore-ல் தொடங்குகிறது; final quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், மதுரையிலிருந்து அந்த pickup point-க்கு செல்லும் பயணம் தனியாக இருக்கும். திட்டமிடப்பட்ட route Mysore – Srirangapatna – Bylakuppe – Coorg – Mysore ஆகும். Stay plan Mysore 1 Night + Coorg 2 Nights ஆகும். Main experiences include Mysore Palace and Chamundi Hills, Brindavan Gardens, Golden Temple, Bylakuppe, Nisargadhama and Dubare.",
+                "answerHindi": "हाँ। Logaa Holidays मदुरै स्थित tour operator है, और मदुरै तथा पूरे तमिलनाडु से आने वाले couples इस package को बुक कर सकते हैं। Land itinerary Mysore से शुरू होती है; यदि final quotation में विशेष रूप से शामिल नहीं किया गया है, तो मदुरै से उस pickup point तक की यात्रा अलग से होगी। नियोजित route Mysore – Srirangapatna – Bylakuppe – Coorg – Mysore है। Stay plan Mysore 1 Night + Coorg 2 Nights है। Main experiences include Mysore Palace and Chamundi Hills, Brindavan Gardens, Golden Temple, Bylakuppe, Nisargadhama and Dubare."
             },
             {
-                "question": "Can we start the Karnataka honeymoon tour from Bangalore or Mysore?",
-                "questionTamil": "பெங்களூரு அல்லது மைசூரிலிருந்து கர்நாடகா ஹனிமூன் சுற்றுலாவைத் தொடங்க முடியுமா?",
-                "answer": "Absolutely. Bangalore and Mysore are the primary pickup points. If you arrive by flight or train from Chennai or another city, we will meet you at the Bangalore airport or Mysore railway station and begin the tour from there.",
-                "answerTamil": "நிச்சயமாக. பெங்களூரு மற்றும் மைசூர் ஆகியவை முக்கிய பிக்கப் இடங்கள். நீங்கள் சென்னை அல்லது பிற நகரங்களிலிருந்து விமானம் அல்லது ரயில் மூலம் வந்தால், பெங்களூரு விமான நிலையம் அல்லது மைசூர் ரயில் நிலையத்தில் உங்களைச் சந்தித்து அங்கிருந்து சுற்றுலாவைத் தொடங்குவோம்."
+                "question": "Is the Premium Mysore and Coorg Honeymoon Package – 3 Nights / 4 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் ஹனிமூன் தம்பதிகளுக்கு Premium Mysore and Coorg Honeymoon Package – 3 Nights / 4 Days பொருத்தமானதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले हनीमून कपल्स के लिए Premium Mysore and Coorg Honeymoon Package – 3 Nights / 4 Days उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for First-Time Karnataka Couples and Honeymoon Travellers. It is structured as a Royal Heritage and Coffee Hills. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். இந்த itinerary மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள பிற நகரங்களிலிருந்து பயணம் செய்யும் couples-க்கு ஏற்றது. இந்த package First-Time Karnataka Couples மற்றும் Honeymoon Travellers ஆகியோருக்கு ஏற்றது. இது Royal Heritage and Coffee Hills ஆக அமைக்கப்பட்டுள்ளது. Package pickup point-க்கு arrival மற்றும் departure travel final confirmed quotation-ஐப் பின்பற்றும்.",
+                "answerHindi": "हाँ। यह itinerary मदुरै और पूरे तमिलनाडु के अन्य शहरों से यात्रा करने वाले couples के लिए उपयुक्त है। यह package First-Time Karnataka Couples और Honeymoon Travellers के लिए उपयुक्त है। इसे Royal Heritage and Coffee Hills के रूप में तैयार किया गया है। Package pickup point तक arrival और departure travel final confirmed quotation के अनुसार होगा।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் accommodation மற்றும் breakfast சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस हनीमून package में accommodation और breakfast शामिल है?",
+                "answer": "Accommodation includes One night’s accommodation in Mysore; Two nights’ accommodation in Coorg. Daily breakfast.",
+                "answerTamil": "Accommodation includes Mysore-ல் One night’s accommodation; Coorg-ல் Two nights’ accommodation. Daily breakfast.",
+                "answerHindi": "Accommodation includes Mysore में One night’s accommodation; Coorg में Two nights’ accommodation. Daily breakfast."
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் என்ன pickup, drop மற்றும் private transport சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस हनीमून package में कौन-कौन सी pickup, drop और private transport शामिल हैं?",
+                "answer": "Mysore pickup and drop. Private air-conditioned sedan. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "Mysore pickup and drop. Private air-conditioned sedan. மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளிலிருந்து பயணம் செய்யும் guests-க்கு, quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், listed pickup point-க்கு செல்லும் transport additional ஆகும்.",
+                "answerHindi": "Mysore pickup and drop. Private air-conditioned sedan. मदुरै या तमिलनाडु के अन्य हिस्सों से यात्रा करने वाले guests के लिए, यदि quotation में विशेष रूप से शामिल नहीं किया गया है, तो listed pickup point तक का transport additional होगा।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "Logaa Holidays Madurai honeymoon room decoration, cake அல்லது candlelight dinner ஏற்பாடு செய்ய முடியுமா?",
+                "questionHindi": "क्या Logaa Holidays Madurai honeymoon room decoration, cake या candlelight dinner की व्यवस्था कर सकता है?",
+                "answer": "Available romantic add-ons listed for this package include Flower-bed decoration, Honeymoon cake, Fruit basket, Candlelight dinner. They are subject to the hotel, resort or operator policy and must be confirmed in the final quotation.",
+                "answerTamil": "Available romantic add-ons listed for this package include Flower-bed decoration, Honeymoon cake, Fruit basket, Candlelight dinner. இவை hotel, resort அல்லது operator policy-க்கு உட்பட்டவை மற்றும் final quotation-ல் confirm செய்யப்பட வேண்டும்.",
+                "answerHindi": "Available romantic add-ons listed for this package include Flower-bed decoration, Honeymoon cake, Fruit basket, Candlelight dinner. ये hotel, resort या operator policy के अधीन हैं और final quotation में confirm किए जाने चाहिए।"
+            },
+            {
+                "question": "What is not included in the package price?",
+                "questionTamil": "Package price-ல் எவை சேர்க்கப்படவில்லை?",
+                "questionHindi": "Package price में क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Flight, train and bus tickets, Lunch and dinner unless included, Mysore Palace entry charges, Boating charges, Guide charges, Brindavan Gardens entry charges. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "Key exclusions listed for this package include Flight, train and bus tickets, Lunch and dinner unless included, Mysore Palace entry charges, Boating charges, Guide charges, Brindavan Gardens entry charges. Inclusions-ல் குறிப்பாக குறிப்பிடப்படாத எந்த service-ம் extra ஆகக் கருதப்பட வேண்டும்.",
+                "answerHindi": "Key exclusions listed for this package include Flight, train and bus tickets, Lunch and dinner unless included, Mysore Palace entry charges, Boating charges, Guide charges, Brindavan Gardens entry charges. Inclusions के अंतर्गत विशेष रूप से उल्लेख नहीं की गई किसी भी service को extra माना जाना चाहिए।"
+            },
+            {
+                "question": "What are the main sightseeing experiences in this Karnataka honeymoon package?",
+                "questionTamil": "இந்த Karnataka honeymoon package-ல் முக்கியமான sightseeing experiences எவை?",
+                "questionHindi": "इस Karnataka honeymoon package में मुख्य sightseeing experiences कौन-कौन से हैं?",
+                "answer": "The package highlights include Mysore Palace and Chamundi Hills, Brindavan Gardens, Golden Temple, Bylakuppe, Nisargadhama and Dubare, Abbey Falls and Raja’s Seat, Mysore Palace.",
+                "answerTamil": "The package highlights include Mysore Palace and Chamundi Hills, Brindavan Gardens, Golden Temple, Bylakuppe, Nisargadhama and Dubare, Abbey Falls and Raja’s Seat, Mysore Palace.",
+                "answerHindi": "The package highlights include Mysore Palace and Chamundi Hills, Brindavan Gardens, Golden Temple, Bylakuppe, Nisargadhama and Dubare, Abbey Falls and Raja’s Seat, Mysore Palace."
             }
         ],
         "id": "9302"
@@ -703,16 +791,60 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a 4 Nights 5 Days Coorg and Chikmagalur honeymoon package with coffee-estate resorts, waterfalls, mountains, heritage sites and private cab.",
         "faq": [
             {
-                "question": "Is this Karnataka honeymoon package ideal for couples?",
-                "questionTamil": "இந்த கர்நாடகா ஹனிமூன் பேக்கேஜ் தம்பதிகளுக்கு ஏற்றதா?",
-                "answer": "Yes. The Karnataka honeymoon itinerary is designed for romance, featuring coffee-estate resorts, scenic waterfalls, and heritage stays. We include special honeymoon arrangements (flower decoration, candlelight dinner) and provide a private car so couples can travel at their own pace.",
-                "answerTamil": "ஆம். இந்த கர்நாடகா ஹனிமூன் பயணத் திட்டம் காதல் நிறைந்த அனுபவத்திற்காக வடிவமைக்கப்பட்டுள்ளது. காபி தோட்ட ரிசார்ட்கள், அழகிய நீர்வீழ்ச்சிகள் மற்றும் பாரம்பரிய தங்குமிடங்கள் இதில் அடங்கும். சிறப்பு ஹனிமூன் ஏற்பாடுகளை (மலர் அலங்காரம், மெழுகுவர்த்தி இரவு உணவு) உள்ளடக்கியதுடன், தம்பதிகள் நிதானமாகப் பயணிக்க ஒரு தனியார் காரையும் வழங்குகிறோம்."
+                "question": "Can I book the Premium Coorg and Chikmagalur Honeymoon – 4 Nights / 5 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "Logaa Holidays மூலம் மதுரையிலிருந்து Premium Coorg and Chikmagalur Honeymoon – 4 Nights / 5 Days-ஐ நான் முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं Logaa Holidays के साथ मदुरै से Premium Coorg and Chikmagalur Honeymoon – 4 Nights / 5 Days बुक कर सकता/सकती हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins from Mysore; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Mysore – Coorg – Belur – Halebidu – Chikmagalur – Bangalore. The stay plan is Coorg 2 Nights + Chikmagalur 2 Nights. Main experiences include Abbey Falls and Raja’s Seat, Belur and Halebidu heritage sites, Mullayanagiri Peak, Baba Budangiri.",
+                "answerTamil": "ஆம். Logaa Holidays மதுரையை அடிப்படையாகக் கொண்ட tour operator ஆகும், மேலும் மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள தம்பதிகள் இந்த package-ஐ முன்பதிவு செய்யலாம். Land itinerary Mysore-ல் தொடங்குகிறது; final quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், மதுரையிலிருந்து அந்த pickup point-க்கு செல்லும் பயணம் தனியாக இருக்கும். திட்டமிடப்பட்ட route Mysore – Coorg – Belur – Halebidu – Chikmagalur – Bangalore ஆகும். Stay plan Coorg 2 Nights + Chikmagalur 2 Nights ஆகும். Main experiences include Abbey Falls and Raja’s Seat, Belur and Halebidu heritage sites, Mullayanagiri Peak, Baba Budangiri.",
+                "answerHindi": "हाँ। Logaa Holidays मदुरै स्थित tour operator है, और मदुरै तथा पूरे तमिलनाडु से आने वाले couples इस package को बुक कर सकते हैं। Land itinerary Mysore से शुरू होती है; यदि final quotation में विशेष रूप से शामिल नहीं किया गया है, तो मदुरै से उस pickup point तक की यात्रा अलग से होगी। नियोजित route Mysore – Coorg – Belur – Halebidu – Chikmagalur – Bangalore है। Stay plan Coorg 2 Nights + Chikmagalur 2 Nights है। Main experiences include Abbey Falls and Raja’s Seat, Belur and Halebidu heritage sites, Mullayanagiri Peak, Baba Budangiri."
             },
             {
-                "question": "Can we start the Karnataka honeymoon tour from Bangalore or Mysore?",
-                "questionTamil": "பெங்களூரு அல்லது மைசூரிலிருந்து கர்நாடகா ஹனிமூன் சுற்றுலாவைத் தொடங்க முடியுமா?",
-                "answer": "Absolutely. Bangalore and Mysore are the primary pickup points. If you arrive by flight or train from Chennai or another city, we will meet you at the Bangalore airport or Mysore railway station and begin the tour from there.",
-                "answerTamil": "நிச்சயமாக. பெங்களூரு மற்றும் மைசூர் ஆகியவை முக்கிய பிக்கப் இடங்கள். நீங்கள் சென்னை அல்லது பிற நகரங்களிலிருந்து விமானம் அல்லது ரயில் மூலம் வந்தால், பெங்களூரு விமான நிலையம் அல்லது மைசூர் ரயில் நிலையத்தில் உங்களைச் சந்தித்து அங்கிருந்து சுற்றுலாவைத் தொடங்குவோம்."
+                "question": "Is the Premium Coorg and Chikmagalur Honeymoon – 4 Nights / 5 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் ஹனிமூன் தம்பதிகளுக்கு Premium Coorg and Chikmagalur Honeymoon – 4 Nights / 5 Days பொருத்தமானதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले हनीमून कपल्स के लिए Premium Coorg and Chikmagalur Honeymoon – 4 Nights / 5 Days उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for Honeymoon Couples, Nature Lovers and Premium Resort Travellers. It is structured as a Coffee Estates and Mountain Romance. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். இந்த itinerary மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள பிற நகரங்களிலிருந்து பயணம் செய்யும் couples-க்கு ஏற்றது. இந்த package Honeymoon Couples, Nature Lovers and Premium Resort Travellers ஆகியோருக்கு ஏற்றது. இது Coffee Estates and Mountain Romance ஆக அமைக்கப்பட்டுள்ளது. Package pickup point-க்கு arrival மற்றும் departure travel final confirmed quotation-ஐப் பின்பற்றும்.",
+                "answerHindi": "हाँ। यह itinerary मदुरै और पूरे तमिलनाडु के अन्य शहरों से यात्रा करने वाले couples के लिए उपयुक्त है। यह package Honeymoon Couples, Nature Lovers and Premium Resort Travellers के लिए उपयुक्त है। इसे Coffee Estates and Mountain Romance के रूप में तैयार किया गया है। Package pickup point तक arrival और departure travel final confirmed quotation के अनुसार होगा।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் accommodation மற்றும் breakfast சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस हनीमून package में accommodation और breakfast शामिल है?",
+                "answer": "Accommodation includes Two nights’ accommodation in Coorg; Two nights’ accommodation in Chikmagalur. Daily breakfast.",
+                "answerTamil": "Accommodation includes Coorg-ல் Two nights’ accommodation; Chikmagalur-ல் Two nights’ accommodation. Daily breakfast.",
+                "answerHindi": "Accommodation includes Coorg में Two nights’ accommodation; Chikmagalur में Two nights’ accommodation. Daily breakfast."
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் என்ன pickup, drop மற்றும் private transport சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस हनीमून package में कौन-कौन सी pickup, drop और private transport शामिल हैं?",
+                "answer": "Private air-conditioned sedan. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "Private air-conditioned sedan. மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளிலிருந்து பயணம் செய்யும் guests-க்கு, quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், listed pickup point-க்கு செல்லும் transport additional ஆகும்.",
+                "answerHindi": "Private air-conditioned sedan. मदुरै या तमिलनाडु के अन्य हिस्सों से यात्रा करने वाले guests के लिए, यदि quotation में विशेष रूप से शामिल नहीं किया गया है, तो listed pickup point तक का transport additional होगा।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "Logaa Holidays Madurai honeymoon room decoration, cake அல்லது candlelight dinner ஏற்பாடு செய்ய முடியுமா?",
+                "questionHindi": "क्या Logaa Holidays Madurai honeymoon room decoration, cake या candlelight dinner की व्यवस्था कर सकता है?",
+                "answer": "Available romantic add-ons listed for this package include Flower decoration, Honeymoon cake, Candlelight dinner. They are subject to the hotel, resort or operator policy and must be confirmed in the final quotation.",
+                "answerTamil": "Available romantic add-ons listed for this package include Flower decoration, Honeymoon cake, Candlelight dinner. இவை hotel, resort அல்லது operator policy-க்கு உட்பட்டவை மற்றும் final quotation-ல் confirm செய்யப்பட வேண்டும்.",
+                "answerHindi": "Available romantic add-ons listed for this package include Flower decoration, Honeymoon cake, Candlelight dinner. ये hotel, resort या operator policy के अधीन हैं और final quotation में confirm किए जाने चाहिए।"
+            },
+            {
+                "question": "What is not included in the package price?",
+                "questionTamil": "Package price-ல் எவை சேர்க்கப்படவில்லை?",
+                "questionHindi": "Package price में क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Flight, train and bus tickets, Lunch and dinner unless included, Monument and attraction entry tickets, Boating charges, Guide charges, Dubare activities. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "Key exclusions listed for this package include Flight, train and bus tickets, Lunch and dinner unless included, Monument and attraction entry tickets, Boating charges, Guide charges, Dubare activities. Inclusions-ல் குறிப்பாக குறிப்பிடப்படாத எந்த service-ம் extra ஆகக் கருதப்பட வேண்டும்.",
+                "answerHindi": "Key exclusions listed for this package include Flight, train and bus tickets, Lunch and dinner unless included, Monument and attraction entry tickets, Boating charges, Guide charges, Dubare activities. Inclusions के अंतर्गत विशेष रूप से उल्लेख नहीं की गई किसी भी service को extra माना जाना चाहिए।"
+            },
+            {
+                "question": "What are the main sightseeing experiences in this Karnataka honeymoon package?",
+                "questionTamil": "இந்த Karnataka honeymoon package-ல் முக்கியமான sightseeing experiences எவை?",
+                "questionHindi": "इस Karnataka honeymoon package में मुख्य sightseeing experiences कौन-कौन से हैं?",
+                "answer": "The package highlights include Abbey Falls and Raja’s Seat, Belur and Halebidu heritage sites, Mullayanagiri Peak, Baba Budangiri, Hirekolale Lake, Namdroling Monastery.",
+                "answerTamil": "The package highlights include Abbey Falls and Raja’s Seat, Belur and Halebidu heritage sites, Mullayanagiri Peak, Baba Budangiri, Hirekolale Lake, Namdroling Monastery.",
+                "answerHindi": "The package highlights include Abbey Falls and Raja’s Seat, Belur and Halebidu heritage sites, Mullayanagiri Peak, Baba Budangiri, Hirekolale Lake, Namdroling Monastery."
             }
         ],
         "id": "9303"
@@ -884,16 +1016,60 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a premium Karnataka honeymoon package for 5 Nights and 6 Days covering Mysore, Coorg and Chikmagalur with resorts, sightseeing and private cab.",
         "faq": [
             {
-                "question": "Is this Karnataka honeymoon package ideal for couples?",
-                "questionTamil": "இந்த கர்நாடகா ஹனிமூன் பேக்கேஜ் தம்பதிகளுக்கு ஏற்றதா?",
-                "answer": "Yes. The Karnataka honeymoon itinerary is designed for romance, featuring coffee-estate resorts, scenic waterfalls, and heritage stays. We include special honeymoon arrangements (flower decoration, candlelight dinner) and provide a private car so couples can travel at their own pace.",
-                "answerTamil": "ஆம். இந்த கர்நாடகா ஹனிமூன் பயணத் திட்டம் காதல் நிறைந்த அனுபவத்திற்காக வடிவமைக்கப்பட்டுள்ளது. காபி தோட்ட ரிசார்ட்கள், அழகிய நீர்வீழ்ச்சிகள் மற்றும் பாரம்பரிய தங்குமிடங்கள் இதில் அடங்கும். சிறப்பு ஹனிமூன் ஏற்பாடுகளை (மலர் அலங்காரம், மெழுகுவர்த்தி இரவு உணவு) உள்ளடக்கியதுடன், தம்பதிகள் நிதானமாகப் பயணிக்க ஒரு தனியார் காரையும் வழங்குகிறோம்."
+                "question": "Can I book the Premium Karnataka Honeymoon Package – 5 Nights / 6 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "Logaa Holidays மூலம் மதுரையிலிருந்து Premium Karnataka Honeymoon Package – 5 Nights / 6 Days-ஐ நான் முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं Logaa Holidays के साथ मदुरै से Premium Karnataka Honeymoon Package – 5 Nights / 6 Days बुक कर सकता/सकती हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins from Bangalore; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Bangalore – Mysore – Coorg – Chikmagalur – Bangalore. The stay plan is Mysore 1 Night + Coorg 2 Nights + Chikmagalur 2 Nights. Main experiences include Mysore Palace and Brindavan Gardens, Golden Temple and Dubare, Abbey Falls and Raja’s Seat, Belur and Halebidu.",
+                "answerTamil": "ஆம். Logaa Holidays மதுரையை அடிப்படையாகக் கொண்ட tour operator ஆகும், மேலும் மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள தம்பதிகள் இந்த package-ஐ முன்பதிவு செய்யலாம். Land itinerary Bangalore-ல் தொடங்குகிறது; final quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், மதுரையிலிருந்து அந்த pickup point-க்கு செல்லும் பயணம் தனியாக இருக்கும். திட்டமிடப்பட்ட route Bangalore – Mysore – Coorg – Chikmagalur – Bangalore ஆகும். Stay plan Mysore 1 Night + Coorg 2 Nights + Chikmagalur 2 Nights ஆகும். Main experiences include Mysore Palace and Brindavan Gardens, Golden Temple and Dubare, Abbey Falls and Raja’s Seat, Belur and Halebidu.",
+                "answerHindi": "हाँ। Logaa Holidays मदुरै स्थित tour operator है, और मदुरै तथा पूरे तमिलनाडु से आने वाले couples इस package को बुक कर सकते हैं। Land itinerary Bangalore से शुरू होती है; यदि final quotation में विशेष रूप से शामिल नहीं किया गया है, तो मदुरै से उस pickup point तक की यात्रा अलग से होगी। नियोजित route Bangalore – Mysore – Coorg – Chikmagalur – Bangalore है। Stay plan Mysore 1 Night + Coorg 2 Nights + Chikmagalur 2 Nights है। Main experiences include Mysore Palace and Brindavan Gardens, Golden Temple and Dubare, Abbey Falls and Raja’s Seat, Belur and Halebidu."
             },
             {
-                "question": "Can we start the Karnataka honeymoon tour from Bangalore or Mysore?",
-                "questionTamil": "பெங்களூரு அல்லது மைசூரிலிருந்து கர்நாடகா ஹனிமூன் சுற்றுலாவைத் தொடங்க முடியுமா?",
-                "answer": "Absolutely. Bangalore and Mysore are the primary pickup points. If you arrive by flight or train from Chennai or another city, we will meet you at the Bangalore airport or Mysore railway station and begin the tour from there.",
-                "answerTamil": "நிச்சயமாக. பெங்களூரு மற்றும் மைசூர் ஆகியவை முக்கிய பிக்கப் இடங்கள். நீங்கள் சென்னை அல்லது பிற நகரங்களிலிருந்து விமானம் அல்லது ரயில் மூலம் வந்தால், பெங்களூரு விமான நிலையம் அல்லது மைசூர் ரயில் நிலையத்தில் உங்களைச் சந்தித்து அங்கிருந்து சுற்றுலாவைத் தொடங்குவோம்."
+                "question": "Is the Premium Karnataka Honeymoon Package – 5 Nights / 6 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் ஹனிமூன் தம்பதிகளுக்கு Premium Karnataka Honeymoon Package – 5 Nights / 6 Days பொருத்தமானதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले हनीमून कपल्स के लिए Premium Karnataka Honeymoon Package – 5 Nights / 6 Days उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for Premium Honeymoon Couples and Long Romantic Holidays. It is structured as a Complete Royal and Coffee Country Honeymoon. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். இந்த itinerary மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள பிற நகரங்களிலிருந்து பயணம் செய்யும் couples-க்கு ஏற்றது. இந்த package Premium Honeymoon Couples மற்றும் Long Romantic Holidays ஆகியோருக்கு ஏற்றது. இது Complete Royal and Coffee Country Honeymoon ஆக அமைக்கப்பட்டுள்ளது. Package pickup point-க்கு arrival மற்றும் departure travel final confirmed quotation-ஐப் பின்பற்றும்.",
+                "answerHindi": "हाँ। यह itinerary मदुरै और पूरे तमिलनाडु के अन्य शहरों से यात्रा करने वाले couples के लिए उपयुक्त है। यह package Premium Honeymoon Couples और Long Romantic Holidays के लिए उपयुक्त है। इसे Complete Royal and Coffee Country Honeymoon के रूप में तैयार किया गया है। Package pickup point तक arrival और departure travel final confirmed quotation के अनुसार होगा।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் accommodation மற்றும் breakfast சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस हनीमून package में accommodation और breakfast शामिल है?",
+                "answer": "Accommodation includes One night’s accommodation in Mysore; Two nights’ accommodation in Coorg; Two nights’ accommodation in Chikmagalur. Daily breakfast.",
+                "answerTamil": "Accommodation includes Mysore-ல் One night’s accommodation; Coorg-ல் Two nights’ accommodation; Chikmagalur-ல் Two nights’ accommodation. Daily breakfast.",
+                "answerHindi": "Accommodation includes Mysore में One night’s accommodation; Coorg में Two nights’ accommodation; Chikmagalur में Two nights’ accommodation. Daily breakfast."
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் என்ன pickup, drop மற்றும் private transport சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस हनीमून package में कौन-कौन सी pickup, drop और private transport शामिल हैं?",
+                "answer": "Bangalore pickup and drop. Private air-conditioned sedan. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "Bangalore pickup and drop. Private air-conditioned sedan. மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளிலிருந்து பயணம் செய்யும் guests-க்கு, quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், listed pickup point-க்கு செல்லும் transport additional ஆகும்.",
+                "answerHindi": "Bangalore pickup and drop. Private air-conditioned sedan. मदुरै या तमिलनाडु के अन्य हिस्सों से यात्रा करने वाले guests के लिए, यदि quotation में विशेष रूप से शामिल नहीं किया गया है, तो listed pickup point तक का transport additional होगा।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "Logaa Holidays Madurai honeymoon room decoration, cake அல்லது candlelight dinner ஏற்பாடு செய்ய முடியுமா?",
+                "questionHindi": "क्या Logaa Holidays Madurai honeymoon room decoration, cake या candlelight dinner की व्यवस्था कर सकता है?",
+                "answer": "Available romantic add-ons listed for this package include Candlelight dinner, Flower decoration, Honeymoon cake, Couple photoshoot. They are subject to the hotel, resort or operator policy and must be confirmed in the final quotation.",
+                "answerTamil": "Available romantic add-ons listed for this package include Candlelight dinner, Flower decoration, Honeymoon cake, Couple photoshoot. இவை hotel, resort அல்லது operator policy-க்கு உட்பட்டவை மற்றும் final quotation-ல் confirm செய்யப்பட வேண்டும்.",
+                "answerHindi": "Available romantic add-ons listed for this package include Candlelight dinner, Flower decoration, Honeymoon cake, Couple photoshoot. ये hotel, resort या operator policy के अधीन हैं और final quotation में confirm किए जाने चाहिए।"
+            },
+            {
+                "question": "What is not included in the package price?",
+                "questionTamil": "Package price-ல் எவை சேர்க்கப்படவில்லை?",
+                "questionHindi": "Package price में क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Flight, train and bus tickets, Lunch and dinner unless included, Monument and attraction entry tickets, Boating and adventure activities, Guide charges, Mysore Palace entry. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "Key exclusions listed for this package include Flight, train and bus tickets, Lunch and dinner unless included, Monument and attraction entry tickets, Boating and adventure activities, Guide charges, Mysore Palace entry. Inclusions-ல் குறிப்பாக குறிப்பிடப்படாத எந்த service-ம் extra ஆகக் கருதப்பட வேண்டும்.",
+                "answerHindi": "Key exclusions listed for this package include Flight, train and bus tickets, Lunch and dinner unless included, Monument and attraction entry tickets, Boating and adventure activities, Guide charges, Mysore Palace entry. Inclusions के अंतर्गत विशेष रूप से उल्लेख नहीं की गई किसी भी service को extra माना जाना चाहिए।"
+            },
+            {
+                "question": "What are the main sightseeing experiences in this Karnataka honeymoon package?",
+                "questionTamil": "இந்த Karnataka honeymoon package-ல் முக்கியமான sightseeing experiences எவை?",
+                "questionHindi": "इस Karnataka honeymoon package में मुख्य sightseeing experiences कौन-कौन से हैं?",
+                "answer": "The package highlights include Mysore Palace and Brindavan Gardens, Golden Temple and Dubare, Abbey Falls and Raja’s Seat, Belur and Halebidu, Mullayanagiri and Baba Budangiri, Namdroling Monastery.",
+                "answerTamil": "The package highlights include Mysore Palace and Brindavan Gardens, Golden Temple and Dubare, Abbey Falls and Raja’s Seat, Belur and Halebidu, Mullayanagiri and Baba Budangiri, Namdroling Monastery.",
+                "answerHindi": "The package highlights include Mysore Palace and Brindavan Gardens, Golden Temple and Dubare, Abbey Falls and Raja’s Seat, Belur and Halebidu, Mullayanagiri and Baba Budangiri, Namdroling Monastery."
             }
         ],
         "id": "9304"
@@ -1044,16 +1220,60 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a 4 Nights 5 Days Goa honeymoon package with North Goa, South Goa, resort stay, couple leisure day and optional candlelight dinner.",
         "faq": [
             {
-                "question": "Is this Goa honeymoon package romantic for couples?",
-                "questionTamil": "இந்த கோவா பேக்கேஜ் ஹனிமூன் தம்பதிகளுக்கு காதல் நிறைந்ததாக இருக்குமா?",
-                "answer": "Yes. The Goa itinerary focuses on the best beaches and resorts. We pick quieter beach stays (e.g. South Goa) with sunset views, ideal for couples. You can also enjoy dinner cruises or scenic coastal drives. We provide a private guide and car, so you travel at leisure.",
-                "answerTamil": "ஆம். கோவா பயணத் திட்டம் சிறந்த கடற்கரைகள் மற்றும் ரிசார்ட்களில் கவனம் செலுத்துகிறது. தம்பதிகளுக்கு ஏற்ற சூரிய அஸ்தமனக் காட்சிகளுடன் அமைதியான கடற்கரை தங்குமிடங்களை (உதாரணமாக, தெற்கு கோவா) தேர்வு செய்கிறோம். டின்னர் க்ரூஸ் அல்லது அழகிய கடலோர சாலைப் பயணங்களையும் அனுபவிக்கலாம். தனிப்பட்ட வழிகாட்டி/கார் வசதியை வழங்குவதால், நீங்கள் நிதானமாகப் பயணம் செய்யலாம்."
+                "question": "Can I book the Goa Honeymoon Package – 4 Nights / 5 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "Logaa Holidays மூலம் மதுரையிலிருந்து Goa Honeymoon Package – 4 Nights / 5 Days-ஐ நான் முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं Logaa Holidays के साथ मदुरै से Goa Honeymoon Package – 4 Nights / 5 Days बुक कर सकता/सकती हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins in Goa; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Goa Arrival – North Goa – South Goa – Couple Leisure – Departure. Main experiences include North Goa sightseeing, South Goa sightseeing, Fort Aguada, Sinquerim Beach.",
+                "answerTamil": "ஆம். Logaa Holidays மதுரையை அடிப்படையாகக் கொண்ட tour operator ஆகும், மேலும் மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள தம்பதிகள் இந்த package-ஐ முன்பதிவு செய்யலாம். Land itinerary Goa-வில் தொடங்குகிறது; final quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், மதுரையிலிருந்து அந்த pickup point-க்கு செல்லும் பயணம் தனியாக இருக்கும். திட்டமிடப்பட்ட route Goa Arrival – North Goa – South Goa – Couple Leisure – Departure ஆகும். Main experiences include North Goa sightseeing, South Goa sightseeing, Fort Aguada, Sinquerim Beach.",
+                "answerHindi": "हाँ। Logaa Holidays मदुरै स्थित tour operator है, और मदुरै तथा पूरे तमिलनाडु से आने वाले couples इस package को बुक कर सकते हैं। Land itinerary Goa में शुरू होती है; यदि final quotation में विशेष रूप से शामिल नहीं किया गया है, तो मदुरै से उस pickup point तक की यात्रा अलग से होगी। नियोजित route Goa Arrival – North Goa – South Goa – Couple Leisure – Departure है। Main experiences include North Goa sightseeing, South Goa sightseeing, Fort Aguada, Sinquerim Beach."
             },
             {
-                "question": "Can we join the Goa honeymoon tour from Mumbai or Delhi?",
-                "questionTamil": "மும்பை அல்லது டெல்லியிலிருந்து கோவா பேக்கேஜில் இணைய முடியுமா?",
-                "answer": "Yes. You can fly into Goa's Dabolim Airport (GOI) from Mumbai or Delhi. If convenient, we can pick you up at Goa airport. Alternatively, a popular option is to fly into Mumbai and take a connecting flight or train to Goa. Once you arrive, we handle all inter-city transfers to your beach hotel.",
-                "answerTamil": "ஆம். மும்பை அல்லது டெல்லியிலிருந்து கோவாவின் டபோலிம் விமான நிலையத்திற்கு (GOI) விமானத்தில் வரலாம். உங்களுக்கு வசதியாக இருந்தால், கோவா விமான நிலையத்திலிருந்து உங்களை பிக்கப் செய்து கொள்ளலாம். மாற்றாக, மும்பிக்கு விமானத்தில் வந்து அங்கிருந்து இணைப்பு விமானம் அல்லது ரயில் மூலம் கோவாவுக்குச் செல்வதும் ஒரு பிரபலமான வழியாகும். நீங்கள் கோவாவை அடைந்ததும், உங்கள் கடற்கரை ஹோட்டலுக்கான போக்குவரத்து ஏற்பாடுகளை நாங்கள் கவனித்துக்கொள்வோம்."
+                "question": "Is the Goa Honeymoon Package – 4 Nights / 5 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் ஹனிமூன் தம்பதிகளுக்கு Goa Honeymoon Package – 4 Nights / 5 Days பொருத்தமானதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले हनीमून कपल्स के लिए Goa Honeymoon Package – 4 Nights / 5 Days उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for Honeymoon couples seeking sightseeing and private leisure time. It is structured as a Romantic Goa Experience. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். இந்த itinerary மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள பிற நகரங்களிலிருந்து பயணம் செய்யும் couples-க்கு ஏற்றது. இந்த package sightseeing மற்றும் private leisure time விரும்பும் Honeymoon couples-க்கு ஏற்றது. இது Romantic Goa Experience ஆக அமைக்கப்பட்டுள்ளது. Package pickup point-க்கு arrival மற்றும் departure travel final confirmed quotation-ஐப் பின்பற்றும்.",
+                "answerHindi": "हाँ। यह itinerary मदुरै और पूरे तमिलनाडु के अन्य शहरों से यात्रा करने वाले couples के लिए उपयुक्त है। यह package sightseeing और private leisure time चाहने वाले Honeymoon couples के लिए उपयुक्त है। इसे Romantic Goa Experience के रूप में तैयार किया गया है। Package pickup point तक arrival और departure travel final confirmed quotation के अनुसार होगा।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் accommodation மற்றும் breakfast சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस हनीमून package में accommodation और breakfast शामिल है?",
+                "answer": "Accommodation includes Four nights’ hotel or resort accommodation. Daily breakfast.",
+                "answerTamil": "Accommodation includes Four nights’ hotel or resort accommodation. Daily breakfast.",
+                "answerHindi": "Accommodation includes Four nights’ hotel or resort accommodation. Daily breakfast."
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் என்ன pickup, drop மற்றும் private transport சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस हनीमून package में कौन-कौन सी pickup, drop और private transport शामिल हैं?",
+                "answer": "Transportation is included only as specifically listed under the confirmed package inclusions. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "Transportation is included only as specifically listed under the confirmed package inclusions. மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளிலிருந்து பயணம் செய்யும் guests-க்கு, quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், listed pickup point-க்கு செல்லும் transport additional ஆகும்.",
+                "answerHindi": "Transportation is included only as specifically listed under the confirmed package inclusions. मदुरै या तमिलनाडु के अन्य हिस्सों से यात्रा करने वाले guests के लिए, यदि quotation में विशेष रूप से शामिल नहीं किया गया है, तो listed pickup point तक का transport additional होगा।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "Logaa Holidays Madurai honeymoon room decoration, cake அல்லது candlelight dinner ஏற்பாடு செய்ய முடியுமா?",
+                "questionHindi": "क्या Logaa Holidays Madurai honeymoon room decoration, cake या candlelight dinner की व्यवस्था कर सकता है?",
+                "answer": "Available romantic add-ons listed for this package include Flower decoration, Honeymoon cake, Welcome drink, Fruit basket, Romantic dinner. They are subject to the hotel, resort or operator policy and must be confirmed in the final quotation.",
+                "answerTamil": "Available romantic add-ons listed for this package include Flower decoration, Honeymoon cake, Welcome drink, Fruit basket, Romantic dinner. இவை hotel, resort அல்லது operator policy-க்கு உட்பட்டவை மற்றும் final quotation-ல் confirm செய்யப்பட வேண்டும்.",
+                "answerHindi": "Available romantic add-ons listed for this package include Flower decoration, Honeymoon cake, Welcome drink, Fruit basket, Romantic dinner. ये hotel, resort या operator policy के अधीन हैं और final quotation में confirm किए जाने चाहिए।"
+            },
+            {
+                "question": "What is not included in the package price?",
+                "questionTamil": "Package price-ல் எவை சேர்க்கப்படவில்லை?",
+                "questionHindi": "Package price में क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Airfare and train fare, Lunch and dinner unless included, Entry tickets, Water sports, Guide charges, Cruise and casino charges. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "Key exclusions listed for this package include Airfare and train fare, Lunch and dinner unless included, Entry tickets, Water sports, Guide charges, Cruise and casino charges. Inclusions-ல் குறிப்பாக குறிப்பிடப்படாத எந்த service-ம் extra ஆகக் கருதப்பட வேண்டும்.",
+                "answerHindi": "Key exclusions listed for this package include Airfare and train fare, Lunch and dinner unless included, Entry tickets, Water sports, Guide charges, Cruise and casino charges. Inclusions के अंतर्गत विशेष रूप से उल्लेख नहीं की गई किसी भी service को extra माना जाना चाहिए।"
+            },
+            {
+                "question": "Are Goa water sports, cruises or casino visits included?",
+                "questionTamil": "Goa water sports, cruises அல்லது casino visits சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या Goa water sports, cruises या casino visits शामिल हैं?",
+                "answer": "These experiences are optional unless specifically included. Water sports; Cruise and casino charges are listed as exclusions.",
+                "answerTamil": "இந்த experiences குறிப்பாக சேர்க்கப்படாவிட்டால் optional ஆகும். Water sports; Cruise and casino charges ஆகியவை exclusions ஆக பட்டியலிடப்பட்டுள்ளன.",
+                "answerHindi": "ये experiences विशेष रूप से शामिल किए जाने तक optional हैं। Water sports; Cruise and casino charges को exclusions के रूप में सूचीबद्ध किया गया है।"
             }
         ],
         "id": "9109"
@@ -5471,16 +5691,60 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a 4 Nights 5 Days Kashmir honeymoon package covering Srinagar, Gulmarg, Sonamarg and Pahalgam with private transfers and Shikara ride.",
         "faq": [
             {
-                "question": "Is this Kashmir honeymoon package ideal for couples?",
-                "questionTamil": "இந்த காஷ்மீர் ஹனிமூன் சுற்றுலா தம்பதிகளுக்கு ஏற்றதா?",
-                "answer": "Yes. The Kashmir honeymoon itinerary features romantic houseboat stays on Dal Lake, scenic shikara rides, and visits to Mughal gardens. We include special couple arrangements and a private car throughout, ensuring a private and memorable experience for newlyweds.",
-                "answerTamil": "ஆம். இந்த பயணத் திட்டம் தால் ஏரியில் ரொமாண்டிக் ஹவுஸ்போட் தங்குமிடம், அழகிய சிகாரா சவாரிகள் மற்றும் முகலாய தோட்டங்களுக்குச் செல்வதைக் கொண்டுள்ளது. சிறப்பு ஜோடி ஏற்பாடுகள் மற்றும் முழுவதும் ஒரு தனியார் காரை நாங்கள் சேர்த்துள்ளோம், இது புதுமணத் தம்பதிகளுக்கு ஒரு மறக்கமுடியாத அனுபவத்தை உறுதி செய்கிறது."
+                "question": "Can I book the Kashmir Honeymoon Package – 4 Nights / 5 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "Logaa Holidays மூலம் மதுரையிலிருந்து Kashmir Honeymoon Package – 4 Nights / 5 Days-ஐ நான் முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं Logaa Holidays के साथ मदुरै से Kashmir Honeymoon Package – 4 Nights / 5 Days बुक कर सकता/सकती हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins from Srinagar; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Srinagar – Gulmarg – Sonamarg – Pahalgam – Srinagar. The stay plan is Srinagar – 4 Nights. Main experiences include Srinagar Mughal Gardens, Gulmarg day excursion, Sonamarg day excursion, Pahalgam day excursion.",
+                "answerTamil": "ஆம். Logaa Holidays மதுரையை அடிப்படையாகக் கொண்ட tour operator ஆகும், மேலும் மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள தம்பதிகள் இந்த package-ஐ முன்பதிவு செய்யலாம். Land itinerary Srinagar-ல் தொடங்குகிறது; final quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், மதுரையிலிருந்து அந்த pickup point-க்கு செல்லும் பயணம் தனியாக இருக்கும். திட்டமிடப்பட்ட route Srinagar – Gulmarg – Sonamarg – Pahalgam – Srinagar ஆகும். Stay plan Srinagar – 4 Nights ஆகும். Main experiences include Srinagar Mughal Gardens, Gulmarg day excursion, Sonamarg day excursion, Pahalgam day excursion.",
+                "answerHindi": "हाँ। Logaa Holidays मदुरै स्थित tour operator है, और मदुरै तथा पूरे तमिलनाडु से आने वाले couples इस package को बुक कर सकते हैं। Land itinerary Srinagar से शुरू होती है; यदि final quotation में विशेष रूप से शामिल नहीं किया गया है, तो मदुरै से उस pickup point तक की यात्रा अलग से होगी। नियोजित route Srinagar – Gulmarg – Sonamarg – Pahalgam – Srinagar है। Stay plan Srinagar – 4 Nights है। Main experiences include Srinagar Mughal Gardens, Gulmarg day excursion, Sonamarg day excursion, Pahalgam day excursion."
             },
             {
-                "question": "Can we start the Kashmir honeymoon tour from Delhi or Srinagar?",
-                "questionTamil": "டெல்லி அல்லது ஸ்ரீநகரிலிருந்து காஷ்மீர் ஹனிமூன் சுற்றுலாவைத் தொடங்க முடியுமா?",
-                "answer": "You should fly into Srinagar (SXR airport) to start the tour. Delhi–Srinagar flights are frequent. We will meet you at Srinagar airport. If you prefer, you can also fly into Jammu and transfer by road (8 hours) to Srinagar. Our package begins once you arrive and we handle all local transport from there.",
-                "answerTamil": "சுற்றுலாவைத் தொடங்க ஸ்ரீநகருக்கு (SXR விமான நிலையம்) விமானம் மூலம் வர வேண்டும். டெல்லி–ஸ்ரீநகர் விமானங்கள் அடிக்கடி இயக்கப்படுகின்றன. ஸ்ரீநகர் விமான நிலையத்தில் உங்களைச் சந்திப்போம். நீங்கள் விரும்பினால், ஜம்முவுக்கு விமானத்தில் வந்து அங்கிருந்து சாலை வழியாக (8 மணி நேரம்) ஸ்ரீநகருக்கு செல்லலாம். நீங்கள் காஷ்மீரை அடைந்ததும் எங்கள் பேக்கேஜ் தொடங்கும், உள்ளூர் போக்குவரத்து அனைத்தையும் நாங்கள் கவனித்துக்கொள்வோம்."
+                "question": "Is the Kashmir Honeymoon Package – 4 Nights / 5 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் ஹனிமூன் தம்பதிகளுக்கு Kashmir Honeymoon Package – 4 Nights / 5 Days பொருத்தமானதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले हनीमून कपल्स के लिए Kashmir Honeymoon Package – 4 Nights / 5 Days उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for Couples with limited leave and first-time Kashmir travellers. It is structured as a Short Kashmir Highlights Honeymoon. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். இந்த itinerary மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள பிற நகரங்களிலிருந்து பயணம் செய்யும் couples-க்கு ஏற்றது. இந்த package Couples with limited leave மற்றும் first-time Kashmir travellers ஆகியோருக்கு ஏற்றது. இது Short Kashmir Highlights Honeymoon ஆக அமைக்கப்பட்டுள்ளது. Package pickup point-க்கு arrival மற்றும் departure travel final confirmed quotation-ஐப் பின்பற்றும்.",
+                "answerHindi": "हाँ। यह itinerary मदुरै और पूरे तमिलनाडु के अन्य शहरों से यात्रा करने वाले couples के लिए उपयुक्त है। यह package Couples with limited leave और first-time Kashmir travellers के लिए उपयुक्त है। इसे Short Kashmir Highlights Honeymoon के रूप में तैयार किया गया है। Package pickup point तक arrival और departure travel final confirmed quotation के अनुसार होगा।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் accommodation மற்றும் breakfast சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस हनीमून package में accommodation और breakfast शामिल है?",
+                "answer": "Accommodation includes Four nights’ accommodation in Srinagar. Daily breakfast.",
+                "answerTamil": "Accommodation includes Srinagar-ல் Four nights’ accommodation. Daily breakfast.",
+                "answerHindi": "Accommodation includes Srinagar में Four nights’ accommodation. Daily breakfast."
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் என்ன pickup, drop மற்றும் private transport சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस हनीमून package में कौन-कौन सी pickup, drop और private transport शामिल हैं?",
+                "answer": "Srinagar Airport pickup and drop. Private transportation as per itinerary. Local union vehicles is extra unless specifically included. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "Srinagar Airport pickup and drop. Itinerary-க்கு ஏற்ப Private transportation. Local union vehicles is extra unless specifically included. மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளிலிருந்து பயணம் செய்யும் guests-க்கு, quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், listed pickup point-க்கு செல்லும் transport additional ஆகும்.",
+                "answerHindi": "Srinagar Airport pickup and drop. Itinerary के अनुसार Private transportation. Local union vehicles is extra unless specifically included. मदुरै या तमिलनाडु के अन्य हिस्सों से यात्रा करने वाले guests के लिए, यदि quotation में विशेष रूप से शामिल नहीं किया गया है, तो listed pickup point तक का transport additional होगा।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "Logaa Holidays Madurai honeymoon room decoration, cake அல்லது candlelight dinner ஏற்பாடு செய்ய முடியுமா?",
+                "questionHindi": "क्या Logaa Holidays Madurai honeymoon room decoration, cake या candlelight dinner की व्यवस्था कर सकता है?",
+                "answer": "Honeymoon arrangements mentioned in the final quotation. Only services specifically confirmed in the quotation are included.",
+                "answerTamil": "Final quotation-ல் குறிப்பிடப்பட்டுள்ள Honeymoon arrangements மட்டுமே வழங்கப்படும். Quotation-ல் குறிப்பாக confirm செய்யப்பட்ட services மட்டுமே included ஆகும்.",
+                "answerHindi": "Final quotation में उल्लिखित Honeymoon arrangements ही उपलब्ध होंगे। Quotation में विशेष रूप से confirmed services ही included होंगी।"
+            },
+            {
+                "question": "What is not included in the package price?",
+                "questionTamil": "Package price-ல் எவை சேர்க்கப்படவில்லை?",
+                "questionHindi": "Package price में क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Flight tickets, Lunch, Gulmarg Gondola tickets, Guide charges, Dinner unless MAP plan is selected, Pony and horse rides. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "Key exclusions listed for this package include Flight tickets, Lunch, Gulmarg Gondola tickets, Guide charges, Dinner unless MAP plan is selected, Pony and horse rides. Inclusions-ல் குறிப்பாக குறிப்பிடப்படாத எந்த service-ம் extra ஆகக் கருதப்பட வேண்டும்.",
+                "answerHindi": "Key exclusions listed for this package include Flight tickets, Lunch, Gulmarg Gondola tickets, Guide charges, Dinner unless MAP plan is selected, Pony and horse rides. Inclusions के अंतर्गत विशेष रूप से उल्लेख नहीं की गई किसी भी service को extra माना जाना चाहिए।"
+            },
+            {
+                "question": "Are Gulmarg Gondola, pony rides and local union vehicles included?",
+                "questionTamil": "Gulmarg Gondola, pony rides மற்றும் local union vehicles இந்த package-ல் சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या Gulmarg Gondola, pony rides और local union vehicles इस package में शामिल हैं?",
+                "answer": "No. Gulmarg Gondola tickets; Pony and horse rides; Local union vehicles are listed as exclusions unless specifically included in the final quotation.",
+                "answerTamil": "இல்லை. Gulmarg Gondola tickets; Pony and horse rides; Local union vehicles ஆகியவை final quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால் exclusions ஆக பட்டியலிடப்பட்டுள்ளன.",
+                "answerHindi": "नहीं। Gulmarg Gondola tickets; Pony and horse rides; Local union vehicles को exclusions के रूप में सूचीबद्ध किया गया है, जब तक कि final quotation में विशेष रूप से शामिल न किया गया हो।"
             }
         ],
         "id": "9401"
@@ -5654,16 +5918,60 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a romantic 5 Nights 6 Days Kashmir honeymoon package covering Srinagar, Pahalgam, Gulmarg and Sonamarg with Shikara ride and private cab.",
         "faq": [
             {
-                "question": "Is this Kashmir honeymoon package ideal for couples?",
-                "questionTamil": "இந்த காஷ்மீர் ஹனிமூன் சுற்றுலா தம்பதிகளுக்கு ஏற்றதா?",
-                "answer": "Yes. The Kashmir honeymoon itinerary features romantic houseboat stays on Dal Lake, scenic shikara rides, and visits to Mughal gardens. We include special couple arrangements and a private car throughout, ensuring a private and memorable experience for newlyweds.",
-                "answerTamil": "ஆம். இந்த பயணத் திட்டம் தால் ஏரியில் ரொமாண்டிக் ஹவுஸ்போட் தங்குமிடம், அழகிய சிகாரா சவாரிகள் மற்றும் முகலாய தோட்டங்களுக்குச் செல்வதைக் கொண்டுள்ளது. சிறப்பு ஜோடி ஏற்பாடுகள் மற்றும் முழுவதும் ஒரு தனியார் காரை நாங்கள் சேர்த்துள்ளோம், இது புதுமணத் தம்பதிகளுக்கு ஒரு மறக்கமுடியாத அனுபவத்தை உறுதி செய்கிறது."
+                "question": "Can I book the Kashmir Honeymoon Package – 5 Nights / 6 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "Logaa Holidays மூலம் மதுரையிலிருந்து Kashmir Honeymoon Package – 5 Nights / 6 Days-ஐ நான் முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं Logaa Holidays के साथ मदुरै से Kashmir Honeymoon Package – 5 Nights / 6 Days बुक कर सकता/सकती हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins from Srinagar; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Srinagar – Pahalgam – Srinagar – Gulmarg – Sonamarg – Srinagar. The stay plan is Srinagar 4 Nights + Pahalgam 1 Night. Main experiences include Srinagar Mughal Gardens, Shikara ride on Dal Lake, Gulmarg excursion, Sonamarg excursion.",
+                "answerTamil": "ஆம். Logaa Holidays மதுரையை அடிப்படையாகக் கொண்ட tour operator ஆகும், மேலும் மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள தம்பதிகள் இந்த package-ஐ முன்பதிவு செய்யலாம். Land itinerary Srinagar-ல் தொடங்குகிறது; final quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், மதுரையிலிருந்து அந்த pickup point-க்கு செல்லும் பயணம் தனியாக இருக்கும். திட்டமிடப்பட்ட route Srinagar – Pahalgam – Srinagar – Gulmarg – Sonamarg – Srinagar ஆகும். Stay plan Srinagar 4 Nights + Pahalgam 1 Night ஆகும். Main experiences include Srinagar Mughal Gardens, Shikara ride on Dal Lake, Gulmarg excursion, Sonamarg excursion.",
+                "answerHindi": "हाँ। Logaa Holidays मदुरै स्थित tour operator है, और मदुरै तथा पूरे तमिलनाडु से आने वाले couples इस package को बुक कर सकते हैं। Land itinerary Srinagar से शुरू होती है; यदि final quotation में विशेष रूप से शामिल नहीं किया गया है, तो मदुरै से उस pickup point तक की यात्रा अलग से होगी। नियोजित route Srinagar – Pahalgam – Srinagar – Gulmarg – Sonamarg – Srinagar है। Stay plan Srinagar 4 Nights + Pahalgam 1 Night है। Main experiences include Srinagar Mughal Gardens, Shikara ride on Dal Lake, Gulmarg excursion, Sonamarg excursion."
             },
             {
-                "question": "Can we start the Kashmir honeymoon tour from Delhi or Srinagar?",
-                "questionTamil": "டெல்லி அல்லது ஸ்ரீநகரிலிருந்து காஷ்மீர் ஹனிமூன் சுற்றுலாவைத் தொடங்க முடியுமா?",
-                "answer": "You should fly into Srinagar (SXR airport) to start the tour. Delhi–Srinagar flights are frequent. We will meet you at Srinagar airport. If you prefer, you can also fly into Jammu and transfer by road (8 hours) to Srinagar. Our package begins once you arrive and we handle all local transport from there.",
-                "answerTamil": "சுற்றுலாவைத் தொடங்க ஸ்ரீநகருக்கு (SXR விமான நிலையம்) விமானம் மூலம் வர வேண்டும். டெல்லி–ஸ்ரீநகர் விமானங்கள் அடிக்கடி இயக்கப்படுகின்றன. ஸ்ரீநகர் விமான நிலையத்தில் உங்களைச் சந்திப்போம். நீங்கள் விரும்பினால், ஜம்முவுக்கு விமானத்தில் வந்து அங்கிருந்து சாலை வழியாக (8 மணி நேரம்) ஸ்ரீநகருக்கு செல்லலாம். நீங்கள் காஷ்மீரை அடைந்ததும் எங்கள் பேக்கேஜ் தொடங்கும், உள்ளூர் போக்குவரத்து அனைத்தையும் நாங்கள் கவனித்துக்கொள்வோம்."
+                "question": "Is the Kashmir Honeymoon Package – 5 Nights / 6 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் ஹனிமூன் தம்பதிகளுக்கு Kashmir Honeymoon Package – 5 Nights / 6 Days பொருத்தமானதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले हनीमून कपल्स के लिए Kashmir Honeymoon Package – 5 Nights / 6 Days उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for Honeymoon couples seeking a relaxed valley experience. It is structured as a Romantic Kashmir with Pahalgam Stay. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். இந்த itinerary மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள பிற நகரங்களிலிருந்து பயணம் செய்யும் couples-க்கு ஏற்றது. இந்த package அமைதியான valley experience-ஐ விரும்பும் Honeymoon couples-க்கு ஏற்றது. இது Romantic Kashmir with Pahalgam Stay ஆக அமைக்கப்பட்டுள்ளது. Package pickup point-க்கு arrival மற்றும் departure travel final confirmed quotation-ஐப் பின்பற்றும்.",
+                "answerHindi": "हाँ। यह itinerary मदुरै और पूरे तमिलनाडु के अन्य शहरों से यात्रा करने वाले couples के लिए उपयुक्त है। यह package एक शांत valley experience चाहने वाले Honeymoon couples के लिए उपयुक्त है। इसे Romantic Kashmir with Pahalgam Stay के रूप में तैयार किया गया है। Package pickup point तक arrival और departure travel final confirmed quotation के अनुसार होगा।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் accommodation மற்றும் breakfast சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस हनीमून package में accommodation और breakfast शामिल है?",
+                "answer": "Accommodation includes Four nights’ accommodation in Srinagar; One night’s accommodation in Pahalgam. Daily breakfast.",
+                "answerTamil": "Accommodation includes Srinagar-ல் Four nights’ accommodation; Pahalgam-ல் One night’s accommodation. Daily breakfast.",
+                "answerHindi": "Accommodation includes Srinagar में Four nights’ accommodation; Pahalgam में One night’s accommodation. Daily breakfast."
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் என்ன pickup, drop மற்றும் private transport சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस हनीमून package में कौन-कौन सी pickup, drop और private transport शामिल हैं?",
+                "answer": "Srinagar Airport pickup and drop. Private transportation as per itinerary. Local union vehicles is extra unless specifically included. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "Srinagar Airport pickup and drop. Itinerary-க்கு ஏற்ப Private transportation. Local union vehicles is extra unless specifically included. மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளிலிருந்து பயணம் செய்யும் guests-க்கு, quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், listed pickup point-க்கு செல்லும் transport additional ஆகும்.",
+                "answerHindi": "Srinagar Airport pickup and drop. Itinerary के अनुसार Private transportation. Local union vehicles is extra unless specifically included. मदुरै या तमिलनाडु के अन्य हिस्सों से यात्रा करने वाले guests के लिए, यदि quotation में विशेष रूप से शामिल नहीं किया गया है, तो listed pickup point तक का transport additional होगा।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "Logaa Holidays Madurai honeymoon room decoration, cake அல்லது candlelight dinner ஏற்பாடு செய்ய முடியுமா?",
+                "questionHindi": "क्या Logaa Holidays Madurai honeymoon room decoration, cake या candlelight dinner की व्यवस्था कर सकता है?",
+                "answer": "Only romantic services specifically confirmed in the final quotation are included.",
+                "answerTamil": "Final quotation-ல் குறிப்பாக confirm செய்யப்பட்ட romantic services மட்டுமே included ஆகும்.",
+                "answerHindi": "Final quotation में विशेष रूप से confirmed romantic services ही included होंगी।"
+            },
+            {
+                "question": "What is not included in the package price?",
+                "questionTamil": "Package price-ல் எவை சேர்க்கப்படவில்லை?",
+                "questionHindi": "Package price में क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Flight tickets, Lunch, Gondola tickets, Guide charges, Dinner unless included, Pony and horse rides. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "Key exclusions listed for this package include Flight tickets, Lunch, Gondola tickets, Guide charges, Dinner unless included, Pony and horse rides. Inclusions-ல் குறிப்பாக குறிப்பிடப்படாத எந்த service-ம் extra ஆகக் கருதப்பட வேண்டும்.",
+                "answerHindi": "Key exclusions listed for this package include Flight tickets, Lunch, Gondola tickets, Guide charges, Dinner unless included, Pony and horse rides. Inclusions के अंतर्गत विशेष रूप से उल्लेख नहीं की गई किसी भी service को extra माना जाना चाहिए।"
+            },
+            {
+                "question": "Are Gulmarg Gondola, pony rides and local union vehicles included?",
+                "questionTamil": "Gulmarg Gondola, pony rides மற்றும் local union vehicles இந்த package-ல் சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या Gulmarg Gondola, pony rides और local union vehicles इस package में शामिल हैं?",
+                "answer": "No. Gondola tickets; Pony and horse rides; Local union vehicles are listed as exclusions unless specifically included in the final quotation.",
+                "answerTamil": "இல்லை. Gondola tickets; Pony and horse rides; Local union vehicles ஆகியவை final quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால் exclusions ஆக பட்டியலிடப்பட்டுள்ளன.",
+                "answerHindi": "नहीं। Gondola tickets; Pony and horse rides; Local union vehicles को exclusions के रूप में सूचीबद्ध किया गया है, जब तक कि final quotation में विशेष रूप से शामिल न किया गया हो।"
             }
         ],
         "id": "9402"
@@ -5859,16 +6167,60 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a premium 6 Nights 7 Days Kashmir honeymoon package covering Srinagar, Pahalgam, Gulmarg and Sonamarg with Shikara ride and private transfers.",
         "faq": [
             {
-                "question": "Is this Kashmir honeymoon package ideal for couples?",
-                "questionTamil": "இந்த காஷ்மீர் ஹனிமூன் சுற்றுலா தம்பதிகளுக்கு ஏற்றதா?",
-                "answer": "Yes. The Kashmir honeymoon itinerary features romantic houseboat stays on Dal Lake, scenic shikara rides, and visits to Mughal gardens. We include special couple arrangements and a private car throughout, ensuring a private and memorable experience for newlyweds.",
-                "answerTamil": "ஆம். இந்த பயணத் திட்டம் தால் ஏரியில் ரொமாண்டிக் ஹவுஸ்போட் தங்குமிடம், அழகிய சிகாரா சவாரிகள் மற்றும் முகலாய தோட்டங்களுக்குச் செல்வதைக் கொண்டுள்ளது. சிறப்பு ஜோடி ஏற்பாடுகள் மற்றும் முழுவதும் ஒரு தனியார் காரை நாங்கள் சேர்த்துள்ளோம், இது புதுமணத் தம்பதிகளுக்கு ஒரு மறக்கமுடியாத அனுபவத்தை உறுதி செய்கிறது."
+                "question": "Can I book the Complete Kashmir Honeymoon Package – 6 Nights / 7 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "Logaa Holidays மூலம் மதுரையிலிருந்து Complete Kashmir Honeymoon Package – 6 Nights / 7 Days-ஐ நான் முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं Logaa Holidays के साथ मदुरै से Complete Kashmir Honeymoon Package – 6 Nights / 7 Days बुक कर सकता/सकती हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins from Srinagar; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Srinagar – Pahalgam – Srinagar – Gulmarg – Sonamarg – Srinagar. The stay plan is Srinagar 5 Nights + Pahalgam 1 Night. Main experiences include Srinagar Mughal Gardens, Gulmarg mountain excursion, Sonamarg valley excursion, Srinagar leisure and shopping day.",
+                "answerTamil": "ஆம். Logaa Holidays மதுரையை அடிப்படையாகக் கொண்ட tour operator ஆகும், மேலும் மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள தம்பதிகள் இந்த package-ஐ முன்பதிவு செய்யலாம். Land itinerary Srinagar-ல் தொடங்குகிறது; final quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், மதுரையிலிருந்து அந்த pickup point-க்கு செல்லும் பயணம் தனியாக இருக்கும். திட்டமிடப்பட்ட route Srinagar – Pahalgam – Srinagar – Gulmarg – Sonamarg – Srinagar ஆகும். Stay plan Srinagar 5 Nights + Pahalgam 1 Night ஆகும். Main experiences include Srinagar Mughal Gardens, Gulmarg mountain excursion, Sonamarg valley excursion, Srinagar leisure and shopping day.",
+                "answerHindi": "हाँ। Logaa Holidays मदुरै स्थित tour operator है, और मदुरै तथा पूरे तमिलनाडु से आने वाले couples इस package को बुक कर सकते हैं। Land itinerary Srinagar से शुरू होती है; यदि final quotation में विशेष रूप से शामिल नहीं किया गया है, तो मदुरै से उस pickup point तक की यात्रा अलग से होगी। नियोजित route Srinagar – Pahalgam – Srinagar – Gulmarg – Sonamarg – Srinagar है। Stay plan Srinagar 5 Nights + Pahalgam 1 Night है। Main experiences include Srinagar Mughal Gardens, Gulmarg mountain excursion, Sonamarg valley excursion, Srinagar leisure and shopping day."
             },
             {
-                "question": "Can we start the Kashmir honeymoon tour from Delhi or Srinagar?",
-                "questionTamil": "டெல்லி அல்லது ஸ்ரீநகரிலிருந்து காஷ்மீர் ஹனிமூன் சுற்றுலாவைத் தொடங்க முடியுமா?",
-                "answer": "You should fly into Srinagar (SXR airport) to start the tour. Delhi–Srinagar flights are frequent. We will meet you at Srinagar airport. If you prefer, you can also fly into Jammu and transfer by road (8 hours) to Srinagar. Our package begins once you arrive and we handle all local transport from there.",
-                "answerTamil": "சுற்றுலாவைத் தொடங்க ஸ்ரீநகருக்கு (SXR விமான நிலையம்) விமானம் மூலம் வர வேண்டும். டெல்லி–ஸ்ரீநகர் விமானங்கள் அடிக்கடி இயக்கப்படுகின்றன. ஸ்ரீநகர் விமான நிலையத்தில் உங்களைச் சந்திப்போம். நீங்கள் விரும்பினால், ஜம்முவுக்கு விமானத்தில் வந்து அங்கிருந்து சாலை வழியாக (8 மணி நேரம்) ஸ்ரீநகருக்கு செல்லலாம். நீங்கள் காஷ்மீரை அடைந்ததும் எங்கள் பேக்கேஜ் தொடங்கும், உள்ளூர் போக்குவரத்து அனைத்தையும் நாங்கள் கவனித்துக்கொள்வோம்."
+                "question": "Is the Complete Kashmir Honeymoon Package – 6 Nights / 7 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் ஹனிமூன் தம்பதிகளுக்கு Complete Kashmir Honeymoon Package – 6 Nights / 7 Days பொருத்தமானதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले हनीमून कपल्स के लिए Complete Kashmir Honeymoon Package – 6 Nights / 7 Days उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for Couples seeking sightseeing, romance and leisure. It is structured as a Complete Premium Kashmir Honeymoon. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். இந்த itinerary மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள பிற நகரங்களிலிருந்து பயணம் செய்யும் couples-க்கு ஏற்றது. இந்த package sightseeing, romance and leisure-ஐ விரும்பும் Couples-க்கு ஏற்றது. இது Complete Premium Kashmir Honeymoon ஆக அமைக்கப்பட்டுள்ளது. Package pickup point-க்கு arrival மற்றும் departure travel final confirmed quotation-ஐப் பின்பற்றும்.",
+                "answerHindi": "हाँ। यह itinerary मदुरै और पूरे तमिलनाडु के अन्य शहरों से यात्रा करने वाले couples के लिए उपयुक्त है। यह package sightseeing, romance and leisure चाहने वाले Couples के लिए उपयुक्त है। इसे Complete Premium Kashmir Honeymoon के रूप में तैयार किया गया है। Package pickup point तक arrival और departure travel final confirmed quotation के अनुसार होगा।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் accommodation மற்றும் breakfast சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस हनीमून package में accommodation और breakfast शामिल है?",
+                "answer": "Accommodation includes Five nights’ accommodation in Srinagar; One night’s accommodation in Pahalgam. Daily breakfast.",
+                "answerTamil": "Accommodation includes Srinagar-ல் Five nights’ accommodation; Pahalgam-ல் One night’s accommodation. Daily breakfast.",
+                "answerHindi": "Accommodation includes Srinagar में Five nights’ accommodation; Pahalgam में One night’s accommodation. Daily breakfast."
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் என்ன pickup, drop மற்றும் private transport சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस हनीमून package में कौन-कौन सी pickup, drop और private transport शामिल हैं?",
+                "answer": "Srinagar Airport pickup and drop. Private transportation as per itinerary. Local union-cab charges is extra unless specifically included. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "Srinagar Airport pickup and drop. Itinerary-க்கு ஏற்ப Private transportation. Local union-cab charges is extra unless specifically included. மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளிலிருந்து பயணம் செய்யும் guests-க்கு, quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், listed pickup point-க்கு செல்லும் transport additional ஆகும்.",
+                "answerHindi": "Srinagar Airport pickup and drop. Itinerary के अनुसार Private transportation. Local union-cab charges is extra unless specifically included. मदुरै या तमिलनाडु के अन्य हिस्सों से यात्रा करने वाले guests के लिए, यदि quotation में विशेष रूप से शामिल नहीं किया गया है, तो listed pickup point तक का transport additional होगा।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "Logaa Holidays Madurai honeymoon room decoration, cake அல்லது candlelight dinner ஏற்பாடு செய்ய முடியுமா?",
+                "questionHindi": "क्या Logaa Holidays Madurai honeymoon room decoration, cake या candlelight dinner की व्यवस्था कर सकता है?",
+                "answer": "Available romantic add-ons listed for this package include honeymoon photoshoot, Local café or romantic dinner, optional. They are subject to the hotel, resort or operator policy and must be confirmed in the final quotation.",
+                "answerTamil": "Available romantic add-ons listed for this package include honeymoon photoshoot, Local café or romantic dinner, optional. இவை hotel, resort அல்லது operator policy-க்கு உட்பட்டவை மற்றும் final quotation-ல் confirm செய்யப்பட வேண்டும்.",
+                "answerHindi": "Available romantic add-ons listed for this package include honeymoon photoshoot, Local café or romantic dinner, optional. ये hotel, resort या operator policy के अधीन हैं और final quotation में confirm किए जाने चाहिए।"
+            },
+            {
+                "question": "What is not included in the package price?",
+                "questionTamil": "Package price-ல் எவை சேர்க்கப்படவில்லை?",
+                "questionHindi": "Package price में क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Flight tickets, Lunch, Gondola tickets, Guide charges, Dinner unless included, Pony and horse rides. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "Key exclusions listed for this package include Flight tickets, Lunch, Gondola tickets, Guide charges, Dinner unless included, Pony and horse rides. Inclusions-ல் குறிப்பாக குறிப்பிடப்படாத எந்த service-ம் extra ஆகக் கருதப்பட வேண்டும்.",
+                "answerHindi": "Key exclusions listed for this package include Flight tickets, Lunch, Gondola tickets, Guide charges, Dinner unless included, Pony and horse rides. Inclusions के अंतर्गत विशेष रूप से उल्लेख नहीं की गई किसी भी service को extra माना जाना चाहिए।"
+            },
+            {
+                "question": "Are Gulmarg Gondola, pony rides and local union vehicles included?",
+                "questionTamil": "Gulmarg Gondola, pony rides மற்றும் local union vehicles இந்த package-ல் சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या Gulmarg Gondola, pony rides और local union vehicles इस package में शामिल हैं?",
+                "answer": "No. Gondola tickets; Pony and horse rides; Local union-cab charges are listed as exclusions unless specifically included in the final quotation.",
+                "answerTamil": "இல்லை. Gondola tickets; Pony and horse rides; Local union-cab charges ஆகியவை final quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால் exclusions ஆக பட்டியலிடப்பட்டுள்ளன.",
+                "answerHindi": "नहीं। Gondola tickets; Pony and horse rides; Local union-cab charges को exclusions के रूप में सूचीबद्ध किया गया है, जब तक कि final quotation में विशेष रूप से शामिल न किया गया हो।"
             }
         ],
         "id": "9403"
@@ -5991,18 +6343,60 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a 2 Nights 3 Days Gangtok honeymoon package with Tsomgo Lake, Baba Mandir, MG Marg and airport or railway-station transfers.",
         "faq": [
             {
-                "question": "Is the Sikkim tour ideal for honeymoon couples?",
-                "questionTamil": "சிக்கிம் சுற்றுலா ஹனிமூன் தம்பதிகளுக்கு பாதுகாப்பாகவும் வசதியாகவும் இருக்குமா?",
-                "answer": "Yes. Sikkim is perfect for romance and relaxation. It offers beautiful mountain views, peaceful monastery visits, and serene lakes, making it an excellent choice for a honeymoon. We arrange comfortable hotels and a relaxed itinerary so couples can enjoy the journey stress-free.",
-                "answerTamil": "ஆம். சிக்கிமின் காலநிலை மிதமானது மற்றும் முக்கிய இடங்களான கேங்டாக், பெல்லிங் ஆகியவை 1,800 மீட்டருக்கு கீழ் அமைந்துள்ளன. அழகிய இடங்களுக்கு இடையில் குறுகிய பயணங்களை (லாச்சுங், ஏரிகள்) ஏற்பாடு செய்கிறோம். வசதியான ஹோட்டல்களுடன், புதுமணத் தம்பதிகள் ரசிக்கும் வகையில் நிதானமான பயணத் திட்டத்தையும் வழங்குகிறோம்."
+                "question": "Can I book the Gangtok Honeymoon Package – 2 Nights / 3 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "லோகா ஹாலிடேஸுடன் மதுரையிலிருந்து காங்டாக் ஹனிமூன் பேக்கேஜ் – 2 இரவுகள் / 3 நாட்கள் முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं लोगा हॉलीडेज़ के साथ मदुरै से गैंगटोक हनीमून पैकेज – 2 रातें / 3 दिन बुक कर सकता/सकती हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins at Bagdogra Airport or New Jalpaiguri; travel from Madurai to the pickup point is separate unless it is specifically included in the final quotation. The planned route is Bagdogra Airport / New Jalpaiguri – Gangtok – Tsomgo Lake – Gangtok – Departure. The stay plan is Gangtok – 2 Nights. Main experiences include Gangtok local sightseeing, Tsomgo Lake excursion, Baba Harbhajan Singh Mandir and leisure time at MG Marg.",
+                "answerTamil": "ஆம். லோகா ஹாலிடேஸ் மதுரையை மையமாகக் கொண்டு செயல்படும் டூர் ஆபரேட்டராகும். மதுரை மற்றும் தமிழ்நாட்டின் பிற பகுதிகளில் இருந்து வரும் தம்பதிகள் இந்த பேக்கேஜை முன்பதிவு செய்யலாம். இந்த லேண்ட் பயணம் Bagdogra Airport அல்லது New Jalpaiguri-யிலிருந்து தொடங்குகிறது. இறுதி quotation-ல் குறிப்பாக சேர்க்கப்படவில்லை என்றால், மதுரையிலிருந்து pickup point-க்கு செல்லும் பயணம் தனியாக இருக்கும். திட்டமிடப்பட்ட பாதை Bagdogra Airport / New Jalpaiguri – Gangtok – Tsomgo Lake – Gangtok – Departure ஆகும். Gangtok-ல் 2 இரவுகள் தங்கும் வசதி உள்ளது. Gangtok உள்ளூர் sightseeing, Tsomgo Lake excursion, Baba Harbhajan Singh Mandir மற்றும் MG Marg-ல் leisure time ஆகியவை முக்கிய அனுபவங்களாகும்.",
+                "answerHindi": "हाँ। लोगा हॉलीडेज़ मदुरै स्थित टूर ऑपरेटर है और मदुरै तथा पूरे तमिलनाडु से आने वाले कपल्स इस पैकेज को बुक कर सकते हैं। यह लैंड यात्रा Bagdogra Airport या New Jalpaiguri से शुरू होती है। यदि अंतिम quotation में विशेष रूप से शामिल नहीं है, तो मदुरै से pickup point तक की यात्रा अलग से होगी। प्रस्तावित मार्ग Bagdogra Airport / New Jalpaiguri – Gangtok – Tsomgo Lake – Gangtok – Departure है। गैंगटोक में 2 रातों का ठहराव शामिल है। मुख्य अनुभवों में Gangtok local sightseeing, Tsomgo Lake excursion, Baba Harbhajan Singh Mandir और MG Marg में leisure time शामिल हैं।"
             },
             {
-                "question": "Can we join the Sikkim tour from Delhi or Kolkata?",
-                "questionTamil": "டெல்லி அல்லது கொல்கத்தாவிலிருந்து சிக்கிம் சுற்றுலாவில் இணைய முடியுமா?",
-                "questionHindi": "क्या हम दिल्ली या कोलकाता से सिक्किम टूर में शामिल हो सकते हैं?",
-                "answer": "Yes. The common route is to fly to Bagdogra (near Siliguri) via Delhi or Kolkata. We'll pick you up at Bagdogra airport. Alternatively, you can take a direct flight to Kolkata and connect by a short flight to Bagdogra or by luxury coach/train to Siliguri. From there we drive ~5h to Gangtok to start the tour.",
-                "answerTamil": "ஆம். டெல்லி அல்லது கொல்கத்தா வழியாக சிலிகுரிக்கு அருகிலுள்ள பக்டோக்ராவுக்கு விமானத்தில் செல்வது பொதுவான வழியாகும். பக்டோக்ரா விமான நிலையத்தில் உங்களை பிக்கப் செய்து கொள்வோம். மாற்றாக, கொல்கத்தாவுக்கு நேரடி விமானத்தில் வந்து, அங்கிருந்து குறுகிய விமானப் பயணம் மூலம் பக்டோக்ராவுக்கோ அல்லது லக்சுரி கோச்/ரயில் மூலம் சிலிகுரிக்கோ செல்லலாம். அங்கிருந்து சுமார் 5 மணி நேரம் பயணம் செய்து கேங்டாக்கை அடைந்து சுற்றுலாவைத் தொடங்குவோம்.",
-                "answerHindi": "हाँ। सामान्य मार्ग दिल्ली या कोलकाता से बागडोगरा, जो सिलीगुड़ी के पास है, के लिए फ्लाइट लेना है। हम बागडोगरा एयरपोर्ट पर आपको पिकअप करेंगे। वैकल्पिक रूप से, कोलकाता से बागडोगरा के लिए कनेक्टिंग फ्लाइट या सिलीगुड़ी के लिए लक्ज़री कोच या ट्रेन ली जा सकती है। वहाँ से लगभग 5 घंटे की ड्राइव करके गंगटोक पहुँचकर टूर शुरू किया जाता है।"
+                "question": "Is the Gangtok Honeymoon Package – 2 Nights / 3 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் ஹனிமூன் தம்பதிகளுக்கு காங்டாக் ஹனிமூன் பேக்கேஜ் – 2 இரவுகள் / 3 நாட்கள் ஏற்றதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले हनीमून कपल्स के लिए गैंगटोक हनीमून पैकेज – 2 रातें / 3 दिन उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for Couples with Limited Leave and Short Romantic Holidays. It is structured as a Short Himalayan Honeymoon. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். இந்த பயணத் திட்டம் மதுரை மற்றும் தமிழ்நாட்டின் பிற நகரங்களில் இருந்து பயணம் செய்யும் தம்பதிகளுக்கு ஏற்றது. குறைந்த விடுமுறை நாட்கள் கொண்ட தம்பதிகள் மற்றும் குறுகிய ரொமான்டிக் ஹாலிடே விரும்புபவர்களுக்கு இந்த பேக்கேஜ் பொருத்தமானது. இது ஒரு Short Himalayan Honeymoon பயணமாக வடிவமைக்கப்பட்டுள்ளது. Package pickup point-க்கு வருவதும் அங்கிருந்து திரும்புவதும் இறுதி quotation-ல் உறுதி செய்யப்பட்ட விவரங்களின் அடிப்படையில் இருக்கும்.",
+                "answerHindi": "हाँ। यह यात्रा कार्यक्रम मदुरै और तमिलनाडु के अन्य शहरों से यात्रा करने वाले कपल्स के लिए उपयुक्त है। यह पैकेज सीमित छुट्टी वाले कपल्स और Short Romantic Holidays के लिए अच्छा विकल्प है। इसे Short Himalayan Honeymoon के रूप में तैयार किया गया है। Pickup point तक आने और वहाँ से वापसी की यात्रा अंतिम quotation में पुष्टि किए गए विवरण के अनुसार होगी।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in the Gangtok honeymoon package?",
+                "questionTamil": "காங்டாக் ஹனிமூன் பேக்கேஜில் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या गैंगटोक हनीमून पैकेज में होटल और नाश्ता शामिल है?",
+                "answer": "Accommodation includes Two nights’ accommodation in Gangtok. Daily breakfast is included at the hotel.",
+                "answerTamil": "காங்டாக்கில் 2 இரவுகளுக்கான தங்குமிடம் இந்த பேக்கேஜில் சேர்க்கப்பட்டுள்ளது. ஹோட்டலில் தினசரி காலை உணவும் வழங்கப்படுகிறது.",
+                "answerHindi": "इस पैकेज में गैंगटोक में 2 रातों का ठहराव शामिल है। होटल में रोज़ाना नाश्ता भी शामिल है।"
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this Gangtok honeymoon package?",
+                "questionTamil": "இந்த காங்டாக் ஹனிமூன் பேக்கேஜில் எந்த pickup, drop மற்றும் தனியார் போக்குவரத்து வசதிகள் சேர்க்கப்பட்டுள்ளன?",
+                "questionHindi": "इस गैंगटोक हनीमून पैकेज में कौन-सी pickup, drop और private transport सुविधाएँ शामिल हैं?",
+                "answer": "Bagdogra Airport or New Jalpaiguri pickup and drop are included. Gangtok transfers and vehicle charges are provided as per the confirmed itinerary. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "Bagdogra Airport அல்லது New Jalpaiguri-யிலிருந்து pickup மற்றும் drop வசதிகள் சேர்க்கப்பட்டுள்ளன. Gangtok transfer மற்றும் வாகனக் கட்டணங்கள் உறுதி செய்யப்பட்ட பயணத் திட்டத்தின் அடிப்படையில் வழங்கப்படும். மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளில் இருந்து பயணம் செய்பவர்களுக்கு, இறுதி quotation-ல் குறிப்பாக சேர்க்கப்படவில்லை என்றால் pickup point-க்கு செல்லும் போக்குவரத்து கூடுதல் கட்டணமாக இருக்கும்.",
+                "answerHindi": "Bagdogra Airport या New Jalpaiguri से pickup और drop शामिल हैं। Gangtok transfers और vehicle charges की व्यवस्था confirmed itinerary के अनुसार की जाएगी। मदुरै या तमिलनाडु के अन्य स्थानों से आने वाले यात्रियों के लिए pickup point तक की यात्रा अलग से होगी, जब तक कि इसे quotation में विशेष रूप से शामिल न किया गया हो।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "லோகா ஹாலிடேஸ் மதுரை ஹனிமூன் ரூம் டெக்கரேஷன், கேக் அல்லது கேண்டில் லைட் டின்னர் ஏற்பாடு செய்யுமா?",
+                "questionHindi": "क्या लोगा हॉलीडेज़ मदुरै हनीमून रूम डेकोरेशन, केक या कैंडललाइट डिनर की व्यवस्था कर सकता है?",
+                "answer": "Yes. Available romantic add-ons listed for this package include flower-bed decoration, honeymoon cake, welcome drink and candlelight dinner. These services are subject to the hotel, resort or operator policy and must be confirmed in the final quotation.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் Flower-bed decoration, Honeymoon cake, Welcome drink மற்றும் Candlelight dinner போன்ற ரொமான்டிக் add-ons கிடைக்கக்கூடும். இந்த சேவைகள் ஹோட்டல், ரிசார்ட் அல்லது ஆபரேட்டரின் விதிமுறைகளுக்கு உட்பட்டவை மற்றும் இறுதி quotation-ல் உறுதி செய்யப்பட வேண்டும்.",
+                "answerHindi": "हाँ। इस पैकेज में Flower-bed decoration, Honeymoon cake, Welcome drink और Candlelight dinner जैसे रोमांटिक add-ons उपलब्ध हो सकते हैं। ये सेवाएँ होटल, रिज़ॉर्ट या ऑपरेटर की नीति पर निर्भर करती हैं और अंतिम quotation में पुष्टि की जानी चाहिए।"
+            },
+            {
+                "question": "What is not included in the Gangtok honeymoon package price?",
+                "questionTamil": "காங்டாக் ஹனிமூன் பேக்கேஜ் விலையில் என்னென்ன சேர்க்கப்படவில்லை?",
+                "questionHindi": "गैंगटोक हनीमून पैकेज की कीमत में क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Flight and train tickets unless included, lunch and dinner unless mentioned, attraction entry tickets, Nathula Pass permit and vehicle charges, personal expenses and ropeway tickets. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "இந்த பேக்கேஜில் சேர்க்கப்படாத முக்கிய சேவைகளில், குறிப்பாக சேர்க்கப்படவில்லை என்றால் Flight மற்றும் Train tickets, குறிப்பிடப்படாத Lunch மற்றும் Dinner, சுற்றுலா இடங்களின் Entry tickets, Nathula Pass permit மற்றும் vehicle charges, Personal expenses மற்றும் Ropeway tickets ஆகியவை அடங்கும். Inclusions பகுதியில் குறிப்பாக குறிப்பிடப்படாத எந்த சேவையும் கூடுதல் கட்டணமாக கருதப்பட வேண்டும்.",
+                "answerHindi": "इस पैकेज में शामिल नहीं होने वाली प्रमुख सेवाओं में, जब तक विशेष रूप से शामिल न हों, Flight और Train tickets, उल्लेखित न होने पर Lunch और Dinner, Attraction entry tickets, Nathula Pass permit और vehicle charges, Personal expenses और Ropeway tickets शामिल हैं। Inclusions में विशेष रूप से उल्लेखित न की गई किसी भी सेवा को अतिरिक्त शुल्क माना जाना चाहिए।"
+            },
+            {
+                "question": "Is Nathula Pass included in this Sikkim honeymoon package?",
+                "questionTamil": "இந்த சிக்கிம் ஹனிமூன் பேக்கேஜில் Nathula Pass சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस सिक्किम हनीमून पैकेज में Nathula Pass शामिल है?",
+                "answer": "No. Nathula Pass permit and vehicle charges are listed as exclusions. Nathula Pass must be arranged separately, subject to permit availability and local operating conditions.",
+                "answerTamil": "இல்லை. Nathula Pass permit மற்றும் vehicle charges இந்த பேக்கேஜில் சேர்க்கப்படவில்லை. Permit கிடைப்பது மற்றும் உள்ளூர் இயக்க விதிமுறைகளுக்கு உட்பட்டு Nathula Pass பயணத்தை தனியாக ஏற்பாடு செய்ய வேண்டும்.",
+                "answerHindi": "नहीं। Nathula Pass permit और vehicle charges इस पैकेज में शामिल नहीं हैं। Permit की उपलब्धता और स्थानीय संचालन नियमों के अधीन Nathula Pass की व्यवस्था अलग से करनी होगी।"
             }
         ],
         "id": "9701"
@@ -6134,18 +6528,60 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a 3 Nights 4 Days Gangtok and Darjeeling honeymoon package with Tsomgo Lake, Tiger Hill, tea gardens and private transfers.",
         "faq": [
             {
-                "question": "Is the Sikkim tour ideal for honeymoon couples?",
-                "questionTamil": "சிக்கிம் சுற்றுலா ஹனிமூன் தம்பதிகளுக்கு பாதுகாப்பாகவும் வசதியாகவும் இருக்குமா?",
-                "answer": "Yes. Sikkim is perfect for romance and relaxation. It offers beautiful mountain views, peaceful monastery visits, and serene lakes, making it an excellent choice for a honeymoon. We arrange comfortable hotels and a relaxed itinerary so couples can enjoy the journey stress-free.",
-                "answerTamil": "ஆம். சிக்கிமின் காலநிலை மிதமானது மற்றும் முக்கிய இடங்களான கேங்டாக், பெல்லிங் ஆகியவை 1,800 மீட்டருக்கு கீழ் அமைந்துள்ளன. அழகிய இடங்களுக்கு இடையில் குறுகிய பயணங்களை (லாச்சுங், ஏரிகள்) ஏற்பாடு செய்கிறோம். வசதியான ஹோட்டல்களுடன், புதுமணத் தம்பதிகள் ரசிக்கும் வகையில் நிதானமான பயணத் திட்டத்தையும் வழங்குகிறோம்."
+                "question": "Can I book the Gangtok and Darjeeling Honeymoon – 3 Nights / 4 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "லோகா ஹாலிடேஸுடன் மதுரையிலிருந்து காங்டாக் மற்றும் டார்ஜிலிங் ஹனிமூன் பேக்கேஜ் – 3 இரவுகள் / 4 நாட்கள் முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं लोगा हॉलीडेज़ के साथ मदुरै से गैंगटोक और दार्जिलिंग हनीमून पैकेज – 3 रातें / 4 दिन बुक कर सकता/सकती हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins from Bagdogra or New Jalpaiguri; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Bagdogra / New Jalpaiguri – Gangtok – Darjeeling – Departure. The stay plan is Gangtok 2 Nights + Darjeeling 1 Night. Main experiences include Tsomgo Lake and Baba Mandir, Gangtok MG Marg, Darjeeling tea gardens and Tiger Hill sunrise.",
+                "answerTamil": "ஆம். லோகா ஹாலிடேஸ் மதுரையை மையமாகக் கொண்டு செயல்படும் டூர் ஆபரேட்டராகும். மதுரை மற்றும் தமிழ்நாட்டின் பிற பகுதிகளில் இருந்து வரும் தம்பதிகள் இந்த பேக்கேஜை முன்பதிவு செய்யலாம். இந்த லேண்ட் பயணம் Bagdogra அல்லது New Jalpaiguri-யிலிருந்து தொடங்குகிறது. இறுதி quotation-ல் குறிப்பாக சேர்க்கப்படவில்லை என்றால், மதுரையிலிருந்து pickup point-க்கு செல்லும் பயணம் தனியாக இருக்கும். திட்டமிடப்பட்ட பாதை Bagdogra / New Jalpaiguri – Gangtok – Darjeeling – Departure ஆகும். Gangtok-ல் 2 இரவுகளும் Darjeeling-ல் 1 இரவும் தங்கும் வசதி உள்ளது. Tsomgo Lake மற்றும் Baba Mandir, Gangtok MG Marg, Darjeeling தேயிலைத் தோட்டங்கள் மற்றும் Tiger Hill sunrise ஆகியவை முக்கிய அனுபவங்களாகும்.",
+                "answerHindi": "हाँ। लोगा हॉलीडेज़ मदुरै स्थित टूर ऑपरेटर है और मदुरै तथा पूरे तमिलनाडु से आने वाले कपल्स इस पैकेज को बुक कर सकते हैं। यह लैंड यात्रा Bagdogra या New Jalpaiguri से शुरू होती है। यदि अंतिम quotation में विशेष रूप से शामिल नहीं है, तो मदुरै से pickup point तक की यात्रा अलग से होगी। प्रस्तावित मार्ग Bagdogra / New Jalpaiguri – Gangtok – Darjeeling – Departure है। गैंगटोक में 2 रातें और दार्जिलिंग में 1 रात का ठहराव शामिल है। मुख्य अनुभवों में Tsomgo Lake और Baba Mandir, Gangtok MG Marg, Darjeeling tea gardens और Tiger Hill sunrise शामिल हैं।"
             },
             {
-                "question": "Can we join the Sikkim tour from Delhi or Kolkata?",
-                "questionTamil": "டெல்லி அல்லது கொல்கத்தாவிலிருந்து சிக்கிம் சுற்றுலாவில் இணைய முடியுமா?",
-                "questionHindi": "क्या हम दिल्ली या कोलकाता से सिक्किम टूर में शामिल हो सकते हैं?",
-                "answer": "Yes. The common route is to fly to Bagdogra (near Siliguri) via Delhi or Kolkata. We'll pick you up at Bagdogra airport. Alternatively, you can take a direct flight to Kolkata and connect by a short flight to Bagdogra or by luxury coach/train to Siliguri. From there we drive ~5h to Gangtok to start the tour.",
-                "answerTamil": "ஆம். டெல்லி அல்லது கொல்கத்தா வழியாக சிலிகுரிக்கு அருகிலுள்ள பக்டோக்ராவுக்கு விமானத்தில் செல்வது பொதுவான வழியாகும். பக்டோக்ரா விமான நிலையத்தில் உங்களை பிக்கப் செய்து கொள்வோம். மாற்றாக, கொல்கத்தாவுக்கு நேரடி விமானத்தில் வந்து, அங்கிருந்து குறுகிய விமானப் பயணம் மூலம் பக்டோக்ராவுக்கோ அல்லது லக்சுரி கோச்/ரயில் மூலம் சிலிகுரிக்கோ செல்லலாம். அங்கிருந்து சுமார் 5 மணி நேரம் பயணம் செய்து கேங்டாக்கை அடைந்து சுற்றுலாவைத் தொடங்குவோம்.",
-                "answerHindi": "हाँ। सामान्य मार्ग दिल्ली या कोलकाता से बागडोगरा, जो सिलीगुड़ी के पास है, के लिए फ्लाइट लेना है। हम बागडोगरा एयरपोर्ट पर आपको पिकअप करेंगे। वैकल्पिक रूप से, कोलकाता से बागडोगरा के लिए कनेक्टिंग फ्लाइट या सिलीगुड़ी के लिए लक्ज़री कोच या ट्रेन ली जा सकती है। वहाँ से लगभग 5 घंटे की ड्राइव करके गंगटोक पहुँचकर टूर शुरू किया जाता है।"
+                "question": "Is the Gangtok and Darjeeling Honeymoon – 3 Nights / 4 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் ஹனிமூன் தம்பதிகளுக்கு காங்டாக் மற்றும் டார்ஜிலிங் ஹனிமூன் பேக்கேஜ் – 3 இரவுகள் / 4 நாட்கள் ஏற்றதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले हनीमून कपल्स के लिए गैंगटोक और दार्जिलिंग हनीमून पैकेज – 3 रातें / 4 दिन उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for First-Time Northeast Honeymoon Couples. It is structured as a Mountains, Lakes and Tea Garden Romance. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். இந்த பயணத் திட்டம் மதுரை மற்றும் தமிழ்நாட்டின் பிற நகரங்களில் இருந்து பயணம் செய்யும் தம்பதிகளுக்கு ஏற்றது. வடகிழக்கு இந்தியாவை முதன்முறையாக அனுபவிக்க விரும்பும் ஹனிமூன் தம்பதிகளுக்கு இந்த பேக்கேஜ் பொருத்தமானது. இது Mountains, Lakes and Tea Garden Romance என்ற பயண அனுபவத்தை வழங்கும் வகையில் அமைக்கப்பட்டுள்ளது. Package pickup point-க்கு வருவதும் அங்கிருந்து திரும்புவதும் இறுதி quotation-ல் உறுதி செய்யப்பட்ட விவரங்களின் அடிப்படையில் இருக்கும்.",
+                "answerHindi": "हाँ। यह यात्रा कार्यक्रम मदुरै और तमिलनाडु के अन्य शहरों से यात्रा करने वाले कपल्स के लिए उपयुक्त है। यह First-Time Northeast Honeymoon Couples के लिए अच्छा विकल्प है। इसे Mountains, Lakes and Tea Garden Romance के रूप में तैयार किया गया है। Pickup point तक आने और वहाँ से वापसी की यात्रा अंतिम quotation में पुष्टि किए गए विवरण के अनुसार होगी।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in this Gangtok and Darjeeling honeymoon package?",
+                "questionTamil": "இந்த காங்டாக் மற்றும் டார்ஜிலிங் ஹனிமூன் பேக்கேஜில் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस गैंगटोक और दार्जिलिंग हनीमून पैकेज में होटल और नाश्ता शामिल है?",
+                "answer": "Accommodation includes Two nights’ accommodation in Gangtok and One night’s accommodation in Darjeeling. Daily breakfast is included at the hotels.",
+                "answerTamil": "Gangtok-ல் 2 இரவுகளுக்கான தங்குமிடமும், Darjeeling-ல் 1 இரவுக்கான தங்குமிடமும் இந்த பேக்கேஜில் சேர்க்கப்பட்டுள்ளது. ஹோட்டல்களில் தினசரி காலை உணவும் வழங்கப்படுகிறது.",
+                "answerHindi": "इस पैकेज में गैंगटोक में 2 रातों और दार्जिलिंग में 1 रात का ठहराव शामिल है। होटलों में रोज़ाना नाश्ता भी शामिल है।"
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் பேக்கேஜில் எந்த pickup, drop மற்றும் தனியார் போக்குவரத்து வசதிகள் சேர்க்கப்பட்டுள்ளன?",
+                "questionHindi": "इस हनीमून पैकेज में कौन-सी pickup, drop और private transport सुविधाएँ शामिल हैं?",
+                "answer": "Bagdogra Airport or New Jalpaiguri pickup and drop are included as per the confirmed itinerary. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "உறுதி செய்யப்பட்ட பயணத் திட்டத்தின் அடிப்படையில் Bagdogra Airport அல்லது New Jalpaiguri pickup மற்றும் drop வசதிகள் சேர்க்கப்பட்டுள்ளன. மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளில் இருந்து பயணம் செய்பவர்களுக்கு, இறுதி quotation-ல் குறிப்பாக சேர்க்கப்படவில்லை என்றால் pickup point-க்கு செல்லும் போக்குவரத்து கூடுதல் கட்டணமாக இருக்கும்.",
+                "answerHindi": "Confirmed itinerary के अनुसार Bagdogra Airport या New Jalpaiguri से pickup और drop शामिल हैं। मदुरै या तमिलनाडु के अन्य स्थानों से आने वाले यात्रियों के लिए pickup point तक की यात्रा अलग से होगी, जब तक कि इसे quotation में विशेष रूप से शामिल न किया गया हो।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "லோகா ஹாலிடேஸ் மதுரை ஹனிமூன் ரூம் டெக்கரேஷன், கேக் அல்லது கேண்டில் லைட் டின்னர் ஏற்பாடு செய்யுமா?",
+                "questionHindi": "क्या लोगा हॉलीडेज़ मदुरै हनीमून रूम डेकोरेशन, केक या कैंडललाइट डिनर की व्यवस्था कर सकता है?",
+                "answer": "Honeymoon arrangements can be provided only when specifically confirmed in the final quotation. Any romantic service, room decoration, honeymoon cake or candlelight dinner should be treated as included only after confirmation.",
+                "answerTamil": "ஹனிமூன் ஏற்பாடுகள் இறுதி quotation-ல் குறிப்பாக உறுதி செய்யப்பட்டால் மட்டுமே வழங்கப்படும். Romantic service, room decoration, honeymoon cake அல்லது candlelight dinner போன்ற எந்த சேவையும் quotation-ல் உறுதி செய்யப்பட்ட பிறகே பேக்கேஜில் சேர்க்கப்பட்டதாக கருத வேண்டும்.",
+                "answerHindi": "हनीमून की व्यवस्थाएँ केवल तभी प्रदान की जाएँगी जब उन्हें अंतिम quotation में विशेष रूप से confirm किया गया हो। Romantic service, room decoration, honeymoon cake या candlelight dinner जैसी किसी भी सेवा को confirmation के बाद ही पैकेज में शामिल माना जाना चाहिए।"
+            },
+            {
+                "question": "What is not included in the Gangtok and Darjeeling honeymoon package price?",
+                "questionTamil": "காங்டாக் மற்றும் டார்ஜிலிங் ஹனிமூன் பேக்கேஜ் விலையில் என்னென்ன சேர்க்கப்படவில்லை?",
+                "questionHindi": "गैंगटोक और दार्जिलिंग हनीमून पैकेज की कीमत में क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Flight and train tickets unless included, lunch and dinner unless mentioned, attraction entry tickets, Nathula Pass charges, guide charges and Darjeeling toy-train tickets. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "இந்த பேக்கேஜில் சேர்க்கப்படாத முக்கிய சேவைகளில், குறிப்பாக சேர்க்கப்படவில்லை என்றால் Flight மற்றும் Train tickets, குறிப்பிடப்படாத Lunch மற்றும் Dinner, சுற்றுலா இடங்களின் Entry tickets, Nathula Pass charges, Guide charges மற்றும் Darjeeling toy-train tickets ஆகியவை அடங்கும். Inclusions பகுதியில் குறிப்பாக குறிப்பிடப்படாத எந்த சேவையும் கூடுதல் கட்டணமாக கருதப்பட வேண்டும்.",
+                "answerHindi": "इस पैकेज में शामिल नहीं होने वाली प्रमुख सेवाओं में, जब तक विशेष रूप से शामिल न हों, Flight और Train tickets, उल्लेखित न होने पर Lunch और Dinner, Attraction entry tickets, Nathula Pass charges, Guide charges और Darjeeling toy-train tickets शामिल हैं। Inclusions में विशेष रूप से उल्लेखित न की गई किसी भी सेवा को अतिरिक्त शुल्क माना जाना चाहिए।"
+            },
+            {
+                "question": "Is Nathula Pass included in this Sikkim honeymoon package?",
+                "questionTamil": "இந்த சிக்கிம் ஹனிமூன் பேக்கேஜில் Nathula Pass சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस सिक्किम हनीमून पैकेज में Nathula Pass शामिल है?",
+                "answer": "No. Nathula Pass charges are listed as an exclusion. The Nathula Pass excursion must be arranged separately, subject to permit availability and local operating conditions.",
+                "answerTamil": "இல்லை. Nathula Pass charges இந்த பேக்கேஜில் சேர்க்கப்படவில்லை. Permit கிடைப்பது மற்றும் உள்ளூர் இயக்க விதிமுறைகளுக்கு உட்பட்டு Nathula Pass பயணத்தை தனியாக ஏற்பாடு செய்ய வேண்டும்.",
+                "answerHindi": "नहीं। Nathula Pass charges इस पैकेज में शामिल नहीं हैं। Permit की उपलब्धता और स्थानीय संचालन नियमों के अधीन Nathula Pass excursion की व्यवस्था अलग से करनी होगी।"
             }
         ],
         "id": "9702"
@@ -6291,18 +6727,60 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a 4 Nights 5 Days Sikkim Darjeeling honeymoon package covering Gangtok, Pelling, Tsomgo Lake and Darjeeling attractions.",
         "faq": [
             {
-                "question": "Is the Sikkim tour ideal for honeymoon couples?",
-                "questionTamil": "சிக்கிம் சுற்றுலா ஹனிமூன் தம்பதிகளுக்கு பாதுகாப்பாகவும் வசதியாகவும் இருக்குமா?",
-                "answer": "Yes. Sikkim is perfect for romance and relaxation. It offers beautiful mountain views, peaceful monastery visits, and serene lakes, making it an excellent choice for a honeymoon. We arrange comfortable hotels and a relaxed itinerary so couples can enjoy the journey stress-free.",
-                "answerTamil": "ஆம். சிக்கிமின் காலநிலை மிதமானது மற்றும் முக்கிய இடங்களான கேங்டாக், பெல்லிங் ஆகியவை 1,800 மீட்டருக்கு கீழ் அமைந்துள்ளன. அழகிய இடங்களுக்கு இடையில் குறுகிய பயணங்களை (லாச்சுங், ஏரிகள்) ஏற்பாடு செய்கிறோம். வசதியான ஹோட்டல்களுடன், புதுமணத் தம்பதிகள் ரசிக்கும் வகையில் நிதானமான பயணத் திட்டத்தையும் வழங்குகிறோம்."
+                "question": "Can I book the Gangtok, Pelling and Darjeeling Honeymoon – 4 Nights / 5 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "லோகா ஹாலிடேஸுடன் மதுரையிலிருந்து காங்டாக், பெல்லிங் மற்றும் டார்ஜிலிங் ஹனிமூன் பேக்கேஜ் – 4 இரவுகள் / 5 நாட்கள் முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं लोगा हॉलीडेज़ के साथ मदुरै से गैंगटोक, पेलिंग और दार्जिलिंग हनीमून पैकेज – 4 रातें / 5 दिन बुक कर सकता/सकती हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins from Bagdogra or New Jalpaiguri; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Bagdogra / New Jalpaiguri – Gangtok – Pelling – Darjeeling – Departure. The stay plan is Gangtok 2 Nights + Pelling 1 Night + Darjeeling 1 Night. Main experiences include Tsomgo Lake and Baba Mandir, Pelling monasteries and waterfalls, Chenrezig Skywalk, Darjeeling sunrise and tea gardens.",
+                "answerTamil": "ஆம். லோகா ஹாலிடேஸ் மதுரையை மையமாகக் கொண்டு செயல்படும் டூர் ஆபரேட்டராகும். மதுரை மற்றும் தமிழ்நாட்டின் பிற பகுதிகளில் இருந்து வரும் தம்பதிகள் இந்த பேக்கேஜை முன்பதிவு செய்யலாம். இந்த லேண்ட் பயணம் Bagdogra அல்லது New Jalpaiguri-யிலிருந்து தொடங்குகிறது. இறுதி quotation-ல் குறிப்பாக சேர்க்கப்படவில்லை என்றால், மதுரையிலிருந்து pickup point-க்கு செல்லும் பயணம் தனியாக இருக்கும். திட்டமிடப்பட்ட பாதை Bagdogra / New Jalpaiguri – Gangtok – Pelling – Darjeeling – Departure ஆகும். Gangtok-ல் 2 இரவுகள், Pelling-ல் 1 இரவு மற்றும் Darjeeling-ல் 1 இரவு தங்கும் வசதி உள்ளது. Tsomgo Lake மற்றும் Baba Mandir, Pelling monasteries மற்றும் waterfalls, Chenrezig Skywalk, Darjeeling sunrise மற்றும் tea gardens ஆகியவை முக்கிய அனுபவங்களாகும்.",
+                "answerHindi": "हाँ। लोगा हॉलीडेज़ मदुरै स्थित टूर ऑपरेटर है और मदुरै तथा पूरे तमिलनाडु से आने वाले कपल्स इस पैकेज को बुक कर सकते हैं। यह लैंड यात्रा Bagdogra या New Jalpaiguri से शुरू होती है। यदि अंतिम quotation में विशेष रूप से शामिल नहीं है, तो मदुरै से pickup point तक की यात्रा अलग से होगी। प्रस्तावित मार्ग Bagdogra / New Jalpaiguri – Gangtok – Pelling – Darjeeling – Departure है। गैंगटोक में 2 रातें, पेलिंग में 1 रात और दार्जिलिंग में 1 रात का ठहराव शामिल है। मुख्य अनुभवों में Tsomgo Lake और Baba Mandir, Pelling monasteries और waterfalls, Chenrezig Skywalk, Darjeeling sunrise और tea gardens शामिल हैं।"
             },
             {
-                "question": "Can we join the Sikkim tour from Delhi or Kolkata?",
-                "questionTamil": "டெல்லி அல்லது கொல்கத்தாவிலிருந்து சிக்கிம் சுற்றுலாவில் இணைய முடியுமா?",
-                "questionHindi": "क्या हम दिल्ली या कोलकाता से सिक्किम टूर में शामिल हो सकते हैं?",
-                "answer": "Yes. The common route is to fly to Bagdogra (near Siliguri) via Delhi or Kolkata. We'll pick you up at Bagdogra airport. Alternatively, you can take a direct flight to Kolkata and connect by a short flight to Bagdogra or by luxury coach/train to Siliguri. From there we drive ~5h to Gangtok to start the tour.",
-                "answerTamil": "ஆம். டெல்லி அல்லது கொல்கத்தா வழியாக சிலிகுரிக்கு அருகிலுள்ள பக்டோக்ராவுக்கு விமானத்தில் செல்வது பொதுவான வழியாகும். பக்டோக்ரா விமான நிலையத்தில் உங்களை பிக்கப் செய்து கொள்வோம். மாற்றாக, கொல்கத்தாவுக்கு நேரடி விமானத்தில் வந்து, அங்கிருந்து குறுகிய விமானப் பயணம் மூலம் பக்டோக்ராவுக்கோ அல்லது லக்சுரி கோச்/ரயில் மூலம் சிலிகுரிக்கோ செல்லலாம். அங்கிருந்து சுமார் 5 மணி நேரம் பயணம் செய்து கேங்டாக்கை அடைந்து சுற்றுலாவைத் தொடங்குவோம்.",
-                "answerHindi": "हाँ। सामान्य मार्ग दिल्ली या कोलकाता से बागडोगरा, जो सिलीगुड़ी के पास है, के लिए फ्लाइट लेना है। हम बागडोगरा एयरपोर्ट पर आपको पिकअप करेंगे। वैकल्पिक रूप से, कोलकाता से बागडोगरा के लिए कनेक्टिंग फ्लाइट या सिलीगुड़ी के लिए लक्ज़री कोच या ट्रेन ली जा सकती है। वहाँ से लगभग 5 घंटे की ड्राइव करके गंगटोक पहुँचकर टूर शुरू किया जाता है।"
+                "question": "Is the Gangtok, Pelling and Darjeeling Honeymoon – 4 Nights / 5 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் ஹனிமூன் தம்பதிகளுக்கு காங்டாக், பெல்லிங் மற்றும் டார்ஜிலிங் ஹனிமூன் பேக்கேஜ் – 4 இரவுகள் / 5 நாட்கள் ஏற்றதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले हनीमून कपल्स के लिए गैंगटोक, पेलिंग और दार्जिलिंग हनीमून पैकेज – 4 रातें / 5 दिन उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for Couples Seeking Multiple Destinations. It is structured as a Himalayan Lakes, Monasteries and Tea Gardens honeymoon. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். இந்த பயணத் திட்டம் மதுரை மற்றும் தமிழ்நாட்டின் பிற நகரங்களில் இருந்து பயணம் செய்யும் தம்பதிகளுக்கு ஏற்றது. பல இடங்களை ஒரே பயணத்தில் அனுபவிக்க விரும்பும் தம்பதிகளுக்கு இந்த பேக்கேஜ் பொருத்தமானது. இது Himalayan Lakes, Monasteries and Tea Gardens என்ற ஹனிமூன் அனுபவத்தை வழங்கும் வகையில் அமைக்கப்பட்டுள்ளது. Package pickup point-க்கு வருவதும் அங்கிருந்து திரும்புவதும் இறுதி quotation-ல் உறுதி செய்யப்பட்ட விவரங்களின் அடிப்படையில் இருக்கும்.",
+                "answerHindi": "हाँ। यह यात्रा कार्यक्रम मदुरै और तमिलनाडु के अन्य शहरों से यात्रा करने वाले कपल्स के लिए उपयुक्त है। यह Couples Seeking Multiple Destinations के लिए अच्छा विकल्प है। इसे Himalayan Lakes, Monasteries and Tea Gardens honeymoon के रूप में तैयार किया गया है। Pickup point तक आने और वहाँ से वापसी की यात्रा अंतिम quotation में पुष्टि किए गए विवरण के अनुसार होगी।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in this Gangtok, Pelling and Darjeeling honeymoon package?",
+                "questionTamil": "இந்த காங்டாக், பெல்லிங் மற்றும் டார்ஜிலிங் ஹனிமூன் பேக்கேஜில் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस गैंगटोक, पेलिंग और दार्जिलिंग हनीमून पैकेज में होटल और नाश्ता शामिल है?",
+                "answer": "Accommodation includes Two nights’ accommodation in Gangtok, One night’s accommodation in Pelling and One night’s accommodation in Darjeeling. Daily breakfast is included at the hotels.",
+                "answerTamil": "Gangtok-ல் 2 இரவுகள், Pelling-ல் 1 இரவு மற்றும் Darjeeling-ல் 1 இரவுக்கான தங்குமிடம் இந்த பேக்கேஜில் சேர்க்கப்பட்டுள்ளது. ஹோட்டல்களில் தினசரி காலை உணவும் வழங்கப்படுகிறது.",
+                "answerHindi": "इस पैकेज में गैंगटोक में 2 रातें, पेलिंग में 1 रात और दार्जिलिंग में 1 रात का ठहराव शामिल है। होटलों में रोज़ाना नाश्ता भी शामिल है।"
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் பேக்கேஜில் எந்த pickup, drop மற்றும் தனியார் போக்குவரத்து வசதிகள் சேர்க்கப்பட்டுள்ளன?",
+                "questionHindi": "इस हनीमून पैकेज में कौन-सी pickup, drop और private transport सुविधाएँ शामिल हैं?",
+                "answer": "Bagdogra Airport or New Jalpaiguri pickup and drop are included as per the confirmed itinerary. Intercity transfers between Gangtok, Pelling and Darjeeling are included according to the confirmed package plan. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "உறுதி செய்யப்பட்ட பயணத் திட்டத்தின் அடிப்படையில் Bagdogra Airport அல்லது New Jalpaiguri pickup மற்றும் drop வசதிகள் சேர்க்கப்பட்டுள்ளன. Gangtok, Pelling மற்றும் Darjeeling இடையிலான intercity transfers உறுதி செய்யப்பட்ட பேக்கேஜ் திட்டத்தின் அடிப்படையில் வழங்கப்படும். மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளில் இருந்து பயணம் செய்பவர்களுக்கு, இறுதி quotation-ல் குறிப்பாக சேர்க்கப்படவில்லை என்றால் pickup point-க்கு செல்லும் போக்குவரத்து கூடுதல் கட்டணமாக இருக்கும்.",
+                "answerHindi": "Confirmed itinerary के अनुसार Bagdogra Airport या New Jalpaiguri से pickup और drop शामिल हैं। Gangtok, Pelling और Darjeeling के बीच intercity transfers confirmed package plan के अनुसार उपलब्ध कराए जाएंगे। मदुरै या तमिलनाडु के अन्य स्थानों से आने वाले यात्रियों के लिए pickup point तक की यात्रा अलग से होगी, जब तक कि इसे quotation में विशेष रूप से शामिल न किया गया हो।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "லோகா ஹாலிடேஸ் மதுரை ஹனிமூன் ரூம் டெக்கரேஷன், கேக் அல்லது கேண்டில் லைட் டின்னர் ஏற்பாடு செய்யுமா?",
+                "questionHindi": "क्या लोगा हॉलीडेज़ मदुरै हनीमून रूम डेकोरेशन, केक या कैंडललाइट डिनर की व्यवस्था कर सकता है?",
+                "answer": "Honeymoon arrangements can be provided only when specifically confirmed in the final quotation. Any romantic service, room decoration, honeymoon cake or candlelight dinner should be treated as included only after confirmation.",
+                "answerTamil": "ஹனிமூன் ஏற்பாடுகள் இறுதி quotation-ல் குறிப்பாக உறுதி செய்யப்பட்டால் மட்டுமே வழங்கப்படும். Romantic service, room decoration, honeymoon cake அல்லது candlelight dinner போன்ற எந்த சேவையும் quotation-ல் உறுதி செய்யப்பட்ட பிறகே பேக்கேஜில் சேர்க்கப்பட்டதாக கருத வேண்டும்.",
+                "answerHindi": "हनीमून की व्यवस्थाएँ केवल तभी प्रदान की जाएँगी जब उन्हें अंतिम quotation में विशेष रूप से confirm किया गया हो। Romantic service, room decoration, honeymoon cake या candlelight dinner जैसी किसी भी सेवा को confirmation के बाद ही पैकेज में शामिल माना जाना चाहिए।"
+            },
+            {
+                "question": "What is not included in the Gangtok, Pelling and Darjeeling honeymoon package price?",
+                "questionTamil": "காங்டாக், பெல்லிங் மற்றும் டார்ஜிலிங் ஹனிமூன் பேக்கேஜ் விலையில் என்னென்ன சேர்க்கப்படவில்லை?",
+                "questionHindi": "गैंगटोक, पेलिंग और दार्जिलिंग हनीमून पैकेज की कीमत में क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Flight and train tickets unless included, lunch and dinner unless mentioned, attraction entry tickets, Nathula Pass charges, guide charges and Pelling Skywalk entry. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "இந்த பேக்கேஜில் சேர்க்கப்படாத முக்கிய சேவைகளில், குறிப்பாக சேர்க்கப்படவில்லை என்றால் Flight மற்றும் Train tickets, குறிப்பிடப்படாத Lunch மற்றும் Dinner, சுற்றுலா இடங்களின் Entry tickets, Nathula Pass charges, Guide charges மற்றும் Pelling Skywalk entry ஆகியவை அடங்கும். Inclusions பகுதியில் குறிப்பாக குறிப்பிடப்படாத எந்த சேவையும் கூடுதல் கட்டணமாக கருதப்பட வேண்டும்.",
+                "answerHindi": "इस पैकेज में शामिल नहीं होने वाली प्रमुख सेवाओं में, जब तक विशेष रूप से शामिल न हों, Flight और Train tickets, उल्लेखित न होने पर Lunch और Dinner, Attraction entry tickets, Nathula Pass charges, Guide charges और Pelling Skywalk entry शामिल हैं। Inclusions में विशेष रूप से उल्लेखित न की गई किसी भी सेवा को अतिरिक्त शुल्क माना जाना चाहिए।"
+            },
+            {
+                "question": "Is Nathula Pass included in this Sikkim honeymoon package?",
+                "questionTamil": "இந்த சிக்கிம் ஹனிமூன் பேக்கேஜில் Nathula Pass சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस सिक्किम हनीमून पैकेज में Nathula Pass शामिल है?",
+                "answer": "No. Nathula Pass charges are listed as an exclusion. The Nathula Pass excursion must be arranged separately, subject to permit availability and local operating conditions.",
+                "answerTamil": "இல்லை. Nathula Pass charges இந்த பேக்கேஜில் சேர்க்கப்படவில்லை. Permit கிடைப்பது மற்றும் உள்ளூர் இயக்க விதிமுறைகளுக்கு உட்பட்டு Nathula Pass பயணத்தை தனியாக ஏற்பாடு செய்ய வேண்டும்.",
+                "answerHindi": "नहीं। Nathula Pass charges इस पैकेज में शामिल नहीं हैं। Permit की उपलब्धता और स्थानीय संचालन नियमों के अधीन Nathula Pass excursion की व्यवस्था अलग से करनी होगी।"
             }
         ],
         "id": "9703"
@@ -6483,23 +6961,64 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a premium 5 Nights 6 Days Sikkim Darjeeling honeymoon package covering Gangtok, Pelling, Tsomgo Lake and Darjeeling.",
         "faq": [
             {
-                "question": "Is the Sikkim tour ideal for honeymoon couples?",
-                "questionTamil": "சிக்கிம் சுற்றுலா ஹனிமூன் தம்பதிகளுக்கு பாதுகாப்பாகவும் வசதியாகவும் இருக்குமா?",
-                "answer": "Yes. Sikkim is perfect for romance and relaxation. It offers beautiful mountain views, peaceful monastery visits, and serene lakes, making it an excellent choice for a honeymoon. We arrange comfortable hotels and a relaxed itinerary so couples can enjoy the journey stress-free.",
-                "answerTamil": "ஆம். சிக்கிமின் காலநிலை மிதமானது மற்றும் முக்கிய இடங்களான கேங்டாக், பெல்லிங் ஆகியவை 1,800 மீட்டருக்கு கீழ் அமைந்துள்ளன. அழகிய இடங்களுக்கு இடையில் குறுகிய பயணங்களை (லாச்சுங், ஏரிகள்) ஏற்பாடு செய்கிறோம். வசதியான ஹோட்டல்களுடன், புதுமணத் தம்பதிகள் ரசிக்கும் வகையில் நிதானமான பயணத் திட்டத்தையும் வழங்குகிறோம்."
+                "question": "Can I book the Complete Sikkim and Darjeeling Honeymoon – 5 Nights / 6 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "லோகா ஹாலிடேஸுடன் மதுரையிலிருந்து Complete Sikkim and Darjeeling Honeymoon Package – 5 இரவுகள் / 6 நாட்கள் முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं लोगा हॉलीडेज़ के साथ मदुरै से Complete Sikkim and Darjeeling Honeymoon Package – 5 रातें / 6 दिन बुक कर सकता/सकती हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins from Bagdogra or New Jalpaiguri; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Bagdogra / New Jalpaiguri – Gangtok – Pelling – Darjeeling – Departure. The stay plan is Gangtok 2 Nights + Pelling 2 Nights + Darjeeling 1 Night. Main experiences include Tsomgo Lake and Baba Mandir, Gangtok local sightseeing, Complete Pelling sightseeing, Darjeeling tea gardens and sunrise.",
+                "answerTamil": "ஆம். லோகா ஹாலிடேஸ் மதுரையை மையமாகக் கொண்டு செயல்படும் டூர் ஆபரேட்டராகும். மதுரை மற்றும் தமிழ்நாட்டின் பிற பகுதிகளில் இருந்து வரும் தம்பதிகள் இந்த பேக்கேஜை முன்பதிவு செய்யலாம். இந்த லேண்ட் பயணம் Bagdogra அல்லது New Jalpaiguri-யிலிருந்து தொடங்குகிறது. இறுதி quotation-ல் குறிப்பாக சேர்க்கப்படவில்லை என்றால், மதுரையிலிருந்து pickup point-க்கு செல்லும் பயணம் தனியாக இருக்கும். திட்டமிடப்பட்ட பாதை Bagdogra / New Jalpaiguri – Gangtok – Pelling – Darjeeling – Departure ஆகும். Gangtok-ல் 2 இரவுகள், Pelling-ல் 2 இரவுகள் மற்றும் Darjeeling-ல் 1 இரவு தங்கும் வசதி உள்ளது. Tsomgo Lake மற்றும் Baba Mandir, Gangtok local sightseeing, Complete Pelling sightseeing, Darjeeling tea gardens மற்றும் sunrise ஆகியவை முக்கிய அனுபவங்களாகும்.",
+                "answerHindi": "हाँ। लोगा हॉलीडेज़ मदुरै स्थित टूर ऑपरेटर है और मदुरै तथा पूरे तमिलनाडु से आने वाले कपल्स इस पैकेज को बुक कर सकते हैं। यह लैंड यात्रा Bagdogra या New Jalpaiguri से शुरू होती है। यदि अंतिम quotation में विशेष रूप से शामिल नहीं है, तो मदुरै से pickup point तक की यात्रा अलग से होगी। प्रस्तावित मार्ग Bagdogra / New Jalpaiguri – Gangtok – Pelling – Darjeeling – Departure है। गैंगटोक में 2 रातें, पेलिंग में 2 रातें और दार्जिलिंग में 1 रात का ठहराव शामिल है। मुख्य अनुभवों में Tsomgo Lake और Baba Mandir, Gangtok local sightseeing, Complete Pelling sightseeing, Darjeeling tea gardens और sunrise शामिल हैं।"
             },
             {
-                "question": "Can we join the Sikkim tour from Delhi or Kolkata?",
-                "questionTamil": "டெல்லி அல்லது கொல்கத்தாவிலிருந்து சிக்கிம் சுற்றுலாவில் இணைய முடியுமா?",
-                "questionHindi": "क्या हम दिल्ली या कोलकाता से सिक्किम टूर में शामिल हो सकते हैं?",
-                "answer": "Yes. The common route is to fly to Bagdogra (near Siliguri) via Delhi or Kolkata. We'll pick you up at Bagdogra airport. Alternatively, you can take a direct flight to Kolkata and connect by a short flight to Bagdogra or by luxury coach/train to Siliguri. From there we drive ~5h to Gangtok to start the tour.",
-                "answerTamil": "ஆம். டெல்லி அல்லது கொல்கத்தா வழியாக சிலிகுரிக்கு அருகிலுள்ள பக்டோக்ராவுக்கு விமானத்தில் செல்வது பொதுவான வழியாகும். பக்டோக்ரா விமான நிலையத்தில் உங்களை பிக்கப் செய்து கொள்வோம். மாற்றாக, கொல்கத்தாவுக்கு நேரடி விமானத்தில் வந்து, அங்கிருந்து குறுகிய விமானப் பயணம் மூலம் பக்டோக்ராவுக்கோ அல்லது லக்சுரி கோச்/ரயில் மூலம் சிலிகுரிக்கோ செல்லலாம். அங்கிருந்து சுமார் 5 மணி நேரம் பயணம் செய்து கேங்டாக்கை அடைந்து சுற்றுலாவைத் தொடங்குவோம்.",
-                "answerHindi": "हाँ। सामान्य मार्ग दिल्ली या कोलकाता से बागडोगरा, जो सिलीगुड़ी के पास है, के लिए फ्लाइट लेना है। हम बागडोगरा एयरपोर्ट पर आपको पिकअप करेंगे। वैकल्पिक रूप से, कोलकाता से बागडोगरा के लिए कनेक्टिंग फ्लाइट या सिलीगुड़ी के लिए लक्ज़री कोच या ट्रेन ली जा सकती है। वहाँ से लगभग 5 घंटे की ड्राइव करके गंगटोक पहुँचकर टूर शुरू किया जाता है।"
+                "question": "Is the Complete Sikkim and Darjeeling Honeymoon – 5 Nights / 6 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் ஹனிமூன் தம்பதிகளுக்கு Complete Sikkim and Darjeeling Honeymoon – 5 இரவுகள் / 6 நாட்கள் பேக்கேஜ் ஏற்றதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले हनीमून कपल्स के लिए Complete Sikkim and Darjeeling Honeymoon – 5 रातें / 6 दिन पैकेज उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for Couples Seeking Sightseeing and Romantic Leisure. It is structured as a Complete Premium Himalayan Honeymoon covering Sikkim and Darjeeling. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். இந்த பயணத் திட்டம் மதுரை மற்றும் தமிழ்நாட்டின் பிற நகரங்களில் இருந்து பயணம் செய்யும் தம்பதிகளுக்கு ஏற்றது. Sightseeing மற்றும் Romantic Leisure அனுபவத்தை விரும்பும் தம்பதிகளுக்கு இந்த பேக்கேஜ் பொருத்தமானது. இது Sikkim மற்றும் Darjeeling பகுதிகளை உள்ளடக்கிய Complete Premium Himalayan Honeymoon ஆக அமைக்கப்பட்டுள்ளது. Package pickup point-க்கு வருவதும் அங்கிருந்து திரும்புவதும் இறுதி quotation-ல் உறுதி செய்யப்பட்ட விவரங்களின் அடிப்படையில் இருக்கும்.",
+                "answerHindi": "हाँ। यह यात्रा कार्यक्रम मदुरै और तमिलनाडु के अन्य शहरों से यात्रा करने वाले कपल्स के लिए उपयुक्त है। यह Couples Seeking Sightseeing and Romantic Leisure के लिए अच्छा विकल्प है। इसे Sikkim और Darjeeling को कवर करने वाले Complete Premium Himalayan Honeymoon के रूप में तैयार किया गया है। Pickup point तक आने और वहाँ से वापसी की यात्रा अंतिम quotation में पुष्टि किए गए विवरण के अनुसार होगी।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in this Complete Sikkim and Darjeeling honeymoon package?",
+                "questionTamil": "இந்த Complete Sikkim and Darjeeling ஹனிமூன் பேக்கேஜில் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस Complete Sikkim and Darjeeling हनीमून पैकेज में होटल और नाश्ता शामिल है?",
+                "answer": "Accommodation includes Two nights’ accommodation in Gangtok, Two nights’ accommodation in Pelling and One night’s accommodation in Darjeeling. Daily breakfast is included at the hotels.",
+                "answerTamil": "Gangtok-ல் 2 இரவுகள், Pelling-ல் 2 இரவுகள் மற்றும் Darjeeling-ல் 1 இரவுக்கான தங்குமிடம் இந்த பேக்கேஜில் சேர்க்கப்பட்டுள்ளது. ஹோட்டல்களில் தினசரி காலை உணவும் வழங்கப்படுகிறது.",
+                "answerHindi": "इस पैकेज में गैंगटोक में 2 रातें, पेलिंग में 2 रातें और दार्जिलिंग में 1 रात का ठहराव शामिल है। होटलों में रोज़ाना नाश्ता भी शामिल है।"
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் பேக்கேஜில் எந்த pickup, drop மற்றும் தனியார் போக்குவரத்து வசதிகள் சேர்க்கப்பட்டுள்ளன?",
+                "questionHindi": "इस हनीमून पैकेज में कौन-सी pickup, drop और private transport सुविधाएँ शामिल हैं?",
+                "answer": "Bagdogra Airport or New Jalpaiguri pickup and drop are included as per the confirmed itinerary. Intercity transfers between Gangtok, Pelling and Darjeeling are provided according to the confirmed package plan. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "உறுதி செய்யப்பட்ட பயணத் திட்டத்தின் அடிப்படையில் Bagdogra Airport அல்லது New Jalpaiguri pickup மற்றும் drop வசதிகள் சேர்க்கப்பட்டுள்ளன. Gangtok, Pelling மற்றும் Darjeeling இடையிலான intercity transfers உறுதி செய்யப்பட்ட பேக்கேஜ் திட்டத்தின் அடிப்படையில் வழங்கப்படும். மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளில் இருந்து பயணம் செய்பவர்களுக்கு, இறுதி quotation-ல் குறிப்பாக சேர்க்கப்படவில்லை என்றால் pickup point-க்கு செல்லும் போக்குவரத்து கூடுதல் கட்டணமாக இருக்கும்.",
+                "answerHindi": "Confirmed itinerary के अनुसार Bagdogra Airport या New Jalpaiguri से pickup और drop शामिल हैं। Gangtok, Pelling और Darjeeling के बीच intercity transfers confirmed package plan के अनुसार उपलब्ध कराए जाएंगे। मदुरै या तमिलनाडु के अन्य स्थानों से आने वाले यात्रियों के लिए pickup point तक की यात्रा अलग से होगी, जब तक कि इसे quotation में विशेष रूप से शामिल न किया गया हो।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "லோகா ஹாலிடேஸ் மதுரை ஹனிமூன் ரூம் டெக்கரேஷன், கேக் அல்லது கேண்டில் லைட் டின்னர் ஏற்பாடு செய்யுமா?",
+                "questionHindi": "क्या लोगा हॉलीडेज़ मदुरै हनीमून रूम डेकोरेशन, केक या कैंडललाइट डिनर की व्यवस्था कर सकता है?",
+                "answer": "Available romantic add-ons listed for this package include Candlelight dinner, Flower decoration, Honeymoon cake and Couple photoshoot. They are subject to the hotel, resort or operator policy and must be confirmed in the final quotation.",
+                "answerTamil": "இந்த பேக்கேஜில் கிடைக்கக்கூடிய romantic add-ons-களில் Candlelight dinner, Flower decoration, Honeymoon cake மற்றும் Couple photoshoot ஆகியவை அடங்கும். இவை ஹோட்டல், ரிசார்ட் அல்லது ஆபரேட்டரின் கொள்கைக்கு உட்பட்டவை மற்றும் இறுதி quotation-ல் உறுதி செய்யப்பட வேண்டும்.",
+                "answerHindi": "इस पैकेज में उपलब्ध romantic add-ons में Candlelight dinner, Flower decoration, Honeymoon cake और Couple photoshoot शामिल हैं। ये होटल, रिसॉर्ट या ऑपरेटर की नीति के अधीन हैं और इन्हें अंतिम quotation में confirm किया जाना आवश्यक है।"
+            },
+            {
+                "question": "What is not included in the Complete Sikkim and Darjeeling honeymoon package price?",
+                "questionTamil": "Complete Sikkim and Darjeeling ஹனிமூன் பேக்கேஜ் விலையில் என்னென்ன சேர்க்கப்படவில்லை?",
+                "questionHindi": "Complete Sikkim and Darjeeling हनीमून पैकेज की कीमत में क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Flight and train tickets unless included, lunch and dinner unless mentioned, attraction entry tickets, Nathula Pass permit and vehicle charges, guide charges and Darjeeling toy-train tickets. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "இந்த பேக்கேஜில் சேர்க்கப்படாத முக்கிய சேவைகளில், குறிப்பாக சேர்க்கப்படவில்லை என்றால் Flight மற்றும் Train tickets, குறிப்பிடப்படாத Lunch மற்றும் Dinner, சுற்றுலா இடங்களின் Entry tickets, Nathula Pass permit மற்றும் vehicle charges, Guide charges மற்றும் Darjeeling toy-train tickets ஆகியவை அடங்கும். Inclusions பகுதியில் குறிப்பாக குறிப்பிடப்படாத எந்த சேவையும் கூடுதல் கட்டணமாக கருதப்பட வேண்டும்.",
+                "answerHindi": "इस पैकेज में शामिल नहीं होने वाली प्रमुख सेवाओं में, जब तक विशेष रूप से शामिल न हों, Flight और Train tickets, उल्लेखित न होने पर Lunch और Dinner, Attraction entry tickets, Nathula Pass permit और vehicle charges, Guide charges और Darjeeling toy-train tickets शामिल हैं। Inclusions में विशेष रूप से उल्लेखित न की गई किसी भी सेवा को अतिरिक्त शुल्क माना जाना चाहिए।"
+            },
+            {
+                "question": "Is Nathula Pass included in this Sikkim honeymoon package?",
+                "questionTamil": "இந்த Sikkim ஹனிமூன் பேக்கேஜில் Nathula Pass சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस Sikkim हनीमून पैकेज में Nathula Pass शामिल है?",
+                "answer": "No. Nathula Pass permit and vehicle charges are listed as exclusions. The Nathula Pass excursion must be arranged separately, subject to permit availability and local operating conditions.",
+                "answerTamil": "இல்லை. Nathula Pass permit மற்றும் vehicle charges இந்த பேக்கேஜில் சேர்க்கப்படவில்லை. Permit கிடைப்பது மற்றும் உள்ளூர் இயக்க விதிமுறைகளுக்கு உட்பட்டு Nathula Pass பயணத்தை தனியாக ஏற்பாடு செய்ய வேண்டும்.",
+                "answerHindi": "नहीं। Nathula Pass permit और vehicle charges इस पैकेज में शामिल नहीं हैं। Permit की उपलब्धता और स्थानीय संचालन नियमों के अधीन Nathula Pass excursion की व्यवस्था अलग से करनी होगी।"
             }
         ],
         "id": "9704"
-    }
-    ,
+    },
 
     '9801': {
         "title": "Maldives Beach Honeymoon Package – 2 Nights / 3 Days",
@@ -6619,20 +7138,60 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a romantic Maldives honeymoon package for 2 Nights and 3 Days with island resort, airport transfers and beach experiences.",
         "faq": [
             {
-                "question": "Is this Maldives package ideal for honeymoon couples?",
-                "questionTamil": "இந்த மாலத்தீவு பேக்கேஜ் ஹனிமூன் தம்பதிகளுக்கு சிறந்ததா?",
-                "questionHindi": "क्या यह मालदीव पैकेज हनीमून कपल्स के लिए आदर्श है?",
-                "answer": "Absolutely. The itinerary is built for privacy and romance: you stay in a water villa or beach bungalow, enjoy private beach dinners, and have plenty of relaxation time. Snorkeling and lagoon tours are included to add adventure. Every detail (seaplane transfers, resort check-in) is arranged, so you only focus on each other. The Maldives are famous for honeymooners and luxury resorts.",
-                "answerTamil": "நிச்சயமாக. இந்த பயணத் திட்டம் தனிமை மற்றும் காதல் நிறைந்த அனுபவத்திற்காக வடிவமைக்கப்பட்டுள்ளது: நீர்மேல் வில்லா அல்லது கடற்கரை பங்களாவில் தங்கி, தனிப்பட்ட கடற்கரை இரவு உணவை அனுபவித்து, போதுமான ஓய்வு நேரத்தையும் பெறலாம். சாகச அனுபவத்திற்காக ஸ்நோர்கெல்லிங் மற்றும் லகூன் சுற்றுலாக்களும் சேர்க்கப்பட்டுள்ளன. சீப்ளேன் போக்குவரத்து மற்றும் ரிசார்ட் செக்-இன் உள்ளிட்ட அனைத்து ஏற்பாடுகளும் செய்யப்படுவதால், நீங்கள் ஒருவருக்கொருவர் நேரத்தை மட்டுமே அனுபவிக்கலாம். மாலத்தீவுகள் ஹனிமூன் தம்பதிகள் மற்றும் லக்சுரி ரிசார்ட்களுக்கு பிரபலமானவை.",
-                "answerHindi": "बिल्कुल। यह यात्रा कार्यक्रम निजता और रोमांस के लिए बनाया गया है। आप वाटर विला या बीच बंगले में ठहरते हैं, निजी बीच डिनर का आनंद लेते हैं और भरपूर आराम का समय मिलता है। स्नॉर्कलिंग और लैगून टूर रोमांच का अनुभव जोड़ते हैं। सीप्लेन ट्रांसफर और रिसॉर्ट चेक-इन जैसी व्यवस्थाएँ की जाती हैं, इसलिए आप एक-दूसरे के साथ समय का आनंद ले सकते हैं। मालदीव हनीमून कपल्स और लक्ज़री रिसॉर्ट्स के लिए प्रसिद्ध है।"
+                "question": "Can I book the Maldives Beach Honeymoon Package – 2 Nights / 3 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "மதுரையிலிருந்து Logaa Holidays மூலம் Maldives Beach Honeymoon Package – 2 Nights / 3 Days முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं मदुरै से Logaa Holidays के माध्यम से Maldives Beach Honeymoon Package – 2 Nights / 3 Days बुक कर सकता हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins at Velana International Airport; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Velana International Airport – Island Resort – Velana International Airport. The stay plan is Maldives Island Resort – 2 Nights.",
+                "answerTamil": "ஆம். Logaa Holidays மதுரையைச் சேர்ந்த tour operator ஆகும். மதுரை மற்றும் தமிழ்நாட்டின் பிற பகுதிகளில் இருந்து வரும் தம்பதிகள் இந்த package-ஐ முன்பதிவு செய்யலாம். இந்த பயணத் திட்டம் Velana International Airport-ல் தொடங்குகிறது. இறுதி quotation-ல் குறிப்பாக சேர்க்கப்படாத வரை, மதுரையிலிருந்து அந்த pickup point-க்கு செல்லும் பயணம் தனியாக இருக்கும். திட்டமிடப்பட்ட route: Velana International Airport – Island Resort – Velana International Airport. தங்கும் திட்டம் Maldives Island Resort-ல் 2 Nights ஆகும்.",
+                "answerHindi": "हाँ। Logaa Holidays मदुरै स्थित एक tour operator है और मदुरै तथा पूरे तमिलनाडु से आने वाले couples इस package को बुक कर सकते हैं। Land itinerary Velana International Airport से शुरू होती है। यदि final quotation में विशेष रूप से शामिल नहीं किया गया है, तो मदुरै से pickup point तक की यात्रा अलग होगी। नियोजित route Velana International Airport – Island Resort – Velana International Airport है। Stay plan Maldives Island Resort में 2 Nights का है।"
             },
             {
-                "question": "Can I start the Maldives trip from Chennai or Bangalore?",
-                "questionTamil": "சென்னை அல்லது பெங்களூரிலிருந்து மாலத்தீவு பயணத்தைத் தொடங்க முடியுமா?",
-                "questionHindi": "क्या मैं चेन्नई या बेंगलुरु से मालदीव यात्रा शुरू कर सकता/सकती हूँ?",
-                "answer": "Typically, you'll fly to Malé (Maldives) via a direct or one-stop flight (common from Chennai, Bangalore, or Mumbai). Once you arrive at Velana International Airport (Malé), we include your speedboat or seaplane transfer to the resort island. We'll coordinate the Maldives side (domestic transfer) entirely, so you just need to book your international flight to Malé. **A.** பொதுவாக, சென்னை, பெங்களூரு அல்லது மும்பையிலிருந்து நேரடி அல்லது ஒரு இடைநிலையுடன் கூடிய விமானத்தில் மாலே (மாலத்தீவு) செல்லலாம். நீங்கள் வேலனா சர்வதேச விமான நிலையத்தை (மாலே) அடைந்ததும், ரிசார்ட் தீவுக்கான ஸ்பீட்போட் அல்லது சீப்ளேன் போக்குவரத்து இதில் சேர்க்கப்பட்டுள்ளது. மாலத்தீவு பகுதியில் உள்ள உள்ளூர் போக்குவரத்து ஏற்பாடுகளை முழுமையாக நாங்கள் ஒருங்கிணைப்போம்; எனவே நீங்கள் மாலே செல்லும் சர்வதேச விமானத்தை மட்டும் முன்பதிவு செய்ய வேண்டும். **A.** आमतौर पर आप चेन्नई, बेंगलुरु या मुंबई से सीधी या एक-स्टॉप फ्लाइट द्वारा माले पहुँच सकते हैं। वेलाना इंटरनेशनल एयरपोर्ट पहुँचने के बाद रिसॉर्ट द्वीप के लिए स्पीडबोट या सीप्लेन ट्रांसफर शामिल है। मालदीव के भीतर के घरेलू ट्रांसफर का पूरा समन्वय हम करेंगे, इसलिए आपको केवल माले के लिए अपनी अंतरराष्ट्रीय फ्लाइट बुक करनी होगी। ──────────────────────────────────────────────────────────────────────────────── 15. MANALI VOLVO BUS PACKAGE (Overnight Delhi to Manali – AC Volvo Sleeper – Hill Station) ────────────────────────────────────────────────────────────────────────────────",
-                "answerTamil": "பொதுவாக, சென்னை, பெங்களூரு அல்லது மும்பையிலிருந்து நேரடி அல்லது ஒரு இடைநிலையுடன் கூடிய விமானத்தில் மாலே (மாலத்தீவு) செல்லலாம். நீங்கள் வேலனா சர்வதேச விமான நிலையத்தை (மாலே) அடைந்ததும், ரிசார்ட் தீவுக்கான ஸ்பீட்போட் அல்லது சீப்ளேன் போக்குவரத்து இதில் சேர்க்கப்பட்டுள்ளது. மாலத்தீவு பகுதியில் உள்ள உள்ளூர் போக்குவரத்து ஏற்பாடுகளை முழுமையாக நாங்கள் ஒருங்கிணைப்போம்; எனவே நீங்கள் மாலே செல்லும் சர்வதேச விமானத்தை மட்டும் முன்பதிவு செய்ய வேண்டும்.",
-                "answerHindi": "आमतौर पर आप चेन्नई, बेंगलुरु या मुंबई से सीधी या एक-स्टॉप फ्लाइट द्वारा माले पहुँच सकते हैं। वेलाना इंटरनेशनल एयरपोर्ट पहुँचने के बाद रिसॉर्ट द्वीप के लिए स्पीडबोट या सीप्लेन ट्रांसफर शामिल है। मालदीव के भीतर के घरेलू ट्रांसफर का पूरा समन्वय हम करेंगे, इसलिए आपको केवल माले के लिए अपनी अंतरराष्ट्रीय फ्लाइट बुक करनी होगी।"
+                "question": "Is the Maldives Beach Honeymoon Package – 2 Nights / 3 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் honeymoon couples-க்கு Maldives Beach Honeymoon Package – 2 Nights / 3 Days ஏற்றதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले honeymoon couples के लिए Maldives Beach Honeymoon Package – 2 Nights / 3 Days उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for Couples with Limited Leave and Short International Holidays. It is structured as a Short Tropical Honeymoon. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். மதுரை மற்றும் தமிழ்நாட்டின் பிற நகரங்களில் இருந்து பயணம் செய்யும் தம்பதிகளுக்கு இந்த itinerary ஏற்றது. குறைந்த விடுமுறை நாட்கள் கொண்ட couples மற்றும் Short International Holidays-க்கு இந்த package பொருத்தமானது. இது ஒரு Short Tropical Honeymoon ஆக வடிவமைக்கப்பட்டுள்ளது. Package pickup point-க்கு arrival மற்றும் departure travel இறுதி quotation-ன் அடிப்படையில் இருக்கும்.",
+                "answerHindi": "हाँ। यह itinerary मदुरै और तमिलनाडु के अन्य शहरों से यात्रा करने वाले couples के लिए उपयुक्त है। यह package कम छुट्टी वाले couples और Short International Holidays के लिए उपयुक्त है। इसे Short Tropical Honeymoon के रूप में तैयार किया गया है। Package pickup point तक arrival और departure travel final quotation के अनुसार होगा।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in this honeymoon package?",
+                "questionTamil": "இந்த honeymoon package-ல் accommodation மற்றும் breakfast சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस honeymoon package में accommodation और breakfast शामिल हैं?",
+                "answer": "Accommodation includes Two nights’ accommodation at the selected Maldives resort; Accommodation in the confirmed room category. Daily breakfast.",
+                "answerTamil": "Accommodation-ல் தேர்வு செய்யப்பட்ட Maldives resort-ல் 2 Nights தங்கும் வசதி மற்றும் உறுதி செய்யப்பட்ட room category-யில் accommodation சேர்க்கப்பட்டுள்ளது. தினசரி breakfast வழங்கப்படும்.",
+                "answerHindi": "Accommodation में चुने गए Maldives resort में 2 Nights का stay और confirmed room category के अनुसार accommodation शामिल है। Daily breakfast भी शामिल है।"
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த honeymoon package-ல் எந்த pickup, drop மற்றும் private transport வசதிகள் சேர்க்கப்பட்டுள்ளன?",
+                "questionHindi": "इस honeymoon package में कौन-सी pickup, drop और private transport सुविधाएँ शामिल हैं?",
+                "answer": "Round-trip resort transfers by speedboat, domestic flight or seaplane as confirmed. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "உறுதி செய்யப்பட்ட itinerary-ன் அடிப்படையில் speedboat, domestic flight அல்லது seaplane மூலம் round-trip resort transfers வழங்கப்படும். மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளில் இருந்து வரும் guests-க்கு listed pickup point-க்கு செல்லும் transport, quotation-ல் குறிப்பாக சேர்க்கப்படாத வரை கூடுதல் செலவாகும்.",
+                "answerHindi": "Confirmed itinerary के अनुसार speedboat, domestic flight या seaplane द्वारा round-trip resort transfers उपलब्ध होंगे। मदुरै या तमिलनाडु के अन्य क्षेत्रों से आने वाले guests के लिए listed pickup point तक का transport, quotation में विशेष रूप से शामिल न होने पर, अतिरिक्त शुल्क पर होगा।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "Logaa Holidays Madurai honeymoon room decoration, cake அல்லது candlelight dinner ஏற்பாடு செய்ய முடியுமா?",
+                "questionHindi": "क्या Logaa Holidays Madurai honeymoon room decoration, cake या candlelight dinner की व्यवस्था कर सकता है?",
+                "answer": "Available romantic add-ons listed for this package include candlelight dinner, Flower-bed decoration, Honeymoon cake, Fruit basket and Welcome drink. They are subject to the hotel, resort or operator policy and must be confirmed in the final quotation.",
+                "answerTamil": "இந்த package-க்கு கிடைக்கும் romantic add-ons-ல் candlelight dinner, Flower-bed decoration, Honeymoon cake, Fruit basket மற்றும் Welcome drink ஆகியவை அடங்கும். இவை hotel, resort அல்லது operator-ன் policy-க்கு உட்பட்டவை மற்றும் இறுதி quotation-ல் உறுதிப்படுத்தப்பட வேண்டும்.",
+                "answerHindi": "इस package में उपलब्ध romantic add-ons में candlelight dinner, Flower-bed decoration, Honeymoon cake, Fruit basket और Welcome drink शामिल हैं। ये hotel, resort या operator की policy के अधीन हैं और final quotation में confirm किए जाने चाहिए।"
+            },
+            {
+                "question": "What is not included in the package price?",
+                "questionTamil": "இந்த package price-ல் என்னென்ன சேர்க்கப்படவில்லை?",
+                "questionHindi": "इस package price में क्या-क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include International flight tickets unless included, Lunch and dinner unless included in the selected meal plan, Maldives Green Tax unless specifically included, Personal expenses, Water activities and Scuba diving. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "இந்த package-ல் முக்கியமாக சேர்க்கப்படாதவை: International flight tickets, குறிப்பாக சேர்க்கப்படாத வரை; தேர்வு செய்யப்பட்ட meal plan-ல் சேர்க்கப்படாத Lunch மற்றும் dinner; குறிப்பாக சேர்க்கப்படாத Maldives Green Tax; Personal expenses; Water activities மற்றும் Scuba diving. Inclusions பகுதியில் குறிப்பாக குறிப்பிடப்படாத எந்த service-யும் கூடுதல் செலவாக கருதப்படும்.",
+                "answerHindi": "इस package में मुख्य exclusions हैं: International flight tickets, जब तक शामिल न हों; selected meal plan में शामिल न होने वाला Lunch और dinner; विशेष रूप से शामिल न किया गया Maldives Green Tax; Personal expenses; Water activities और Scuba diving। Inclusions में विशेष रूप से उल्लेखित न की गई कोई भी service अतिरिक्त शुल्क पर होगी।"
+            },
+            {
+                "question": "How are Maldives airport-to-resort transfers handled?",
+                "questionTamil": "Maldives airport-லிருந்து resort-க்கு transfers எப்படி ஏற்பாடு செய்யப்படும்?",
+                "questionHindi": "Maldives airport से resort तक transfers कैसे व्यवस्थित किए जाते हैं?",
+                "answer": "Velana International Airport meet-and-greet assistance is provided. Round-trip resort transfers are arranged by speedboat, domestic flight or seaplane as confirmed. Maldives Green Tax is extra unless specifically included.",
+                "answerTamil": "Velana International Airport-ல் meet-and-greet assistance வழங்கப்படும். உறுதி செய்யப்பட்ட itinerary-ன் அடிப்படையில் speedboat, domestic flight அல்லது seaplane மூலம் round-trip resort transfers ஏற்பாடு செய்யப்படும். Maldives Green Tax குறிப்பாக சேர்க்கப்படாத வரை கூடுதல் செலவாகும்.",
+                "answerHindi": "Velana International Airport पर meet-and-greet assistance उपलब्ध होगी। Confirmed itinerary के अनुसार speedboat, domestic flight या seaplane द्वारा round-trip resort transfers की व्यवस्था की जाएगी। Maldives Green Tax विशेष रूप से शामिल न होने पर अतिरिक्त शुल्क पर होगा।"
             }
         ],
         "id": "9801"
@@ -6754,20 +7313,60 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a 3 Nights 4 Days Maldives beach villa honeymoon package with resort transfers, romantic experiences and meal-plan options.",
         "faq": [
             {
-                "question": "Is this Maldives package ideal for honeymoon couples?",
-                "questionTamil": "இந்த மாலத்தீவு பேக்கேஜ் ஹனிமூன் தம்பதிகளுக்கு சிறந்ததா?",
-                "questionHindi": "क्या यह मालदीव पैकेज हनीमून कपल्स के लिए आदर्श है?",
-                "answer": "Absolutely. The itinerary is built for privacy and romance: you stay in a water villa or beach bungalow, enjoy private beach dinners, and have plenty of relaxation time. Snorkeling and lagoon tours are included to add adventure. Every detail (seaplane transfers, resort check-in) is arranged, so you only focus on each other. The Maldives are famous for honeymooners and luxury resorts.",
-                "answerTamil": "நிச்சயமாக. இந்த பயணத் திட்டம் தனிமை மற்றும் காதல் நிறைந்த அனுபவத்திற்காக வடிவமைக்கப்பட்டுள்ளது: நீர்மேல் வில்லா அல்லது கடற்கரை பங்களாவில் தங்கி, தனிப்பட்ட கடற்கரை இரவு உணவை அனுபவித்து, போதுமான ஓய்வு நேரத்தையும் பெறலாம். சாகச அனுபவத்திற்காக ஸ்நோர்கெல்லிங் மற்றும் லகூன் சுற்றுலாக்களும் சேர்க்கப்பட்டுள்ளன. சீப்ளேன் போக்குவரத்து மற்றும் ரிசார்ட் செக்-இன் உள்ளிட்ட அனைத்து ஏற்பாடுகளும் செய்யப்படுவதால், நீங்கள் ஒருவருக்கொருவர் நேரத்தை மட்டுமே அனுபவிக்கலாம். மாலத்தீவுகள் ஹனிமூன் தம்பதிகள் மற்றும் லக்சுரி ரிசார்ட்களுக்கு பிரபலமானவை.",
-                "answerHindi": "बिल्कुल। यह यात्रा कार्यक्रम निजता और रोमांस के लिए बनाया गया है। आप वाटर विला या बीच बंगले में ठहरते हैं, निजी बीच डिनर का आनंद लेते हैं और भरपूर आराम का समय मिलता है। स्नॉर्कलिंग और लैगून टूर रोमांच का अनुभव जोड़ते हैं। सीप्लेन ट्रांसफर और रिसॉर्ट चेक-इन जैसी व्यवस्थाएँ की जाती हैं, इसलिए आप एक-दूसरे के साथ समय का आनंद ले सकते हैं। मालदीव हनीमून कपल्स और लक्ज़री रिसॉर्ट्स के लिए प्रसिद्ध है।"
+                "question": "Can I book the Maldives Beach Villa Honeymoon – 3 Nights / 4 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "மதுரையிலிருந்து Logaa Holidays மூலம் Maldives Beach Villa Honeymoon – 3 Nights / 4 Days பேக்கேஜை முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं मदुरै से Logaa Holidays के साथ Maldives Beach Villa Honeymoon – 3 Nights / 4 Days पैकेज बुक कर सकता हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins at Velana International Airport; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Velana International Airport – Island Resort – Airport. The stay plan is Beach Villa – 3 Nights. Main experiences include direct or easy beach access, with half-board, full-board and all-inclusive options.",
+                "answerTamil": "ஆம். Logaa Holidays மதுரையைச் சேர்ந்த tour operator ஆகும், மேலும் மதுரை மற்றும் தமிழ்நாட்டின் பிற பகுதிகளில் இருந்து வரும் தம்பதிகள் இந்த பேக்கேஜை முன்பதிவு செய்யலாம். இந்த பயணத் திட்டம் Velana International Airport-ல் தொடங்குகிறது. மதுரையிலிருந்து அந்த pickup point-க்கு செல்லும் பயணம், இறுதி quotation-ல் குறிப்பிடப்பட்டிருந்தால் மட்டுமே சேர்க்கப்படும்; இல்லையெனில் அது தனியாகும். திட்டமிடப்பட்ட route Velana International Airport – Island Resort – Airport ஆகும். Beach Villa-வில் 3 Nights தங்கும் வசதி உள்ளது. நேரடியாக அல்லது எளிதாக கடற்கரையை அணுகும் வசதி, Half-board, Full-board மற்றும் All-inclusive meal options ஆகியவை இதில் உள்ளன.",
+                "answerHindi": "हाँ। Logaa Holidays मदुरै स्थित एक tour operator है और मदुरै तथा तमिलनाडु के अन्य शहरों से आने वाले couples इस पैकेज को बुक कर सकते हैं। यह land itinerary Velana International Airport से शुरू होती है। मदुरै से उस pickup point तक की यात्रा अलग से होगी, जब तक कि final quotation में इसे विशेष रूप से शामिल न किया गया हो। निर्धारित route Velana International Airport – Island Resort – Airport है। Beach Villa में 3 Nights का stay शामिल है। मुख्य अनुभवों में direct या easy beach access तथा Half-board, Full-board और All-inclusive meal options शामिल हैं."
             },
             {
-                "question": "Can I start the Maldives trip from Chennai or Bangalore?",
-                "questionTamil": "சென்னை அல்லது பெங்களூரிலிருந்து மாலத்தீவு பயணத்தைத் தொடங்க முடியுமா?",
-                "questionHindi": "क्या मैं चेन्नई या बेंगलुरु से मालदीव यात्रा शुरू कर सकता/सकती हूँ?",
-                "answer": "Typically, you'll fly to Malé (Maldives) via a direct or one-stop flight (common from Chennai, Bangalore, or Mumbai). Once you arrive at Velana International Airport (Malé), we include your speedboat or seaplane transfer to the resort island. We'll coordinate the Maldives side (domestic transfer) entirely, so you just need to book your international flight to Malé. **A.** பொதுவாக, சென்னை, பெங்களூரு அல்லது மும்பையிலிருந்து நேரடி அல்லது ஒரு இடைநிலையுடன் கூடிய விமானத்தில் மாலே (மாலத்தீவு) செல்லலாம். நீங்கள் வேலனா சர்வதேச விமான நிலையத்தை (மாலே) அடைந்ததும், ரிசார்ட் தீவுக்கான ஸ்பீட்போட் அல்லது சீப்ளேன் போக்குவரத்து இதில் சேர்க்கப்பட்டுள்ளது. மாலத்தீவு பகுதியில் உள்ள உள்ளூர் போக்குவரத்து ஏற்பாடுகளை முழுமையாக நாங்கள் ஒருங்கிணைப்போம்; எனவே நீங்கள் மாலே செல்லும் சர்வதேச விமானத்தை மட்டும் முன்பதிவு செய்ய வேண்டும். **A.** आमतौर पर आप चेन्नई, बेंगलुरु या मुंबई से सीधी या एक-स्टॉप फ्लाइट द्वारा माले पहुँच सकते हैं। वेलाना इंटरनेशनल एयरपोर्ट पहुँचने के बाद रिसॉर्ट द्वीप के लिए स्पीडबोट या सीप्लेन ट्रांसफर शामिल है। मालदीव के भीतर के घरेलू ट्रांसफर का पूरा समन्वय हम करेंगे, इसलिए आपको केवल माले के लिए अपनी अंतरराष्ट्रीय फ्लाइट बुक करनी होगी। ──────────────────────────────────────────────────────────────────────────────── 15. MANALI VOLVO BUS PACKAGE (Overnight Delhi to Manali – AC Volvo Sleeper – Hill Station) ────────────────────────────────────────────────────────────────────────────────",
-                "answerTamil": "பொதுவாக, சென்னை, பெங்களூரு அல்லது மும்பையிலிருந்து நேரடி அல்லது ஒரு இடைநிலையுடன் கூடிய விமானத்தில் மாலே (மாலத்தீவு) செல்லலாம். நீங்கள் வேலனா சர்வதேச விமான நிலையத்தை (மாலே) அடைந்ததும், ரிசார்ட் தீவுக்கான ஸ்பீட்போட் அல்லது சீப்ளேன் போக்குவரத்து இதில் சேர்க்கப்பட்டுள்ளது. மாலத்தீவு பகுதியில் உள்ள உள்ளூர் போக்குவரத்து ஏற்பாடுகளை முழுமையாக நாங்கள் ஒருங்கிணைப்போம்; எனவே நீங்கள் மாலே செல்லும் சர்வதேச விமானத்தை மட்டும் முன்பதிவு செய்ய வேண்டும்.",
-                "answerHindi": "आमतौर पर आप चेन्नई, बेंगलुरु या मुंबई से सीधी या एक-स्टॉप फ्लाइट द्वारा माले पहुँच सकते हैं। वेलाना इंटरनेशनल एयरपोर्ट पहुँचने के बाद रिसॉर्ट द्वीप के लिए स्पीडबोट या सीप्लेन ट्रांसफर शामिल है। मालदीव के भीतर के घरेलू ट्रांसफर का पूरा समन्वय हम करेंगे, इसलिए आपको केवल माले के लिए अपनी अंतरराष्ट्रीय फ्लाइट बुक करनी होगी।"
+                "question": "Is the Maldives Beach Villa Honeymoon – 3 Nights / 4 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் honeymoon couples-க்கு Maldives Beach Villa Honeymoon – 3 Nights / 4 Days பேக்கேஜ் ஏற்றதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले honeymoon couples के लिए Maldives Beach Villa Honeymoon – 3 Nights / 4 Days पैकेज उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for first-time Maldives couples. It is structured as a Classic Maldives Beach Honeymoon. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். மதுரை மற்றும் தமிழ்நாட்டின் பிற நகரங்களில் இருந்து பயணம் செய்யும் தம்பதிகளுக்கு இந்த itinerary ஏற்றதாகும். குறிப்பாக முதல் முறையாக Maldives செல்லும் couples-க்கு இந்த package பொருத்தமானது. இது ஒரு Classic Maldives Beach Honeymoon ஆக வடிவமைக்கப்பட்டுள்ளது. Pickup point-க்கு arrival மற்றும் departure travel இறுதி quotation-ன் அடிப்படையில் இருக்கும்.",
+                "answerHindi": "हाँ। मदुरै और तमिलनाडु के अन्य शहरों से यात्रा करने वाले couples के लिए यह itinerary उपयुक्त है। यह पैकेज पहली बार Maldives जाने वाले couples के लिए उपयुक्त है। इसे Classic Maldives Beach Honeymoon के रूप में तैयार किया गया है। Pickup point तक arrival और departure travel final quotation के अनुसार होगा."
+            },
+            {
+                "question": "Are accommodation and breakfast included in this honeymoon package?",
+                "questionTamil": "இந்த honeymoon package-ல் accommodation மற்றும் breakfast சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस honeymoon package में accommodation और breakfast शामिल हैं?",
+                "answer": "Accommodation includes Three nights’ accommodation in a beach villa. Daily breakfast.",
+                "answerTamil": "Beach Villa-வில் 3 Nights accommodation மற்றும் தினசரி breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "इस पैकेज में Beach Villa में 3 Nights का accommodation और daily breakfast शामिल है."
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த honeymoon package-ல் pickup, drop மற்றும் private transport வசதிகள் என்னென்ன சேர்க்கப்பட்டுள்ளன?",
+                "questionHindi": "इस honeymoon package में pickup, drop और private transport की क्या सुविधाएँ शामिल हैं?",
+                "answer": "Round-trip resort transfers are included. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "Round-trip resort transfers சேர்க்கப்பட்டுள்ளன. மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளில் இருந்து வரும் guests-க்கு listed pickup point-க்கு செல்லும் transport, quotation-ல் குறிப்பாக சேர்க்கப்படாதிருந்தால், கூடுதல் செலவாகும்.",
+                "answerHindi": "Round-trip resort transfers शामिल हैं। मदुरै या तमिलनाडु के अन्य स्थानों से आने वाले guests के लिए listed pickup point तक का transport अतिरिक्त होगा, जब तक कि quotation में इसे विशेष रूप से शामिल न किया गया हो."
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "Logaa Holidays Madurai honeymoon room decoration, cake அல்லது candlelight dinner ஏற்பாடு செய்ய முடியுமா?",
+                "questionHindi": "क्या Logaa Holidays Madurai honeymoon room decoration, cake या candlelight dinner की व्यवस्था कर सकता है?",
+                "answer": "Available romantic add-ons listed for this package include candlelight dinner, couple spa, and a romantic dinner where included or arranged. They are subject to the hotel, resort or operator policy and must be confirmed in the final quotation.",
+                "answerTamil": "இந்த package-க்கு candlelight dinner, couple spa மற்றும் included அல்லது arranged செய்யப்பட்ட romantic dinner போன்ற romantic add-ons கிடைக்கக்கூடும். இவை hotel, resort அல்லது operator policy-க்கு உட்பட்டவை மற்றும் final quotation-ல் உறுதிப்படுத்தப்பட வேண்டும்.",
+                "answerHindi": "इस पैकेज में candlelight dinner, couple spa और included या arranged romantic dinner जैसे romantic add-ons उपलब्ध हो सकते हैं। ये hotel, resort या operator की policy के अधीन हैं और final quotation में confirm किए जाने चाहिए."
+            },
+            {
+                "question": "What is not included in the package price?",
+                "questionTamil": "இந்த package price-ல் என்னென்ன சேர்க்கப்படவில்லை?",
+                "questionHindi": "इस package price में क्या-क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Flight tickets unless included, Meals not covered by the selected plan, Maldives Green Tax unless included, Personal expenses, Premium drinks unless included, and Water sports. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "இந்த package-ல் Flight tickets, குறிப்பாக சேர்க்கப்படாதிருந்தால், selected meal plan-ல் cover செய்யப்படாத meals, Maldives Green Tax, குறிப்பாக சேர்க்கப்படாதிருந்தால், personal expenses, premium drinks, குறிப்பாக சேர்க்கப்படாதிருந்தால், மற்றும் water sports ஆகியவை சேர்க்கப்படவில்லை. Inclusions-ல் குறிப்பாக குறிப்பிடப்படாத எந்த சேவையும் கூடுதல் செலவாகக் கருதப்படும்.",
+                "answerHindi": "इस पैकेज में Flight tickets, जब तक शामिल न हों, selected meal plan में covered न होने वाले meals, Maldives Green Tax, जब तक शामिल न हो, personal expenses, premium drinks, जब तक शामिल न हों, और water sports शामिल नहीं हैं। Inclusions में विशेष रूप से उल्लेखित न की गई कोई भी service अतिरिक्त शुल्क के रूप में मानी जाएगी."
+            },
+            {
+                "question": "How are Maldives airport-to-resort transfers handled?",
+                "questionTamil": "Maldives airport-லிருந்து resort-க்கு transfers எப்படி ஏற்பாடு செய்யப்படும்?",
+                "questionHindi": "Maldives airport से resort तक transfers कैसे किए जाते हैं?",
+                "answer": "Airport meet-and-greet assistance and round-trip resort transfers are included. Maldives Green Tax is extra unless specifically included.",
+                "answerTamil": "Airport meet-and-greet assistance மற்றும் round-trip resort transfers வழங்கப்படும். Maldives Green Tax final quotation-ல் குறிப்பாக சேர்க்கப்படாதிருந்தால் கூடுதல் செலவாகும்.",
+                "answerHindi": "Airport meet-and-greet assistance और round-trip resort transfers उपलब्ध हैं। Maldives Green Tax final quotation में विशेष रूप से शामिल न होने पर अतिरिक्त शुल्क लगेगा."
             }
         ],
         "id": "9802"
@@ -6905,20 +7504,60 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a 4 Nights 5 Days Maldives honeymoon package with two nights in a beach villa and two nights in a water villa.",
         "faq": [
             {
-                "question": "Is this Maldives package ideal for honeymoon couples?",
-                "questionTamil": "இந்த மாலத்தீவு பேக்கேஜ் ஹனிமூன் தம்பதிகளுக்கு சிறந்ததா?",
-                "questionHindi": "क्या यह मालदीव पैकेज हनीमून कपल्स के लिए आदर्श है?",
-                "answer": "Absolutely. The itinerary is built for privacy and romance: you stay in a water villa or beach bungalow, enjoy private beach dinners, and have plenty of relaxation time. Snorkeling and lagoon tours are included to add adventure. Every detail (seaplane transfers, resort check-in) is arranged, so you only focus on each other. The Maldives are famous for honeymooners and luxury resorts.",
-                "answerTamil": "நிச்சயமாக. இந்த பயணத் திட்டம் தனிமை மற்றும் காதல் நிறைந்த அனுபவத்திற்காக வடிவமைக்கப்பட்டுள்ளது: நீர்மேல் வில்லா அல்லது கடற்கரை பங்களாவில் தங்கி, தனிப்பட்ட கடற்கரை இரவு உணவை அனுபவித்து, போதுமான ஓய்வு நேரத்தையும் பெறலாம். சாகச அனுபவத்திற்காக ஸ்நோர்கெல்லிங் மற்றும் லகூன் சுற்றுலாக்களும் சேர்க்கப்பட்டுள்ளன. சீப்ளேன் போக்குவரத்து மற்றும் ரிசார்ட் செக்-இன் உள்ளிட்ட அனைத்து ஏற்பாடுகளும் செய்யப்படுவதால், நீங்கள் ஒருவருக்கொருவர் நேரத்தை மட்டுமே அனுபவிக்கலாம். மாலத்தீவுகள் ஹனிமூன் தம்பதிகள் மற்றும் லக்சுரி ரிசார்ட்களுக்கு பிரபலமானவை.",
-                "answerHindi": "बिल्कुल। यह यात्रा कार्यक्रम निजता और रोमांस के लिए बनाया गया है। आप वाटर विला या बीच बंगले में ठहरते हैं, निजी बीच डिनर का आनंद लेते हैं और भरपूर आराम का समय मिलता है। स्नॉर्कलिंग और लैगून टूर रोमांच का अनुभव जोड़ते हैं। सीप्लेन ट्रांसफर और रिसॉर्ट चेक-इन जैसी व्यवस्थाएँ की जाती हैं, इसलिए आप एक-दूसरे के साथ समय का आनंद ले सकते हैं। मालदीव हनीमून कपल्स और लक्ज़री रिसॉर्ट्स के लिए प्रसिद्ध है।"
+                "question": "Can I book the Maldives Beach Villa and Water Villa Honeymoon – 4 Nights / 5 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "மதுரையிலிருந்து Logaa Holidays மூலம் Maldives Beach Villa and Water Villa Honeymoon – 4 Nights / 5 Days பேக்கேஜை முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं मदुरै से Logaa Holidays के साथ Maldives Beach Villa and Water Villa Honeymoon – 4 Nights / 5 Days पैकेज बुक कर सकता हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins at Velana International Airport; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Velana International Airport – Island Resort – Airport. The stay plan is Beach Villa 2 Nights + Water Villa 2 Nights. Main experiences include beach and lagoon experiences, with direct lagoon access where available.",
+                "answerTamil": "ஆம். Logaa Holidays மதுரையைச் சேர்ந்த tour operator ஆகும், மேலும் மதுரை மற்றும் தமிழ்நாட்டின் பிற பகுதிகளில் இருந்து வரும் couples இந்த package-ஐ முன்பதிவு செய்யலாம். இந்த land itinerary Velana International Airport-ல் தொடங்குகிறது. மதுரையிலிருந்து அந்த pickup point-க்கு செல்லும் பயணம் final quotation-ல் குறிப்பாக சேர்க்கப்படாதிருந்தால் தனியாக இருக்கும். திட்டமிடப்பட்ட route Velana International Airport – Island Resort – Airport ஆகும். Beach Villa-வில் 2 Nights மற்றும் Water Villa-வில் 2 Nights தங்கும் வசதி உள்ளது. முக்கிய அனுபவங்களில் beach மற்றும் lagoon experiences, கிடைக்கும் இடங்களில் direct lagoon access ஆகியவை அடங்கும்.",
+                "answerHindi": "हाँ। Logaa Holidays मदुरै स्थित tour operator है और मदुरै तथा तमिलनाडु के अन्य शहरों से आने वाले couples इस package को बुक कर सकते हैं। यह land itinerary Velana International Airport से शुरू होती है। मदुरै से उस pickup point तक की यात्रा final quotation में विशेष रूप से शामिल न होने पर अलग से होगी। निर्धारित route Velana International Airport – Island Resort – Airport है। Stay plan में Beach Villa में 2 Nights और Water Villa में 2 Nights शामिल हैं। मुख्य अनुभवों में beach और lagoon experiences तथा उपलब्धता के अनुसार direct lagoon access शामिल हैं."
             },
             {
-                "question": "Can I start the Maldives trip from Chennai or Bangalore?",
-                "questionTamil": "சென்னை அல்லது பெங்களூரிலிருந்து மாலத்தீவு பயணத்தைத் தொடங்க முடியுமா?",
-                "questionHindi": "क्या मैं चेन्नई या बेंगलुरु से मालदीव यात्रा शुरू कर सकता/सकती हूँ?",
-                "answer": "Typically, you'll fly to Malé (Maldives) via a direct or one-stop flight (common from Chennai, Bangalore, or Mumbai). Once you arrive at Velana International Airport (Malé), we include your speedboat or seaplane transfer to the resort island. We'll coordinate the Maldives side (domestic transfer) entirely, so you just need to book your international flight to Malé. **A.** பொதுவாக, சென்னை, பெங்களூரு அல்லது மும்பையிலிருந்து நேரடி அல்லது ஒரு இடைநிலையுடன் கூடிய விமானத்தில் மாலே (மாலத்தீவு) செல்லலாம். நீங்கள் வேலனா சர்வதேச விமான நிலையத்தை (மாலே) அடைந்ததும், ரிசார்ட் தீவுக்கான ஸ்பீட்போட் அல்லது சீப்ளேன் போக்குவரத்து இதில் சேர்க்கப்பட்டுள்ளது. மாலத்தீவு பகுதியில் உள்ள உள்ளூர் போக்குவரத்து ஏற்பாடுகளை முழுமையாக நாங்கள் ஒருங்கிணைப்போம்; எனவே நீங்கள் மாலே செல்லும் சர்வதேச விமானத்தை மட்டும் முன்பதிவு செய்ய வேண்டும். **A.** आमतौर पर आप चेन्नई, बेंगलुरु या मुंबई से सीधी या एक-स्टॉप फ्लाइट द्वारा माले पहुँच सकते हैं। वेलाना इंटरनेशनल एयरपोर्ट पहुँचने के बाद रिसॉर्ट द्वीप के लिए स्पीडबोट या सीप्लेन ट्रांसफर शामिल है। मालदीव के भीतर के घरेलू ट्रांसफर का पूरा समन्वय हम करेंगे, इसलिए आपको केवल माले के लिए अपनी अंतरराष्ट्रीय फ्लाइट बुक करनी होगी। ──────────────────────────────────────────────────────────────────────────────── 15. MANALI VOLVO BUS PACKAGE (Overnight Delhi to Manali – AC Volvo Sleeper – Hill Station) ────────────────────────────────────────────────────────────────────────────────",
-                "answerTamil": "பொதுவாக, சென்னை, பெங்களூரு அல்லது மும்பையிலிருந்து நேரடி அல்லது ஒரு இடைநிலையுடன் கூடிய விமானத்தில் மாலே (மாலத்தீவு) செல்லலாம். நீங்கள் வேலனா சர்வதேச விமான நிலையத்தை (மாலே) அடைந்ததும், ரிசார்ட் தீவுக்கான ஸ்பீட்போட் அல்லது சீப்ளேன் போக்குவரத்து இதில் சேர்க்கப்பட்டுள்ளது. மாலத்தீவு பகுதியில் உள்ள உள்ளூர் போக்குவரத்து ஏற்பாடுகளை முழுமையாக நாங்கள் ஒருங்கிணைப்போம்; எனவே நீங்கள் மாலே செல்லும் சர்வதேச விமானத்தை மட்டும் முன்பதிவு செய்ய வேண்டும்.",
-                "answerHindi": "आमतौर पर आप चेन्नई, बेंगलुरु या मुंबई से सीधी या एक-स्टॉप फ्लाइट द्वारा माले पहुँच सकते हैं। वेलाना इंटरनेशनल एयरपोर्ट पहुँचने के बाद रिसॉर्ट द्वीप के लिए स्पीडबोट या सीप्लेन ट्रांसफर शामिल है। मालदीव के भीतर के घरेलू ट्रांसफर का पूरा समन्वय हम करेंगे, इसलिए आपको केवल माले के लिए अपनी अंतरराष्ट्रीय फ्लाइट बुक करनी होगी।"
+                "question": "Is the Maldives Beach Villa and Water Villa Honeymoon – 4 Nights / 5 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் honeymoon couples-க்கு Maldives Beach Villa and Water Villa Honeymoon – 4 Nights / 5 Days package ஏற்றதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले honeymoon couples के लिए Maldives Beach Villa and Water Villa Honeymoon – 4 Nights / 5 Days package उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for couples seeking the Signature Maldives Experience. It is structured as a Beach and Overwater Romance. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். மதுரை மற்றும் தமிழ்நாட்டின் பிற நகரங்களில் இருந்து பயணம் செய்யும் couples-க்கு இந்த itinerary ஏற்றதாகும். Signature Maldives Experience-ஐ விரும்பும் couples-க்கு இந்த package பொருத்தமானது. இது Beach and Overwater Romance அனுபவமாக வடிவமைக்கப்பட்டுள்ளது. Package pickup point-க்கு arrival மற்றும் departure travel final confirmed quotation-ன் அடிப்படையில் இருக்கும்.",
+                "answerHindi": "हाँ। मदुरै और तमिलनाडु के अन्य शहरों से यात्रा करने वाले couples के लिए यह itinerary उपयुक्त है। Signature Maldives Experience चाहने वाले couples के लिए यह package उपयुक्त है। इसे Beach and Overwater Romance experience के रूप में तैयार किया गया है। Package pickup point तक arrival और departure travel final confirmed quotation के अनुसार होगा."
+            },
+            {
+                "question": "Are accommodation and breakfast included in this honeymoon package?",
+                "questionTamil": "இந்த honeymoon package-ல் accommodation மற்றும் breakfast சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस honeymoon package में accommodation और breakfast शामिल हैं?",
+                "answer": "Accommodation includes Two nights’ accommodation in a beach villa; Two nights’ accommodation in a water villa. Daily breakfast.",
+                "answerTamil": "இந்த package-ல் Beach Villa-வில் 2 Nights accommodation மற்றும் Water Villa-வில் 2 Nights accommodation சேர்க்கப்பட்டுள்ளது. தினசரி breakfast வழங்கப்படும்.",
+                "answerHindi": "इस package में Beach Villa में 2 Nights और Water Villa में 2 Nights का accommodation शामिल है। Daily breakfast उपलब्ध है."
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த honeymoon package-ல் pickup, drop மற்றும் private transport என்னென்ன சேர்க்கப்பட்டுள்ளன?",
+                "questionHindi": "इस honeymoon package में pickup, drop और private transport की क्या सुविधाएँ शामिल हैं?",
+                "answer": "Transportation is included only as specifically listed under the confirmed package inclusions. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "Confirmed package inclusions-ல் குறிப்பாக குறிப்பிடப்பட்ட transportation services மட்டுமே சேர்க்கப்பட்டுள்ளன. மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளில் இருந்து வரும் guests-க்கு listed pickup point-க்கு செல்லும் transport, quotation-ல் குறிப்பாக சேர்க்கப்படாதிருந்தால் கூடுதல் செலவாகும்.",
+                "answerHindi": "Confirmed package inclusions में विशेष रूप से listed transportation services ही शामिल हैं। मदुरै या तमिलनाडु के अन्य स्थानों से आने वाले guests के लिए listed pickup point तक का transport अतिरिक्त होगा, जब तक कि quotation में इसे विशेष रूप से शामिल न किया गया हो."
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "Logaa Holidays Madurai honeymoon room decoration, cake அல்லது candlelight dinner ஏற்பாடு செய்ய முடியுமா?",
+                "questionHindi": "क्या Logaa Holidays Madurai honeymoon room decoration, cake या candlelight dinner की व्यवस्था कर सकता है?",
+                "answer": "Available romantic add-ons listed for this package include Couple spa, Professional photoshoot, and Candlelight dinner. They are subject to the hotel, resort or operator policy and must be confirmed in the final quotation.",
+                "answerTamil": "இந்த package-க்கு Couple spa, Professional photoshoot மற்றும் Candlelight dinner போன்ற romantic add-ons கிடைக்கக்கூடும். இவை hotel, resort அல்லது operator policy-க்கு உட்பட்டவை மற்றும் final quotation-ல் உறுதிப்படுத்தப்பட வேண்டும்.",
+                "answerHindi": "इस package में Couple spa, Professional photoshoot और Candlelight dinner जैसे romantic add-ons उपलब्ध हो सकते हैं। ये hotel, resort या operator की policy के अधीन हैं और final quotation में confirm किए जाने चाहिए."
+            },
+            {
+                "question": "What is not included in the package price?",
+                "questionTamil": "இந்த package price-ல் என்னென்ன சேர்க்கப்படவில்லை?",
+                "questionHindi": "इस package price में क्या-क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include International flights unless included, Meals outside the selected meal plan, Maldives Green Tax unless included, Personal expenses, Premium beverages, Water sports and diving. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "இந்த package-ல் International flights, குறிப்பாக சேர்க்கப்படாதிருந்தால், selected meal plan-க்கு வெளியிலான meals, Maldives Green Tax, குறிப்பாக சேர்க்கப்படாதிருந்தால், personal expenses, premium beverages, water sports மற்றும் diving ஆகியவை சேர்க்கப்படவில்லை. Inclusions-ல் குறிப்பாக குறிப்பிடப்படாத எந்த சேவையும் கூடுதல் செலவாகக் கருதப்படும்.",
+                "answerHindi": "इस package में International flights, जब तक शामिल न हों, selected meal plan के बाहर के meals, Maldives Green Tax, जब तक शामिल न हो, personal expenses, premium beverages, water sports और diving शामिल नहीं हैं। Inclusions में विशेष रूप से उल्लेखित न की गई कोई भी service अतिरिक्त शुल्क के रूप में मानी जाएगी."
+            },
+            {
+                "question": "How are Maldives airport-to-resort transfers handled?",
+                "questionTamil": "Maldives airport-லிருந்து resort-க்கு transfers எப்படி ஏற்பாடு செய்யப்படும்?",
+                "questionHindi": "Maldives airport से resort तक transfers कैसे किए जाते हैं?",
+                "answer": "Airport meet-and-greet assistance, round-trip island-resort transfers, and scheduled internal room transfer are included as specified. Maldives Green Tax is extra unless specifically included.",
+                "answerTamil": "Airport meet-and-greet assistance, round-trip island-resort transfers மற்றும் scheduled internal room transfer ஆகியவை குறிப்பிடப்பட்டபடி வழங்கப்படும். Maldives Green Tax final quotation-ல் குறிப்பாக சேர்க்கப்படாதிருந்தால் கூடுதல் செலவாகும்.",
+                "answerHindi": "Airport meet-and-greet assistance, round-trip island-resort transfers और scheduled internal room transfer उपलब्ध हैं। Maldives Green Tax final quotation में विशेष रूप से शामिल न होने पर अतिरिक्त शुल्क लगेगा."
             }
         ],
         "id": "9803"
@@ -7076,20 +7715,60 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a premium 5 Nights 6 Days Maldives honeymoon package with beach villa, water villa, island transfers and romantic experiences.",
         "faq": [
             {
-                "question": "Is this Maldives package ideal for honeymoon couples?",
-                "questionTamil": "இந்த மாலத்தீவு பேக்கேஜ் ஹனிமூன் தம்பதிகளுக்கு சிறந்ததா?",
-                "questionHindi": "क्या यह मालदीव पैकेज हनीमून कपल्स के लिए आदर्श है?",
-                "answer": "Absolutely. The itinerary is built for privacy and romance: you stay in a water villa or beach bungalow, enjoy private beach dinners, and have plenty of relaxation time. Snorkeling and lagoon tours are included to add adventure. Every detail (seaplane transfers, resort check-in) is arranged, so you only focus on each other. The Maldives are famous for honeymooners and luxury resorts.",
-                "answerTamil": "நிச்சயமாக. இந்த பயணத் திட்டம் தனிமை மற்றும் காதல் நிறைந்த அனுபவத்திற்காக வடிவமைக்கப்பட்டுள்ளது: நீர்மேல் வில்லா அல்லது கடற்கரை பங்களாவில் தங்கி, தனிப்பட்ட கடற்கரை இரவு உணவை அனுபவித்து, போதுமான ஓய்வு நேரத்தையும் பெறலாம். சாகச அனுபவத்திற்காக ஸ்நோர்கெல்லிங் மற்றும் லகூன் சுற்றுலாக்களும் சேர்க்கப்பட்டுள்ளன. சீப்ளேன் போக்குவரத்து மற்றும் ரிசார்ட் செக்-இன் உள்ளிட்ட அனைத்து ஏற்பாடுகளும் செய்யப்படுவதால், நீங்கள் ஒருவருக்கொருவர் நேரத்தை மட்டுமே அனுபவிக்கலாம். மாலத்தீவுகள் ஹனிமூன் தம்பதிகள் மற்றும் லக்சுரி ரிசார்ட்களுக்கு பிரபலமானவை.",
-                "answerHindi": "बिल्कुल। यह यात्रा कार्यक्रम निजता और रोमांस के लिए बनाया गया है। आप वाटर विला या बीच बंगले में ठहरते हैं, निजी बीच डिनर का आनंद लेते हैं और भरपूर आराम का समय मिलता है। स्नॉर्कलिंग और लैगून टूर रोमांच का अनुभव जोड़ते हैं। सीप्लेन ट्रांसफर और रिसॉर्ट चेक-इन जैसी व्यवस्थाएँ की जाती हैं, इसलिए आप एक-दूसरे के साथ समय का आनंद ले सकते हैं। मालदीव हनीमून कपल्स और लक्ज़री रिसॉर्ट्स के लिए प्रसिद्ध है।"
+                "question": "Can I book the Premium Maldives Honeymoon Package – 5 Nights / 6 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "மதுரையிலிருந்து Logaa Holidays மூலம் Premium Maldives Honeymoon Package – 5 Nights / 6 Days பேக்கேஜை முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं मदुरै से Logaa Holidays के साथ Premium Maldives Honeymoon Package – 5 Nights / 6 Days पैकेज बुक कर सकता हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins at Velana International Airport; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Velana International Airport – Premium Island Resort – Airport. The stay plan is Beach Villa 2 Nights + Water Villa 3 Nights. Main experiences include lagoon and beach leisure.",
+                "answerTamil": "ஆம். Logaa Holidays மதுரையைச் சேர்ந்த tour operator ஆகும், மேலும் மதுரை மற்றும் தமிழ்நாட்டின் பிற பகுதிகளில் இருந்து வரும் couples இந்த package-ஐ முன்பதிவு செய்யலாம். இந்த land itinerary Velana International Airport-ல் தொடங்குகிறது. மதுரையிலிருந்து அந்த pickup point-க்கு செல்லும் பயணம் final quotation-ல் குறிப்பாக சேர்க்கப்படாதிருந்தால் தனியாக இருக்கும். திட்டமிடப்பட்ட route Velana International Airport – Premium Island Resort – Airport ஆகும். Beach Villa-வில் 2 Nights மற்றும் Water Villa-வில் 3 Nights தங்கும் வசதி உள்ளது. முக்கிய அனுபவங்களில் lagoon மற்றும் beach leisure ஆகியவை அடங்கும்.",
+                "answerHindi": "हाँ। Logaa Holidays मदुरै स्थित tour operator है और मदुरै तथा तमिलनाडु के अन्य शहरों से आने वाले couples इस package को बुक कर सकते हैं। यह land itinerary Velana International Airport से शुरू होती है। मदुरै से उस pickup point तक की यात्रा final quotation में विशेष रूप से शामिल न होने पर अलग से होगी। निर्धारित route Velana International Airport – Premium Island Resort – Airport है। Stay plan में Beach Villa में 2 Nights और Water Villa में 3 Nights शामिल हैं। मुख्य अनुभवों में lagoon और beach leisure शामिल हैं."
             },
             {
-                "question": "Can I start the Maldives trip from Chennai or Bangalore?",
-                "questionTamil": "சென்னை அல்லது பெங்களூரிலிருந்து மாலத்தீவு பயணத்தைத் தொடங்க முடியுமா?",
-                "questionHindi": "क्या मैं चेन्नई या बेंगलुरु से मालदीव यात्रा शुरू कर सकता/सकती हूँ?",
-                "answer": "Typically, you'll fly to Malé (Maldives) via a direct or one-stop flight (common from Chennai, Bangalore, or Mumbai). Once you arrive at Velana International Airport (Malé), we include your speedboat or seaplane transfer to the resort island. We'll coordinate the Maldives side (domestic transfer) entirely, so you just need to book your international flight to Malé. **A.** பொதுவாக, சென்னை, பெங்களூரு அல்லது மும்பையிலிருந்து நேரடி அல்லது ஒரு இடைநிலையுடன் கூடிய விமானத்தில் மாலே (மாலத்தீவு) செல்லலாம். நீங்கள் வேலனா சர்வதேச விமான நிலையத்தை (மாலே) அடைந்ததும், ரிசார்ட் தீவுக்கான ஸ்பீட்போட் அல்லது சீப்ளேன் போக்குவரத்து இதில் சேர்க்கப்பட்டுள்ளது. மாலத்தீவு பகுதியில் உள்ள உள்ளூர் போக்குவரத்து ஏற்பாடுகளை முழுமையாக நாங்கள் ஒருங்கிணைப்போம்; எனவே நீங்கள் மாலே செல்லும் சர்வதேச விமானத்தை மட்டும் முன்பதிவு செய்ய வேண்டும். **A.** आमतौर पर आप चेन्नई, बेंगलुरु या मुंबई से सीधी या एक-स्टॉप फ्लाइट द्वारा माले पहुँच सकते हैं। वेलाना इंटरनेशनल एयरपोर्ट पहुँचने के बाद रिसॉर्ट द्वीप के लिए स्पीडबोट या सीप्लेन ट्रांसफर शामिल है। मालदीव के भीतर के घरेलू ट्रांसफर का पूरा समन्वय हम करेंगे, इसलिए आपको केवल माले के लिए अपनी अंतरराष्ट्रीय फ्लाइट बुक करनी होगी। ──────────────────────────────────────────────────────────────────────────────── 15. MANALI VOLVO BUS PACKAGE (Overnight Delhi to Manali – AC Volvo Sleeper – Hill Station) ────────────────────────────────────────────────────────────────────────────────",
-                "answerTamil": "பொதுவாக, சென்னை, பெங்களூரு அல்லது மும்பையிலிருந்து நேரடி அல்லது ஒரு இடைநிலையுடன் கூடிய விமானத்தில் மாலே (மாலத்தீவு) செல்லலாம். நீங்கள் வேலனா சர்வதேச விமான நிலையத்தை (மாலே) அடைந்ததும், ரிசார்ட் தீவுக்கான ஸ்பீட்போட் அல்லது சீப்ளேன் போக்குவரத்து இதில் சேர்க்கப்பட்டுள்ளது. மாலத்தீவு பகுதியில் உள்ள உள்ளூர் போக்குவரத்து ஏற்பாடுகளை முழுமையாக நாங்கள் ஒருங்கிணைப்போம்; எனவே நீங்கள் மாலே செல்லும் சர்வதேச விமானத்தை மட்டும் முன்பதிவு செய்ய வேண்டும்.",
-                "answerHindi": "आमतौर पर आप चेन्नई, बेंगलुरु या मुंबई से सीधी या एक-स्टॉप फ्लाइट द्वारा माले पहुँच सकते हैं। वेलाना इंटरनेशनल एयरपोर्ट पहुँचने के बाद रिसॉर्ट द्वीप के लिए स्पीडबोट या सीप्लेन ट्रांसफर शामिल है। मालदीव के भीतर के घरेलू ट्रांसफर का पूरा समन्वय हम करेंगे, इसलिए आपको केवल माले के लिए अपनी अंतरराष्ट्रीय फ्लाइट बुक करनी होगी।"
+                "question": "Is the Premium Maldives Honeymoon Package – 5 Nights / 6 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் honeymoon couples-க்கு Premium Maldives Honeymoon Package – 5 Nights / 6 Days ஏற்றதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले honeymoon couples के लिए Premium Maldives Honeymoon Package – 5 Nights / 6 Days उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for couples seeking a relaxed premium experience. It is structured as a Complete Luxury Island Honeymoon. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். மதுரை மற்றும் தமிழ்நாட்டின் பிற நகரங்களில் இருந்து பயணம் செய்யும் couples-க்கு இந்த itinerary ஏற்றதாகும். Relaxed premium experience-ஐ விரும்பும் couples-க்கு இந்த package பொருத்தமானது. இது Complete Luxury Island Honeymoon ஆக வடிவமைக்கப்பட்டுள்ளது. Package pickup point-க்கு arrival மற்றும் departure travel final confirmed quotation-ன் அடிப்படையில் இருக்கும்.",
+                "answerHindi": "हाँ। मदुरै और तमिलनाडु के अन्य शहरों से यात्रा करने वाले couples के लिए यह itinerary उपयुक्त है। Relaxed premium experience चाहने वाले couples के लिए यह package उपयुक्त है। इसे Complete Luxury Island Honeymoon के रूप में तैयार किया गया है। Package pickup point तक arrival और departure travel final confirmed quotation के अनुसार होगा."
+            },
+            {
+                "question": "Are accommodation and breakfast included in this honeymoon package?",
+                "questionTamil": "இந்த honeymoon package-ல் accommodation மற்றும் breakfast சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस honeymoon package में accommodation और breakfast शामिल हैं?",
+                "answer": "Accommodation includes Two nights’ accommodation in a beach villa; Three nights’ accommodation in a water villa. Daily breakfast.",
+                "answerTamil": "இந்த package-ல் Beach Villa-வில் 2 Nights accommodation மற்றும் Water Villa-வில் 3 Nights accommodation சேர்க்கப்பட்டுள்ளது. தினசரி breakfast வழங்கப்படும்.",
+                "answerHindi": "इस package में Beach Villa में 2 Nights और Water Villa में 3 Nights का accommodation शामिल है। Daily breakfast उपलब्ध है."
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த honeymoon package-ல் pickup, drop மற்றும் private transport என்னென்ன சேர்க்கப்பட்டுள்ளன?",
+                "questionHindi": "इस honeymoon package में pickup, drop और private transport की क्या सुविधाएँ शामिल हैं?",
+                "answer": "Transportation is included only as specifically listed under the confirmed package inclusions. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "Confirmed package inclusions-ல் குறிப்பாக குறிப்பிடப்பட்ட transportation services மட்டுமே சேர்க்கப்பட்டுள்ளன. மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளில் இருந்து வரும் guests-க்கு listed pickup point-க்கு செல்லும் transport, quotation-ல் குறிப்பாக சேர்க்கப்படாதிருந்தால் கூடுதல் செலவாகும்.",
+                "answerHindi": "Confirmed package inclusions में विशेष रूप से listed transportation services ही शामिल हैं। मदुरै या तमिलनाडु के अन्य स्थानों से आने वाले guests के लिए listed pickup point तक का transport अतिरिक्त होगा, जब तक कि quotation में इसे विशेष रूप से शामिल न किया गया हो."
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "Logaa Holidays Madurai honeymoon room decoration, cake அல்லது candlelight dinner ஏற்பாடு செய்ய முடியுமா?",
+                "questionHindi": "क्या Logaa Holidays Madurai honeymoon room decoration, cake या candlelight dinner की व्यवस्था कर सकता है?",
+                "answer": "Available romantic add-ons listed for this package include couple spa, floating breakfast, private candlelight dinner, and romantic dinner arrangements where available. These services are subject to the hotel, resort or operator policy and must be confirmed in the final quotation.",
+                "answerTamil": "இந்த package-க்கு couple spa, floating breakfast, private candlelight dinner மற்றும் கிடைக்கும் இடங்களில் romantic dinner arrangement போன்ற romantic add-ons உள்ளன. இவை hotel, resort அல்லது operator policy-க்கு உட்பட்டவை மற்றும் final quotation-ல் உறுதிப்படுத்தப்பட வேண்டும்.",
+                "answerHindi": "इस package में couple spa, floating breakfast, private candlelight dinner और उपलब्धता के अनुसार romantic dinner arrangements जैसे romantic add-ons शामिल हो सकते हैं। ये hotel, resort या operator की policy के अधीन हैं और final quotation में confirm किए जाने चाहिए."
+            },
+            {
+                "question": "What is not included in the package price?",
+                "questionTamil": "இந்த package price-ல் என்னென்ன சேர்க்கப்படவில்லை?",
+                "questionHindi": "इस package price में क्या-क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include International flight tickets unless included, Meals and beverages outside the selected plan, Maldives Green Tax unless included, Personal expenses, Premium alcoholic beverages, and Scuba diving. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "இந்த package-ல் International flight tickets, குறிப்பாக சேர்க்கப்படாதிருந்தால், selected plan-க்கு வெளியிலான meals மற்றும் beverages, Maldives Green Tax, குறிப்பாக சேர்க்கப்படாதிருந்தால், personal expenses, premium alcoholic beverages மற்றும் scuba diving ஆகியவை சேர்க்கப்படவில்லை. Inclusions-ல் குறிப்பாக குறிப்பிடப்படாத எந்த சேவையும் கூடுதல் செலவாகக் கருதப்படும்.",
+                "answerHindi": "इस package में International flight tickets, जब तक शामिल न हों, selected plan के बाहर के meals और beverages, Maldives Green Tax, जब तक शामिल न हो, personal expenses, premium alcoholic beverages और scuba diving शामिल नहीं हैं। Inclusions में विशेष रूप से उल्लेखित न की गई कोई भी service अतिरिक्त शुल्क के रूप में मानी जाएगी."
+            },
+            {
+                "question": "How are Maldives airport-to-resort transfers handled?",
+                "questionTamil": "Maldives airport-லிருந்து resort-க்கு transfers எப்படி ஏற்பாடு செய்யப்படும்?",
+                "questionHindi": "Maldives airport से resort तक transfers कैसे किए जाते हैं?",
+                "answer": "Round-trip resort transfer by the confirmed mode is included, along with scheduled villa-category transfer. Maldives Green Tax is extra unless specifically included.",
+                "answerTamil": "Confirmed mode மூலம் round-trip resort transfer மற்றும் scheduled villa-category transfer வழங்கப்படும். Maldives Green Tax final quotation-ல் குறிப்பாக சேர்க்கப்படாதிருந்தால் கூடுதல் செலவாகும்.",
+                "answerHindi": "Confirmed mode के अनुसार round-trip resort transfer और scheduled villa-category transfer उपलब्ध हैं। Maldives Green Tax final quotation में विशेष रूप से शामिल न होने पर अतिरिक्त शुल्क लगेगा."
             }
         ],
         "id": "9804"
@@ -7212,16 +7891,60 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a romantic Shimla honeymoon package for 2 Nights and 3 Days covering Kufri, Mall Road, Green Valley and major Shimla attractions.",
         "faq": [
             {
-                "question": "Is the Shimla (Himachal Pradesh) honeymoon tour romantic for couples?",
-                "questionTamil": "ஹிமாச்சல் (ஷிம்லா/குஃப்ரி) சுற்றுலா ஹனிமூன் தம்பதிகளுக்கு காதல் நிறைந்ததாக இருக்குமா?",
-                "answer": "Yes. Shimla's quaint colonial charm and Kufri's pine forests are very romantic. We include scenic viewpoints and cozy meals at hilltop restaurants. Hotels are chosen for charm and views (many have fireplaces). The cool climate and privacy make it ideal for couples. We can also arrange special experiences like a private picnic or bonfire on request.",
-                "answerTamil": "ஆம். ஷிம்லாவின் அழகான காலனித்துவ தோற்றமும் குஃப்ரியின் பைன் காடுகளும் மிகவும் காதல் நிறைந்தவை. அழகிய காட்சிகள் கிடைக்கும் இடங்களும் மலை உச்சியில் உள்ள உணவகங்களில் வசதியான உணவு அனுபவங்களும் சேர்க்கப்பட்டுள்ளன. அழகு மற்றும் காட்சிகளை அடிப்படையாகக் கொண்டு ஹோட்டல்கள் தேர்வு செய்யப்படுகின்றன (பல ஹோட்டல்களில் நெருப்பிடம் உள்ளது). குளிர்ச்சியான காலநிலையும் தனிமையான சூழலும் தம்பதிகளுக்கு சிறந்ததாக அமைகின்றன."
+                "question": "Can I book the Premium Shimla Honeymoon Package – 2 Nights / 3 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "Logaa Holidays மூலம் மதுரையிலிருந்து Premium Shimla Honeymoon Package – 2 Nights / 3 Days-ஐ நான் முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं Logaa Holidays के साथ मदुरै से Premium Shimla Honeymoon Package – 2 Nights / 3 Days बुक कर सकता/सकती हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins from Chandigarh; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Chandigarh – Shimla – Kufri – Chandigarh. The stay plan is Shimla – 2 Nights. Main experiences include Shimla local sightseeing, Kufri mountain excursion, Mall Road evening walk, Mall Road.",
+                "answerTamil": "ஆம். Logaa Holidays மதுரையை அடிப்படையாகக் கொண்ட tour operator ஆகும், மேலும் மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள தம்பதிகள் இந்த package-ஐ முன்பதிவு செய்யலாம். Land itinerary Chandigarh-ல் தொடங்குகிறது; final quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், மதுரையிலிருந்து அந்த pickup point-க்கு செல்லும் பயணம் தனியாக இருக்கும். திட்டமிடப்பட்ட route Chandigarh – Shimla – Kufri – Chandigarh ஆகும். Stay plan Shimla – 2 Nights ஆகும். Main experiences include Shimla local sightseeing, Kufri mountain excursion, Mall Road evening walk, Mall Road.",
+                "answerHindi": "हाँ। Logaa Holidays मदुरै स्थित tour operator है, और मदुरै तथा पूरे तमिलनाडु से आने वाले couples इस package को बुक कर सकते हैं। Land itinerary Chandigarh से शुरू होती है; यदि final quotation में विशेष रूप से शामिल नहीं किया गया है, तो मदुरै से उस pickup point तक की यात्रा अलग से होगी। नियोजित route Chandigarh – Shimla – Kufri – Chandigarh है। Stay plan Shimla – 2 Nights है। Main experiences include Shimla local sightseeing, Kufri mountain excursion, Mall Road evening walk, Mall Road."
             },
             {
-                "question": "Are travel arrangements comfortable for a honeymoon couple joining from Delhi or Chandigarh?",
-                "questionTamil": "ஹனிமூன் தம்பதிகளுக்கு பயண ஏற்பாடுகள் வசதியாக இருக்குமா?",
-                "answer": "Certainly. We provide a private car for your group, with a friendly driver-guide who assists you throughout. We schedule moderate sightseeing so you can relax (for example, a toy train ride or brief nature walks). Pickup is from Delhi or Chandigarh, and we ensure the journey itself is pleasant so you start your honeymoon stress-free.",
-                "answerTamil": "நிச்சயமாக. உங்கள் குழுவிற்கு ஒரு தனியார் காரை வழங்குகிறோம், மேலும் முழுப் பயணத்திலும் உதவும் நட்பான ஓட்டுநர்-வழிகாட்டி இருப்பார். நீங்கள் நிதானமாக இருக்கும்படி மிதமான அளவிலான சுற்றுலா நடவடிக்கைகளைத் திட்டமிடுகிறோம் (உதாரணமாக, டாய் ரயில் பயணம் அல்லது குறுகிய இயற்கை நடைப்பயணம்). டெல்லி அல்லது சண்டிகரிலிருந்து பிக்கப் வசதி உள்ளது, மேலும் பயணமே (கார் அல்லது வோல்வோ) வசதியாகவும் இனிமையாகவும் இருக்கும் வகையில் ஏற்பாடு செய்வதால், மனஅழுத்தமின்றி உங்கள் ஹனிமூனைத் தொடங்கலாம்."
+                "question": "Is the Premium Shimla Honeymoon Package – 2 Nights / 3 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் ஹனிமூன் தம்பதிகளுக்கு Premium Shimla Honeymoon Package – 2 Nights / 3 Days பொருத்தமானதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले हनीमून कपल्स के लिए Premium Shimla Honeymoon Package – 2 Nights / 3 Days उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for Couples with Limited Leave and Weekend Honeymoons. It is structured as a Short Romantic Hill Escape. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். இந்த itinerary மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள பிற நகரங்களிலிருந்து பயணம் செய்யும் couples-க்கு ஏற்றது. இந்த package Couples with Limited Leave மற்றும் Weekend Honeymoons ஆகியோருக்கு ஏற்றது. இது Short Romantic Hill Escape ஆக அமைக்கப்பட்டுள்ளது. Package pickup point-க்கு arrival மற்றும் departure travel final confirmed quotation-ஐப் பின்பற்றும்.",
+                "answerHindi": "हाँ। यह itinerary मदुरै और पूरे तमिलनाडु के अन्य शहरों से यात्रा करने वाले couples के लिए उपयुक्त है। यह package Couples with Limited Leave और Weekend Honeymoons के लिए उपयुक्त है। इसे Short Romantic Hill Escape के रूप में तैयार किया गया है। Package pickup point तक arrival और departure travel final confirmed quotation के अनुसार होगा।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் accommodation மற்றும் breakfast சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस हनीमून package में accommodation और breakfast शामिल है?",
+                "answer": "Accommodation includes Two nights’ accommodation in Shimla. Daily breakfast.",
+                "answerTamil": "Accommodation includes Shimla-ல் Two nights’ accommodation. Daily breakfast.",
+                "answerHindi": "Accommodation includes Shimla में Two nights’ accommodation. Daily breakfast."
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் என்ன pickup, drop மற்றும் private transport சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस हनीमून package में कौन-कौन सी pickup, drop और private transport शामिल हैं?",
+                "answer": "Chandigarh pickup and drop. Private air-conditioned vehicle. Local union vehicles, where required is extra unless specifically included. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "Chandigarh pickup and drop. Private air-conditioned vehicle. தேவைப்படும் இடங்களில் Local union vehicles கூடுதல் கட்டணமாகும், final quotation-ல் குறிப்பாக சேர்க்கப்பட்டிருந்தால் மட்டுமே included ஆகும். மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளிலிருந்து பயணம் செய்யும் guests-க்கு, quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், listed pickup point-க்கு செல்லும் transport additional ஆகும்.",
+                "answerHindi": "Chandigarh pickup and drop. Private air-conditioned vehicle. जहाँ आवश्यक हो, Local union vehicles extra होंगे, जब तक कि final quotation में विशेष रूप से शामिल न किए गए हों। मदुरै या तमिलनाडु के अन्य हिस्सों से यात्रा करने वाले guests के लिए, यदि quotation में विशेष रूप से शामिल नहीं किया गया है, तो listed pickup point तक का transport additional होगा।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "Logaa Holidays Madurai honeymoon room decoration, cake அல்லது candlelight dinner ஏற்பாடு செய்ய முடியுமா?",
+                "questionHindi": "क्या Logaa Holidays Madurai honeymoon room decoration, cake या candlelight dinner की व्यवस्था कर सकता है?",
+                "answer": "Honeymoon arrangements specifically confirmed. Only services specifically confirmed in the quotation are included.",
+                "answerTamil": "Honeymoon arrangements குறிப்பாக confirm செய்யப்பட்டவை மட்டுமே வழங்கப்படும். Quotation-ல் குறிப்பாக confirm செய்யப்பட்ட services மட்டுமே included ஆகும்.",
+                "answerHindi": "केवल विशेष रूप से confirmed Honeymoon arrangements ही उपलब्ध होंगे। Quotation में विशेष रूप से confirmed services ही included होंगी।"
+            },
+            {
+                "question": "What is not included in the package price?",
+                "questionTamil": "Package price-ல் எவை சேர்க்கப்படவில்லை?",
+                "questionHindi": "Package price में क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Flight, train and bus tickets, Lunch and dinner unless included, Attraction entry tickets, Adventure activities, Guide charges, Kufri activities. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "Key exclusions listed for this package include Flight, train and bus tickets, Lunch and dinner unless included, Attraction entry tickets, Adventure activities, Guide charges, Kufri activities. Inclusions-ல் குறிப்பாக குறிப்பிடப்படாத எந்த service-ம் extra ஆகக் கருதப்பட வேண்டும்.",
+                "answerHindi": "Key exclusions listed for this package include Flight, train and bus tickets, Lunch and dinner unless included, Attraction entry tickets, Adventure activities, Guide charges, Kufri activities. Inclusions के अंतर्गत विशेष रूप से उल्लेख नहीं की गई किसी भी service को extra माना जाना चाहिए।"
+            },
+            {
+                "question": "Are Rohtang Pass, Solang Valley activities or local union vehicles included?",
+                "questionTamil": "Rohtang Pass, Solang Valley activities அல்லது local union vehicles இந்த package-ல் சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या Rohtang Pass, Solang Valley activities या local union vehicles इस package में शामिल हैं?",
+                "answer": "The package includes only the sightseeing specifically stated in the itinerary. Adventure activities; Local union vehicles, where required are extra unless confirmed.",
+                "answerTamil": "இந்த package-ல் itinerary-ல் குறிப்பாக குறிப்பிடப்பட்டுள்ள sightseeing மட்டுமே சேர்க்கப்பட்டுள்ளது. Adventure activities; தேவைப்படும் இடங்களில் Local union vehicles ஆகியவை confirm செய்யப்படாவிட்டால் extra ஆகும்.",
+                "answerHindi": "इस package में केवल itinerary में विशेष रूप से बताए गए sightseeing शामिल हैं। Adventure activities; जहाँ आवश्यक हो, Local union vehicles extra होंगे, जब तक कि उन्हें confirm न किया गया हो।"
             }
         ],
         "id": "9501"
@@ -7368,16 +8091,60 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a premium Manali honeymoon package for 3 Nights and 4 Days with Solang Valley, local sightseeing, private cab and romantic experiences.",
         "faq": [
             {
-                "question": "Is this Manali honeymoon package suitable for couples?",
-                "questionTamil": "இந்த மணாலி ஹனிமூன் சுற்றுலா தம்பதிகளுக்கு ஏற்றதா?",
-                "answer": "Yes. The Manali honeymoon itinerary is designed for romance in the mountains. We include scenic viewpoints, cozy mountain resorts, and optional activities like snow walks and valley excursions. Special honeymoon arrangements (room decoration, candlelight dinner) can be added on request.",
-                "answerTamil": "ஆம். இந்த மணாலி ஹனிமூன் பயணத் திட்டம் காதல் நிறைந்த அனுபவத்திற்காக வடிவமைக்கப்பட்டுள்ளது. அழகிய மலை ரிசார்ட்கள், பனி நடைப்பயணங்கள் மற்றும் பள்ளத்தாக்கு சுற்றுப்பயணங்கள் போன்ற விருப்ப நடவடிக்கைகள் இதில் அடங்கும். சிறப்பு ஹனிமூன் ஏற்பாடுகளை (மலர் அலங்காரம், மெழுகுவர்த்தி இரவு உணவு) கோரிக்கையின் பேரில் சேர்க்கலாம்."
+                "question": "Can I book the Premium Manali Honeymoon Package – 3 Nights / 4 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "Logaa Holidays மூலம் மதுரையிலிருந்து Premium Manali Honeymoon Package – 3 Nights / 4 Days-ஐ நான் முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं Logaa Holidays के साथ मदुरै से Premium Manali Honeymoon Package – 3 Nights / 4 Days बुक कर सकता/सकती हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins from Chandigarh; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Chandigarh – Manali – Solang Valley – Chandigarh. The stay plan is Manali – 3 Nights. Main experiences include Manali local sightseeing, Solang Valley excursion, Mall Road leisure, Hadimba Devi Temple.",
+                "answerTamil": "ஆம். Logaa Holidays மதுரையை அடிப்படையாகக் கொண்ட tour operator ஆகும், மேலும் மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள தம்பதிகள் இந்த package-ஐ முன்பதிவு செய்யலாம். Land itinerary Chandigarh-ல் தொடங்குகிறது; final quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், மதுரையிலிருந்து அந்த pickup point-க்கு செல்லும் பயணம் தனியாக இருக்கும். திட்டமிடப்பட்ட route Chandigarh – Manali – Solang Valley – Chandigarh ஆகும். Stay plan Manali – 3 Nights ஆகும். Main experiences include Manali local sightseeing, Solang Valley excursion, Mall Road leisure, Hadimba Devi Temple.",
+                "answerHindi": "हाँ। Logaa Holidays मदुरै स्थित tour operator है, और मदुरै तथा पूरे तमिलनाडु से आने वाले couples इस package को बुक कर सकते हैं। Land itinerary Chandigarh से शुरू होती है; यदि final quotation में विशेष रूप से शामिल नहीं किया गया है, तो मदुरै से उस pickup point तक की यात्रा अलग से होगी। नियोजित route Chandigarh – Manali – Solang Valley – Chandigarh है। Stay plan Manali – 3 Nights है। Main experiences include Manali local sightseeing, Solang Valley excursion, Mall Road leisure, Hadimba Devi Temple."
             },
             {
-                "question": "Can we join the Manali honeymoon tour from Delhi or Chandigarh?",
-                "questionTamil": "டெல்லி அல்லது சண்டிகரிலிருந்து மணாலி சுற்றுலாவில் இணைய முடியுமா?",
-                "answer": "Yes. The tour usually starts in Delhi or Chandigarh. You can reach Manali by road from either city and we will arrange pickups from the nearest airports or railway stations. We handle all transfers so you can begin your romantic getaway right from the pickup point.",
-                "answerTamil": "ஆம். மணாலி சுற்றுலாக்கள் பெரும்பாலும் டெல்லி அல்லது சண்டிகரில் இருந்து தொடங்குகின்றன. நீங்கள் டெல்லிக்கு விமானத்தில் வந்தால், விமான நிலையம் அல்லது ரயில் நிலையத்தில் உங்களை பிக்கப் செய்து சுற்றுலா அழைத்துச் செல்வோம்."
+                "question": "Is the Premium Manali Honeymoon Package – 3 Nights / 4 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் ஹனிமூன் தம்பதிகளுக்கு Premium Manali Honeymoon Package – 3 Nights / 4 Days பொருத்தமானதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले हनीमून कपल्स के लिए Premium Manali Honeymoon Package – 3 Nights / 4 Days उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for First-Time Himachal Couples. It is structured as a Mountains, Snow and River Romance. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். இந்த itinerary மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள பிற நகரங்களிலிருந்து பயணம் செய்யும் couples-க்கு ஏற்றது. இந்த package First-Time Himachal Couples-க்கு ஏற்றது. இது Mountains, Snow and River Romance ஆக அமைக்கப்பட்டுள்ளது. Package pickup point-க்கு arrival மற்றும் departure travel final confirmed quotation-ஐப் பின்பற்றும்.",
+                "answerHindi": "हाँ। यह itinerary मदुरै और पूरे तमिलनाडु के अन्य शहरों से यात्रा करने वाले couples के लिए उपयुक्त है। यह package First-Time Himachal Couples के लिए उपयुक्त है। इसे Mountains, Snow and River Romance के रूप में तैयार किया गया है। Package pickup point तक arrival और departure travel final confirmed quotation के अनुसार होगा।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் accommodation மற்றும் breakfast சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस हनीमून package में accommodation और breakfast शामिल है?",
+                "answer": "Accommodation includes Three nights’ accommodation in Manali. Daily breakfast.",
+                "answerTamil": "Accommodation includes Manali-ல் Three nights’ accommodation. Daily breakfast.",
+                "answerHindi": "Accommodation includes Manali में Three nights’ accommodation. Daily breakfast."
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் என்ன pickup, drop மற்றும் private transport சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस हनीमून package में कौन-कौन सी pickup, drop और private transport शामिल हैं?",
+                "answer": "Chandigarh pickup and drop. Private air-conditioned vehicle. Local union vehicles is extra unless specifically included. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "Chandigarh pickup and drop. Private air-conditioned vehicle. Local union vehicles is extra unless specifically included. மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளிலிருந்து பயணம் செய்யும் guests-க்கு, quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், listed pickup point-க்கு செல்லும் transport additional ஆகும்.",
+                "answerHindi": "Chandigarh pickup and drop. Private air-conditioned vehicle. Local union vehicles is extra unless specifically included. मदुरै या तमिलनाडु के अन्य हिस्सों से यात्रा करने वाले guests के लिए, यदि quotation में विशेष रूप से शामिल नहीं किया गया है, तो listed pickup point तक का transport additional होगा।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "Logaa Holidays Madurai honeymoon room decoration, cake அல்லது candlelight dinner ஏற்பாடு செய்ய முடியுமா?",
+                "questionHindi": "क्या Logaa Holidays Madurai honeymoon room decoration, cake या candlelight dinner की व्यवस्था कर सकता है?",
+                "answer": "Available romantic add-ons listed for this package include Candlelight dinner, Flower-bed decoration, Honeymoon cake, Couple photoshoot. They are subject to the hotel, resort or operator policy and must be confirmed in the final quotation.",
+                "answerTamil": "Available romantic add-ons listed for this package include Candlelight dinner, Flower-bed decoration, Honeymoon cake, Couple photoshoot. இவை hotel, resort அல்லது operator policy-க்கு உட்பட்டவை மற்றும் final quotation-ல் confirm செய்யப்பட வேண்டும்.",
+                "answerHindi": "Available romantic add-ons listed for this package include Candlelight dinner, Flower-bed decoration, Honeymoon cake, Couple photoshoot. ये hotel, resort या operator policy के अधीन हैं और final quotation में confirm किए जाने चाहिए।"
+            },
+            {
+                "question": "What is not included in the package price?",
+                "questionTamil": "Package price-ல் எவை சேர்க்கப்படவில்லை?",
+                "questionHindi": "Package price में क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Flight, train and bus tickets, Lunch and dinner unless included, Attraction entry tickets, Adventure activities, Personal expenses, Ropeway tickets. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "Key exclusions listed for this package include Flight, train and bus tickets, Lunch and dinner unless included, Attraction entry tickets, Adventure activities, Personal expenses, Ropeway tickets. Inclusions-ல் குறிப்பாக குறிப்பிடப்படாத எந்த service-ம் extra ஆகக் கருதப்பட வேண்டும்.",
+                "answerHindi": "Key exclusions listed for this package include Flight, train and bus tickets, Lunch and dinner unless included, Attraction entry tickets, Adventure activities, Personal expenses, Ropeway tickets. Inclusions के अंतर्गत विशेष रूप से उल्लेख नहीं की गई किसी भी service को extra माना जाना चाहिए।"
+            },
+            {
+                "question": "Are Rohtang Pass, Solang Valley activities or local union vehicles included?",
+                "questionTamil": "Rohtang Pass, Solang Valley activities அல்லது local union vehicles இந்த package-ல் சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या Rohtang Pass, Solang Valley activities या local union vehicles इस package में शामिल हैं?",
+                "answer": "The package includes only the sightseeing specifically stated in the itinerary. Adventure activities; Ropeway tickets; Rohtang Pass permit and vehicle charges; Local union vehicles are extra unless confirmed.",
+                "answerTamil": "இந்த package-ல் itinerary-ல் குறிப்பாக குறிப்பிடப்பட்டுள்ள sightseeing மட்டுமே சேர்க்கப்பட்டுள்ளது. Adventure activities; Ropeway tickets; Rohtang Pass permit and vehicle charges; Local union vehicles ஆகியவை confirm செய்யப்படாவிட்டால் extra ஆகும்.",
+                "answerHindi": "इस package में केवल itinerary में विशेष रूप से बताए गए sightseeing शामिल हैं। Adventure activities; Ropeway tickets; Rohtang Pass permit and vehicle charges; Local union vehicles extra होंगे, जब तक कि उन्हें confirm न किया गया हो।"
             }
         ],
         "id": "9502"
@@ -7534,16 +8301,60 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a 4 Nights 5 Days Shimla Manali honeymoon package covering Kufri, Mall Road, Manali and Solang Valley with private transportation.",
         "faq": [
             {
-                "question": "Is the Shimla–Manali honeymoon package suitable for couples?",
-                "questionTamil": "இந்த ஷிம்லா–மணாலி ஹனிமூன் சுற்றுலா தம்பதிகளுக்கு ஏற்றதா?",
-                "answer": "Yes. This combined package offers the best of both hill stations for couples. Shimla offers colonial-era charm and Manali offers scenic mountain landscapes. We arrange cozy hotels, special honeymoon setups, and a private car throughout, making it a perfect romantic getaway.",
-                "answerTamil": "ஆம். இந்த ஒருங்கிணைந்த பேக்கேஜ் தம்பதிகளுக்கு இரண்டு மலை வாசஸ்தலங்களிலும் சிறந்த அனுபவத்தை வழங்குகிறது. ஷிம்லாவின் காலனித்துவ தோற்றமும் மணாலியின் அழகிய மலைப்பகுதிகளும் இதில் அடங்கும். வசதியான ஹோட்டல்கள், சிறப்பு ஹனிமூன் ஏற்பாடுகள் மற்றும் ஒரு தனியார் கார் முழுவதும் வழங்கப்படுகிறது."
+                "question": "Can I book the Shimla and Manali Honeymoon Package – 4 Nights / 5 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "Logaa Holidays மூலம் மதுரையிலிருந்து Shimla and Manali Honeymoon Package – 4 Nights / 5 Days-ஐ நான் முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं Logaa Holidays के साथ मदुरै से Shimla and Manali Honeymoon Package – 4 Nights / 5 Days बुक कर सकता/सकती हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins from Chandigarh; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Chandigarh – Shimla – Kufri – Manali – Solang Valley – Chandigarh. The stay plan is Shimla 2 Nights + Manali 2 Nights. Main experiences include Kufri excursion, Shimla Mall Road, Scenic Shimla–Manali drive, Manali local attractions.",
+                "answerTamil": "ஆம். Logaa Holidays மதுரையை அடிப்படையாகக் கொண்ட tour operator ஆகும், மேலும் மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள தம்பதிகள் இந்த package-ஐ முன்பதிவு செய்யலாம். Land itinerary Chandigarh-ல் தொடங்குகிறது; final quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், மதுரையிலிருந்து அந்த pickup point-க்கு செல்லும் பயணம் தனியாக இருக்கும். திட்டமிடப்பட்ட route Chandigarh – Shimla – Kufri – Manali – Solang Valley – Chandigarh ஆகும். Stay plan Shimla 2 Nights + Manali 2 Nights ஆகும். Main experiences include Kufri excursion, Shimla Mall Road, Scenic Shimla–Manali drive, Manali local attractions.",
+                "answerHindi": "हाँ। Logaa Holidays मदुरै स्थित tour operator है, और मदुरै तथा पूरे तमिलनाडु से आने वाले couples इस package को बुक कर सकते हैं। Land itinerary Chandigarh से शुरू होती है; यदि final quotation में विशेष रूप से शामिल नहीं किया गया है, तो मदुरै से उस pickup point तक की यात्रा अलग से होगी। नियोजित route Chandigarh – Shimla – Kufri – Manali – Solang Valley – Chandigarh है। Stay plan Shimla 2 Nights + Manali 2 Nights है। Main experiences include Kufri excursion, Shimla Mall Road, Scenic Shimla–Manali drive, Manali local attractions."
             },
             {
-                "question": "Can we join the Shimla–Manali honeymoon tour from Delhi or Chandigarh?",
-                "questionTamil": "டெல்லி அல்லது சண்டிகரிலிருந்து ஷிம்லா–மணாலி சுற்றுலாவில் இணைய முடியுமா?",
-                "answer": "Certainly. The tour starts from Delhi or Chandigarh. If you fly into Delhi, we can pick you up at the airport or railway station and drive to Shimla (8–9 hours). Alternatively, you can fly into Chandigarh (closer) and we will begin from there. We coordinate all airport and train pickups.",
-                "answerTamil": "நிச்சயமாக. சுற்றுலாக்கள் பெரும்பாலும் டெல்லி அல்லது சண்டிகரில் இருந்து தொடங்குகின்றன. நீங்கள் டெல்லிக்கு விமானத்தில் வந்தால், விமான நிலையம் அல்லது ரயில் நிலையத்தில் உங்களை பிக்கப் செய்து ஒன்றாக ஷிம்லாவுக்கு பயணம் செய்யலாம். மாற்றாக, அருகிலுள்ள சண்டிகருக்கு விமானத்தில் வந்து அங்கிருந்து சுற்றுலாவைத் தொடங்கலாம்."
+                "question": "Is the Shimla and Manali Honeymoon Package – 4 Nights / 5 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் ஹனிமூன் தம்பதிகளுக்கு Shimla and Manali Honeymoon Package – 4 Nights / 5 Days பொருத்தமானதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले हनीमून कपल्स के लिए Shimla and Manali Honeymoon Package – 4 Nights / 5 Days उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for Couples Seeking Shimla and Manali in a Short Holiday. It is structured as a Classic Himachal Honeymoon. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். இந்த itinerary மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள பிற நகரங்களிலிருந்து பயணம் செய்யும் couples-க்கு ஏற்றது. இந்த package Couples Seeking Shimla and Manali in a Short Holiday ஆகியோருக்கு ஏற்றது. இது Classic Himachal Honeymoon ஆக அமைக்கப்பட்டுள்ளது. Package pickup point-க்கு arrival மற்றும் departure travel final confirmed quotation-ஐப் பின்பற்றும்.",
+                "answerHindi": "हाँ। यह itinerary मदुरै और पूरे तमिलनाडु के अन्य शहरों से यात्रा करने वाले couples के लिए उपयुक्त है। यह package Couples Seeking Shimla and Manali in a Short Holiday के लिए उपयुक्त है। इसे Classic Himachal Honeymoon के रूप में तैयार किया गया है। Package pickup point तक arrival और departure travel final confirmed quotation के अनुसार होगा।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் accommodation மற்றும் breakfast சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस हनीमून package में accommodation और breakfast शामिल है?",
+                "answer": "Accommodation includes Two nights’ accommodation in Shimla; Two nights’ accommodation in Manali. Daily breakfast.",
+                "answerTamil": "Accommodation includes Shimla-ல் Two nights’ accommodation; Manali-ல் Two nights’ accommodation. Daily breakfast.",
+                "answerHindi": "Accommodation includes Shimla में Two nights’ accommodation; Manali में Two nights’ accommodation. Daily breakfast."
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் என்ன pickup, drop மற்றும் private transport சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस हनीमून package में कौन-कौन सी pickup, drop और private transport शामिल हैं?",
+                "answer": "Chandigarh pickup and drop. Private air-conditioned vehicle. Local union vehicles is extra unless specifically included. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "Chandigarh pickup and drop. Private air-conditioned vehicle. Local union vehicles is extra unless specifically included. மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளிலிருந்து பயணம் செய்யும் guests-க்கு, quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், listed pickup point-க்கு செல்லும் transport additional ஆகும்.",
+                "answerHindi": "Chandigarh pickup and drop. Private air-conditioned vehicle. Local union vehicles is extra unless specifically included. मदुरै या तमिलनाडु के अन्य हिस्सों से यात्रा करने वाले guests के लिए, यदि quotation में विशेष रूप से शामिल नहीं किया गया है, तो listed pickup point तक का transport additional होगा।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "Logaa Holidays Madurai honeymoon room decoration, cake அல்லது candlelight dinner ஏற்பாடு செய்ய முடியுமா?",
+                "questionHindi": "क्या Logaa Holidays Madurai honeymoon room decoration, cake या candlelight dinner की व्यवस्था कर सकता है?",
+                "answer": "Honeymoon arrangements specifically confirmed. Only services specifically confirmed in the quotation are included.",
+                "answerTamil": "Honeymoon arrangements குறிப்பாக confirm செய்யப்பட்டவை மட்டுமே வழங்கப்படும். Quotation-ல் குறிப்பாக confirm செய்யப்பட்ட services மட்டுமே included ஆகும்.",
+                "answerHindi": "केवल विशेष रूप से confirmed Honeymoon arrangements ही उपलब्ध होंगे। Quotation में विशेष रूप से confirmed services ही included होंगी।"
+            },
+            {
+                "question": "What is not included in the package price?",
+                "questionTamil": "Package price-ல் எவை சேர்க்கப்படவில்லை?",
+                "questionHindi": "Package price में क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Flight, train and bus tickets, Lunch and dinner unless included, Attraction entry tickets, Kufri adventure activities, Guide charges, Horse and yak rides. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "Key exclusions listed for this package include Flight, train and bus tickets, Lunch and dinner unless included, Attraction entry tickets, Kufri adventure activities, Guide charges, Horse and yak rides. Inclusions-ல் குறிப்பாக குறிப்பிடப்படாத எந்த service-ம் extra ஆகக் கருதப்பட வேண்டும்.",
+                "answerHindi": "Key exclusions listed for this package include Flight, train and bus tickets, Lunch and dinner unless included, Attraction entry tickets, Kufri adventure activities, Guide charges, Horse and yak rides. Inclusions के अंतर्गत विशेष रूप से उल्लेख नहीं की गई किसी भी service को extra माना जाना चाहिए।"
+            },
+            {
+                "question": "Are Rohtang Pass, Solang Valley activities or local union vehicles included?",
+                "questionTamil": "Rohtang Pass, Solang Valley activities அல்லது local union vehicles இந்த package-ல் சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या Rohtang Pass, Solang Valley activities या local union vehicles इस package में शामिल हैं?",
+                "answer": "The package includes only the sightseeing specifically stated in the itinerary. Kufri adventure activities; Solang Valley activities; Ropeway tickets; Rohtang Pass excursion are extra unless confirmed.",
+                "answerTamil": "இந்த package-ல் itinerary-ல் குறிப்பாக குறிப்பிடப்பட்டுள்ள sightseeing மட்டுமே சேர்க்கப்பட்டுள்ளது. Kufri adventure activities; Solang Valley activities; Ropeway tickets; Rohtang Pass excursion ஆகியவை confirm செய்யப்படாவிட்டால் extra ஆகும்.",
+                "answerHindi": "इस package में केवल itinerary में विशेष रूप से बताए गए sightseeing शामिल हैं। Kufri adventure activities; Solang Valley activities; Ropeway tickets; Rohtang Pass excursion extra होंगे, जब तक कि इन्हें confirm न किया गया हो।"
             }
         ],
         "id": "9503"
@@ -7730,16 +8541,60 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a premium 5 Nights 6 Days Shimla Manali honeymoon package covering Kufri, Solang Valley, Atal Tunnel and major attractions.",
         "faq": [
             {
-                "question": "Is the Shimla–Manali honeymoon package suitable for couples?",
-                "questionTamil": "இந்த ஷிம்லா–மணாலி ஹனிமூன் சுற்றுலா தம்பதிகளுக்கு ஏற்றதா?",
-                "answer": "Yes. This combined package offers the best of both hill stations for couples. Shimla offers colonial-era charm and Manali offers scenic mountain landscapes. We arrange cozy hotels, special honeymoon setups, and a private car throughout, making it a perfect romantic getaway.",
-                "answerTamil": "ஆம். இந்த ஒருங்கிணைந்த பேக்கேஜ் தம்பதிகளுக்கு இரண்டு மலை வாசஸ்தலங்களிலும் சிறந்த அனுபவத்தை வழங்குகிறது. ஷிம்லாவின் காலனித்துவ தோற்றமும் மணாலியின் அழகிய மலைப்பகுதிகளும் இதில் அடங்கும். வசதியான ஹோட்டல்கள், சிறப்பு ஹனிமூன் ஏற்பாடுகள் மற்றும் ஒரு தனியார் கார் முழுவதும் வழங்கப்படுகிறது."
+                "question": "Can I book the Complete Shimla and Manali Honeymoon – 5 Nights / 6 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "Logaa Holidays மூலம் மதுரையிலிருந்து Complete Shimla and Manali Honeymoon – 5 Nights / 6 Days-ஐ நான் முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं Logaa Holidays के साथ मदुरै से Complete Shimla and Manali Honeymoon – 5 Nights / 6 Days बुक कर सकता/सकती हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins from Chandigarh; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Chandigarh – Shimla – Kufri – Manali – Solang Valley – Chandigarh. The stay plan is Shimla 2 Nights + Manali 3 Nights. Main experiences include Kufri and Shimla sightseeing, Scenic Shimla–Manali journey, Manali local sightseeing, Solang Valley excursion.",
+                "answerTamil": "ஆம். Logaa Holidays மதுரையை அடிப்படையாகக் கொண்ட tour operator ஆகும், மேலும் மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள தம்பதிகள் இந்த package-ஐ முன்பதிவு செய்யலாம். Land itinerary Chandigarh-ல் தொடங்குகிறது; final quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், மதுரையிலிருந்து அந்த pickup point-க்கு செல்லும் பயணம் தனியாக இருக்கும். திட்டமிடப்பட்ட route Chandigarh – Shimla – Kufri – Manali – Solang Valley – Chandigarh ஆகும். Stay plan Shimla 2 Nights + Manali 3 Nights ஆகும். Main experiences include Kufri and Shimla sightseeing, Scenic Shimla–Manali journey, Manali local sightseeing, Solang Valley excursion.",
+                "answerHindi": "हाँ। Logaa Holidays मदुरै स्थित tour operator है, और मदुरै तथा पूरे तमिलनाडु से आने वाले couples इस package को बुक कर सकते हैं। Land itinerary Chandigarh से शुरू होती है; यदि final quotation में विशेष रूप से शामिल नहीं किया गया है, तो मदुरै से उस pickup point तक की यात्रा अलग से होगी। नियोजित route Chandigarh – Shimla – Kufri – Manali – Solang Valley – Chandigarh है। Stay plan Shimla 2 Nights + Manali 3 Nights है। Main experiences include Kufri and Shimla sightseeing, Scenic Shimla–Manali journey, Manali local sightseeing, Solang Valley excursion."
             },
             {
-                "question": "Can we join the Shimla–Manali honeymoon tour from Delhi or Chandigarh?",
-                "questionTamil": "டெல்லி அல்லது சண்டிகரிலிருந்து ஷிம்லா–மணாலி சுற்றுலாவில் இணைய முடியுமா?",
-                "answer": "Certainly. The tour starts from Delhi or Chandigarh. If you fly into Delhi, we can pick you up at the airport or railway station and drive to Shimla (8–9 hours). Alternatively, you can fly into Chandigarh (closer) and we will begin from there. We coordinate all airport and train pickups.",
-                "answerTamil": "நிச்சயமாக. சுற்றுலாக்கள் பெரும்பாலும் டெல்லி அல்லது சண்டிகரில் இருந்து தொடங்குகின்றன. நீங்கள் டெல்லிக்கு விமானத்தில் வந்தால், விமான நிலையம் அல்லது ரயில் நிலையத்தில் உங்களை பிக்கப் செய்து ஒன்றாக ஷிம்லாவுக்கு பயணம் செய்யலாம். மாற்றாக, அருகிலுள்ள சண்டிகருக்கு விமானத்தில் வந்து அங்கிருந்து சுற்றுலாவைத் தொடங்கலாம்."
+                "question": "Is the Complete Shimla and Manali Honeymoon – 5 Nights / 6 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் ஹனிமூன் தம்பதிகளுக்கு Complete Shimla and Manali Honeymoon – 5 Nights / 6 Days பொருத்தமானதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले हनीमून कपल्स के लिए Complete Shimla and Manali Honeymoon – 5 Nights / 6 Days उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for Couples Seeking Sightseeing and Romantic Leisure. It is structured as a Complete Premium Himachal Honeymoon. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். இந்த itinerary மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள பிற நகரங்களிலிருந்து பயணம் செய்யும் couples-க்கு ஏற்றது. இந்த package Couples Seeking Sightseeing and Romantic Leisure ஆகியோருக்கு ஏற்றது. இது Complete Premium Himachal Honeymoon ஆக அமைக்கப்பட்டுள்ளது. Package pickup point-க்கு arrival மற்றும் departure travel final confirmed quotation-ஐப் பின்பற்றும்.",
+                "answerHindi": "हाँ। यह itinerary मदुरै और पूरे तमिलनाडु के अन्य शहरों से यात्रा करने वाले couples के लिए उपयुक्त है। यह package Couples Seeking Sightseeing and Romantic Leisure के लिए उपयुक्त है। इसे Complete Premium Himachal Honeymoon के रूप में तैयार किया गया है। Package pickup point तक arrival और departure travel final confirmed quotation के अनुसार होगा।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் accommodation மற்றும் breakfast சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस हनीमून package में accommodation और breakfast शामिल है?",
+                "answer": "Accommodation includes Two nights’ accommodation in Shimla; Three nights’ accommodation in Manali. Daily breakfast.",
+                "answerTamil": "Accommodation includes Shimla-ல் Two nights’ accommodation; Manali-ல் Three nights’ accommodation. Daily breakfast.",
+                "answerHindi": "Accommodation includes Shimla में Two nights’ accommodation; Manali में Three nights’ accommodation. Daily breakfast."
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் என்ன pickup, drop மற்றும் private transport சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस हनीमून package में कौन-कौन सी pickup, drop और private transport शामिल हैं?",
+                "answer": "Chandigarh pickup and drop. Private air-conditioned vehicle. Local union vehicle charges is extra unless specifically included. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "Chandigarh pickup and drop. Private air-conditioned vehicle. Local union vehicle charges is extra unless specifically included. மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளிலிருந்து பயணம் செய்யும் guests-க்கு, quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், listed pickup point-க்கு செல்லும் transport additional ஆகும்.",
+                "answerHindi": "Chandigarh pickup and drop. Private air-conditioned vehicle. Local union vehicle charges is extra unless specifically included. मदुरै या तमिलनाडु के अन्य हिस्सों से यात्रा करने वाले guests के लिए, यदि quotation में विशेष रूप से शामिल नहीं किया गया है, तो listed pickup point तक का transport additional होगा।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "Logaa Holidays Madurai honeymoon room decoration, cake அல்லது candlelight dinner ஏற்பாடு செய்ய முடியுமா?",
+                "questionHindi": "क्या Logaa Holidays Madurai honeymoon room decoration, cake या candlelight dinner की व्यवस्था कर सकता है?",
+                "answer": "Available romantic add-ons listed for this package include Candlelight dinner, Flower-bed decoration, Honeymoon cake, Couple photoshoot, Private romantic dinner. They are subject to the hotel, resort or operator policy and must be confirmed in the final quotation.",
+                "answerTamil": "Available romantic add-ons listed for this package include Candlelight dinner, Flower-bed decoration, Honeymoon cake, Couple photoshoot, Private romantic dinner. இவை hotel, resort அல்லது operator policy-க்கு உட்பட்டவை மற்றும் final quotation-ல் confirm செய்யப்பட வேண்டும்.",
+                "answerHindi": "Available romantic add-ons listed for this package include Candlelight dinner, Flower-bed decoration, Honeymoon cake, Couple photoshoot, Private romantic dinner. ये hotel, resort या operator policy के अधीन हैं और final quotation में confirm किए जाने चाहिए।"
+            },
+            {
+                "question": "What is not included in the package price?",
+                "questionTamil": "Package price-ல் எவை சேர்க்கப்படவில்லை?",
+                "questionHindi": "Package price में क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Flight, train and bus tickets, Lunch and dinner unless included, Attraction entry tickets, Adventure activities, Guide charges, Horse and yak rides. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "Key exclusions listed for this package include Flight, train and bus tickets, Lunch and dinner unless included, Attraction entry tickets, Adventure activities, Guide charges, Horse and yak rides. Inclusions-ல் குறிப்பாக குறிப்பிடப்படாத எந்த service-ம் extra ஆகக் கருதப்பட வேண்டும்.",
+                "answerHindi": "Key exclusions listed for this package include Flight, train and bus tickets, Lunch and dinner unless included, Attraction entry tickets, Adventure activities, Guide charges, Horse and yak rides. Inclusions के अंतर्गत विशेष रूप से उल्लेख नहीं की गई किसी भी service को extra माना जाना चाहिए।"
+            },
+            {
+                "question": "Are Rohtang Pass, Solang Valley activities or local union vehicles included?",
+                "questionTamil": "Rohtang Pass, Solang Valley activities அல்லது local union vehicles இந்த package-ல் சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या Rohtang Pass, Solang Valley activities या local union vehicles इस package में शामिल हैं?",
+                "answer": "The package includes only the sightseeing specifically stated in the itinerary. Adventure activities; Ropeway tickets; Rohtang Pass permit and vehicle; Local union vehicle charges are extra unless confirmed.",
+                "answerTamil": "இந்த package-ல் itinerary-ல் குறிப்பாக குறிப்பிடப்பட்டுள்ள sightseeing மட்டுமே சேர்க்கப்பட்டுள்ளது. Adventure activities; Ropeway tickets; Rohtang Pass permit and vehicle; Local union vehicle charges ஆகியவை confirm செய்யப்படாவிட்டால் extra ஆகும்.",
+                "answerHindi": "इस package में केवल itinerary में विशेष रूप से बताए गए sightseeing शामिल हैं। Adventure activities; Ropeway tickets; Rohtang Pass permit and vehicle; Local union vehicle charges extra होंगे, जब तक कि इन्हें confirm न किया गया हो।"
             }
         ],
         "id": "9504"
@@ -7863,16 +8718,60 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a romantic Goa honeymoon package for 2 Nights and 3 Days with North Goa beaches, private transfers and couple experiences.",
         "faq": [
             {
-                "question": "Is this Goa honeymoon package romantic for couples?",
-                "questionTamil": "இந்த கோவா பேக்கேஜ் ஹனிமூன் தம்பதிகளுக்கு காதல் நிறைந்ததாக இருக்குமா?",
-                "answer": "Yes. The Goa itinerary focuses on the best beaches and resorts. We pick quieter beach stays (e.g. South Goa) with sunset views, ideal for couples. You can also enjoy dinner cruises or scenic coastal drives. We provide a private guide and car, so you travel at leisure.",
-                "answerTamil": "ஆம். கோவா பயணத் திட்டம் சிறந்த கடற்கரைகள் மற்றும் ரிசார்ட்களில் கவனம் செலுத்துகிறது. தம்பதிகளுக்கு ஏற்ற சூரிய அஸ்தமனக் காட்சிகளுடன் அமைதியான கடற்கரை தங்குமிடங்களை (உதாரணமாக, தெற்கு கோவா) தேர்வு செய்கிறோம். டின்னர் க்ரூஸ் அல்லது அழகிய கடலோர சாலைப் பயணங்களையும் அனுபவிக்கலாம். தனிப்பட்ட வழிகாட்டி/கார் வசதியை வழங்குவதால், நீங்கள் நிதானமாகப் பயணம் செய்யலாம்."
+                "question": "Can I book the Goa Honeymoon Package – 2 Nights / 3 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "Logaa Holidays மூலம் மதுரையிலிருந்து Goa Honeymoon Package – 2 Nights / 3 Days-ஐ நான் முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं Logaa Holidays के साथ मदुरै से Goa Honeymoon Package – 2 Nights / 3 Days बुक कर सकता/सकती हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins in Goa; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Goa Arrival – North Goa – Departure. Main experiences include North Goa sightseeing, Fort Aguada and popular beaches, Fort Aguada, Sinquerim Beach.",
+                "answerTamil": "ஆம். Logaa Holidays மதுரையை அடிப்படையாகக் கொண்ட tour operator ஆகும், மேலும் மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள தம்பதிகள் இந்த package-ஐ முன்பதிவு செய்யலாம். Land itinerary Goa-வில் தொடங்குகிறது; final quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், மதுரையிலிருந்து அந்த pickup point-க்கு செல்லும் பயணம் தனியாக இருக்கும். திட்டமிடப்பட்ட route Goa Arrival – North Goa – Departure ஆகும். Main experiences include North Goa sightseeing, Fort Aguada and popular beaches, Fort Aguada, Sinquerim Beach.",
+                "answerHindi": "हाँ। Logaa Holidays मदुरै स्थित tour operator है, और मदुरै तथा पूरे तमिलनाडु से आने वाले couples इस package को बुक कर सकते हैं। Land itinerary Goa में शुरू होती है; यदि final quotation में विशेष रूप से शामिल नहीं किया गया है, तो मदुरै से उस pickup point तक की यात्रा अलग से होगी। नियोजित route Goa Arrival – North Goa – Departure है। Main experiences include North Goa sightseeing, Fort Aguada and popular beaches, Fort Aguada, Sinquerim Beach."
             },
             {
-                "question": "Can we join the Goa honeymoon tour from Mumbai or Delhi?",
-                "questionTamil": "மும்பை அல்லது டெல்லியிலிருந்து கோவா பேக்கேஜில் இணைய முடியுமா?",
-                "answer": "Yes. You can fly into Goa's Dabolim Airport (GOI) from Mumbai or Delhi. If convenient, we can pick you up at Goa airport. Alternatively, a popular option is to fly into Mumbai and take a connecting flight or train to Goa. Once you arrive, we handle all inter-city transfers to your beach hotel.",
-                "answerTamil": "ஆம். மும்பை அல்லது டெல்லியிலிருந்து கோவாவின் டபோலிம் விமான நிலையத்திற்கு (GOI) விமானத்தில் வரலாம். உங்களுக்கு வசதியாக இருந்தால், கோவா விமான நிலையத்திலிருந்து உங்களை பிக்கப் செய்து கொள்ளலாம். மாற்றாக, மும்பிக்கு விமானத்தில் வந்து அங்கிருந்து இணைப்பு விமானம் அல்லது ரயில் மூலம் கோவாவுக்குச் செல்வதும் ஒரு பிரபலமான வழியாகும். நீங்கள் கோவாவை அடைந்ததும், உங்கள் கடற்கரை ஹோட்டலுக்கான போக்குவரத்து ஏற்பாடுகளை நாங்கள் கவனித்துக்கொள்வோம்."
+                "question": "Is the Goa Honeymoon Package – 2 Nights / 3 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் ஹனிமூன் தம்பதிகளுக்கு Goa Honeymoon Package – 2 Nights / 3 Days பொருத்தமானதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले हनीमून कपल्स के लिए Goa Honeymoon Package – 2 Nights / 3 Days उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for Couples with limited leave, budget honeymooners and anniversary travellers. It is structured as a Short Romantic Escape. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். இந்த itinerary மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள பிற நகரங்களிலிருந்து பயணம் செய்யும் couples-க்கு ஏற்றது. இந்த package Couples with limited leave, budget honeymooners and anniversary travellers ஆகியோருக்கு ஏற்றது. இது Short Romantic Escape ஆக அமைக்கப்பட்டுள்ளது. Package pickup point-க்கு arrival மற்றும் departure travel final confirmed quotation-ஐப் பின்பற்றும்.",
+                "answerHindi": "हाँ। यह itinerary मदुरै और पूरे तमिलनाडु के अन्य शहरों से यात्रा करने वाले couples के लिए उपयुक्त है। यह package Couples with limited leave, budget honeymooners and anniversary travellers के लिए उपयुक्त है। इसे Short Romantic Escape के रूप में तैयार किया गया है। Package pickup point तक arrival और departure travel final confirmed quotation के अनुसार होगा।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் accommodation மற்றும் breakfast சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस हनीमून package में accommodation और breakfast शामिल है?",
+                "answer": "Accommodation includes Two nights’ accommodation. Daily breakfast.",
+                "answerTamil": "Accommodation includes Two nights’ accommodation. Daily breakfast.",
+                "answerHindi": "Accommodation includes Two nights’ accommodation. Daily breakfast."
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் என்ன pickup, drop மற்றும் private transport சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस हनीमून package में कौन-कौन सी pickup, drop और private transport शामिल हैं?",
+                "answer": "Airport or railway station pickup and drop. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "Airport or railway station pickup and drop. மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளிலிருந்து பயணம் செய்யும் guests-க்கு, quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், listed pickup point-க்கு செல்லும் transport additional ஆகும்.",
+                "answerHindi": "Airport or railway station pickup and drop. मदुरै या तमिलनाडु के अन्य हिस्सों से यात्रा करने वाले guests के लिए, यदि quotation में विशेष रूप से शामिल नहीं किया गया है, तो listed pickup point तक का transport additional होगा।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "Logaa Holidays Madurai honeymoon room decoration, cake அல்லது candlelight dinner ஏற்பாடு செய்ய முடியுமா?",
+                "questionHindi": "क्या Logaa Holidays Madurai honeymoon room decoration, cake या candlelight dinner की व्यवस्था कर सकता है?",
+                "answer": "Available romantic add-ons listed for this package include Welcome drink, Flower-bed decoration, Honeymoon cake, Fruit basket, Candlelight dinner. They are subject to the hotel, resort or operator policy and must be confirmed in the final quotation.",
+                "answerTamil": "Available romantic add-ons listed for this package include Welcome drink, Flower-bed decoration, Honeymoon cake, Fruit basket, Candlelight dinner. இவை hotel, resort அல்லது operator policy-க்கு உட்பட்டவை மற்றும் final quotation-ல் confirm செய்யப்பட வேண்டும்.",
+                "answerHindi": "Available romantic add-ons listed for this package include Welcome drink, Flower-bed decoration, Honeymoon cake, Fruit basket, Candlelight dinner. ये hotel, resort या operator policy के अधीन हैं और final quotation में confirm किए जाने चाहिए।"
+            },
+            {
+                "question": "What is not included in the package price?",
+                "questionTamil": "Package price-ல் எவை சேர்க்கப்படவில்லை?",
+                "questionHindi": "Package price में क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Flight and train tickets, Lunch and dinner unless included, Entry tickets, Water sports, Personal expenses, Travel insurance. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "Key exclusions listed for this package include Flight and train tickets, Lunch and dinner unless included, Entry tickets, Water sports, Personal expenses, Travel insurance. Inclusions-ல் குறிப்பாக குறிப்பிடப்படாத எந்த service-ம் extra ஆகக் கருதப்பட வேண்டும்.",
+                "answerHindi": "Key exclusions listed for this package include Flight and train tickets, Lunch and dinner unless included, Entry tickets, Water sports, Personal expenses, Travel insurance. Inclusions के अंतर्गत विशेष रूप से उल्लेख नहीं की गई किसी भी service को extra माना जाना चाहिए।"
+            },
+            {
+                "question": "Are Goa water sports, cruises or casino visits included?",
+                "questionTamil": "Goa water sports, cruises அல்லது casino visits சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या Goa water sports, cruises या casino visits शामिल हैं?",
+                "answer": "These experiences are optional unless specifically included. Water sports are listed as exclusions.",
+                "answerTamil": "இந்த experiences குறிப்பாக சேர்க்கப்படாவிட்டால் optional ஆகும். Water sports exclusions ஆக பட்டியலிடப்பட்டுள்ளன.",
+                "answerHindi": "ये experiences विशेष रूप से शामिल किए जाने तक optional हैं। Water sports को exclusions के रूप में सूचीबद्ध किया गया है।"
             }
         ],
         "id": "9104"
@@ -8033,16 +8932,60 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a 4 Nights 5 Days Goa honeymoon package with North Goa, South Goa, beaches, heritage attractions and optional island experiences.",
         "faq": [
             {
-                "question": "Is this Goa honeymoon package romantic for couples?",
-                "questionTamil": "இந்த கோவா பேக்கேஜ் ஹனிமூன் தம்பதிகளுக்கு காதல் நிறைந்ததாக இருக்குமா?",
-                "answer": "Yes. The Goa itinerary focuses on the best beaches and resorts. We pick quieter beach stays (e.g. South Goa) with sunset views, ideal for couples. You can also enjoy dinner cruises or scenic coastal drives. We provide a private guide and car, so you travel at leisure.",
-                "answerTamil": "ஆம். கோவா பயணத் திட்டம் சிறந்த கடற்கரைகள் மற்றும் ரிசார்ட்களில் கவனம் செலுத்துகிறது. தம்பதிகளுக்கு ஏற்ற சூரிய அஸ்தமனக் காட்சிகளுடன் அமைதியான கடற்கரை தங்குமிடங்களை (உதாரணமாக, தெற்கு கோவா) தேர்வு செய்கிறோம். டின்னர் க்ரூஸ் அல்லது அழகிய கடலோர சாலைப் பயணங்களையும் அனுபவிக்கலாம். தனிப்பட்ட வழிகாட்டி/கார் வசதியை வழங்குவதால், நீங்கள் நிதானமாகப் பயணம் செய்யலாம்."
+                "question": "Can I book the Complete Goa Honeymoon Package – 4 Nights / 5 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "Logaa Holidays மூலம் மதுரையிலிருந்து Complete Goa Honeymoon Package – 4 Nights / 5 Days-ஐ நான் முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं Logaa Holidays के साथ मदुरै से Complete Goa Honeymoon Package – 4 Nights / 5 Days बुक कर सकता/सकती हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins in Goa; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Goa Arrival – North Goa – South Goa – Island or Adventure Experience – Goa Departure. The stay plan is Goa – 4 Nights. Main experiences include North Goa sightseeing, South Goa sightseeing, Mandovi River cruise option, Dedicated couple leisure time.",
+                "answerTamil": "ஆம். Logaa Holidays மதுரையை அடிப்படையாகக் கொண்ட tour operator ஆகும், மேலும் மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள தம்பதிகள் இந்த package-ஐ முன்பதிவு செய்யலாம். Land itinerary Goa-வில் தொடங்குகிறது; final quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், மதுரையிலிருந்து அந்த pickup point-க்கு செல்லும் பயணம் தனியாக இருக்கும். திட்டமிடப்பட்ட route Goa Arrival – North Goa – South Goa – Island or Adventure Experience – Goa Departure ஆகும். Stay plan Goa – 4 Nights ஆகும். Main experiences include North Goa sightseeing, South Goa sightseeing, Mandovi River cruise option, Dedicated couple leisure time.",
+                "answerHindi": "हाँ। Logaa Holidays मदुरै स्थित tour operator है, और मदुरै तथा पूरे तमिलनाडु से आने वाले couples इस package को बुक कर सकते हैं। Land itinerary Goa से शुरू होती है; यदि final quotation में विशेष रूप से शामिल नहीं किया गया है, तो मदुरै से उस pickup point तक की यात्रा अलग से होगी। नियोजित route Goa Arrival – North Goa – South Goa – Island or Adventure Experience – Goa Departure है। Stay plan Goa – 4 Nights है। Main experiences include North Goa sightseeing, South Goa sightseeing, Mandovi River cruise option, Dedicated couple leisure time."
             },
             {
-                "question": "Can we join the Goa honeymoon tour from Mumbai or Delhi?",
-                "questionTamil": "மும்பை அல்லது டெல்லியிலிருந்து கோவா பேக்கேஜில் இணைய முடியுமா?",
-                "answer": "Yes. You can fly into Goa's Dabolim Airport (GOI) from Mumbai or Delhi. If convenient, we can pick you up at Goa airport. Alternatively, a popular option is to fly into Mumbai and take a connecting flight or train to Goa. Once you arrive, we handle all inter-city transfers to your beach hotel.",
-                "answerTamil": "ஆம். மும்பை அல்லது டெல்லியிலிருந்து கோவாவின் டபோலிம் விமான நிலையத்திற்கு (GOI) விமானத்தில் வரலாம். உங்களுக்கு வசதியாக இருந்தால், கோவா விமான நிலையத்திலிருந்து உங்களை பிக்கப் செய்து கொள்ளலாம். மாற்றாக, மும்பிக்கு விமானத்தில் வந்து அங்கிருந்து இணைப்பு விமானம் அல்லது ரயில் மூலம் கோவாவுக்குச் செல்வதும் ஒரு பிரபலமான வழியாகும். நீங்கள் கோவாவை அடைந்ததும், உங்கள் கடற்கரை ஹோட்டலுக்கான போக்குவரத்து ஏற்பாடுகளை நாங்கள் கவனித்துக்கொள்வோம்."
+                "question": "Is the Complete Goa Honeymoon Package – 4 Nights / 5 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் ஹனிமூன் தம்பதிகளுக்கு Complete Goa Honeymoon Package – 4 Nights / 5 Days பொருத்தமானதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले हनीमून कपल्स के लिए Complete Goa Honeymoon Package – 4 Nights / 5 Days उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for Couples Seeking Sightseeing and Relaxation. It is structured as a Complete Beach and Leisure Honeymoon. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். இந்த itinerary மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள பிற நகரங்களிலிருந்து பயணம் செய்யும் couples-க்கு ஏற்றது. இந்த package Couples Seeking Sightseeing and Relaxation ஆகியோருக்கு ஏற்றது. இது Complete Beach and Leisure Honeymoon ஆக அமைக்கப்பட்டுள்ளது. Package pickup point-க்கு arrival மற்றும் departure travel final confirmed quotation-ஐப் பின்பற்றும்.",
+                "answerHindi": "हाँ। यह itinerary मदुरै और पूरे तमिलनाडु के अन्य शहरों से यात्रा करने वाले couples के लिए उपयुक्त है। यह package Couples Seeking Sightseeing and Relaxation के लिए उपयुक्त है। इसे Complete Beach and Leisure Honeymoon के रूप में तैयार किया गया है। Package pickup point तक arrival और departure travel final confirmed quotation के अनुसार होगा।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் accommodation மற்றும் breakfast சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस हनीमून package में accommodation और breakfast शामिल है?",
+                "answer": "Accommodation includes Four nights’ accommodation in Goa. Daily breakfast.",
+                "answerTamil": "Accommodation includes Goa-வில் Four nights’ accommodation. Daily breakfast.",
+                "answerHindi": "Accommodation includes Goa में Four nights’ accommodation. Daily breakfast."
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் என்ன pickup, drop மற்றும் private transport சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस हनीमून package में कौन-कौन सी pickup, drop और private transport शामिल हैं?",
+                "answer": "Airport or railway-station pickup and drop. Private air-conditioned vehicle. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "Airport or railway-station pickup and drop. Private air-conditioned vehicle. மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளிலிருந்து பயணம் செய்யும் guests-க்கு, quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், listed pickup point-க்கு செல்லும் transport additional ஆகும்.",
+                "answerHindi": "Airport or railway-station pickup and drop. Private air-conditioned vehicle. मदुरै या तमिलनाडु के अन्य हिस्सों से यात्रा करने वाले guests के लिए, यदि quotation में विशेष रूप से शामिल नहीं किया गया है, तो listed pickup point तक का transport additional होगा।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "Logaa Holidays Madurai honeymoon room decoration, cake அல்லது candlelight dinner ஏற்பாடு செய்ய முடியுமா?",
+                "questionHindi": "क्या Logaa Holidays Madurai honeymoon room decoration, cake या candlelight dinner की व्यवस्था कर सकता है?",
+                "answer": "Available romantic add-ons listed for this package include Honeymoon cake, Flower decoration, Candlelight dinner, Couple spa, Beachside photoshoot. They are subject to the hotel, resort or operator policy and must be confirmed in the final quotation.",
+                "answerTamil": "Available romantic add-ons listed for this package include Honeymoon cake, Flower decoration, Candlelight dinner, Couple spa, Beachside photoshoot. இவை hotel, resort அல்லது operator policy-க்கு உட்பட்டவை மற்றும் final quotation-ல் confirm செய்யப்பட வேண்டும்.",
+                "answerHindi": "Available romantic add-ons listed for this package include Honeymoon cake, Flower decoration, Candlelight dinner, Couple spa, Beachside photoshoot. ये hotel, resort या operator policy के अधीन हैं और final quotation में confirm किए जाने चाहिए।"
+            },
+            {
+                "question": "What is not included in the package price?",
+                "questionTamil": "Package price-ல் எவை சேர்க்கப்படவில்லை?",
+                "questionHindi": "Package price में क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Flight and train tickets unless included, Lunch and dinner unless mentioned, Cruise tickets, Casino and club entry, Personal expenses, Grand Island excursion. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "Key exclusions listed for this package include Flight and train tickets unless included, Lunch and dinner unless mentioned, Cruise tickets, Casino and club entry, Personal expenses, Grand Island excursion. Inclusions-ல் குறிப்பாக குறிப்பிடப்படாத எந்த service-ம் extra ஆகக் கருதப்பட வேண்டும்.",
+                "answerHindi": "Key exclusions listed for this package include Flight and train tickets unless included, Lunch and dinner unless mentioned, Cruise tickets, Casino and club entry, Personal expenses, Grand Island excursion. Inclusions के अंतर्गत विशेष रूप से उल्लेख नहीं की गई किसी भी service को extra माना जाना चाहिए।"
+            },
+            {
+                "question": "Are Goa water sports, cruises or casino visits included?",
+                "questionTamil": "Goa water sports, cruises அல்லது casino visits இந்த package-ல் சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या Goa water sports, cruises या casino visits इस package में शामिल हैं?",
+                "answer": "These experiences are optional unless specifically included. Water-sports activities; Cruise tickets; Casino and club entry are listed as exclusions.",
+                "answerTamil": "இந்த experiences குறிப்பாக சேர்க்கப்பட்டிருந்தால் மட்டுமே included ஆகும்; இல்லையெனில் அவை optional. Water-sports activities; Cruise tickets; Casino and club entry ஆகியவை exclusions ஆக குறிப்பிடப்பட்டுள்ளன.",
+                "answerHindi": "ये experiences तभी included होंगे जब इन्हें विशेष रूप से शामिल किया गया हो। Water-sports activities; Cruise tickets; Casino and club entry को exclusions के रूप में सूचीबद्ध किया गया है।"
             }
         ],
         "id": "9106"
@@ -8210,16 +9153,60 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a premium 5 Nights 6 Days Goa honeymoon package with beaches, sightseeing, private transfers, leisure and romantic experiences.",
         "faq": [
             {
-                "question": "Is this Goa honeymoon package romantic for couples?",
-                "questionTamil": "இந்த கோவா பேக்கேஜ் ஹனிமூன் தம்பதிகளுக்கு காதல் நிறைந்ததாக இருக்குமா?",
-                "answer": "Yes. The Goa itinerary focuses on the best beaches and resorts. We pick quieter beach stays (e.g. South Goa) with sunset views, ideal for couples. You can also enjoy dinner cruises or scenic coastal drives. We provide a private guide and car, so you travel at leisure.",
-                "answerTamil": "ஆம். கோவா பயணத் திட்டம் சிறந்த கடற்கரைகள் மற்றும் ரிசார்ட்களில் கவனம் செலுத்துகிறது. தம்பதிகளுக்கு ஏற்ற சூரிய அஸ்தமனக் காட்சிகளுடன் அமைதியான கடற்கரை தங்குமிடங்களை (உதாரணமாக, தெற்கு கோவா) தேர்வு செய்கிறோம். டின்னர் க்ரூஸ் அல்லது அழகிய கடலோர சாலைப் பயணங்களையும் அனுபவிக்கலாம். தனிப்பட்ட வழிகாட்டி/கார் வசதியை வழங்குவதால், நீங்கள் நிதானமாகப் பயணம் செய்யலாம்."
+                "question": "Can I book the Premium Goa Honeymoon Package – 5 Nights / 6 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "Logaa Holidays மூலம் மதுரையிலிருந்து Premium Goa Honeymoon Package – 5 Nights / 6 Days-ஐ நான் முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं Logaa Holidays के साथ मदुरै से Premium Goa Honeymoon Package – 5 Nights / 6 Days बुक कर सकता/सकती हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins in Goa; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Goa Arrival – North Goa – South Goa – Island Experience – Leisure – Goa Departure. The stay plan is Goa – 5 Nights. Main experiences include North and South Goa sightseeing, Dedicated leisure day, Sunset-cruise option, Couple spa and photoshoot options.",
+                "answerTamil": "ஆம். Logaa Holidays மதுரையை அடிப்படையாகக் கொண்ட tour operator ஆகும், மேலும் மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள தம்பதிகள் இந்த package-ஐ முன்பதிவு செய்யலாம். Land itinerary Goa-வில் தொடங்குகிறது; final quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், மதுரையிலிருந்து அந்த pickup point-க்கு செல்லும் பயணம் தனியாக இருக்கும். திட்டமிடப்பட்ட route Goa Arrival – North Goa – South Goa – Island Experience – Leisure – Goa Departure ஆகும். Stay plan Goa – 5 Nights ஆகும். Main experiences include North and South Goa sightseeing, Dedicated leisure day, Sunset-cruise option, Couple spa and photoshoot options.",
+                "answerHindi": "हाँ। Logaa Holidays मदुरै स्थित tour operator है, और मदुरै तथा पूरे तमिलनाडु से आने वाले couples इस package को बुक कर सकते हैं। Land itinerary Goa से शुरू होती है; यदि final quotation में विशेष रूप से शामिल नहीं किया गया है, तो मदुरै से उस pickup point तक की यात्रा अलग से होगी। नियोजित route Goa Arrival – North Goa – South Goa – Island Experience – Leisure – Goa Departure है। Stay plan Goa – 5 Nights है। Main experiences include North and South Goa sightseeing, Dedicated leisure day, Sunset-cruise option, Couple spa and photoshoot options."
             },
             {
-                "question": "Can we join the Goa honeymoon tour from Mumbai or Delhi?",
-                "questionTamil": "மும்பை அல்லது டெல்லியிலிருந்து கோவா பேக்கேஜில் இணைய முடியுமா?",
-                "answer": "Yes. You can fly into Goa's Dabolim Airport (GOI) from Mumbai or Delhi. If convenient, we can pick you up at Goa airport. Alternatively, a popular option is to fly into Mumbai and take a connecting flight or train to Goa. Once you arrive, we handle all inter-city transfers to your beach hotel.",
-                "answerTamil": "ஆம். மும்பை அல்லது டெல்லியிலிருந்து கோவாவின் டபோலிம் விமான நிலையத்திற்கு (GOI) விமானத்தில் வரலாம். உங்களுக்கு வசதியாக இருந்தால், கோவா விமான நிலையத்திலிருந்து உங்களை பிக்கப் செய்து கொள்ளலாம். மாற்றாக, மும்பிக்கு விமானத்தில் வந்து அங்கிருந்து இணைப்பு விமானம் அல்லது ரயில் மூலம் கோவாவுக்குச் செல்வதும் ஒரு பிரபலமான வழியாகும். நீங்கள் கோவாவை அடைந்ததும், உங்கள் கடற்கரை ஹோட்டலுக்கான போக்குவரத்து ஏற்பாடுகளை நாங்கள் கவனித்துக்கொள்வோம்."
+                "question": "Is the Premium Goa Honeymoon Package – 5 Nights / 6 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் ஹனிமூன் தம்பதிகளுக்கு Premium Goa Honeymoon Package – 5 Nights / 6 Days பொருத்தமானதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले हनीमून कपल्स के लिए Premium Goa Honeymoon Package – 5 Nights / 6 Days उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for Couples Seeking a Relaxed Luxury Honeymoon. It is structured as a Premium Beach, Adventure and Romance. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். இந்த itinerary மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள பிற நகரங்களிலிருந்து பயணம் செய்யும் couples-க்கு ஏற்றது. இந்த package Couples Seeking a Relaxed Luxury Honeymoon ஆகியோருக்கு ஏற்றது. இது Premium Beach, Adventure and Romance ஆக அமைக்கப்பட்டுள்ளது. Package pickup point-க்கு arrival மற்றும் departure travel final confirmed quotation-ஐப் பின்பற்றும்.",
+                "answerHindi": "हाँ। यह itinerary मदुरै और पूरे तमिलनाडु के अन्य शहरों से यात्रा करने वाले couples के लिए उपयुक्त है। यह package Couples Seeking a Relaxed Luxury Honeymoon के लिए उपयुक्त है। इसे Premium Beach, Adventure and Romance के रूप में तैयार किया गया है। Package pickup point तक arrival और departure travel final confirmed quotation के अनुसार होगा।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் accommodation மற்றும் breakfast சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस हनीमून package में accommodation और breakfast शामिल है?",
+                "answer": "Accommodation includes Five nights’ accommodation in Goa. Daily breakfast.",
+                "answerTamil": "Accommodation includes Goa-வில் Five nights’ accommodation. Daily breakfast.",
+                "answerHindi": "Accommodation includes Goa में Five nights’ accommodation. Daily breakfast."
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் என்ன pickup, drop மற்றும் private transport சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस हनीमून package में कौन-कौन सी pickup, drop और private transport शामिल हैं?",
+                "answer": "Airport or railway-station pickup and drop. Private air-conditioned vehicle for scheduled transfers. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "Airport or railway-station pickup and drop. Scheduled transfers-க்காக Private air-conditioned vehicle. மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளிலிருந்து பயணம் செய்யும் guests-க்கு, quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், listed pickup point-க்கு செல்லும் transport additional ஆகும்.",
+                "answerHindi": "Airport or railway-station pickup and drop. Scheduled transfers के लिए Private air-conditioned vehicle. मदुरै या तमिलनाडु के अन्य हिस्सों से यात्रा करने वाले guests के लिए, यदि quotation में विशेष रूप से शामिल नहीं किया गया है, तो listed pickup point तक का transport additional होगा।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "Logaa Holidays Madurai honeymoon room decoration, cake அல்லது candlelight dinner ஏற்பாடு செய்ய முடியுமா?",
+                "questionHindi": "क्या Logaa Holidays Madurai honeymoon room decoration, cake या candlelight dinner की व्यवस्था कर सकता है?",
+                "answer": "Available romantic add-ons listed for this package include Romantic room decoration. They are subject to the hotel, resort or operator policy and must be confirmed in the final quotation.",
+                "answerTamil": "Available romantic add-ons listed for this package include Romantic room decoration. இது hotel, resort அல்லது operator policy-க்கு உட்பட்டது மற்றும் final quotation-ல் confirm செய்யப்பட வேண்டும்.",
+                "answerHindi": "Available romantic add-ons listed for this package include Romantic room decoration. यह hotel, resort या operator policy के अधीन है और final quotation में confirm किया जाना चाहिए।"
+            },
+            {
+                "question": "What is not included in the package price?",
+                "questionTamil": "Package price-ல் எவை சேர்க்கப்படவில்லை?",
+                "questionHindi": "Package price में क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Flight and train tickets unless included, Lunch and dinner unless mentioned, Cruise tickets, Casino and club entry, Guide charges, Grand Island excursion unless included. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "Key exclusions listed for this package include Flight and train tickets unless included, Lunch and dinner unless mentioned, Cruise tickets, Casino and club entry, Guide charges, Grand Island excursion unless included. Inclusions-ல் குறிப்பாக குறிப்பிடப்படாத எந்த service-ம் extra ஆகக் கருதப்பட வேண்டும்.",
+                "answerHindi": "Key exclusions listed for this package include Flight and train tickets unless included, Lunch and dinner unless mentioned, Cruise tickets, Casino and club entry, Guide charges, Grand Island excursion unless included. Inclusions के अंतर्गत विशेष रूप से उल्लेख नहीं की गई किसी भी service को extra माना जाना चाहिए।"
+            },
+            {
+                "question": "Are Goa water sports, cruises or casino visits included?",
+                "questionTamil": "Goa water sports, cruises அல்லது casino visits இந்த package-ல் சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या Goa water sports, cruises या casino visits इस package में शामिल हैं?",
+                "answer": "These experiences are optional unless specifically included. Water-sports activities; Cruise tickets; Casino and club entry are listed as exclusions.",
+                "answerTamil": "இந்த experiences குறிப்பாக சேர்க்கப்பட்டிருந்தால் மட்டுமே included ஆகும்; இல்லையெனில் அவை optional. Water-sports activities; Cruise tickets; Casino and club entry ஆகியவை exclusions ஆக குறிப்பிடப்பட்டுள்ளன.",
+                "answerHindi": "ये experiences तभी included होंगे जब इन्हें विशेष रूप से शामिल किया गया हो। Water-sports activities; Cruise tickets; Casino and club entry को exclusions के रूप में सूचीबद्ध किया गया है।"
             }
         ],
         "id": "9107"
@@ -8350,16 +9337,60 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a 3 Nights 4 Days Goa honeymoon package covering North Goa, South Goa, beaches and heritage attractions with resort stay and transfers.",
         "faq": [
             {
-                "question": "Is this Goa honeymoon package romantic for couples?",
-                "questionTamil": "இந்த கோவா பேக்கேஜ் ஹனிமூன் தம்பதிகளுக்கு காதல் நிறைந்ததாக இருக்குமா?",
-                "answer": "Yes. The Goa itinerary focuses on the best beaches and resorts. We pick quieter beach stays (e.g. South Goa) with sunset views, ideal for couples. You can also enjoy dinner cruises or scenic coastal drives. We provide a private guide and car, so you travel at leisure.",
-                "answerTamil": "ஆம். கோவா பயணத் திட்டம் சிறந்த கடற்கரைகள் மற்றும் ரிசார்ட்களில் கவனம் செலுத்துகிறது. தம்பதிகளுக்கு ஏற்ற சூரிய அஸ்தமனக் காட்சிகளுடன் அமைதியான கடற்கரை தங்குமிடங்களை (உதாரணமாக, தெற்கு கோவா) தேர்வு செய்கிறோம். டின்னர் க்ரூஸ் அல்லது அழகிய கடலோர சாலைப் பயணங்களையும் அனுபவிக்கலாம். தனிப்பட்ட வழிகாட்டி/கார் வசதியை வழங்குவதால், நீங்கள் நிதானமாகப் பயணம் செய்யலாம்."
+                "question": "Can I book the Goa Honeymoon Package – 3 Nights / 4 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "Logaa Holidays மூலம் மதுரையிலிருந்து Goa Honeymoon Package – 3 Nights / 4 Days-ஐ நான் முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं Logaa Holidays के साथ मदुरै से Goa Honeymoon Package – 3 Nights / 4 Days बुक कर सकता/सकती हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins in Goa; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Goa Arrival – North Goa – South Goa – Departure. Main experiences include North Goa sightseeing, South Goa sightseeing, Famous Goa beaches, Heritage churches and temples.",
+                "answerTamil": "ஆம். Logaa Holidays மதுரையை அடிப்படையாகக் கொண்ட tour operator ஆகும், மேலும் மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள தம்பதிகள் இந்த package-ஐ முன்பதிவு செய்யலாம். Land itinerary Goa-வில் தொடங்குகிறது; final quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், மதுரையிலிருந்து அந்த pickup point-க்கு செல்லும் பயணம் தனியாக இருக்கும். திட்டமிடப்பட்ட route Goa Arrival – North Goa – South Goa – Departure ஆகும். Main experiences include North Goa sightseeing, South Goa sightseeing, Famous Goa beaches, Heritage churches and temples.",
+                "answerHindi": "हाँ। Logaa Holidays मदुरै स्थित tour operator है, और मदुरै तथा पूरे तमिलनाडु से आने वाले couples इस package को बुक कर सकते हैं। Land itinerary Goa में शुरू होती है; यदि final quotation में विशेष रूप से शामिल नहीं किया गया है, तो मदुरै से उस pickup point तक की यात्रा अलग से होगी। नियोजित route Goa Arrival – North Goa – South Goa – Departure है। Main experiences include North Goa sightseeing, South Goa sightseeing, Famous Goa beaches, Heritage churches and temples."
             },
             {
-                "question": "Can we join the Goa honeymoon tour from Mumbai or Delhi?",
-                "questionTamil": "மும்பை அல்லது டெல்லியிலிருந்து கோவா பேக்கேஜில் இணைய முடியுமா?",
-                "answer": "Yes. You can fly into Goa's Dabolim Airport (GOI) from Mumbai or Delhi. If convenient, we can pick you up at Goa airport. Alternatively, a popular option is to fly into Mumbai and take a connecting flight or train to Goa. Once you arrive, we handle all inter-city transfers to your beach hotel.",
-                "answerTamil": "ஆம். மும்பை அல்லது டெல்லியிலிருந்து கோவாவின் டபோலிம் விமான நிலையத்திற்கு (GOI) விமானத்தில் வரலாம். உங்களுக்கு வசதியாக இருந்தால், கோவா விமான நிலையத்திலிருந்து உங்களை பிக்கப் செய்து கொள்ளலாம். மாற்றாக, மும்பிக்கு விமானத்தில் வந்து அங்கிருந்து இணைப்பு விமானம் அல்லது ரயில் மூலம் கோவாவுக்குச் செல்வதும் ஒரு பிரபலமான வழியாகும். நீங்கள் கோவாவை அடைந்ததும், உங்கள் கடற்கரை ஹோட்டலுக்கான போக்குவரத்து ஏற்பாடுகளை நாங்கள் கவனித்துக்கொள்வோம்."
+                "question": "Is the Goa Honeymoon Package – 3 Nights / 4 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் ஹனிமூன் தம்பதிகளுக்கு Goa Honeymoon Package – 3 Nights / 4 Days பொருத்தமானதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले हनीमून कपल्स के लिए Goa Honeymoon Package – 3 Nights / 4 Days उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for First-time Goa couples, honeymooners and anniversary travellers. It is structured as a Most Popular Couple Package. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். இந்த itinerary மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள பிற நகரங்களிலிருந்து பயணம் செய்யும் couples-க்கு ஏற்றது. இந்த package First-time Goa couples, honeymooners and anniversary travellers ஆகியோருக்கு ஏற்றது. இது Most Popular Couple Package ஆக அமைக்கப்பட்டுள்ளது. Package pickup point-க்கு arrival மற்றும் departure travel final confirmed quotation-ஐப் பின்பற்றும்.",
+                "answerHindi": "हाँ। यह itinerary मदुरै और पूरे तमिलनाडु के अन्य शहरों से यात्रा करने वाले couples के लिए उपयुक्त है। यह package First-time Goa couples, honeymooners and anniversary travellers के लिए उपयुक्त है। इसे Most Popular Couple Package के रूप में तैयार किया गया है। Package pickup point तक arrival और departure travel final confirmed quotation के अनुसार होगा।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் accommodation மற்றும் breakfast சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस हनीमून package में accommodation और breakfast शामिल है?",
+                "answer": "Accommodation includes Three nights’ accommodation. Daily breakfast.",
+                "answerTamil": "Accommodation includes Three nights’ accommodation. Daily breakfast.",
+                "answerHindi": "Accommodation includes Three nights’ accommodation. Daily breakfast."
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் என்ன pickup, drop மற்றும் private transport சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस हनीमून package में कौन-कौन सी pickup, drop और private transport शामिल हैं?",
+                "answer": "Airport or railway station pickup and drop. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "Airport or railway station pickup and drop. மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளிலிருந்து பயணம் செய்யும் guests-க்கு, quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், listed pickup point-க்கு செல்லும் transport additional ஆகும்.",
+                "answerHindi": "Airport or railway station pickup and drop. मदुरै या तमिलनाडु के अन्य हिस्सों से यात्रा करने वाले guests के लिए, यदि quotation में विशेष रूप से शामिल नहीं किया गया है, तो listed pickup point तक का transport additional होगा।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "Logaa Holidays Madurai honeymoon room decoration, cake அல்லது candlelight dinner ஏற்பாடு செய்ய முடியுமா?",
+                "questionHindi": "क्या Logaa Holidays Madurai honeymoon room decoration, cake या candlelight dinner की व्यवस्था कर सकता है?",
+                "answer": "Available romantic add-ons listed for this package include Flower-bed decoration, Honeymoon cake, Welcome drink, Fruit basket, Candlelight dinner. They are subject to the hotel, resort or operator policy and must be confirmed in the final quotation.",
+                "answerTamil": "Available romantic add-ons listed for this package include Flower-bed decoration, Honeymoon cake, Welcome drink, Fruit basket, Candlelight dinner. இவை hotel, resort அல்லது operator policy-க்கு உட்பட்டவை மற்றும் final quotation-ல் confirm செய்யப்பட வேண்டும்.",
+                "answerHindi": "Available romantic add-ons listed for this package include Flower-bed decoration, Honeymoon cake, Welcome drink, Fruit basket, Candlelight dinner. ये hotel, resort या operator policy के अधीन हैं और final quotation में confirm किए जाने चाहिए।"
+            },
+            {
+                "question": "What is not included in the package price?",
+                "questionTamil": "Package price-ல் எவை சேர்க்கப்படவில்லை?",
+                "questionHindi": "Package price में क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Flight and train tickets, Lunch and dinner unless included, Entry fees, Mandovi cruise tickets, Guide charges, Water-sport charges. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "Key exclusions listed for this package include Flight and train tickets, Lunch and dinner unless included, Entry fees, Mandovi cruise tickets, Guide charges, Water-sport charges. Inclusions-ல் குறிப்பாக குறிப்பிடப்படாத எந்த service-ம் extra ஆகக் கருதப்பட வேண்டும்.",
+                "answerHindi": "Key exclusions listed for this package include Flight and train tickets, Lunch and dinner unless included, Entry fees, Mandovi cruise tickets, Guide charges, Water-sport charges. Inclusions के अंतर्गत विशेष रूप से उल्लेख नहीं की गई किसी भी service को extra माना जाना चाहिए।"
+            },
+            {
+                "question": "Are Goa water sports, cruises or casino visits included?",
+                "questionTamil": "Goa water sports, cruises அல்லது casino visits சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या Goa water sports, cruises या casino visits शामिल हैं?",
+                "answer": "These experiences are optional unless specifically included. Mandovi cruise tickets; Water-sport charges; Casino charges are listed as exclusions.",
+                "answerTamil": "இந்த experiences குறிப்பாக சேர்க்கப்படாவிட்டால் optional ஆகும். Mandovi cruise tickets; Water-sport charges; Casino charges ஆகியவை exclusions ஆக பட்டியலிடப்பட்டுள்ளன.",
+                "answerHindi": "ये experiences विशेष रूप से शामिल किए जाने तक optional हैं। Mandovi cruise tickets; Water-sport charges; Casino charges को exclusions के रूप में सूचीबद्ध किया गया है।"
             }
         ],
         "id": "9101"
@@ -8490,16 +9521,60 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a 3 Nights 4 Days Goa honeymoon package covering North Goa, South Goa, beaches, churches and optional sunset cruise.",
         "faq": [
             {
-                "question": "Is this Goa honeymoon package romantic for couples?",
-                "questionTamil": "இந்த கோவா பேக்கேஜ் ஹனிமூன் தம்பதிகளுக்கு காதல் நிறைந்ததாக இருக்குமா?",
-                "answer": "Yes. The Goa itinerary focuses on the best beaches and resorts. We pick quieter beach stays (e.g. South Goa) with sunset views, ideal for couples. You can also enjoy dinner cruises or scenic coastal drives. We provide a private guide and car, so you travel at leisure.",
-                "answerTamil": "ஆம். கோவா பயணத் திட்டம் சிறந்த கடற்கரைகள் மற்றும் ரிசார்ட்களில் கவனம் செலுத்துகிறது. தம்பதிகளுக்கு ஏற்ற சூரிய அஸ்தமனக் காட்சிகளுடன் அமைதியான கடற்கரை தங்குமிடங்களை (உதாரணமாக, தெற்கு கோவா) தேர்வு செய்கிறோம். டின்னர் க்ரூஸ் அல்லது அழகிய கடலோர சாலைப் பயணங்களையும் அனுபவிக்கலாம். தனிப்பட்ட வழிகாட்டி/கார் வசதியை வழங்குவதால், நீங்கள் நிதானமாகப் பயணம் செய்யலாம்."
+                "question": "Can I book the North and South Goa Honeymoon – 3 Nights / 4 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "Logaa Holidays மூலம் மதுரையிலிருந்து North and South Goa Honeymoon – 3 Nights / 4 Days-ஐ நான் முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं Logaa Holidays के साथ मदुरै से North and South Goa Honeymoon – 3 Nights / 4 Days बुक कर सकता/सकती हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins in Goa; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Goa Arrival – North Goa – South Goa – Goa Departure. The stay plan is Goa – 3 Nights. Main experiences include North Goa sightseeing, South Goa sightseeing, Heritage churches, Popular beaches.",
+                "answerTamil": "ஆம். Logaa Holidays மதுரையை அடிப்படையாகக் கொண்ட tour operator ஆகும், மேலும் மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள தம்பதிகள் இந்த package-ஐ முன்பதிவு செய்யலாம். Land itinerary Goa-வில் தொடங்குகிறது; final quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், மதுரையிலிருந்து அந்த pickup point-க்கு செல்லும் பயணம் தனியாக இருக்கும். திட்டமிடப்பட்ட route Goa Arrival – North Goa – South Goa – Goa Departure ஆகும். Stay plan Goa – 3 Nights ஆகும். Main experiences include North Goa sightseeing, South Goa sightseeing, Heritage churches, Popular beaches.",
+                "answerHindi": "हाँ। Logaa Holidays मदुरै स्थित tour operator है, और मदुरै तथा पूरे तमिलनाडु से आने वाले couples इस package को बुक कर सकते हैं। Land itinerary Goa से शुरू होती है; यदि final quotation में विशेष रूप से शामिल नहीं किया गया है, तो मदुरै से उस pickup point तक की यात्रा अलग से होगी। नियोजित route Goa Arrival – North Goa – South Goa – Goa Departure है। Stay plan Goa – 3 Nights है। Main experiences include North Goa sightseeing, South Goa sightseeing, Heritage churches, Popular beaches."
             },
             {
-                "question": "Can we join the Goa honeymoon tour from Mumbai or Delhi?",
-                "questionTamil": "மும்பை அல்லது டெல்லியிலிருந்து கோவா பேக்கேஜில் இணைய முடியுமா?",
-                "answer": "Yes. You can fly into Goa's Dabolim Airport (GOI) from Mumbai or Delhi. If convenient, we can pick you up at Goa airport. Alternatively, a popular option is to fly into Mumbai and take a connecting flight or train to Goa. Once you arrive, we handle all inter-city transfers to your beach hotel.",
-                "answerTamil": "ஆம். மும்பை அல்லது டெல்லியிலிருந்து கோவாவின் டபோலிம் விமான நிலையத்திற்கு (GOI) விமானத்தில் வரலாம். உங்களுக்கு வசதியாக இருந்தால், கோவா விமான நிலையத்திலிருந்து உங்களை பிக்கப் செய்து கொள்ளலாம். மாற்றாக, மும்பிக்கு விமானத்தில் வந்து அங்கிருந்து இணைப்பு விமானம் அல்லது ரயில் மூலம் கோவாவுக்குச் செல்வதும் ஒரு பிரபலமான வழியாகும். நீங்கள் கோவாவை அடைந்ததும், உங்கள் கடற்கரை ஹோட்டலுக்கான போக்குவரத்து ஏற்பாடுகளை நாங்கள் கவனித்துக்கொள்வோம்."
+                "question": "Is the North and South Goa Honeymoon – 3 Nights / 4 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் ஹனிமூன் தம்பதிகளுக்கு North and South Goa Honeymoon – 3 Nights / 4 Days பொருத்தமானதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले हनीमून कपल्स के लिए North and South Goa Honeymoon – 3 Nights / 4 Days उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for First-Time Goa Couples. It is structured as a Beaches, Heritage and Romance. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். இந்த itinerary மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள பிற நகரங்களிலிருந்து பயணம் செய்யும் couples-க்கு ஏற்றது. இந்த package First-Time Goa Couples-க்கு ஏற்றது. இது Beaches, Heritage and Romance ஆக அமைக்கப்பட்டுள்ளது. Package pickup point-க்கு arrival மற்றும் departure travel final confirmed quotation-ஐப் பின்பற்றும்.",
+                "answerHindi": "हाँ। यह itinerary मदुरै और पूरे तमिलनाडु के अन्य शहरों से यात्रा करने वाले couples के लिए उपयुक्त है। यह package First-Time Goa Couples के लिए उपयुक्त है। इसे Beaches, Heritage and Romance के रूप में तैयार किया गया है। Package pickup point तक arrival और departure travel final confirmed quotation के अनुसार होगा।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் accommodation மற்றும் breakfast சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस हनीमून package में accommodation और breakfast शामिल है?",
+                "answer": "Accommodation includes Three nights’ accommodation in Goa. Daily breakfast.",
+                "answerTamil": "Accommodation includes Goa-வில் Three nights’ accommodation. Daily breakfast.",
+                "answerHindi": "Accommodation includes Goa में Three nights’ accommodation. Daily breakfast."
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் என்ன pickup, drop மற்றும் private transport சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस हनीमून package में कौन-कौन सी pickup, drop और private transport शामिल हैं?",
+                "answer": "Airport or railway-station pickup and drop. Private North Goa sightseeing. Private South Goa sightseeing. Private air-conditioned vehicle. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "Airport or railway-station pickup and drop. Private North Goa sightseeing. Private South Goa sightseeing. Private air-conditioned vehicle. மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளிலிருந்து பயணம் செய்யும் guests-க்கு, quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், listed pickup point-க்கு செல்லும் transport additional ஆகும்.",
+                "answerHindi": "Airport or railway-station pickup and drop. Private North Goa sightseeing. Private South Goa sightseeing. Private air-conditioned vehicle. मदुरै या तमिलनाडु के अन्य हिस्सों से यात्रा करने वाले guests के लिए, यदि quotation में विशेष रूप से शामिल नहीं किया गया है, तो listed pickup point तक का transport additional होगा।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "Logaa Holidays Madurai honeymoon room decoration, cake அல்லது candlelight dinner ஏற்பாடு செய்ய முடியுமா?",
+                "questionHindi": "क्या Logaa Holidays Madurai honeymoon room decoration, cake या candlelight dinner की व्यवस्था कर सकता है?",
+                "answer": "Available romantic add-ons listed for this package include Romantic room decoration. They are subject to the hotel, resort or operator policy and must be confirmed in the final quotation.",
+                "answerTamil": "Available romantic add-ons listed for this package include Romantic room decoration. இது hotel, resort அல்லது operator policy-க்கு உட்பட்டது மற்றும் final quotation-ல் confirm செய்யப்பட வேண்டும்.",
+                "answerHindi": "Available romantic add-ons listed for this package include Romantic room decoration. यह hotel, resort या operator policy के अधीन है और final quotation में confirm किया जाना चाहिए।"
+            },
+            {
+                "question": "What is not included in the package price?",
+                "questionTamil": "Package price-ல் எவை சேர்க்கப்படவில்லை?",
+                "questionHindi": "Package price में क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Flight and train tickets unless included, Lunch and dinner unless mentioned, Mandovi River cruise tickets, Casino and club entry, Guide charges, Water-sports activities. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "Key exclusions listed for this package include Flight and train tickets unless included, Lunch and dinner unless mentioned, Mandovi River cruise tickets, Casino and club entry, Guide charges, Water-sports activities. Inclusions-ல் குறிப்பாக குறிப்பிடப்படாத எந்த service-ம் extra ஆகக் கருதப்பட வேண்டும்.",
+                "answerHindi": "Key exclusions listed for this package include Flight and train tickets unless included, Lunch and dinner unless mentioned, Mandovi River cruise tickets, Casino and club entry, Guide charges, Water-sports activities. Inclusions के अंतर्गत विशेष रूप से उल्लेख नहीं की गई किसी भी service को extra माना जाना चाहिए।"
+            },
+            {
+                "question": "Are Goa water sports, cruises or casino visits included?",
+                "questionTamil": "Goa water sports, cruises அல்லது casino visits இந்த package-ல் சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या Goa water sports, cruises या casino visits इस package में शामिल हैं?",
+                "answer": "These experiences are optional unless specifically included. Water-sports activities; Mandovi River cruise tickets; Casino and club entry are listed as exclusions.",
+                "answerTamil": "இந்த experiences குறிப்பாக சேர்க்கப்பட்டிருந்தால் மட்டுமே included ஆகும்; இல்லையெனில் அவை optional. Water-sports activities; Mandovi River cruise tickets; Casino and club entry ஆகியவை exclusions ஆக குறிப்பிடப்பட்டுள்ளன.",
+                "answerHindi": "ये experiences तभी included होंगे जब इन्हें विशेष रूप से शामिल किया गया हो। Water-sports activities; Mandovi River cruise tickets; Casino and club entry को exclusions के रूप में सूचीबद्ध किया गया है।"
             }
         ],
         "id": "9102"
@@ -8620,20 +9695,60 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a 2 Nights 3 Days Andaman honeymoon package covering Port Blair, Cellular Jail, Corbyn’s Cove Beach and romantic island experiences.",
         "faq": [
             {
-                "question": "Is the Andaman tour suitable for families and couples?",
-                "questionTamil": "அந்தமான் சுற்றுலா குடும்பங்கள் மற்றும் தம்பதிகளுக்கு ஏற்றதா?",
-                "questionHindi": "क्या अंडमान टूर परिवारों और कपल्स के लिए उपयुक्त है?",
-                "answer": "Yes. The itinerary blends beach relaxation and easy nature activities. We include calm attractions like Radhanagar Beach (ranked among the world's best) and a glass-bottom boat ride for coral viewing, which appeal to children and couples alike. Family-friendly beaches and simple sightseeing mean even seniors can participate. Resorts on Havelock/Neil have family rooms and couples' cottages, accommodating all traveler types.",
-                "answerTamil": "ஆம். இந்த பயணத் திட்டத்தில் கடற்கரை ஓய்வு மற்றும் எளிதான இயற்கை சார்ந்த செயல்பாடுகள் இணைக்கப்பட்டுள்ளன. உலகின் சிறந்த கடற்கரைகளில் ஒன்றாகக் கருதப்படும் ராதாநகர் கடற்கரை மற்றும் பவளப்பாறைகளைப் பார்வையிடும் கண்ணாடித் தள படகு சவாரி போன்ற அமைதியான அனுபவங்கள் இடம்பெறுகின்றன; இவை குழந்தைகள் மற்றும் தம்பதிகள் இருவருக்கும் பிடிக்கும். குடும்பங்களுக்கு ஏற்ற கடற்கரைகள் மற்றும் எளிய சுற்றுலா நடவடிக்கைகள் இருப்பதால் மூத்த குடிமக்களும் பங்கேற்கலாம். ஹேவ்லாக்/நீல் தீவுகளில் உள்ள ரிசார்ட்களில் குடும்ப அறைகள் மற்றும் தம்பதிகளுக்கான குடில்கள் இருப்பதால் அனைத்து வகையான பயணிகளுக்கும் ஏற்றதாக இருக்கும்.",
-                "answerHindi": "हाँ। यात्रा कार्यक्रम में समुद्र तट पर आराम और आसान प्रकृति गतिविधियों का संयोजन है। राधानगर बीच और कोरल देखने के लिए ग्लास-बॉटम बोट राइड जैसे शांत आकर्षण बच्चों और कपल्स दोनों को पसंद आते हैं। परिवार के अनुकूल समुद्र तट और सरल दर्शनीय स्थल होने के कारण वरिष्ठ नागरिक भी भाग ले सकते हैं। हैवलॉक और नील के रिसॉर्ट्स में परिवारों और कपल्स के लिए उपयुक्त ठहरने की सुविधाएँ हैं।"
+                "question": "Can I book the Port Blair Honeymoon Package – 2 Nights / 3 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "Logaa Holidays மூலம் மதுரையிலிருந்து Port Blair Honeymoon Package – 2 Nights / 3 Days-ஐ நான் முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं Logaa Holidays के साथ मदुरै से Port Blair Honeymoon Package – 2 Nights / 3 Days बुक कर सकता/सकती हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins in Port Blair; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Port Blair Arrival – Port Blair Sightseeing – Port Blair Departure. The stay plan is Port Blair – 2 Nights. Main experiences include Cellular Jail visit, Light and Sound Show, Corbyn’s Cove Beach, Cellular Jail.",
+                "answerTamil": "ஆம். Logaa Holidays மதுரையை அடிப்படையாகக் கொண்ட tour operator ஆகும், மேலும் மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள தம்பதிகள் இந்த package-ஐ முன்பதிவு செய்யலாம். Land itinerary Port Blair-ல் தொடங்குகிறது; final quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், மதுரையிலிருந்து அந்த pickup point-க்கு செல்லும் பயணம் தனியாக இருக்கும். திட்டமிடப்பட்ட route Port Blair Arrival – Port Blair Sightseeing – Port Blair Departure ஆகும். Stay plan Port Blair – 2 Nights ஆகும். Main experiences include Cellular Jail visit, Light and Sound Show, Corbyn’s Cove Beach, Cellular Jail.",
+                "answerHindi": "हाँ। Logaa Holidays मदुरै स्थित tour operator है, और मदुरै तथा पूरे तमिलनाडु से आने वाले couples इस package को बुक कर सकते हैं। Land itinerary Port Blair से शुरू होती है; यदि final quotation में विशेष रूप से शामिल नहीं किया गया है, तो मदुरै से उस pickup point तक की यात्रा अलग से होगी। नियोजित route Port Blair Arrival – Port Blair Sightseeing – Port Blair Departure है। Stay plan Port Blair – 2 Nights है। Main experiences include Cellular Jail visit, Light and Sound Show, Corbyn’s Cove Beach, Cellular Jail."
             },
             {
-                "question": "Can I join the Andaman tour from Chennai or Kolkata?",
-                "questionTamil": "சென்னை அல்லது கொல்கத்தாவிலிருந்து அந்தமான் சுற்றுலாவில் இணைய முடியுமா?",
-                "questionHindi": "क्या मैं चेन्नई या कोलकाता से अंडमान टूर में शामिल हो सकता/सकती हूँ?",
-                "answer": "Certainly. You'll fly into Port Blair (IXZ airport) since it's the archipelago hub. Port Blair has direct flights from Chennai, Kolkata, and Delhi. We'll meet you at Port Blair airport to begin. All island transfers (ferries/boats) are arranged, so after arrival you just relax and let us handle the logistics.",
-                "answerTamil": "நிச்சயமாக. தீவுக்கூட்டத்தின் முக்கிய மையமாக போர்ட் பிளேர் இருப்பதால், நீங்கள் போர்ட் பிளேர் (IXZ விமான நிலையம்) செல்ல விமானத்தில் வர வேண்டும். போர்ட் பிளேருக்கு சென்னை, கொல்கத்தா மற்றும் டெல்லியிலிருந்து நேரடி விமானங்கள் உள்ளன. சுற்றுலாவைத் தொடங்க போர்ட் பிளேர் விமான நிலையத்தில் உங்களைச் சந்திப்போம். அனைத்து தீவு இடமாற்றங்களும் (படகு/பெர்ரி) ஏற்பாடு செய்யப்படுவதால், நீங்கள் வந்த பிறகு ஓய்வெடுத்து, மீதமுள்ள பயண ஏற்பாடுகளை நாங்கள் கவனித்துக்கொள்வோம்.",
-                "answerHindi": "बिल्कुल। आपको पोर्ट ब्लेयर (IXZ एयरपोर्ट) के लिए फ्लाइट लेनी होगी क्योंकि यह द्वीपसमूह का मुख्य केंद्र है। पोर्ट ब्लेयर के लिए चेन्नई, कोलकाता और दिल्ली से सीधी फ्लाइटें उपलब्ध हैं। हम पोर्ट ब्लेयर एयरपोर्ट पर आपसे मिलेंगे। सभी द्वीप ट्रांसफर, जैसे फेरी और बोट, व्यवस्थित किए जाते हैं, इसलिए बाकी यात्रा व्यवस्था हम संभालेंगे।"
+                "question": "Is the Port Blair Honeymoon Package – 2 Nights / 3 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் ஹனிமூன் தம்பதிகளுக்கு Port Blair Honeymoon Package – 2 Nights / 3 Days பொருத்தமானதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले हनीमून कपल्स के लिए Port Blair Honeymoon Package – 2 Nights / 3 Days उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for Couples with Limited Leave and Short Romantic Holidays. It is structured as a Short Island Honeymoon. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். இந்த itinerary மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள பிற நகரங்களிலிருந்து பயணம் செய்யும் couples-க்கு ஏற்றது. இந்த package Couples with Limited Leave and Short Romantic Holidays ஆகியோருக்கு ஏற்றது. இது Short Island Honeymoon ஆக அமைக்கப்பட்டுள்ளது. Package pickup point-க்கு arrival மற்றும் departure travel final confirmed quotation-ஐப் பின்பற்றும்.",
+                "answerHindi": "हाँ। यह itinerary मदुरै और पूरे तमिलनाडु के अन्य शहरों से यात्रा करने वाले couples के लिए उपयुक्त है। यह package Couples with Limited Leave and Short Romantic Holidays के लिए उपयुक्त है। इसे Short Island Honeymoon के रूप में तैयार किया गया है। Package pickup point तक arrival और departure travel final confirmed quotation के अनुसार होगा।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் accommodation மற்றும் breakfast சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस हनीमून package में accommodation और breakfast शामिल है?",
+                "answer": "Accommodation includes Two nights’ accommodation in Port Blair. Daily breakfast.",
+                "answerTamil": "Accommodation includes Port Blair-ல் Two nights’ accommodation. Daily breakfast.",
+                "answerHindi": "Accommodation includes Port Blair में Two nights’ accommodation. Daily breakfast."
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் என்ன pickup, drop மற்றும் private transport சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस हनीमून package में कौन-कौन सी pickup, drop और private transport शामिल हैं?",
+                "answer": "Port Blair Airport pickup and drop. Private local transfers. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "Port Blair Airport pickup and drop. Private local transfers. மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளிலிருந்து பயணம் செய்யும் guests-க்கு, quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், listed pickup point-க்கு செல்லும் transport additional ஆகும்.",
+                "answerHindi": "Port Blair Airport pickup and drop. Private local transfers. मदुरै या तमिलनाडु के अन्य हिस्सों से यात्रा करने वाले guests के लिए, यदि quotation में विशेष रूप से शामिल नहीं किया गया है, तो listed pickup point तक का transport additional होगा।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "Logaa Holidays Madurai honeymoon room decoration, cake அல்லது candlelight dinner ஏற்பாடு செய்ய முடியுமா?",
+                "questionHindi": "क्या Logaa Holidays Madurai honeymoon room decoration, cake या candlelight dinner की व्यवस्था कर सकता है?",
+                "answer": "Honeymoon arrangements specifically confirmed. Only services specifically confirmed in the quotation are included.",
+                "answerTamil": "Honeymoon arrangements specifically confirmed. Quotation-ல் குறிப்பாக confirm செய்யப்பட்ட services மட்டுமே included ஆகும்.",
+                "answerHindi": "Honeymoon arrangements specifically confirmed. केवल वही services शामिल हैं जो quotation में विशेष रूप से confirm की गई हैं।"
+            },
+            {
+                "question": "What is not included in the package price?",
+                "questionTamil": "Package price-ல் எவை சேர்க்கப்படவில்லை?",
+                "questionHindi": "Package price में क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Flight tickets unless included, Lunch and dinner unless mentioned, Ross Island and North Bay boat tickets unless included, Snorkelling and scuba diving, Guide charges, Attraction entry tickets. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "Key exclusions listed for this package include Flight tickets unless included, Lunch and dinner unless mentioned, Ross Island and North Bay boat tickets unless included, Snorkelling and scuba diving, Guide charges, Attraction entry tickets. Inclusions-ல் குறிப்பாக குறிப்பிடப்படாத எந்த service-ம் extra ஆகக் கருதப்பட வேண்டும்.",
+                "answerHindi": "Key exclusions listed for this package include Flight tickets unless included, Lunch and dinner unless mentioned, Ross Island and North Bay boat tickets unless included, Snorkelling and scuba diving, Guide charges, Attraction entry tickets. Inclusions के अंतर्गत विशेष रूप से उल्लेख नहीं की गई किसी भी service को extra माना जाना चाहिए।"
+            },
+            {
+                "question": "Are Andaman ferry or cruise transfers included?",
+                "questionTamil": "Andaman ferry அல்லது cruise transfers இந்த package-ல் சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या Andaman ferry या cruise transfers इस package में शामिल हैं?",
+                "answer": "Only ferry or cruise services specifically mentioned under inclusions are covered; optional island excursions and water activities are extra.",
+                "answerTamil": "Inclusions-ல் குறிப்பாக குறிப்பிடப்பட்டுள்ள ferry அல்லது cruise services மட்டுமே covered ஆகும்; optional island excursions மற்றும் water activities extra ஆகும்.",
+                "answerHindi": "केवल वही ferry या cruise services covered हैं जो inclusions में विशेष रूप से mention की गई हैं; optional island excursions और water activities extra हैं।"
             }
         ],
         "id": "9601"
@@ -8765,20 +9880,60 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a 3 Nights 4 Days Andaman honeymoon package covering Port Blair and Havelock Island with private cruise and Radhanagar Beach.",
         "faq": [
             {
-                "question": "Is the Andaman tour suitable for families and couples?",
-                "questionTamil": "அந்தமான் சுற்றுலா குடும்பங்கள் மற்றும் தம்பதிகளுக்கு ஏற்றதா?",
-                "questionHindi": "क्या अंडमान टूर परिवारों और कपल्स के लिए उपयुक्त है?",
-                "answer": "Yes. The itinerary blends beach relaxation and easy nature activities. We include calm attractions like Radhanagar Beach (ranked among the world's best) and a glass-bottom boat ride for coral viewing, which appeal to children and couples alike. Family-friendly beaches and simple sightseeing mean even seniors can participate. Resorts on Havelock/Neil have family rooms and couples' cottages, accommodating all traveler types.",
-                "answerTamil": "ஆம். இந்த பயணத் திட்டத்தில் கடற்கரை ஓய்வு மற்றும் எளிதான இயற்கை சார்ந்த செயல்பாடுகள் இணைக்கப்பட்டுள்ளன. உலகின் சிறந்த கடற்கரைகளில் ஒன்றாகக் கருதப்படும் ராதாநகர் கடற்கரை மற்றும் பவளப்பாறைகளைப் பார்வையிடும் கண்ணாடித் தள படகு சவாரி போன்ற அமைதியான அனுபவங்கள் இடம்பெறுகின்றன; இவை குழந்தைகள் மற்றும் தம்பதிகள் இருவருக்கும் பிடிக்கும். குடும்பங்களுக்கு ஏற்ற கடற்கரைகள் மற்றும் எளிய சுற்றுலா நடவடிக்கைகள் இருப்பதால் மூத்த குடிமக்களும் பங்கேற்கலாம். ஹேவ்லாக்/நீல் தீவுகளில் உள்ள ரிசார்ட்களில் குடும்ப அறைகள் மற்றும் தம்பதிகளுக்கான குடில்கள் இருப்பதால் அனைத்து வகையான பயணிகளுக்கும் ஏற்றதாக இருக்கும்.",
-                "answerHindi": "हाँ। यात्रा कार्यक्रम में समुद्र तट पर आराम और आसान प्रकृति गतिविधियों का संयोजन है। राधानगर बीच और कोरल देखने के लिए ग्लास-बॉटम बोट राइड जैसे शांत आकर्षण बच्चों और कपल्स दोनों को पसंद आते हैं। परिवार के अनुकूल समुद्र तट और सरल दर्शनीय स्थल होने के कारण वरिष्ठ नागरिक भी भाग ले सकते हैं। हैवलॉक और नील के रिसॉर्ट्स में परिवारों और कपल्स के लिए उपयुक्त ठहरने की सुविधाएँ हैं।"
+                "question": "Can I book the Port Blair and Havelock Honeymoon – 3 Nights / 4 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "மதுரையிலிருந்து Logaa Holidays மூலம் Port Blair மற்றும் Havelock Honeymoon – 3 Nights / 4 Days பேக்கேஜை முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं मदुरै से Logaa Holidays के साथ Port Blair और Havelock Honeymoon – 3 Nights / 4 Days पैकेज बुक कर सकता/सकती हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins from Port Blair; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Port Blair – Havelock Island – Port Blair. The stay plan is Port Blair 2 Nights + Havelock Island 1 Night. Main experiences include Radhanagar Beach, Cellular Jail and Light and Sound Show.",
+                "answerTamil": "ஆம். Logaa Holidays மதுரையைச் சேர்ந்த டூர் ஆபரேட்டராக இருப்பதால், மதுரை மற்றும் தமிழ்நாட்டின் பிற பகுதிகளில் இருந்து வரும் தம்பதிகள் இந்த பேக்கேஜை முன்பதிவு செய்யலாம். இந்த நிலப் பயணத் திட்டம் Port Blair-ல் தொடங்குகிறது; இறுதி quotation-ல் குறிப்பாக சேர்க்கப்படாதவரை, மதுரையிலிருந்து அந்த pickup point-க்கு செல்லும் பயணம் தனியாக இருக்கும். திட்டமிடப்பட்ட பயண வழி Port Blair – Havelock Island – Port Blair ஆகும். தங்கும் திட்டம் Port Blair 2 Nights + Havelock Island 1 Night ஆகும். முக்கிய அனுபவங்களில் Radhanagar Beach, Cellular Jail மற்றும் Light and Sound Show ஆகியவை அடங்கும்.",
+                "answerHindi": "हाँ। Logaa Holidays मदुरै स्थित टूर ऑपरेटर है और मदुरै तथा पूरे तमिलनाडु से आने वाले कपल्स इस पैकेज को बुक कर सकते हैं। यात्रा कार्यक्रम Port Blair से शुरू होता है; अंतिम quotation में विशेष रूप से शामिल न होने पर मदुरै से उस pickup point तक की यात्रा अलग से होगी। निर्धारित मार्ग Port Blair – Havelock Island – Port Blair है। ठहरने की योजना Port Blair में 2 Nights + Havelock Island में 1 Night है। मुख्य अनुभवों में Radhanagar Beach, Cellular Jail और Light and Sound Show शामिल हैं।"
             },
             {
-                "question": "Can I join the Andaman tour from Chennai or Kolkata?",
-                "questionTamil": "சென்னை அல்லது கொல்கத்தாவிலிருந்து அந்தமான் சுற்றுலாவில் இணைய முடியுமா?",
-                "questionHindi": "क्या मैं चेन्नई या कोलकाता से अंडमान टूर में शामिल हो सकता/सकती हूँ?",
-                "answer": "Certainly. You'll fly into Port Blair (IXZ airport) since it's the archipelago hub. Port Blair has direct flights from Chennai, Kolkata, and Delhi. We'll meet you at Port Blair airport to begin. All island transfers (ferries/boats) are arranged, so after arrival you just relax and let us handle the logistics.",
-                "answerTamil": "நிச்சயமாக. தீவுக்கூட்டத்தின் முக்கிய மையமாக போர்ட் பிளேர் இருப்பதால், நீங்கள் போர்ட் பிளேர் (IXZ விமான நிலையம்) செல்ல விமானத்தில் வர வேண்டும். போர்ட் பிளேருக்கு சென்னை, கொல்கத்தா மற்றும் டெல்லியிலிருந்து நேரடி விமானங்கள் உள்ளன. சுற்றுலாவைத் தொடங்க போர்ட் பிளேர் விமான நிலையத்தில் உங்களைச் சந்திப்போம். அனைத்து தீவு இடமாற்றங்களும் (படகு/பெர்ரி) ஏற்பாடு செய்யப்படுவதால், நீங்கள் வந்த பிறகு ஓய்வெடுத்து, மீதமுள்ள பயண ஏற்பாடுகளை நாங்கள் கவனித்துக்கொள்வோம்.",
-                "answerHindi": "बिल्कुल। आपको पोर्ट ब्लेयर (IXZ एयरपोर्ट) के लिए फ्लाइट लेनी होगी क्योंकि यह द्वीपसमूह का मुख्य केंद्र है। पोर्ट ब्लेयर के लिए चेन्नई, कोलकाता और दिल्ली से सीधी फ्लाइटें उपलब्ध हैं। हम पोर्ट ब्लेयर एयरपोर्ट पर आपसे मिलेंगे। सभी द्वीप ट्रांसफर, जैसे फेरी और बोट, व्यवस्थित किए जाते हैं, इसलिए बाकी यात्रा व्यवस्था हम संभालेंगे।"
+                "question": "Is the Port Blair and Havelock Honeymoon – 3 Nights / 4 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் ஹனிமூன் தம்பதிகளுக்கு Port Blair மற்றும் Havelock Honeymoon – 3 Nights / 4 Days பேக்கேஜ் பொருத்தமானதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले हनीमून कपल्स के लिए Port Blair और Havelock Honeymoon – 3 Nights / 4 Days पैकेज उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for First-Time Andaman Couples. It is structured as a Beach and Island Romance. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். மதுரை மற்றும் தமிழ்நாட்டின் பிற நகரங்களில் இருந்து பயணம் செய்யும் தம்பதிகளுக்கு இந்த பயணத் திட்டம் பொருத்தமானது. இந்த பேக்கேஜ் முதல் முறையாக Andaman செல்லும் தம்பதிகளுக்கு ஏற்றது. இது Beach and Island Romance அனுபவமாக வடிவமைக்கப்பட்டுள்ளது. பேக்கேஜ் pickup point-க்கு வரும் மற்றும் அங்கிருந்து புறப்படும் பயணங்கள் இறுதியாக உறுதி செய்யப்பட்ட quotation-ஐப் பொறுத்து இருக்கும்.",
+                "answerHindi": "हाँ। यह यात्रा कार्यक्रम मदुरै और तमिलनाडु के अन्य शहरों से यात्रा करने वाले कपल्स के लिए उपयुक्त है। यह पैकेज पहली बार Andaman जाने वाले कपल्स के लिए उपयुक्त है। इसे Beach and Island Romance के रूप में तैयार किया गया है। पैकेज pickup point तक आने और वहाँ से departure की यात्रा अंतिम confirmed quotation के अनुसार होगी।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் பேக்கேஜில் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस हनीमून पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Accommodation includes Two nights’ accommodation in Port Blair; One night’s accommodation in Havelock Island. Daily breakfast.",
+                "answerTamil": "தங்குமிடத்தில் Port Blair-ல் இரண்டு இரவுகள் தங்கும் வசதியும்; Havelock Island-ல் ஒரு இரவு தங்கும் வசதியும் அடங்கும். தினசரி காலை உணவு வழங்கப்படும்.",
+                "answerHindi": "ठहरने में Port Blair में दो रातों का आवास और Havelock Island में एक रात का आवास शामिल है। प्रतिदिन नाश्ता शामिल है।"
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் பேக்கேஜில் எந்த pickup, drop மற்றும் தனியார் போக்குவரத்து வசதிகள் சேர்க்கப்பட்டுள்ளன?",
+                "questionHindi": "इस हनीमून पैकेज में कौन-सी pickup, drop और private transport सुविधाएँ शामिल हैं?",
+                "answer": "Port Blair Airport pickup and drop. Port Blair–Havelock–Port Blair private cruise tickets. Jetty transfers. Private local sightseeing transfers. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "Port Blair Airport pickup மற்றும் drop வசதிகள் வழங்கப்படும். Port Blair–Havelock–Port Blair private cruise tickets, Jetty transfers மற்றும் தனியார் உள்ளூர் sightseeing transfers ஆகியவை சேர்க்கப்பட்டுள்ளன. மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளில் இருந்து பயணம் செய்யும் விருந்தினர்களுக்கு, quotation-ல் குறிப்பாக சேர்க்கப்படாதவரை, குறிப்பிடப்பட்ட pickup point-க்கு செல்லும் போக்குவரத்து கூடுதல் கட்டணமாக இருக்கும்.",
+                "answerHindi": "Port Blair Airport pickup और drop की सुविधा शामिल है। Port Blair–Havelock–Port Blair private cruise tickets, Jetty transfers और private local sightseeing transfers शामिल हैं। मदुरै या तमिलनाडु के अन्य क्षेत्रों से यात्रा करने वाले मेहमानों के लिए, quotation में विशेष रूप से शामिल न होने पर निर्धारित pickup point तक का परिवहन अतिरिक्त होगा।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "Logaa Holidays Madurai ஹனிமூன் அறை அலங்காரம், கேக் அல்லது candlelight dinner ஏற்பாடு செய்ய முடியுமா?",
+                "questionHindi": "क्या Logaa Holidays Madurai हनीमून रूम डेकोरेशन, केक या candlelight dinner की व्यवस्था कर सकता है?",
+                "answer": "Available romantic add-ons listed for this package include candlelight dinner, honeymoon cake, flower decoration. They are subject to the hotel, resort or operator policy and must be confirmed in the final quotation.",
+                "answerTamil": "இந்த பேக்கேஜில் கிடைக்கும் romantic add-ons-களில் candlelight dinner, honeymoon cake மற்றும் flower decoration ஆகியவை அடங்கும். இவை hotel, resort அல்லது operator-ன் policy-க்கு உட்பட்டவை மற்றும் இறுதி quotation-ல் உறுதி செய்யப்பட வேண்டும்.",
+                "answerHindi": "इस पैकेज में उपलब्ध romantic add-ons में candlelight dinner, honeymoon cake और flower decoration शामिल हैं। ये होटल, रिज़ॉर्ट या ऑपरेटर की policy के अधीन हैं और अंतिम quotation में इनकी पुष्टि की जानी आवश्यक है।"
+            },
+            {
+                "question": "What is not included in the package price?",
+                "questionTamil": "இந்த பேக்கேஜ் விலையில் எவை சேர்க்கப்படவில்லை?",
+                "questionHindi": "पैकेज की कीमत में क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Flight tickets unless included, Lunch and dinner unless mentioned, Attraction entry tickets, Cruise-class upgrade, Personal expenses, Water activities. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "இந்த பேக்கேஜில் சேர்க்கப்படாத முக்கிய சேவைகளில் Flight tickets, குறிப்பாக சேர்க்கப்படாதவரை; Lunch மற்றும் dinner, குறிப்பிடப்படாதவரை; Attraction entry tickets; Cruise-class upgrade; Personal expenses; Water activities ஆகியவை அடங்கும். Inclusions பகுதியில் குறிப்பாக குறிப்பிடப்படாத எந்த சேவையும் கூடுதல் கட்டணமாக கருதப்பட வேண்டும்.",
+                "answerHindi": "इस पैकेज में शामिल नहीं होने वाली मुख्य सेवाओं में Flight tickets, जब तक विशेष रूप से शामिल न हों; Lunch और dinner, जब तक उल्लेखित न हों; Attraction entry tickets; Cruise-class upgrade; Personal expenses और Water activities शामिल हैं। Inclusions में विशेष रूप से उल्लेखित न की गई किसी भी सेवा को अतिरिक्त शुल्क के रूप में माना जाना चाहिए।"
+            },
+            {
+                "question": "Are Andaman ferry or cruise transfers included?",
+                "questionTamil": "Andaman ferry அல்லது cruise transfers இந்த பேக்கேஜில் சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या Andaman ferry या cruise transfers इस पैकेज में शामिल हैं?",
+                "answer": "Port Blair–Havelock–Port Blair private cruise tickets. Cruise-class upgrades and optional water activities are extra unless included.",
+                "answerTamil": "Port Blair–Havelock–Port Blair private cruise tickets சேர்க்கப்பட்டுள்ளன. Cruise-class upgrades மற்றும் விருப்பத்திற்கேற்ப செய்யப்படும் water activities ஆகியவை சேர்க்கப்படாதவரை கூடுதல் கட்டணமாக இருக்கும்.",
+                "answerHindi": "Port Blair–Havelock–Port Blair private cruise tickets शामिल हैं। Cruise-class upgrades और वैकल्पिक water activities, जब तक विशेष रूप से शामिल न हों, अतिरिक्त शुल्क पर उपलब्ध होंगी।"
             }
         ],
         "id": "9602"
@@ -8921,16 +10076,60 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a 4 Nights 5 Days Andaman honeymoon package covering Port Blair, Havelock and Neil Island with private cruises and beach sightseeing.",
         "faq": [
             {
-                "question": "Is this Andaman honeymoon package ideal for couples?",
-                "questionTamil": "இந்த அந்தமான் ஹனிமூன் பேக்கேஜ் தம்பதிகளுக்கு ஏற்றதா?",
-                "answer": "Yes. The Andaman honeymoon itinerary features romantic beach resorts, sunset cruises, and serene island getaways. We include private beach experiences and couple-friendly activities like glass-bottom boat rides and snorkeling. Resorts on Havelock and Neil Island offer couples' cottages for a truly private experience.",
-                "answerTamil": "ஆம். இந்த அந்தமான் ஹனிமூன் பயணத் திட்டத்தில் ரொமாண்டிக் கடற்கரை ரிசார்ட்கள் மற்றும் அமைதியான தீவு பயணங்கள் அடங்கும். பவளப்பாறைகளைப் பார்வையிடும் கண்ணாடித் தள படகு சவாரி போன்ற தம்பதிகளுக்கு ஏற்ற செயல்பாடுகள் சேர்க்கப்பட்டுள்ளன. ஹேவ்லாக்/நீல் தீவுகளில் உள்ள ரிசார்ட்களில் தம்பதிகளுக்கான குடில்கள் இருப்பதால் சிறந்த அனுபவம் கிடைக்கும்."
+                "question": "Can I book the Havelock and Neil Island Honeymoon – 4 Nights / 5 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "மதுரையிலிருந்து Logaa Holidays மூலம் Havelock மற்றும் Neil Island Honeymoon – 4 Nights / 5 Days பேக்கேஜை முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं मदुरै से Logaa Holidays के साथ Havelock और Neil Island Honeymoon – 4 Nights / 5 Days पैकेज बुक कर सकता/सकती हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins from Port Blair; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Port Blair – Havelock Island – Neil Island – Port Blair. The stay plan is Port Blair 2 Nights + Havelock 1 Night + Neil Island 1 Night. Main experiences include Radhanagar Beach, Kalapathar Beach, Bharatpur Beach, Laxmanpur Beach.",
+                "answerTamil": "ஆம். Logaa Holidays மதுரையைச் சேர்ந்த டூர் ஆபரேட்டராக இருப்பதால், மதுரை மற்றும் தமிழ்நாட்டின் பிற பகுதிகளில் இருந்து வரும் தம்பதிகள் இந்த பேக்கேஜை முன்பதிவு செய்யலாம். இந்த நிலப் பயணத் திட்டம் Port Blair-ல் தொடங்குகிறது; இறுதி quotation-ல் குறிப்பாக சேர்க்கப்படாதவரை, மதுரையிலிருந்து அந்த pickup point-க்கு செல்லும் பயணம் தனியாக இருக்கும். திட்டமிடப்பட்ட பயண வழி Port Blair – Havelock Island – Neil Island – Port Blair ஆகும். தங்கும் திட்டம் Port Blair 2 Nights + Havelock 1 Night + Neil Island 1 Night ஆகும். முக்கிய அனுபவங்களில் Radhanagar Beach, Kalapathar Beach, Bharatpur Beach மற்றும் Laxmanpur Beach ஆகியவை அடங்கும்.",
+                "answerHindi": "हाँ। Logaa Holidays मदुरै स्थित टूर ऑपरेटर है और मदुरै तथा पूरे तमिलनाडु से आने वाले कपल्स इस पैकेज को बुक कर सकते हैं। यात्रा कार्यक्रम Port Blair से शुरू होता है; अंतिम quotation में विशेष रूप से शामिल न होने पर मदुरै से उस pickup point तक की यात्रा अलग से होगी। निर्धारित मार्ग Port Blair – Havelock Island – Neil Island – Port Blair है। ठहरने की योजना Port Blair में 2 Nights + Havelock में 1 Night + Neil Island में 1 Night है। मुख्य अनुभवों में Radhanagar Beach, Kalapathar Beach, Bharatpur Beach और Laxmanpur Beach शामिल हैं।"
             },
             {
-                "question": "Can I join the Andaman honeymoon tour from Chennai or Kolkata?",
-                "questionTamil": "சென்னை அல்லது கொல்கத்தாவிலிருந்து அந்தமான் சுற்றுலாவில் இணைய முடியுமா?",
-                "answer": "Certainly. You will fly into Port Blair (IXZ airport) since it is the archipelago hub. Port Blair has direct flights from Chennai, Kolkata, and Delhi. We will meet you at Port Blair airport to begin the tour. All island transfers (ferries and boats) are arranged, so after arrival you just relax and let us handle the logistics.",
-                "answerTamil": "நிச்சயமாக. தீவுக்கூட்டத்தின் முக்கிய மையமாக போர்ட் பிளேர் இருப்பதால், நீங்கள் போர்ட் பிளேர் (IXZ விமான நிலையம்) செல்ல விமானத்தில் வர வேண்டும். போர்ட் பிளேருக்கு சென்னை, கொல்கத்தா மற்றும் டெல்லியிலிருந்து நேரடி விமானங்கள் உள்ளன. சுற்றுலாவைத் தொடங்க போர்ட் பிளேர் விமான நிலையத்தில் உங்களைச் சந்திப்போம். அனைத்து தீவு இடமாற்றங்களும் (படகு/பெர்ரி) ஏற்பாடு செய்யப்படுவதால், நீங்கள் வந்த பிறகு ஓய்வெடுத்துக்கொள்ளலாம்."
+                "question": "Is the Havelock and Neil Island Honeymoon – 4 Nights / 5 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் ஹனிமூன் தம்பதிகளுக்கு Havelock மற்றும் Neil Island Honeymoon – 4 Nights / 5 Days பேக்கேஜ் பொருத்தமானதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले हनीमून कपल्स के लिए Havelock और Neil Island Honeymoon – 4 Nights / 5 Days पैकेज उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for Couples Seeking Beaches, Cruises and Island Leisure. It is structured as a Complete Island Romance. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். மதுரை மற்றும் தமிழ்நாட்டின் பிற நகரங்களில் இருந்து பயணம் செய்யும் தம்பதிகளுக்கு இந்த பயணத் திட்டம் பொருத்தமானது. இந்த பேக்கேஜ் Beaches, Cruises மற்றும் Island Leisure அனுபவங்களை விரும்பும் தம்பதிகளுக்கு ஏற்றது. இது Complete Island Romance அனுபவமாக வடிவமைக்கப்பட்டுள்ளது. பேக்கேஜ் pickup point-க்கு வரும் மற்றும் அங்கிருந்து புறப்படும் பயணங்கள் இறுதியாக உறுதி செய்யப்பட்ட quotation-ஐப் பொறுத்து இருக்கும்.",
+                "answerHindi": "हाँ। यह यात्रा कार्यक्रम मदुरै और तमिलनाडु के अन्य शहरों से यात्रा करने वाले कपल्स के लिए उपयुक्त है। यह पैकेज Beaches, Cruises और Island Leisure का आनंद लेने वाले कपल्स के लिए उपयुक्त है। इसे Complete Island Romance के रूप में तैयार किया गया है। पैकेज pickup point तक आने और वहाँ से departure की यात्रा अंतिम confirmed quotation के अनुसार होगी।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் பேக்கேஜில் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस हनीमून पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Accommodation includes Two nights’ accommodation in Port Blair; One night’s accommodation in Havelock Island; One night’s accommodation in Neil Island. Daily breakfast.",
+                "answerTamil": "தங்குமிடத்தில் Port Blair-ல் இரண்டு இரவுகள்; Havelock Island-ல் ஒரு இரவு; Neil Island-ல் ஒரு இரவு தங்கும் வசதி அடங்கும். தினசரி காலை உணவு வழங்கப்படும்.",
+                "answerHindi": "ठहरने में Port Blair में दो रातों का आवास, Havelock Island में एक रात का आवास और Neil Island में एक रात का आवास शामिल है। प्रतिदिन नाश्ता शामिल है।"
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் பேக்கேஜில் எந்த pickup, drop மற்றும் தனியார் போக்குவரத்து வசதிகள் சேர்க்கப்பட்டுள்ளன?",
+                "questionHindi": "इस हनीमून पैकेज में कौन-सी pickup, drop और private transport सुविधाएँ शामिल हैं?",
+                "answer": "Port Blair Airport pickup and drop. Jetty transfers. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "Port Blair Airport pickup மற்றும் drop வசதிகள் வழங்கப்படும். Jetty transfers சேர்க்கப்பட்டுள்ளன. மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளில் இருந்து பயணம் செய்யும் விருந்தினர்களுக்கு, quotation-ல் குறிப்பாக சேர்க்கப்படாதவரை, குறிப்பிடப்பட்ட pickup point-க்கு செல்லும் போக்குவரத்து கூடுதல் கட்டணமாக இருக்கும்.",
+                "answerHindi": "Port Blair Airport pickup और drop की सुविधा शामिल है। Jetty transfers भी शामिल हैं। मदुरै या तमिलनाडु के अन्य क्षेत्रों से यात्रा करने वाले मेहमानों के लिए, quotation में विशेष रूप से शामिल न होने पर निर्धारित pickup point तक का परिवहन अतिरिक्त होगा।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "Logaa Holidays Madurai ஹனிமூன் அறை அலங்காரம், கேக் அல்லது candlelight dinner ஏற்பாடு செய்ய முடியுமா?",
+                "questionHindi": "क्या Logaa Holidays Madurai हनीमून रूम डेकोरेशन, केक या candlelight dinner की व्यवस्था कर सकता है?",
+                "answer": "Only romantic services specifically confirmed in the final quotation are included.",
+                "answerTamil": "இறுதி quotation-ல் குறிப்பாக உறுதி செய்யப்பட்ட romantic services மட்டுமே இதில் சேர்க்கப்படும்.",
+                "answerHindi": "केवल अंतिम quotation में विशेष रूप से पुष्टि की गई romantic services ही शामिल होंगी।"
+            },
+            {
+                "question": "What is not included in the package price?",
+                "questionTamil": "இந்த பேக்கேஜ் விலையில் எவை சேர்க்கப்படவில்லை?",
+                "questionHindi": "पैकेज की कीमत में क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Flight tickets unless included, Lunch and dinner unless mentioned, Attraction entry tickets, Cruise upgrades, Personal expenses, Scuba diving. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "இந்த பேக்கேஜில் சேர்க்கப்படாத முக்கிய சேவைகளில் Flight tickets, குறிப்பாக சேர்க்கப்படாதவரை; Lunch மற்றும் dinner, குறிப்பிடப்படாதவரை; Attraction entry tickets; Cruise upgrades; Personal expenses; Scuba diving ஆகியவை அடங்கும். Inclusions பகுதியில் குறிப்பாக குறிப்பிடப்படாத எந்த சேவையும் கூடுதல் கட்டணமாக கருதப்பட வேண்டும்.",
+                "answerHindi": "इस पैकेज में शामिल नहीं होने वाली मुख्य सेवाओं में Flight tickets, जब तक विशेष रूप से शामिल न हों; Lunch और dinner, जब तक उल्लेखित न हों; Attraction entry tickets; Cruise upgrades; Personal expenses और Scuba diving शामिल हैं। Inclusions में विशेष रूप से उल्लेखित न की गई किसी भी सेवा को अतिरिक्त शुल्क के रूप में माना जाना चाहिए।"
+            },
+            {
+                "question": "Are Andaman ferry or cruise transfers included?",
+                "questionTamil": "Andaman ferry அல்லது cruise transfers இந்த பேக்கேஜில் சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या Andaman ferry या cruise transfers इस पैकेज में शामिल हैं?",
+                "answer": "Port Blair–Havelock private cruise. Havelock–Neil Island private cruise. Neil Island–Port Blair private cruise. Cruise-class upgrades and optional water activities are extra unless included.",
+                "answerTamil": "Port Blair–Havelock private cruise, Havelock–Neil Island private cruise மற்றும் Neil Island–Port Blair private cruise ஆகியவை சேர்க்கப்பட்டுள்ளன. Cruise-class upgrades மற்றும் விருப்பத்திற்கேற்ப செய்யப்படும் water activities ஆகியவை சேர்க்கப்படாதவரை கூடுதல் கட்டணமாக இருக்கும்.",
+                "answerHindi": "Port Blair–Havelock private cruise, Havelock–Neil Island private cruise और Neil Island–Port Blair private cruise शामिल हैं। Cruise-class upgrades और वैकल्पिक water activities, जब तक विशेष रूप से शामिल न हों, अतिरिक्त शुल्क पर उपलब्ध होंगी।"
             }
         ],
         "id": "9603"
@@ -9103,16 +10302,60 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a premium 5 Nights 6 Days Andaman honeymoon package covering Port Blair, Havelock and Neil Island with private cruise and beach resorts.",
         "faq": [
             {
-                "question": "Is this Andaman honeymoon package ideal for couples?",
-                "questionTamil": "இந்த அந்தமான் ஹனிமூன் பேக்கேஜ் தம்பதிகளுக்கு ஏற்றதா?",
-                "answer": "Yes. The Andaman honeymoon itinerary features romantic beach resorts, sunset cruises, and serene island getaways. We include private beach experiences and couple-friendly activities like glass-bottom boat rides and snorkeling. Resorts on Havelock and Neil Island offer couples' cottages for a truly private experience.",
-                "answerTamil": "ஆம். இந்த அந்தமான் ஹனிமூன் பயணத் திட்டத்தில் ரொமாண்டிக் கடற்கரை ரிசார்ட்கள் மற்றும் அமைதியான தீவு பயணங்கள் அடங்கும். பவளப்பாறைகளைப் பார்வையிடும் கண்ணாடித் தள படகு சவாரி போன்ற தம்பதிகளுக்கு ஏற்ற செயல்பாடுகள் சேர்க்கப்பட்டுள்ளன. ஹேவ்லாக்/நீல் தீவுகளில் உள்ள ரிசார்ட்களில் தம்பதிகளுக்கான குடில்கள் இருப்பதால் சிறந்த அனுபவம் கிடைக்கும்."
+                "question": "Can I book the Complete Andaman Honeymoon Package – 5 Nights / 6 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "மதுரையிலிருந்து Logaa Holidays மூலம் Complete Andaman Honeymoon Package – 5 Nights / 6 Days பேக்கேஜை முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं मदुरै से Logaa Holidays के साथ Complete Andaman Honeymoon Package – 5 Nights / 6 Days पैकेज बुक कर सकता/सकती हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins from Port Blair; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Port Blair – Havelock Island – Neil Island – Port Blair. The stay plan is Port Blair 2 Nights + Havelock Island 2 Nights + Neil Island 1 Night. Main experiences include Radhanagar Beach, Kalapathar Beach, Neil Island sightseeing, Leisure time for couples.",
+                "answerTamil": "ஆம். Logaa Holidays மதுரையைச் சேர்ந்த டூர் ஆபரேட்டராக இருப்பதால், மதுரை மற்றும் தமிழ்நாட்டின் பிற பகுதிகளில் இருந்து வரும் தம்பதிகள் இந்த பேக்கேஜை முன்பதிவு செய்யலாம். இந்த நிலப் பயணத் திட்டம் Port Blair-ல் தொடங்குகிறது; இறுதி quotation-ல் குறிப்பாக சேர்க்கப்படாதவரை, மதுரையிலிருந்து அந்த pickup point-க்கு செல்லும் பயணம் தனியாக இருக்கும். திட்டமிடப்பட்ட பயண வழி Port Blair – Havelock Island – Neil Island – Port Blair ஆகும். தங்கும் திட்டம் Port Blair 2 Nights + Havelock Island 2 Nights + Neil Island 1 Night ஆகும். முக்கிய அனுபவங்களில் Radhanagar Beach, Kalapathar Beach, Neil Island sightseeing மற்றும் தம்பதிகளுக்கான Leisure time ஆகியவை அடங்கும்.",
+                "answerHindi": "हाँ। Logaa Holidays मदुरै स्थित टूर ऑपरेटर है और मदुरै तथा पूरे तमिलनाडु से आने वाले कपल्स इस पैकेज को बुक कर सकते हैं। यात्रा कार्यक्रम Port Blair से शुरू होता है; अंतिम quotation में विशेष रूप से शामिल न होने पर मदुरै से उस pickup point तक की यात्रा अलग से होगी। निर्धारित मार्ग Port Blair – Havelock Island – Neil Island – Port Blair है। ठहरने की योजना Port Blair में 2 Nights + Havelock Island में 2 Nights + Neil Island में 1 Night है। मुख्य अनुभवों में Radhanagar Beach, Kalapathar Beach, Neil Island sightseeing और couples के लिए Leisure time शामिल हैं।"
             },
             {
-                "question": "Can I join the Andaman honeymoon tour from Chennai or Kolkata?",
-                "questionTamil": "சென்னை அல்லது கொல்கத்தாவிலிருந்து அந்தமான் சுற்றுலாவில் இணைய முடியுமா?",
-                "answer": "Certainly. You will fly into Port Blair (IXZ airport) since it is the archipelago hub. Port Blair has direct flights from Chennai, Kolkata, and Delhi. We will meet you at Port Blair airport to begin the tour. All island transfers (ferries and boats) are arranged, so after arrival you just relax and let us handle the logistics.",
-                "answerTamil": "நிச்சயமாக. தீவுக்கூட்டத்தின் முக்கிய மையமாக போர்ட் பிளேர் இருப்பதால், நீங்கள் போர்ட் பிளேர் (IXZ விமான நிலையம்) செல்ல விமானத்தில் வர வேண்டும். போர்ட் பிளேருக்கு சென்னை, கொல்கத்தா மற்றும் டெல்லியிலிருந்து நேரடி விமானங்கள் உள்ளன. சுற்றுலாவைத் தொடங்க போர்ட் பிளேர் விமான நிலையத்தில் உங்களைச் சந்திப்போம். அனைத்து தீவு இடமாற்றங்களும் (படகு/பெர்ரி) ஏற்பாடு செய்யப்படுவதால், நீங்கள் வந்த பிறகு ஓய்வெடுத்துக்கொள்ளலாம்."
+                "question": "Is the Complete Andaman Honeymoon Package – 5 Nights / 6 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் ஹனிமூன் தம்பதிகளுக்கு Complete Andaman Honeymoon Package – 5 Nights / 6 Days பேக்கேஜ் பொருத்தமானதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले हनीमून कपल्स के लिए Complete Andaman Honeymoon Package – 5 Nights / 6 Days पैकेज उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for Couples Seeking a Relaxed Andaman Experience. It is structured as a Premium Beach, Cruise and Island Honeymoon. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். மதுரை மற்றும் தமிழ்நாட்டின் பிற நகரங்களில் இருந்து பயணம் செய்யும் தம்பதிகளுக்கு இந்த பயணத் திட்டம் பொருத்தமானது. இந்த பேக்கேஜ் Relaxed Andaman Experience-ஐ விரும்பும் தம்பதிகளுக்கு ஏற்றது. இது Premium Beach, Cruise and Island Honeymoon அனுபவமாக வடிவமைக்கப்பட்டுள்ளது. பேக்கேஜ் pickup point-க்கு வரும் மற்றும் அங்கிருந்து புறப்படும் பயணங்கள் இறுதியாக உறுதி செய்யப்பட்ட quotation-ஐப் பொறுத்து இருக்கும்.",
+                "answerHindi": "हाँ। यह यात्रा कार्यक्रम मदुरै और तमिलनाडु के अन्य शहरों से यात्रा करने वाले कपल्स के लिए उपयुक्त है। यह पैकेज Relaxed Andaman Experience चाहने वाले कपल्स के लिए उपयुक्त है। इसे Premium Beach, Cruise and Island Honeymoon के रूप में तैयार किया गया है। पैकेज pickup point तक आने और वहाँ से departure की यात्रा अंतिम confirmed quotation के अनुसार होगी।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் பேக்கேஜில் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस हनीमून पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Accommodation includes Two nights’ accommodation in Port Blair; Two nights’ accommodation in Havelock Island; One night’s accommodation in Neil Island. Daily breakfast.",
+                "answerTamil": "தங்குமிடத்தில் Port Blair-ல் இரண்டு இரவுகள்; Havelock Island-ல் இரண்டு இரவுகள்; Neil Island-ல் ஒரு இரவு தங்கும் வசதி அடங்கும். தினசரி காலை உணவு வழங்கப்படும்.",
+                "answerHindi": "ठहरने में Port Blair में दो रातों का आवास, Havelock Island में दो रातों का आवास और Neil Island में एक रात का आवास शामिल है। प्रतिदिन नाश्ता शामिल है।"
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் பேக்கேஜில் எந்த pickup, drop மற்றும் தனியார் போக்குவரத்து வசதிகள் சேர்க்கப்பட்டுள்ளன?",
+                "questionHindi": "इस हनीमून पैकेज में कौन-सी pickup, drop और private transport सुविधाएँ शामिल हैं?",
+                "answer": "Port Blair Airport pickup and drop. All scheduled private cruise tickets. Jetty transfers. Private local sightseeing transfers. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "Port Blair Airport pickup மற்றும் drop வசதிகள் வழங்கப்படும். அனைத்து திட்டமிடப்பட்ட private cruise tickets, Jetty transfers மற்றும் தனியார் உள்ளூர் sightseeing transfers ஆகியவை சேர்க்கப்பட்டுள்ளன. மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளில் இருந்து பயணம் செய்யும் விருந்தினர்களுக்கு, quotation-ல் குறிப்பாக சேர்க்கப்படாதவரை, குறிப்பிடப்பட்ட pickup point-க்கு செல்லும் போக்குவரத்து கூடுதல் கட்டணமாக இருக்கும்.",
+                "answerHindi": "Port Blair Airport pickup और drop की सुविधा शामिल है। सभी निर्धारित private cruise tickets, Jetty transfers और private local sightseeing transfers शामिल हैं। मदुरै या तमिलनाडु के अन्य क्षेत्रों से यात्रा करने वाले मेहमानों के लिए, quotation में विशेष रूप से शामिल न होने पर निर्धारित pickup point तक का परिवहन अतिरिक्त होगा।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "Logaa Holidays Madurai ஹனிமூன் அறை அலங்காரம், கேக் அல்லது candlelight dinner ஏற்பாடு செய்ய முடியுமா?",
+                "questionHindi": "क्या Logaa Holidays Madurai हनीमून रूम डेकोरेशन, केक या candlelight dinner की व्यवस्था कर सकता है?",
+                "answer": "Available romantic add-ons listed for this package include Honeymoon cake. They are subject to the hotel, resort or operator policy and must be confirmed in the final quotation.",
+                "answerTamil": "இந்த பேக்கேஜில் கிடைக்கும் romantic add-ons-களில் Honeymoon cake அடங்கும். இது hotel, resort அல்லது operator-ன் policy-க்கு உட்பட்டது மற்றும் இறுதி quotation-ல் உறுதி செய்யப்பட வேண்டும்.",
+                "answerHindi": "इस पैकेज में उपलब्ध romantic add-ons में Honeymoon cake शामिल है। यह होटल, रिज़ॉर्ट या ऑपरेटर की policy के अधीन है और अंतिम quotation में इसकी पुष्टि की जानी आवश्यक है।"
+            },
+            {
+                "question": "What is not included in the package price?",
+                "questionTamil": "இந்த பேக்கேஜ் விலையில் எவை சேர்க்கப்படவில்லை?",
+                "questionHindi": "पैकेज की कीमत में क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Flight tickets unless included, Lunch and dinner unless mentioned, Attraction entry tickets, Cruise-class upgrades, Guide charges, Elephant Beach excursion unless included. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "இந்த பேக்கேஜில் சேர்க்கப்படாத முக்கிய சேவைகளில் Flight tickets, குறிப்பாக சேர்க்கப்படாதவரை; Lunch மற்றும் dinner, குறிப்பிடப்படாதவரை; Attraction entry tickets; Cruise-class upgrades; Guide charges; Elephant Beach excursion, குறிப்பாக சேர்க்கப்படாதவரை ஆகியவை அடங்கும். Inclusions பகுதியில் குறிப்பாக குறிப்பிடப்படாத எந்த சேவையும் கூடுதல் கட்டணமாக கருதப்பட வேண்டும்.",
+                "answerHindi": "इस पैकेज में शामिल नहीं होने वाली मुख्य सेवाओं में Flight tickets, जब तक विशेष रूप से शामिल न हों; Lunch और dinner, जब तक उल्लेखित न हों; Attraction entry tickets; Cruise-class upgrades; Guide charges और Elephant Beach excursion, जब तक विशेष रूप से शामिल न हो, शामिल हैं। Inclusions में विशेष रूप से उल्लेखित न की गई किसी भी सेवा को अतिरिक्त शुल्क के रूप में माना जाना चाहिए।"
+            },
+            {
+                "question": "Are Andaman ferry or cruise transfers included?",
+                "questionTamil": "Andaman ferry அல்லது cruise transfers இந்த பேக்கேஜில் சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या Andaman ferry या cruise transfers इस पैकेज में शामिल हैं?",
+                "answer": "All scheduled private cruise tickets. Cruise-class upgrades and optional water activities are extra unless included.",
+                "answerTamil": "அனைத்து திட்டமிடப்பட்ட private cruise tickets சேர்க்கப்பட்டுள்ளன. Cruise-class upgrades மற்றும் விருப்பத்திற்கேற்ப செய்யப்படும் water activities ஆகியவை சேர்க்கப்படாதவரை கூடுதல் கட்டணமாக இருக்கும்.",
+                "answerHindi": "सभी निर्धारित private cruise tickets शामिल हैं। Cruise-class upgrades और वैकल्पिक water activities, जब तक विशेष रूप से शामिल न हों, अतिरिक्त शुल्क पर उपलब्ध होंगी।"
             }
         ],
         "id": "9604"
@@ -12433,16 +13676,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai One Day Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "What can I cover in a Madurai one day sightseeing tour?",
+                "questionTamil": "மதுரையில் ஒரு நாள் சுற்றுலாவில் நான் என்னென்ன இடங்களைப் பார்க்கலாம்?",
+                "questionHindi": "मदुरै एक दिवसीय दर्शनीय स्थल यात्रा में मैं किन-किन स्थानों को देख सकता हूँ?",
+                "answer": "This is a full-day Madurai sightseeing itinerary designed to cover the major attractions listed in the package.",
+                "answerTamil": "இந்த ஒரு நாள் மதுரை சுற்றுலா திட்டத்தில், தொகுப்பில் குறிப்பிடப்பட்டுள்ள முக்கியமான சுற்றுலா இடங்களை முழு நாளில் பார்வையிடும் வகையில் பயணத்திட்டம் அமைக்கப்பட்டுள்ளது.",
+                "answerHindi": "यह एक पूरे दिन की मदुरै दर्शनीय स्थल यात्रा है, जिसमें पैकेज में बताए गए प्रमुख पर्यटन स्थलों को कवर करने के लिए यात्रा कार्यक्रम तैयार किया गया है."
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai itinerary?",
+                "questionTamil": "மதுரை சுற்றுலா பயணத்திட்டத்தில் இடம்பெறும் முக்கியமான சுற்றுலா இடங்கள் எவை?",
+                "questionHindi": "मदुरै यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Meenakshi Amman Temple, Koodal Azhagar Temple, Thiruparankundram Murugan Temple, Thirumalai Nayakkar Mahal, Vandiyur Mariamman Teppakulam, and Azhagar Kovil. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத்திட்டத்தில் மீனாட்சி அம்மன் கோவில், கூடல் அழகர் கோவில், திருப்பரங்குன்றம் முருகன் கோவில், திருமலை நாயக்கர் மகால், வண்டியூர் மாரியம்மன் தெப்பக்குளம் மற்றும் அழகர் கோவில் ஆகிய முக்கிய இடங்கள் இடம்பெறுகின்றன. சுற்றுலா பார்வைகள் தினசரி பயணத்திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்து அமையும்.",
+                "answerHindi": "इस यात्रा कार्यक्रम में मीनाक्षी अम्मन मंदिर, कूडल अळगर मंदिर, तिरुप्परंकुंद्रम मुरुगन मंदिर, तिरुमलाई नायक्कर महल, वंडियूर मरियम्मन तेप्पकुलम और अळगर कोविल जैसे प्रमुख स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के यात्रा कार्यक्रम और उपलब्ध समय के अनुसार होगा."
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன இடங்களில் Pickup மற்றும் Drop வசதி உள்ளது?",
+                "questionHindi": "इस यात्रा के लिए पिकअप और ड्रॉप की क्या सुविधाएँ उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop-off can be provided at your preferred location in Madurai.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரையில் நீங்கள் விரும்பும் இடத்தில் Drop வசதி வழங்கப்படும்.",
+                "answerHindi": "पिकअप की सुविधा मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से उपलब्ध है। मदुरै में आपकी पसंद के स्थान पर ड्रॉप की सुविधा दी जा सकती है."
+            },
+            {
+                "question": "What is included in this Madurai sightseeing tour package?",
+                "questionTamil": "இந்த மதுரை சுற்றுலா தொகுப்பில் என்னென்ன வசதிகள் சேர்க்கப்பட்டுள்ளன?",
+                "questionHindi": "इस मदुरै दर्शनीय स्थल यात्रा पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a private air-conditioned vehicle, experienced and courteous driver, pickup and drop within Madurai, parking charges, and driver allowance.",
+                "answerTamil": "இந்த தொகுப்பில் தனியார் ஏர் கண்டிஷன் வாகனம், அனுபவமிக்க மற்றும் மரியாதையான ஓட்டுநர், மதுரைக்குள் Pickup மற்றும் Drop, பார்க்கிங் கட்டணம் மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में निजी एयर-कंडीशंड वाहन, अनुभवी और विनम्र ड्राइवर, मदुरै के भीतर पिकअप और ड्रॉप, पार्किंग शुल्क और ड्राइवर भत्ता शामिल हैं."
+            },
+            {
+                "question": "Does this Madurai one day tour include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த மதுரை ஒரு நாள் சுற்றுலா தொகுப்பில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस मदुरै एक दिवसीय यात्रा पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "No. This is a one-day sightseeing package, and no overnight hotel stay is listed. Accommodation and breakfast are not part of the stated inclusions.",
+                "answerTamil": "இல்லை. இது ஒரு நாள் சுற்றுலா தொகுப்பாகும், இதில் இரவு நேர ஹோட்டல் தங்குமிடம் குறிப்பிடப்படவில்லை. தங்குமிடம் மற்றும் காலை உணவு இந்த தொகுப்பில் சேர்க்கப்படவில்லை.",
+                "answerHindi": "नहीं। यह एक दिवसीय दर्शनीय स्थल यात्रा पैकेज है और इसमें रातभर होटल में ठहरने की सुविधा शामिल नहीं है। आवास और नाश्ता इस पैकेज की दी गई सुविधाओं में शामिल नहीं हैं."
+            },
+            {
+                "question": "Which costs are extra in this Madurai tour package?",
+                "questionTamil": "இந்த மதுரை சுற்றுலா தொகுப்பில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस मदुरै टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Temple Special Darshan Tickets, Monument Entry Fees, Meals and Beverages, Guide Services, and Personal Expenses.",
+                "answerTamil": "கோவில் சிறப்பு தரிசன டிக்கெட்டுகள், நினைவுச்சின்ன நுழைவுக் கட்டணங்கள், உணவு மற்றும் பானங்கள், வழிகாட்டி சேவைகள் மற்றும் தனிப்பட்ட செலவுகள் கூடுதல் கட்டணங்களாகும்.",
+                "answerHindi": "मंदिर विशेष दर्शन टिकट, स्मारक प्रवेश शुल्क, भोजन और पेय पदार्थ, गाइड सेवाएँ और व्यक्तिगत खर्च अतिरिक्त शुल्क के अंतर्गत आते हैं."
+            },
+            {
+                "question": "Can I customize the Madurai one day sightseeing itinerary?",
+                "questionTamil": "மதுரை ஒரு நாள் சுற்றுலா பயணத்திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या मैं मदुरै एक दिवसीय दर्शनीय स्थल यात्रा कार्यक्रम को अपनी आवश्यकता के अनुसार कस्टमाइज़ कर सकता हूँ?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to your sightseeing preferences, booking requirements, and available time.",
+                "answerTamil": "ஆம். தனிப்பயனாக்கப்பட்ட சுற்றுலா திட்டங்கள் கிடைக்கின்றன. உங்கள் சுற்றுலா விருப்பங்கள், முன்பதிவு தேவைகள் மற்றும் கிடைக்கும் நேரத்திற்கு ஏற்ப பயணத்திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। कस्टमाइज़्ड टूर प्लान उपलब्ध हैं। आपकी दर्शनीय स्थल प्राथमिकताओं, बुकिंग आवश्यकताओं और उपलब्ध समय के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है."
             }
         ],
         "id": "2025"
@@ -12453,7 +13740,7 @@ export const packagesDatabase: Record<string, any> = {
         "heroImage": "/assets/rameswaram/big.webp",
         "overview": {
             "duration": "One Day",
-            "destination": "Madurai",
+            "destination": "Madurai to Rameswaram",
             "activities": "Pilgrimage, Sightseeing",
             "themes": "Religious & Pilgrimage, Culture & Heritage"
         },
@@ -12506,20 +13793,7 @@ export const packagesDatabase: Record<string, any> = {
         ],
         "highlights": [],
         "keywords": "Book Your Madurai One Day Tour Today, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
-        "faq": [
-            {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
-            },
-            {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
-            }
-        ],
+        "faq": [{ "question": "Can I do the Madurai to Rameswaram trip in one day?", "questionTamil": "மதுரையிலிருந்து ராமேஸ்வரத்திற்கு ஒரு நாள் பயணமாக செல்ல முடியுமா?", "questionHindi": "क्या मैं मदुरै से रामेश्वरम की यात्रा एक दिन में कर सकता हूँ?", "answer": "Yes. This itinerary is planned as a one-day trip, with sightseeing and travel arranged according to the schedule in the package.", "answerTamil": "ஆம். இந்த பயணத்திட்டம் ஒரு நாள் பயணமாக திட்டமிடப்பட்டுள்ளது. தொகுப்பில் குறிப்பிடப்பட்டுள்ள அட்டவணைக்கு ஏற்ப பயணம் மற்றும் சுற்றுலா இடங்களை பார்வையிடும் வகையில் ஏற்பாடு செய்யப்பட்டுள்ளது.", "answerHindi": "हाँ। यह यात्रा कार्यक्रम एक दिवसीय यात्रा के रूप में तैयार किया गया है, जिसमें पैकेज में दिए गए कार्यक्रम के अनुसार यात्रा और दर्शनीय स्थलों का भ्रमण शामिल है." }, { "question": "What are the main sightseeing places covered in the Madurai to Rameswaram itinerary?", "questionTamil": "மதுரை முதல் ராமேஸ்வரம் பயணத்திட்டத்தில் இடம்பெறும் முக்கியமான சுற்றுலா இடங்கள் எவை?", "questionHindi": "मदुरै से रामेश्वरम यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?", "answer": "Key places listed in the itinerary include Sri Ramanathaswamy Temple, Agni Theertham, Pamban Road Bridge View Point, Pamban Railway Bridge View Point, Dr. A.P.J. Abdul Kalam Memorial, and Dr. A.P.J. Abdul Kalam House Museum. Sightseeing is subject to the day-wise schedule and available time.", "answerTamil": "இந்த பயணத்திட்டத்தில் ஸ்ரீ ராமநாதசுவாமி கோவில், அக்னி தீர்த்தம், பாம்பன் சாலை பாலம் View Point, பாம்பன் ரயில்வே பாலம் View Point, டாக்டர் ஏ.பி.ஜே. அப்துல் கலாம் நினைவகம் மற்றும் டாக்டர் ஏ.பி.ஜே. அப்துல் கலாம் இல்ல அருங்காட்சியகம் ஆகிய முக்கிய இடங்கள் இடம்பெறுகின்றன. சுற்றுலா பார்வைகள் தினசரி பயணத்திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்து அமையும்.", "answerHindi": "इस यात्रा कार्यक्रम में श्री रामनाथस्वामी मंदिर, अग्नि तीर्थम, पंबन रोड ब्रिज व्यू पॉइंट, पंबन रेलवे ब्रिज व्यू पॉइंट, डॉ. ए.पी.जे. अब्दुल कलाम स्मारक और डॉ. ए.पी.जे. अब्दुल कलाम हाउस म्यूज़ियम जैसे प्रमुख स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के यात्रा कार्यक्रम और उपलब्ध समय के अनुसार होगा." }, { "question": "What pickup and drop options are available for the Madurai to Rameswaram tour?", "questionTamil": "மதுரை முதல் ராமேஸ்வரம் சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?", "questionHindi": "मदुरै से रामेश्वरम टूर के लिए पिकअप और ड्रॉप की क्या सुविधाएँ उपलब्ध हैं?", "answer": "Pickup is available from your Hotel, Railway Station, Airport, or Bus Stand in Madurai, followed by travel to Rameswaram. Drop can be provided at your Hotel, Railway Station, Airport, or Bus Stand.", "answerTamil": "உங்கள் ஹோட்டல், ரயில் நிலையம், விமான நிலையம் அல்லது பேருந்து நிலையத்திலிருந்து Pickup செய்து ராமேஸ்வரத்திற்கு அழைத்துச் செல்லப்படும். ராமேஸ்வரத்தில் உங்கள் ஹோட்டல், ரயில் நிலையம், விமான நிலையம் அல்லது பேருந்து நிலையத்தில் Drop வசதி வழங்கப்படும்.", "answerHindi": "आपके होटल, रेलवे स्टेशन, एयरपोर्ट या बस स्टैंड से पिकअप की सुविधा उपलब्ध है और वहाँ से रामेश्वरम ले जाया जाएगा। ड्रॉप आपके होटल, रेलवे स्टेशन, एयरपोर्ट या बस स्टैंड पर उपलब्ध कराया जा सकता है." }, { "question": "What is included in the Madurai to Rameswaram tour package?", "questionTamil": "மதுரை முதல் ராமேஸ்வரம் சுற்றுலா தொகுப்பில் என்னென்ன வசதிகள் சேர்க்கப்பட்டுள்ளன?", "questionHindi": "मदुरै से रामेश्वरम टूर पैकेज में क्या-क्या शामिल है?", "answer": "The package includes a private A/C vehicle, pickup and drop, experienced driver, driver allowance, and parking charges.", "answerTamil": "இந்த தொகுப்பில் தனியார் ஏ.சி. வாகனம், Pickup மற்றும் Drop, அனுபவமிக்க ஓட்டுநர், ஓட்டுநர் Allowance மற்றும் பார்க்கிங் கட்டணங்கள் சேர்க்கப்பட்டுள்ளன.", "answerHindi": "इस पैकेज में निजी ए.सी. वाहन, पिकअप और ड्रॉप, अनुभवी ड्राइवर, ड्राइवर भत्ता और पार्किंग शुल्क शामिल हैं." }, { "question": "Does the Madurai to Rameswaram one day package include hotel accommodation and breakfast?", "questionTamil": "மதுரை முதல் ராமேஸ்வரம் ஒரு நாள் சுற்றுலா தொகுப்பில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?", "questionHindi": "क्या मदुरै से रामेश्वरम एक दिवसीय पैकेज में होटल में ठहरना और नाश्ता शामिल है?", "answer": "No. This is a one-day package, and no overnight hotel stay is listed. Accommodation and breakfast are not part of the stated inclusions.", "answerTamil": "இல்லை. இது ஒரு நாள் சுற்றுலா தொகுப்பாகும், இதில் இரவு நேர ஹோட்டல் தங்குமிடம் குறிப்பிடப்படவில்லை. தங்குமிடம் மற்றும் காலை உணவு இந்த தொகுப்பில் சேர்க்கப்படவில்லை.", "answerHindi": "नहीं। यह एक दिवसीय पैकेज है और इसमें रातभर होटल में ठहरने की सुविधा शामिल नहीं है। आवास और नाश्ता इस पैकेज की दी गई सुविधाओं में शामिल नहीं हैं." }, { "question": "Which costs are extra in the Madurai to Rameswaram tour package?", "questionTamil": "மதுரை முதல் ராமேஸ்வரம் சுற்றுலா தொகுப்பில் எந்த செலவுகள் கூடுதலாக இருக்கும்?", "questionHindi": "मदुरै से रामेश्वरम टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?", "answer": "Extra charges include Temple Special Darshan Tickets, Entry Fees if applicable, Meals and Beverages, Personal Expenses, and Guide Charges.", "answerTamil": "கோவில் சிறப்பு தரிசன டிக்கெட்டுகள், பொருந்தும் இடங்களில் நுழைவுக் கட்டணங்கள், உணவு மற்றும் பானங்கள், தனிப்பட்ட செலவுகள் மற்றும் வழிகாட்டி கட்டணங்கள் கூடுதல் செலவுகளாகும்.", "answerHindi": "मंदिर विशेष दर्शन टिकट, लागू होने पर प्रवेश शुल्क, भोजन और पेय पदार्थ, व्यक्तिगत खर्च और गाइड शुल्क अतिरिक्त खर्च के अंतर्गत आते हैं." }, { "question": "Can I customize the Madurai to Rameswaram day trip itinerary?", "questionTamil": "மதுரை முதல் ராமேஸ்வரம் ஒரு நாள் பயணத்திட்டத்தை தனிப்பயனாக்க முடியுமா?", "questionHindi": "क्या मैं मदुरै से रामेश्वरम एक दिवसीय यात्रा कार्यक्रम को कस्टमाइज़ कर सकता हूँ?", "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to your booking requirements and travel preferences.", "answerTamil": "ஆம். தனிப்பயனாக்கப்பட்ட சுற்றுலா திட்டங்கள் கிடைக்கின்றன. உங்கள் முன்பதிவு தேவைகள் மற்றும் பயண விருப்பங்களுக்கு ஏற்ப பயணத்திட்டத்தை இறுதி செய்யலாம்.", "answerHindi": "हाँ। कस्टमाइज़्ड टूर प्लान उपलब्ध हैं। आपकी बुकिंग आवश्यकताओं और यात्रा प्राथमिकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है." }],
         "id": "2026"
     },
     '2027': {
@@ -12528,7 +13802,7 @@ export const packagesDatabase: Record<string, any> = {
         "heroImage": "/assets/kodaikanal/kodai1.webp",
         "overview": {
             "duration": "One Day",
-            "destination": "Madurai",
+            "destination": "Madurai to Kodaikanal",
             "activities": "Sightseeing, Nature",
             "themes": "Nature & Adventure, Culture & Heritage"
         },
@@ -12586,18 +13860,55 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai to Kodaikanal One Day Trip, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "Can I do the Madurai to Kodaikanal trip in one day?",
+                "questionTamil": "மதுரையிலிருந்து கொடைக்கானலுக்கு ஒரு நாள் பயணமாக செல்ல முடியுமா?",
+                "questionHindi": "क्या मैं मदुरै से कोडाइकनाल की यात्रा एक दिन में कर सकता हूँ?",
+                "answer": "Yes. This itinerary is planned as a one-day trip, with sightseeing and travel arranged according to the schedule in the package.",
+                "answerTamil": "ஆம். இந்த பயணத்திட்டம் ஒரு நாள் பயணமாக திட்டமிடப்பட்டுள்ளது. தொகுப்பில் குறிப்பிடப்பட்டுள்ள அட்டவணைக்கு ஏற்ப பயணம் மற்றும் சுற்றுலா இடங்களை பார்வையிடும் வகையில் ஏற்பாடு செய்யப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। यह यात्रा कार्यक्रम एक दिवसीय यात्रा के रूप में तैयार किया गया है, जिसमें पैकेज में दिए गए कार्यक्रम के अनुसार यात्रा और दर्शनीय स्थलों का भ्रमण शामिल है."
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Kodaikanal itinerary?",
+                "questionTamil": "மதுரை முதல் கொடைக்கானல் பயணத்திட்டத்தில் இடம்பெறும் முக்கியமான சுற்றுலா இடங்கள் எவை?",
+                "questionHindi": "मदुरै से कोडाइकनाल यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Silver Cascade Falls, Coaker's Walk, Bryant Park, Kodaikanal Lake, Pillar Rocks, and Pine Forest. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத்திட்டத்தில் சில்வர் கேஸ்கேட் நீர்வீழ்ச்சி, கோக்கர்ஸ் வாக், பிரையன்ட் பூங்கா, கொடைக்கானல் ஏரி, பில்லர் ராக்ஸ் மற்றும் பைன் காடு ஆகிய முக்கிய இடங்கள் இடம்பெறுகின்றன. சுற்றுலா பார்வைகள் தினசரி பயணத்திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்து அமையும்.",
+                "answerHindi": "इस यात्रा कार्यक्रम में सिल्वर कैस्केड फॉल्स, कोकर्स वॉक, ब्रायंट पार्क, कोडाइकनाल झील, पिलर रॉक्स और पाइन फॉरेस्ट जैसे प्रमुख स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के यात्रा कार्यक्रम और उपलब्ध समय के अनुसार होगा."
+            },
+            {
+                "question": "What pickup and drop options are available for the Madurai to Kodaikanal tour?",
+                "questionTamil": "மதுரை முதல் கொடைக்கானல் சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "मदुरै से कोडाइकनाल टूर के लिए पिकअप और ड्रॉप की क्या सुविधाएँ उपलब्ध हैं?",
+                "answer": "Pickup is scheduled at 06:00 AM from your Madurai Hotel, Airport, Railway Station, or Bus Stand. Arrival and drop at your Madurai Hotel, Airport, Railway Station, or Bus Stand is scheduled at around 09:00 PM.",
+                "answerTamil": "காலை 06:00 மணிக்கு மதுரை ஹோட்டல், விமான நிலையம், ரயில் நிலையம் அல்லது பேருந்து நிலையத்திலிருந்து Pickup செய்யப்படும். இரவு சுமார் 09:00 மணிக்கு மதுரை ஹோட்டல், விமான நிலையம், ரயில் நிலையம் அல்லது பேருந்து நிலையத்தில் Arrival மற்றும் Drop வழங்கப்படும்.",
+                "answerHindi": "सुबह 06:00 बजे मदुरै होटल, एयरपोर्ट, रेलवे स्टेशन या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। लगभग रात 09:00 बजे मदुरै होटल, एयरपोर्ट, रेलवे स्टेशन या बस स्टैंड पर वापसी और ड्रॉप की सुविधा दी जाएगी."
+            },
+            {
+                "question": "What is included in the Madurai to Kodaikanal tour package?",
+                "questionTamil": "மதுரை முதல் கொடைக்கானல் சுற்றுலா தொகுப்பில் என்னென்ன வசதிகள் சேர்க்கப்பட்டுள்ளன?",
+                "questionHindi": "मदुरै से कोडाइकनाल टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a private A/C vehicle up to the Kodaikanal foothills, subject to local hill travel conditions, along with pickup and drop, an experienced driver, parking charges, and driver allowance.",
+                "answerTamil": "இந்த தொகுப்பில் கொடைக்கானல் மலை அடிவாரம் வரை தனியார் ஏ.சி. வாகனம் வழங்கப்படும். மலைப்பாதை பயணம் உள்ளூர் நிலைமைகளுக்கு உட்பட்டது. மேலும் Pickup மற்றும் Drop, அனுபவமிக்க ஓட்டுநர், பார்க்கிங் கட்டணங்கள் மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में कोडाइकनाल के पहाड़ी क्षेत्र के तल तक निजी ए.सी. वाहन शामिल है, जबकि पहाड़ी यात्रा स्थानीय परिस्थितियों पर निर्भर करेगी। इसके अलावा पिकअप और ड्रॉप, अनुभवी ड्राइवर, पार्किंग शुल्क और ड्राइवर भत्ता शामिल हैं."
+            },
+            {
+                "question": "Does the Madurai to Kodaikanal one day package include hotel accommodation and breakfast?",
+                "questionTamil": "மதுரை முதல் கொடைக்கானல் ஒரு நாள் சுற்றுலா தொகுப்பில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या मदुरै से कोडाइकनाल एक दिवसीय पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "No. This is a one-day package, and no overnight hotel stay is listed. Accommodation and breakfast are not part of the stated inclusions.",
+                "answerTamil": "இல்லை. இது ஒரு நாள் சுற்றுலா தொகுப்பாகும், இதில் இரவு நேர ஹோட்டல் தங்குமிடம் குறிப்பிடப்படவில்லை. தங்குமிடம் மற்றும் காலை உணவு இந்த தொகுப்பில் சேர்க்கப்படவில்லை.",
+                "answerHindi": "नहीं। यह एक दिवसीय पैकेज है और इसमें रातभर होटल में ठहरने की सुविधा शामिल नहीं है। आवास और नाश्ता इस पैकेज की दी गई सुविधाओं में शामिल नहीं हैं."
+            },
+            {
+                "question": "Which costs are extra in the Madurai to Kodaikanal tour package?",
+                "questionTamil": "மதுரை முதல் கொடைக்கானல் சுற்றுலா தொகுப்பில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "मदुरै से कोडाइकनाल टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Boating Charges, Entry Tickets, Camera Fees, Meals and Beverages, and Personal Expenses.",
+                "answerTamil": "படகு சவாரி கட்டணங்கள், நுழைவுக் கட்டணங்கள், கேமரா கட்டணங்கள், உணவு மற்றும் பானங்கள் மற்றும் தனிப்பட்ட செலவுகள் கூடுதல் கட்டணங்களாகும்.",
+                "answerHindi": "बोटिंग शुल्क, प्रवेश टिकट, कैमरा शुल्क, भोजन और पेय पदार्थ तथा व्यक्तिगत खर्च अतिरिक्त शुल्क के अंतर्गत आते हैं."
             }
-        ],
+        ]
+        ,
         "id": "2027"
     },
     '2028': {
@@ -12606,7 +13917,7 @@ export const packagesDatabase: Record<string, any> = {
         "heroImage": "/assets//kaniyakumari/vivekandhar.webp",
         "overview": {
             "duration": "One Day",
-            "destination": "Madurai",
+            "destination": "Kanyakumari",
             "activities": "Pilgrimage, Sightseeing",
             "themes": "Religious & Pilgrimage, Culture & Heritage"
         },
@@ -12661,16 +13972,52 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai to Kanyakumari One Day Trip, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "Can I do the Madurai to Kanyakumari trip in one day?",
+                "questionTamil": "மதுரையிலிருந்து கன்னியாகுமரிக்கு ஒரு நாள் பயணமாக செல்ல முடியுமா?",
+                "questionHindi": "क्या मैं मदुरै से कन्याकुमारी की यात्रा एक दिन में कर सकता हूँ?",
+                "answer": "Yes. This itinerary is planned as a one-day trip, with sightseeing and travel arranged according to the schedule in the package.",
+                "answerTamil": "ஆம். இந்த பயணத்திட்டம் ஒரு நாள் பயணமாக திட்டமிடப்பட்டுள்ளது. தொகுப்பில் குறிப்பிடப்பட்டுள்ள அட்டவணைக்கு ஏற்ப பயணம் மற்றும் சுற்றுலா இடங்களை பார்வையிடும் வகையில் ஏற்பாடு செய்யப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। यह यात्रा कार्यक्रम एक दिवसीय यात्रा के रूप में तैयार किया गया है, जिसमें पैकेज में दिए गए कार्यक्रम के अनुसार यात्रा और दर्शनीय स्थलों का भ्रमण शामिल है."
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Kanyakumari itinerary?",
+                "questionTamil": "மதுரை முதல் கன்னியாகுமரி பயணத்திட்டத்தில் இடம்பெறும் முக்கியமான சுற்றுலா இடங்கள் எவை?",
+                "questionHindi": "मदुरै से कन्याकुमारी यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Kanyakumari Bhagavathy Amman Temple, Triveni Sangam (Confluence of Three Seas), Vivekananda Rock Memorial, Thiruvalluvar Statue (view from ferry or shore), Glass Bridge, and Gandhi Memorial Mandapam. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத்திட்டத்தில் கன்னியாகுமரி பகவதி அம்மன் கோவில், திரிவேணி சங்கமம் (மூன்று கடல்களின் சங்கமம்), விவேகானந்தர் பாறை நினைவகம், திருவள்ளுவர் சிலை (படகு அல்லது கரையிலிருந்து பார்வை), கண்ணாடி பாலம் மற்றும் காந்தி நினைவு மண்டபம் ஆகிய முக்கிய இடங்கள் இடம்பெறுகின்றன. சுற்றுலா பார்வைகள் தினசரி பயணத்திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்து அமையும்.",
+                "answerHindi": "इस यात्रा कार्यक्रम में कन्याकुमारी भगवती अम्मन मंदिर, त्रिवेणी संगम (तीन समुद्रों का संगम), विवेकानंद रॉक मेमोरियल, तिरुवल्लुवर प्रतिमा (फेरी या तट से दृश्य), ग्लास ब्रिज और गांधी मेमोरियल मंडपम जैसे प्रमुख स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के यात्रा कार्यक्रम और उपलब्ध समय के अनुसार होगा."
+            },
+            {
+                "question": "What pickup and drop options are available for the Madurai to Kanyakumari tour?",
+                "questionTamil": "மதுரை முதல் கன்னியாகுமரி சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "मदुरै से कन्याकुमारी टूर के लिए पिकअप और ड्रॉप की क्या सुविधाएँ उपलब्ध हैं?",
+                "answer": "Pickup is scheduled at 05:00 AM from your Madurai Hotel, Airport, Railway Station, or Bus Stand. Arrival and drop at your Madurai Hotel, Airport, Railway Station, or Bus Stand is scheduled at around 10:30 PM.",
+                "answerTamil": "காலை 05:00 மணிக்கு மதுரை ஹோட்டல், விமான நிலையம், ரயில் நிலையம் அல்லது பேருந்து நிலையத்திலிருந்து Pickup செய்யப்படும். இரவு சுமார் 10:30 மணிக்கு மதுரை ஹோட்டல், விமான நிலையம், ரயில் நிலையம் அல்லது பேருந்து நிலையத்தில் Arrival மற்றும் Drop வழங்கப்படும்.",
+                "answerHindi": "सुबह 05:00 बजे मदुरै होटल, एयरपोर्ट, रेलवे स्टेशन या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। रात लगभग 10:30 बजे मदुरै होटल, एयरपोर्ट, रेलवे स्टेशन या बस स्टैंड पर वापसी और ड्रॉप की सुविधा दी जाएगी."
+            },
+            {
+                "question": "What is included in the Madurai to Kanyakumari tour package?",
+                "questionTamil": "மதுரை முதல் கன்னியாகுமரி சுற்றுலா தொகுப்பில் என்னென்ன வசதிகள் சேர்க்கப்பட்டுள்ளன?",
+                "questionHindi": "मदुरै से कन्याकुमारी टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a private A/C vehicle, pickup and drop, an experienced driver, parking charges, and driver allowance.",
+                "answerTamil": "இந்த தொகுப்பில் தனியார் ஏ.சி. வாகனம், Pickup மற்றும் Drop, அனுபவமிக்க ஓட்டுநர், பார்க்கிங் கட்டணங்கள் மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में निजी ए.सी. वाहन, पिकअप और ड्रॉप, अनुभवी ड्राइवर, पार्किंग शुल्क और ड्राइवर भत्ता शामिल हैं."
+            },
+            {
+                "question": "Does the Madurai to Kanyakumari one day package include hotel accommodation and breakfast?",
+                "questionTamil": "மதுரை முதல் கன்னியாகுமரி ஒரு நாள் சுற்றுலா தொகுப்பில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या मदुरै से कन्याकुमारी एक दिवसीय पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "No. This is a one-day package, and no overnight hotel stay is listed. Accommodation and breakfast are not part of the stated inclusions.",
+                "answerTamil": "இல்லை. இது ஒரு நாள் சுற்றுலா தொகுப்பாகும், இதில் இரவு நேர ஹோட்டல் தங்குமிடம் குறிப்பிடப்படவில்லை. தங்குமிடம் மற்றும் காலை உணவு இந்த தொகுப்பில் சேர்க்கப்படவில்லை.",
+                "answerHindi": "नहीं। यह एक दिवसीय पैकेज है और इसमें रातभर होटल में ठहरने की सुविधा शामिल नहीं है। आवास और नाश्ता इस पैकेज की दी गई सुविधाओं में शामिल नहीं हैं."
+            },
+            {
+                "question": "Which costs are extra in the Madurai to Kanyakumari tour package?",
+                "questionTamil": "மதுரை முதல் கன்னியாகுமரி சுற்றுலா தொகுப்பில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "मदुरै से कन्याकुमारी टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Boat Tickets to Vivekananda Rock Memorial, Entry Tickets if applicable, Temple Special Darshan Tickets, Meals and Beverages, and Personal Expenses.",
+                "answerTamil": "விவேகானந்தர் பாறை நினைவகத்திற்கான படகு டிக்கெட்டுகள், பொருந்தும் இடங்களில் நுழைவுக் கட்டணங்கள், கோவில் சிறப்பு தரிசன டிக்கெட்டுகள், உணவு மற்றும் பானங்கள் மற்றும் தனிப்பட்ட செலவுகள் கூடுதல் கட்டணங்களாகும்.",
+                "answerHindi": "विवेकानंद रॉक मेमोरियल के लिए नाव के टिकट, लागू होने पर प्रवेश शुल्क, मंदिर विशेष दर्शन टिकट, भोजन और पेय पदार्थ तथा व्यक्तिगत खर्च अतिरिक्त शुल्क के अंतर्गत आते हैं."
             }
         ],
         "id": "2028"
@@ -12734,18 +14081,55 @@ export const packagesDatabase: Record<string, any> = {
         ],
         "highlights": [],
         "keywords": "Madurai to Meghamalai One Day Trip, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
+
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "Can I do the Madurai to Meghamalai trip in one day?",
+                "questionTamil": "மதுரையிலிருந்து மேகமலைக்கு ஒரு நாள் பயணமாக செல்ல முடியுமா?",
+                "questionHindi": "क्या मैं मदुरै से मेघमलाई की यात्रा एक दिन में कर सकता हूँ?",
+                "answer": "Yes. This itinerary is planned as a one-day trip, with sightseeing and travel arranged according to the schedule in the package.",
+                "answerTamil": "ஆம். இந்த பயணத்திட்டம் ஒரு நாள் பயணமாக திட்டமிடப்பட்டுள்ளது. தொகுப்பில் குறிப்பிடப்பட்டுள்ள அட்டவணைக்கு ஏற்ப பயணம் மற்றும் சுற்றுலா இடங்களை பார்வையிடும் வகையில் ஏற்பாடு செய்யப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। यह यात्रा कार्यक्रम एक दिवसीय यात्रा के रूप में तैयार किया गया है, जिसमें पैकेज में दिए गए कार्यक्रम के अनुसार यात्रा और दर्शनीय स्थलों का भ्रमण शामिल है."
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Meghamalai itinerary?",
+                "questionTamil": "மதுரை முதல் மேகமலை பயணத்திட்டத்தில் இடம்பெறும் முக்கியமான சுற்றுலா இடங்கள் எவை?",
+                "questionHindi": "मदुरै से मेघमलाई यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Meghamalai View Point, Tea Estates, Manalar Dam View, Maharaja Mettu View Point, Vellimalai View Point, and Scenic Mountain View Stops. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத்திட்டத்தில் மேகமலை View Point, தேயிலை தோட்டங்கள், மணலாறு அணை View, மகாராஜா மெட்டு View Point, வெள்ளிமலை View Point மற்றும் அழகிய மலைக் காட்சிகளை ரசிக்கும் இடங்கள் ஆகியவை இடம்பெறுகின்றன. சுற்றுலா பார்வைகள் தினசரி பயணத்திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்து அமையும்.",
+                "answerHindi": "इस यात्रा कार्यक्रम में मेघमलाई व्यू पॉइंट, चाय के बागान, मनलार बांध व्यू, महाराजा मेट्टू व्यू पॉइंट, वेल्लिमलाई व्यू पॉइंट और सुंदर पर्वतीय दृश्य वाले स्थान शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के यात्रा कार्यक्रम और उपलब्ध समय के अनुसार होगा."
+            },
+            {
+                "question": "What pickup and drop options are available for the Madurai to Meghamalai tour?",
+                "questionTamil": "மதுரை முதல் மேகமலை சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "मदुरै से मेघमलाई टूर के लिए पिकअप और ड्रॉप की क्या सुविधाएँ उपलब्ध हैं?",
+                "answer": "Pickup is scheduled at 06:00 AM from your Madurai Hotel, Airport, Railway Station, or Bus Stand. Arrival and drop at your Madurai Hotel, Airport, Railway Station, or Bus Stand is scheduled at around 07:30 PM.",
+                "answerTamil": "காலை 06:00 மணிக்கு மதுரை ஹோட்டல், விமான நிலையம், ரயில் நிலையம் அல்லது பேருந்து நிலையத்திலிருந்து Pickup செய்யப்படும். மாலை சுமார் 07:30 மணிக்கு மதுரை ஹோட்டல், விமான நிலையம், ரயில் நிலையம் அல்லது பேருந்து நிலையத்தில் Arrival மற்றும் Drop வழங்கப்படும்.",
+                "answerHindi": "सुबह 06:00 बजे मदुरै होटल, एयरपोर्ट, रेलवे स्टेशन या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। शाम लगभग 07:30 बजे मदुरै होटल, एयरपोर्ट, रेलवे स्टेशन या बस स्टैंड पर वापसी और ड्रॉप की सुविधा दी जाएगी."
+            },
+            {
+                "question": "What is included in the Madurai to Meghamalai tour package?",
+                "questionTamil": "மதுரை முதல் மேகமலை சுற்றுலா தொகுப்பில் என்னென்ன வசதிகள் சேர்க்கப்பட்டுள்ளன?",
+                "questionHindi": "मदुरै से मेघमलाई टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a private A/C vehicle up to the hill route, subject to road conditions, along with pickup and drop, an experienced driver, parking charges, and driver allowance.",
+                "answerTamil": "இந்த தொகுப்பில் மலைப்பாதை வரை தனியார் ஏ.சி. வாகனம் வழங்கப்படும். இது சாலை நிலைமைகளுக்கு உட்பட்டது. மேலும் Pickup மற்றும் Drop, அனுபவமிக்க ஓட்டுநர், பார்க்கிங் கட்டணங்கள் மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में पहाड़ी मार्ग तक निजी ए.सी. वाहन शामिल है, जो सड़क की स्थिति पर निर्भर करेगा। इसके अलावा पिकअप और ड्रॉप, अनुभवी ड्राइवर, पार्किंग शुल्क और ड्राइवर भत्ता शामिल हैं."
+            },
+            {
+                "question": "Does the Madurai to Meghamalai one day package include hotel accommodation and breakfast?",
+                "questionTamil": "மதுரை முதல் மேகமலை ஒரு நாள் சுற்றுலா தொகுப்பில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या मदुरै से मेघमलाई एक दिवसीय पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "No. This is a one-day package, and no overnight hotel stay is listed. Accommodation and breakfast are not part of the stated inclusions.",
+                "answerTamil": "இல்லை. இது ஒரு நாள் சுற்றுலா தொகுப்பாகும், இதில் இரவு நேர ஹோட்டல் தங்குமிடம் குறிப்பிடப்படவில்லை. தங்குமிடம் மற்றும் காலை உணவு இந்த தொகுப்பில் சேர்க்கப்படவில்லை.",
+                "answerHindi": "नहीं। यह एक दिवसीय पैकेज है और इसमें रातभर होटल में ठहरने की सुविधा शामिल नहीं है। आवास और नाश्ता इस पैकेज की दी गई सुविधाओं में शामिल नहीं हैं."
+            },
+            {
+                "question": "Which costs are extra in the Madurai to Meghamalai tour package?",
+                "questionTamil": "மதுரை முதல் மேகமலை சுற்றுலா தொகுப்பில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "मदुरै से मेघमलाई टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Entry Fees if applicable, Meals and Beverages, Guide Services, Personal Expenses, and Camera Fees if applicable.",
+                "answerTamil": "பொருந்தும் இடங்களில் நுழைவுக் கட்டணங்கள், உணவு மற்றும் பானங்கள், வழிகாட்டி சேவைகள், தனிப்பட்ட செலவுகள் மற்றும் பொருந்தும் இடங்களில் கேமரா கட்டணங்கள் கூடுதல் செலவுகளாகும்.",
+                "answerHindi": "लागू होने पर प्रवेश शुल्क, भोजन और पेय पदार्थ, गाइड सेवाएँ, व्यक्तिगत खर्च और लागू होने पर कैमरा शुल्क अतिरिक्त खर्च के अंतर्गत आते हैं."
             }
         ],
         "id": "2029"
@@ -12756,7 +14140,7 @@ export const packagesDatabase: Record<string, any> = {
         "heroImage": "/assets/thanjavur/thanjavur 2 hero.webp",
         "overview": {
             "duration": "One Day",
-            "destination": "Madurai",
+            "destination": "Madurai to Trichy & Thanjavur",
             "activities": "Pilgrimage, Sightseeing",
             "themes": "Religious & Pilgrimage, Culture & Heritage"
         },
@@ -12811,20 +14195,52 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai to Trichy & Thanjavur One Day Trip, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Tamil Nadu tour package suitable for families and couples?",
-                "questionTamil": "இந்த தமிழ்நாடு சுற்றுலா பேக்கேஜ் குடும்பங்கள் மற்றும் தம்பதிகளுக்கு ஏற்றதா?",
-                "questionHindi": "क्या यह तमिलनाडु टूर पैकेज परिवारों और कपल्स के लिए उपयुक्त है?",
-                "answer": "Yes. The tour covers heritage temples and coastal beaches with comfortable hotels and a relaxed pace, making it great for family groups and honeymooners alike. We tailor activities for kids, adults and seniors (e.g. easy walks, optional temple tours) so travelers of all ages enjoy it.",
-                "answerTamil": "ஆம். இந்த சுற்றுலா பேக்கேஜில் பாரம்பரிய கோயில்கள் மற்றும் கடலோர கடற்கரைகள் இடம்பெறுவதுடன், வசதியான ஹோட்டல்கள் மற்றும் நிதானமான பயணத் திட்டமும் உள்ளது. எனவே இது குடும்பக் குழுக்கள் மற்றும் ஹனிமூன் தம்பதிகளுக்கும் சிறந்ததாக இருக்கும். குழந்தைகள், பெரியவர்கள் மற்றும் மூத்த குடிமக்கள் என அனைத்து வயதினரும் மகிழ்ச்சியாகப் பயணம் செய்யும் வகையில், எளிதான நடைப்பயணங்கள் மற்றும் விருப்பத்திற்கேற்ப கோயில் சுற்றுலா போன்ற செயல்பாடுகளை நாங்கள் ஏற்பாடு செய்கிறோம்.",
-                "answerHindi": "हाँ। इस टूर में ऐतिहासिक मंदिर और समुद्र तट, आरामदायक होटल और एक आरामदायक यात्रा कार्यक्रम शामिल है, जिससे यह परिवारों और हनीमून कपल्स दोनों के लिए बेहतरीन है। हम बच्चों, वयस्कों और वरिष्ठ नागरिकों के लिए गतिविधियों को अनुकूलित करते हैं, जैसे आसान पैदल यात्राएँ और वैकल्पिक मंदिर भ्रमण, ताकि हर उम्र के यात्री इसका आनंद ले सकें।"
+                "question": "Can I do the Madurai to Trichy and Thanjavur trip in one day?",
+                "questionTamil": "மதுரையிலிருந்து திருச்சி மற்றும் தஞ்சாவூருக்கு ஒரு நாள் பயணமாக செல்ல முடியுமா?",
+                "questionHindi": "क्या मैं मदुरै से त्रिची और तंजावुर की यात्रा एक दिन में कर सकता हूँ?",
+                "answer": "Yes. This itinerary is planned as a one-day trip, with sightseeing and travel arranged according to the schedule in the package.",
+                "answerTamil": "ஆம். இந்த பயணத்திட்டம் ஒரு நாள் பயணமாக திட்டமிடப்பட்டுள்ளது. தொகுப்பில் குறிப்பிடப்பட்டுள்ள அட்டவணைக்கு ஏற்ப பயணம் மற்றும் சுற்றுலா இடங்களை பார்வையிடும் வகையில் ஏற்பாடு செய்யப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। यह यात्रा कार्यक्रम एक दिवसीय यात्रा के रूप में तैयार किया गया है, जिसमें पैकेज में दिए गए कार्यक्रम के अनुसार यात्रा और दर्शनीय स्थलों का भ्रमण शामिल है."
             },
             {
-                "question": "Can we join the Tamil Nadu tour from Madurai or Chennai?",
-                "questionTamil": "மதுரை அல்லது சென்னையிலிருந்து தமிழ்நாடு சுற்றுலாவில் நாங்கள் இணைய முடியுமா?",
-                "questionHindi": "क्या हम मदुरै या चेन्नई से तमिलनाडु टूर में शामिल हो सकते हैं?",
-                "answer": "Absolutely. We offer pickup from Madurai or Chennai and coordinate train/flight arrivals into those cities. Our driver/guide will meet you at the station/airport and begin the tour, so you can easily join from any major city in Tamil Nadu.",
-                "answerTamil": "நிச்சயமாக. மதுரை அல்லது சென்னையிலிருந்து பிக்கப் வசதியை வழங்குகிறோம், மேலும் அந்த நகரங்களுக்கு வரும் ரயில்/விமான வருகைகளையும் ஒருங்கிணைக்கிறோம். எங்கள் ஓட்டுநர்/வழிகாட்டி உங்களை ரயில் நிலையம்/விமான நிலையத்தில் சந்தித்து சுற்றுலாவைத் தொடங்குவார். எனவே தமிழ்நாட்டின் எந்த முக்கிய நகரத்திலிருந்தும் நீங்கள் எளிதாக இந்த சுற்றுலாவில் இணையலாம்.",
-                "answerHindi": "बिल्कुल। हम मदुरै या चेन्नई से पिकअप की सुविधा देते हैं और इन शहरों में आने वाली ट्रेन या फ्लाइट के समय का समन्वय करते हैं। हमारे ड्राइवर या गाइड स्टेशन या एयरपोर्ट पर आपसे मिलेंगे और टूर शुरू करेंगे, इसलिए आप तमिलनाडु के किसी भी प्रमुख शहर से आसानी से टूर में शामिल हो सकते हैं।"
+                "question": "What are the main sightseeing places covered in the Madurai to Trichy and Thanjavur itinerary?",
+                "questionTamil": "மதுரை முதல் திருச்சி மற்றும் தஞ்சாவூர் பயணத்திட்டத்தில் இடம்பெறும் முக்கியமான சுற்றுலா இடங்கள் எவை?",
+                "questionHindi": "मदुरै से त्रिची और तंजावुर यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Sri Ranganathaswamy Temple at Srirangam, Rockfort Temple (Ucchi Pillayar Temple), Jambukeswarar Temple at Thiruvanaikaval, Brihadeeswarar Temple (UNESCO World Heritage Site), Thanjavur Royal Palace, Art Gallery, and Saraswathi Mahal Library. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத்திட்டத்தில் ஸ்ரீரங்கத்தில் உள்ள ஸ்ரீ ரங்கநாதசுவாமி கோவில், ராக்ஃபோர்ட் கோவில் (உச்சி பிள்ளையார் கோவில்), திருவானைக்காவலில் உள்ள ஜம்புகேஸ்வரர் கோவில், பிரகதீஸ்வரர் கோவில் (UNESCO உலக பாரம்பரிய தளம்), தஞ்சாவூர் அரண்மனை, கலைக்கூடம் மற்றும் சரஸ்வதி மகால் நூலகம் ஆகிய முக்கிய இடங்கள் இடம்பெறுகின்றன. சுற்றுலா பார்வைகள் தினசரி பயணத்திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்து அமையும்.",
+                "answerHindi": "इस यात्रा कार्यक्रम में श्रीरंगम स्थित श्री रंगनाथस्वामी मंदिर, रॉकफोर्ट मंदिर (उच्चि पिल्लयार मंदिर), तिरुवनैकावल स्थित जम्बुकेश्वर मंदिर, बृहदीश्वर मंदिर (यूनेस्को विश्व धरोहर स्थल), तंजावुर रॉयल पैलेस, आर्ट गैलरी और सरस्वती महल लाइब्रेरी जैसे प्रमुख स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के यात्रा कार्यक्रम और उपलब्ध समय के अनुसार होगा."
+            },
+            {
+                "question": "What pickup and drop options are available for the Madurai to Trichy and Thanjavur tour?",
+                "questionTamil": "மதுரை முதல் திருச்சி மற்றும் தஞ்சாவூர் சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "मदुरै से त्रिची और तंजावुर टूर के लिए पिकअप और ड्रॉप की क्या सुविधाएँ उपलब्ध हैं?",
+                "answer": "Pickup is scheduled at 05:30 AM from your Madurai Hotel, Airport, Railway Station, or Bus Stand. Arrival and drop at your Madurai Hotel, Airport, Railway Station, or Bus Stand is scheduled at around 09:00 PM.",
+                "answerTamil": "காலை 05:30 மணிக்கு மதுரை ஹோட்டல், விமான நிலையம், ரயில் நிலையம் அல்லது பேருந்து நிலையத்திலிருந்து Pickup செய்யப்படும். இரவு சுமார் 09:00 மணிக்கு மதுரை ஹோட்டல், விமான நிலையம், ரயில் நிலையம் அல்லது பேருந்து நிலையத்தில் Arrival மற்றும் Drop வழங்கப்படும்.",
+                "answerHindi": "सुबह 05:30 बजे मदुरै होटल, एयरपोर्ट, रेलवे स्टेशन या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। रात लगभग 09:00 बजे मदुरै होटल, एयरपोर्ट, रेलवे स्टेशन या बस स्टैंड पर वापसी और ड्रॉप की सुविधा दी जाएगी."
+            },
+            {
+                "question": "What is included in the Madurai to Trichy and Thanjavur tour package?",
+                "questionTamil": "மதுரை முதல் திருச்சி மற்றும் தஞ்சாவூர் சுற்றுலா தொகுப்பில் என்னென்ன வசதிகள் சேர்க்கப்பட்டுள்ளன?",
+                "questionHindi": "मदुरै से त्रिची और तंजावुर टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a private A/C vehicle, pickup and drop, an experienced driver, parking charges, and driver allowance.",
+                "answerTamil": "இந்த தொகுப்பில் தனியார் ஏ.சி. வாகனம், Pickup மற்றும் Drop, அனுபவமிக்க ஓட்டுநர், பார்க்கிங் கட்டணங்கள் மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में निजी ए.सी. वाहन, पिकअप और ड्रॉप, अनुभवी ड्राइवर, पार्किंग शुल्क और ड्राइवर भत्ता शामिल हैं."
+            },
+            {
+                "question": "Does the Madurai to Trichy and Thanjavur one day package include hotel accommodation and breakfast?",
+                "questionTamil": "மதுரை முதல் திருச்சி மற்றும் தஞ்சாவூர் ஒரு நாள் சுற்றுலா தொகுப்பில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या मदुरै से त्रिची और तंजावुर एक दिवसीय पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "No. This is a one-day package, and no overnight hotel stay is listed. Accommodation and breakfast are not part of the stated inclusions.",
+                "answerTamil": "இல்லை. இது ஒரு நாள் சுற்றுலா தொகுப்பாகும், இதில் இரவு நேர ஹோட்டல் தங்குமிடம் குறிப்பிடப்படவில்லை. தங்குமிடம் மற்றும் காலை உணவு இந்த தொகுப்பில் சேர்க்கப்படவில்லை.",
+                "answerHindi": "नहीं। यह एक दिवसीय पैकेज है और इसमें रातभर होटल में ठहरने की सुविधा शामिल नहीं है। आवास और नाश्ता इस पैकेज की दी गई सुविधाओं में शामिल नहीं हैं."
+            },
+            {
+                "question": "Which costs are extra in the Madurai to Trichy and Thanjavur tour package?",
+                "questionTamil": "மதுரை முதல் திருச்சி மற்றும் தஞ்சாவூர் சுற்றுலா தொகுப்பில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "मदुरै से त्रिची और तंजावुर टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Monument and Museum Entry Tickets, Temple Special Darshan Tickets, Meals and Beverages, Guide Services, and Personal Expenses.",
+                "answerTamil": "நினைவுச்சின்னங்கள் மற்றும் அருங்காட்சியக நுழைவுக் கட்டணங்கள், கோவில் சிறப்பு தரிசன டிக்கெட்டுகள், உணவு மற்றும் பானங்கள், வழிகாட்டி சேவைகள் மற்றும் தனிப்பட்ட செலவுகள் கூடுதல் கட்டணங்களாகும்.",
+                "answerHindi": "स्मारक और संग्रहालय प्रवेश टिकट, मंदिर विशेष दर्शन टिकट, भोजन और पेय पदार्थ, गाइड सेवाएँ तथा व्यक्तिगत खर्च अतिरिक्त शुल्क के अंतर्गत आते हैं."
             }
         ],
         "id": "2030"
@@ -12899,16 +14315,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai to Tiruchendur One Day Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "Can I do the Madurai to Tiruchendur trip in one day?",
+                "questionTamil": "மதுரையிலிருந்து திருச்செந்தூருக்கு ஒரு நாள் பயணமாக செல்ல முடியுமா?",
+                "questionHindi": "क्या मैं मदुरै से तिरुचेंदूर की यात्रा एक दिन में कर सकता हूँ?",
+                "answer": "Yes. This itinerary is planned as a one-day trip, with sightseeing and travel arranged according to the schedule in the package.",
+                "answerTamil": "ஆம். இந்த பயணத்திட்டம் ஒரு நாள் பயணமாக திட்டமிடப்பட்டுள்ளது. தொகுப்பில் குறிப்பிடப்பட்டுள்ள அட்டவணைக்கு ஏற்ப பயணம் மற்றும் சுற்றுலா இடங்களை பார்வையிடும் வகையில் ஏற்பாடு செய்யப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। यह यात्रा कार्यक्रम एक दिवसीय यात्रा के रूप में तैयार किया गया है, जिसमें पैकेज में दिए गए कार्यक्रम के अनुसार यात्रा और दर्शनीय स्थलों का भ्रमण शामिल है."
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Tiruchendur itinerary?",
+                "questionTamil": "மதுரை முதல் திருச்செந்தூர் பயணத்திட்டத்தில் இடம்பெறும் முக்கியமான சுற்றுலா இடங்கள் எவை?",
+                "questionHindi": "मदुरै से तिरुचेंदूर यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Arulmigu Subramaniya Swamy Temple, Tiruchendur Beach, and local shopping and prasadam counters. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத்திட்டத்தில் அருள்மிகு சுப்பிரமணிய சுவாமி கோவில், திருச்செந்தூர் கடற்கரை மற்றும் உள்ளூர் ஷாப்பிங் மற்றும் பிரசாதம் பெறும் இடங்கள் ஆகியவை இடம்பெறுகின்றன. சுற்றுலா பார்வைகள் தினசரி பயணத்திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்து அமையும்.",
+                "answerHindi": "इस यात्रा कार्यक्रम में अरुल्मिगु सुब्रमण्य स्वामी मंदिर, तिरुचेंदूर बीच और स्थानीय खरीदारी एवं प्रसाद काउंटर जैसे प्रमुख स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के यात्रा कार्यक्रम और उपलब्ध समय के अनुसार होगा."
+            },
+            {
+                "question": "What pickup and drop options are available for the Madurai to Tiruchendur tour?",
+                "questionTamil": "மதுரை முதல் திருச்செந்தூர் சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "मदुरै से तिरुचेंदूर टूर के लिए पिकअप और ड्रॉप की क्या सुविधाएँ उपलब्ध हैं?",
+                "answer": "Pickup is scheduled at 06:00 AM from Madurai Airport, Railway Station, Hotel, or Bus Stand. Arrival and drop at Madurai Airport, Railway Station, Hotel, or Bus Stand is scheduled at around 07:30 PM.",
+                "answerTamil": "காலை 06:00 மணிக்கு மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup செய்யப்படும். மாலை சுமார் 07:30 மணிக்கு மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Arrival மற்றும் Drop வழங்கப்படும்.",
+                "answerHindi": "सुबह 06:00 बजे मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। शाम लगभग 07:30 बजे मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर वापसी और ड्रॉप की सुविधा दी जाएगी."
+            },
+            {
+                "question": "What is included in the Madurai to Tiruchendur tour package?",
+                "questionTamil": "மதுரை முதல் திருச்செந்தூர் சுற்றுலா தொகுப்பில் என்னென்ன வசதிகள் சேர்க்கப்பட்டுள்ளன?",
+                "questionHindi": "मदुरै से तिरुचेंदूर टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a private A/C vehicle, pickup and drop from Madurai, Tiruchendur sightseeing as per the itinerary, an experienced driver, and driver allowance.",
+                "answerTamil": "இந்த தொகுப்பில் தனியார் ஏ.சி. வாகனம், மதுரையிலிருந்து Pickup மற்றும் Drop, பயணத்திட்டத்தின்படி திருச்செந்தூர் Sightseeing, அனுபவமிக்க ஓட்டுநர் மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में निजी ए.सी. वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार तिरुचेंदूर दर्शनीय स्थल भ्रमण, अनुभवी ड्राइवर और ड्राइवर भत्ता शामिल हैं."
+            },
+            {
+                "question": "Does the Madurai to Tiruchendur one day package include hotel accommodation and breakfast?",
+                "questionTamil": "மதுரை முதல் திருச்செந்தூர் ஒரு நாள் சுற்றுலா தொகுப்பில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या मदुरै से तिरुचेंदूर एक दिवसीय पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "No. This is a one-day package, and no overnight hotel stay is listed. Accommodation and breakfast are not part of the stated inclusions.",
+                "answerTamil": "இல்லை. இது ஒரு நாள் சுற்றுலா தொகுப்பாகும், இதில் இரவு நேர ஹோட்டல் தங்குமிடம் குறிப்பிடப்படவில்லை. தங்குமிடம் மற்றும் காலை உணவு இந்த தொகுப்பில் சேர்க்கப்படவில்லை.",
+                "answerHindi": "नहीं। यह एक दिवसीय पैकेज है और इसमें रातभर होटल में ठहरने की सुविधा शामिल नहीं है। आवास और नाश्ता इस पैकेज की दी गई सुविधाओं में शामिल नहीं हैं."
+            },
+            {
+                "question": "Which costs are extra in the Madurai to Tiruchendur tour package?",
+                "questionTamil": "மதுரை முதல் திருச்செந்தூர் சுற்றுலா தொகுப்பில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "मदुरै से तिरुचेंदूर टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Temple Special Darshan Tickets, Lunch and Dinner, Personal Expenses, and Guide Services.",
+                "answerTamil": "கோவில் சிறப்பு தரிசன டிக்கெட்டுகள், மதிய உணவு மற்றும் இரவு உணவு, தனிப்பட்ட செலவுகள் மற்றும் வழிகாட்டி சேவைகள் கூடுதல் கட்டணங்களாகும்.",
+                "answerHindi": "मंदिर विशेष दर्शन टिकट, दोपहर और रात का भोजन, व्यक्तिगत खर्च तथा गाइड सेवाएँ अतिरिक्त शुल्क के अंतर्गत आते हैं."
+            },
+            {
+                "question": "Can I customize the Madurai to Tiruchendur day trip itinerary?",
+                "questionTamil": "மதுரை முதல் திருச்செந்தூர் ஒரு நாள் பயணத்திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या मैं मदुरै से तिरुचेंदूर एक दिवसीय यात्रा कार्यक्रम को कस्टमाइज़ कर सकता हूँ?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to your booking requirements and travel preferences.",
+                "answerTamil": "ஆம். தனிப்பயனாக்கப்பட்ட சுற்றுலா திட்டங்கள் கிடைக்கின்றன. உங்கள் முன்பதிவு தேவைகள் மற்றும் பயண விருப்பங்களுக்கு ஏற்ப பயணத்திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। कस्टमाइज़्ड टूर प्लान उपलब्ध हैं। आपकी बुकिंग आवश्यकताओं और यात्रा प्राथमिकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है."
             }
         ],
         "id": "2031"
@@ -12987,16 +14447,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai to Thekkady One Day Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "Can I do the Madurai to Thekkady trip in one day?",
+                "questionTamil": "மதுரையிலிருந்து தேக்கடிக்கு ஒரு நாள் பயணமாக செல்ல முடியுமா?",
+                "questionHindi": "क्या मैं मदुरै से थेक्कडी की यात्रा एक दिन में कर सकता हूँ?",
+                "answer": "Yes. This itinerary is planned as a one-day trip, with sightseeing and travel arranged according to the schedule in the package.",
+                "answerTamil": "ஆம். இந்த பயணத்திட்டம் ஒரு நாள் பயணமாக திட்டமிடப்பட்டுள்ளது. தொகுப்பில் குறிப்பிடப்பட்டுள்ள அட்டவணைக்கு ஏற்ப பயணம் மற்றும் சுற்றுலா இடங்களை பார்வையிடும் வகையில் ஏற்பாடு செய்யப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। यह यात्रा कार्यक्रम एक दिवसीय यात्रा के रूप में तैयार किया गया है, जिसमें पैकेज में दिए गए कार्यक्रम के अनुसार यात्रा और दर्शनीय स्थलों का भ्रमण शामिल है."
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Thekkady itinerary?",
+                "questionTamil": "மதுரை முதல் தேக்கடி பயணத்திட்டத்தில் இடம்பெறும் முக்கியமான சுற்றுலா இடங்கள் எவை?",
+                "questionHindi": "मदुरै से थेक्कडी यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Periyar Wildlife Sanctuary, Periyar Lake Boating, Spice Plantation Tour, and Kumily Spice and Handicraft Market. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத்திட்டத்தில் பெரியார் வனவிலங்கு சரணாலயம், பெரியார் ஏரி படகு சவாரி, மசாலா தோட்ட சுற்றுலா மற்றும் குமிலி மசாலா மற்றும் கைவினைப் பொருட்கள் சந்தை ஆகிய முக்கிய இடங்கள் இடம்பெறுகின்றன. சுற்றுலா பார்வைகள் தினசரி பயணத்திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்து அமையும்.",
+                "answerHindi": "इस यात्रा कार्यक्रम में पेरियार वन्यजीव अभयारण्य, पेरियार झील बोटिंग, मसाला प्लांटेशन टूर और कुमिली मसाला एवं हस्तशिल्प बाजार जैसे प्रमुख स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के यात्रा कार्यक्रम और उपलब्ध समय के अनुसार होगा."
+            },
+            {
+                "question": "What pickup and drop options are available for the Madurai to Thekkady tour?",
+                "questionTamil": "மதுரை முதல் தேக்கடி சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "मदुरै से थेक्कडी टूर के लिए पिकअप और ड्रॉप की क्या सुविधाएँ उपलब्ध हैं?",
+                "answer": "Pickup is scheduled at 06:30 AM from Madurai Airport, Railway Station, Hotel, or Bus Stand. Arrival and drop at Madurai Airport, Railway Station, Hotel, or Bus Stand is scheduled at around 07:30 PM.",
+                "answerTamil": "காலை 06:30 மணிக்கு மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup செய்யப்படும். மாலை சுமார் 07:30 மணிக்கு மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Arrival மற்றும் Drop வழங்கப்படும்.",
+                "answerHindi": "सुबह 06:30 बजे मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। शाम लगभग 07:30 बजे मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर वापसी और ड्रॉप की सुविधा दी जाएगी."
+            },
+            {
+                "question": "What is included in the Madurai to Thekkady tour package?",
+                "questionTamil": "மதுரை முதல் தேக்கடி சுற்றுலா தொகுப்பில் என்னென்ன வசதிகள் சேர்க்கப்பட்டுள்ளன?",
+                "questionHindi": "मदुरै से थेक्कडी टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a private A/C vehicle, pickup and drop from Madurai, Thekkady sightseeing as per the itinerary, an experienced driver, and driver allowance.",
+                "answerTamil": "இந்த தொகுப்பில் தனியார் ஏ.சி. வாகனம், மதுரையிலிருந்து Pickup மற்றும் Drop, பயணத்திட்டத்தின்படி தேக்கடி Sightseeing, அனுபவமிக்க ஓட்டுநர் மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में निजी ए.सी. वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार थेक्कडी दर्शनीय स्थल भ्रमण, अनुभवी ड्राइवर और ड्राइवर भत्ता शामिल हैं."
+            },
+            {
+                "question": "Does the Madurai to Thekkady one day package include hotel accommodation and breakfast?",
+                "questionTamil": "மதுரை முதல் தேக்கடி ஒரு நாள் சுற்றுலா தொகுப்பில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या मदुरै से थेक्कडी एक दिवसीय पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "No. This is a one-day package, and no overnight hotel stay is listed. Accommodation and breakfast are not part of the stated inclusions.",
+                "answerTamil": "இல்லை. இது ஒரு நாள் சுற்றுலா தொகுப்பாகும், இதில் இரவு நேர ஹோட்டல் தங்குமிடம் குறிப்பிடப்படவில்லை. தங்குமிடம் மற்றும் காலை உணவு இந்த தொகுப்பில் சேர்க்கப்படவில்லை.",
+                "answerHindi": "नहीं। यह एक दिवसीय पैकेज है और इसमें रातभर होटल में ठहरने की सुविधा शामिल नहीं है। आवास और नाश्ता इस पैकेज की दी गई सुविधाओं में शामिल नहीं हैं."
+            },
+            {
+                "question": "Which costs are extra in the Madurai to Thekkady tour package?",
+                "questionTamil": "மதுரை முதல் தேக்கடி சுற்றுலா தொகுப்பில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "मदुरै से थेक्कडी टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Periyar Boating Tickets, Wildlife Sanctuary Entry Fee, Elephant Ride and Activities, Lunch and Dinner, and Personal Expenses.",
+                "answerTamil": "பெரியார் படகு சவாரி டிக்கெட்டுகள், வனவிலங்கு சரணாலய நுழைவுக் கட்டணம், யானை சவாரி மற்றும் செயல்பாடுகள், மதிய உணவு மற்றும் இரவு உணவு மற்றும் தனிப்பட்ட செலவுகள் கூடுதல் கட்டணங்களாகும்.",
+                "answerHindi": "पेरियार बोटिंग टिकट, वन्यजीव अभयारण्य प्रवेश शुल्क, हाथी की सवारी और गतिविधियाँ, दोपहर और रात का भोजन तथा व्यक्तिगत खर्च अतिरिक्त शुल्क के अंतर्गत आते हैं."
+            },
+            {
+                "question": "Can I customize the Madurai to Thekkady day trip itinerary?",
+                "questionTamil": "மதுரை முதல் தேக்கடி ஒரு நாள் பயணத்திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या मैं मदुरै से थेक्कडी एक दिवसीय यात्रा कार्यक्रम को कस्टमाइज़ कर सकता हूँ?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to your booking requirements and travel preferences.",
+                "answerTamil": "ஆம். தனிப்பயனாக்கப்பட்ட சுற்றுலா திட்டங்கள் கிடைக்கின்றன. உங்கள் முன்பதிவு தேவைகள் மற்றும் பயண விருப்பங்களுக்கு ஏற்ப பயணத்திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। कस्टमाइज़्ड टूर प्लान उपलब्ध हैं। आपकी बुकिंग आवश्यकताओं और यात्रा प्राथमिकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है."
             }
         ],
         "id": "2032"
@@ -13094,16 +14598,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai to Munnar 2 Days / 1 Night Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Munnar tour?",
+                "questionTamil": "மதுரையிலிருந்து மூணாறுக்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से मुन्नार टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 2 Days / 1 Night.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 2 நாட்கள் / 1 இரவு என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 2 दिन / 1 रात के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Munnar itinerary?",
+                "questionTamil": "மதுரை முதல் மூணாறு பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से मुन्नार यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Bodimettu View Point, Poopara View Point, Anayirangal Dam View Point, Chinnakanal Waterfalls, Lockhart Gap View Point, and Signal Point. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் போடிமெட்டு வியூ பாயிண்ட், பூப்பாறா வியூ பாயிண்ட், ஆனையிறங்கல் அணை வியூ பாயிண்ட், சின்னக்கனல் நீர்வீழ்ச்சி, லாக்ஹார்ட் கேப் வியூ பாயிண்ட் மற்றும் சிக்னல் பாயிண்ட் ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में बोदिमेट्टू व्यू पॉइंट, पूपारा व्यू पॉइंट, अनायिरंगल डैम व्यू पॉइंट, चिन्नकनाल झरना, लॉकहार्ट गैप व्यू पॉइंट और सिग्नल पॉइंट जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Munnar Sightseeing as per the itinerary, an Experienced Driver, and Driver Allowance.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி மூணாறு Sightseeing, அனுபவமிக்க ஓட்டுநர் மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार मुन्नार दर्शनीय स्थल, अनुभवी ड्राइवर और ड्राइवर भत्ता शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 1 Night Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 1 இரவு ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 1 रात का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Lunch & Dinner, Entry Tickets, Boating Charges, Elephant Ride Charges, and Kathakali & Kalaripayattu Show Tickets.",
+                "answerTamil": "Lunch & Dinner, Entry Tickets, Boating Charges, Elephant Ride Charges மற்றும் Kathakali & Kalaripayattu Show Tickets ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Lunch & Dinner, Entry Tickets, Boating Charges, Elephant Ride Charges और Kathakali & Kalaripayattu Show Tickets के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2033"
@@ -13194,20 +14742,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai to Trichy & Thanjavur 2 Days / 1 Night Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Tamil Nadu tour package suitable for families and couples?",
-                "questionTamil": "இந்த தமிழ்நாடு சுற்றுலா பேக்கேஜ் குடும்பங்கள் மற்றும் தம்பதிகளுக்கு ஏற்றதா?",
-                "questionHindi": "क्या यह तमिलनाडु टूर पैकेज परिवारों और कपल्स के लिए उपयुक्त है?",
-                "answer": "Yes. The tour covers heritage temples and coastal beaches with comfortable hotels and a relaxed pace, making it great for family groups and honeymooners alike. We tailor activities for kids, adults and seniors (e.g. easy walks, optional temple tours) so travelers of all ages enjoy it.",
-                "answerTamil": "ஆம். இந்த சுற்றுலா பேக்கேஜில் பாரம்பரிய கோயில்கள் மற்றும் கடலோர கடற்கரைகள் இடம்பெறுவதுடன், வசதியான ஹோட்டல்கள் மற்றும் நிதானமான பயணத் திட்டமும் உள்ளது. எனவே இது குடும்பக் குழுக்கள் மற்றும் ஹனிமூன் தம்பதிகளுக்கும் சிறந்ததாக இருக்கும். குழந்தைகள், பெரியவர்கள் மற்றும் மூத்த குடிமக்கள் என அனைத்து வயதினரும் மகிழ்ச்சியாகப் பயணம் செய்யும் வகையில், எளிதான நடைப்பயணங்கள் மற்றும் விருப்பத்திற்கேற்ப கோயில் சுற்றுலா போன்ற செயல்பாடுகளை நாங்கள் ஏற்பாடு செய்கிறோம்.",
-                "answerHindi": "हाँ। इस टूर में ऐतिहासिक मंदिर और समुद्र तट, आरामदायक होटल और एक आरामदायक यात्रा कार्यक्रम शामिल है, जिससे यह परिवारों और हनीमून कपल्स दोनों के लिए बेहतरीन है। हम बच्चों, वयस्कों और वरिष्ठ नागरिकों के लिए गतिविधियों को अनुकूलित करते हैं, जैसे आसान पैदल यात्राएँ और वैकल्पिक मंदिर भ्रमण, ताकि हर उम्र के यात्री इसका आनंद ले सकें।"
+                "question": "How long is the Madurai to Trichy & Thanjavur tour?",
+                "questionTamil": "மதுரையிலிருந்து திருச்சி மற்றும் தஞ்சாவூர் சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से त्रिची और तंजावुर टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 2 Days / 1 Night.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 2 நாட்கள் / 1 இரவு என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 2 दिन / 1 रात के लिए निर्धारित है।"
             },
             {
-                "question": "Can we join the Tamil Nadu tour from Madurai or Chennai?",
-                "questionTamil": "மதுரை அல்லது சென்னையிலிருந்து தமிழ்நாடு சுற்றுலாவில் நாங்கள் இணைய முடியுமா?",
-                "questionHindi": "क्या हम मदुरै या चेन्नई से तमिलनाडु टूर में शामिल हो सकते हैं?",
-                "answer": "Absolutely. We offer pickup from Madurai or Chennai and coordinate train/flight arrivals into those cities. Our driver/guide will meet you at the station/airport and begin the tour, so you can easily join from any major city in Tamil Nadu.",
-                "answerTamil": "நிச்சயமாக. மதுரை அல்லது சென்னையிலிருந்து பிக்கப் வசதியை வழங்குகிறோம், மேலும் அந்த நகரங்களுக்கு வரும் ரயில்/விமான வருகைகளையும் ஒருங்கிணைக்கிறோம். எங்கள் ஓட்டுநர்/வழிகாட்டி உங்களை ரயில் நிலையம்/விமான நிலையத்தில் சந்தித்து சுற்றுலாவைத் தொடங்குவார். எனவே தமிழ்நாட்டின் எந்த முக்கிய நகரத்திலிருந்தும் நீங்கள் எளிதாக இந்த சுற்றுலாவில் இணையலாம்.",
-                "answerHindi": "बिल्कुल। हम मदुरै या चेन्नई से पिकअप की सुविधा देते हैं और इन शहरों में आने वाली ट्रेन या फ्लाइट के समय का समन्वय करते हैं। हमारे ड्राइवर या गाइड स्टेशन या एयरपोर्ट पर आपसे मिलेंगे और टूर शुरू करेंगे, इसलिए आप तमिलनाडु के किसी भी प्रमुख शहर से आसानी से टूर में शामिल हो सकते हैं।"
+                "question": "What are the main sightseeing places covered in the Madurai to Trichy & Thanjavur itinerary?",
+                "questionTamil": "மதுரை முதல் திருச்சி மற்றும் தஞ்சாவூர் பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से त्रिची और तंजावुर यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Sri Ranganathaswamy Temple (Srirangam), Jambukeswarar Temple (Thiruvanaikaval), Rockfort Temple (Ucchi Pillayar Temple), Thayumanaswamy Temple, Brihadeeswarar Temple (UNESCO World Heritage Site), and Evening Temple Visit & Photography. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் ஸ்ரீரங்கநாதசுவாமி கோவில் (ஸ்ரீரங்கம்), ஜம்புகேஸ்வரர் கோவில் (திருவானைக்காவல்), ராக்ஃபோர்ட் கோவில் (உச்சி பிள்ளையார் கோவில்), தாயுமானசுவாமி கோவில், பிரகதீஸ்வரர் கோவில் (UNESCO உலக பாரம்பரிய தளம்) மற்றும் மாலை கோவில் தரிசனம் & புகைப்படம் எடுத்தல் ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में श्री रंगनाथस्वामी मंदिर (श्रीरंगम), जम्बुकेश्वर मंदिर (थिरुवानैकावल), रॉकफोर्ट मंदिर (उच्ची पिल्लैयार मंदिर), थायुमानस्वामी मंदिर, बृहदीश्वर मंदिर (UNESCO विश्व धरोहर स्थल) और शाम का मंदिर दर्शन एवं फोटोग्राफी शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Trichy & Thanjavur Sightseeing as per the itinerary, an Experienced Driver, and Driver Allowance.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி திருச்சி மற்றும் தஞ்சாவூர் Sightseeing, அனுபவமிக்க ஓட்டுநர் மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार त्रिची और तंजावुर दर्शनीय स्थल, अनुभवी ड्राइवर और ड्राइवर भत्ता शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 1 Night Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 1 இரவு ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 1 रात का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Temple Special Darshan Tickets, Monument & Museum Entry Fees, Lunch & Dinner, Guide Services, and Personal Expenses.",
+                "answerTamil": "Temple Special Darshan Tickets, Monument & Museum Entry Fees, Lunch & Dinner, Guide Services மற்றும் Personal Expenses ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Temple Special Darshan Tickets, Monument & Museum Entry Fees, Lunch & Dinner, Guide Services और Personal Expenses के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2034"
@@ -13297,16 +14885,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai to Tiruchendur 2 Days / 1 Night Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Tiruchendur tour?",
+                "questionTamil": "மதுரையிலிருந்து திருச்செந்தூருக்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से तिरुचेंदूर टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 2 Days / 1 Night.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 2 நாட்கள் / 1 இரவு என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 2 दिन / 1 रात के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Tiruchendur itinerary?",
+                "questionTamil": "மதுரை முதல் திருச்செந்தூர் பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से तिरुचेंदूर यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Tirupparankundram Murugan Temple, Arulmigu Subramaniya Swamy Temple (Tiruchendur Murugan Temple), Tiruchendur Beach, Morning Darshan at Tiruchendur Murugan Temple, Relax at Tiruchendur Beach, and Sri Vaikuntam Temple (Nava Tirupati Divya Desam). Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் திருப்பரங்குன்றம் முருகன் கோவில், அருள்மிகு சுப்பிரமணிய சுவாமி கோவில் (திருச்செந்தூர் முருகன் கோவில்), திருச்செந்தூர் கடற்கரை, திருச்செந்தூர் முருகன் கோவிலில் காலை தரிசனம், திருச்செந்தூர் கடற்கரையில் ஓய்வு மற்றும் ஸ்ரீ வைகுண்டம் கோவில் (நவ திருப்பதி திவ்ய தேசம்) ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में तिरुप्परंकुंद्रम मुरुगन मंदिर, अरुल्मिगु सुब्रमण्य स्वामी मंदिर (तिरुचेंदूर मुरुगन मंदिर), तिरुचेंदूर बीच, तिरुचेंदूर मुरुगन मंदिर में सुबह का दर्शन, तिरुचेंदूर बीच पर विश्राम और श्री वैकुंटम मंदिर (नव तिरुपति दिव्य देशम) जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Tiruchendur Sightseeing as per the itinerary, an Experienced Driver, and Driver Allowance.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி திருச்செந்தூர் Sightseeing, அனுபவமிக்க ஓட்டுநர் மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार तिरुचेंदूर दर्शनीय स्थल, अनुभवी ड्राइवर और ड्राइवर भत्ता शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 1 Night Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 1 இரவு ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 1 रात का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Temple Special Darshan Tickets, Entry Fees (if applicable), Lunch & Dinner, Guide Services, and Personal Expenses.",
+                "answerTamil": "Temple Special Darshan Tickets, Entry Fees (தேவைப்பட்டால்), Lunch & Dinner, Guide Services மற்றும் Personal Expenses ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Temple Special Darshan Tickets, Entry Fees (यदि लागू हो), Lunch & Dinner, Guide Services और Personal Expenses के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2035"
@@ -13402,16 +15034,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai – Kanyakumari – Trivandrum 2 Days / 1 Night Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai - Kanyakumari - Trivandrum tour?",
+                "questionTamil": "மதுரை - கன்னியாகுமரி - திருவனந்தபுரம் சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै - कन्याकुमारी - त्रिवेंद्रम टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 2 Days / 1 Night.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 2 நாட்கள் / 1 இரவு என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 2 दिन / 1 रात के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai - Kanyakumari - Trivandrum itinerary?",
+                "questionTamil": "மதுரை - கன்னியாகுமரி - திருவனந்தபுரம் பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै - कन्याकुमारी - त्रिवेंद्रम यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Kanyakumari Bhagavathy Amman Temple, Triveni Sangam (Confluence of Three Seas), Vivekananda Rock Memorial, Thiruvalluvar Statue, Glass Bridge, and Gandhi Memorial Mandapam. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் கன்னியாகுமரி பகவதி அம்மன் கோவில், திரிவேணி சங்கமம் (மூன்று கடல்களின் சங்கமம்), விவேகானந்தர் பாறை நினைவிடம், திருவள்ளுவர் சிலை, கண்ணாடி பாலம் மற்றும் காந்தி நினைவு மண்டபம் ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में कन्याकुमारी भगवती अम्मन मंदिर, त्रिवेणी संगम (तीन समुद्रों का संगम), विवेकानंद रॉक मेमोरियल, तिरुवल्लुवर प्रतिमा, ग्लास ब्रिज और गांधी मेमोरियल मंडपम जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Trivandrum Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. திருவனந்தபுரம் விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதி உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा त्रिवेंद्रम एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup from Madurai, Drop at Trivandrum, Sightseeing as per the itinerary, and an Experienced Driver.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup, திருவனந்தபுரத்தில் Drop, பயணத் திட்டத்தின்படி Sightseeing மற்றும் அனுபவமிக்க ஓட்டுநர் ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप, त्रिवेंद्रम में ड्रॉप, यात्रा कार्यक्रम के अनुसार दर्शनीय स्थल और अनुभवी ड्राइवर शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 1 Night Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 1 இரவு ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 1 रात का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Boat Tickets to Vivekananda Rock Memorial, Monument & Museum Entry Fees, Temple Special Darshan Tickets, Lunch & Dinner, and Personal Expenses.",
+                "answerTamil": "விவேகானந்தர் பாறை நினைவிடத்திற்கான Boat Tickets, Monument & Museum Entry Fees, Temple Special Darshan Tickets, Lunch & Dinner மற்றும் Personal Expenses ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "विवेकानंद रॉक मेमोरियल के Boat Tickets, Monument & Museum Entry Fees, Temple Special Darshan Tickets, Lunch & Dinner और Personal Expenses के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2036"
@@ -13504,16 +15180,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai → Thekkady → Alleppey 2 Days / 1 Night Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Thekkady to Alleppey tour?",
+                "questionTamil": "மதுரையிலிருந்து தேக்கடி வழியாக ஆலப்புழாவுக்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से थेक्कडी होते हुए अल्लेप्पी टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 2 Days / 1 Night.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 2 நாட்கள் / 1 இரவு என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 2 दिन / 1 रात के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Thekkady to Alleppey itinerary?",
+                "questionTamil": "மதுரை முதல் தேக்கடி வழியாக ஆலப்புழா பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से थेक्कडी होते हुए अल्लेप्पी यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Periyar Wildlife Sanctuary, Periyar Lake Boating, Spice Plantation Tour, Alleppey Backwaters, Alleppey Beach, and Toll & Parking Charges. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் பெரியார் வனவிலங்கு சரணாலயம், பெரியார் ஏரி படகு சவாரி, மசாலா தோட்ட சுற்றுலா, ஆலப்புழா பின்நீர் பகுதிகள், ஆலப்புழா கடற்கரை மற்றும் Toll & Parking Charges ஆகியவை குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में पेरियार वन्यजीव अभयारण्य, पेरियार झील बोटिंग, मसाला बागान भ्रमण, अल्लेप्पी बैकवाटर्स, अल्लेप्पी बीच और टोल एवं पार्किंग शुल्क शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Thekkady & Alleppey Sightseeing as per the itinerary, an Experienced Driver, and Driver Allowance.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி தேக்கடி மற்றும் ஆலப்புழா Sightseeing, அனுபவமிக்க ஓட்டுநர் மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार थेक्कडी और अल्लेप्पी दर्शनीय स्थल, अनुभवी ड्राइवर और ड्राइवर भत्ता शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 1 Night Hotel Accommodation in Alleppey and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் ஆலப்புழாவில் 1 இரவு ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में अल्लेप्पी में 1 रात का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Periyar Boating Tickets, Shikara / Houseboat Charges, Wildlife Sanctuary Entry Fees, Elephant Ride & Activities, and Lunch & Dinner.",
+                "answerTamil": "Periyar Boating Tickets, Shikara / Houseboat Charges, Wildlife Sanctuary Entry Fees, Elephant Ride & Activities மற்றும் Lunch & Dinner ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Periyar Boating Tickets, Shikara / Houseboat Charges, Wildlife Sanctuary Entry Fees, Elephant Ride & Activities और Lunch & Dinner के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2037"
@@ -13612,16 +15332,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai → Munnar → Marayoor 2 Days / 1 Night Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Munnar to Marayoor tour?",
+                "questionTamil": "மதுரையிலிருந்து மூணாறு வழியாக மறையூருக்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से मुन्नार होते हुए मरयूर टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 2 Days / 1 Night.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 2 நாட்கள் / 1 இரவு என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 2 दिन / 1 रात के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Munnar to Marayoor itinerary?",
+                "questionTamil": "மதுரை முதல் மூணாறு வழியாக மறையூர் பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से मुन्नार होते हुए मरयूर यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Bodimettu View Point, Poopara View Point, Anayirangal Dam View Point, Chinnakanal Waterfalls, Lockhart Gap View Point, and Signal Point. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் போடிமெட்டு வியூ பாயிண்ட், பூப்பாறா வியூ பாயிண்ட், ஆனையிறங்கல் அணை வியூ பாயிண்ட், சின்னக்கனல் நீர்வீழ்ச்சி, லாக்ஹார்ட் கேப் வியூ பாயிண்ட் மற்றும் சிக்னல் பாயிண்ட் ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में बोदिमेट्टू व्यू पॉइंट, पूपारा व्यू पॉइंट, अनायिरंगल डैम व्यू पॉइंट, चिन्नकनाल झरना, लॉकहार्ट गैप व्यू पॉइंट और सिग्नल पॉइंट जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Munnar & Marayoor Sightseeing as per the itinerary, an Experienced Driver, and Driver Allowance.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி மூணாறு மற்றும் மறையூர் Sightseeing, அனுபவமிக்க ஓட்டுநர் மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार मुन्नार और मरयूर दर्शनीय स्थल, अनुभवी ड्राइवर और ड्राइवर भत्ता शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 1 Night Hotel Accommodation in Munnar and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் மூணாறில் 1 இரவு ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में मुन्नार में 1 रात का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Entry Tickets, Adventure Activities, Kathakali & Kalari Show Tickets, Lunch & Dinner, and Personal Expenses.",
+                "answerTamil": "Entry Tickets, Adventure Activities, Kathakali & Kalari Show Tickets, Lunch & Dinner மற்றும் Personal Expenses ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Entry Tickets, Adventure Activities, Kathakali & Kalari Show Tickets, Lunch & Dinner और Personal Expenses के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2038"
@@ -13736,16 +15500,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai to Munnar 3 Days / 2 Nights Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Munnar tour?",
+                "questionTamil": "மதுரையிலிருந்து மூணாறுக்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से मुन्नार टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 3 Days / 2 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 3 நாட்கள் / 2 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 3 दिन / 2 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Munnar itinerary?",
+                "questionTamil": "மதுரை முதல் மூணாறு பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से मुन्नार यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Bodimettu View Point, Poopara View Point, Anayirangal Dam View Point, Chinnakanal Waterfalls, Lockhart Gap View Point, and Signal Point. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் போடிமெட்டு வியூ பாயிண்ட், பூப்பாறா வியூ பாயிண்ட், ஆனையிறங்கல் அணை வியூ பாயிண்ட், சின்னக்கனல் நீர்வீழ்ச்சி, லாக்ஹார்ட் கேப் வியூ பாயிண்ட் மற்றும் சிக்னல் பாயிண்ட் ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में बोदिमेट्टू व्यू पॉइंट, पूपारा व्यू पॉइंट, अनायिरंगल डैम व्यू पॉइंट, चिन्नकनाल झरना, लॉकहार्ट गैप व्यू पॉइंट और सिग्नल पॉइंट जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Munnar Sightseeing as per the itinerary, an Experienced Driver, and Driver Allowance.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி மூணாறு Sightseeing, அனுபவமிக்க ஓட்டுநர் மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार मुन्नार दर्शनीय स्थल, अनुभवी ड्राइवर और ड्राइवर भत्ता शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 2 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 2 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 2 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Entry Tickets, Tea Museum Entry Fee, Boating Charges, Elephant Ride & Activities, and Kathakali & Kalaripayattu Show Tickets.",
+                "answerTamil": "Entry Tickets, Tea Museum Entry Fee, Boating Charges, Elephant Ride & Activities மற்றும் Kathakali & Kalaripayattu Show Tickets ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Entry Tickets, Tea Museum Entry Fee, Boating Charges, Elephant Ride & Activities और Kathakali & Kalaripayattu Show Tickets के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2039"
@@ -13860,16 +15668,52 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai to Kodaikanal 3 Days / 2 Nights Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Kodaikanal tour?",
+                "questionTamil": "மதுரையிலிருந்து கொடைக்கானலுக்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से कोडाइकनाल टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 3 Days / 2 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 3 நாட்கள் / 2 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 3 दिन / 2 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Kodaikanal itinerary?",
+                "questionTamil": "மதுரை முதல் கொடைக்கானல் பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से कोडाइकनाल यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Silver Cascade Falls, Scenic Valley View Points, Coaker's Walk, Bryant Park, Kodaikanal Lake, and Mannavanur Lake. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் சில்வர் கேஸ்கேட் நீர்வீழ்ச்சி, அழகிய பள்ளத்தாக்கு வியூ பாயிண்ட்கள், கோக்கர்ஸ் வாக், பிரையன்ட் பூங்கா, கொடைக்கானல் ஏரி மற்றும் மன்னவனூர் ஏரி ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में सिल्वर कैस्केड फॉल्स, सुंदर घाटी व्यू पॉइंट्स, कोकर्स वॉक, ब्रायंट पार्क, कोडाइकनाल झील और मन्नावनूर झील जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Kodaikanal & Mannavanur Sightseeing, an Experienced Hill Driver, and Driver Allowance.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, கொடைக்கானல் மற்றும் மன்னவனூர் Sightseeing, அனுபவமிக்க Hill Driver மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, कोडाइकनाल और मन्नावनूर दर्शनीय स्थल, अनुभवी हिल ड्राइवर और ड्राइवर भत्ता शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 2 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 2 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 2 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Entry Tickets, Boating Charges, Camera Fees, Lunch & Dinner, and Personal Expenses.",
+                "answerTamil": "Entry Tickets, Boating Charges, Camera Fees, Lunch & Dinner மற்றும் Personal Expenses ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Entry Tickets, Boating Charges, Camera Fees, Lunch & Dinner और Personal Expenses के लिए अतिरिक्त शुल्क देना होगा।"
             }
         ],
         "id": "2040"
@@ -13981,16 +15825,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai to Thekkady 3 Days / 2 Nights Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Thekkady tour?",
+                "questionTamil": "மதுரையிலிருந்து தேக்கடிக்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से थेक्कडी टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 3 Days / 2 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 3 நாட்கள் / 2 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 3 दिन / 2 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Thekkady itinerary?",
+                "questionTamil": "மதுரை முதல் தேக்கடி பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से थेक्कडी यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Cumbum Valley View, Spice Plantation Visit, Kumily Local Spice Market, Periyar Wildlife Sanctuary, Periyar Lake Boat Safari, and Nature Walk. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் கம்பம் பள்ளத்தாக்கு வியூ, மசாலா தோட்ட பார்வை, குமுளி உள்ளூர் மசாலா சந்தை, பெரியார் வனவிலங்கு சரணாலயம், பெரியார் ஏரி படகு சஃபாரி மற்றும் இயற்கை நடைப்பயணம் ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में कुम्बम वैली व्यू, मसाला बागान भ्रमण, कुमिली स्थानीय मसाला बाजार, पेरियार वन्यजीव अभयारण्य, पेरियार झील बोट सफारी और नेचर वॉक जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Thekkady Sightseeing as per the itinerary, an Experienced Driver, and Driver Allowance.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி தேக்கடி Sightseeing, அனுபவமிக்க ஓட்டுநர் மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार थेक्कडी दर्शनीय स्थल, अनुभवी ड्राइवर और ड्राइवर भत्ता शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 2 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 2 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 2 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Periyar Wildlife Sanctuary Entry Fee, Periyar Lake Boat Safari Tickets, Elephant Activities, Jeep Safari Charges, and Kathakali & Kalaripayattu Show Tickets.",
+                "answerTamil": "Periyar Wildlife Sanctuary Entry Fee, Periyar Lake Boat Safari Tickets, Elephant Activities, Jeep Safari Charges மற்றும் Kathakali & Kalaripayattu Show Tickets ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Periyar Wildlife Sanctuary Entry Fee, Periyar Lake Boat Safari Tickets, Elephant Activities, Jeep Safari Charges और Kathakali & Kalaripayattu Show Tickets के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2041"
@@ -14102,16 +15990,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai → Thekkady → Vagamon 3 Days / 2 Nights Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Thekkady to Vagamon tour?",
+                "questionTamil": "மதுரையிலிருந்து தேக்கடி வழியாக வாகமனுக்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से थेक्कडी होते हुए वागामोन टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 3 Days / 2 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 3 நாட்கள் / 2 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 3 दिन / 2 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Thekkady to Vagamon itinerary?",
+                "questionTamil": "மதுரை முதல் தேக்கடி வழியாக வாகமன் பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से थेक्कडी होते हुए वागामोन यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Periyar Wildlife Sanctuary, Periyar Lake Boating, Spice Plantation Tour, Kumily Spice Market, Vagamon Pine Forest, and Vagamon Meadows. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் பெரியார் வனவிலங்கு சரணாலயம், பெரியார் ஏரி படகு சவாரி, மசாலா தோட்ட சுற்றுலா, குமுளி மசாலா சந்தை, வாகமன் பைன் காடு மற்றும் வாகமன் புல்வெளிகள் ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में पेरियार वन्यजीव अभयारण्य, पेरियार झील बोटिंग, मसाला बागान भ्रमण, कुमिली मसाला बाजार, वागामोन पाइन फॉरेस्ट और वागामोन मीडोज जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Thekkady & Vagamon Sightseeing as per the itinerary, an Experienced Driver, and Driver Allowance.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி தேக்கடி மற்றும் வாகமன் Sightseeing, அனுபவமிக்க ஓட்டுநர் மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार थेक्कडी और वागामोन दर्शनीय स्थल, अनुभवी ड्राइवर और ड्राइवर भत्ता शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 2 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 2 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 2 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Periyar Wildlife Sanctuary Entry Fee, Periyar Boating Tickets, Elephant Ride & Activities, Adventure Activities & Paragliding, and Lunch & Dinner.",
+                "answerTamil": "Periyar Wildlife Sanctuary Entry Fee, Periyar Boating Tickets, Elephant Ride & Activities, Adventure Activities & Paragliding மற்றும் Lunch & Dinner ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Periyar Wildlife Sanctuary Entry Fee, Periyar Boating Tickets, Elephant Ride & Activities, Adventure Activities & Paragliding और Lunch & Dinner के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2042"
@@ -14221,16 +16153,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai to Meghamalai 3 Days / 2 Nights Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Meghamalai tour?",
+                "questionTamil": "மதுரையிலிருந்து மேகமலைக்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से मेघमलाई टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 3 Days / 2 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 3 நாட்கள் / 2 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 3 दिन / 2 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Meghamalai itinerary?",
+                "questionTamil": "மதுரை முதல் மேகமலை பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से मेघमलाई यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Veerapandi Gowmariamman Temple, Vaigai Dam View Point, Meghamalai Tea Estates, High Wavy View Point, Manalar Dam View Point, and Tea Garden Photography. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் வீரபாண்டி கௌமாரியம்மன் கோவில், வைகை அணை வியூ பாயிண்ட், மேகமலை தேயிலை தோட்டங்கள், ஹை வேவி வியூ பாயிண்ட், மணலார் அணை வியூ பாயிண்ட் மற்றும் தேயிலை தோட்ட புகைப்பட இடங்கள் ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में वीरपांडी गौमारियम्मन मंदिर, वैगई डैम व्यू पॉइंट, मेघमलाई चाय बागान, हाई वेवी व्यू पॉइंट, मनालार डैम व्यू पॉइंट और टी गार्डन फोटोग्राफी जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Meghamalai Sightseeing as per the itinerary, an Experienced Hill Driver, and Driver Allowance.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி மேகமலை Sightseeing, அனுபவமிக்க Hill Driver மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार मेघमलाई दर्शनीय स्थल, अनुभवी हिल ड्राइवर और ड्राइवर भत्ता शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 2 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 2 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 2 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Entry Tickets, Forest Entry Fees (if applicable), Camera Charges, Lunch & Dinner, and Personal Expenses.",
+                "answerTamil": "Entry Tickets, Forest Entry Fees (தேவைப்பட்டால்), Camera Charges, Lunch & Dinner மற்றும் Personal Expenses ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Entry Tickets, Forest Entry Fees (यदि लागू हो), Camera Charges, Lunch & Dinner और Personal Expenses के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2043"
@@ -14340,16 +16316,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai to Ooty 3 Days / 2 Nights Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Ooty tour?",
+                "questionTamil": "மதுரையிலிருந்து ஊட்டிக்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से ऊटी टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 3 Days / 2 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 3 நாட்கள் / 2 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 3 दिन / 2 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Ooty itinerary?",
+                "questionTamil": "மதுரை முதல் ஊட்டி பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से ऊटी यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Ketti Valley View Point, Tea Garden Photo Stops, Government Botanical Garden, Government Rose Garden, Ooty Lake, and Sim's Park. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் கேத்தி பள்ளத்தாக்கு வியூ பாயிண்ட், தேயிலை தோட்ட புகைப்பட நிறுத்தங்கள், அரசு தாவரவியல் பூங்கா, அரசு ரோஜா பூங்கா, ஊட்டி ஏரி மற்றும் சிம்ஸ் பூங்கா ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में केट्टी वैली व्यू पॉइंट, चाय बागान फोटो स्टॉप, सरकारी बॉटनिकल गार्डन, सरकारी रोज गार्डन, ऊटी झील और सिम्स पार्क जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Ooty & Coonoor Sightseeing as per the itinerary, an Experienced Hill Driver, and Driver Allowance.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி ஊட்டி மற்றும் குன்னூர் Sightseeing, அனுபவமிக்க Hill Driver மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार ऊटी और कुन्नूर दर्शनीय स्थल, अनुभवी हिल ड्राइवर और ड्राइवर भत्ता शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 2 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 2 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 2 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Entry Tickets, Toy Train Tickets (subject to availability), Boating Charges, Lunch & Dinner, and Personal Expenses.",
+                "answerTamil": "Entry Tickets, Toy Train Tickets (கிடைக்கும் நிலையைப் பொறுத்தது), Boating Charges, Lunch & Dinner மற்றும் Personal Expenses ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Entry Tickets, Toy Train Tickets (उपलब्धता के अधीन), Boating Charges, Lunch & Dinner और Personal Expenses के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2044"
@@ -14466,16 +16486,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai → Munnar → Thekkady 3 Days / 2 Nights Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Munnar to Thekkady tour?",
+                "questionTamil": "மதுரையிலிருந்து மூணாறு வழியாக தேக்கடிக்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से मुन्नार होते हुए थेक्कडी टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 3 Days / 2 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 3 நாட்கள் / 2 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 3 दिन / 2 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Munnar to Thekkady itinerary?",
+                "questionTamil": "மதுரை முதல் மூணாறு வழியாக தேக்கடி பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से मुन्नार होते हुए थेक्कडी यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Bodimettu View Point, Poopara View Point, Anayirangal Dam, Chinnakanal Waterfalls, Lockhart Gap View Point, and Signal Point. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் போடிமெட்டு வியூ பாயிண்ட், பூப்பாறா வியூ பாயிண்ட், ஆனையிறங்கல் அணை, சின்னக்கனல் நீர்வீழ்ச்சி, லாக்ஹார்ட் கேப் வியூ பாயிண்ட் மற்றும் சிக்னல் பாயிண்ட் ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में बोदिमेट्टू व्यू पॉइंट, पूपारा व्यू पॉइंट, अनायिरंगल डैम, चिन्नकनाल झरना, लॉकहार्ट गैप व्यू पॉइंट और सिग्नल पॉइंट जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Munnar & Thekkady Sightseeing as per the itinerary, an Experienced Hill Driver, and Driver Allowance.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி மூணாறு மற்றும் தேக்கடி Sightseeing, அனுபவமிக்க Hill Driver மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार मुन्नार और थेक्कडी दर्शनीय स्थल, अनुभवी हिल ड्राइवर और ड्राइवर भत्ता शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 2 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 2 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 2 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Periyar Wildlife Sanctuary Entry Fee, Periyar Lake Boating Tickets, Tea Museum Entry Fee, Kathakali & Kalaripayattu Show Tickets, and Elephant Ride & Activities.",
+                "answerTamil": "Periyar Wildlife Sanctuary Entry Fee, Periyar Lake Boating Tickets, Tea Museum Entry Fee, Kathakali & Kalaripayattu Show Tickets மற்றும் Elephant Ride & Activities ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Periyar Wildlife Sanctuary Entry Fee, Periyar Lake Boating Tickets, Tea Museum Entry Fee, Kathakali & Kalaripayattu Show Tickets और Elephant Ride & Activities के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2045"
@@ -14594,16 +16658,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai → Munnar → Alleppey 3 Days / 2 Nights Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Munnar to Alleppey tour?",
+                "questionTamil": "மதுரையிலிருந்து மூணாறு வழியாக ஆலப்புழாவுக்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से मुन्नार होते हुए अल्लेप्पी टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 3 Days / 2 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 3 நாட்கள் / 2 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 3 दिन / 2 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Munnar to Alleppey itinerary?",
+                "questionTamil": "மதுரை முதல் மூணாறு வழியாக ஆலப்புழா பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से मुन्नार होते हुए अल्लेप्पी यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Bodimettu View Point, Poopara View Point, Anayirangal Dam View Point, Chinnakanal Waterfalls, Lockhart Gap View Point, and Signal Point. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் போடிமெட்டு வியூ பாயிண்ட், பூப்பாறா வியூ பாயிண்ட், ஆனையிறங்கல் அணை வியூ பாயிண்ட், சின்னக்கனல் நீர்வீழ்ச்சி, லாக்ஹார்ட் கேப் வியூ பாயிண்ட் மற்றும் சிக்னல் பாயிண்ட் ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में बोदिमेट्टू व्यू पॉइंट, पूपारा व्यू पॉइंट, अनायिरंगल डैम व्यू पॉइंट, चिन्नकनाल झरना, लॉकहार्ट गैप व्यू पॉइंट और सिग्नल पॉइंट जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Munnar & Alleppey Sightseeing as per the itinerary, an Experienced Driver, and Driver Allowance.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி மூணாறு மற்றும் ஆலப்புழா Sightseeing, அனுபவமிக்க ஓட்டுநர் மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार मुन्नार और अल्लेप्पी दर्शनीय स्थल, अनुभवी ड्राइवर और ड्राइवर भत्ता शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 2 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 2 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 2 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Shikara Boat Ride Charges, Houseboat Charges (Unless Selected), Tea Museum Entry Fee, Entry Tickets, and Lunch & Dinner (Except in Houseboat Package, if booked).",
+                "answerTamil": "Shikara Boat Ride Charges, Houseboat Charges (தேர்வு செய்யப்படாவிட்டால்), Tea Museum Entry Fee, Entry Tickets மற்றும் Lunch & Dinner (Houseboat Package முன்பதிவு செய்திருந்தால் மட்டும் தவிர) ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Shikara Boat Ride Charges, Houseboat Charges (यदि चयनित नहीं है), Tea Museum Entry Fee, Entry Tickets और Lunch & Dinner (यदि Houseboat Package बुक किया गया है तो छोड़कर) के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2046"
@@ -14717,16 +16825,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai → Thekkady → Alleppey 3 Days / 2 Nights Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Thekkady to Alleppey tour?",
+                "questionTamil": "மதுரையிலிருந்து தேக்கடி வழியாக ஆலப்புழாவுக்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से थेक्कडी होते हुए अल्लेप्पी टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 3 Days / 2 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 3 நாட்கள் / 2 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 3 दिन / 2 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Thekkady to Alleppey itinerary?",
+                "questionTamil": "மதுரை முதல் தேக்கடி வழியாக ஆலப்புழா பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से थेक्कडी होते हुए अल्लेप्पी यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Periyar Wildlife Sanctuary, Periyar Lake Boating, Spice Plantation Tour, Kumily Spice Market, Alleppey Beach, and Alleppey Backwaters. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் பெரியார் வனவிலங்கு சரணாலயம், பெரியார் ஏரி படகு சவாரி, மசாலா தோட்ட சுற்றுலா, குமுளி மசாலா சந்தை, ஆலப்புழா கடற்கரை மற்றும் ஆலப்புழா Backwaters ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में पेरियार वन्यजीव अभयारण्य, पेरियार झील बोटिंग, मसाला बागान भ्रमण, कुमिली मसाला बाजार, अल्लेप्पी बीच और अल्लेप्पी बैकवाटर्स जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Thekkady & Alleppey Sightseeing as per the itinerary, an Experienced Driver, and Driver Allowance.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி தேக்கடி மற்றும் ஆலப்புழா Sightseeing, அனுபவமிக்க ஓட்டுநர் மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार थेक्कडी और अल्लेप्पी दर्शनीय स्थल, अनुभवी ड्राइवर और ड्राइवर भत्ता शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 2 Nights Accommodation (Hotel/Houseboat as Selected) and Complimentary Breakfast (Hotel Stay).",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 2 இரவுகள் தங்குமிடம் (தேர்வு செய்யப்பட்ட ஹோட்டல்/ஹவுஸ்போட்) மற்றும் Complimentary Breakfast (ஹோட்டல் தங்குமிடத்திற்கு) சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 2 रातों का आवास (चयनित होटल/हाउसबोट के अनुसार) और Complimentary Breakfast (होटल में ठहरने पर) शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Periyar Wildlife Sanctuary Entry Fee, Periyar Boating Tickets, Shikara Boat Ride Charges, Houseboat Upgrade Charges (if not selected), and Elephant Ride & Activities.",
+                "answerTamil": "Periyar Wildlife Sanctuary Entry Fee, Periyar Boating Tickets, Shikara Boat Ride Charges, Houseboat Upgrade Charges (தேர்வு செய்யப்படாவிட்டால்) மற்றும் Elephant Ride & Activities ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Periyar Wildlife Sanctuary Entry Fee, Periyar Boating Tickets, Shikara Boat Ride Charges, Houseboat Upgrade Charges (यदि चयनित नहीं है) और Elephant Ride & Activities के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2047"
@@ -14847,16 +16999,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai → Munnar → Vagamon 3 Days / 2 Nights Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Munnar to Vagamon tour?",
+                "questionTamil": "மதுரையிலிருந்து மூணாறு வழியாக வாகமனுக்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से मुन्नार होते हुए वागामोन टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 3 Days / 2 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 3 நாட்கள் / 2 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 3 दिन / 2 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Munnar to Vagamon itinerary?",
+                "questionTamil": "மதுரை முதல் மூணாறு வழியாக வாகமன் பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से मुन्नार होते हुए वागामोन यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Bodimettu View Point, Poopara View Point, Anayirangal Dam View Point, Chinnakanal Waterfalls, Lockhart Gap View Point, and Signal Point. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் போடிமெட்டு வியூ பாயிண்ட், பூப்பாறா வியூ பாயிண்ட், ஆனையிறங்கல் அணை வியூ பாயிண்ட், சின்னக்கனல் நீர்வீழ்ச்சி, லாக்ஹார்ட் கேப் வியூ பாயிண்ட் மற்றும் சிக்னல் பாயிண்ட் ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में बोदिमेट्टू व्यू पॉइंट, पूपारा व्यू पॉइंट, अनायिरंगल डैम व्यू पॉइंट, चिन्नकनाल झरना, लॉकहार्ट गैप व्यू पॉइंट और सिग्नल पॉइंट जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Munnar & Vagamon Sightseeing as per the itinerary, an Experienced Hill Driver, and Driver Allowance.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி மூணாறு மற்றும் வாகமன் Sightseeing, அனுபவமிக்க Hill Driver மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार मुन्नार और वागामोन दर्शनीय स्थल, अनुभवी हिल ड्राइवर और ड्राइवर भत्ता शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 2 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 2 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 2 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Entry Tickets, Tea Museum Entry Fee, Adventure Activity Charges, Paragliding Charges, and Kathakali & Kalaripayattu Show Tickets.",
+                "answerTamil": "Entry Tickets, Tea Museum Entry Fee, Adventure Activity Charges, Paragliding Charges மற்றும் Kathakali & Kalaripayattu Show Tickets ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Entry Tickets, Tea Museum Entry Fee, Adventure Activity Charges, Paragliding Charges और Kathakali & Kalaripayattu Show Tickets के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2048"
@@ -14975,16 +17171,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai → Munnar → Marayoor 3 Days / 2 Nights Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Munnar to Marayoor tour?",
+                "questionTamil": "மதுரையிலிருந்து மூணாறு வழியாக மறையூருக்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से मुन्नार होते हुए मरायूर टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 3 Days / 2 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 3 நாட்கள் / 2 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 3 दिन / 2 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Munnar to Marayoor itinerary?",
+                "questionTamil": "மதுரை முதல் மூணாறு வழியாக மறையூர் பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से मुन्नार होते हुए मरायूर यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Bodimettu View Point, Poopara View Point, Anayirangal Dam View Point, Chinnakanal Waterfalls, Lockhart Gap View Point, and Signal Point. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் போடிமெட்டு வியூ பாயிண்ட், பூப்பாறா வியூ பாயிண்ட், ஆனையிறங்கல் அணை வியூ பாயிண்ட், சின்னக்கனல் நீர்வீழ்ச்சி, லாக்ஹார்ட் கேப் வியூ பாயிண்ட் மற்றும் சிக்னல் பாயிண்ட் ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में बोदिमेट्टू व्यू पॉइंट, पूपारा व्यू पॉइंट, अनायिरंगल डैम व्यू पॉइंट, चिन्नकनाल झरना, लॉकहार्ट गैप व्यू पॉइंट और सिग्नल पॉइंट जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Munnar & Marayoor Sightseeing as per the itinerary, an Experienced Hill Driver, and Driver Allowance.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி மூணாறு மற்றும் மறையூர் Sightseeing, அனுபவமிக்க Hill Driver மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार मुन्नार और मरायूर दर्शनीय स्थल, अनुभवी हिल ड्राइवर और ड्राइवर भत्ता शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 2 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 2 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 2 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Entry Tickets, Tea Museum Entry Fee, Lakkam Waterfalls Entry Fee, Kathakali & Kalaripayattu Show Tickets, and Lunch & Dinner.",
+                "answerTamil": "Entry Tickets, Tea Museum Entry Fee, Lakkam Waterfalls Entry Fee, Kathakali & Kalaripayattu Show Tickets மற்றும் Lunch & Dinner ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Entry Tickets, Tea Museum Entry Fee, Lakkam Waterfalls Entry Fee, Kathakali & Kalaripayattu Show Tickets और Lunch & Dinner के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2049"
@@ -15097,16 +17337,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai → Thekkady → Kumarakom 3 Days / 2 Nights Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Thekkady to Kumarakom tour?",
+                "questionTamil": "மதுரையிலிருந்து தேக்கடி வழியாக குமரகோமுக்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से थेक्कडी होते हुए कुमारकोम टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 3 Days / 2 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 3 நாட்கள் / 2 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 3 दिन / 2 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Thekkady to Kumarakom itinerary?",
+                "questionTamil": "மதுரை முதல் தேக்கடி வழியாக குமரகோம் பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से थेक्कडी होते हुए कुमारकोम यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Periyar Wildlife Sanctuary, Periyar Lake Boating, Spice Plantation Tour, Kumily Spice Market, Kumarakom Backwaters, and Kumarakom Bird Sanctuary. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் பெரியார் வனவிலங்கு சரணாலயம், பெரியார் ஏரி படகு சவாரி, மசாலா தோட்ட சுற்றுலா, குமுளி மசாலா சந்தை, குமரகோம் Backwaters மற்றும் குமரகோம் பறவைகள் சரணாலயம் ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में पेरियार वन्यजीव अभयारण्य, पेरियार झील बोटिंग, मसाला बागान भ्रमण, कुमिली मसाला बाजार, कुमारकोम बैकवाटर्स और कुमारकोम पक्षी अभयारण्य जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Thekkady & Kumarakom Sightseeing as per the itinerary, an Experienced Driver, and Driver Allowance.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி தேக்கடி மற்றும் குமரகோம் Sightseeing, அனுபவமிக்க ஓட்டுநர் மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार थेक्कडी और कुमारकोम दर्शनीय स्थल, अनुभवी ड्राइवर और ड्राइवर भत्ता शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 2 Nights Accommodation (Hotel/Houseboat as Selected) and Complimentary Breakfast (Hotel Stay).",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 2 இரவுகள் தங்குமிடம் (தேர்வு செய்யப்பட்ட ஹோட்டல்/ஹவுஸ்போட்) மற்றும் Complimentary Breakfast (ஹோட்டல் தங்குமிடத்திற்கு) சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 2 रातों का आवास (चयनित होटल/हाउसबोट के अनुसार) और Complimentary Breakfast (होटल में ठहरने पर) शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Periyar Wildlife Sanctuary Entry Fee, Periyar Lake Boating Tickets, Bird Sanctuary Entry Fee, Shikara Boat Ride Charges, and Houseboat Upgrade Charges (if not selected).",
+                "answerTamil": "Periyar Wildlife Sanctuary Entry Fee, Periyar Lake Boating Tickets, Bird Sanctuary Entry Fee, Shikara Boat Ride Charges மற்றும் Houseboat Upgrade Charges (தேர்வு செய்யப்படாவிட்டால்) ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Periyar Wildlife Sanctuary Entry Fee, Periyar Lake Boating Tickets, Bird Sanctuary Entry Fee, Shikara Boat Ride Charges और Houseboat Upgrade Charges (यदि चयनित नहीं है) के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2050"
@@ -15221,16 +17505,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai → Rameswaram → Kanyakumari 3 Days / 2 Nights Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Rameswaram to Kanyakumari tour?",
+                "questionTamil": "மதுரையிலிருந்து ராமேஸ்வரம் வழியாக கன்னியாகுமரிக்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से रामेश्वरम होते हुए कन्याकुमारी टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 3 Days / 2 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 3 நாட்கள் / 2 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 3 दिन / 2 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Rameswaram to Kanyakumari itinerary?",
+                "questionTamil": "மதுரை முதல் ராமேஸ்வரம் வழியாக கன்னியாகுமரி பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से रामेश्वरम होते हुए कन्याकुमारी यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Meenakshi Amman Temple, Koodal Azhagar Temple, Thiruparankundram Murugan Temple, Thirumalai Nayakkar Mahal, Sri Ramanathaswamy Temple, and Agni Theertham. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் மீனாட்சி அம்மன் கோவில், கூடல் அழகர் கோவில், திருப்பரங்குன்றம் முருகன் கோவில், திருமலை நாயக்கர் மகால், ஸ்ரீ ராமநாதசுவாமி கோவில் மற்றும் அக்னி தீர்த்தம் ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में मीनाक्षी अम्मन मंदिर, कूडल अळगर मंदिर, तिरुप्परंकुंद्रम मुरुगन मंदिर, तिरुमलाई नायक्कर महल, श्री रामनाथस्वामी मंदिर और अग्नि तीर्थ जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Madurai, Rameswaram & Kanyakumari Sightseeing as per the itinerary, Driver Allowance, and Toll & Parking Charges.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி மதுரை, ராமேஸ்வரம் மற்றும் கன்னியாகுமரி Sightseeing, ஓட்டுநர் Allowance மற்றும் Toll & Parking Charges ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार मदुरै, रामेश्वरम और कन्याकुमारी दर्शनीय स्थल, ड्राइवर भत्ता और टोल एवं पार्किंग शुल्क शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 2 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 2 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 2 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Temple Special Darshan Tickets, Vivekananda Rock Ferry Tickets, Entry Tickets, Dhanushkodi Local Vehicle Charges (if required), and Lunch & Dinner.",
+                "answerTamil": "Temple Special Darshan Tickets, Vivekananda Rock Ferry Tickets, Entry Tickets, Dhanushkodi Local Vehicle Charges (தேவைப்பட்டால்) மற்றும் Lunch & Dinner ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Temple Special Darshan Tickets, Vivekananda Rock Ferry Tickets, Entry Tickets, Dhanushkodi Local Vehicle Charges (यदि आवश्यक हो) और Lunch & Dinner के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2051"
@@ -15344,20 +17672,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Best Madurai, Trichy, Thanjavur & Rameswaram Tour Package | 3 Days / 2 Nights, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Tamil Nadu tour package suitable for families and couples?",
-                "questionTamil": "இந்த தமிழ்நாடு சுற்றுலா பேக்கேஜ் குடும்பங்கள் மற்றும் தம்பதிகளுக்கு ஏற்றதா?",
-                "questionHindi": "क्या यह तमिलनाडु टूर पैकेज परिवारों और कपल्स के लिए उपयुक्त है?",
-                "answer": "Yes. The tour covers heritage temples and coastal beaches with comfortable hotels and a relaxed pace, making it great for family groups and honeymooners alike. We tailor activities for kids, adults and seniors (e.g. easy walks, optional temple tours) so travelers of all ages enjoy it.",
-                "answerTamil": "ஆம். இந்த சுற்றுலா பேக்கேஜில் பாரம்பரிய கோயில்கள் மற்றும் கடலோர கடற்கரைகள் இடம்பெறுவதுடன், வசதியான ஹோட்டல்கள் மற்றும் நிதானமான பயணத் திட்டமும் உள்ளது. எனவே இது குடும்பக் குழுக்கள் மற்றும் ஹனிமூன் தம்பதிகளுக்கும் சிறந்ததாக இருக்கும். குழந்தைகள், பெரியவர்கள் மற்றும் மூத்த குடிமக்கள் என அனைத்து வயதினரும் மகிழ்ச்சியாகப் பயணம் செய்யும் வகையில், எளிதான நடைப்பயணங்கள் மற்றும் விருப்பத்திற்கேற்ப கோயில் சுற்றுலா போன்ற செயல்பாடுகளை நாங்கள் ஏற்பாடு செய்கிறோம்.",
-                "answerHindi": "हाँ। इस टूर में ऐतिहासिक मंदिर और समुद्र तट, आरामदायक होटल और एक आरामदायक यात्रा कार्यक्रम शामिल है, जिससे यह परिवारों और हनीमून कपल्स दोनों के लिए बेहतरीन है। हम बच्चों, वयस्कों और वरिष्ठ नागरिकों के लिए गतिविधियों को अनुकूलित करते हैं, जैसे आसान पैदल यात्राएँ और वैकल्पिक मंदिर भ्रमण, ताकि हर उम्र के यात्री इसका आनंद ले सकें।"
+                "question": "How long is the Madurai to Trichy to Thanjavur to Rameswaram to Madurai tour?",
+                "questionTamil": "மதுரையிலிருந்து திருச்சி, தஞ்சாவூர், ராமேஸ்வரம் வழியாக மீண்டும் மதுரைக்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से त्रिची, तंजावुर, रामेश्वरम होते हुए वापस मदुरै टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 3 Days / 2 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 3 நாட்கள் / 2 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 3 दिन / 2 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "Can we join the Tamil Nadu tour from Madurai or Chennai?",
-                "questionTamil": "மதுரை அல்லது சென்னையிலிருந்து தமிழ்நாடு சுற்றுலாவில் நாங்கள் இணைய முடியுமா?",
-                "questionHindi": "क्या हम मदुरै या चेन्नई से तमिलनाडु टूर में शामिल हो सकते हैं?",
-                "answer": "Absolutely. We offer pickup from Madurai or Chennai and coordinate train/flight arrivals into those cities. Our driver/guide will meet you at the station/airport and begin the tour, so you can easily join from any major city in Tamil Nadu.",
-                "answerTamil": "நிச்சயமாக. மதுரை அல்லது சென்னையிலிருந்து பிக்கப் வசதியை வழங்குகிறோம், மேலும் அந்த நகரங்களுக்கு வரும் ரயில்/விமான வருகைகளையும் ஒருங்கிணைக்கிறோம். எங்கள் ஓட்டுநர்/வழிகாட்டி உங்களை ரயில் நிலையம்/விமான நிலையத்தில் சந்தித்து சுற்றுலாவைத் தொடங்குவார். எனவே தமிழ்நாட்டின் எந்த முக்கிய நகரத்திலிருந்தும் நீங்கள் எளிதாக இந்த சுற்றுலாவில் இணையலாம்.",
-                "answerHindi": "बिल्कुल। हम मदुरै या चेन्नई से पिकअप की सुविधा देते हैं और इन शहरों में आने वाली ट्रेन या फ्लाइट के समय का समन्वय करते हैं। हमारे ड्राइवर या गाइड स्टेशन या एयरपोर्ट पर आपसे मिलेंगे और टूर शुरू करेंगे, इसलिए आप तमिलनाडु के किसी भी प्रमुख शहर से आसानी से टूर में शामिल हो सकते हैं।"
+                "question": "What are the main sightseeing places covered in the Madurai to Trichy to Thanjavur to Rameswaram to Madurai itinerary?",
+                "questionTamil": "மதுரை முதல் திருச்சி, தஞ்சாவூர், ராமேஸ்வரம் வழியாக மீண்டும் மதுரை பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से त्रिची, तंजावुर, रामेश्वरम होते हुए वापस मदुरै यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Meenakshi Amman Temple, Koodal Azhagar Temple, Thiruparankundram Murugan Temple, Thirumalai Nayakkar Mahal, Sri Ranganathaswamy Temple (Srirangam), and Rockfort Ucchi Pillayar Temple. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் மீனாட்சி அம்மன் கோவில், கூடல் அழகர் கோவில், திருப்பரங்குன்றம் முருகன் கோவில், திருமலை நாயக்கர் மகால், ஸ்ரீ ரங்கநாதசுவாமி கோவில் (ஸ்ரீரங்கம்) மற்றும் ராக்ஃபோர்ட் உச்சிப்பிள்ளையார் கோவில் ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में मीनाक्षी अम्मन मंदिर, कूडल अळगर मंदिर, तिरुप्परंकुंद्रम मुरुगन मंदिर, तिरुमलाई नायक्कर महल, श्री रंगनाथस्वामी मंदिर (श्रीरंगम) और रॉकफोर्ट उचि पिल्लैयार मंदिर जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Madurai, Trichy, Thanjavur & Rameswaram Sightseeing as per the itinerary, Driver Allowance, and Toll & Parking Charges.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி மதுரை, திருச்சி, தஞ்சாவூர் மற்றும் ராமேஸ்வரம் Sightseeing, ஓட்டுநர் Allowance மற்றும் Toll & Parking Charges ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार मदुरै, त्रिची, तंजावुर और रामेश्वरम दर्शनीय स्थल, ड्राइवर भत्ता और टोल एवं पार्किंग शुल्क शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 2 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 2 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 2 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Temple Special Darshan Tickets, Entry Tickets, Dhanushkodi Local Vehicle Charges (if required), Lunch & Dinner, and Personal Expenses.",
+                "answerTamil": "Temple Special Darshan Tickets, Entry Tickets, Dhanushkodi Local Vehicle Charges (தேவைப்பட்டால்), Lunch & Dinner மற்றும் Personal Expenses ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Temple Special Darshan Tickets, Entry Tickets, Dhanushkodi Local Vehicle Charges (यदि आवश्यक हो), Lunch & Dinner और Personal Expenses के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2052"
@@ -15468,16 +17836,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai → Kanyakumari → Thiruvananthapuram 3 Days / 2 Nights Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Kanyakumari to Thiruvananthapuram tour?",
+                "questionTamil": "மதுரையிலிருந்து கன்னியாகுமரி வழியாக திருவனந்தபுரத்திற்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से कन्याकुमारी होते हुए तिरुवनंतपुरम टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 3 Days / 2 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 3 நாட்கள் / 2 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 3 दिन / 2 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Kanyakumari to Thiruvananthapuram itinerary?",
+                "questionTamil": "மதுரை முதல் கன்னியாகுமரி வழியாக திருவனந்தபுரம் பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से कन्याकुमारी होते हुए तिरुवनंतपुरम यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Kanyakumari Bhagavathi Amman Temple, Triveni Sangam, Vivekananda Rock Memorial, Thiruvalluvar Statue, Glass Bridge, and Gandhi Memorial Mandapam. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் கன்னியாகுமரி பகவதி அம்மன் கோவில், திரிவேணி சங்கமம், விவேகானந்தர் பாறை நினைவகம், திருவள்ளுவர் சிலை, கண்ணாடி பாலம் மற்றும் காந்தி நினைவு மண்டபம் ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में कन्याकुमारी भगवती अम्मन मंदिर, त्रिवेणी संगम, विवेकानंद रॉक मेमोरियल, तिरुवल्लुवर प्रतिमा, ग्लास ब्रिज और गांधी मेमोरियल मंडपम जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Kanyakumari & Thiruvananthapuram Sightseeing as per the itinerary, Driver Allowance, and Toll & Parking Charges.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி கன்னியாகுமரி மற்றும் திருவனந்தபுரம் Sightseeing, ஓட்டுநர் Allowance மற்றும் Toll & Parking Charges ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार कन्याकुमारी और तिरुवनंतपुरम दर्शनीय स्थल, ड्राइवर भत्ता और टोल एवं पार्किंग शुल्क शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 2 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 2 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 2 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Vivekananda Rock Ferry Tickets, Poovar Boating Charges, Entry Tickets, Lunch & Dinner, and Personal Expenses.",
+                "answerTamil": "Vivekananda Rock Ferry Tickets, Poovar Boating Charges, Entry Tickets, Lunch & Dinner மற்றும் Personal Expenses ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Vivekananda Rock Ferry Tickets, Poovar Boating Charges, Entry Tickets, Lunch & Dinner और Personal Expenses के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2053"
@@ -15586,20 +17998,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai → Trichy → Thanjavur → Kumbakonam 3 Days / 2 Nights Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Tamil Nadu tour package suitable for families and couples?",
-                "questionTamil": "இந்த தமிழ்நாடு சுற்றுலா பேக்கேஜ் குடும்பங்கள் மற்றும் தம்பதிகளுக்கு ஏற்றதா?",
-                "questionHindi": "क्या यह तमिलनाडु टूर पैकेज परिवारों और कपल्स के लिए उपयुक्त है?",
-                "answer": "Yes. The tour covers heritage temples and coastal beaches with comfortable hotels and a relaxed pace, making it great for family groups and honeymooners alike. We tailor activities for kids, adults and seniors (e.g. easy walks, optional temple tours) so travelers of all ages enjoy it.",
-                "answerTamil": "ஆம். இந்த சுற்றுலா பேக்கேஜில் பாரம்பரிய கோயில்கள் மற்றும் கடலோர கடற்கரைகள் இடம்பெறுவதுடன், வசதியான ஹோட்டல்கள் மற்றும் நிதானமான பயணத் திட்டமும் உள்ளது. எனவே இது குடும்பக் குழுக்கள் மற்றும் ஹனிமூன் தம்பதிகளுக்கும் சிறந்ததாக இருக்கும். குழந்தைகள், பெரியவர்கள் மற்றும் மூத்த குடிமக்கள் என அனைத்து வயதினரும் மகிழ்ச்சியாகப் பயணம் செய்யும் வகையில், எளிதான நடைப்பயணங்கள் மற்றும் விருப்பத்திற்கேற்ப கோயில் சுற்றுலா போன்ற செயல்பாடுகளை நாங்கள் ஏற்பாடு செய்கிறோம்.",
-                "answerHindi": "हाँ। इस टूर में ऐतिहासिक मंदिर और समुद्र तट, आरामदायक होटल और एक आरामदायक यात्रा कार्यक्रम शामिल है, जिससे यह परिवारों और हनीमून कपल्स दोनों के लिए बेहतरीन है। हम बच्चों, वयस्कों और वरिष्ठ नागरिकों के लिए गतिविधियों को अनुकूलित करते हैं, जैसे आसान पैदल यात्राएँ और वैकल्पिक मंदिर भ्रमण, ताकि हर उम्र के यात्री इसका आनंद ले सकें।"
+                "question": "How long is the Madurai to Trichy to Thanjavur to Kumbakonam tour?",
+                "questionTamil": "மதுரையிலிருந்து திருச்சி, தஞ்சாவூர், கும்பகோணம் வழியாக சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से त्रिची, तंजावुर और कुंभकोणम टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 3 Days / 2 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 3 நாட்கள் / 2 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 3 दिन / 2 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "Can we join the Tamil Nadu tour from Madurai or Chennai?",
-                "questionTamil": "மதுரை அல்லது சென்னையிலிருந்து தமிழ்நாடு சுற்றுலாவில் நாங்கள் இணைய முடியுமா?",
-                "questionHindi": "क्या हम मदुरै या चेन्नई से तमिलनाडु टूर में शामिल हो सकते हैं?",
-                "answer": "Absolutely. We offer pickup from Madurai or Chennai and coordinate train/flight arrivals into those cities. Our driver/guide will meet you at the station/airport and begin the tour, so you can easily join from any major city in Tamil Nadu.",
-                "answerTamil": "நிச்சயமாக. மதுரை அல்லது சென்னையிலிருந்து பிக்கப் வசதியை வழங்குகிறோம், மேலும் அந்த நகரங்களுக்கு வரும் ரயில்/விமான வருகைகளையும் ஒருங்கிணைக்கிறோம். எங்கள் ஓட்டுநர்/வழிகாட்டி உங்களை ரயில் நிலையம்/விமான நிலையத்தில் சந்தித்து சுற்றுலாவைத் தொடங்குவார். எனவே தமிழ்நாட்டின் எந்த முக்கிய நகரத்திலிருந்தும் நீங்கள் எளிதாக இந்த சுற்றுலாவில் இணையலாம்.",
-                "answerHindi": "बिल्कुल। हम मदुरै या चेन्नई से पिकअप की सुविधा देते हैं और इन शहरों में आने वाली ट्रेन या फ्लाइट के समय का समन्वय करते हैं। हमारे ड्राइवर या गाइड स्टेशन या एयरपोर्ट पर आपसे मिलेंगे और टूर शुरू करेंगे, इसलिए आप तमिलनाडु के किसी भी प्रमुख शहर से आसानी से टूर में शामिल हो सकते हैं।"
+                "question": "What are the main sightseeing places covered in the Madurai to Trichy to Thanjavur to Kumbakonam itinerary?",
+                "questionTamil": "மதுரை முதல் திருச்சி, தஞ்சாவூர், கும்பகோணம் பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से त्रिची, तंजावुर और कुंभकोणम यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Sri Ranganathaswamy Temple (Srirangam), Rockfort Ucchi Pillayar Temple, Jambukeswarar Temple (Thiruvanaikaval), Brihadeeswarar Temple (UNESCO World Heritage Site), Thanjavur Royal Palace, and Saraswathi Mahal Library. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் ஸ்ரீ ரங்கநாதசுவாமி கோவில் (ஸ்ரீரங்கம்), ராக்ஃபோர்ட் உச்சிப்பிள்ளையார் கோவில், ஜம்புகேஸ்வரர் கோவில் (திருவானைக்காவல்), பிரகதீஸ்வரர் கோவில் (UNESCO உலக பாரம்பரிய தளம்), தஞ்சாவூர் அரண்மனை மற்றும் சரஸ்வதி மகால் நூலகம் ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में श्री रंगनाथस्वामी मंदिर (श्रीरंगम), रॉकफोर्ट उचि पिल्लैयार मंदिर, जम्बुकेश्वरर मंदिर (थिरुवानैकावल), बृहदीश्वर मंदिर (UNESCO विश्व धरोहर स्थल), तंजावुर रॉयल पैलेस और सरस्वती महल पुस्तकालय जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Trichy, Thanjavur & Kumbakonam Sightseeing as per the itinerary, Driver Allowance, and Toll & Parking Charges.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி திருச்சி, தஞ்சாவூர் மற்றும் கும்பகோணம் Sightseeing, ஓட்டுநர் Allowance மற்றும் Toll & Parking Charges ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार त्रिची, तंजावुर और कुंभकोणम दर्शनीय स्थल, ड्राइवर भत्ता और टोल एवं पार्किंग शुल्क शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 2 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 2 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 2 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Temple Special Darshan Tickets, Entry Tickets, Lunch & Dinner, Personal Expenses, and Guide Charges.",
+                "answerTamil": "Temple Special Darshan Tickets, Entry Tickets, Lunch & Dinner, Personal Expenses மற்றும் Guide Charges ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Temple Special Darshan Tickets, Entry Tickets, Lunch & Dinner, Personal Expenses और Guide Charges के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2055"
@@ -15730,16 +18182,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai → Rameswaram → Tiruchendur → Kanyakumari 4 Days / 3 Nights Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Rameswaram to Tiruchendur to Kanyakumari tour?",
+                "questionTamil": "மதுரையிலிருந்து ராமேஸ்வரம், திருச்செந்தூர் வழியாக கன்னியாகுமரிக்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से रामेश्वरम, तिरुचेंदूर होते हुए कन्याकुमारी टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 4 Days / 3 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 4 நாட்கள் / 3 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 4 दिन / 3 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Rameswaram to Tiruchendur to Kanyakumari itinerary?",
+                "questionTamil": "மதுரை முதல் ராமேஸ்வரம், திருச்செந்தூர் வழியாக கன்னியாகுமரி பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से रामेश्वरम, तिरुचेंदूर होते हुए कन्याकुमारी यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Meenakshi Amman Temple, Koodal Azhagar Temple, Thiruparankundram Murugan Temple, Thirumalai Nayakkar Mahal, Sri Ramanathaswamy Temple, and Agni Theertham. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் மீனாட்சி அம்மன் கோவில், கூடல் அழகர் கோவில், திருப்பரங்குன்றம் முருகன் கோவில், திருமலை நாயக்கர் மகால், ஸ்ரீ ராமநாதசுவாமி கோவில் மற்றும் அக்னி தீர்த்தம் ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में मीनाक्षी अम्मन मंदिर, कूडल अळगर मंदिर, तिरुप्परंकुंद्रम मुरुगन मंदिर, तिरुमलाई नायक्कर महल, श्री रामनाथस्वामी मंदिर और अग्नि तीर्थ जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Madurai, Rameswaram, Tiruchendur & Kanyakumari Sightseeing as per the itinerary, Driver Allowance, and Toll & Parking Charges.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி மதுரை, ராமேஸ்வரம், திருச்செந்தூர் மற்றும் கன்னியாகுமரி Sightseeing, ஓட்டுநர் Allowance மற்றும் Toll & Parking Charges ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार मदुरै, रामेश्वरम, तिरुचेंदूर और कन्याकुमारी दर्शनीय स्थल, ड्राइवर भत्ता और टोल एवं पार्किंग शुल्क शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 3 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 3 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 3 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Temple Special Darshan Tickets, Vivekananda Rock Ferry Tickets, Entry Tickets, Dhanushkodi Local Vehicle Charges (if required), and Lunch & Dinner.",
+                "answerTamil": "Temple Special Darshan Tickets, Vivekananda Rock Ferry Tickets, Entry Tickets, Dhanushkodi Local Vehicle Charges (தேவைப்பட்டால்) மற்றும் Lunch & Dinner ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Temple Special Darshan Tickets, Vivekananda Rock Ferry Tickets, Entry Tickets, Dhanushkodi Local Vehicle Charges (यदि आवश्यक हो) और Lunch & Dinner के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2056"
@@ -15866,16 +18362,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai → Kodaikanal → Munnar 4 Days / 3 Nights Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Kodaikanal to Munnar tour?",
+                "questionTamil": "மதுரையிலிருந்து கொடைக்கானல் வழியாக மூணாறுக்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से कोडाईकनाल होते हुए मुन्नार टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 4 Days / 3 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 4 நாட்கள் / 3 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 4 दिन / 3 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Kodaikanal to Munnar itinerary?",
+                "questionTamil": "மதுரை முதல் கொடைக்கானல் வழியாக மூணாறு பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से कोडाईकनाल होते हुए मुन्नार यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Silver Cascade Falls, Coaker's Walk, Bryant Park, Kodaikanal Lake, Pillar Rocks, and Pine Forest. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் சில்வர் கேஸ்கேட் அருவி, கோக்கர்ஸ் வாக், பிரையன்ட் பார்க், கொடைக்கானல் ஏரி, பில்லர் ராக்ஸ் மற்றும் பைன் காடு ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में सिल्वर कैस्केड फॉल्स, कोकर्स वॉक, ब्रायंट पार्क, कोडाईकनाल झील, पिलर रॉक्स और पाइन फॉरेस्ट जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Kodaikanal & Munnar Sightseeing as per the itinerary, Driver Allowance, and Toll & Parking Charges.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி கொடைக்கானல் மற்றும் மூணாறு Sightseeing, ஓட்டுநர் Allowance மற்றும் Toll & Parking Charges ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार कोडाईकनाल और मुन्नार दर्शनीय स्थल, ड्राइवर भत्ता और टोल एवं पार्किंग शुल्क शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 3 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 3 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 3 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Entry Tickets, Boating Charges, Kathakali & Kalari Show Tickets, Adventure Activities, and Lunch & Dinner.",
+                "answerTamil": "Entry Tickets, Boating Charges, Kathakali & Kalari Show Tickets, Adventure Activities மற்றும் Lunch & Dinner ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Entry Tickets, Boating Charges, Kathakali & Kalari Show Tickets, Adventure Activities और Lunch & Dinner के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2057"
@@ -16011,16 +18551,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai → Munnar → Vagamon → Thekkady 4 Days / 3 Nights Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Munnar to Vagamon to Thekkady tour?",
+                "questionTamil": "மதுரையிலிருந்து மூணாறு, வாகமன் வழியாக தேக்கடிக்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से मुन्नार, वागामोन होते हुए थेक्कडी टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 4 Days / 3 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 4 நாட்கள் / 3 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 4 दिन / 3 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Munnar to Vagamon to Thekkady itinerary?",
+                "questionTamil": "மதுரை முதல் மூணாறு, வாகமன் வழியாக தேக்கடி பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से मुन्नार, वागामोन होते हुए थेक्कडी यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Bodimettu View Point, Poopara View Point, Anayirangal Dam View Point, Chinnakanal Waterfalls, Lockhart Gap View Point, and Signal Point. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் போடிமெட்டு வியூ பாயிண்ட், பூப்பாறா வியூ பாயிண்ட், ஆனையிரங்கல் அணை வியூ பாயிண்ட், சின்னக்கனால் நீர்வீழ்ச்சி, லாக்ஹார்ட் கேப் வியூ பாயிண்ட் மற்றும் சிக்னல் பாயிண்ட் ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में बोडिमेट्टू व्यू पॉइंट, पूपारा व्यू पॉइंट, अनायिरंगल डैम व्यू पॉइंट, चिन्नाकनाल वॉटरफॉल्स, लॉकहार्ट गैप व्यू पॉइंट और सिग्नल पॉइंट जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Munnar, Vagamon & Thekkady Sightseeing as per the itinerary, Driver Allowance, and Toll & Parking Charges.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி மூணாறு, வாகமன் மற்றும் தேக்கடி Sightseeing, ஓட்டுநர் Allowance மற்றும் Toll & Parking Charges ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार मुन्नार, वागामोन और थेक्कडी दर्शनीय स्थल, ड्राइवर भत्ता और टोल एवं पार्किंग शुल्क शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 3 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 3 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 3 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Periyar Boating Tickets, Wildlife Sanctuary Entry Tickets, Adventure Activities, Elephant Ride Charges, and Kathakali & Kalari Show Tickets.",
+                "answerTamil": "Periyar Boating Tickets, Wildlife Sanctuary Entry Tickets, Adventure Activities, Elephant Ride Charges மற்றும் Kathakali & Kalari Show Tickets ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Periyar Boating Tickets, Wildlife Sanctuary Entry Tickets, Adventure Activities, Elephant Ride Charges और Kathakali & Kalari Show Tickets के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2058"
@@ -16154,16 +18738,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai → Munnar → Thekkady → Kumarakom 4 Days / 3 Nights Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Munnar to Thekkady to Kumarakom tour?",
+                "questionTamil": "மதுரையிலிருந்து மூணாறு, தேக்கடி வழியாக குமரகோமிற்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से मुन्नार, थेक्कडी होते हुए कुमारकोम टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 4 Days / 3 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 4 நாட்கள் / 3 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 4 दिन / 3 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Munnar to Thekkady to Kumarakom itinerary?",
+                "questionTamil": "மதுரை முதல் மூணாறு, தேக்கடி வழியாக குமரகோம் பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से मुन्नार, थेक्कडी होते हुए कुमारकोम यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Bodimettu View Point, Poopara View Point, Anayirangal Dam View Point, Chinnakanal Waterfalls, Lockhart Gap View Point, and Signal Point. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் போடிமெட்டு வியூ பாயிண்ட், பூப்பாறா வியூ பாயிண்ட், ஆனையிரங்கல் அணை வியூ பாயிண்ட், சின்னக்கனால் நீர்வீழ்ச்சி, லாக்ஹார்ட் கேப் வியூ பாயிண்ட் மற்றும் சிக்னல் பாயிண்ட் ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में बोडिमेट्टू व्यू पॉइंट, पूपारा व्यू पॉइंट, अनायिरंगल डैम व्यू पॉइंट, चिन्नाकनाल वॉटरफॉल्स, लॉकहार्ट गैप व्यू पॉइंट और सिग्नल पॉइंट जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Munnar, Thekkady & Kumarakom Sightseeing as per the itinerary, Driver Allowance, and Toll & Parking Charges.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி மூணாறு, தேக்கடி மற்றும் குமரகோம் Sightseeing, ஓட்டுநர் Allowance மற்றும் Toll & Parking Charges ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार मुन्नार, थेक्कडी और कुमारकोम दर्शनीय स्थल, ड्राइवर भत्ता और टोल एवं पार्किंग शुल्क शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 3 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 3 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 3 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Periyar Boating Tickets, Shikara Boat Ride Charges, Bird Sanctuary Entry Tickets, Kathakali Show Tickets, and Entry Tickets.",
+                "answerTamil": "Periyar Boating Tickets, Shikara Boat Ride Charges, Bird Sanctuary Entry Tickets, Kathakali Show Tickets மற்றும் Entry Tickets ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Periyar Boating Tickets, Shikara Boat Ride Charges, Bird Sanctuary Entry Tickets, Kathakali Show Tickets और Entry Tickets के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2059"
@@ -16297,16 +18925,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai → Munnar → Alleppey → Kochi 4 Days / 3 Nights Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Munnar to Alleppey to Kochi tour?",
+                "questionTamil": "மதுரையிலிருந்து மூணாறு, ஆலப்புழா வழியாக கொச்சிக்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से मुन्नार, अल्लेप्पी होते हुए कोच्चि टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 4 Days / 3 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 4 நாட்கள் / 3 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 4 दिन / 3 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Munnar to Alleppey to Kochi itinerary?",
+                "questionTamil": "மதுரை முதல் மூணாறு, ஆலப்புழா வழியாக கொச்சி பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से मुन्नार, अल्लेप्पी होते हुए कोच्चि यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Bodimedu View Point, Poopara View Point, Anayirangal Dam View Point, Chinnakanal Waterfalls, Lockhart Gap View Point, and Signal Point. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் போடிமேடு வியூ பாயிண்ட், பூப்பாறா வியூ பாயிண்ட், ஆனையிரங்கல் அணை வியூ பாயிண்ட், சின்னக்கனால் நீர்வீழ்ச்சி, லாக்ஹார்ட் கேப் வியூ பாயிண்ட் மற்றும் சிக்னல் பாயிண்ட் ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में बोडिमेडु व्यू पॉइंट, पूपारा व्यू पॉइंट, अनायिरंगल डैम व्यू पॉइंट, चिन्नाकनाल वॉटरफॉल्स, लॉकहार्ट गैप व्यू पॉइंट और सिग्नल पॉइंट जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. The tour provides pickup from Madurai and drop at Kochi.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. இந்த சுற்றுலாவில் மதுரையிலிருந்து Pickup மற்றும் கொச்சியில் Drop வசதி வழங்கப்படுகிறது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। इस टूर में मदुरै से पिकअप और कोच्चि में ड्रॉप की सुविधा दी जाती है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup from Madurai & Drop at Kochi, Munnar, Alleppey & Kochi Sightseeing as per the itinerary, Driver Allowance, and Toll & Parking Charges.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup மற்றும் கொச்சியில் Drop, பயணத் திட்டத்தின்படி மூணாறு, ஆலப்புழா மற்றும் கொச்சி Sightseeing, ஓட்டுநர் Allowance மற்றும் Toll & Parking Charges ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और कोच्चि में ड्रॉप, यात्रा कार्यक्रम के अनुसार मुन्नार, अल्लेप्पी और कोच्चि दर्शनीय स्थल, ड्राइवर भत्ता और टोल एवं पार्किंग शुल्क शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 3 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 3 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 3 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Houseboat Charges (unless included in the selected package), Shikara Boat Ride Charges, Entry Tickets, Kathakali & Kalari Show Tickets, and Lunch & Dinner.",
+                "answerTamil": "Houseboat Charges (தேர்ந்தெடுக்கப்பட்ட பேக்கேஜில் சேர்க்கப்படவில்லை என்றால்), Shikara Boat Ride Charges, Entry Tickets, Kathakali & Kalari Show Tickets மற்றும் Lunch & Dinner ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Houseboat Charges (यदि चुने गए पैकेज में शामिल नहीं हैं), Shikara Boat Ride Charges, Entry Tickets, Kathakali & Kalari Show Tickets और Lunch & Dinner के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2060"
@@ -16422,20 +19094,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai → Trichy → Thanjavur → Kumbakonam 4 Days / 3 Nights Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Tamil Nadu tour package suitable for families and couples?",
-                "questionTamil": "இந்த தமிழ்நாடு சுற்றுலா பேக்கேஜ் குடும்பங்கள் மற்றும் தம்பதிகளுக்கு ஏற்றதா?",
-                "questionHindi": "क्या यह तमिलनाडु टूर पैकेज परिवारों और कपल्स के लिए उपयुक्त है?",
-                "answer": "Yes. The tour covers heritage temples and coastal beaches with comfortable hotels and a relaxed pace, making it great for family groups and honeymooners alike. We tailor activities for kids, adults and seniors (e.g. easy walks, optional temple tours) so travelers of all ages enjoy it.",
-                "answerTamil": "ஆம். இந்த சுற்றுலா பேக்கேஜில் பாரம்பரிய கோயில்கள் மற்றும் கடலோர கடற்கரைகள் இடம்பெறுவதுடன், வசதியான ஹோட்டல்கள் மற்றும் நிதானமான பயணத் திட்டமும் உள்ளது. எனவே இது குடும்பக் குழுக்கள் மற்றும் ஹனிமூன் தம்பதிகளுக்கும் சிறந்ததாக இருக்கும். குழந்தைகள், பெரியவர்கள் மற்றும் மூத்த குடிமக்கள் என அனைத்து வயதினரும் மகிழ்ச்சியாகப் பயணம் செய்யும் வகையில், எளிதான நடைப்பயணங்கள் மற்றும் விருப்பத்திற்கேற்ப கோயில் சுற்றுலா போன்ற செயல்பாடுகளை நாங்கள் ஏற்பாடு செய்கிறோம்.",
-                "answerHindi": "हाँ। इस टूर में ऐतिहासिक मंदिर और समुद्र तट, आरामदायक होटल और एक आरामदायक यात्रा कार्यक्रम शामिल है, जिससे यह परिवारों और हनीमून कपल्स दोनों के लिए बेहतरीन है। हम बच्चों, वयस्कों और वरिष्ठ नागरिकों के लिए गतिविधियों को अनुकूलित करते हैं, जैसे आसान पैदल यात्राएँ और वैकल्पिक मंदिर भ्रमण, ताकि हर उम्र के यात्री इसका आनंद ले सकें।"
+                "question": "How long is the Madurai to Trichy to Thanjavur to Kumbakonam tour?",
+                "questionTamil": "மதுரையிலிருந்து திருச்சி, தஞ்சாவூர் வழியாக கும்பகோணம் சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से त्रिची, तंजावुर होते हुए कुंभकोणम टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 4 Days / 3 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 4 நாட்கள் / 3 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 4 दिन / 3 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "Can we join the Tamil Nadu tour from Madurai or Chennai?",
-                "questionTamil": "மதுரை அல்லது சென்னையிலிருந்து தமிழ்நாடு சுற்றுலாவில் நாங்கள் இணைய முடியுமா?",
-                "questionHindi": "क्या हम मदुरै या चेन्नई से तमिलनाडु टूर में शामिल हो सकते हैं?",
-                "answer": "Absolutely. We offer pickup from Madurai or Chennai and coordinate train/flight arrivals into those cities. Our driver/guide will meet you at the station/airport and begin the tour, so you can easily join from any major city in Tamil Nadu.",
-                "answerTamil": "நிச்சயமாக. மதுரை அல்லது சென்னையிலிருந்து பிக்கப் வசதியை வழங்குகிறோம், மேலும் அந்த நகரங்களுக்கு வரும் ரயில்/விமான வருகைகளையும் ஒருங்கிணைக்கிறோம். எங்கள் ஓட்டுநர்/வழிகாட்டி உங்களை ரயில் நிலையம்/விமான நிலையத்தில் சந்தித்து சுற்றுலாவைத் தொடங்குவார். எனவே தமிழ்நாட்டின் எந்த முக்கிய நகரத்திலிருந்தும் நீங்கள் எளிதாக இந்த சுற்றுலாவில் இணையலாம்.",
-                "answerHindi": "बिल्कुल। हम मदुरै या चेन्नई से पिकअप की सुविधा देते हैं और इन शहरों में आने वाली ट्रेन या फ्लाइट के समय का समन्वय करते हैं। हमारे ड्राइवर या गाइड स्टेशन या एयरपोर्ट पर आपसे मिलेंगे और टूर शुरू करेंगे, इसलिए आप तमिलनाडु के किसी भी प्रमुख शहर से आसानी से टूर में शामिल हो सकते हैं।"
+                "question": "What are the main sightseeing places covered in the Madurai to Trichy to Thanjavur to Kumbakonam itinerary?",
+                "questionTamil": "மதுரை முதல் திருச்சி, தஞ்சாவூர் வழியாக கும்பகோணம் பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से त्रिची, तंजावुर होते हुए कुंभकोणम यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Sri Ranganathaswamy Temple (Srirangam), Rockfort Ucchi Pillayar Temple, Jambukeswarar Temple (Thiruvanaikaval), Brihadeeswarar Temple (UNESCO World Heritage Site), Thanjavur Royal Palace, and Saraswathi Mahal Library. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் ஸ்ரீரங்கநாதசுவாமி கோவில் (ஸ்ரீரங்கம்), ராக்ஃபோர்ட் உச்சிப்பிள்ளையார் கோவில், ஜம்புகேஸ்வரர் கோவில் (திருவானைக்காவல்), பிரகதீஸ்வரர் கோவில் (UNESCO உலக பாரம்பரிய தளம்), தஞ்சாவூர் அரண்மனை மற்றும் சரஸ்வதி மஹால் நூலகம் ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में श्री रंगनाथस्वामी मंदिर (श्रीरंगम), रॉकफोर्ट उची पिल्लयार मंदिर, जम्बुकेश्वरर मंदिर (थिरुवनैकावल), बृहदीश्वर मंदिर (UNESCO विश्व धरोहर स्थल), तंजावुर रॉयल पैलेस और सरस्वती महल लाइब्रेरी जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Trichy, Thanjavur & Kumbakonam Sightseeing as per the itinerary, Driver Allowance, and Toll & Parking Charges.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி திருச்சி, தஞ்சாவூர் மற்றும் கும்பகோணம் Sightseeing, ஓட்டுநர் Allowance மற்றும் Toll & Parking Charges ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार त्रिची, तंजावुर और कुंभकोणम दर्शनीय स्थल, ड्राइवर भत्ता और टोल एवं पार्किंग शुल्क शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 3 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 3 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 3 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Temple Special Darshan Tickets, Entry Tickets, Lunch & Dinner, Personal Expenses, and Guide Charges.",
+                "answerTamil": "Temple Special Darshan Tickets, Entry Tickets, Lunch & Dinner, Personal Expenses மற்றும் Guide Charges ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Temple Special Darshan Tickets, Entry Tickets, Lunch & Dinner, Personal Expenses और Guide Charges के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2061"
@@ -16560,16 +19272,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai → Valparai → Athirappilly → Kochi 4 Days / 3 Nights Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Valparai to Athirappilly to Kochi tour?",
+                "questionTamil": "மதுரையிலிருந்து வால்பாறை, அதிரப்பள்ளி வழியாக கொச்சிக்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से वालपराई, अथिराप्पिल्ली होते हुए कोच्चि टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 4 Days / 3 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 4 நாட்கள் / 3 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 4 दिन / 3 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Valparai to Athirappilly to Kochi itinerary?",
+                "questionTamil": "மதுரை முதல் வால்பாறை, அதிரப்பள்ளி வழியாக கொச்சி பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से वालपराई, अथिराप्पिल्ली होते हुए कोच्चि यात्रा में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Aliyar Dam, Monkey Falls, Loam's View Point, Tea Estate View Points, Nallamudi View Point, and Balaji Temple. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் ஆழியார் அணை, Monkey Falls, Loam's View Point, Tea Estate View Points, Nallamudi View Point மற்றும் Balaji Temple ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में अलियार डैम, मंकी फॉल्स, लोम्स व्यू पॉइंट, टी एस्टेट व्यू पॉइंट्स, नल्लमुडी व्यू पॉइंट और बालाजी मंदिर जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. The tour provides pickup from Madurai and drop at Kochi.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. இந்த சுற்றுலாவில் மதுரையிலிருந்து Pickup மற்றும் கொச்சியில் Drop வசதி வழங்கப்படுகிறது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। इस टूर में मदुरै से पिकअप और कोच्चि में ड्रॉप की सुविधा दी जाती है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup from Madurai & Drop at Kochi, Valparai, Athirappilly & Kochi Sightseeing as per the itinerary, Driver Allowance, and Toll & Parking Charges.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup மற்றும் கொச்சியில் Drop, பயணத் திட்டத்தின்படி வால்பாறை, அதிரப்பள்ளி மற்றும் கொச்சி Sightseeing, ஓட்டுநர் Allowance மற்றும் Toll & Parking Charges ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और कोच्चि में ड्रॉप, यात्रा कार्यक्रम के अनुसार वालपराई, अथिराप्पिल्ली और कोच्चि दर्शनीय स्थल, ड्राइवर भत्ता और टोल एवं पार्किंग शुल्क शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 3 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 3 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 3 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Entry Tickets, Camera Charges, Adventure Activities, Lunch & Dinner, and Personal Expenses.",
+                "answerTamil": "Entry Tickets, Camera Charges, Adventure Activities, Lunch & Dinner மற்றும் Personal Expenses ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Entry Tickets, Camera Charges, Adventure Activities, Lunch & Dinner और Personal Expenses के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2063"
@@ -16716,16 +19472,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai → Kodaikanal → Munnar → Thekkady 5 Days / 4 Nights Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Kodaikanal to Munnar to Thekkady tour?",
+                "questionTamil": "மதுரை முதல் கொடைக்கானல், மூணாறு, தேக்கடி சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से कोडाइकनाल, मुन्नार और थेक्कडी टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 5 Days / 4 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 5 நாட்கள் / 4 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 5 दिन / 4 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Kodaikanal to Munnar to Thekkady itinerary?",
+                "questionTamil": "மதுரை முதல் கொடைக்கானல், மூணாறு, தேக்கடி பயணத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से कोडाइकनाल, मुन्नार और थेक्कडी यात्रा में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Silver Cascade Falls, Coaker's Walk, Bryant Park, Kodaikanal Lake, Pillar Rocks, and Pine Forest. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் சில்வர் கேஸ்கேட் நீர்வீழ்ச்சி, கோக்கர்ஸ் வாக், பிரையன்ட் பார்க், கொடைக்கானல் ஏரி, பில்லர் ராக்ஸ் மற்றும் பைன் ஃபாரஸ்ட் ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में सिल्वर कैस्केड फॉल्स, कोकर्स वॉक, ब्रायंट पार्क, कोडाइकनाल लेक, पिलर रॉक्स और पाइन फॉरेस्ट जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Arrival and drop are available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर ड्रॉप की सुविधा भी उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Kodaikanal, Munnar & Thekkady Sightseeing as per the itinerary, Driver Allowance, and Toll & Parking Charges.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி கொடைக்கானல், மூணாறு மற்றும் தேக்கடி Sightseeing, ஓட்டுநர் Allowance மற்றும் Toll & Parking Charges ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप एवं ड्रॉप, यात्रा कार्यक्रम के अनुसार कोडाइकनाल, मुन्नार और थेक्कडी दर्शनीय स्थल, ड्राइवर भत्ता और टोल एवं पार्किंग शुल्क शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 4 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 4 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 4 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Entry Tickets, Boating Charges, Periyar Boating Tickets, Kathakali & Kalari Show Tickets, and Adventure Activities.",
+                "answerTamil": "Entry Tickets, Boating Charges, Periyar Boating Tickets, Kathakali & Kalari Show Tickets மற்றும் Adventure Activities ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Entry Tickets, Boating Charges, Periyar Boating Tickets, Kathakali & Kalari Show Tickets और Adventure Activities के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2064"
@@ -16794,18 +19594,55 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai to Palani One Day Trip, Seek the Blessings of Lord Murugan with Logaa Holidays, Palani Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "Can I do the Madurai to Palani trip in one day?",
+                "questionTamil": "மதுரையிலிருந்து பழனிக்கு ஒரு நாள் பயணமாக செல்ல முடியுமா?",
+                "questionHindi": "क्या मैं मदुरै से पलानी की यात्रा एक दिन में कर सकता हूँ?",
+                "answer": "Yes. This itinerary is planned as a one-day trip, with sightseeing and travel arranged according to the schedule in the package.",
+                "answerTamil": "ஆம். இந்த பயணத்திட்டம் ஒரு நாள் பயணமாக திட்டமிடப்பட்டுள்ளது. தொகுப்பில் குறிப்பிடப்பட்டுள்ள அட்டவணைக்கு ஏற்ப பயணம் மற்றும் சுற்றுலா இடங்களை பார்வையிடும் வகையில் ஏற்பாடு செய்யப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। यह यात्रा कार्यक्रम एक दिवसीय यात्रा के रूप में तैयार किया गया है, जिसमें पैकेज में दिए गए कार्यक्रम के अनुसार यात्रा और दर्शनीय स्थलों का भ्रमण शामिल है."
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Palani itinerary?",
+                "questionTamil": "மதுரை முதல் பழனி பயணத்திட்டத்தில் இடம்பெறும் முக்கியமான சுற்றுலா இடங்கள் எவை?",
+                "questionHindi": "मदुरै से पलानी यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Arulmigu Dhandayuthapani Swamy Temple, Thiru Avinankudi Temple, Palani Temple Shopping Area, and Palani Hill View Points. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத்திட்டத்தில் அருள்மிகு தண்டாயுதபாணி சுவாமி கோவில், திரு ஆவினன்குடி கோவில், பழனி கோவில் ஷாப்பிங் பகுதி மற்றும் பழனி மலை View Points ஆகிய முக்கிய இடங்கள் இடம்பெறுகின்றன. சுற்றுலா பார்வைகள் தினசரி பயணத்திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்து அமையும்.",
+                "answerHindi": "इस यात्रा कार्यक्रम में अरुल्मिगु दंडायुधपाणि स्वामी मंदिर, थिरु आविननकुडी मंदिर, पलानी मंदिर शॉपिंग क्षेत्र और पलानी हिल व्यू पॉइंट्स जैसे प्रमुख स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के यात्रा कार्यक्रम और उपलब्ध समय के अनुसार होगा."
+            },
+            {
+                "question": "What pickup and drop options are available for the Madurai to Palani tour?",
+                "questionTamil": "மதுரை முதல் பழனி சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "मदुरै से पलानी टूर के लिए पिकअप और ड्रॉप की क्या सुविधाएँ उपलब्ध हैं?",
+                "answer": "Pickup is scheduled at 06:00 AM from your Madurai Hotel, Airport, Railway Station, or Bus Stand. Arrival and drop at your Madurai Hotel, Airport, Railway Station, or Bus Stand is scheduled at around 07:30 PM.",
+                "answerTamil": "காலை 06:00 மணிக்கு மதுரை ஹோட்டல், விமான நிலையம், ரயில் நிலையம் அல்லது பேருந்து நிலையத்திலிருந்து Pickup செய்யப்படும். மாலை சுமார் 07:30 மணிக்கு மதுரை ஹோட்டல், விமான நிலையம், ரயில் நிலையம் அல்லது பேருந்து நிலையத்தில் Arrival மற்றும் Drop வழங்கப்படும்.",
+                "answerHindi": "सुबह 06:00 बजे मदुरै होटल, एयरपोर्ट, रेलवे स्टेशन या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। शाम लगभग 07:30 बजे मदुरै होटल, एयरपोर्ट, रेलवे स्टेशन या बस स्टैंड पर वापसी और ड्रॉप की सुविधा दी जाएगी."
+            },
+            {
+                "question": "What is included in the Madurai to Palani tour package?",
+                "questionTamil": "மதுரை முதல் பழனி சுற்றுலா தொகுப்பில் என்னென்ன வசதிகள் சேர்க்கப்பட்டுள்ளன?",
+                "questionHindi": "मदुरै से पलानी टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a private A/C vehicle, pickup and drop, an experienced driver, parking charges, and driver allowance. Our professional drivers ensure a safe and comfortable journey.",
+                "answerTamil": "இந்த தொகுப்பில் தனியார் ஏ.சி. வாகனம், Pickup மற்றும் Drop, அனுபவமிக்க ஓட்டுநர், பார்க்கிங் கட்டணங்கள் மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன. எங்கள் தொழில்முறை ஓட்டுநர்கள் பாதுகாப்பான மற்றும் வசதியான பயணத்தை உறுதி செய்கிறார்கள்.",
+                "answerHindi": "इस पैकेज में निजी ए.सी. वाहन, पिकअप और ड्रॉप, अनुभवी ड्राइवर, पार्किंग शुल्क और ड्राइवर भत्ता शामिल हैं। हमारे पेशेवर ड्राइवर सुरक्षित और आरामदायक यात्रा सुनिश्चित करते हैं."
+            },
+            {
+                "question": "Does the Madurai to Palani one day package include hotel accommodation and breakfast?",
+                "questionTamil": "மதுரை முதல் பழனி ஒரு நாள் சுற்றுலா தொகுப்பில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या मदुरै से पलानी एक दिवसीय पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "No. This is a one-day package, and no overnight hotel stay is listed. Accommodation and breakfast are not part of the stated inclusions.",
+                "answerTamil": "இல்லை. இது ஒரு நாள் சுற்றுலா தொகுப்பாகும், இதில் இரவு நேர ஹோட்டல் தங்குமிடம் குறிப்பிடப்படவில்லை. தங்குமிடம் மற்றும் காலை உணவு இந்த தொகுப்பில் சேர்க்கப்படவில்லை.",
+                "answerHindi": "नहीं। यह एक दिवसीय पैकेज है और इसमें रातभर होटल में ठहरने की सुविधा शामिल नहीं है। आवास और नाश्ता इस पैकेज की दी गई सुविधाओं में शामिल नहीं हैं."
+            },
+            {
+                "question": "Which costs are extra in the Madurai to Palani tour package?",
+                "questionTamil": "மதுரை முதல் பழனி சுற்றுலா தொகுப்பில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "मदुरै से पलानी टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Temple Special Darshan Tickets, Rope Car or Winch Railway Tickets, Entry Fees if applicable, Meals and Beverages, and Personal Expenses.",
+                "answerTamil": "கோவில் சிறப்பு தரிசன டிக்கெட்டுகள், Rope Car அல்லது Winch Railway டிக்கெட்டுகள், பொருந்தும் இடங்களில் நுழைவுக் கட்டணங்கள், உணவு மற்றும் பானங்கள் மற்றும் தனிப்பட்ட செலவுகள் கூடுதல் கட்டணங்களாகும்.",
+                "answerHindi": "मंदिर विशेष दर्शन टिकट, रोप कार या विन्च रेलवे टिकट, लागू होने पर प्रवेश शुल्क, भोजन और पेय पदार्थ तथा व्यक्तिगत खर्च अतिरिक्त शुल्क के अंतर्गत आते हैं."
             }
-        ],
+        ]
+        ,
         "id": "2065"
     },
     '2066': {
@@ -16866,16 +19703,52 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai – Pillayarpatti – Kundrakudi – Thirukoshtiyur One Day Temple Tour, Madurai Temple Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "Can I do the Madurai - Pillayarpatti - Kundrakudi - Thirukoshtiyur trip in one day?",
+                "questionTamil": "மதுரை - பிள்ளையார்பட்டி - குன்றக்குடி - திருக்கோஷ்டியூர் பயணத்தை ஒரு நாளில் மேற்கொள்ள முடியுமா?",
+                "questionHindi": "क्या मैं मदुरै - पिल्लैयारपट्टी - कुंद्रக்கुडी - तिरुकोष्ठियूर यात्रा एक दिन में कर सकता हूँ?",
+                "answer": "Yes. This itinerary is planned as a full-day trip of approximately 10 to 12 hours, with sightseeing and travel arranged according to the schedule in the package.",
+                "answerTamil": "ஆம். இந்த பயணத்திட்டம் சுமார் 10 முதல் 12 மணி நேரம் கொண்ட முழு நாள் பயணமாக திட்டமிடப்பட்டுள்ளது. தொகுப்பில் குறிப்பிடப்பட்டுள்ள அட்டவணைக்கு ஏற்ப பயணம் மற்றும் சுற்றுலா இடங்களை பார்வையிடும் வகையில் ஏற்பாடு செய்யப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। यह यात्रा कार्यक्रम लगभग 10 से 12 घंटे की पूरे दिन की यात्रा के रूप में तैयार किया गया है, जिसमें पैकेज में दिए गए कार्यक्रम के अनुसार यात्रा और दर्शनीय स्थलों का भ्रमण शामिल है."
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai - Pillayarpatti - Kundrakudi - Thirukoshtiyur itinerary?",
+                "questionTamil": "மதுரை - பிள்ளையார்பட்டி - குன்றக்குடி - திருக்கோஷ்டியூர் பயணத்திட்டத்தில் இடம்பெறும் முக்கியமான சுற்றுலா இடங்கள் எவை?",
+                "questionHindi": "मदुरै - पिल्लैयारपट्टी - कुंद्रக்கुडी - तिरुकोष्ठियूर यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Meenakshi Amman Temple in Madurai, Pillayarpatti Karpaga Vinayagar Temple, Kundrakudi Murugan Temple, and Sri Sowmya Narayana Perumal Temple at Thirukoshtiyur. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத்திட்டத்தில் மதுரை மீனாட்சி அம்மன் கோவில், பிள்ளையார்பட்டி கற்பக விநாயகர் கோவில், குன்றக்குடி முருகன் கோவில் மற்றும் திருக்கோஷ்டியூரில் உள்ள ஸ்ரீ சௌம்ய நாராயண பெருமாள் கோவில் ஆகிய முக்கிய இடங்கள் இடம்பெறுகின்றன. மீனாட்சி அம்மன் கோவிலில் மீனாட்சி அம்மன் மற்றும் சுந்தரேஸ்வரரை தரிசித்து அருள் பெறலாம். சுற்றுலா பார்வைகள் தினசரி பயணத்திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்து அமையும்.",
+                "answerHindi": "इस यात्रा कार्यक्रम में मदुरै मीनाक्षी अम्मन मंदिर, पिल्लैयारपट्टी करपगा विनायगर मंदिर, कुंद्रக்கुडी मुरुगन मंदिर और तिरुकोष्ठियूर स्थित श्री सौम्य नारायण पेरुमल मंदिर जैसे प्रमुख स्थल शामिल हैं। मीनाक्षी अम्मन मंदिर में देवी मीनाक्षी और भगवान सुंदरेश्वर के दर्शन किए जा सकते हैं। दर्शनीय स्थलों का भ्रमण दिन के यात्रा कार्यक्रम और उपलब्ध समय के अनुसार होगा."
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस यात्रा के लिए पिकअप और ड्रॉप की क्या सुविधाएँ उपलब्ध हैं?",
+                "answer": "Pickup and drop are available at Madurai Airport, Madurai Railway Junction, or your Hotel, as stated in the package.",
+                "answerTamil": "தொகுப்பில் குறிப்பிடப்பட்டுள்ளபடி, மதுரை விமான நிலையம், மதுரை ரயில்வே ஜங்ஷன் அல்லது உங்கள் ஹோட்டலில் இருந்து Pickup மற்றும் அதேபோன்ற விருப்பமான இடத்தில் Drop வசதி வழங்கப்படுகிறது.",
+                "answerHindi": "पैकेज में बताए अनुसार मदुरै एयरपोर्ट, मदुरै रेलवे जंक्शन या आपके होटल से पिकअप और ड्रॉप की सुविधा उपलब्ध है."
+            },
+            {
+                "question": "What is included in the Madurai - Pillayarpatti - Kundrakudi - Thirukoshtiyur tour package?",
+                "questionTamil": "மதுரை - பிள்ளையார்பட்டி - குன்றக்குடி - திருக்கோஷ்டியூர் சுற்றுலா தொகுப்பில் என்னென்ன வசதிகள் சேர்க்கப்பட்டுள்ளன?",
+                "questionHindi": "मदुरै - पिल्लैयारपट्टी - कुंद्रக்கुडी - तिरुकोष्ठियूर टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a private AC vehicle, professional driver, pickup and drop, fuel charges, and driver allowance.",
+                "answerTamil": "இந்த தொகுப்பில் தனியார் ஏ.சி. வாகனம், தொழில்முறை ஓட்டுநர், Pickup மற்றும் Drop, எரிபொருள் கட்டணங்கள் மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में निजी ए.सी. वाहन, पेशेवर ड्राइवर, पिकअप और ड्रॉप, ईंधन शुल्क और ड्राइवर भत्ता शामिल हैं."
+            },
+            {
+                "question": "Does this one day package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த ஒரு நாள் சுற்றுலா தொகுப்பில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस एक दिवसीय पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "No. This is a one-day package, and no overnight hotel stay is listed. Accommodation and breakfast are not part of the stated inclusions.",
+                "answerTamil": "இல்லை. இது ஒரு நாள் சுற்றுலா தொகுப்பாகும், இதில் இரவு நேர ஹோட்டல் தங்குமிடம் குறிப்பிடப்படவில்லை. தங்குமிடம் மற்றும் காலை உணவு இந்த தொகுப்பில் சேர்க்கப்படவில்லை.",
+                "answerHindi": "नहीं। यह एक दिवसीय पैकेज है और इसमें रातभर होटल में ठहरने की सुविधा शामिल नहीं है। आवास और नाश्ता इस पैकेज की दी गई सुविधाओं में शामिल नहीं हैं."
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா தொகுப்பில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Temple Special Darshan Tickets, Entry Fees if applicable, Meals, and Personal Expenses.",
+                "answerTamil": "கோவில் சிறப்பு தரிசன டிக்கெட்டுகள், பொருந்தும் இடங்களில் நுழைவுக் கட்டணங்கள், உணவு மற்றும் தனிப்பட்ட செலவுகள் கூடுதல் கட்டணங்களாகும்.",
+                "answerHindi": "मंदिर विशेष दर्शन टिकट, लागू होने पर प्रवेश शुल्क, भोजन और व्यक्तिगत खर्च अतिरिक्त शुल्क के अंतर्गत आते हैं."
             }
         ],
         "id": "2066"
@@ -16942,16 +19815,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai to Courtallam One Day Tour Package, Best Courtallam One Day Trip from Madurai | Private Cab Tour, Courtallam Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "Can I do the Madurai to Courtallam trip in one day?",
+                "questionTamil": "மதுரையிலிருந்து குற்றாலத்திற்கு ஒரு நாள் பயணமாக செல்ல முடியுமா?",
+                "questionHindi": "क्या मैं मदुरै से कुट्रालम की यात्रा एक दिन में कर सकता हूँ?",
+                "answer": "Yes. This itinerary is planned as a one-day trip, with sightseeing and travel arranged according to the schedule in the package.",
+                "answerTamil": "ஆம். இந்த பயணத்திட்டம் ஒரு நாள் பயணமாக திட்டமிடப்பட்டுள்ளது. தொகுப்பில் குறிப்பிடப்பட்டுள்ள அட்டவணைக்கு ஏற்ப பயணம் மற்றும் சுற்றுலா இடங்களை பார்வையிடும் வகையில் ஏற்பாடு செய்யப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। यह यात्रा कार्यक्रम एक दिवसीय यात्रा के रूप में तैयार किया गया है, जिसमें पैकेज में दिए गए कार्यक्रम के अनुसार यात्रा और दर्शनीय स्थलों का भ्रमण शामिल है."
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Courtallam itinerary?",
+                "questionTamil": "மதுரை முதல் குற்றாலம் பயணத்திட்டத்தில் இடம்பெறும் முக்கியமான சுற்றுலா இடங்கள் எவை?",
+                "questionHindi": "मदुरै से कुट्रालम यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Main Falls (Peraruvi), Five Falls (Aintharuvi), Old Courtallam Falls (Pazhaya Courtallam), Tiger Falls if open, and Kutralanathar Temple. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத்திட்டத்தில் மெயின் ஃபால்ஸ் (பேரருவி), ஃபைவ் ஃபால்ஸ் (ஐந்தருவி), பழைய குற்றாலம் அருவி, டைகர் ஃபால்ஸ் (திறந்திருக்கும் பட்சத்தில்) மற்றும் குற்றாலநாதர் கோவில் ஆகிய முக்கிய இடங்கள் இடம்பெறுகின்றன. சுற்றுலா பார்வைகள் தினசரி பயணத்திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்து அமையும்.",
+                "answerHindi": "इस यात्रा कार्यक्रम में मेन फॉल्स (पेरारुवी), फाइव फॉल्स (ऐंठरुवी), ओल्ड कुट्रालम फॉल्स (पझया कुट्रालम), टाइगर फॉल्स यदि खुला हो, और कुट्रालनाथर मंदिर जैसे प्रमुख स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के यात्रा कार्यक्रम और उपलब्ध समय के अनुसार होगा."
+            },
+            {
+                "question": "What pickup and drop options are available for the Madurai to Courtallam tour?",
+                "questionTamil": "மதுரை முதல் குற்றாலம் சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "मदुरै से कुट्रालम टूर के लिए पिकअप और ड्रॉप की क्या सुविधाएँ उपलब्ध हैं?",
+                "answer": "Pickup is scheduled at 06:00 AM from Madurai Airport, Railway Station, Hotel, or Bus Stand. Arrival and drop at Madurai Airport, Railway Station, Hotel, or Bus Stand is scheduled at around 07:30 PM.",
+                "answerTamil": "காலை 06:00 மணிக்கு மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup செய்யப்படும். மாலை சுமார் 07:30 மணிக்கு மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Arrival மற்றும் Drop வழங்கப்படும்.",
+                "answerHindi": "सुबह 06:00 बजे मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। शाम लगभग 07:30 बजे मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर वापसी और ड्रॉप की सुविधा दी जाएगी."
+            },
+            {
+                "question": "What is included in the Madurai to Courtallam tour package?",
+                "questionTamil": "மதுரை முதல் குற்றாலம் சுற்றுலா தொகுப்பில் என்னென்ன வசதிகள் சேர்க்கப்பட்டுள்ளன?",
+                "questionHindi": "मदुरै से कुट्रालम टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a private A/C vehicle, pickup and drop from Madurai, Courtallam sightseeing as per the itinerary, an experienced driver, and driver allowance.",
+                "answerTamil": "இந்த தொகுப்பில் தனியார் ஏ.சி. வாகனம், மதுரையிலிருந்து Pickup மற்றும் Drop, பயணத்திட்டத்தின்படி குற்றாலம் Sightseeing, அனுபவமிக்க ஓட்டுநர் மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में निजी ए.सी. वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार कुट्रालम दर्शनीय स्थल भ्रमण, अनुभवी ड्राइवर और ड्राइवर भत्ता शामिल हैं."
+            },
+            {
+                "question": "Does the Madurai to Courtallam one day package include hotel accommodation and breakfast?",
+                "questionTamil": "மதுரை முதல் குற்றாலம் ஒரு நாள் சுற்றுலா தொகுப்பில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या मदुरै से कुट्रालम एक दिवसीय पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "No. This is a one-day package, and no overnight hotel stay is listed. Accommodation and breakfast are not part of the stated inclusions.",
+                "answerTamil": "இல்லை. இது ஒரு நாள் சுற்றுலா தொகுப்பாகும், இதில் இரவு நேர ஹோட்டல் தங்குமிடம் குறிப்பிடப்படவில்லை. தங்குமிடம் மற்றும் காலை உணவு இந்த தொகுப்பில் சேர்க்கப்படவில்லை.",
+                "answerHindi": "नहीं। यह एक दिवसीय पैकेज है और इसमें रातभर होटल में ठहरने की सुविधा शामिल नहीं है। आवास और नाश्ता इस पैकेज की दी गई सुविधाओं में शामिल नहीं हैं."
+            },
+            {
+                "question": "Which costs are extra in the Madurai to Courtallam tour package?",
+                "questionTamil": "மதுரை முதல் குற்றாலம் சுற்றுலா தொகுப்பில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "मदुरै से कुट्रालम टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Entry Tickets if applicable, Lunch and Dinner, Personal Expenses, and Guide Services.",
+                "answerTamil": "பொருந்தும் இடங்களில் நுழைவுக் கட்டணங்கள், மதிய உணவு மற்றும் இரவு உணவு, தனிப்பட்ட செலவுகள் மற்றும் வழிகாட்டி சேவைகள் கூடுதல் கட்டணங்களாகும்.",
+                "answerHindi": "लागू होने पर प्रवेश शुल्क, दोपहर और रात का भोजन, व्यक्तिगत खर्च तथा गाइड सेवाएँ अतिरिक्त शुल्क के अंतर्गत आते हैं."
+            },
+            {
+                "question": "Can I customize the Madurai to Courtallam day trip itinerary?",
+                "questionTamil": "மதுரை முதல் குற்றாலம் ஒரு நாள் பயணத்திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या मैं मदुरै से कुट्रालम एक दिवसीय यात्रा कार्यक्रम को कस्टमाइज़ कर सकता हूँ?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to your booking requirements and travel preferences.",
+                "answerTamil": "ஆம். தனிப்பயனாக்கப்பட்ட சுற்றுலா திட்டங்கள் கிடைக்கின்றன. உங்கள் முன்பதிவு தேவைகள் மற்றும் பயண விருப்பங்களுக்கு ஏற்ப பயணத்திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। कस्टमाइज़्ड टूर प्लान उपलब्ध हैं। आपकी बुकिंग आवश्यकताओं और यात्रा प्राथमिकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है."
             }
         ],
         "id": "2068"
@@ -17053,16 +19970,52 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai to Rameswaram 2 Days Tour Package, Madurai & Rameswaram Tour, Tamil Nadu Pilgrimage, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Rameswaram tour?",
+                "questionTamil": "மதுரை முதல் ராமேஸ்வரம் சுற்றுலா எத்தனை நாட்கள் கொண்டது?",
+                "questionHindi": "मदुरै से रामेश्वरम टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 2 Days / 1 Night, with sightseeing and travel arranged according to the package schedule.",
+                "answerTamil": "இந்த Logaa Holidays பயணத்திட்டம் 2 நாட்கள் / 1 இரவு கொண்டதாக திட்டமிடப்பட்டுள்ளது. தொகுப்பில் குறிப்பிடப்பட்டுள்ள அட்டவணைக்கு ஏற்ப பயணம் மற்றும் சுற்றுலா இடங்களை பார்வையிடும் வகையில் ஏற்பாடு செய்யப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 2 दिन / 1 रात के लिए तैयार किया गया है, जिसमें पैकेज के कार्यक्रम के अनुसार यात्रा और दर्शनीय स्थलों का भ्रमण शामिल है."
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Rameswaram itinerary?",
+                "questionTamil": "மதுரை முதல் ராமேஸ்வரம் பயணத்திட்டத்தில் இடம்பெறும் முக்கியமான சுற்றுலா இடங்கள் எவை?",
+                "questionHindi": "मदुरै से रामेश्वरम यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Meenakshi Amman Temple, Koodal Azhagar Temple, Thiruparankundram Murugan Temple, Thirumalai Nayakkar Mahal, Pamban Road Bridge View Point, and Pamban Railway Bridge View Point. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத்திட்டத்தில் மீனாட்சி அம்மன் கோவில், கூடல் அழகர் கோவில், திருப்பரங்குன்றம் முருகன் கோவில், திருமலை நாயக்கர் மகால், பாம்பன் சாலை பாலம் View Point மற்றும் பாம்பன் ரயில்வே பாலம் View Point ஆகிய முக்கிய இடங்கள் இடம்பெறுகின்றன. சுற்றுலா பார்வைகள் தினசரி பயணத்திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்து அமையும்.",
+                "answerHindi": "इस यात्रा कार्यक्रम में मीनाक्षी अम्मन मंदिर, कूडल अळगर मंदिर, तिरुप्परंकुंद्रम मुरुगन मंदिर, तिरुमलाई नायक्कर महल, पंबन रोड ब्रिज व्यू पॉइंट और पंबन रेलवे ब्रिज व्यू पॉइंट जैसे प्रमुख स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के यात्रा कार्यक्रम और उपलब्ध समय के अनुसार होगा."
+            },
+            {
+                "question": "What pickup and drop options are available for the Madurai to Rameswaram tour?",
+                "questionTamil": "மதுரை முதல் ராமேஸ்வரம் சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "मदुरै से रामेश्वरम टूर के लिए पिकअप और ड्रॉप की क्या सुविधाएँ उपलब्ध हैं?",
+                "answer": "Pickup and drop are available at Madurai Airport, Railway Station, Hotel, or Bus Stand, as stated in the package.",
+                "answerTamil": "தொகுப்பில் குறிப்பிடப்பட்டுள்ளபடி, மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Pickup மற்றும் Drop வசதிகள் கிடைக்கின்றன.",
+                "answerHindi": "पैकेज में बताए अनुसार मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप और ड्रॉप की सुविधा उपलब्ध है."
+            },
+            {
+                "question": "What is included in the Madurai to Rameswaram tour package?",
+                "questionTamil": "மதுரை முதல் ராமேஸ்வரம் சுற்றுலா தொகுப்பில் என்னென்ன வசதிகள் சேர்க்கப்பட்டுள்ளன?",
+                "questionHindi": "मदुरै से रामेश्वरम टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a private A/C vehicle, pickup and drop from Madurai, an experienced driver, parking charges, and driver allowance.",
+                "answerTamil": "இந்த தொகுப்பில் தனியார் ஏ.சி. வாகனம், மதுரையிலிருந்து Pickup மற்றும் Drop, அனுபவமிக்க ஓட்டுநர், பார்க்கிங் கட்டணங்கள் மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में निजी ए.सी. वाहन, मदुरै से पिकअप और ड्रॉप, अनुभवी ड्राइवर, पार्किंग शुल्क और ड्राइवर भत्ता शामिल हैं."
+            },
+            {
+                "question": "Does the Madurai to Rameswaram package include hotel accommodation and breakfast?",
+                "questionTamil": "மதுரை முதல் ராமேஸ்வரம் சுற்றுலா தொகுப்பில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या मदुरै से रामेश्वरम टूर पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 1 night of hotel accommodation and complimentary breakfast.",
+                "answerTamil": "ஆம். இந்த தொகுப்பில் 1 இரவு ஹோட்டல் தங்குமிடம் மற்றும் இலவச காலை உணவு சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 1 रात का होटल आवास और निःशुल्क नाश्ता शामिल है."
+            },
+            {
+                "question": "Which costs are extra in the Madurai to Rameswaram tour package?",
+                "questionTamil": "மதுரை முதல் ராமேஸ்வரம் சுற்றுலா தொகுப்பில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "मदुरै से रामेश्वरम टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Temple Special Darshan Tickets, Entry Fees, Lunch and Dinner, Personal Expenses, and Guide Charges.",
+                "answerTamil": "கோவில் சிறப்பு தரிசன டிக்கெட்டுகள், நுழைவுக் கட்டணங்கள், மதிய உணவு மற்றும் இரவு உணவு, தனிப்பட்ட செலவுகள் மற்றும் வழிகாட்டி கட்டணங்கள் கூடுதல் செலவுகளாகும்.",
+                "answerHindi": "मंदिर विशेष दर्शन टिकट, प्रवेश शुल्क, दोपहर और रात का भोजन, व्यक्तिगत खर्च तथा गाइड शुल्क अतिरिक्त खर्च के अंतर्गत आते हैं."
             }
         ],
         "id": "2069"
@@ -17153,16 +20106,52 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai to Kanyakumari 2 Days / 1 Night Tour Package, Kanyakumari Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Kanyakumari tour?",
+                "questionTamil": "மதுரை முதல் கன்னியாகுமரி சுற்றுலா எத்தனை நாட்கள் கொண்டது?",
+                "questionHindi": "मदुरै से कन्याकुमारी टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 2 Days / 1 Night, with sightseeing and travel arranged according to the package schedule.",
+                "answerTamil": "இந்த Logaa Holidays பயணத்திட்டம் 2 நாட்கள் / 1 இரவு கொண்டதாக திட்டமிடப்பட்டுள்ளது. தொகுப்பில் குறிப்பிடப்பட்டுள்ள அட்டவணைக்கு ஏற்ப பயணம் மற்றும் சுற்றுலா இடங்களை பார்வையிடும் வகையில் ஏற்பாடு செய்யப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 2 दिन / 1 रात के लिए तैयार किया गया है, जिसमें पैकेज के कार्यक्रम के अनुसार यात्रा और दर्शनीय स्थलों का भ्रमण शामिल है."
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Kanyakumari itinerary?",
+                "questionTamil": "மதுரை முதல் கன்னியாகுமரி பயணத்திட்டத்தில் இடம்பெறும் முக்கியமான சுற்றுலா இடங்கள் எவை?",
+                "questionHindi": "मदुरै से कन्याकुमारी यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Kanyakumari Bhagavathy Amman Temple, Triveni Sangam (Confluence of Three Seas), Vivekananda Rock Memorial, Thiruvalluvar Statue, Glass Bridge, and Gandhi Memorial Mandapam. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத்திட்டத்தில் கன்னியாகுமரி பகவதி அம்மன் கோவில், திரிவேணி சங்கமம் (மூன்று கடல்கள் சங்கமிக்கும் இடம்), விவேகானந்தர் பாறை நினைவகம், திருவள்ளுவர் சிலை, கண்ணாடி பாலம் மற்றும் காந்தி நினைவு மண்டபம் ஆகிய முக்கிய இடங்கள் இடம்பெறுகின்றன. சுற்றுலா பார்வைகள் தினசரி பயணத்திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்து அமையும்.",
+                "answerHindi": "इस यात्रा कार्यक्रम में कन्याकुमारी भगवती अम्मन मंदिर, त्रिवेणी संगम (तीन समुद्रों का संगम), विवेकानंद रॉक मेमोरियल, तिरुवल्लुवर प्रतिमा, ग्लास ब्रिज और गांधी मेमोरियल मंडपम जैसे प्रमुख स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के यात्रा कार्यक्रम और उपलब्ध समय के अनुसार होगा."
+            },
+            {
+                "question": "What pickup and drop options are available for the Madurai to Kanyakumari tour?",
+                "questionTamil": "மதுரை முதல் கன்னியாகுமரி சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "मदुरै से कन्याकुमारी टूर के लिए पिकअप और ड्रॉप की क्या सुविधाएँ उपलब्ध हैं?",
+                "answer": "Pickup and drop are available at Madurai Airport, Railway Station, Hotel, or Bus Stand, as stated in the package.",
+                "answerTamil": "தொகுப்பில் குறிப்பிடப்பட்டுள்ளபடி, மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Pickup மற்றும் Drop வசதிகள் கிடைக்கின்றன.",
+                "answerHindi": "पैकेज में बताए अनुसार मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप और ड्रॉप की सुविधा उपलब्ध है."
+            },
+            {
+                "question": "What is included in the Madurai to Kanyakumari tour package?",
+                "questionTamil": "மதுரை முதல் கன்னியாகுமரி சுற்றுலா தொகுப்பில் என்னென்ன வசதிகள் சேர்க்கப்பட்டுள்ளன?",
+                "questionHindi": "मदुरै से कन्याकुमारी टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a private A/C vehicle, pickup and drop from Madurai, an experienced driver, parking charges, and driver allowance.",
+                "answerTamil": "இந்த தொகுப்பில் தனியார் ஏ.சி. வாகனம், மதுரையிலிருந்து Pickup மற்றும் Drop, அனுபவமிக்க ஓட்டுநர், பார்க்கிங் கட்டணங்கள் மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में निजी ए.सी. वाहन, मदुरै से पिकअप और ड्रॉप, अनुभवी ड्राइवर, पार्किंग शुल्क और ड्राइवर भत्ता शामिल हैं."
+            },
+            {
+                "question": "Does the Madurai to Kanyakumari package include hotel accommodation and breakfast?",
+                "questionTamil": "மதுரை முதல் கன்னியாகுமரி சுற்றுலா தொகுப்பில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या मदुरै से कन्याकुमारी टूर पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 1 night of hotel accommodation and complimentary breakfast.",
+                "answerTamil": "ஆம். இந்த தொகுப்பில் 1 இரவு ஹோட்டல் தங்குமிடம் மற்றும் இலவச காலை உணவு சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 1 रात का होटल आवास और निःशुल्क नाश्ता शामिल है."
+            },
+            {
+                "question": "Which costs are extra in the Madurai to Kanyakumari tour package?",
+                "questionTamil": "மதுரை முதல் கன்னியாகுமரி சுற்றுலா தொகுப்பில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "मदुरै से कन्याकुमारी टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Boat Tickets to Vivekananda Rock Memorial, Entry Tickets and Monument Fees, Temple Special Darshan Tickets, Lunch and Dinner, and Personal Expenses.",
+                "answerTamil": "விவேகானந்தர் பாறை நினைவகத்திற்கான படகு டிக்கெட்டுகள், நுழைவுக் கட்டணங்கள் மற்றும் நினைவுச்சின்ன கட்டணங்கள், கோவில் சிறப்பு தரிசன டிக்கெட்டுகள், மதிய உணவு மற்றும் இரவு உணவு மற்றும் தனிப்பட்ட செலவுகள் கூடுதல் செலவுகளாகும்.",
+                "answerHindi": "विवेकानंद रॉक मेमोरियल के लिए नाव टिकट, प्रवेश टिकट और स्मारक शुल्क, मंदिर विशेष दर्शन टिकट, दोपहर और रात का भोजन तथा व्यक्तिगत खर्च अतिरिक्त शुल्क के अंतर्गत आते हैं."
             }
         ],
         "id": "2070"
@@ -17258,16 +20247,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai to Kodaikanal 2 Days / 1 Night Tour Package, Kodaikanal Tour, Tamil Nadu Hill Station, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Kodaikanal tour?",
+                "questionTamil": "மதுரை முதல் கொடைக்கானல் சுற்றுலா எத்தனை நாட்கள் கொண்டது?",
+                "questionHindi": "मदुरै से कोडाईकनाल टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 2 Days / 1 Night, with sightseeing and travel arranged according to the package schedule.",
+                "answerTamil": "இந்த Logaa Holidays பயணத்திட்டம் 2 நாட்கள் / 1 இரவு கொண்டதாக திட்டமிடப்பட்டுள்ளது. தொகுப்பில் குறிப்பிடப்பட்டுள்ள அட்டவணைக்கு ஏற்ப பயணம் மற்றும் சுற்றுலா இடங்களை பார்வையிடும் வகையில் ஏற்பாடு செய்யப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 2 दिन / 1 रात के लिए तैयार किया गया है, जिसमें पैकेज के कार्यक्रम के अनुसार यात्रा और दर्शनीय स्थलों का भ्रमण शामिल है."
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Kodaikanal itinerary?",
+                "questionTamil": "மதுரை முதல் கொடைக்கானல் பயணத்திட்டத்தில் இடம்பெறும் முக்கியமான சுற்றுலா இடங்கள் எவை?",
+                "questionHindi": "मदुरै से कोडाईकनाल यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Silver Cascade Falls, Coaker's Walk, Bryant Park, Kodaikanal Lake, Anna Salai Market and Homemade Chocolate Shops, and Green Valley View. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத்திட்டத்தில் சில்வர் கேஸ்கேட் அருவி, கோக்கர்ஸ் வாக், பிரையன்ட் பூங்கா, கொடைக்கானல் ஏரி, அண்ணா சாலை மார்க்கெட் மற்றும் ஹோம்மேட் சாக்லேட் கடைகள், கிரீன் வேலி வியூ ஆகிய முக்கிய இடங்கள் இடம்பெறுகின்றன. சுற்றுலா பார்வைகள் தினசரி பயணத்திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்து அமையும்.",
+                "answerHindi": "इस यात्रा कार्यक्रम में सिल्वर कैस्केड फॉल्स, कोकर्स वॉक, ब्रायंट पार्क, कोडाईकनाल झील, अन्ना सलाई मार्केट और होममेड चॉकलेट शॉप्स तथा ग्रीन वैली व्यू जैसे प्रमुख स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के यात्रा कार्यक्रम और उपलब्ध समय के अनुसार होगा."
+            },
+            {
+                "question": "What pickup and drop options are available for the Madurai to Kodaikanal tour?",
+                "questionTamil": "மதுரை முதல் கொடைக்கானல் சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "मदुरै से कोडाईकनाल टूर के लिए पिकअप और ड्रॉप की क्या सुविधाएँ उपलब्ध हैं?",
+                "answer": "Pickup and drop are available at Madurai Airport, Railway Station, Hotel, or Bus Stand, as stated in the package.",
+                "answerTamil": "தொகுப்பில் குறிப்பிடப்பட்டுள்ளபடி, மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Pickup மற்றும் Drop வசதிகள் கிடைக்கின்றன.",
+                "answerHindi": "पैकेज में बताए अनुसार मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप और ड्रॉप की सुविधा उपलब्ध है."
+            },
+            {
+                "question": "What is included in the Madurai to Kodaikanal tour package?",
+                "questionTamil": "மதுரை முதல் கொடைக்கானல் சுற்றுலா தொகுப்பில் என்னென்ன வசதிகள் சேர்க்கப்பட்டுள்ளன?",
+                "questionHindi": "मदुरै से कोडाईकनाल टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a private A/C vehicle, pickup and drop from Madurai, an experienced hill driver, driver allowance, and parking charges.",
+                "answerTamil": "இந்த தொகுப்பில் தனியார் ஏ.சி. வாகனம், மதுரையிலிருந்து Pickup மற்றும் Drop, அனுபவமிக்க மலைப்பாதை ஓட்டுநர், ஓட்டுநர் Allowance மற்றும் பார்க்கிங் கட்டணங்கள் ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में निजी ए.सी. वाहन, मदुरै से पिकअप और ड्रॉप, अनुभवी पहाड़ी ड्राइवर, ड्राइवर भत्ता और पार्किंग शुल्क शामिल हैं."
+            },
+            {
+                "question": "Does the Madurai to Kodaikanal package include hotel accommodation and breakfast?",
+                "questionTamil": "மதுரை முதல் கொடைக்கானல் சுற்றுலா தொகுப்பில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या मदुरै से कोडाईकनाल टूर पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 1 night of hotel accommodation and complimentary breakfast.",
+                "answerTamil": "ஆம். இந்த தொகுப்பில் 1 இரவு ஹோட்டல் தங்குமிடம் மற்றும் இலவச காலை உணவு சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 1 रात का होटल आवास और निःशुल्क नाश्ता शामिल है."
+            },
+            {
+                "question": "Which costs are extra in the Madurai to Kodaikanal tour package?",
+                "questionTamil": "மதுரை முதல் கொடைக்கானல் சுற்றுலா தொகுப்பில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "मदुरै से कोडाईकनाल टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Boating Charges, Entry Tickets, Camera Fees, Lunch and Dinner, and Personal Expenses.",
+                "answerTamil": "படகு சவாரி கட்டணங்கள், நுழைவுக் கட்டணங்கள், கேமரா கட்டணங்கள், மதிய உணவு மற்றும் இரவு உணவு மற்றும் தனிப்பட்ட செலவுகள் கூடுதல் செலவுகளாகும்.",
+                "answerHindi": "बोटिंग शुल्क, प्रवेश टिकट, कैमरा शुल्क, दोपहर और रात का भोजन तथा व्यक्तिगत खर्च अतिरिक्त शुल्क के अंतर्गत आते हैं."
+            },
+            {
+                "question": "Can I customize the Madurai to Kodaikanal tour itinerary?",
+                "questionTamil": "மதுரை முதல் கொடைக்கானல் சுற்றுலா பயணத்திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या मैं मदुरै से कोडाईकनाल टूर यात्रा कार्यक्रम को कस्टमाइज़ कर सकता हूँ?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to your booking requirements and travel preferences.",
+                "answerTamil": "ஆம். தனிப்பயனாக்கப்பட்ட சுற்றுலா திட்டங்கள் கிடைக்கின்றன. உங்கள் முன்பதிவு தேவைகள் மற்றும் பயண விருப்பங்களுக்கு ஏற்ப பயணத்திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। कस्टमाइज़्ड टूर प्लान उपलब्ध हैं। आपकी बुकिंग आवश्यकताओं और यात्रा प्राथमिकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है."
             }
         ],
         "id": "2071"
@@ -17359,16 +20392,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai to Thekkady 2 Days / 1 Night Tour Package, Thekkady Tour, Kerala Wildlife, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Thekkady tour?",
+                "questionTamil": "மதுரை முதல் தேக்கடி சுற்றுலா எத்தனை நாட்கள் கொண்டது?",
+                "questionHindi": "मदुरै से थेक्कडी टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 2 Days / 1 Night, with sightseeing and travel arranged according to the package schedule.",
+                "answerTamil": "இந்த Logaa Holidays பயணத்திட்டம் 2 நாட்கள் / 1 இரவு கொண்டதாக திட்டமிடப்பட்டுள்ளது. தொகுப்பில் குறிப்பிடப்பட்டுள்ள அட்டவணைக்கு ஏற்ப பயணம் மற்றும் சுற்றுலா இடங்களை பார்வையிடும் வகையில் ஏற்பாடு செய்யப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 2 दिन / 1 रात के लिए तैयार किया गया है, जिसमें पैकेज के कार्यक्रम के अनुसार यात्रा और दर्शनीय स्थलों का भ्रमण शामिल है."
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Thekkady itinerary?",
+                "questionTamil": "மதுரை முதல் தேக்கடி பயணத்திட்டத்தில் இடம்பெறும் முக்கியமான சுற்றுலா இடங்கள் எவை?",
+                "questionHindi": "मदुरै से थेक्कडी यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Scenic Mountain Views, Spice Plantation Tour, Kumily Local Spice Market, Periyar Lake Boating, Periyar Wildlife Sanctuary, and Nature Walk. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத்திட்டத்தில் அழகிய மலைக் காட்சிகள், மசாலா தோட்ட சுற்றுலா, குமிலி உள்ளூர் மசாலா சந்தை, பெரியார் ஏரி படகு சவாரி, பெரியார் வனவிலங்கு சரணாலயம் மற்றும் இயற்கை நடைபயணம் ஆகிய முக்கிய இடங்கள் இடம்பெறுகின்றன. சுற்றுலா பார்வைகள் தினசரி பயணத்திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்து அமையும்.",
+                "answerHindi": "इस यात्रा कार्यक्रम में सुंदर पर्वतीय दृश्य, मसाला प्लांटेशन टूर, कुमिली स्थानीय मसाला बाजार, पेरियार झील बोटिंग, पेरियार वन्यजीव अभयारण्य और नेचर वॉक जैसे प्रमुख अनुभव शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के यात्रा कार्यक्रम और उपलब्ध समय के अनुसार होगा."
+            },
+            {
+                "question": "What pickup and drop options are available for the Madurai to Thekkady tour?",
+                "questionTamil": "மதுரை முதல் தேக்கடி சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "मदुरै से थेक्कडी टूर के लिए पिकअप और ड्रॉप की क्या सुविधाएँ उपलब्ध हैं?",
+                "answer": "Pickup and drop are available at Madurai Airport, Railway Station, Hotel, or Bus Stand, as stated in the package.",
+                "answerTamil": "தொகுப்பில் குறிப்பிடப்பட்டுள்ளபடி, மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Pickup மற்றும் Drop வசதிகள் கிடைக்கின்றன.",
+                "answerHindi": "पैकेज में बताए अनुसार मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप और ड्रॉप की सुविधा उपलब्ध है."
+            },
+            {
+                "question": "What is included in the Madurai to Thekkady tour package?",
+                "questionTamil": "மதுரை முதல் தேக்கடி சுற்றுலா தொகுப்பில் என்னென்ன வசதிகள் சேர்க்கப்பட்டுள்ளன?",
+                "questionHindi": "मदुरै से थेक्कडी टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a private A/C vehicle, pickup and drop from Madurai, an experienced driver, driver allowance, and parking charges.",
+                "answerTamil": "இந்த தொகுப்பில் தனியார் ஏ.சி. வாகனம், மதுரையிலிருந்து Pickup மற்றும் Drop, அனுபவமிக்க ஓட்டுநர், ஓட்டுநர் Allowance மற்றும் பார்க்கிங் கட்டணங்கள் ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में निजी ए.सी. वाहन, मदुरै से पिकअप और ड्रॉप, अनुभवी ड्राइवर, ड्राइवर भत्ता और पार्किंग शुल्क शामिल हैं."
+            },
+            {
+                "question": "Does the Madurai to Thekkady package include hotel accommodation and breakfast?",
+                "questionTamil": "மதுரை முதல் தேக்கடி சுற்றுலா தொகுப்பில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या मदुरै से थेक्कडी टूर पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 1 night of hotel accommodation and complimentary breakfast.",
+                "answerTamil": "ஆம். இந்த தொகுப்பில் 1 இரவு ஹோட்டல் தங்குமிடம் மற்றும் இலவச காலை உணவு சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 1 रात का होटल आवास और निःशुल्क नाश्ता शामिल है."
+            },
+            {
+                "question": "Which costs are extra in the Madurai to Thekkady tour package?",
+                "questionTamil": "மதுரை முதல் தேக்கடி சுற்றுலா தொகுப்பில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "मदुरै से थेक्कडी टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Periyar Boating Tickets, Wildlife Sanctuary Entry Fees, Elephant Ride and Activities, Kathakali and Kalaripayattu Show Tickets, and Lunch and Dinner.",
+                "answerTamil": "பெரியார் படகு சவாரி டிக்கெட்டுகள், வனவிலங்கு சரணாலய நுழைவுக் கட்டணங்கள், யானை சவாரி மற்றும் செயல்பாடுகள், கதகளி மற்றும் களரிப்பயட்டு நிகழ்ச்சி டிக்கெட்டுகள் மற்றும் மதிய உணவு மற்றும் இரவு உணவு கூடுதல் செலவுகளாகும்.",
+                "answerHindi": "पेरियार बोटिंग टिकट, वन्यजीव अभयारण्य प्रवेश शुल्क, हाथी की सवारी और गतिविधियाँ, कथकली और कलरिपयट्टू शो टिकट तथा दोपहर और रात का भोजन अतिरिक्त शुल्क के अंतर्गत आते हैं."
+            },
+            {
+                "question": "Can I customize the Madurai to Thekkady tour itinerary?",
+                "questionTamil": "மதுரை முதல் தேக்கடி சுற்றுலா பயணத்திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या मैं मदुरै से थेक्कडी टूर यात्रा कार्यक्रम को कस्टमाइज़ कर सकता हूँ?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to your booking requirements and travel preferences.",
+                "answerTamil": "ஆம். தனிப்பயனாக்கப்பட்ட சுற்றுலா திட்டங்கள் கிடைக்கின்றன. உங்கள் முன்பதிவு தேவைகள் மற்றும் பயண விருப்பங்களுக்கு ஏற்ப பயணத்திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। कस्टमाइज़्ड टूर प्लान उपलब्ध हैं। आपकी बुकिंग आवश्यकताओं और यात्रा प्राथमिकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है."
             }
         ],
         "id": "2072"
@@ -17462,16 +20539,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai to Vagamon 2 Days / 1 Night Tour Package, Vagamon Tour, Kerala Hill Station, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Vagamon tour?",
+                "questionTamil": "மதுரை முதல் வாகமன் சுற்றுலா எத்தனை நாட்கள் கொண்டது?",
+                "questionHindi": "मदुरै से वागामोन टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 2 Days / 1 Night, with sightseeing and travel arranged according to the package schedule.",
+                "answerTamil": "இந்த Logaa Holidays பயணத்திட்டம் 2 நாட்கள் / 1 இரவு கொண்டதாக திட்டமிடப்பட்டுள்ளது. தொகுப்பில் குறிப்பிடப்பட்டுள்ள அட்டவணைக்கு ஏற்ப பயணம் மற்றும் சுற்றுலா இடங்களை பார்வையிடும் வகையில் ஏற்பாடு செய்யப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 2 दिन / 1 रात के लिए तैयार किया गया है, जिसमें पैकेज के कार्यक्रम के अनुसार यात्रा और दर्शनीय स्थलों का भ्रमण शामिल है."
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Vagamon itinerary?",
+                "questionTamil": "மதுரை முதல் வாகமன் பயணத்திட்டத்தில் இடம்பெறும் முக்கியமான சுற்றுலா இடங்கள் எவை?",
+                "questionHindi": "मदुरै से वागामोन यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Suruli Falls (Seasonal), Tea Plantation Views, Vagamon Pine Forest, Vagamon Meadows, Kurisumala Ashram View Point, and Sunset View Point. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத்திட்டத்தில் சுருளி அருவி (பருவகாலத்தில்), தேயிலை தோட்டக் காட்சிகள், வாகமன் பைன் காடு, வாகமன் புல்வெளிகள், குரிசுமலை ஆசிரம View Point மற்றும் சூரிய அஸ்தமன View Point ஆகிய முக்கிய இடங்கள் இடம்பெறுகின்றன. சுற்றுலா பார்வைகள் தினசரி பயணத்திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்து அமையும்.",
+                "answerHindi": "इस यात्रा कार्यक्रम में सुरुली फॉल्स (मौसमी), चाय बागान के दृश्य, वागामोन पाइन फॉरेस्ट, वागामोन मीडोज, कुरिसुमाला आश्रम व्यू पॉइंट और सनसेट व्यू पॉइंट जैसे प्रमुख स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के यात्रा कार्यक्रम और उपलब्ध समय के अनुसार होगा."
+            },
+            {
+                "question": "What pickup and drop options are available for the Madurai to Vagamon tour?",
+                "questionTamil": "மதுரை முதல் வாகமன் சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "मदुरै से वागामोन टूर के लिए पिकअप और ड्रॉप की क्या सुविधाएँ उपलब्ध हैं?",
+                "answer": "Pickup and drop are available at Madurai Airport, Railway Station, Hotel, or Bus Stand, as stated in the package.",
+                "answerTamil": "தொகுப்பில் குறிப்பிடப்பட்டுள்ளபடி, மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Pickup மற்றும் Drop வசதிகள் கிடைக்கின்றன.",
+                "answerHindi": "पैकेज में बताए अनुसार मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप और ड्रॉप की सुविधा उपलब्ध है."
+            },
+            {
+                "question": "What is included in the Madurai to Vagamon tour package?",
+                "questionTamil": "மதுரை முதல் வாகமன் சுற்றுலா தொகுப்பில் என்னென்ன வசதிகள் சேர்க்கப்பட்டுள்ளன?",
+                "questionHindi": "मदुरै से वागामोन टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a private A/C vehicle, pickup and drop from Madurai, an experienced driver, driver allowance, and parking charges.",
+                "answerTamil": "இந்த தொகுப்பில் தனியார் ஏ.சி. வாகனம், மதுரையிலிருந்து Pickup மற்றும் Drop, அனுபவமிக்க ஓட்டுநர், ஓட்டுநர் Allowance மற்றும் பார்க்கிங் கட்டணங்கள் ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में निजी ए.सी. वाहन, मदुरै से पिकअप और ड्रॉप, अनुभवी ड्राइवर, ड्राइवर भत्ता और पार्किंग शुल्क शामिल हैं."
+            },
+            {
+                "question": "Does the Madurai to Vagamon package include hotel accommodation and breakfast?",
+                "questionTamil": "மதுரை முதல் வாகமன் சுற்றுலா தொகுப்பில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या मदुरै से वागामोन टूर पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 1 night of hotel accommodation and complimentary breakfast.",
+                "answerTamil": "ஆம். இந்த தொகுப்பில் 1 இரவு ஹோட்டல் தங்குமிடம் மற்றும் இலவச காலை உணவு சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 1 रात का होटल आवास और निःशुल्क नाश्ता शामिल है."
+            },
+            {
+                "question": "Which costs are extra in the Madurai to Vagamon tour package?",
+                "questionTamil": "மதுரை முதல் வாகமன் சுற்றுலா தொகுப்பில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "मदुरै से वागामोन टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Adventure Activity Charges, Entry Tickets if applicable, Lunch and Dinner, Personal Expenses, and Guide Charges.",
+                "answerTamil": "சாகச செயல்பாட்டு கட்டணங்கள், பொருந்தும் இடங்களில் நுழைவுக் கட்டணங்கள், மதிய உணவு மற்றும் இரவு உணவு, தனிப்பட்ட செலவுகள் மற்றும் வழிகாட்டி கட்டணங்கள் கூடுதல் செலவுகளாகும்.",
+                "answerHindi": "एडवेंचर गतिविधि शुल्क, लागू होने पर प्रवेश शुल्क, दोपहर और रात का भोजन, व्यक्तिगत खर्च तथा गाइड शुल्क अतिरिक्त शुल्क के अंतर्गत आते हैं."
+            },
+            {
+                "question": "Can I customize the Madurai to Vagamon tour itinerary?",
+                "questionTamil": "மதுரை முதல் வாகமன் சுற்றுலா பயணத்திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या मैं मदुरै से वागामोन टूर यात्रा कार्यक्रम को कस्टमाइज़ कर सकता हूँ?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to your booking requirements and travel preferences.",
+                "answerTamil": "ஆம். தனிப்பயனாக்கப்பட்ட சுற்றுலா திட்டங்கள் கிடைக்கின்றன. உங்கள் முன்பதிவு தேவைகள் மற்றும் பயண விருப்பங்களுக்கு ஏற்ப பயணத்திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। कस्टमाइज़्ड टूर प्लान उपलब्ध हैं। आपकी बुकिंग आवश्यकताओं और यात्रा प्राथमिकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है."
             }
         ],
         "id": "2073"
@@ -17570,16 +20691,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai to Meghamalai 2 Days / 1 Night Tour Package, Best Meghamalai Tour Package from Madurai | 2 Days & 1 Night, Meghamalai Tour, Tamil Nadu Hill Station, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Meghamalai tour?",
+                "questionTamil": "மதுரையிலிருந்து மேகமலைக்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से मेघमलाई टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 2 Days / 1 Night.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 2 நாட்கள் / 1 இரவு என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 2 दिन / 1 रात के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Meghamalai itinerary?",
+                "questionTamil": "மதுரை முதல் மேகமலை பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से मेघमलाई यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Veerapandi Temple & River View, Vaigai Dam View Point, Meghamalai Tea Estates, Meghamalai View Point, Manalar Dam View Point, and Tea Garden Photography Stops. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் வீரபாண்டி கோவில் மற்றும் ஆற்றங்கரை காட்சி, வைகை அணை வியூ பாயிண்ட், மேகமலை தேயிலை தோட்டங்கள், மேகமலை வியூ பாயிண்ட், மணலார் அணை வியூ பாயிண்ட் மற்றும் தேயிலை தோட்ட புகைப்பட நிறுத்தங்கள் ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में वीरपांडी मंदिर और नदी का दृश्य, वैगई डैम व्यू पॉइंट, मेघमलाई चाय बागान, मेघमलाई व्यू पॉइंट, मनालार डैम व्यू पॉइंट और चाय बागान फोटोग्राफी स्टॉप जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Meghamalai Sightseeing as per the itinerary, an Experienced Driver, and Driver Allowance.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி மேகமலை Sightseeing, அனுபவமிக்க ஓட்டுநர் மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार मेघमलाई दर्शनीय स्थल, अनुभवी ड्राइवर और ड्राइवर भत्ता शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 1 Night Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 1 இரவு ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 1 रात का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Entry Tickets (if applicable), Lunch & Dinner, Adventure Activities, Camera Charges (if applicable), and Personal Expenses.",
+                "answerTamil": "Entry Tickets (தேவைப்பட்டால்), Lunch & Dinner, Adventure Activities, Camera Charges (தேவைப்பட்டால்) மற்றும் Personal Expenses ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Entry Tickets (यदि लागू हो), Lunch & Dinner, Adventure Activities, Camera Charges (यदि लागू हो) और Personal Expenses के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2074"
@@ -17676,16 +20841,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai to Ooty 2 Days / 1 Night Tour Package, Best Ooty Tour Package from Madurai | 2 Days & 1 Night, Ooty Tour, Tamil Nadu Hill Station, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Ooty tour?",
+                "questionTamil": "மதுரையிலிருந்து ஊட்டிக்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से ऊटी टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 2 Days / 1 Night.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 2 நாட்கள் / 1 இரவு என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 2 दिन / 1 रात के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Ooty itinerary?",
+                "questionTamil": "மதுரை முதல் ஊட்டி பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से ऊटी यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Ketti Valley View Point, Tea Garden Photo Stops, Government Botanical Garden, Government Rose Garden, Ooty Lake, and Pine Forest. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் கெட்டி வேலி வியூ பாயிண்ட், தேயிலை தோட்ட புகைப்பட நிறுத்தங்கள், அரசு தாவரவியல் பூங்கா, அரசு ரோஜா பூங்கா, ஊட்டி ஏரி மற்றும் பைன் காடு ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में केट्टी वैली व्यू पॉइंट, चाय बागान फोटो स्टॉप, सरकारी बॉटनिकल गार्डन, सरकारी रोज़ गार्डन, ऊटी झील और पाइन फॉरेस्ट जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Ooty Sightseeing as per the itinerary, an Experienced Driver, and Driver Allowance.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி ஊட்டி Sightseeing, அனுபவமிக்க ஓட்டுநர் மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार ऊटी दर्शनीय स्थल, अनुभवी ड्राइवर और ड्राइवर भत्ता शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 1 Night Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 1 இரவு ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 1 रात का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Entry Tickets, Boating Charges, Toy Train Tickets, Lunch & Dinner, and Personal Expenses.",
+                "answerTamil": "Entry Tickets, Boating Charges, Toy Train Tickets, Lunch & Dinner மற்றும் Personal Expenses ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Entry Tickets, Boating Charges, Toy Train Tickets, Lunch & Dinner और Personal Expenses के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2075"
@@ -17783,16 +20992,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai to Valparai 2 Days / 1 Night Tour Package, Best Valparai Tour Package from Madurai | 2 Days & 1 Night, Valparai Tour, Tamil Nadu Hill Station, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Valparai tour?",
+                "questionTamil": "மதுரையிலிருந்து வால்பாறைக்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से वालपराई टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 2 Days / 1 Night.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 2 நாட்கள் / 1 இரவு என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 2 दिन / 1 रात के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Valparai itinerary?",
+                "questionTamil": "மதுரை முதல் வால்பாறை பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से वालपराई यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Aliyar Dam, Monkey Falls, Loam's View Point, Tea Estate Photo Stops, Nallamudi View Point, and Birla Waterfalls. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் ஆழியார் அணை, குரங்கு அருவி, லோம்ஸ் வியூ பாயிண்ட், தேயிலை தோட்ட புகைப்பட நிறுத்தங்கள், நல்லமுடி வியூ பாயிண்ட் மற்றும் பிர்லா நீர்வீழ்ச்சி ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में अलीयार डैम, मंकी फॉल्स, लोम्स व्यू पॉइंट, चाय बागान फोटो स्टॉप, नल्लामुडी व्यू पॉइंट और बिड़ला झरना जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Valparai Sightseeing as per the itinerary, an Experienced Driver, and Driver Allowance.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி வால்பாறை Sightseeing, அனுபவமிக்க ஓட்டுநர் மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार वालपराई दर्शनीय स्थल, अनुभवी ड्राइवर और ड्राइवर भत्ता शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 1 Night Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 1 இரவு ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 1 रात का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Entry Tickets, Tea Factory Entry Fee (if applicable), Lunch & Dinner, Personal Expenses, and Guide Services.",
+                "answerTamil": "Entry Tickets, Tea Factory Entry Fee (தேவைப்பட்டால்), Lunch & Dinner, Personal Expenses மற்றும் Guide Services ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Entry Tickets, Tea Factory Entry Fee (यदि लागू हो), Lunch & Dinner, Personal Expenses और Guide Services के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2076"
@@ -17906,16 +21159,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai to Valparai 3 Days / 2 Nights Tour Package, Best Valparai Tour Package from Madurai | 3 Days & 2 Nights, Valparai Tour, Tamil Nadu Hill Station, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Valparai tour?",
+                "questionTamil": "மதுரையிலிருந்து வால்பாறைக்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से वालपराई टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 3 Days / 2 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 3 நாட்கள் / 2 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 3 दिन / 2 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Valparai itinerary?",
+                "questionTamil": "மதுரை முதல் வால்பாறை பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से वालपराई यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Aliyar Dam, Monkey Falls, Loam's View Point, Tea Estate Photo Stops, Nallamudi View Point, and Birla Waterfalls. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் ஆழியார் அணை, குரங்கு அருவி, லோம்ஸ் வியூ பாயிண்ட், தேயிலை தோட்ட புகைப்பட நிறுத்தங்கள், நல்லமுடி வியூ பாயிண்ட் மற்றும் பிர்லா நீர்வீழ்ச்சி ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में अलीयार डैम, मंकी फॉल्स, लोम्स व्यू पॉइंट, चाय बागान फोटो स्टॉप, नल्लामुडी व्यू पॉइंट और बिड़ला झरना जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Valparai Sightseeing as per the itinerary, an Experienced Hill Driver, and Driver Allowance.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி வால்பாறை Sightseeing, அனுபவமிக்க Hill Driver மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार वालपराई दर्शनीय स्थल, अनुभवी हिल ड्राइवर और ड्राइवर भत्ता शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 2 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 2 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 2 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Entry Tickets, Forest Entry Fees (if applicable), Tea Factory Entry Fee, Lunch & Dinner, and Personal Expenses.",
+                "answerTamil": "Entry Tickets, Forest Entry Fees (தேவைப்பட்டால்), Tea Factory Entry Fee, Lunch & Dinner மற்றும் Personal Expenses ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Entry Tickets, Forest Entry Fees (यदि लागू हो), Tea Factory Entry Fee, Lunch & Dinner और Personal Expenses के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2077"
@@ -18029,16 +21326,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai → Tiruchendur → Kanyakumari 3 Days / 2 Nights Tour Package, Best Tiruchendur & Kanyakumari Tour Package from Madurai | 3 Days / 2 Nights, Tamil Nadu Pilgrimage, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Tiruchendur to Kanyakumari tour?",
+                "questionTamil": "மதுரையிலிருந்து திருச்செந்தூர் வழியாக கன்னியாகுமரிக்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से तिरुचेंदूर होते हुए कन्याकुमारी टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 3 Days / 2 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 3 நாட்கள் / 2 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 3 दिन / 2 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Tiruchendur to Kanyakumari itinerary?",
+                "questionTamil": "மதுரை முதல் திருச்செந்தூர் வழியாக கன்னியாகுமரி பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से तिरुचेंदूर होते हुए कन्याकुमारी यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Arulmigu Subramaniya Swamy Temple (Tiruchendur Murugan Temple), Tiruchendur Beach, Seashore Temple View, Suchindram Thanumalayan Temple, Kanyakumari Bhagavathi Amman Temple, and Triveni Sangam. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் அருள்மிகு சுப்பிரமணிய சுவாமி கோவில் (திருச்செந்தூர் முருகன் கோவில்), திருச்செந்தூர் கடற்கரை, Seashore Temple View, சுசீந்திரம் தாணுமாலயன் கோவில், கன்னியாகுமரி பகவதி அம்மன் கோவில் மற்றும் திரிவேணி சங்கமம் ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में अरुल्मिगु सुब्रमणिया स्वामी मंदिर (तिरुचेंदूर मुरुगन मंदिर), तिरुचेंदूर बीच, Seashore Temple View, सुचिंद्रम थानुमालयन मंदिर, कन्याकुमारी भगवती अम्मन मंदिर और त्रिवेणी संगम जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Tiruchendur & Kanyakumari Sightseeing as per the itinerary, Driver Allowance, and Toll & Parking Charges.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி திருச்செந்தூர் மற்றும் கன்னியாகுமரி Sightseeing, ஓட்டுநர் Allowance மற்றும் Toll & Parking Charges ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार तिरुचेंदूर और कन्याकुमारी दर्शनीय स्थल, ड्राइवर भत्ता और टोल एवं पार्किंग शुल्क शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 2 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 2 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 2 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Temple Special Darshan Tickets, Vivekananda Rock Ferry Tickets, Entry Tickets, Lunch & Dinner, and Personal Expenses.",
+                "answerTamil": "Temple Special Darshan Tickets, Vivekananda Rock Ferry Tickets, Entry Tickets, Lunch & Dinner மற்றும் Personal Expenses ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Temple Special Darshan Tickets, Vivekananda Rock Ferry Tickets, Entry Tickets, Lunch & Dinner और Personal Expenses के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2078"
@@ -18153,20 +21494,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai → Kumbakonam Navagraha Temple Tour Package 3 Days / 2 Nights, Best Navagraha Temple Tour Package from Madurai | 3 Days / 2 Nights, Navagraha Temple Tour, Tamil Nadu Pilgrimage, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Tamil Nadu tour package suitable for families and couples?",
-                "questionTamil": "இந்த தமிழ்நாடு சுற்றுலா பேக்கேஜ் குடும்பங்கள் மற்றும் தம்பதிகளுக்கு ஏற்றதா?",
-                "questionHindi": "क्या यह तमिलनाडु टूर पैकेज परिवारों और कपल्स के लिए उपयुक्त है?",
-                "answer": "Yes. The tour covers heritage temples and coastal beaches with comfortable hotels and a relaxed pace, making it great for family groups and honeymooners alike. We tailor activities for kids, adults and seniors (e.g. easy walks, optional temple tours) so travelers of all ages enjoy it.",
-                "answerTamil": "ஆம். இந்த சுற்றுலா பேக்கேஜில் பாரம்பரிய கோயில்கள் மற்றும் கடலோர கடற்கரைகள் இடம்பெறுவதுடன், வசதியான ஹோட்டல்கள் மற்றும் நிதானமான பயணத் திட்டமும் உள்ளது. எனவே இது குடும்பக் குழுக்கள் மற்றும் ஹனிமூன் தம்பதிகளுக்கும் சிறந்ததாக இருக்கும். குழந்தைகள், பெரியவர்கள் மற்றும் மூத்த குடிமக்கள் என அனைத்து வயதினரும் மகிழ்ச்சியாகப் பயணம் செய்யும் வகையில், எளிதான நடைப்பயணங்கள் மற்றும் விருப்பத்திற்கேற்ப கோயில் சுற்றுலா போன்ற செயல்பாடுகளை நாங்கள் ஏற்பாடு செய்கிறோம்.",
-                "answerHindi": "हाँ। इस टूर में ऐतिहासिक मंदिर और समुद्र तट, आरामदायक होटल और एक आरामदायक यात्रा कार्यक्रम शामिल है, जिससे यह परिवारों और हनीमून कपल्स दोनों के लिए बेहतरीन है। हम बच्चों, वयस्कों और वरिष्ठ नागरिकों के लिए गतिविधियों को अनुकूलित करते हैं, जैसे आसान पैदल यात्राएँ और वैकल्पिक मंदिर भ्रमण, ताकि हर उम्र के यात्री इसका आनंद ले सकें।"
+                "question": "How long is the Madurai to Kumbakonam Navagraha Temple tour?",
+                "questionTamil": "மதுரையிலிருந்து கும்பகோணம் நவகிரக கோவில்கள் சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से कुंभकोणम नवग्रह मंदिर टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 3 Days / 2 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 3 நாட்கள் / 2 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 3 दिन / 2 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "Can we join the Tamil Nadu tour from Madurai or Chennai?",
-                "questionTamil": "மதுரை அல்லது சென்னையிலிருந்து தமிழ்நாடு சுற்றுலாவில் நாங்கள் இணைய முடியுமா?",
-                "questionHindi": "क्या हम मदुरै या चेन्नई से तमिलनाडु टूर में शामिल हो सकते हैं?",
-                "answer": "Absolutely. We offer pickup from Madurai or Chennai and coordinate train/flight arrivals into those cities. Our driver/guide will meet you at the station/airport and begin the tour, so you can easily join from any major city in Tamil Nadu.",
-                "answerTamil": "நிச்சயமாக. மதுரை அல்லது சென்னையிலிருந்து பிக்கப் வசதியை வழங்குகிறோம், மேலும் அந்த நகரங்களுக்கு வரும் ரயில்/விமான வருகைகளையும் ஒருங்கிணைக்கிறோம். எங்கள் ஓட்டுநர்/வழிகாட்டி உங்களை ரயில் நிலையம்/விமான நிலையத்தில் சந்தித்து சுற்றுலாவைத் தொடங்குவார். எனவே தமிழ்நாட்டின் எந்த முக்கிய நகரத்திலிருந்தும் நீங்கள் எளிதாக இந்த சுற்றுலாவில் இணையலாம்.",
-                "answerHindi": "बिल्कुल। हम मदुरै या चेन्नई से पिकअप की सुविधा देते हैं और इन शहरों में आने वाली ट्रेन या फ्लाइट के समय का समन्वय करते हैं। हमारे ड्राइवर या गाइड स्टेशन या एयरपोर्ट पर आपसे मिलेंगे और टूर शुरू करेंगे, इसलिए आप तमिलनाडु के किसी भी प्रमुख शहर से आसानी से टूर में शामिल हो सकते हैं।"
+                "question": "What are the main sightseeing places covered in the Madurai to Kumbakonam Navagraha Temple itinerary?",
+                "questionTamil": "மதுரை முதல் கும்பகோணம் நவகிரக கோவில்கள் பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से कुंभकोणम नवग्रह मंदिर यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Brihadeeswarar Temple (UNESCO World Heritage Site), Thanjavur Palace, Saraswathi Mahal Library, Adi Kumbeswarar Temple, Sarangapani Temple, and the Day 02 Navagraha Temple Tour. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் பிரகதீஸ்வரர் கோவில் (UNESCO உலக பாரம்பரிய தளம்), தஞ்சாவூர் அரண்மனை, சரஸ்வதி மகால் நூலகம், ஆதி கும்பேஸ்வரர் கோவில், சாரங்கபாணி கோவில் மற்றும் நாள் 02 நவகிரக கோவில் சுற்றுலா ஆகியவை முக்கிய இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में बृहदीश्वर मंदिर (UNESCO विश्व धरोहर स्थल), तंजावुर पैलेस, सरस्वती महल पुस्तकालय, आदि कुम्बेश्वरर मंदिर, सारंगपानी मंदिर और दिन 02 का नवग्रह मंदिर टूर जैसे प्रमुख स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Navagraha Temple Tour as per the itinerary, Driver Allowance, and Toll & Parking Charges.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி நவகிரக கோவில் சுற்றுலா, ஓட்டுநர் Allowance மற்றும் Toll & Parking Charges ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार नवग्रह मंदिर टूर, ड्राइवर भत्ता और टोल एवं पार्किंग शुल्क शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 2 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 2 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 2 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Temple Special Darshan Tickets, Entry Tickets, Lunch & Dinner, Personal Expenses, and Guide Charges.",
+                "answerTamil": "Temple Special Darshan Tickets, Entry Tickets, Lunch & Dinner, Personal Expenses மற்றும் Guide Charges ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Temple Special Darshan Tickets, Entry Tickets, Lunch & Dinner, Personal Expenses और Guide Charges के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2079"
@@ -18189,16 +21570,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai → Rameswaram → Kanyakumari → Thiruvananthapuram 4 Days / 3 Nights Tour Package, Best Madurai, Rameswaram, Kanyakumari & Thiruvananthapuram Tour Package | 4 Days / 3 Nights, Tamil Nadu Tour, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Rameswaram to Kanyakumari to Thiruvananthapuram tour?",
+                "questionTamil": "மதுரையிலிருந்து ராமேஸ்வரம், கன்னியாகுமரி வழியாக திருவனந்தபுரத்திற்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से रामेश्वरम, कन्याकुमारी होते हुए तिरुवनंतपुरम टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 4 Days / 3 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 4 நாட்கள் / 3 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 4 दिन / 3 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Rameswaram to Kanyakumari to Thiruvananthapuram itinerary?",
+                "questionTamil": "மதுரை முதல் ராமேஸ்வரம், கன்னியாகுமரி வழியாக திருவனந்தபுரம் பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से रामेश्वरम, कन्याकुमारी होते हुए तिरुवनंतपुरम यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Meenakshi Amman Temple, Koodal Azhagar Temple, Thiruparankundram Murugan Temple, Thirumalai Nayakkar Mahal, Sri Ramanathaswamy Temple, and Agni Theertham. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் மீனாட்சி அம்மன் கோவில், கூடல் அழகர் கோவில், திருப்பரங்குன்றம் முருகன் கோவில், திருமலை நாயக்கர் மகால், ஸ்ரீ ராமநாதசுவாமி கோவில் மற்றும் அக்னி தீர்த்தம் ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में मीनाक्षी अम्मन मंदिर, कूडल अळगर मंदिर, तिरुप्परंकुंद्रम मुरुगन मंदिर, तिरुमलाई नायक्कर महल, श्री रामनाथस्वामी मंदिर और अग्नि तीर्थ जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Madurai, Rameswaram, Kanyakumari & Thiruvananthapuram Sightseeing as per the itinerary, Driver Allowance, and Toll & Parking Charges.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி மதுரை, ராமேஸ்வரம், கன்னியாகுமரி மற்றும் திருவனந்தபுரம் Sightseeing, ஓட்டுநர் Allowance மற்றும் Toll & Parking Charges ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार मदुरै, रामेश्वरम, कन्याकुमारी और तिरुवनंतपुरम दर्शनीय स्थल, ड्राइवर भत्ता और टोल एवं पार्किंग शुल्क शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 3 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 3 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 3 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Temple Special Darshan Tickets, Vivekananda Rock Ferry Tickets, Poovar Boating Charges, Entry Tickets, and Dhanushkodi Local Vehicle Charges (if required).",
+                "answerTamil": "Temple Special Darshan Tickets, Vivekananda Rock Ferry Tickets, Poovar Boating Charges, Entry Tickets மற்றும் Dhanushkodi Local Vehicle Charges (தேவைப்பட்டால்) ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Temple Special Darshan Tickets, Vivekananda Rock Ferry Tickets, Poovar Boating Charges, Entry Tickets और Dhanushkodi Local Vehicle Charges (यदि आवश्यक हो) के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2080"
@@ -18221,16 +21646,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai → Tiruchendur → Kanyakumari → Thiruvananthapuram 4 Days / 3 Nights Tour Package, Best Madurai, Tiruchendur, Kanyakumari & Thiruvananthapuram Tour Package | 4 Days / 3 Nights, Tamil Nadu Tour, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Tiruchendur to Kanyakumari to Thiruvananthapuram tour?",
+                "questionTamil": "மதுரையிலிருந்து திருச்செந்தூர், கன்னியாகுமரி வழியாக திருவனந்தபுரத்திற்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से तिरुचेंदूर, कन्याकुमारी होते हुए तिरुवनंतपुरम टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 4 Days / 3 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 4 நாட்கள் / 3 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 4 दिन / 3 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Tiruchendur to Kanyakumari to Thiruvananthapuram itinerary?",
+                "questionTamil": "மதுரை முதல் திருச்செந்தூர், கன்னியாகுமரி வழியாக திருவனந்தபுரம் பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से तिरुचेंदूर, कन्याकुमारी होते हुए तिरुवनंतपुरम यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Meenakshi Amman Temple, Koodal Azhagar Temple, Thiruparankundram Murugan Temple, Thirumalai Nayakkar Mahal, Arulmigu Subramaniya Swamy Temple, and Tiruchendur Beach. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் மீனாட்சி அம்மன் கோவில், கூடல் அழகர் கோவில், திருப்பரங்குன்றம் முருகன் கோவில், திருமலை நாயக்கர் மகால், அருள்மிகு சுப்பிரமணிய சுவாமி கோவில் மற்றும் திருச்செந்தூர் கடற்கரை ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में मीनाक्षी अम्मन मंदिर, कूडल अळगर मंदिर, तिरुप्परंकुंद्रम मुरुगन मंदिर, तिरुमलाई नायक्कर महल, अरुल्मिगु सुब्रमणिया स्वामी मंदिर और तिरुचेंदूर बीच जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Madurai, Tiruchendur, Kanyakumari & Thiruvananthapuram Sightseeing as per the itinerary, Driver Allowance, and Toll & Parking Charges.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி மதுரை, திருச்செந்தூர், கன்னியாகுமரி மற்றும் திருவனந்தபுரம் Sightseeing, ஓட்டுநர் Allowance மற்றும் Toll & Parking Charges ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार मदुरै, तिरुचेंदूर, कन्याकुमारी और तिरुवनंतपुरम दर्शनीय स्थल, ड्राइवर भत्ता और टोल एवं पार्किंग शुल्क शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 3 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 3 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 3 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Temple Special Darshan Tickets, Vivekananda Rock Ferry Tickets, Poovar Boating Charges, Entry Tickets, and Lunch & Dinner.",
+                "answerTamil": "Temple Special Darshan Tickets, Vivekananda Rock Ferry Tickets, Poovar Boating Charges, Entry Tickets மற்றும் Lunch & Dinner ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Temple Special Darshan Tickets, Vivekananda Rock Ferry Tickets, Poovar Boating Charges, Entry Tickets और Lunch & Dinner के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2081"
@@ -18253,16 +21722,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai → Kodaikanal → Palani → Madurai 4 Days / 3 Nights Tour Package, Best Kodaikanal & Palani Tour Package from Madurai | 4 Days / 3 Nights, Kodaikanal Tour, Tamil Nadu, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Kodaikanal to Palani to Madurai tour?",
+                "questionTamil": "மதுரை முதல் கொடைக்கானல், பழனி வழியாக மீண்டும் மதுரைக்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से कोडाईकनाल, पलानी होते हुए वापस मदुरै टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 4 Days / 3 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 4 நாட்கள் / 3 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 4 दिन / 3 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Kodaikanal to Palani to Madurai itinerary?",
+                "questionTamil": "மதுரை முதல் கொடைக்கானல், பழனி வழியாக மீண்டும் மதுரை பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से कोडाईकनाल, पलानी होते हुए वापस मदुरै यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Silver Cascade Falls, Coaker's Walk, Bryant Park, Kodaikanal Lake, Pillar Rocks, and Pine Forest. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் சில்வர் கேஸ்கேட் அருவி, கோக்கர்ஸ் வாக், பிரையன்ட் பார்க், கொடைக்கானல் ஏரி, பில்லர் ராக்ஸ் மற்றும் பைன் காடு ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में सिल्वर कैस्केड फॉल्स, कोकर्स वॉक, ब्रायंट पार्क, कोडाईकनाल झील, पिलर रॉक्स और पाइन फॉरेस्ट जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Kodaikanal & Palani Sightseeing as per the itinerary, Driver Allowance, and Toll & Parking Charges.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி கொடைக்கானல் மற்றும் பழனி Sightseeing, ஓட்டுநர் Allowance மற்றும் Toll & Parking Charges ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार कोडाईकनाल और पलानी दर्शनीय स्थल, ड्राइवर भत्ता और टोल एवं पार्किंग शुल्क शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 3 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 3 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 3 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Rope Car / Winch Tickets, Entry Tickets, Boating Charges, Adventure Activities, and Lunch & Dinner.",
+                "answerTamil": "Rope Car / Winch Tickets, Entry Tickets, Boating Charges, Adventure Activities மற்றும் Lunch & Dinner ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Rope Car / Winch Tickets, Entry Tickets, Boating Charges, Adventure Activities और Lunch & Dinner के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2082"
@@ -18285,20 +21798,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai → Kumbakonam → Navagraha Temples 4 Days / 3 Nights Tour Package, Best Kumbakonam Navagraha Temple Tour Package from Madurai | 4 Days / 3 Nights, Navagraha Temple Tour, Tamil Nadu, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Tamil Nadu tour package suitable for families and couples?",
-                "questionTamil": "இந்த தமிழ்நாடு சுற்றுலா பேக்கேஜ் குடும்பங்கள் மற்றும் தம்பதிகளுக்கு ஏற்றதா?",
-                "questionHindi": "क्या यह तमिलनाडु टूर पैकेज परिवारों और कपल्स के लिए उपयुक्त है?",
-                "answer": "Yes. The tour covers heritage temples and coastal beaches with comfortable hotels and a relaxed pace, making it great for family groups and honeymooners alike. We tailor activities for kids, adults and seniors (e.g. easy walks, optional temple tours) so travelers of all ages enjoy it.",
-                "answerTamil": "ஆம். இந்த சுற்றுலா பேக்கேஜில் பாரம்பரிய கோயில்கள் மற்றும் கடலோர கடற்கரைகள் இடம்பெறுவதுடன், வசதியான ஹோட்டல்கள் மற்றும் நிதானமான பயணத் திட்டமும் உள்ளது. எனவே இது குடும்பக் குழுக்கள் மற்றும் ஹனிமூன் தம்பதிகளுக்கும் சிறந்ததாக இருக்கும். குழந்தைகள், பெரியவர்கள் மற்றும் மூத்த குடிமக்கள் என அனைத்து வயதினரும் மகிழ்ச்சியாகப் பயணம் செய்யும் வகையில், எளிதான நடைப்பயணங்கள் மற்றும் விருப்பத்திற்கேற்ப கோயில் சுற்றுலா போன்ற செயல்பாடுகளை நாங்கள் ஏற்பாடு செய்கிறோம்.",
-                "answerHindi": "हाँ। इस टूर में ऐतिहासिक मंदिर और समुद्र तट, आरामदायक होटल और एक आरामदायक यात्रा कार्यक्रम शामिल है, जिससे यह परिवारों और हनीमून कपल्स दोनों के लिए बेहतरीन है। हम बच्चों, वयस्कों और वरिष्ठ नागरिकों के लिए गतिविधियों को अनुकूलित करते हैं, जैसे आसान पैदल यात्राएँ और वैकल्पिक मंदिर भ्रमण, ताकि हर उम्र के यात्री इसका आनंद ले सकें।"
+                "question": "How long is the Madurai to Kumbakonam to Navagraha Temples tour?",
+                "questionTamil": "மதுரையிலிருந்து கும்பகோணம் மற்றும் நவகிரக கோவில்கள் சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से कुंभकोणम और नवग्रह मंदिरों का टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 4 Days / 3 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 4 நாட்கள் / 3 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 4 दिन / 3 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "Can we join the Tamil Nadu tour from Madurai or Chennai?",
-                "questionTamil": "மதுரை அல்லது சென்னையிலிருந்து தமிழ்நாடு சுற்றுலாவில் நாங்கள் இணைய முடியுமா?",
-                "questionHindi": "क्या हम मदुरै या चेन्नई से तमिलनाडु टूर में शामिल हो सकते हैं?",
-                "answer": "Absolutely. We offer pickup from Madurai or Chennai and coordinate train/flight arrivals into those cities. Our driver/guide will meet you at the station/airport and begin the tour, so you can easily join from any major city in Tamil Nadu.",
-                "answerTamil": "நிச்சயமாக. மதுரை அல்லது சென்னையிலிருந்து பிக்கப் வசதியை வழங்குகிறோம், மேலும் அந்த நகரங்களுக்கு வரும் ரயில்/விமான வருகைகளையும் ஒருங்கிணைக்கிறோம். எங்கள் ஓட்டுநர்/வழிகாட்டி உங்களை ரயில் நிலையம்/விமான நிலையத்தில் சந்தித்து சுற்றுலாவைத் தொடங்குவார். எனவே தமிழ்நாட்டின் எந்த முக்கிய நகரத்திலிருந்தும் நீங்கள் எளிதாக இந்த சுற்றுலாவில் இணையலாம்.",
-                "answerHindi": "बिल्कुल। हम मदुरै या चेन्नई से पिकअप की सुविधा देते हैं और इन शहरों में आने वाली ट्रेन या फ्लाइट के समय का समन्वय करते हैं। हमारे ड्राइवर या गाइड स्टेशन या एयरपोर्ट पर आपसे मिलेंगे और टूर शुरू करेंगे, इसलिए आप तमिलनाडु के किसी भी प्रमुख शहर से आसानी से टूर में शामिल हो सकते हैं।"
+                "question": "What are the main sightseeing places covered in the Madurai to Kumbakonam to Navagraha Temples itinerary?",
+                "questionTamil": "மதுரை முதல் கும்பகோணம் மற்றும் நவகிரக கோவில்கள் பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से कुंभकोणम और नवग्रह मंदिरों की यात्रा में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Brihadeeswarar Temple, Thanjavur (UNESCO World Heritage Site), Thanjavur Royal Palace (Time Permitting), Adi Kumbeswarar Temple, Sarangapani Temple, Chakrapani Temple, and the Navagraha Temple Tour. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் பிரகதீஸ்வரர் கோவில், தஞ்சாவூர் (UNESCO உலக பாரம்பரிய தளம்), தஞ்சாவூர் அரண்மனை (நேரம் இருந்தால்), ஆதி கும்பேஸ்வரர் கோவில், சாரங்கபாணி கோவில், சக்ரபாணி கோவில் மற்றும் நவகிரக கோவில் சுற்றுலா ஆகியவை முக்கிய இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में बृहदीश्वर मंदिर, तंजावुर (UNESCO विश्व धरोहर स्थल), तंजावुर रॉयल पैलेस (समय मिलने पर), आदि कुंभेश्वरर मंदिर, सारंगपानी मंदिर, चक्रपानी मंदिर और नवग्रह मंदिर टूर शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. Drop is available at Madurai Airport, Railway Station, Hotel, or Bus Stand.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்தில் Drop வசதியும் உள்ளது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। ड्रॉप की सुविधा भी मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड पर उपलब्ध है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Kumbakonam & Navagraha Temple Sightseeing as per the itinerary, Driver Allowance, and Toll & Parking Charges.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி கும்பகோணம் மற்றும் நவகிரக கோவில் Sightseeing, ஓட்டுநர் Allowance மற்றும் Toll & Parking Charges ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार कुंभकोणम और नवग्रह मंदिर दर्शनीय स्थल, ड्राइवर भत्ता और टोल एवं पार्किंग शुल्क शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 3 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 3 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 3 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Temple Special Darshan Tickets, Entry Tickets, Lunch & Dinner, Personal Expenses, and Guide Charges.",
+                "answerTamil": "Temple Special Darshan Tickets, Entry Tickets, Lunch & Dinner, Personal Expenses மற்றும் Guide Charges ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Temple Special Darshan Tickets, Entry Tickets, Lunch & Dinner, Personal Expenses और Guide Charges के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2083"
@@ -18321,16 +21874,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai → Kanyakumari → Kovalam → Thiruvananthapuram 4 Days / 3 Nights Tour Package, Best Kanyakumari, Kovalam & Thiruvananthapuram Tour Package from Madurai | 4 Days / 3 Nights, Tamil Nadu Tour, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Kanyakumari to Kovalam to Thiruvananthapuram tour?",
+                "questionTamil": "மதுரையிலிருந்து கன்னியாகுமரி, கோவளம் வழியாக திருவனந்தபுரத்திற்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से कन्याकुमारी, कोवलम होते हुए तिरुवनंतपुरम टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 4 Days / 3 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 4 நாட்கள் / 3 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 4 दिन / 3 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Kanyakumari to Kovalam to Thiruvananthapuram itinerary?",
+                "questionTamil": "மதுரை முதல் கன்னியாகுமரி, கோவளம் வழியாக திருவனந்தபுரம் பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से कन्याकुमारी, कोवलम होते हुए तिरुवनंतपुरम यात्रा में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Kanyakumari Bhagavathi Amman Temple, Triveni Sangam, Vivekananda Rock Memorial, Thiruvalluvar Statue, Glass Bridge, and Gandhi Memorial Mandapam. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் கன்னியாகுமரி பகவதி அம்மன் கோவில், திரிவேணி சங்கமம், விவேகானந்தர் பாறை நினைவகம், திருவள்ளுவர் சிலை, கண்ணாடி பாலம் மற்றும் காந்தி நினைவு மண்டபம் ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में कन्याकुमारी भगवती अम्मन मंदिर, त्रिवेणी संगम, विवेकानंद रॉक मेमोरियल, तिरुवल्लुवर प्रतिमा, ग्लास ब्रिज और गांधी मेमोरियल मंडपम जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. The tour provides pickup from Madurai and drop at Thiruvananthapuram.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. இந்த சுற்றுலாவில் மதுரையிலிருந்து Pickup மற்றும் திருவனந்தபுரத்தில் Drop வசதி வழங்கப்படுகிறது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। इस टूर में मदुरै से पिकअप और तिरुवनंतपुरम में ड्रॉप की सुविधा दी जाती है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup from Madurai & Drop at Thiruvananthapuram, Kanyakumari, Kovalam & Thiruvananthapuram Sightseeing as per the itinerary, Driver Allowance, and Toll & Parking Charges.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup மற்றும் திருவனந்தபுரத்தில் Drop, பயணத் திட்டத்தின்படி கன்னியாகுமரி, கோவளம் மற்றும் திருவனந்தபுரம் Sightseeing, ஓட்டுநர் Allowance மற்றும் Toll & Parking Charges ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और तिरुवनंतपुरम में ड्रॉप, यात्रा कार्यक्रम के अनुसार कन्याकुमारी, कोवलम और तिरुवनंतपुरम दर्शनीय स्थल, ड्राइवर भत्ता और टोल एवं पार्किंग शुल्क शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 3 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 3 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 3 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Vivekananda Rock Ferry Tickets, Poovar Boating Charges, Entry Tickets, Lunch & Dinner, and Personal Expenses.",
+                "answerTamil": "Vivekananda Rock Ferry Tickets, Poovar Boating Charges, Entry Tickets, Lunch & Dinner மற்றும் Personal Expenses ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Vivekananda Rock Ferry Tickets, Poovar Boating Charges, Entry Tickets, Lunch & Dinner और Personal Expenses के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2084"
@@ -18354,16 +21951,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai → Munnar → Thekkady → Alleppey → Kochi 5 Days / 4 Nights Tour Package, Best Kerala Tour Package from Madurai | Munnar, Thekkady, Alleppey & Kochi | 5 Days / 4 Nights, Kerala Holiday Package, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Munnar to Thekkady to Alleppey to Kochi tour?",
+                "questionTamil": "மதுரையிலிருந்து மூணாறு, தேக்கடி, ஆலப்புழா வழியாக கொச்சிக்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से मुन्नार, थेक्कडी, अल्लेप्पी होते हुए कोच्चि टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 5 Days / 4 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 5 நாட்கள் / 4 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 5 दिन / 4 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Munnar to Thekkady to Alleppey to Kochi itinerary?",
+                "questionTamil": "மதுரை முதல் மூணாறு, தேக்கடி, ஆலப்புழா வழியாக கொச்சி பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से मुन्नार, थेक्कडी, अल्लेप्पी होते हुए कोच्चि यात्रा में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Bodimedu View Point, Poopara View Point, Anayirangal Dam View Point, Chinnakanal Waterfalls, Lockhart Gap View Point, and Signal Point. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் போடிமேடு வியூ பாயிண்ட், பூப்பாறா வியூ பாயிண்ட், ஆனையிரங்கல் அணை வியூ பாயிண்ட், சின்னக்கனால் நீர்வீழ்ச்சி, லாக்ஹார்ட் கேப் வியூ பாயிண்ட் மற்றும் சிக்னல் பாயிண்ட் ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में बोडिमेडु व्यू पॉइंट, पूपारा व्यू पॉइंट, अनायिरंगल डैम व्यू पॉइंट, चिन्नाकनाल वॉटरफॉल्स, लॉकहार्ट गैप व्यू पॉइंट और सिग्नल पॉइंट जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. The tour provides pickup from Madurai and drop at Kochi.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. இந்த சுற்றுலாவில் மதுரையிலிருந்து Pickup மற்றும் கொச்சியில் Drop வசதி வழங்கப்படுகிறது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। इस टूर में मदुरै से पिकअप और कोच्चि में ड्रॉप की सुविधा दी जाती है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup from Madurai & Drop at Kochi, Munnar, Thekkady, Alleppey & Kochi Sightseeing as per the itinerary, Driver Allowance, and Toll & Parking Charges.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup மற்றும் கொச்சியில் Drop, பயணத் திட்டத்தின்படி மூணாறு, தேக்கடி, ஆலப்புழா மற்றும் கொச்சி Sightseeing, ஓட்டுநர் Allowance மற்றும் Toll & Parking Charges ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और कोच्चि में ड्रॉप, यात्रा कार्यक्रम के अनुसार मुन्नार, थेक्कडी, अल्लेप्पी और कोच्चि दर्शनीय स्थल, ड्राइवर भत्ता और टोल एवं पार्किंग शुल्क शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 4 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 4 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 4 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Houseboat Stay Charges (unless included in the selected package), Periyar Boating Tickets, Entry Tickets, Kathakali & Kalari Show Tickets, and Lunch & Dinner.",
+                "answerTamil": "Houseboat Stay Charges (தேர்ந்தெடுக்கப்பட்ட பேக்கேஜில் சேர்க்கப்படவில்லை என்றால்), Periyar Boating Tickets, Entry Tickets, Kathakali & Kalari Show Tickets மற்றும் Lunch & Dinner ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Houseboat Stay Charges (यदि चुने गए पैकेज में शामिल नहीं हैं), Periyar Boating Tickets, Entry Tickets, Kathakali & Kalari Show Tickets और Lunch & Dinner के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2085"
@@ -18387,16 +22028,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai → Rameswaram → Tiruchendur → Kanyakumari → Thiruvananthapuram 5 Days / 4 Nights Tour Package, Best Rameswaram, Tiruchendur, Kanyakumari & Thiruvananthapuram Tour Package from Madurai | 5 Days / 4 Nights, South India Temple Tour, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Rameswaram to Tiruchendur to Kanyakumari to Thiruvananthapuram tour?",
+                "questionTamil": "மதுரை முதல் ராமேஸ்வரம், திருச்செந்தூர், கன்னியாகுமரி, திருவனந்தபுரம் சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से रामेश्वरम, तिरुचेंदूर, कन्याकुमारी और तिरुवनंतपुरम टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 5 Days / 4 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 5 நாட்கள் / 4 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 5 दिन / 4 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Rameswaram to Tiruchendur to Kanyakumari to Thiruvananthapuram itinerary?",
+                "questionTamil": "மதுரை முதல் ராமேஸ்வரம், திருச்செந்தூர், கன்னியாகுமரி, திருவனந்தபுரம் பயணத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से रामेश्वरम, तिरुचेंदूर, कन्याकुमारी और तिरुवनंतपुरम यात्रा में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Sri Ramanathaswamy Temple, Pamban Bridge, Agni Theertham, Dr. A.P.J. Abdul Kalam Memorial, Abdul Kalam House Museum, and Evening Beach Visit. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் ஸ்ரீ ராமநாதசுவாமி கோயில், பாம்பன் பாலம், அக்னி தீர்த்தம், டாக்டர் ஏ.பி.ஜே. அப்துல் கலாம் நினைவிடம், அப்துல் கலாம் இல்ல அருங்காட்சியகம் மற்றும் மாலை நேர கடற்கரை பார்வையிடுதல் ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में श्री रामनाथस्वामी मंदिर, पंबन ब्रिज, अग्नि तीर्थम, डॉ. ए.पी.जे. अब्दुल कलाम मेमोरियल, अब्दुल कलाम हाउस म्यूज़ियम और शाम का समुद्र तट भ्रमण शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. The tour provides pickup from Madurai and drop at Thiruvananthapuram.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. இந்த சுற்றுலாவில் மதுரையிலிருந்து Pickup மற்றும் திருவனந்தபுரத்தில் Drop வசதி வழங்கப்படுகிறது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। इस टूर में मदुरै से पिकअप और तिरुवनंतपुरम में ड्रॉप की सुविधा दी जाती है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup from Madurai & Drop at Thiruvananthapuram, Sightseeing as per the itinerary, Driver Allowance, and Toll & Parking Charges.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup மற்றும் திருவனந்தபுரத்தில் Drop, பயணத் திட்டத்தின்படி Sightseeing, ஓட்டுநர் Allowance மற்றும் Toll & Parking Charges ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और तिरुवनंतपुरम में ड्रॉप, यात्रा कार्यक्रम के अनुसार दर्शनीय स्थल, ड्राइवर भत्ता और टोल एवं पार्किंग शुल्क शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 4 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 4 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 4 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Temple Special Darshan Tickets, Vivekananda Rock Ferry Tickets, Poovar Boating Charges, Entry Tickets, and Lunch & Dinner.",
+                "answerTamil": "Temple Special Darshan Tickets, Vivekananda Rock Ferry Tickets, Poovar Boating Charges, Entry Tickets மற்றும் Lunch & Dinner ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Temple Special Darshan Tickets, Vivekananda Rock Ferry Tickets, Poovar Boating Charges, Entry Tickets और Lunch & Dinner के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2086"
@@ -18420,16 +22105,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai → Rameswaram → Dhanushkodi → Kanyakumari → Thiruvananthapuram 5 Days / 4 Nights Tour Package, Best Rameswaram, Dhanushkodi, Kanyakumari & Thiruvananthapuram Tour Package from Madurai | 5 Days / 4 Nights, South India Tour, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Rameswaram to Dhanushkodi to Kanyakumari to Thiruvananthapuram tour?",
+                "questionTamil": "மதுரை முதல் ராமேஸ்வரம், தனுஷ்கோடி, கன்னியாகுமரி, திருவனந்தபுரம் சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से रामेश्वरम, धनुषकोडी, कन्याकुमारी और तिरुवनंतपुरम टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 5 Days / 4 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 5 நாட்கள் / 4 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 5 दिन / 4 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Rameswaram to Dhanushkodi to Kanyakumari to Thiruvananthapuram itinerary?",
+                "questionTamil": "மதுரை முதல் ராமேஸ்வரம், தனுஷ்கோடி, கன்னியாகுமரி, திருவனந்தபுரம் பயணத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से रामेश्वरम, धनुषकोडी, कन्याकुमारी और तिरुवनंतपुरम यात्रा में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Sri Ramanathaswamy Temple, Agni Theertham, Pamban Rail Bridge View Point, Dr. A.P.J. Abdul Kalam Memorial, Abdul Kalam House Museum, and Day 02 – Rameswaram → Dhanushkodi → Kanyakumari. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் ஸ்ரீ ராமநாதசுவாமி கோயில், அக்னி தீர்த்தம், பாம்பன் ரயில் பாலம் வியூ பாயிண்ட், டாக்டர் ஏ.பி.ஜே. அப்துல் கலாம் நினைவிடம், அப்துல் கலாம் இல்ல அருங்காட்சியகம் மற்றும் நாள் 02 – ராமேஸ்வரம் → தனுஷ்கோடி → கன்னியாகுமரி ஆகியவை முக்கியமாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में श्री रामनाथस्वामी मंदिर, अग्नि तीर्थम, पंबन रेल ब्रिज व्यू पॉइंट, डॉ. ए.पी.जे. अब्दुल कलाम मेमोरियल, अब्दुल कलाम हाउस म्यूज़ियम और दिन 02 – रामेश्वरम → धनुषकोडी → कन्याकुमारी शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. The tour provides pickup from Madurai and drop at Thiruvananthapuram.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. இந்த சுற்றுலாவில் மதுரையிலிருந்து Pickup மற்றும் திருவனந்தபுரத்தில் Drop வசதி வழங்கப்படுகிறது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। इस टूर में मदुरै से पिकअप और तिरुवनंतपुरम में ड्रॉप की सुविधा दी जाती है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup from Madurai & Drop at Thiruvananthapuram, Sightseeing as per the itinerary, Driver Allowance, and Toll & Parking Charges.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup மற்றும் திருவனந்தபுரத்தில் Drop, பயணத் திட்டத்தின்படி Sightseeing, ஓட்டுநர் Allowance மற்றும் Toll & Parking Charges ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और तिरुवनंतपुरम में ड्रॉप, यात्रा कार्यक्रम के अनुसार दर्शनीय स्थल, ड्राइवर भत्ता और टोल एवं पार्किंग शुल्क शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 4 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 4 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 4 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Temple Special Darshan Tickets, Vivekananda Rock Ferry Tickets, Poovar Boating Charges, Entry Tickets, and Lunch & Dinner.",
+                "answerTamil": "Temple Special Darshan Tickets, Vivekananda Rock Ferry Tickets, Poovar Boating Charges, Entry Tickets மற்றும் Lunch & Dinner ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Temple Special Darshan Tickets, Vivekananda Rock Ferry Tickets, Poovar Boating Charges, Entry Tickets और Lunch & Dinner के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2087"
@@ -18453,16 +22182,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Madurai → Kodaikanal → Rameswaram → Kanyakumari → Thiruvananthapuram 5 Days / 4 Nights Tour Package, Best Kodaikanal, Rameswaram, Kanyakumari & Thiruvananthapuram Tour Package from Madurai | 5 Days / 4 Nights, South India Tour, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Madurai to Kodaikanal to Rameswaram to Kanyakumari to Thiruvananthapuram tour?",
+                "questionTamil": "மதுரை முதல் கொடைக்கானல், ராமேஸ்வரம், கன்னியாகுமரி, திருவனந்தபுரம் சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
+                "questionHindi": "मदुरै से कोडाइकनाल, रामेश्वरम, कन्याकुमारी और तिरुवनंतपुरम टूर कितने दिनों का है?",
+                "answer": "This Logaa Holidays itinerary is planned for 5 Days / 4 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 5 நாட்கள் / 4 இரவுகள் என திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 5 दिन / 4 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Madurai to Kodaikanal to Rameswaram to Kanyakumari to Thiruvananthapuram itinerary?",
+                "questionTamil": "மதுரை முதல் கொடைக்கானல், ராமேஸ்வரம், கன்னியாகுமரி, திருவனந்தபுரம் பயணத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
+                "questionHindi": "मदुरै से कोडाइकनाल, रामेश्वरम, कन्याकुमारी और तिरुवनंतपुरम यात्रा में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
+                "answer": "Key places listed in the itinerary include Silver Cascade Falls, Coaker's Walk, Bryant Park, Kodaikanal Lake, Pillar Rocks, and Pine Forest. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் சில்வர் கேஸ்கேட் நீர்வீழ்ச்சி, கோக்கர்ஸ் வாக், பிரையன்ட் பார்க், கொடைக்கானல் ஏரி, பில்லர் ராக்ஸ் மற்றும் பைன் ஃபாரஸ்ட் ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
+                "answerHindi": "इस यात्रा कार्यक्रम में सिल्वर कैस्केड फॉल्स, कोकर्स वॉक, ब्रायंट पार्क, कोडाइकनाल लेक, पिलर रॉक्स और पाइन फॉरेस्ट जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
+                "questionHindi": "इस टूर के लिए कौन-कौन से पिकअप और ड्रॉप विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Madurai Airport, Railway Station, Hotel, or Bus Stand. The tour provides pickup from Madurai and drop at Thiruvananthapuram.",
+                "answerTamil": "மதுரை விமான நிலையம், ரயில் நிலையம், ஹோட்டல் அல்லது பேருந்து நிலையத்திலிருந்து Pickup வசதி உள்ளது. இந்த சுற்றுலாவில் மதுரையிலிருந்து Pickup மற்றும் திருவனந்தபுரத்தில் Drop வசதி வழங்கப்படுகிறது.",
+                "answerHindi": "मदुरै एयरपोर्ट, रेलवे स्टेशन, होटल या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। इस टूर में मदुरै से पिकअप और तिरुवनंतपुरम में ड्रॉप की सुविधा दी जाती है।"
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The package includes a Private A/C Vehicle, Pickup from Madurai & Drop at Thiruvananthapuram, Sightseeing as per the itinerary, Driver Allowance, and Toll & Parking Charges.",
+                "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup மற்றும் திருவனந்தபுரத்தில் Drop, பயணத் திட்டத்தின்படி Sightseeing, ஓட்டுநர் Allowance மற்றும் Toll & Parking Charges ஆகியவை சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और तिरुवनंतपुरम में ड्रॉप, यात्रा कार्यक्रम के अनुसार दर्शनीय स्थल, ड्राइवर भत्ता और टोल एवं पार्किंग शुल्क शामिल हैं।"
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த பேக்கேஜில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
+                "answer": "Yes. The package includes 4 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த பேக்கேஜில் 4 இரவுகள் ஹோட்டல் தங்குமிடம் மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 4 रातों का होटल आवास और Complimentary Breakfast शामिल है।"
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges include Temple Special Darshan Tickets, Vivekananda Rock Ferry Tickets, Poovar Boating Charges, Entry Tickets, and Lunch & Dinner.",
+                "answerTamil": "Temple Special Darshan Tickets, Vivekananda Rock Ferry Tickets, Poovar Boating Charges, Entry Tickets மற்றும் Lunch & Dinner ஆகியவற்றிற்கு கூடுதல் கட்டணம் செலுத்த வேண்டும்.",
+                "answerHindi": "Temple Special Darshan Tickets, Vivekananda Rock Ferry Tickets, Poovar Boating Charges, Entry Tickets और Lunch & Dinner के लिए अतिरिक्त शुल्क देना होगा।"
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை தனிப்பயனாக்க முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है?",
+                "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப பயணத் திட்டத்தை இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
         "id": "2088"
@@ -18489,16 +22262,60 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Kochi → Munnar → Thekkady → Alleppey → Kovalam → Kanyakumari → Rameswaram → Madurai 8 Days / 7 Nights Tour Package, Best Kerala & Tamil Nadu Tour Package | Kochi, Munnar, Thekkady, Alleppey, Kovalam, Kanyakumari, Rameswaram & Madurai | 8 Days / 7 Nights, Logaa Holidays",
         "faq": [
             {
-                "question": "Is this Madurai tour suitable for families and seniors?",
-                "questionTamil": "இந்த மதுரை சுற்றுலா குடும்பங்கள் மற்றும் மூத்த குடிமக்களுக்கு ஏற்றதா?",
-                "answer": "Yes. The Madurai tour is designed for comfort and convenience. It includes easy-paced sightseeing at famous temples and cultural landmarks. Our guide assists elderly travelers at each stop, and the itinerary allows sufficient time for rest breaks, making it ideal for families and senior pilgrims.",
-                "answerTamil": "ஆம். மதுரை சுற்றுலா வசதியாகவும் சௌகரியமாகவும் வடிவமைக்கப்பட்டுள்ளது. புகழ்பெற்ற கோயில்கள் மற்றும் கலாச்சார அடையாளங்களில் எளிதான சுற்றுலா இதில் அடங்கும். எங்கள் வழிகாட்டி ஒவ்வொரு இடத்திலும் மூத்த பயணிகளுக்கு உதவுகிறார், மேலும் பயணத்திட்டம் ஓய்வு இடைவேளைக்கு போதுமான நேரத்தை அனுமதிக்கிறது."
+                "question": "How long is the Kochi to Munnar to Thekkady to Alleppey to Kovalam to Kanyakumari to Rameswaram to Madurai tour?",
+                "questionTamil": "Kochi முதல் Munnar, Thekkady, Alleppey, Kovalam, Kanyakumari, Rameswaram வழியாக Madurai செல்லும் சுற்றுலா எத்தனை நாட்கள்?",
+                "questionHindi": "Kochi से Munnar, Thekkady, Alleppey, Kovalam, Kanyakumari और Rameswaram होते हुए Madurai की यात्रा कितने दिनों की है?",
+                "answer": "This Logaa Holidays itinerary is planned for 8 Days / 7 Nights.",
+                "answerTamil": "இந்த Logaa Holidays பயணத் திட்டம் 8 நாட்கள் / 7 இரவுகளுக்காக திட்டமிடப்பட்டுள்ளது.",
+                "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 8 दिन / 7 रातों के लिए योजनाबद्ध है."
             },
             {
-                "question": "From where does the Madurai tour depart?",
-                "questionTamil": "மதுரை சுற்றுலா எங்கிருந்து புறப்படுகிறது?",
-                "answer": "The tour departs from Madurai city, typically from your hotel, railway station, or airport. We arrange pickup at a convenient time and can also accommodate travelers coming from nearby cities or towns.",
-                "answerTamil": "இந்த சுற்றுப்பயணம் மதுரை நகரத்திலிருந்து புறப்படுகிறது, பொதுவாக உங்கள் ஹோட்டல், ரயில் நிலையம் அல்லது விமான நிலையத்திலிருந்து. வசதியான நேரத்தில் பிக்கப் ஏற்பாடு செய்கிறோம்."
+                "question": "What are the main sightseeing places covered in the Kochi to Munnar to Thekkady to Alleppey to Kovalam to Kanyakumari to Rameswaram to Madurai itinerary?",
+                "questionTamil": "Kochi முதல் Madurai வரையிலான இந்த பயணத் திட்டத்தில் முக்கியமாக பார்க்கக்கூடிய இடங்கள் எவை?",
+                "questionHindi": "Kochi से Madurai तक इस यात्रा कार्यक्रम में मुख्य दर्शनीय स्थल कौन-कौन से हैं?",
+                "answer": "Key places listed in the itinerary include Cheeyappara Waterfalls, Valara Waterfalls, Spice Garden, Tea Plantation View Points, Blossom Hydel Park, Rose Garden. Sightseeing is subject to the day-wise schedule and available time.",
+                "answerTamil": "இந்த பயணத் திட்டத்தில் Cheeyappara Waterfalls, Valara Waterfalls, Spice Garden, Tea Plantation View Points, Blossom Hydel Park மற்றும் Rose Garden ஆகியவை முக்கிய இடங்களாக குறிப்பிடப்பட்டுள்ளன. தினசரி பயணத் திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்து sightseeing அமையும்.",
+                "answerHindi": "इस यात्रा कार्यक्रम में Cheeyappara Waterfalls, Valara Waterfalls, Spice Garden, Tea Plantation View Points, Blossom Hydel Park और Rose Garden शामिल हैं। दर्शनीय स्थलों की यात्रा दिन-वार कार्यक्रम और उपलब्ध समय के अनुसार होगी."
+            },
+            {
+                "question": "What pickup and drop options are available for this tour?",
+                "questionTamil": "இந்த சுற்றுலாவிற்கு pickup மற்றும் drop வசதிகள் என்ன?",
+                "questionHindi": "इस टूर के लिए pickup और drop के क्या विकल्प उपलब्ध हैं?",
+                "answer": "Pickup is available from Kochi Airport, Ernakulam Railway Station, or Hotel. Drop is available in Madurai.",
+                "answerTamil": "Kochi Airport, Ernakulam Railway Station அல்லது Hotel-இலிருந்து pickup வசதி உள்ளது. Madurai-யில் drop வசதி உள்ளது.",
+                "answerHindi": "Pickup Kochi Airport, Ernakulam Railway Station या Hotel से उपलब्ध है। Drop Madurai में उपलब्ध है."
+            },
+            {
+                "question": "What is included in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா package-ல் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
+                "answer": "The stated inclusions include Private A/C Vehicle, Pickup from Kochi & Drop at Madurai, Sightseeing as per Itinerary, Driver Allowance, and Toll & Parking Charges.",
+                "answerTamil": "Private A/C Vehicle, Kochi-யிலிருந்து Pickup & Madurai-யில் Drop, பயணத் திட்டத்தின்படி Sightseeing, Driver Allowance மற்றும் Toll & Parking Charges ஆகியவை package-ல் சேர்க்கப்பட்டுள்ளன.",
+                "answerHindi": "पैकेज में Private A/C Vehicle, Kochi से Pickup और Madurai में Drop, यात्रा कार्यक्रम के अनुसार Sightseeing, Driver Allowance तथा Toll & Parking Charges शामिल हैं."
+            },
+            {
+                "question": "Does this package include hotel accommodation and breakfast?",
+                "questionTamil": "இந்த package-ல் hotel accommodation மற்றும் breakfast சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस पैकेज में hotel accommodation और breakfast शामिल है?",
+                "answer": "Yes. The package lists 7 Nights Hotel Accommodation and Complimentary Breakfast.",
+                "answerTamil": "ஆம். இந்த package-ல் 7 இரவுகள் Hotel Accommodation மற்றும் Complimentary Breakfast சேர்க்கப்பட்டுள்ளது.",
+                "answerHindi": "हाँ। इस पैकेज में 7 रातों का Hotel Accommodation और Complimentary Breakfast शामिल है."
+            },
+            {
+                "question": "Which costs are extra in this tour package?",
+                "questionTamil": "இந்த சுற்றுலா package-ல் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
+                "questionHindi": "इस टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
+                "answer": "Extra charges listed under Package Excludes include Houseboat Charges (unless selected), Periyar Boating Tickets, Shikara Boat Charges, Poovar Boating Charges, and Entry Tickets.",
+                "answerTamil": "Package Excludes-ல் Houseboat Charges (தேர்வு செய்யப்படவில்லை என்றால்), Periyar Boating Tickets, Shikara Boat Charges, Poovar Boating Charges மற்றும் Entry Tickets ஆகியவை கூடுதல் செலவுகளாக குறிப்பிடப்பட்டுள்ளன.",
+                "answerHindi": "Package Excludes में Houseboat Charges (यदि चयनित नहीं है), Periyar Boating Tickets, Shikara Boat Charges, Poovar Boating Charges और Entry Tickets अतिरिक्त खर्चுகளாக குறிப்பிடப்பட்டுள்ளன."
+            },
+            {
+                "question": "Can this itinerary be customized?",
+                "questionTamil": "இந்த பயணத் திட்டத்தை customize செய்ய முடியுமா?",
+                "questionHindi": "क्या इस यात्रा कार्यक्रम को customize किया जा सकता है?",
+                "answer": "Yes. The package section states that customized or customizable tour plans are available. The itinerary can be finalized according to the booking requirements.",
+                "answerTamil": "ஆம். Customized அல்லது customizable tour plans கிடைக்கின்றன. Booking requirements-க்கு ஏற்ப itinerary-ஐ இறுதி செய்யலாம்.",
+                "answerHindi": "हाँ। पैकेज में customized या customizable tour plans उपलब्ध हैं। Booking requirements के अनुसार itinerary को final किया जा सकता है."
             }
         ],
         "id": "2089"
@@ -21622,16 +25439,60 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book premium Ooty and Coonoor honeymoon package for 3 Nights and 4 Days with tea gardens, optional toy train and romantic resort stay.",
         "faq": [
             {
-                "question": "Is this Tamil Nadu honeymoon package ideal for couples?",
-                "questionTamil": "இந்த தமிழ்நாடு ஹனிமூன் பேக்கேஜ் தம்பதிகளுக்கு ஏற்றதா?",
-                "answer": "Yes. The itinerary is designed for romance, combining scenic hill stations, coastal beaches, and heritage sites. We include cozy accommodations, scenic viewpoints, and can arrange special couple experiences like candlelight dinners and private excursions.",
-                "answerTamil": "ஆம். இந்த பயணத் திட்டம் காதல் நிறைந்த அனுபவத்திற்காக வடிவமைக்கப்பட்டுள்ளது, அழகிய மலை வாசஸ்தலங்கள், கடலோர கடற்கரைகள் மற்றும் பாரம்பரிய தளங்களை ஒருங்கிணைக்கிறது. வசதியான தங்குமிடங்கள், அழகிய காட்சி முனைகள் ஆகியவற்றை உள்ளடக்கியுள்ளோம், மேலும் மெழுகுவர்த்தி இரவு உணவுகள் மற்றும் தனிப்பட்ட சுற்றுலாக்கள் போன்ற சிறப்பு ஜோடி அனுபவங்களை ஏற்பாடு செய்யலாம்."
+                "question": "Can I book the Premium Kodaikanal Honeymoon Package – 2 Nights / 3 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "Logaa Holidays மூலம் மதுரையிலிருந்து Premium Kodaikanal Honeymoon Package – 2 Nights / 3 Days-ஐ நான் முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं Logaa Holidays के साथ मदुरै से Premium Kodaikanal Honeymoon Package – 2 Nights / 3 Days बुक कर सकता/सकती हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. This itinerary includes the Madurai-sector pickup/drop or route stated in the package. The planned route is Madurai – Kodaikanal – Madurai. The stay plan is Kodaikanal – 2 Nights. Main experiences include Scenic hill-station drive, Kodaikanal Lake experience, Pine Forest and Pillar Rocks, Leisure time for couples.",
+                "answerTamil": "ஆம். Logaa Holidays மதுரையை அடிப்படையாகக் கொண்ட tour operator ஆகும், மேலும் மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள தம்பதிகள் இந்த package-ஐ முன்பதிவு செய்யலாம். இந்த itinerary-ல் package-ல் குறிப்பிடப்பட்டுள்ள Madurai-sector pickup/drop அல்லது route அடங்கும். திட்டமிடப்பட்ட route Madurai – Kodaikanal – Madurai ஆகும். Stay plan Kodaikanal – 2 Nights ஆகும். Main experiences include Scenic hill-station drive, Kodaikanal Lake experience, Pine Forest and Pillar Rocks, Leisure time for couples.",
+                "answerHindi": "हाँ। Logaa Holidays मदुरै स्थित tour operator है, और मदुरै तथा पूरे तमिलनाडु से आने वाले couples इस package को बुक कर सकते हैं। इस itinerary में package में बताया गया Madurai-sector pickup/drop या route शामिल है। नियोजित route Madurai – Kodaikanal – Madurai है। Stay plan Kodaikanal – 2 Nights है। Main experiences include Scenic hill-station drive, Kodaikanal Lake experience, Pine Forest and Pillar Rocks, Leisure time for couples."
             },
             {
-                "question": "Can we join the Tamil Nadu honeymoon tour from Madurai or Chennai?",
-                "questionTamil": "மதுரை அல்லது சென்னையிலிருந்து தமிழ்நாடு ஹனிமூன் சுற்றுலாவில் நாங்கள் இணைய முடியுமா?",
-                "answer": "Absolutely. We offer pickup from Madurai or Chennai. Our driver and guide will meet you at the station or airport and begin the tour, so you can easily join from any major city in Tamil Nadu.",
-                "answerTamil": "நிச்சயமாக. மதுரை அல்லது சென்னையிலிருந்து பிக்கப் வசதியை வழங்குகிறோம். எங்கள் ஓட்டுநர்/வழிகாட்டி உங்களை ரயில் நிலையம்/விமான நிலையத்தில் சந்தித்து சுற்றுலாவைத் தொடங்குவார். எனவே தமிழ்நாட்டின் எந்த முக்கிய நகரத்திலிருந்தும் நீங்கள் எளிதாக இந்த சுற்றுலாவில் இணையலாம்."
+                "question": "Is the Premium Kodaikanal Honeymoon Package – 2 Nights / 3 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் ஹனிமூன் தம்பதிகளுக்கு Premium Kodaikanal Honeymoon Package – 2 Nights / 3 Days பொருத்தமானதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले हनीमून कपल्स के लिए Premium Kodaikanal Honeymoon Package – 2 Nights / 3 Days उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. The stay plan is Kodaikanal – 2 Nights. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். இந்த itinerary மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள பிற நகரங்களிலிருந்து பயணம் செய்யும் couples-க்கு ஏற்றது. Stay plan Kodaikanal – 2 Nights ஆகும். Package pickup point-க்கு arrival மற்றும் departure travel final confirmed quotation-ஐப் பின்பற்றும்.",
+                "answerHindi": "हाँ। यह itinerary मदुरै और पूरे तमिलनाडु के अन्य शहरों से यात्रा करने वाले couples के लिए उपयुक्त है। Stay plan Kodaikanal – 2 Nights है। Package pickup point तक arrival और departure travel final confirmed quotation के अनुसार होगा।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் accommodation மற்றும் breakfast சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस हनीमून package में accommodation और breakfast शामिल है?",
+                "answer": "Accommodation includes Two nights’ accommodation in Kodaikanal. Daily breakfast.",
+                "answerTamil": "Accommodation includes Kodaikanal-ல் Two nights’ accommodation. Daily breakfast.",
+                "answerHindi": "Accommodation includes Kodaikanal में Two nights’ accommodation. Daily breakfast."
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் என்ன pickup, drop மற்றும் private transport சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस हनीमून package में कौन-कौन सी pickup, drop और private transport शामिल हैं?",
+                "answer": "Private Madurai pickup and drop. Private air-conditioned sedan. The confirmed itinerary itself includes the Madurai pickup/drop or Madurai route stated in this package.",
+                "answerTamil": "Private Madurai pickup and drop. Private air-conditioned sedan. Confirmed itinerary-ல் இந்த package-ல் குறிப்பிடப்பட்டுள்ள Madurai pickup/drop அல்லது Madurai route அடங்கும்.",
+                "answerHindi": "Private Madurai pickup and drop. Private air-conditioned sedan. Confirmed itinerary में इस package में बताया गया Madurai pickup/drop या Madurai route शामिल है।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "Logaa Holidays Madurai honeymoon room decoration, cake அல்லது candlelight dinner ஏற்பாடு செய்ய முடியுமா?",
+                "questionHindi": "क्या Logaa Holidays Madurai honeymoon room decoration, cake या candlelight dinner की व्यवस्था कर सकता है?",
+                "answer": "Available romantic add-ons listed for this package include Welcome drink, Honeymoon cake, Flower-bed decoration, Fruit basket, Candlelight dinner. They are subject to the hotel, resort or operator policy and must be confirmed in the final quotation.",
+                "answerTamil": "Available romantic add-ons listed for this package include Welcome drink, Honeymoon cake, Flower-bed decoration, Fruit basket, Candlelight dinner. இவை hotel, resort அல்லது operator policy-க்கு உட்பட்டவை மற்றும் final quotation-ல் confirm செய்யப்பட வேண்டும்.",
+                "answerHindi": "Available romantic add-ons listed for this package include Welcome drink, Honeymoon cake, Flower-bed decoration, Fruit basket, Candlelight dinner. ये hotel, resort या operator policy के अधीन हैं और final quotation में confirm किए जाने चाहिए।"
+            },
+            {
+                "question": "What is not included in the package price?",
+                "questionTamil": "Package price-ல் எவை சேர்க்கப்படவில்லை?",
+                "questionHindi": "Package price में क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Flight, train and bus tickets, Lunch and dinner unless included, Attraction entry tickets, Boating charges, Guide charges, Cycling and horse-riding charges. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "Key exclusions listed for this package include Flight, train and bus tickets, Lunch and dinner unless included, Attraction entry tickets, Boating charges, Guide charges, Cycling and horse-riding charges. Inclusions-ல் குறிப்பாக குறிப்பிடப்படாத எந்த service-ம் extra ஆகக் கருதப்பட வேண்டும்.",
+                "answerHindi": "Key exclusions listed for this package include Flight, train and bus tickets, Lunch and dinner unless included, Attraction entry tickets, Boating charges, Guide charges, Cycling and horse-riding charges. Inclusions के अंतर्गत विशेष रूप से उल्लेख नहीं की गई किसी भी service को extra माना जाना चाहिए।"
+            },
+            {
+                "question": "What are the pickup and drop points for this Tamil Nadu honeymoon package?",
+                "questionTamil": "இந்த தமிழ்நாடு ஹனிமூன் package-க்கான pickup மற்றும் drop points எவை?",
+                "questionHindi": "इस तमिलनाडु हनीमून package के pickup और drop points कौन से हैं?",
+                "answer": "Private Madurai pickup and drop",
+                "answerTamil": "Private Madurai pickup and drop",
+                "answerHindi": "Private Madurai pickup and drop"
             }
         ],
         "id": "9202"
@@ -21784,16 +25645,60 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book premium Kodaikanal and Kanyakumari honeymoon package for 4 Nights 5 Days. Enjoy hill-station charm and coastal beauty with private cab.",
         "faq": [
             {
-                "question": "Is this Tamil Nadu honeymoon package ideal for couples?",
-                "questionTamil": "இந்த தமிழ்நாடு ஹனிமூன் பேக்கேஜ் தம்பதிகளுக்கு ஏற்றதா?",
-                "answer": "Yes. The itinerary is designed for romance, combining scenic hill stations, coastal beaches, and heritage sites. We include cozy accommodations, scenic viewpoints, and can arrange special couple experiences like candlelight dinners and private excursions.",
-                "answerTamil": "ஆம். இந்த பயணத் திட்டம் காதல் நிறைந்த அனுபவத்திற்காக வடிவமைக்கப்பட்டுள்ளது, அழகிய மலை வாசஸ்தலங்கள், கடலோர கடற்கரைகள் மற்றும் பாரம்பரிய தளங்களை ஒருங்கிணைக்கிறது. வசதியான தங்குமிடங்கள், அழகிய காட்சி முனைகள் ஆகியவற்றை உள்ளடக்கியுள்ளோம், மேலும் மெழுகுவர்த்தி இரவு உணவுகள் மற்றும் தனிப்பட்ட சுற்றுலாக்கள் போன்ற சிறப்பு ஜோடி அனுபவங்களை ஏற்பாடு செய்யலாம்."
+                "question": "Can I book the Premium Kodaikanal and Kanyakumari Honeymoon – 4 Nights / 5 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "Logaa Holidays மூலம் மதுரையிலிருந்து Premium Kodaikanal and Kanyakumari Honeymoon – 4 Nights / 5 Days-ஐ நான் முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं Logaa Holidays के साथ मदुरै से Premium Kodaikanal and Kanyakumari Honeymoon – 4 Nights / 5 Days बुक कर सकता/सकती हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. This itinerary includes the Madurai-sector pickup/drop or route stated in the package. The planned route is Madurai – Kodaikanal – Kanyakumari – Trivandrum. The stay plan is Kodaikanal 2 Nights + Kanyakumari 2 Nights. Main experiences include Hill and coastal sightseeing, Kodaikanal Lake and viewpoints, Kanyakumari sunrise and sunset, Silver Cascade Falls.",
+                "answerTamil": "ஆம். Logaa Holidays மதுரையை அடிப்படையாகக் கொண்ட tour operator ஆகும், மேலும் மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள தம்பதிகள் இந்த package-ஐ முன்பதிவு செய்யலாம். இந்த itinerary-ல் package-ல் குறிப்பிடப்பட்டுள்ள Madurai-sector pickup/drop அல்லது route அடங்கும். திட்டமிடப்பட்ட route Madurai – Kodaikanal – Kanyakumari – Trivandrum ஆகும். Stay plan Kodaikanal 2 Nights + Kanyakumari 2 Nights ஆகும். Main experiences include Hill and coastal sightseeing, Kodaikanal Lake and viewpoints, Kanyakumari sunrise and sunset, Silver Cascade Falls.",
+                "answerHindi": "हाँ। Logaa Holidays मदुरै स्थित tour operator है, और मदुरै तथा पूरे तमिलनाडु से आने वाले couples इस package को बुक कर सकते हैं। इस itinerary में package में बताया गया Madurai-sector pickup/drop या route शामिल है। नियोजित route Madurai – Kodaikanal – Kanyakumari – Trivandrum है। Stay plan Kodaikanal 2 Nights + Kanyakumari 2 Nights है। Main experiences include Hill and coastal sightseeing, Kodaikanal Lake and viewpoints, Kanyakumari sunrise and sunset, Silver Cascade Falls."
             },
             {
-                "question": "Can we join the Tamil Nadu honeymoon tour from Madurai or Chennai?",
-                "questionTamil": "மதுரை அல்லது சென்னையிலிருந்து தமிழ்நாடு ஹனிமூன் சுற்றுலாவில் நாங்கள் இணைய முடியுமா?",
-                "answer": "Absolutely. We offer pickup from Madurai or Chennai. Our driver and guide will meet you at the station or airport and begin the tour, so you can easily join from any major city in Tamil Nadu.",
-                "answerTamil": "நிச்சயமாக. மதுரை அல்லது சென்னையிலிருந்து பிக்கப் வசதியை வழங்குகிறோம். எங்கள் ஓட்டுநர்/வழிகாட்டி உங்களை ரயில் நிலையம்/விமான நிலையத்தில் சந்தித்து சுற்றுலாவைத் தொடங்குவார். எனவே தமிழ்நாட்டின் எந்த முக்கிய நகரத்திலிருந்தும் நீங்கள் எளிதாக இந்த சுற்றுலாவில் இணையலாம்."
+                "question": "Is the Premium Kodaikanal and Kanyakumari Honeymoon – 4 Nights / 5 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் ஹனிமூன் தம்பதிகளுக்கு Premium Kodaikanal and Kanyakumari Honeymoon – 4 Nights / 5 Days பொருத்தமானதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले हनीमून कपल्स के लिए Premium Kodaikanal and Kanyakumari Honeymoon – 4 Nights / 5 Days उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. The stay plan is Kodaikanal 2 Nights + Kanyakumari 2 Nights. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். இந்த itinerary மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள பிற நகரங்களிலிருந்து பயணம் செய்யும் couples-க்கு ஏற்றது. Stay plan Kodaikanal 2 Nights + Kanyakumari 2 Nights ஆகும். Package pickup point-க்கு arrival மற்றும் departure travel final confirmed quotation-ஐப் பின்பற்றும்.",
+                "answerHindi": "हाँ। यह itinerary मदुरै और पूरे तमिलनाडु के अन्य शहरों से यात्रा करने वाले couples के लिए उपयुक्त है। Stay plan Kodaikanal 2 Nights + Kanyakumari 2 Nights है। Package pickup point तक arrival और departure travel final confirmed quotation के अनुसार होगा।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் accommodation மற்றும் breakfast சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस हनीमून package में accommodation और breakfast शामिल है?",
+                "answer": "Accommodation includes Two nights’ accommodation in Kodaikanal; Two nights’ accommodation in Kanyakumari. Daily breakfast.",
+                "answerTamil": "Accommodation includes Kodaikanal-ல் Two nights’ accommodation; Kanyakumari-ல் Two nights’ accommodation. Daily breakfast.",
+                "answerHindi": "Accommodation includes Kodaikanal में Two nights’ accommodation; Kanyakumari में Two nights’ accommodation. Daily breakfast."
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் என்ன pickup, drop மற்றும் private transport சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस हनीमून package में कौन-कौन सी pickup, drop और private transport शामिल हैं?",
+                "answer": "Madurai pickup. Trivandrum drop. Private air-conditioned sedan. The confirmed itinerary itself includes the Madurai pickup/drop or Madurai route stated in this package.",
+                "answerTamil": "Madurai pickup. Trivandrum drop. Private air-conditioned sedan. Confirmed itinerary-ல் இந்த package-ல் குறிப்பிடப்பட்டுள்ள Madurai pickup/drop அல்லது Madurai route அடங்கும்.",
+                "answerHindi": "Madurai pickup. Trivandrum drop. Private air-conditioned sedan. Confirmed itinerary में इस package में बताया गया Madurai pickup/drop या Madurai route शामिल है।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "Logaa Holidays Madurai honeymoon room decoration, cake அல்லது candlelight dinner ஏற்பாடு செய்ய முடியுமா?",
+                "questionHindi": "क्या Logaa Holidays Madurai honeymoon room decoration, cake या candlelight dinner की व्यवस्था कर सकता है?",
+                "answer": "Available romantic add-ons listed for this package include sea-view room, romantic dinner. They are subject to the hotel, resort or operator policy and must be confirmed in the final quotation.",
+                "answerTamil": "Available romantic add-ons listed for this package include sea-view room, romantic dinner. இவை hotel, resort அல்லது operator policy-க்கு உட்பட்டவை மற்றும் final quotation-ல் confirm செய்யப்பட வேண்டும்.",
+                "answerHindi": "Available romantic add-ons listed for this package include sea-view room, romantic dinner. ये hotel, resort या operator policy के अधीन हैं और final quotation में confirm किए जाने चाहिए।"
+            },
+            {
+                "question": "What is not included in the package price?",
+                "questionTamil": "Package price-ல் எவை சேர்க்கப்படவில்லை?",
+                "questionHindi": "Package price में क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Flight and train tickets, Lunch and dinner unless included, Attraction entry tickets, Boating charges, Guide charges, Kanyakumari ferry tickets. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "Key exclusions listed for this package include Flight and train tickets, Lunch and dinner unless included, Attraction entry tickets, Boating charges, Guide charges, Kanyakumari ferry tickets. Inclusions-ல் குறிப்பாக குறிப்பிடப்படாத எந்த service-ம் extra ஆகக் கருதப்பட வேண்டும்.",
+                "answerHindi": "Key exclusions listed for this package include Flight and train tickets, Lunch and dinner unless included, Attraction entry tickets, Boating charges, Guide charges, Kanyakumari ferry tickets. Inclusions के अंतर्गत विशेष रूप से उल्लेख नहीं की गई किसी भी service को extra माना जाना चाहिए।"
+            },
+            {
+                "question": "What are the pickup and drop points for this Tamil Nadu honeymoon package?",
+                "questionTamil": "இந்த தமிழ்நாடு ஹனிமூன் package-க்கான pickup மற்றும் drop points எவை?",
+                "questionHindi": "इस तमिलनाडु हनीमून package के pickup और drop points कौन से हैं?",
+                "answer": "Madurai pickup. Trivandrum drop.",
+                "answerTamil": "Madurai pickup. Trivandrum drop.",
+                "answerHindi": "Madurai pickup. Trivandrum drop."
             }
         ],
         "id": "9203"
@@ -21976,20 +25881,60 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book premium Complete Tamil Nadu honeymoon package for 6 Nights 7 Days covering Ooty, Kodaikanal and Kanyakumari with couple-friendly resorts and private cab.",
         "faq": [
             {
-                "question": "Is this Tamil Nadu tour package suitable for families and couples?",
-                "questionTamil": "இந்த தமிழ்நாடு சுற்றுலா பேக்கேஜ் குடும்பங்கள் மற்றும் தம்பதிகளுக்கு ஏற்றதா?",
-                "questionHindi": "क्या यह तमिलनाडु टूर पैकेज परिवारों और कपल्स के लिए उपयुक्त है?",
-                "answer": "Yes. The tour covers heritage temples and coastal beaches with comfortable hotels and a relaxed pace, making it great for family groups and honeymooners alike. We tailor activities for kids, adults and seniors (e.g. easy walks, optional temple tours) so travelers of all ages enjoy it.",
-                "answerTamil": "ஆம். இந்த சுற்றுலா பேக்கேஜில் பாரம்பரிய கோயில்கள் மற்றும் கடலோர கடற்கரைகள் இடம்பெறுவதுடன், வசதியான ஹோட்டல்கள் மற்றும் நிதானமான பயணத் திட்டமும் உள்ளது. எனவே இது குடும்பக் குழுக்கள் மற்றும் ஹனிமூன் தம்பதிகளுக்கும் சிறந்ததாக இருக்கும். குழந்தைகள், பெரியவர்கள் மற்றும் மூத்த குடிமக்கள் என அனைத்து வயதினரும் மகிழ்ச்சியாகப் பயணம் செய்யும் வகையில், எளிதான நடைப்பயணங்கள் மற்றும் விருப்பத்திற்கேற்ப கோயில் சுற்றுலா போன்ற செயல்பாடுகளை நாங்கள் ஏற்பாடு செய்கிறோம்.",
-                "answerHindi": "हाँ। इस टूर में ऐतिहासिक मंदिर और समुद्र तट, आरामदायक होटल और एक आरामदायक यात्रा कार्यक्रम शामिल है, जिससे यह परिवारों और हनीमून कपल्स दोनों के लिए बेहतरीन है। हम बच्चों, वयस्कों और वरिष्ठ नागरिकों के लिए गतिविधियों को अनुकूलित करते हैं, जैसे आसान पैदल यात्राएँ और वैकल्पिक मंदिर भ्रमण, ताकि हर उम्र के यात्री इसका आनंद ले सकें।"
+                "question": "Can I book the Premium Complete Tamil Nadu Honeymoon – 6 Nights / 7 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "Logaa Holidays மூலம் மதுரையிலிருந்து Premium Complete Tamil Nadu Honeymoon – 6 Nights / 7 Days-ஐ நான் முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं Logaa Holidays के साथ मदुरै से Premium Complete Tamil Nadu Honeymoon – 6 Nights / 7 Days बुक कर सकता/सकती हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins from Coimbatore; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Coimbatore – Ooty – Kodaikanal – Kanyakumari – Trivandrum. The stay plan is Ooty 2 Nights + Kodaikanal 2 Nights + Kanyakumari 2 Nights. Main experiences include Ooty, Coonoor and Pykara sightseeing, Complete Kodaikanal sightseeing, Kanyakumari sunrise and sunset, Couple-friendly itinerary.",
+                "answerTamil": "ஆம். Logaa Holidays மதுரையை அடிப்படையாகக் கொண்ட tour operator ஆகும், மேலும் மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள தம்பதிகள் இந்த package-ஐ முன்பதிவு செய்யலாம். Land itinerary Coimbatore-ல் தொடங்குகிறது; final quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், மதுரையிலிருந்து அந்த pickup point-க்கு செல்லும் பயணம் தனியாக இருக்கும். திட்டமிடப்பட்ட route Coimbatore – Ooty – Kodaikanal – Kanyakumari – Trivandrum ஆகும். Stay plan Ooty 2 Nights + Kodaikanal 2 Nights + Kanyakumari 2 Nights ஆகும். Main experiences include Ooty, Coonoor and Pykara sightseeing, Complete Kodaikanal sightseeing, Kanyakumari sunrise and sunset, Couple-friendly itinerary.",
+                "answerHindi": "हाँ। Logaa Holidays मदुरै स्थित tour operator है, और मदुरै तथा पूरे तमिलनाडु से आने वाले couples इस package को बुक कर सकते हैं। Land itinerary Coimbatore से शुरू होती है; यदि final quotation में विशेष रूप से शामिल नहीं किया गया है, तो मदुरै से उस pickup point तक की यात्रा अलग से होगी। नियोजित route Coimbatore – Ooty – Kodaikanal – Kanyakumari – Trivandrum है। Stay plan Ooty 2 Nights + Kodaikanal 2 Nights + Kanyakumari 2 Nights है। Main experiences include Ooty, Coonoor and Pykara sightseeing, Complete Kodaikanal sightseeing, Kanyakumari sunrise and sunset, Couple-friendly itinerary."
             },
             {
-                "question": "Can we join the Tamil Nadu tour from Madurai or Chennai?",
-                "questionTamil": "மதுரை அல்லது சென்னையிலிருந்து தமிழ்நாடு சுற்றுலாவில் நாங்கள் இணைய முடியுமா?",
-                "questionHindi": "क्या हम मदुरै या चेन्नई से तमिलनाडु टूर में शामिल हो सकते हैं?",
-                "answer": "Absolutely. We offer pickup from Madurai or Chennai and coordinate train/flight arrivals into those cities. Our driver/guide will meet you at the station/airport and begin the tour, so you can easily join from any major city in Tamil Nadu.",
-                "answerTamil": "நிச்சயமாக. மதுரை அல்லது சென்னையிலிருந்து பிக்கப் வசதியை வழங்குகிறோம், மேலும் அந்த நகரங்களுக்கு வரும் ரயில்/விமான வருகைகளையும் ஒருங்கிணைக்கிறோம். எங்கள் ஓட்டுநர்/வழிகாட்டி உங்களை ரயில் நிலையம்/விமான நிலையத்தில் சந்தித்து சுற்றுலாவைத் தொடங்குவார். எனவே தமிழ்நாட்டின் எந்த முக்கிய நகரத்திலிருந்தும் நீங்கள் எளிதாக இந்த சுற்றுலாவில் இணையலாம்.",
-                "answerHindi": "बिल्कुल। हम मदुरै या चेन्नई से पिकअप की सुविधा देते हैं और इन शहरों में आने वाली ट्रेन या फ्लाइट के समय का समन्वय करते हैं। हमारे ड्राइवर या गाइड स्टेशन या एयरपोर्ट पर आपसे मिलेंगे और टूर शुरू करेंगे, इसलिए आप तमिलनाडु के किसी भी प्रमुख शहर से आसानी से टूर में शामिल हो सकते हैं।"
+                "question": "Is the Premium Complete Tamil Nadu Honeymoon – 6 Nights / 7 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் ஹனிமூன் தம்பதிகளுக்கு Premium Complete Tamil Nadu Honeymoon – 6 Nights / 7 Days பொருத்தமானதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले हनीमून कपल्स के लिए Premium Complete Tamil Nadu Honeymoon – 6 Nights / 7 Days उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. The stay plan is Ooty 2 Nights + Kodaikanal 2 Nights + Kanyakumari 2 Nights. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். இந்த itinerary மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள பிற நகரங்களிலிருந்து பயணம் செய்யும் couples-க்கு ஏற்றது. Stay plan Ooty 2 Nights + Kodaikanal 2 Nights + Kanyakumari 2 Nights ஆகும். Package pickup point-க்கு arrival மற்றும் departure travel final confirmed quotation-ஐப் பின்பற்றும்.",
+                "answerHindi": "हाँ। यह itinerary मदुरै और पूरे तमिलनाडु के अन्य शहरों से यात्रा करने वाले couples के लिए उपयुक्त है। Stay plan Ooty 2 Nights + Kodaikanal 2 Nights + Kanyakumari 2 Nights है। Package pickup point तक arrival और departure travel final confirmed quotation के अनुसार होगा।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் accommodation மற்றும் breakfast சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस हनीमून package में accommodation और breakfast शामिल है?",
+                "answer": "Accommodation includes Two nights’ accommodation in Ooty; Two nights’ accommodation in Kodaikanal; Two nights’ accommodation in Kanyakumari. Daily breakfast.",
+                "answerTamil": "Accommodation includes Ooty-ல் Two nights’ accommodation; Kodaikanal-ல் Two nights’ accommodation; Kanyakumari-ல் Two nights’ accommodation. Daily breakfast.",
+                "answerHindi": "Accommodation includes Ooty में Two nights’ accommodation; Kodaikanal में Two nights’ accommodation; Kanyakumari में Two nights’ accommodation. Daily breakfast."
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் என்ன pickup, drop மற்றும் private transport சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस हनीमून package में कौन-कौन सी pickup, drop और private transport शामिल हैं?",
+                "answer": "Coimbatore pickup. Trivandrum drop. Private air-conditioned vehicle. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "Coimbatore pickup. Trivandrum drop. Private air-conditioned vehicle. மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளிலிருந்து பயணம் செய்யும் guests-க்கு, quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், listed pickup point-க்கு செல்லும் transport additional ஆகும்.",
+                "answerHindi": "Coimbatore pickup. Trivandrum drop. Private air-conditioned vehicle. मदुरै या तमिलनाडु के अन्य हिस्सों से यात्रा करने वाले guests के लिए, यदि quotation में विशेष रूप से शामिल नहीं किया गया है, तो listed pickup point तक का transport additional होगा।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "Logaa Holidays Madurai honeymoon room decoration, cake அல்லது candlelight dinner ஏற்பாடு செய்ய முடியுமா?",
+                "questionHindi": "क्या Logaa Holidays Madurai honeymoon room decoration, cake या candlelight dinner की व्यवस्था कर सकता है?",
+                "answer": "Available romantic add-ons listed for this package include candlelight dinner, flower decoration and cake. They are subject to the hotel, resort or operator policy and must be confirmed in the final quotation.",
+                "answerTamil": "Available romantic add-ons listed for this package include candlelight dinner, flower decoration and cake. இவை hotel, resort அல்லது operator policy-க்கு உட்பட்டவை மற்றும் final quotation-ல் confirm செய்யப்பட வேண்டும்.",
+                "answerHindi": "Available romantic add-ons listed for this package include candlelight dinner, flower decoration and cake. ये hotel, resort या operator policy के अधीन हैं और final quotation में confirm किए जाने चाहिए।"
+            },
+            {
+                "question": "What is not included in the package price?",
+                "questionTamil": "Package price-ல் எவை சேர்க்கப்படவில்லை?",
+                "questionHindi": "Package price में क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Flight and train tickets, Lunch and dinner unless included, Attraction entry tickets, Ooty and Kodaikanal boating charges, Guide charges, Toy-train tickets. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "Key exclusions listed for this package include Flight and train tickets, Lunch and dinner unless included, Attraction entry tickets, Ooty and Kodaikanal boating charges, Guide charges, Toy-train tickets. Inclusions-ல் குறிப்பாக குறிப்பிடப்படாத எந்த service-ம் extra ஆகக் கருதப்பட வேண்டும்.",
+                "answerHindi": "Key exclusions listed for this package include Flight and train tickets, Lunch and dinner unless included, Attraction entry tickets, Ooty and Kodaikanal boating charges, Guide charges, Toy-train tickets. Inclusions के अंतर्गत विशेष रूप से उल्लेख नहीं की गई किसी भी service को extra माना जाना चाहिए।"
+            },
+            {
+                "question": "What are the pickup and drop points for this Tamil Nadu honeymoon package?",
+                "questionTamil": "இந்த தமிழ்நாடு ஹனிமூன் package-க்கான pickup மற்றும் drop points எவை?",
+                "questionHindi": "इस तमिलनाडु हनीमून package के pickup और drop points कौन से हैं?",
+                "answer": "Coimbatore pickup. Trivandrum drop.",
+                "answerTamil": "Coimbatore pickup. Trivandrum drop.",
+                "answerHindi": "Coimbatore pickup. Trivandrum drop."
             }
         ],
         "id": "9204"
@@ -22927,20 +26872,68 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a romantic Kerala honeymoon package for 2 Nights and 3 Days covering Munnar with resort stay, private cab, sightseeing and optional candlelight dinner.",
         "faq": [
             {
-                "question": "Is this Kerala tour package family-friendly and romantic?",
-                "questionTamil": "இந்த கேரளா சுற்றுலா பேக்கேஜ் குடும்பங்களுக்கு ஏற்றதா மற்றும் காதல் பயணத்திற்கு பொருத்தமானதா?",
-                "questionHindi": "क्या यह केरल टूर पैकेज परिवारों के लिए उपयुक्त और रोमांटिक है?",
-                "answer": "Yes. Kerala's gentle backwater cruises and tea gardens are ideal for families and honeymooners. The itinerary features a calm houseboat stay in Alleppey and a nature walk in Munnar, which are enjoyable for kids and seniors. We ensure cozy stays and optional activities (boat rides, spice farm visits) so everyone — from children to couples on honeymoon — has a memorable experience.",
-                "answerTamil": "ஆம். கேரளாவின் அமைதியான பேக்க்வாட்டர் க்ரூஸ் பயணங்களும் தேயிலைத் தோட்டங்களும் குடும்பங்கள் மற்றும் ஹனிமூன் தம்பதிகளுக்கு ஏற்றவை. இந்த பயணத் திட்டத்தில் ஆலப்புழாவில் அமைதியான ஹவுஸ்போட் தங்குமிடமும், மூணாறில் இயற்கை நடைப்பயணமும் இடம்பெறுகின்றன; இவை குழந்தைகள் மற்றும் மூத்த குடிமக்களுக்கும் மகிழ்ச்சியான அனுபவமாக இருக்கும். படகு சவாரி, மசாலா பண்ணை சுற்றுலா போன்ற விருப்பத்திற்கேற்ப செயல்பாடுகளுடன் வசதியான தங்குமிடங்களை நாங்கள் உறுதி செய்கிறோம். இதனால் குழந்தைகள் முதல் ஹனிமூன் தம்பதிகள் வரை அனைவரும் மறக்க முடியாத அனுபவத்தைப் பெறலாம்.",
-                "answerHindi": "हाँ। केरल की शांत बैकवाटर क्रूज़ और चाय के बागान परिवारों और हनीमून कपल्स के लिए आदर्श हैं। यात्रा कार्यक्रम में अल्लेप्पी में हाउसबोट स्टे और मुन्नार में नेचर वॉक शामिल है, जो बच्चों और वरिष्ठ नागरिकों के लिए भी आनंददायक हैं। हम आरामदायक ठहरने और वैकल्पिक गतिविधियों, जैसे बोट राइड और स्पाइस फार्म विजिट, की व्यवस्था करते हैं ताकि सभी को यादगार अनुभव मिले।"
+                "question": "Can I book the Kerala Honeymoon Package – 2 Nights / 3 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "Logaa Holidays மூலம் மதுரையிலிருந்து Kerala Honeymoon Package – 2 Nights / 3 Days-ஐ நான் முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं Logaa Holidays के साथ मदुरै से Kerala Honeymoon Package – 2 Nights / 3 Days बुक कर सकता/सकती हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins from Kochi; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Kochi – Munnar – Kochi. The stay plan is Munnar – 2 Nights. Main experiences include Scenic drive through waterfalls and tea plantations, Munnar local sightseeing, Tea estate viewpoints, Cheeyappara Waterfalls.",
+                "answerTamil": "ஆம். Logaa Holidays மதுரையை அடிப்படையாகக் கொண்ட டூர் ஆபரேட்டராகும், மேலும் மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள தம்பதிகள் இந்த பேக்கேஜை முன்பதிவு செய்யலாம். Land itinerary கொச்சியிலிருந்து தொடங்குகிறது; இறுதி quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், மதுரையிலிருந்து அந்த pickup point-க்கு செல்லும் பயணம் தனியாக இருக்கும். திட்டமிடப்பட்ட பாதை Kochi – Munnar – Kochi ஆகும். தங்கும் திட்டம் Munnar – 2 Nights ஆகும். முக்கிய அனுபவங்களில் அருவிகள் மற்றும் தேயிலைத் தோட்டங்கள் வழியாக Scenic drive, Munnar local sightseeing, Tea estate viewpoints, Cheeyappara Waterfalls ஆகியவை அடங்கும்.",
+                "answerHindi": "हाँ। Logaa Holidays मदुरै स्थित एक tour operator है, और मदुरै तथा पूरे तमिलनाडु से आने वाले कपल्स इस पैकेज को बुक कर सकते हैं। Land itinerary कोच्चि से शुरू होती है; यदि final quotation में विशेष रूप से शामिल नहीं किया गया है, तो मदुरै से उस pickup point तक की यात्रा अलग से होगी। नियोजित मार्ग Kochi – Munnar – Kochi है। ठहरने की योजना Munnar – 2 Nights है। मुख्य अनुभवों में झरनों और चाय के बागानों के बीच Scenic drive, Munnar local sightseeing, Tea estate viewpoints और Cheeyappara Waterfalls शामिल हैं।"
             },
             {
-                "question": "Can I join the Kerala tour from Kochi or Trivandrum?",
-                "questionTamil": "கொச்சி அல்லது திருவனந்தபுரத்திலிருந்து கேரளா சுற்றுலாவில் இணைய முடியுமா?",
-                "questionHindi": "क्या मैं कोच्चि या तिरुवनंतपुरम से केरल टूर में शामिल हो सकता/सकती हूँ?",
-                "answer": "Certainly. Most itineraries start in Kochi (Cochin) or Trivandrum (Thiruvananthapuram). We offer pickup from Kochi airport/railway, or meet you in Trivandrum if more convenient. You can also fly into these cities, and we'll handle the local transfers.",
-                "answerTamil": "நிச்சயமாக. பெரும்பாலான பயணத் திட்டங்கள் கொச்சி (கொச்சின்) அல்லது திருவனந்தபுரத்தில் தொடங்குகின்றன. கொச்சி விமான நிலையம்/ரயில் நிலையத்திலிருந்து பிக்கப் வசதியை வழங்குகிறோம் அல்லது உங்களுக்கு வசதியாக இருந்தால் திருவனந்தபுரத்தில் உங்களைச் சந்திக்கலாம். இந்த நகரங்களுக்கு நீங்கள் விமானத்தில் வரலாம், மேலும் உள்ளூர் போக்குவரத்து ஏற்பாடுகளை நாங்கள் கவனித்துக்கொள்வோம்.",
-                "answerHindi": "बिल्कुल। अधिकांश यात्रा कार्यक्रम कोच्चि या तिरुवनंतपुरम से शुरू होते हैं। हम कोच्चि एयरपोर्ट या रेलवे स्टेशन से पिकअप की सुविधा देते हैं, या यदि सुविधाजनक हो तो तिरुवनंतपुरम में आपसे मिल सकते हैं। आप इन शहरों में फ्लाइट से भी आ सकते हैं और स्थानीय ट्रांसफर की व्यवस्था हम करेंगे।"
+                "question": "Is the Kerala Honeymoon Package – 2 Nights / 3 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் ஹனிமூன் தம்பதிகளுக்கு Kerala Honeymoon Package – 2 Nights / 3 Days பொருத்தமானதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले हनीमून कपल्स के लिए Kerala Honeymoon Package – 2 Nights / 3 Days उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for Honeymoon Couples, Anniversary Couples and Short Holidays. It is structured as a Short Romantic Hill Escape. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். இந்த பயணத் திட்டம் மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள பிற நகரங்களிலிருந்து பயணம் செய்யும் தம்பதிகளுக்கு ஏற்றது. இந்த பேக்கேஜ் Honeymoon Couples, Anniversary Couples மற்றும் Short Holidays ஆகியவற்றிற்கு ஏற்றது. இது Short Romantic Hill Escape ஆக அமைக்கப்பட்டுள்ளது. பேக்கேஜ் pickup point-க்கு வருகை மற்றும் புறப்படும் பயணம் இறுதியாக உறுதிசெய்யப்பட்ட quotation-ஐப் பின்பற்றும்.",
+                "answerHindi": "हाँ। यह यात्रा कार्यक्रम मदुरै और पूरे तमिलनाडु के अन्य शहरों से यात्रा करने वाले कपल्स के लिए उपयुक्त है। यह पैकेज Honeymoon Couples, Anniversary Couples और Short Holidays के लिए उपयुक्त है। इसे Short Romantic Hill Escape के रूप में तैयार किया गया है। पैकेज pickup point तक आगमन और प्रस्थान की यात्रा final confirmed quotation के अनुसार होगी।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் பேக்கேஜில் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस हनीमून पैकेज में ठहरने और नाश्ते की सुविधा शामिल है?",
+                "answer": "Accommodation includes Two nights’ hotel or resort accommodation in Munnar; Accommodation in the selected room category. Daily breakfast.",
+                "answerTamil": "Accommodation includes Munnar-ல் Two nights’ hotel or resort accommodation; தேர்ந்தெடுக்கப்பட்ட room category-யில் Accommodation. Daily breakfast.",
+                "answerHindi": "Accommodation includes Munnar में Two nights’ hotel or resort accommodation; चयनित room category में Accommodation. Daily breakfast."
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் பேக்கேஜில் என்னென்ன pickup, drop மற்றும் private transport வசதிகள் சேர்க்கப்பட்டுள்ளன?",
+                "questionHindi": "इस हनीमून पैकेज में कौन-कौन सी pickup, drop और private transport सुविधाएँ शामिल हैं?",
+                "answer": "Kochi Airport, railway station or city pickup. Kochi Airport, railway station or city drop. Private air-conditioned sedan. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "Kochi Airport, railway station or city pickup. Kochi Airport, railway station or city drop. Private air-conditioned sedan. மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளிலிருந்து பயணம் செய்யும் விருந்தினர்களுக்கு, quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், குறிப்பிடப்பட்ட pickup point-க்கு செல்லும் transport additional ஆகும்.",
+                "answerHindi": "Kochi Airport, railway station or city pickup. Kochi Airport, railway station or city drop. Private air-conditioned sedan. मदुरै या तमिलनाडु के अन्य हिस्सों से यात्रा करने वाले मेहमानों के लिए, यदि quotation में विशेष रूप से शामिल नहीं किया गया है, तो सूचीबद्ध pickup point तक का transport additional होगा।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "Logaa Holidays Madurai ஹனிமூன் room decoration, cake அல்லது candlelight dinner ஏற்பாடு செய்ய முடியுமா?",
+                "questionHindi": "क्या Logaa Holidays Madurai honeymoon room decoration, cake या candlelight dinner की व्यवस्था कर सकता है?",
+                "answer": "Available romantic add-ons listed for this package include honeymoon room decoration, candlelight dinner, honeymoon cake, Welcome drink, Flower-bed decoration. They are subject to the hotel, resort or operator policy and must be confirmed in the final quotation.",
+                "answerTamil": "Available romantic add-ons listed for this package include honeymoon room decoration, candlelight dinner, honeymoon cake, Welcome drink, Flower-bed decoration. இவை hotel, resort அல்லது operator policy-க்கு உட்பட்டவை மற்றும் final quotation-ல் உறுதிசெய்யப்பட வேண்டும்.",
+                "answerHindi": "Available romantic add-ons listed for this package include honeymoon room decoration, candlelight dinner, honeymoon cake, Welcome drink, Flower-bed decoration. ये hotel, resort या operator policy के अधीन हैं और final quotation में confirm किए जाने चाहिए।"
+            },
+            {
+                "question": "What is not included in the package price?",
+                "questionTamil": "பேக்கேஜ் விலையில் எவை சேர்க்கப்படவில்லை?",
+                "questionHindi": "पैकेज की कीमत में क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Flight tickets, Lunch and dinner unless specifically included, Train and bus tickets, Boating charges, Guide charges, Entry tickets to sightseeing attractions. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "Key exclusions listed for this package include Flight tickets, Lunch and dinner unless specifically included, Train and bus tickets, Boating charges, Guide charges, Entry tickets to sightseeing attractions. Inclusions-ல் குறிப்பாக குறிப்பிடப்படாத எந்தவொரு service-ம் extra ஆகக் கருதப்பட வேண்டும்.",
+                "answerHindi": "Key exclusions listed for this package include Flight tickets, Lunch and dinner unless specifically included, Train and bus tickets, Boating charges, Guide charges, Entry tickets to sightseeing attractions. Inclusions के अंतर्गत विशेष रूप से उल्लेख नहीं की गई किसी भी service को extra माना जाना चाहिए।"
+            },
+            {
+                "question": "Can the sightseeing order change during the trip?",
+                "questionTamil": "பயணத்தின் போது sightseeing order மாறுமா?",
+                "questionHindi": "क्या यात्रा के दौरान sightseeing order बदल सकता है?",
+                "answer": "Yes. Sightseeing and activity order may change based on traffic, weather, local operating hours and availability, while the confirmed package inclusions remain the reference.",
+                "answerTamil": "ஆம். Traffic, weather, local operating hours மற்றும் availability ஆகியவற்றின் அடிப்படையில் Sightseeing மற்றும் activity order மாறக்கூடும்; அதே நேரத்தில், confirmed package inclusions reference ஆக இருக்கும்.",
+                "answerHindi": "हाँ। Traffic, weather, local operating hours और availability के आधार पर Sightseeing और activity order बदल सकता है, जबकि confirmed package inclusions reference के रूप में बने रहेंगे।"
+            },
+            {
+                "question": "What determines the price of the Kerala Honeymoon Package – 2 Nights / 3 Days from Madurai or Tamil Nadu?",
+                "questionTamil": "மதுரை அல்லது தமிழ்நாட்டிலிருந்து Kerala Honeymoon Package – 2 Nights / 3 Days-ன் விலையை எது தீர்மானிக்கிறது?",
+                "questionHindi": "मदुरै या तमिलनाडु से Kerala Honeymoon Package – 2 Nights / 3 Days की कीमत किन चीज़ों पर निर्भर करती है?",
+                "answer": "Final package price depends on travel date, hotel category and selected honeymoon inclusions. The final quotation should be checked for the exact room, meal plan, transport and honeymoon inclusions. For travellers from Madurai or other Tamil Nadu cities, any onward flight, train, bus or transfer not listed under inclusions must be added separately.",
+                "answerTamil": "Final package price depends on travel date, hotel category and selected honeymoon inclusions. Exact room, meal plan, transport மற்றும் honeymoon inclusions ஆகியவற்றிற்காக final quotation சரிபார்க்கப்பட வேண்டும். மதுரை அல்லது தமிழ்நாட்டின் பிற நகரங்களிலிருந்து பயணம் செய்யும் travellers-க்கு, inclusions-ல் குறிப்பிடப்படாத எந்த onward flight, train, bus அல்லது transfer-ம் தனியாக சேர்க்கப்பட வேண்டும்.",
+                "answerHindi": "Final package price depends on travel date, hotel category and selected honeymoon inclusions. Exact room, meal plan, transport और honeymoon inclusions के लिए final quotation की जाँच की जानी चाहिए। मदुरै या तमिलनाडु के अन्य शहरों से यात्रा करने वाले travellers के लिए, inclusions में सूचीबद्ध नहीं की गई किसी भी onward flight, train, bus या transfer को अलग से जोड़ा जाना चाहिए।"
             }
         ],
         "id": "9001"
@@ -23121,20 +27114,68 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a romantic Kerala honeymoon package for 3 Nights and 4 Days covering Munnar and Alleppey with resort stay, private houseboat and cab.",
         "faq": [
             {
-                "question": "Is this Kerala tour package family-friendly and romantic?",
-                "questionTamil": "இந்த கேரளா சுற்றுலா பேக்கேஜ் குடும்பங்களுக்கு ஏற்றதா மற்றும் காதல் பயணத்திற்கு பொருத்தமானதா?",
-                "questionHindi": "क्या यह केरल टूर पैकेज परिवारों के लिए उपयुक्त और रोमांटिक है?",
-                "answer": "Yes. Kerala's gentle backwater cruises and tea gardens are ideal for families and honeymooners. The itinerary features a calm houseboat stay in Alleppey and a nature walk in Munnar, which are enjoyable for kids and seniors. We ensure cozy stays and optional activities (boat rides, spice farm visits) so everyone — from children to couples on honeymoon — has a memorable experience.",
-                "answerTamil": "ஆம். கேரளாவின் அமைதியான பேக்க்வாட்டர் க்ரூஸ் பயணங்களும் தேயிலைத் தோட்டங்களும் குடும்பங்கள் மற்றும் ஹனிமூன் தம்பதிகளுக்கு ஏற்றவை. இந்த பயணத் திட்டத்தில் ஆலப்புழாவில் அமைதியான ஹவுஸ்போட் தங்குமிடமும், மூணாறில் இயற்கை நடைப்பயணமும் இடம்பெறுகின்றன; இவை குழந்தைகள் மற்றும் மூத்த குடிமக்களுக்கும் மகிழ்ச்சியான அனுபவமாக இருக்கும். படகு சவாரி, மசாலா பண்ணை சுற்றுலா போன்ற விருப்பத்திற்கேற்ப செயல்பாடுகளுடன் வசதியான தங்குமிடங்களை நாங்கள் உறுதி செய்கிறோம். இதனால் குழந்தைகள் முதல் ஹனிமூன் தம்பதிகள் வரை அனைவரும் மறக்க முடியாத அனுபவத்தைப் பெறலாம்.",
-                "answerHindi": "हाँ। केरल की शांत बैकवाटर क्रूज़ और चाय के बागान परिवारों और हनीमून कपल्स के लिए आदर्श हैं। यात्रा कार्यक्रम में अल्लेप्पी में हाउसबोट स्टे और मुन्नार में नेचर वॉक शामिल है, जो बच्चों और वरिष्ठ नागरिकों के लिए भी आनंददायक हैं। हम आरामदायक ठहरने और वैकल्पिक गतिविधियों, जैसे बोट राइड और स्पाइस फार्म विजिट, की व्यवस्था करते हैं ताकि सभी को यादगार अनुभव मिले।"
+                "question": "Can I book the Kerala Honeymoon Package – 3 Nights / 4 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "Logaa Holidays மூலம் மதுரையிலிருந்து Kerala Honeymoon Package – 3 Nights / 4 Days-ஐ நான் முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं Logaa Holidays के साथ मदुरै से Kerala Honeymoon Package – 3 Nights / 4 Days बुक कर सकता/सकती हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins from Kochi; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Kochi – Munnar – Alleppey – Kochi. The stay plan is Munnar 2 Nights + Alleppey 1 Night. Main experiences include Scenic waterfalls and tea plantations, Full-day Munnar sightseeing, Alleppey backwater experience, Cheeyappara Waterfalls.",
+                "answerTamil": "ஆம். Logaa Holidays மதுரையை அடிப்படையாகக் கொண்ட tour operator ஆகும், மேலும் மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள தம்பதிகள் இந்த package-ஐ முன்பதிவு செய்யலாம். Land itinerary Kochi-யிலிருந்து தொடங்குகிறது; final quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், மதுரையிலிருந்து அந்த pickup point-க்கு செல்லும் பயணம் தனியாக இருக்கும். திட்டமிடப்பட்ட route Kochi – Munnar – Alleppey – Kochi ஆகும். Stay plan Munnar 2 Nights + Alleppey 1 Night ஆகும். Main experiences include Scenic waterfalls and tea plantations, Full-day Munnar sightseeing, Alleppey backwater experience, Cheeyappara Waterfalls.",
+                "answerHindi": "हाँ। Logaa Holidays मदुरै स्थित tour operator है, और मदुरै तथा पूरे तमिलनाडु से आने वाले couples इस package को बुक कर सकते हैं। Land itinerary Kochi से शुरू होती है; यदि final quotation में विशेष रूप से शामिल नहीं किया गया है, तो मदुरै से उस pickup point तक की यात्रा अलग से होगी। नियोजित route Kochi – Munnar – Alleppey – Kochi है। Stay plan Munnar 2 Nights + Alleppey 1 Night है। Main experiences include Scenic waterfalls and tea plantations, Full-day Munnar sightseeing, Alleppey backwater experience, Cheeyappara Waterfalls."
             },
             {
-                "question": "Can I join the Kerala tour from Kochi or Trivandrum?",
-                "questionTamil": "கொச்சி அல்லது திருவனந்தபுரத்திலிருந்து கேரளா சுற்றுலாவில் இணைய முடியுமா?",
-                "questionHindi": "क्या मैं कोच्चि या तिरुवनंतपुरम से केरल टूर में शामिल हो सकता/सकती हूँ?",
-                "answer": "Certainly. Most itineraries start in Kochi (Cochin) or Trivandrum (Thiruvananthapuram). We offer pickup from Kochi airport/railway, or meet you in Trivandrum if more convenient. You can also fly into these cities, and we'll handle the local transfers.",
-                "answerTamil": "நிச்சயமாக. பெரும்பாலான பயணத் திட்டங்கள் கொச்சி (கொச்சின்) அல்லது திருவனந்தபுரத்தில் தொடங்குகின்றன. கொச்சி விமான நிலையம்/ரயில் நிலையத்திலிருந்து பிக்கப் வசதியை வழங்குகிறோம் அல்லது உங்களுக்கு வசதியாக இருந்தால் திருவனந்தபுரத்தில் உங்களைச் சந்திக்கலாம். இந்த நகரங்களுக்கு நீங்கள் விமானத்தில் வரலாம், மேலும் உள்ளூர் போக்குவரத்து ஏற்பாடுகளை நாங்கள் கவனித்துக்கொள்வோம்.",
-                "answerHindi": "बिल्कुल। अधिकांश यात्रा कार्यक्रम कोच्चि या तिरुवनंतपुरम से शुरू होते हैं। हम कोच्चि एयरपोर्ट या रेलवे स्टेशन से पिकअप की सुविधा देते हैं, या यदि सुविधाजनक हो तो तिरुवनंतपुरम में आपसे मिल सकते हैं। आप इन शहरों में फ्लाइट से भी आ सकते हैं और स्थानीय ट्रांसफर की व्यवस्था हम करेंगे।"
+                "question": "Is the Kerala Honeymoon Package – 3 Nights / 4 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் ஹனிமூன் தம்பதிகளுக்கு Kerala Honeymoon Package – 3 Nights / 4 Days பொருத்தமானதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले हनीमून कपल्स के लिए Kerala Honeymoon Package – 3 Nights / 4 Days उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for Honeymoon Couples, Anniversary Couples and Romantic Holidays. It is structured as a Romantic Hills and Backwaters Tour. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். இந்த itinerary மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள பிற நகரங்களிலிருந்து பயணம் செய்யும் couples-க்கு ஏற்றது. இந்த package Honeymoon Couples, Anniversary Couples and Romantic Holidays ஆகியவற்றிற்கு ஏற்றது. இது Romantic Hills and Backwaters Tour ஆக அமைக்கப்பட்டுள்ளது. Package pickup point-க்கு arrival மற்றும் departure travel final confirmed quotation-ஐப் பின்பற்றும்.",
+                "answerHindi": "हाँ। यह itinerary मदुरै और पूरे तमिलनाडु के अन्य शहरों से यात्रा करने वाले couples के लिए उपयुक्त है। यह package Honeymoon Couples, Anniversary Couples and Romantic Holidays के लिए उपयुक्त है। इसे Romantic Hills and Backwaters Tour के रूप में तैयार किया गया है। Package pickup point तक arrival और departure travel final confirmed quotation के अनुसार होगा।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் accommodation மற்றும் breakfast சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस हनीमून package में accommodation और breakfast शामिल है?",
+                "answer": "Accommodation includes Two nights’ hotel or resort accommodation in Munnar; Accommodation in the selected room category. Daily breakfast at the hotels.",
+                "answerTamil": "Accommodation includes Munnar-ல் Two nights’ hotel or resort accommodation; selected room category-ல் Accommodation. Hotels-ல் Daily breakfast.",
+                "answerHindi": "Accommodation includes Munnar में Two nights’ hotel or resort accommodation; selected room category में Accommodation. Hotels में Daily breakfast."
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் என்ன pickup, drop மற்றும் private transport சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस हनीमून package में कौन-कौन सी pickup, drop और private transport शामिल हैं?",
+                "answer": "Kochi Airport, railway station or city pickup. Kochi Airport, railway station or city drop. Private air-conditioned sedan. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "Kochi Airport, railway station or city pickup. Kochi Airport, railway station or city drop. Private air-conditioned sedan. மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளிலிருந்து பயணம் செய்யும் guests-க்கு, quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், listed pickup point-க்கு செல்லும் transport additional ஆகும்.",
+                "answerHindi": "Kochi Airport, railway station or city pickup. Kochi Airport, railway station or city drop. Private air-conditioned sedan. मदुरै या तमिलनाडु के अन्य हिस्सों से यात्रा करने वाले guests के लिए, यदि quotation में विशेष रूप से शामिल नहीं किया गया है, तो listed pickup point तक का transport additional होगा।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "Logaa Holidays Madurai honeymoon room decoration, cake அல்லது candlelight dinner ஏற்பாடு செய்ய முடியுமா?",
+                "questionHindi": "क्या Logaa Holidays Madurai honeymoon room decoration, cake या candlelight dinner की व्यवस्था कर सकता है?",
+                "answer": "Available romantic add-ons listed for this package include Welcome drink, Flower-bed decoration, Honeymoon cake, Fruit basket, Candlelight dinner. They are subject to the hotel, resort or operator policy and must be confirmed in the final quotation.",
+                "answerTamil": "Available romantic add-ons listed for this package include Welcome drink, Flower-bed decoration, Honeymoon cake, Fruit basket, Candlelight dinner. இவை hotel, resort அல்லது operator policy-க்கு உட்பட்டவை மற்றும் final quotation-ல் confirm செய்யப்பட வேண்டும்.",
+                "answerHindi": "Available romantic add-ons listed for this package include Welcome drink, Flower-bed decoration, Honeymoon cake, Fruit basket, Candlelight dinner. ये hotel, resort या operator policy के अधीन हैं और final quotation में confirm किए जाने चाहिए।"
+            },
+            {
+                "question": "What is not included in the package price?",
+                "questionTamil": "Package price-ல் எவை சேர்க்கப்படவில்லை?",
+                "questionHindi": "Package price में क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Flight tickets, Lunch and dinner at hotels unless specifically included, Train and bus tickets, Boating charges in Munnar, Guide charges, Entry tickets to sightseeing attractions. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "Key exclusions listed for this package include Flight tickets, Lunch and dinner at hotels unless specifically included, Train and bus tickets, Boating charges in Munnar, Guide charges, Entry tickets to sightseeing attractions. Inclusions-ல் குறிப்பாக குறிப்பிடப்படாத எந்த service-ம் extra ஆகக் கருதப்பட வேண்டும்.",
+                "answerHindi": "Key exclusions listed for this package include Flight tickets, Lunch and dinner at hotels unless specifically included, Train and bus tickets, Boating charges in Munnar, Guide charges, Entry tickets to sightseeing attractions. Inclusions के अंतर्गत विशेष रूप से उल्लेख नहीं की गई किसी भी service को extra माना जाना चाहिए।"
+            },
+            {
+                "question": "Does this honeymoon package include an Alleppey houseboat stay?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் Alleppey houseboat stay சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस हनीमून package में Alleppey houseboat stay शामिल है?",
+                "answer": "One night in Alleppey private houseboat or backwater resort. Houseboat meals, cruise timings and air-conditioning depend on the confirmed package option.",
+                "answerTamil": "Alleppey-ல் One night in private houseboat or backwater resort. Houseboat meals, cruise timings and air-conditioning ஆகியவை confirmed package option-ஐப் பொறுத்தது.",
+                "answerHindi": "Alleppey में One night in private houseboat or backwater resort. Houseboat meals, cruise timings और air-conditioning confirmed package option पर निर्भर करते हैं।"
+            },
+            {
+                "question": "What determines the price of the Kerala Honeymoon Package – 3 Nights / 4 Days from Madurai or Tamil Nadu?",
+                "questionTamil": "மதுரை அல்லது தமிழ்நாட்டிலிருந்து Kerala Honeymoon Package – 3 Nights / 4 Days-ன் விலையை எது தீர்மானிக்கிறது?",
+                "questionHindi": "मदुरै या तमिलनाडु से Kerala Honeymoon Package – 3 Nights / 4 Days की कीमत किन चीज़ों पर निर्भर करती है?",
+                "answer": "Final package cost depends on room category, houseboat type and honeymoon add-ons. The final quotation should be checked for the exact room, meal plan, transport and honeymoon inclusions. For travellers from Madurai or other Tamil Nadu cities, any onward flight, train, bus or transfer not listed under inclusions must be added separately.",
+                "answerTamil": "Final package cost depends on room category, houseboat type and honeymoon add-ons. Exact room, meal plan, transport மற்றும் honeymoon inclusions ஆகியவற்றிற்காக final quotation சரிபார்க்கப்பட வேண்டும். மதுரை அல்லது தமிழ்நாட்டின் பிற நகரங்களிலிருந்து பயணம் செய்யும் travellers-க்கு, inclusions-ல் குறிப்பிடப்படாத எந்த onward flight, train, bus அல்லது transfer-ம் தனியாக சேர்க்கப்பட வேண்டும்.",
+                "answerHindi": "Final package cost depends on room category, houseboat type and honeymoon add-ons. Exact room, meal plan, transport और honeymoon inclusions के लिए final quotation की जाँच की जानी चाहिए। मदुरै या तमिलनाडु के अन्य शहरों से यात्रा करने वाले travellers के लिए, inclusions में सूचीबद्ध नहीं की गई किसी भी onward flight, train, bus या transfer को अलग से जोड़ा जाना चाहिए।"
             }
         ],
         "id": "9002"
@@ -23343,20 +27384,76 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a romantic Kerala honeymoon package for 4 Nights and 5 Days covering Munnar, Thekkady and Alleppey with resort, houseboat and private cab.",
         "faq": [
             {
-                "question": "Is this Kerala tour package family-friendly and romantic?",
-                "questionTamil": "இந்த கேரளா சுற்றுலா பேக்கேஜ் குடும்பங்களுக்கு ஏற்றதா மற்றும் காதல் பயணத்திற்கு பொருத்தமானதா?",
-                "questionHindi": "क्या यह केरल टूर पैकेज परिवारों के लिए उपयुक्त और रोमांटिक है?",
-                "answer": "Yes. Kerala's gentle backwater cruises and tea gardens are ideal for families and honeymooners. The itinerary features a calm houseboat stay in Alleppey and a nature walk in Munnar, which are enjoyable for kids and seniors. We ensure cozy stays and optional activities (boat rides, spice farm visits) so everyone — from children to couples on honeymoon — has a memorable experience.",
-                "answerTamil": "ஆம். கேரளாவின் அமைதியான பேக்க்வாட்டர் க்ரூஸ் பயணங்களும் தேயிலைத் தோட்டங்களும் குடும்பங்கள் மற்றும் ஹனிமூன் தம்பதிகளுக்கு ஏற்றவை. இந்த பயணத் திட்டத்தில் ஆலப்புழாவில் அமைதியான ஹவுஸ்போட் தங்குமிடமும், மூணாறில் இயற்கை நடைப்பயணமும் இடம்பெறுகின்றன; இவை குழந்தைகள் மற்றும் மூத்த குடிமக்களுக்கும் மகிழ்ச்சியான அனுபவமாக இருக்கும். படகு சவாரி, மசாலா பண்ணை சுற்றுலா போன்ற விருப்பத்திற்கேற்ப செயல்பாடுகளுடன் வசதியான தங்குமிடங்களை நாங்கள் உறுதி செய்கிறோம். இதனால் குழந்தைகள் முதல் ஹனிமூன் தம்பதிகள் வரை அனைவரும் மறக்க முடியாத அனுபவத்தைப் பெறலாம்.",
-                "answerHindi": "हाँ। केरल की शांत बैकवाटर क्रूज़ और चाय के बागान परिवारों और हनीमून कपल्स के लिए आदर्श हैं। यात्रा कार्यक्रम में अल्लेप्पी में हाउसबोट स्टे और मुन्नार में नेचर वॉक शामिल है, जो बच्चों और वरिष्ठ नागरिकों के लिए भी आनंददायक हैं। हम आरामदायक ठहरने और वैकल्पिक गतिविधियों, जैसे बोट राइड और स्पाइस फार्म विजिट, की व्यवस्था करते हैं ताकि सभी को यादगार अनुभव मिले।"
+                "question": "Can I book the Kerala Honeymoon Package – 4 Nights / 5 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "Logaa Holidays மூலம் மதுரையிலிருந்து Kerala Honeymoon Package – 4 Nights / 5 Days-ஐ நான் முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं Logaa Holidays के साथ मदुरै से Kerala Honeymoon Package – 4 Nights / 5 Days बुक कर सकता/सकती हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins from Kochi; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Kochi – Munnar – Thekkady – Alleppey – Kochi. The stay plan is Munnar 2 Nights + Thekkady 1 Night + Alleppey 1 Night. Main experiences include Scenic waterfalls and tea plantations, Full-day Munnar sightseeing, Alleppey backwater experience, Cheeyappara Waterfalls.",
+                "answerTamil": "ஆம். Logaa Holidays மதுரையை அடிப்படையாகக் கொண்ட tour operator ஆகும், மேலும் மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள தம்பதிகள் இந்த package-ஐ முன்பதிவு செய்யலாம். Land itinerary Kochi-யிலிருந்து தொடங்குகிறது; final quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், மதுரையிலிருந்து அந்த pickup point-க்கு செல்லும் பயணம் தனியாக இருக்கும். திட்டமிடப்பட்ட route Kochi – Munnar – Thekkady – Alleppey – Kochi ஆகும். Stay plan Munnar 2 Nights + Thekkady 1 Night + Alleppey 1 Night ஆகும். Main experiences include Scenic waterfalls and tea plantations, Full-day Munnar sightseeing, Alleppey backwater experience, Cheeyappara Waterfalls.",
+                "answerHindi": "हाँ। Logaa Holidays मदुरै स्थित tour operator है, और मदुरै तथा पूरे तमिलनाडु से आने वाले couples इस package को बुक कर सकते हैं। Land itinerary Kochi से शुरू होती है; यदि final quotation में विशेष रूप से शामिल नहीं किया गया है, तो मदुरै से उस pickup point तक की यात्रा अलग से होगी। नियोजित route Kochi – Munnar – Thekkady – Alleppey – Kochi है। Stay plan Munnar 2 Nights + Thekkady 1 Night + Alleppey 1 Night है। Main experiences include Scenic waterfalls and tea plantations, Full-day Munnar sightseeing, Alleppey backwater experience, Cheeyappara Waterfalls."
             },
             {
-                "question": "Can I join the Kerala tour from Kochi or Trivandrum?",
-                "questionTamil": "கொச்சி அல்லது திருவனந்தபுரத்திலிருந்து கேரளா சுற்றுலாவில் இணைய முடியுமா?",
-                "questionHindi": "क्या मैं कोच्चि या तिरुवनंतपुरम से केरल टूर में शामिल हो सकता/सकती हूँ?",
-                "answer": "Certainly. Most itineraries start in Kochi (Cochin) or Trivandrum (Thiruvananthapuram). We offer pickup from Kochi airport/railway, or meet you in Trivandrum if more convenient. You can also fly into these cities, and we'll handle the local transfers.",
-                "answerTamil": "நிச்சயமாக. பெரும்பாலான பயணத் திட்டங்கள் கொச்சி (கொச்சின்) அல்லது திருவனந்தபுரத்தில் தொடங்குகின்றன. கொச்சி விமான நிலையம்/ரயில் நிலையத்திலிருந்து பிக்கப் வசதியை வழங்குகிறோம் அல்லது உங்களுக்கு வசதியாக இருந்தால் திருவனந்தபுரத்தில் உங்களைச் சந்திக்கலாம். இந்த நகரங்களுக்கு நீங்கள் விமானத்தில் வரலாம், மேலும் உள்ளூர் போக்குவரத்து ஏற்பாடுகளை நாங்கள் கவனித்துக்கொள்வோம்.",
-                "answerHindi": "बिल्कुल। अधिकांश यात्रा कार्यक्रम कोच्चि या तिरुवनंतपुरम से शुरू होते हैं। हम कोच्चि एयरपोर्ट या रेलवे स्टेशन से पिकअप की सुविधा देते हैं, या यदि सुविधाजनक हो तो तिरुवनंतपुरम में आपसे मिल सकते हैं। आप इन शहरों में फ्लाइट से भी आ सकते हैं और स्थानीय ट्रांसफर की व्यवस्था हम करेंगे।"
+                "question": "Is the Kerala Honeymoon Package – 4 Nights / 5 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் ஹனிமூன் தம்பதிகளுக்கு Kerala Honeymoon Package – 4 Nights / 5 Days பொருத்தமானதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले हनीमून कपल्स के लिए Kerala Honeymoon Package – 4 Nights / 5 Days उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for Honeymoon Couples, Anniversary Couples and First-Time Kerala Travellers. It is structured as a Hills, Wildlife and Backwaters Honeymoon. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். இந்த itinerary மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள பிற நகரங்களிலிருந்து பயணம் செய்யும் couples-க்கு ஏற்றது. இந்த package Honeymoon Couples, Anniversary Couples and First-Time Kerala Travellers ஆகியோருக்கு ஏற்றது. இது Hills, Wildlife and Backwaters Honeymoon ஆக அமைக்கப்பட்டுள்ளது. Package pickup point-க்கு arrival மற்றும் departure travel final confirmed quotation-ஐப் பின்பற்றும்.",
+                "answerHindi": "हाँ। यह itinerary मदुरै और पूरे तमिलनाडु के अन्य शहरों से यात्रा करने वाले couples के लिए उपयुक्त है। यह package Honeymoon Couples, Anniversary Couples and First-Time Kerala Travellers के लिए उपयुक्त है। इसे Hills, Wildlife and Backwaters Honeymoon के रूप में तैयार किया गया है। Package pickup point तक arrival और departure travel final confirmed quotation के अनुसार होगा।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் accommodation மற்றும் breakfast சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस हनीमून package में accommodation और breakfast शामिल है?",
+                "answer": "Accommodation includes Two nights’ hotel or resort accommodation in Munnar; One night’s hotel or resort accommodation in Thekkady; Accommodation in the selected room category. Daily breakfast at hotels.",
+                "answerTamil": "Accommodation includes Munnar-ல் Two nights’ hotel or resort accommodation; Thekkady-ல் One night’s hotel or resort accommodation; selected room category-ல் Accommodation. Hotels-ல் Daily breakfast.",
+                "answerHindi": "Accommodation includes Munnar में Two nights’ hotel or resort accommodation; Thekkady में One night’s hotel or resort accommodation; selected room category में Accommodation. Hotels में Daily breakfast."
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் என்ன pickup, drop மற்றும் private transport சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस हनीमून package में कौन-कौन सी pickup, drop और private transport शामिल हैं?",
+                "answer": "Kochi Airport, railway station or city pickup. Kochi Airport, railway station or city drop. Private air-conditioned sedan. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "Kochi Airport, railway station or city pickup. Kochi Airport, railway station or city drop. Private air-conditioned sedan. மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளிலிருந்து பயணம் செய்யும் guests-க்கு, quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், listed pickup point-க்கு செல்லும் transport additional ஆகும்.",
+                "answerHindi": "Kochi Airport, railway station or city pickup. Kochi Airport, railway station or city drop. Private air-conditioned sedan. मदुरै या तमिलनाडु के अन्य हिस्सों से यात्रा करने वाले guests के लिए, यदि quotation में विशेष रूप से शामिल नहीं किया गया है, तो listed pickup point तक का transport additional होगा।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "Logaa Holidays Madurai honeymoon room decoration, cake அல்லது candlelight dinner ஏற்பாடு செய்ய முடியுமா?",
+                "questionHindi": "क्या Logaa Holidays Madurai honeymoon room decoration, cake या candlelight dinner की व्यवस्था कर सकता है?",
+                "answer": "Available romantic add-ons listed for this package include Welcome drink, Flower-bed decoration, Honeymoon cake, Fruit basket, Candlelight dinner. They are subject to the hotel, resort or operator policy and must be confirmed in the final quotation.",
+                "answerTamil": "Available romantic add-ons listed for this package include Welcome drink, Flower-bed decoration, Honeymoon cake, Fruit basket, Candlelight dinner. இவை hotel, resort அல்லது operator policy-க்கு உட்பட்டவை மற்றும் final quotation-ல் confirm செய்யப்பட வேண்டும்.",
+                "answerHindi": "Available romantic add-ons listed for this package include Welcome drink, Flower-bed decoration, Honeymoon cake, Fruit basket, Candlelight dinner. ये hotel, resort या operator policy के अधीन हैं और final quotation में confirm किए जाने चाहिए।"
+            },
+            {
+                "question": "What is not included in the package price?",
+                "questionTamil": "Package price-ல் எவை சேர்க்கப்படவில்லை?",
+                "questionHindi": "Package price में क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Flight tickets, Lunch and dinner at hotels unless specifically included, Train and bus tickets, Munnar boating charges, Guide charges, Entry tickets to sightseeing attractions. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "Key exclusions listed for this package include Flight tickets, Lunch and dinner at hotels unless specifically included, Train and bus tickets, Munnar boating charges, Guide charges, Entry tickets to sightseeing attractions. Inclusions-ல் குறிப்பாக குறிப்பிடப்படாத எந்த service-ம் extra ஆகக் கருதப்பட வேண்டும்.",
+                "answerHindi": "Key exclusions listed for this package include Flight tickets, Lunch and dinner at hotels unless specifically included, Train and bus tickets, Munnar boating charges, Guide charges, Entry tickets to sightseeing attractions. Inclusions के अंतर्गत विशेष रूप से उल्लेख नहीं की गई किसी भी service को extra माना जाना चाहिए।"
+            },
+            {
+                "question": "Does this honeymoon package include an Alleppey houseboat stay?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் Alleppey houseboat stay சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस हनीमून package में Alleppey houseboat stay शामिल है?",
+                "answer": "One night in Alleppey private houseboat or backwater resort. Houseboat meals, cruise timings and air-conditioning depend on the confirmed package option.",
+                "answerTamil": "Alleppey-ல் One night in private houseboat or backwater resort. Houseboat meals, cruise timings and air-conditioning ஆகியவை confirmed package option-ஐப் பொறுத்தது.",
+                "answerHindi": "Alleppey में One night in private houseboat or backwater resort. Houseboat meals, cruise timings और air-conditioning confirmed package option पर निर्भर करते हैं।"
+            },
+            {
+                "question": "Are Periyar Lake boating and Thekkady activities included?",
+                "questionTamil": "Periyar Lake boating மற்றும் Thekkady activities சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या Periyar Lake boating और Thekkady activities शामिल हैं?",
+                "answer": "Thekkady sightseeing follows the itinerary, but Periyar Lake boating charges; Spice plantation entry fees are listed as extra unless specifically included.",
+                "answerTamil": "Thekkady sightseeing itinerary-ஐப் பின்பற்றுகிறது, ஆனால் Periyar Lake boating charges; Spice plantation entry fees ஆகியவை குறிப்பாக சேர்க்கப்படாவிட்டால் extra ஆக பட்டியலிடப்பட்டுள்ளன.",
+                "answerHindi": "Thekkady sightseeing itinerary के अनुसार होता है, लेकिन Periyar Lake boating charges; Spice plantation entry fees को विशेष रूप से शामिल न किए जाने पर extra के रूप में सूचीबद्ध किया गया है।"
+            },
+            {
+                "question": "What determines the price of this 4 Nights / 5 Days package?",
+                "questionTamil": "இந்த 4 Nights / 5 Days package-ன் விலையை எது தீர்மானிக்கிறது?",
+                "questionHindi": "इस 4 Nights / 5 Days package की कीमत किन चीज़ों पर निर्भर करती है?",
+                "answer": "Final package cost depends on hotel category, houseboat type and honeymoon add-ons. The final quotation should be checked for the exact room, meal plan, transport and honeymoon inclusions.",
+                "answerTamil": "Final package cost depends on hotel category, houseboat type and honeymoon add-ons. Exact room, meal plan, transport மற்றும் honeymoon inclusions ஆகியவற்றிற்காக final quotation சரிபார்க்கப்பட வேண்டும்.",
+                "answerHindi": "Final package cost depends on hotel category, houseboat type and honeymoon add-ons. Exact room, meal plan, transport और honeymoon inclusions के लिए final quotation की जाँच की जानी चाहिए।"
             }
         ],
         "id": "9003"
@@ -23578,20 +27675,68 @@ export const packagesDatabase: Record<string, any> = {
         "seoDescription": "Book a romantic Kerala honeymoon package for 5 Nights and 6 Days covering Munnar, Alleppey and Kovalam with houseboat, beach resort and private cab.",
         "faq": [
             {
-                "question": "Is this Kerala tour package family-friendly and romantic?",
-                "questionTamil": "இந்த கேரளா சுற்றுலா பேக்கேஜ் குடும்பங்களுக்கு ஏற்றதா மற்றும் காதல் பயணத்திற்கு பொருத்தமானதா?",
-                "questionHindi": "क्या यह केरल टूर पैकेज परिवारों के लिए उपयुक्त और रोमांटिक है?",
-                "answer": "Yes. Kerala's gentle backwater cruises and tea gardens are ideal for families and honeymooners. The itinerary features a calm houseboat stay in Alleppey and a nature walk in Munnar, which are enjoyable for kids and seniors. We ensure cozy stays and optional activities (boat rides, spice farm visits) so everyone — from children to couples on honeymoon — has a memorable experience.",
-                "answerTamil": "ஆம். கேரளாவின் அமைதியான பேக்க்வாட்டர் க்ரூஸ் பயணங்களும் தேயிலைத் தோட்டங்களும் குடும்பங்கள் மற்றும் ஹனிமூன் தம்பதிகளுக்கு ஏற்றவை. இந்த பயணத் திட்டத்தில் ஆலப்புழாவில் அமைதியான ஹவுஸ்போட் தங்குமிடமும், மூணாறில் இயற்கை நடைப்பயணமும் இடம்பெறுகின்றன; இவை குழந்தைகள் மற்றும் மூத்த குடிமக்களுக்கும் மகிழ்ச்சியான அனுபவமாக இருக்கும். படகு சவாரி, மசாலா பண்ணை சுற்றுலா போன்ற விருப்பத்திற்கேற்ப செயல்பாடுகளுடன் வசதியான தங்குமிடங்களை நாங்கள் உறுதி செய்கிறோம். இதனால் குழந்தைகள் முதல் ஹனிமூன் தம்பதிகள் வரை அனைவரும் மறக்க முடியாத அனுபவத்தைப் பெறலாம்.",
-                "answerHindi": "हाँ। केरल की शांत बैकवाटर क्रूज़ और चाय के बागान परिवारों और हनीमून कपल्स के लिए आदर्श हैं। यात्रा कार्यक्रम में अल्लेप्पी में हाउसबोट स्टे और मुन्नार में नेचर वॉक शामिल है, जो बच्चों और वरिष्ठ नागरिकों के लिए भी आनंददायक हैं। हम आरामदायक ठहरने और वैकल्पिक गतिविधियों, जैसे बोट राइड और स्पाइस फार्म विजिट, की व्यवस्था करते हैं ताकि सभी को यादगार अनुभव मिले।"
+                "question": "Can I book the Kerala Honeymoon Package – 5 Nights / 6 Days from Madurai with Logaa Holidays?",
+                "questionTamil": "Logaa Holidays மூலம் மதுரையிலிருந்து Kerala Honeymoon Package – 5 Nights / 6 Days-ஐ நான் முன்பதிவு செய்ய முடியுமா?",
+                "questionHindi": "क्या मैं Logaa Holidays के साथ मदुरै से Kerala Honeymoon Package – 5 Nights / 6 Days बुक कर सकता/सकती हूँ?",
+                "answer": "Yes. Logaa Holidays is a Madurai-based tour operator, and couples from Madurai and across Tamil Nadu can book this package. The land itinerary begins from Kochi; travel from Madurai to that pickup point is separate unless it is specifically included in the final quotation. The planned route is Kochi – Munnar – Alleppey – Kovalam – Trivandrum. The stay plan is Munnar 2 Nights + Alleppey 1 Night + Kovalam 2 Nights. Main experiences include Scenic waterfalls and tea plantations, Full-day Munnar sightseeing, Alleppey backwater experience, Kovalam beach leisure.",
+                "answerTamil": "ஆம். Logaa Holidays மதுரையை அடிப்படையாகக் கொண்ட tour operator ஆகும், மேலும் மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள தம்பதிகள் இந்த package-ஐ முன்பதிவு செய்யலாம். Land itinerary Kochi-யிலிருந்து தொடங்குகிறது; final quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், மதுரையிலிருந்து அந்த pickup point-க்கு செல்லும் பயணம் தனியாக இருக்கும். திட்டமிடப்பட்ட route Kochi – Munnar – Alleppey – Kovalam – Trivandrum ஆகும். Stay plan Munnar 2 Nights + Alleppey 1 Night + Kovalam 2 Nights ஆகும். Main experiences include Scenic waterfalls and tea plantations, Full-day Munnar sightseeing, Alleppey backwater experience, Kovalam beach leisure.",
+                "answerHindi": "हाँ। Logaa Holidays मदुरै स्थित tour operator है, और मदुरै तथा पूरे तमिलनाडु से आने वाले couples इस package को बुक कर सकते हैं। Land itinerary Kochi से शुरू होती है; यदि final quotation में विशेष रूप से शामिल नहीं किया गया है, तो मदुरै से उस pickup point तक की यात्रा अलग से होगी। नियोजित route Kochi – Munnar – Alleppey – Kovalam – Trivandrum है। Stay plan Munnar 2 Nights + Alleppey 1 Night + Kovalam 2 Nights है। Main experiences include Scenic waterfalls and tea plantations, Full-day Munnar sightseeing, Alleppey backwater experience, Kovalam beach leisure."
             },
             {
-                "question": "Can I join the Kerala tour from Kochi or Trivandrum?",
-                "questionTamil": "கொச்சி அல்லது திருவனந்தபுரத்திலிருந்து கேரளா சுற்றுலாவில் இணைய முடியுமா?",
-                "questionHindi": "क्या मैं कोच्चि या तिरुवनंतपुरम से केरल टूर में शामिल हो सकता/सकती हूँ?",
-                "answer": "Certainly. Most itineraries start in Kochi (Cochin) or Trivandrum (Thiruvananthapuram). We offer pickup from Kochi airport/railway, or meet you in Trivandrum if more convenient. You can also fly into these cities, and we'll handle the local transfers.",
-                "answerTamil": "நிச்சயமாக. பெரும்பாலான பயணத் திட்டங்கள் கொச்சி (கொச்சின்) அல்லது திருவனந்தபுரத்தில் தொடங்குகின்றன. கொச்சி விமான நிலையம்/ரயில் நிலையத்திலிருந்து பிக்கப் வசதியை வழங்குகிறோம் அல்லது உங்களுக்கு வசதியாக இருந்தால் திருவனந்தபுரத்தில் உங்களைச் சந்திக்கலாம். இந்த நகரங்களுக்கு நீங்கள் விமானத்தில் வரலாம், மேலும் உள்ளூர் போக்குவரத்து ஏற்பாடுகளை நாங்கள் கவனித்துக்கொள்வோம்.",
-                "answerHindi": "बिल्कुल। अधिकांश यात्रा कार्यक्रम कोच्चि या तिरुवनंतपुरम से शुरू होते हैं। हम कोच्चि एयरपोर्ट या रेलवे स्टेशन से पिकअप की सुविधा देते हैं, या यदि सुविधाजनक हो तो तिरुवनंतपुरम में आपसे मिल सकते हैं। आप इन शहरों में फ्लाइट से भी आ सकते हैं और स्थानीय ट्रांसफर की व्यवस्था हम करेंगे।"
+                "question": "Is the Kerala Honeymoon Package – 5 Nights / 6 Days suitable for honeymoon couples travelling from Tamil Nadu?",
+                "questionTamil": "தமிழ்நாட்டிலிருந்து பயணம் செய்யும் ஹனிமூன் தம்பதிகளுக்கு Kerala Honeymoon Package – 5 Nights / 6 Days பொருத்தமானதா?",
+                "questionHindi": "क्या तमिलनाडु से यात्रा करने वाले हनीमून कपल्स के लिए Kerala Honeymoon Package – 5 Nights / 6 Days उपयुक्त है?",
+                "answer": "Yes. This itinerary is suitable for couples travelling from Madurai and other cities across Tamil Nadu. This package is suitable for Honeymoon Couples, Anniversary Couples and Romantic Kerala Holidays. It is structured as a Hills, Backwaters and Beach Honeymoon. Arrival and departure travel to the package pickup point will follow the final confirmed quotation.",
+                "answerTamil": "ஆம். இந்த itinerary மதுரை மற்றும் தமிழ்நாடு முழுவதும் உள்ள பிற நகரங்களிலிருந்து பயணம் செய்யும் couples-க்கு ஏற்றது. இந்த package Honeymoon Couples, Anniversary Couples and Romantic Kerala Holidays ஆகியவற்றிற்கு ஏற்றது. இது Hills, Backwaters and Beach Honeymoon ஆக அமைக்கப்பட்டுள்ளது. Package pickup point-க்கு arrival மற்றும் departure travel final confirmed quotation-ஐப் பின்பற்றும்.",
+                "answerHindi": "हाँ। यह itinerary मदुरै और पूरे तमिलनाडु के अन्य शहरों से यात्रा करने वाले couples के लिए उपयुक्त है। यह package Honeymoon Couples, Anniversary Couples and Romantic Kerala Holidays के लिए उपयुक्त है। इसे Hills, Backwaters and Beach Honeymoon के रूप में तैयार किया गया है। Package pickup point तक arrival और departure travel final confirmed quotation के अनुसार होगा।"
+            },
+            {
+                "question": "Are accommodation and breakfast included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் accommodation மற்றும் breakfast சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस हनीमून package में accommodation और breakfast शामिल है?",
+                "answer": "Accommodation includes Two nights’ hotel or resort accommodation in Munnar; Two nights’ hotel or resort accommodation in Kovalam; Accommodation in the selected room category. Daily breakfast at hotels.",
+                "answerTamil": "Accommodation includes Munnar-ல் Two nights’ hotel or resort accommodation; Kovalam-ல் Two nights’ hotel or resort accommodation; selected room category-ல் Accommodation. Hotels-ல் Daily breakfast.",
+                "answerHindi": "Accommodation includes Munnar में Two nights’ hotel or resort accommodation; Kovalam में Two nights’ hotel or resort accommodation; selected room category में Accommodation. Hotels में Daily breakfast."
+            },
+            {
+                "question": "What pickup, drop and private transport are included in this honeymoon package?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் என்ன pickup, drop மற்றும் private transport சேர்க்கப்பட்டுள்ளது?",
+                "questionHindi": "इस हनीमून package में कौन-कौन सी pickup, drop और private transport शामिल हैं?",
+                "answer": "Pickup from Kochi Airport, railway station or city location. Private air-conditioned sedan. For guests travelling from Madurai or elsewhere in Tamil Nadu, transport to the listed pickup point is additional unless specifically included in the quotation.",
+                "answerTamil": "Kochi Airport, railway station or city location-ல் இருந்து Pickup. Private air-conditioned sedan. மதுரை அல்லது தமிழ்நாட்டின் பிற பகுதிகளிலிருந்து பயணம் செய்யும் guests-க்கு, quotation-ல் குறிப்பாக சேர்க்கப்படாவிட்டால், listed pickup point-க்கு செல்லும் transport additional ஆகும்.",
+                "answerHindi": "Kochi Airport, railway station or city location से Pickup. Private air-conditioned sedan. मदुरै या तमिलनाडु के अन्य हिस्सों से यात्रा करने वाले guests के लिए, यदि quotation में विशेष रूप से शामिल नहीं किया गया है, तो listed pickup point तक का transport additional होगा।"
+            },
+            {
+                "question": "Can Logaa Holidays Madurai arrange honeymoon room decoration, cake or candlelight dinner?",
+                "questionTamil": "Logaa Holidays Madurai honeymoon room decoration, cake அல்லது candlelight dinner ஏற்பாடு செய்ய முடியுமா?",
+                "questionHindi": "क्या Logaa Holidays Madurai honeymoon room decoration, cake या candlelight dinner की व्यवस्था कर सकता है?",
+                "answer": "Available romantic add-ons listed for this package include candlelight dinner, flower-bed decoration, honeymoon cake, Welcome drink, Fruit basket. They are subject to the hotel, resort or operator policy and must be confirmed in the final quotation.",
+                "answerTamil": "Available romantic add-ons listed for this package include candlelight dinner, flower-bed decoration, honeymoon cake, Welcome drink, Fruit basket. இவை hotel, resort அல்லது operator policy-க்கு உட்பட்டவை மற்றும் final quotation-ல் confirm செய்யப்பட வேண்டும்.",
+                "answerHindi": "Available romantic add-ons listed for this package include candlelight dinner, flower-bed decoration, honeymoon cake, Welcome drink, Fruit basket. ये hotel, resort या operator policy के अधीन हैं और final quotation में confirm किए जाने चाहिए।"
+            },
+            {
+                "question": "What is not included in the package price?",
+                "questionTamil": "Package price-ல் எவை சேர்க்கப்படவில்லை?",
+                "questionHindi": "Package price में क्या शामिल नहीं है?",
+                "answer": "Key exclusions listed for this package include Flight tickets, Lunch and dinner at hotels unless specifically included, Train and bus tickets, Munnar boating charges, Guide charges, Entry tickets to sightseeing attractions. Any service not specifically mentioned under inclusions should be treated as extra.",
+                "answerTamil": "Key exclusions listed for this package include Flight tickets, Lunch and dinner at hotels unless specifically included, Train and bus tickets, Munnar boating charges, Guide charges, Entry tickets to sightseeing attractions. Inclusions-ல் குறிப்பாக குறிப்பிடப்படாத எந்த service-ம் extra ஆகக் கருதப்பட வேண்டும்.",
+                "answerHindi": "Key exclusions listed for this package include Flight tickets, Lunch and dinner at hotels unless specifically included, Train and bus tickets, Munnar boating charges, Guide charges, Entry tickets to sightseeing attractions. Inclusions के अंतर्गत विशेष रूप से उल्लेख नहीं की गई किसी भी service को extra माना जाना चाहिए।"
+            },
+            {
+                "question": "Does this honeymoon package include an Alleppey houseboat stay?",
+                "questionTamil": "இந்த ஹனிமூன் package-ல் Alleppey houseboat stay சேர்க்கப்பட்டுள்ளதா?",
+                "questionHindi": "क्या इस हनीमून package में Alleppey houseboat stay शामिल है?",
+                "answer": "One night in Alleppey private houseboat or backwater resort. Houseboat meals, cruise timings and air-conditioning depend on the confirmed package option.",
+                "answerTamil": "Alleppey-ல் One night in private houseboat or backwater resort. Houseboat meals, cruise timings and air-conditioning ஆகியவை confirmed package option-ஐப் பொறுத்தது.",
+                "answerHindi": "Alleppey में One night in private houseboat or backwater resort. Houseboat meals, cruise timings और air-conditioning confirmed package option पर निर्भर करते हैं।"
+            },
+            {
+                "question": "What determines the price of the Kerala Honeymoon Package – 5 Nights / 6 Days from Madurai or Tamil Nadu?",
+                "questionTamil": "மதுரை அல்லது தமிழ்நாட்டிலிருந்து Kerala Honeymoon Package – 5 Nights / 6 Days-ன் விலையை எது தீர்மானிக்கிறது?",
+                "questionHindi": "मदुरै या तमिलनाडु से Kerala Honeymoon Package – 5 Nights / 6 Days की कीमत किन चीज़ों पर निर्भर करती है?",
+                "answer": "Final package cost depends on hotel category, houseboat type and honeymoon add-ons. The final quotation should be checked for the exact room, meal plan, transport and honeymoon inclusions. For travellers from Madurai or other Tamil Nadu cities, any onward flight, train, bus or transfer not listed under inclusions must be added separately.",
+                "answerTamil": "Final package cost depends on hotel category, houseboat type and honeymoon add-ons. Exact room, meal plan, transport மற்றும் honeymoon inclusions ஆகியவற்றிற்காக final quotation சரிபார்க்கப்பட வேண்டும். மதுரை அல்லது தமிழ்நாட்டின் பிற நகரங்களிலிருந்து பயணம் செய்யும் travellers-க்கு, inclusions-ல் குறிப்பிடப்படாத எந்த onward flight, train, bus அல்லது transfer-ம் தனியாக சேர்க்கப்பட வேண்டும்.",
+                "answerHindi": "Final package cost depends on hotel category, houseboat type and honeymoon add-ons. Exact room, meal plan, transport और honeymoon inclusions के लिए final quotation की जाँच की जानी चाहिए। मदुरै या तमिलनाडु के अन्य शहरों से यात्रा करने वाले travellers के लिए, inclusions में सूचीबद्ध नहीं की गई किसी भी onward flight, train, bus या transfer को अलग से जोड़ा जाना चाहिए।"
             }
         ],
         "id": "9004"

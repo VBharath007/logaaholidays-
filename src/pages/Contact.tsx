@@ -11,6 +11,20 @@ const WaveDivider = ({ className = '', fill = '#072a33', flip = false }) => (
     </div>
 );
 
+const FacebookIcon = ({ className }: { className?: string }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+  </svg>
+);
+
+const InstagramIcon = ({ className }: { className?: string }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+  </svg>
+);
+
 const WaveDividerBottom = ({ className = '', fill = '#072a33' }) => (
     <div className={`absolute -bottom-[1px] left-0 w-full overflow-hidden leading-none z-10 ${className}`}>
         <svg className="relative block w-[calc(100%+1.3px)] h-[100px] md:h-[150px] rotate-180" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -61,7 +75,7 @@ export function Contact() {
                             CONTACT US
                         </h1>
                         <p className="text-lg md:text-xl text-white/90 font-medium tracking-widest ">
-                            Logaa Holdays - Customized Domestic & International Tour Packages From Madurai.
+                            Logaa Holidays - Customized Domestic & International Tour Packages From Madurai.
                         </p>
                     </motion.div>
                 </div>
@@ -326,6 +340,20 @@ export function Contact() {
                                 <div>
                                     <p className="text-white font-bold text-sm">Email</p>
                                     <p className="text-white/70 text-sm break-all">Logaaholidays@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <div className="flex items-start gap-4 mt-8 pt-8 border-t border-white/10">
+                                <div className="w-full">
+                                    <p className="text-white font-bold text-sm mb-4">Follow Us</p>
+                                    <div className="flex items-center gap-4">
+                                        <a href="https://www.instagram.com/logaaholidays/" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#dc2743] hover:to-[#bc1888] hover:border-transparent hover:scale-110 transition-all group shadow-sm">
+                                            <InstagramIcon className="w-4 h-4 text-white" />
+                                        </a>
+                                        <a href="https://www.facebook.com/logaaholidays1/#" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#1877F2] hover:border-[#1877F2] hover:scale-110 transition-all group shadow-sm">
+                                            <FacebookIcon className="w-4 h-4 text-white" />
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
 

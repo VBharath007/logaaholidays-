@@ -71,10 +71,7 @@ export function TestimonialsPage() {
             <div className="w-64 h-64 rounded-3xl overflow-hidden clay-card border-8 border-white">
               <img loading="lazy" src='/assets/meeanksi amma.png' alt="madurai" className="w-full h-full object-cover" />
             </div>
-            {/* Floating letter avatars */}
-            <div className="absolute -top-4 -right-8 w-12 h-12 rounded-full border-4 border-white bg-[var(--color-primary-forest)] flex items-center justify-center text-white font-bold text-sm shadow-md">M</div>
-            <div className="absolute top-1/2 -right-12 w-10 h-10 rounded-full border-4 border-white bg-amber-500 flex items-center justify-center text-white font-bold text-xs shadow-md">S</div>
-            <div className="absolute -bottom-4 -right-4 w-14 h-14 rounded-full border-4 border-white bg-[var(--color-blue-ocean)] flex items-center justify-center text-white font-bold text-base shadow-md">K</div>
+            
           </div>
 
           <div className="text-left max-w-md bg-white p-10 rounded-3xl clay-card relative z-30">
