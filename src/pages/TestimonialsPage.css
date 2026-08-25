@@ -1,0 +1,401 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ==========================
+   REVIEW SECTION
+========================== */
+
+.review-section {
+  width: 100%;
+  padding: 10px 40px 40px;
+}
+
+.review-container {
+  max-width: 1400px;
+  margin: auto;
+  background: #f7f8fa;
+  border-radius: 55px;
+  padding: 50px 95px 42px;
+}
+
+/* ==========================
+   TOP
+========================== */
+
+.top-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.google-info {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.google-logo {
+  font-size: 52px;
+  font-weight: 900;
+  background: conic-gradient(
+    #4285f4,
+    #34a853,
+    #fbbc05,
+    #ea4335,
+    #4285f4
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  line-height: 1;
+}
+
+.google-info h2 {
+  margin: 0 0 5px;
+  font-size: 23px;
+  color: #252a34;
+}
+
+.rating-line {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.rating-line b {
+  font-size: 21px;
+}
+
+.top-stars {
+  color: #fbbc04;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.count {
+  color: #777;
+  font-size: 15px;
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+.google-button {
+  background: #8757a9;
+  color: white;
+  text-decoration: none;
+  padding: 13px 27px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow: 0 5px 12px rgba(100, 60, 120, 0.25);
+  transition: 0.25s;
+  white-space: nowrap;
+}
+
+.google-button:hover {
+  background: #754795;
+  transform: translateY(-2px);
+}
+
+/* ==========================
+   CAROUSEL
+========================== */
+
+.carousel {
+  position: relative;
+}
+
+.review-grid {
+  display: grid;
+  gap: 22px;
+}
+
+/* ==========================
+   CARD
+========================== */
+
+.review-card {
+  background: white;
+  border-radius: 17px;
+  padding: 21px;
+  min-height: 225px;
+  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eeeeee;
+  transition: 0.25s;
+  display: flex;
+  flex-direction: column;
+}
+
+.review-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 11px 26px rgba(0, 0, 0, 0.13);
+}
+
+/* ==========================
+   USER HEADER
+========================== */
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Avatar wrapper — needed for the G badge overlay */
+.avatar-wrapper {
+  position: relative;
+  flex-shrink: 0;
+  width: 47px;
+  height: 47px;
+}
+
+.avatar {
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+/* Small Google G badge — overlapping bottom-right of avatar */
+.avatar-google-badge {
+  position: absolute;
+  bottom: -3px;
+  right: -3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  border: 1.5px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.avatar-google-badge span {
+  font-size: 10px;
+  font-weight: 900;
+  line-height: 1;
+  background: conic-gradient(
+    #4285f4,
+    #34a853,
+    #fbbc05,
+    #ea4335,
+    #4285f4
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Name row */
+.review-header h3 {
+  margin: 0;
+  font-size: 15px;
+  color: #292d35;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+/* Blue verified checkmark after name */
+.review-verified {
+  color: #4285f4;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* Date / time below name — hidden */
+.review-date {
+  display: none;
+}
+
+/* ==========================
+   STARS
+========================== */
+
+.stars {
+  margin-top: 12px;
+  margin-bottom: 8px;
+  color: #fbbc04;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+/* ==========================
+   TEXT
+========================== */
+
+.review-text {
+  margin: 0;
+  color: #626873;
+  font-size: 14px;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex: 1;
+}
+
+.review-text.expanded {
+  display: block;
+}
+
+.read-more {
+  margin-top: 8px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: #4285f4;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+  text-align: left;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* ==========================
+   ARROWS
+========================== */
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid #e2e2e2;
+  background: white;
+  color: #646970;
+  font-size: 32px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.13);
+  line-height: 1;
+  padding-bottom: 2px;
+}
+
+.arrow.left {
+  left: -58px;
+}
+
+.arrow.right {
+  right: -58px;
+}
+
+.arrow:hover {
+  background: #f3f3f3;
+}
+
+/* ==========================
+   DOTS
+========================== */
+
+.dots {
+  margin-top: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.dot {
+  border: 0;
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  border-radius: 20px;
+  background: #c8c8ca;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.dot.active {
+  width: 23px;
+  background: #8757a9;
+}
+
+/* ==========================
+   TABLET
+========================== */
+
+@media (max-width: 1000px) {
+  .review-container {
+    padding: 45px 60px;
+  }
+
+  .arrow.left {
+    left: -47px;
+  }
+
+  .arrow.right {
+    right: -47px;
+  }
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width: 650px) {
+  .review-section {
+    padding: 15px 12px;
+  }
+
+  .review-container {
+    padding: 30px 35px;
+    border-radius: 28px;
+  }
+
+  .top-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+  }
+
+  .google-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .review-card {
+    min-height: 235px;
+  }
+
+  .arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 27px;
+  }
+
+  .arrow.left {
+    left: -27px;
+  }
+
+  .arrow.right {
+    right: -27px;
+  }
+
+  .dots {
+    display: none;
+  }
+}

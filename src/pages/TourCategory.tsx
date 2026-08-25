@@ -554,16 +554,16 @@ const rameshwaramPackages = [
   kanyakumariPackages.find(p => p.id === 28)!,
   kanyakumariPackages.find(p => p.id === 30)!,
   kanyakumariPackages.find(p => p.id === 31)!,
-  {
-    id: 42,
-    title: 'Madurai To Rameshwaram 1N 2D Tour',
-    duration: '1 Nights / 2 Days',
-    destination: 'Madurai, Rameshwaram',
-    activities: 'Sightseeing',
-    themes: 'Religious & Pilgrimage, Culture & Heritage',
-    price: 'On Request',
-    image: '/assets/Uttarakhand1.webp'
-  }
+  // {
+  //   id: 42,
+  //   title: 'Madurai To Rameshwaram 1N 2D Tour',
+  //   duration: '1 Nights / 2 Days',
+  //   destination: 'Madurai, Rameshwaram',
+  //   activities: 'Sightseeing',
+  //   themes: 'Religious & Pilgrimage, Culture & Heritage',
+  //   price: 'On Request',
+  //   image: '/assets/Uttarakhand1.webp'
+  // }
 ];
 
 // Normalize all hardcoded packages lists in TourCategory.tsx

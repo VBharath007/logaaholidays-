@@ -1,8 +1,11 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Star, ShieldCheck, Heart, MapPin, Quote } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import reviews from '../reviews'
+import './TestimonialsPage.css'
 
+/* ─────────────────── TORN PAPER ─────────────────── */
 const TornPaperBottom = () => (
   <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-20" style={{ transform: 'translateY(1px)' }}>
     <svg className="relative block w-[calc(100%+1.3px)] h-[50px] md:h-[70px] rotate-180" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -13,40 +16,190 @@ const TornPaperBottom = () => (
   </div>
 )
 
-
-
+/* ─────────────────── FEATURED DATA ─────────────────── */
 const featured = {
   name: 'Loganathan',
   location: 'Madurai, Tamil Nadu',
   quote: 'Logaa Holidays provided the most unforgettable pilgrimage experience for our entire family. The Shirdi trip was flawlessly organized — from the flight tickets to hotel, darshan slots, and cab arrangements. Everything was perfectly handled. I highly recommend Logaa Holidays for anyone planning a spiritual journey!',
 }
 
-export function TestimonialsPage() {
-  const widgetRef = useRef<HTMLDivElement>(null)
+/* ─────────────────── TYPES ─────────────────── */
+interface Review {
+  id: number
+  name: string
+  time: string
+  text: string
+}
 
+/* Avatar color palette — one per review */
+const AVATAR_COLORS = [
+  '#4caf50', '#e91e63', '#2196f3', '#ff5722', '#9c27b0',
+  '#00bcd4', '#ff9800', '#607d8b', '#795548', '#3f51b5',
+  '#f44336', '#009688', '#673ab7', '#e65100', '#0288d1',
+  '#558b2f', '#ad1457', '#00838f', '#6a1b9a', '#2e7d32',
+]
+
+/* ─────────────────── REVIEW CARD ─────────────────── */
+interface ReviewCardProps {
+  review: Review
+  expanded: boolean
+  onToggle: () => void
+}
+
+function ReviewCard({ review, expanded, onToggle }: ReviewCardProps) {
+  const avatarColor = AVATAR_COLORS[(review.id - 1) % AVATAR_COLORS.length]
+
+  return (
+    <div className="review-card">
+      <div className="review-header">
+
+        {/* Avatar with overlapping Google G badge */}
+        <div className="avatar-wrapper">
+          <div className="avatar" style={{ background: avatarColor }}>
+            {review.name.charAt(0).toUpperCase()}
+          </div>
+          <div className="avatar-google-badge">
+            <span>G</span>
+          </div>
+        </div>
+
+        <div>
+          <h3>
+            {review.name}
+            <span className="review-verified">✓</span>
+          </h3>
+          <div className="review-date">{review.time}</div>
+        </div>
+
+      </div>
+
+      <div className="stars">★★★★★</div>
+
+      <p className={expanded ? 'review-text expanded' : 'review-text'}>
+        {review.text}
+      </p>
+
+      {review.text.length > 120 && (
+        <button className="read-more" onClick={onToggle}>
+          {expanded ? 'Show less' : 'Read more'}
+        </button>
+      )}
+    </div>
+  )
+}
+
+/* ─────────────────── REVIEW CAROUSEL ─────────────────── */
+function ReviewCarousel() {
+  const [current, setCurrent] = useState(0)
+  const [visibleCards, setVisibleCards] = useState(3)
+  // Each review's expand state tracked by its ID — plain object, React-friendly
+  const [expandedMap, setExpandedMap] = useState<Record<number, boolean>>({})
+
+  const toggleExpanded = (id: number) => {
+    setExpandedMap(prev => ({ ...prev, [id]: !prev[id] }))
+  }
+
+  /* Responsive */
   useEffect(() => {
-    if (!widgetRef.current) return
-
-    widgetRef.current.innerHTML = ''
-    const script = document.createElement('script')
-    script.src = 'https://cdn.trustindex.io/loader.js?12dd60a795cd35829506b31ef5b'
-    script.defer = true
-    script.async = true
-    widgetRef.current.appendChild(script)
-
-    return () => {
-      if (widgetRef.current) {
-        widgetRef.current.innerHTML = ''
-      }
+    const checkSize = () => {
+      if (window.innerWidth < 650) setVisibleCards(1)
+      else if (window.innerWidth < 1000) setVisibleCards(2)
+      else setVisibleCards(3)
     }
+    checkSize()
+    window.addEventListener('resize', checkSize)
+    return () => window.removeEventListener('resize', checkSize)
   }, [])
 
+  /* Auto slide */
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent(prev => (prev + 1) % reviews.length)
+    }, 5000)
+    return () => clearInterval(timer)
+  }, [])
+
+  const nextReview = () => setCurrent(prev => (prev + 1) % reviews.length)
+  const prevReview = () => setCurrent(prev => (prev - 1 + reviews.length) % reviews.length)
+
+  const displayedReviews: Review[] = Array.from(
+    { length: visibleCards },
+    (_, i) => reviews[(current + i) % reviews.length]
+  )
+
+  return (
+    <>
+      {/* Top bar — Google rating */}
+      <div className="top-section">
+        <div className="google-info">
+          <div className="google-logo">G</div>
+          <div>
+            <h2>Excellent on Google</h2>
+            <div className="rating-line">
+              <b>5.0</b>
+              <span className="top-stars">★★★★★</span>
+              <span className="count">(57)</span>
+            </div>
+          </div>
+        </div>
+
+        <a
+          href="https://www.google.com/search?q=Logaa+Holidays+Madurai"
+          target="_blank"
+          rel="noreferrer"
+          className="google-button"
+        >
+          Review us on Google
+        </a>
+      </div>
+
+      {/* Carousel */}
+      <div className="carousel">
+        <button className="arrow left" onClick={prevReview} aria-label="Previous review">
+          ‹
+        </button>
+
+        <div
+          className="review-grid"
+          style={{ gridTemplateColumns: `repeat(${visibleCards}, 1fr)` }}
+        >
+          {displayedReviews.map(review => (
+            <ReviewCard
+              key={review.id}
+              review={review}
+              expanded={!!expandedMap[review.id]}
+              onToggle={() => toggleExpanded(review.id)}
+            />
+          ))}
+        </div>
+
+        <button className="arrow right" onClick={nextReview} aria-label="Next review">
+          ›
+        </button>
+      </div>
+
+      {/* Dots */}
+      <div className="dots">
+        {reviews.map((review: Review, index: number) => (
+          <button
+            key={review.id}
+            onClick={() => setCurrent(index)}
+            aria-label={`Go to review ${index + 1}`}
+            className={index === current ? 'dot active' : 'dot'}
+          />
+        ))}
+      </div>
+    </>
+  )
+}
+
+/* ─────────────────── MAIN PAGE ─────────────────── */
+export function TestimonialsPage() {
   return (
     <div className="bg-[var(--color-bg-luxury)] min-h-screen">
 
       {/* 1. HERO SECTION */}
       <section className="relative w-full h-[50vh] min-h-[400px] flex overflow-hidden">
-        {/* Ooty background image */}
         <div className="absolute inset-0 z-0">
           <img loading="lazy" src="/assets/otty/otty1.avif" alt="Ooty" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-blue-ocean)]/90 via-[var(--color-blue-ocean)]/70 to-[var(--color-accent-gold)]/80" />
@@ -71,7 +224,6 @@ export function TestimonialsPage() {
             <div className="w-64 h-64 rounded-3xl overflow-hidden clay-card border-8 border-white">
               <img loading="lazy" src='/assets/meeanksi amma.png' alt="madurai" className="w-full h-full object-cover" />
             </div>
-            
           </div>
 
           <div className="text-left max-w-md bg-white p-10 rounded-3xl clay-card relative z-30">
@@ -88,16 +240,16 @@ export function TestimonialsPage() {
         </div>
       </section>
 
-      {/* 3. TESTIMONIAL GRID */}
+      {/* 3. REVIEW CAROUSEL */}
       <section className="py-10 px-6 max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-display font-bold text-[var(--color-blue-ocean)] mb-2">More <span className="text-[var(--color-blue-ocean)] italic font-normal">Success Stories</span></h2>
           <p className="text-[var(--color-neutral-medium)]">Read what thousands of happy travelers have experienced.</p>
         </div>
 
-        <div className="w-full relative z-30 mt-8">
-          <div className="bg-white/40 backdrop-blur-md border border-white/60 p-4 md:p-8 rounded-[3rem] shadow-[0_20px_40px_rgba(0,0,0,0.05)] w-full flex justify-center">
-            <div ref={widgetRef} className="w-full min-h-[300px]"></div>
+        <div className="review-section">
+          <div className="review-container">
+            <ReviewCarousel />
           </div>
         </div>
       </section>
