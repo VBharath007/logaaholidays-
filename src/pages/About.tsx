@@ -13,16 +13,9 @@ export function About() {
         <div className="bg-[var(--color-bg-luxury)] min-h-screen pb-32">
 
             {/* 1. Hero Header */}
-            <section className="relative h-[60vh] md:h-[70vh] min-h-[400px] w-full flex flex-col items-center justify-center text-center">
+            <section className="relative h-[60vh] md:h-[100vh] min-h-[400px] w-full flex flex-col items-center justify-center text-center">
                 <div className="absolute inset-0">
-                    <video
-                        src='/assets/services/Create_a_premium_cinematic_.mp4'
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                        className="w-full h-full object-cover"
-                    />
+                    <img src="/assets/about/abouthero.png" alt="About Logaa Holidays" className="w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-[var(--color-bg-luxury)]" />
                 </div>
 
@@ -41,7 +34,7 @@ export function About() {
             </section>
 
             {/* 2. Main Content */}
-            <section className="relative z-20 -mt-20 max-w-7xl mx-auto px-6">
+            <section className="relative z-20 -mt-14 max-w-7xl mx-auto px-6">
                 <div className="bg-white rounded-[3rem] p-8 md:p-12 ,0,0,0.05),-10px_-10px_30px_rgba(255,255,255,0.8),inset_2px_2px_5px_rgba(255,255,255,1)] border border-white">
 
                     <div className="grid lg:grid-cols-12 gap-12 items-start">
@@ -49,7 +42,7 @@ export function About() {
                         <div className="lg:col-span-5">
                             <div className="rounded-3xl overflow-hidden ,0,0,0.2)] sticky top-32 border-4 border-white">
                                 <img loading="lazy"
-                                    src='/assets/madurai/theppakulam.webp'
+                                    src='/assets/about/certificate.jpg'
                                     alt="Event Management in Madurai Tamil Nadu"
                                     className="w-full h-auto object-cover"
                                 />
