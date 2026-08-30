@@ -1,7 +1,7 @@
 import React from 'react';
 import { TourOperatorsForm, CarCoachRentalForm, FlightBookingForm } from './ServiceForms';
 import { RailwayBookingForm, PassportVisaForm } from './ServiceForms2';
-import { TravelInsuranceForm, EventManagementForm, HotelBookingForm } from './ServiceForms3';
+import { TravelInsuranceForm, EventManagementForm, HotelBookingForm, BusBookingForm, CabCoachRentalFormV2 } from './ServiceForms3';
 import { ComprehensiveEnquiryForm } from '../ComprehensiveEnquiryForm';
 
 export const ServiceEnquiryRouter = ({ serviceId }: { serviceId: string }) => {
@@ -9,7 +9,9 @@ export const ServiceEnquiryRouter = ({ serviceId }: { serviceId: string }) => {
     case 'tour-operators':
       return <TourOperatorsForm />;
     case 'car-coach-rental':
-      return <CarCoachRentalForm />;
+      return <CabCoachRentalFormV2 />;
+    case 'bus-booking':
+      return <BusBookingForm />;
     case 'flight-booking':
       return <FlightBookingForm />;
     case 'railway-ticket-booking':

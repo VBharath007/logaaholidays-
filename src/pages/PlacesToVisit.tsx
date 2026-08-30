@@ -4,6 +4,8 @@ import { ChevronRight, ChevronDown, List, Grid, MapPin } from 'lucide-react';
 import { destinationsData } from '../data/destinationsData';
 import { generateSlug } from '../lib/utils';
 
+import { useSEO } from '../hooks/useSEO';
+
 export function PlacesToVisit() {
   const { city, state } = useParams();
   const dest = city && destinationsData[city] ? destinationsData[city] : null;
@@ -12,6 +14,12 @@ export function PlacesToVisit() {
   const [viewMode, setViewMode] = useState<'list' | 'grid'>('list');
   const [filterType, setFilterType] = useState('All');
   const [isFilterOpen, setIsFilterOpen] = useState(false);
+
+  useSEO(
+    dest ? `Places to Visit in ${dest.name} | Logaa Holidays` : 'Places to Visit | Logaa Holidays',
+    dest ? `Explore top tourist attractions and places to visit in ${dest.name}. Book customized ${dest.name} sightseeing packages with Logaa Holidays.` : 'Explore top tourist destinations with Logaa Holidays.',
+    dest ? `${dest.name} tourist places, Places to visit in ${dest.name}, ${dest.name} sightseeing, ${dest.name} tour packages` : 'Tourist places, Sightseeing packages'
+  );
 
   useEffect(() => {
     window.scrollTo(0, 0);

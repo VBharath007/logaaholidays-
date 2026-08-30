@@ -93,13 +93,13 @@ const reviews = [
     id: 16,
     name: "Neeraj Saxena",
     time: "a year ago",
-    text: `I am Dr. Neeraj Saxena from Noida and I had total 5 days tour for Madurai, Tanjavur and Rameshwaram. All the services hotel cab and sightseeing are excellent. Mr. Loganathan always assisted us entire tour.`,
+    text: `I am Dr. Neeraj Saxena from Noida and I had total 5 days tour for Madurai, Thanjavur and Rameswaram. All the services hotel cab and sightseeing are excellent. Mr. Loganathan always assisted us entire tour.`,
   },
   {
     id: 17,
     name: "Ranjith praveen",
     time: "a year ago",
-    text: `Me, Ranjith Praveen from Madurai recently went on a trip to Ooty, Kodaikanal, and Rameshwaram with Logaa Holidays, organized by Loganathan. Everything was super well-planned, and we got to visit all the major spots without any stress.`,
+    text: `Me, Ranjith Praveen from Madurai recently went on a trip to Ooty, Kodaikanal, and Rameswaram with Logaa Holidays, organized by Loganathan. Everything was super well-planned, and we got to visit all the major spots without any stress.`,
   },
   {
     id: 18,

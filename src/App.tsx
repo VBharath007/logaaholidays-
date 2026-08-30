@@ -21,6 +21,14 @@ import { DestinationOverview } from './pages/DestinationOverview'
 import { PlacesToVisit } from './pages/PlacesToVisit'
 import { PlaceDetails } from './pages/PlaceDetails'
 import { ScrollToTop } from './components/ScrollToTop'
+import { WhatsAppButton } from './components/ui/WhatsAppButton'
+import { Chatbot } from './components/ui/Chatbot'
+import { BackToTop } from './components/ui/BackToTop'
+
+import { PrivacyPolicy } from './pages/PrivacyPolicy'
+import { TermsConditions } from './pages/TermsConditions'
+import { CancellationPolicy } from './pages/CancellationPolicy'
+import { NotFound } from './pages/NotFound'
 
 function App() {
   useSmoothScroll();
@@ -54,9 +62,19 @@ function App() {
             <Route path="/place/:state/:city/:placeId" element={<PlaceDetails />} />
             <Route path="/testimonials" element={<TestimonialsPage />} />
             <Route path="/contact" element={<Contact />} />
+            
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-and-conditions" element={<TermsConditions />} />
+            <Route path="/cancellation-policy" element={<CancellationPolicy />} />
+            
+            {/* 404 Page */}
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />
+        <Chatbot />
+        <WhatsAppButton />
+        <BackToTop />
       </ThemeProvider>
     </BrowserRouter>
   )

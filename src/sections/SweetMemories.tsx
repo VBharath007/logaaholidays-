@@ -6,12 +6,12 @@ export function SweetMemories() {
  return (
  <section className="py-24 px-6 bg-[var(--color-bg-white)] overflow-hidden">
  <div className="max-w-7xl mx-auto">
- <div className="text-center mb-20">
- <h2 className="text-4xl md:text-5xl font-display font-bold text-[var(--color-neutral-black)] mb-3">Experience the Soul of Tamil Nadu</h2>
+ <div className="text-left md:text-center mb-12 md:mb-20">
+ <h2 className="text-3xl md:text-5xl font-display font-bold text-[var(--color-neutral-black)] mb-3">Experience the Soul of Tamil Nadu</h2>
  <p className="text-[var(--color-neutral-medium)] font-medium tracking-wide">Discover the magic of Madurai with journeys crafted for unforgettable memories</p>
  </div>
 
- <div className="grid lg:grid-cols-2 gap-20 items-center">
+ <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
  {/* Left Content */}
  <div className="space-y-12">
  {[
@@ -60,7 +60,7 @@ export function SweetMemories() {
  >
  <img loading="lazy" 
  src='/assets/meenakshi amman temple.png' 
- alt="Meenakshi Amman Temple" 
+ alt="Madurai Meenakshi Amman Temple Tour Packages - Logaa Holidays" 
  className="w-full h-full object-cover rounded-[2.5rem]"
  />
  </motion.div>

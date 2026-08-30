@@ -7,19 +7,23 @@ import { packagesDatabase, getPackageDisplayTitle, getPackageLink, normalizeDura
 const destinationGroups = [
   {
     region: 'Tamil Nadu',
-    places: ['Madurai Tours', 'Rameshwaram Tours', 'Kanyakumari Tours', 'Ooty Tours', 'Kodaikanal Tours', 'Chennai Tours', 'Courtallam Tours', 'Pillayarpatti Tours', 'Tiruchendur Tours', 'Palani Tours', 'Trichy Tours', 'Thanjavur Tours']
+    places: ['Madurai Tours', 'Rameswaram Tours', 'Kanyakumari Tours', 'Ooty Tours', 'Kodaikanal Tours', 'Chennai Tours', 'Courtallam Tours', 'Pillayarpatti Tours', 'Tiruchendur Tours', 'Palani Tours', 'Trichy Tours', 'Thanjavur Tours', 'Kumbakonam Tours', 'Mahabalipuram Tours', 'Pondicherry Tours', 'Valparai Tours', 'Megamalai Tours']
   },
   {
     region: 'Kerala',
-    places: ['Kerala Tours', 'Cochin Tours', 'Munnar Tours', 'Thekkady Tours', 'Alleppey Tours', 'Vagamon Tours']
+    places: ['Kerala Tours', 'Cochin Tours', 'Munnar Tours', 'Thekkady Tours', 'Alleppey Tours', 'Vagamon Tours', 'Kumarakom Tours', 'Athirappilly Tours', 'Kovalam Tours', 'Varkala Tours']
   },
   {
     region: 'Karnataka',
-    places: ['Karnataka Tours']
+    places: ['Mysore Tours', 'Coorg Tours', 'Bangalore Tours', 'Chikmagalur Tours', 'Kabini Tours', 'Hampi Tours']
   },
   {
     region: 'North & East India',
-    places: ['Shirdi Tours', 'Varanasi Tours', 'Cherrapunji Tours', 'Pune Tours', 'Shillong Tours', 'Guwahati Tours', 'Ayodhya Tours']
+    places: ['Shirdi Tours', 'Varanasi Tours', 'Delhi Tours', 'Agra Tours', 'Jaipur Tours', 'Shimla Tours', 'Manali Tours', 'Kashmir Tours', 'Cherrapunji Tours', 'Pune Tours', 'Shillong Tours', 'Guwahati Tours', 'Ayodhya Tours']
+  },
+  {
+    region: 'International',
+    places: ['Malaysia Tours', 'Singapore Tours', 'Bali Tours', 'Thailand Tours', 'Sri Lanka Tours']
   }
 ];
 
@@ -255,9 +259,9 @@ const kanyakumariPackages = [
   
   {
     id: 28,
-    title: 'Madurai - Rameshwaram - Kanyakumari 4N 5D Tour',
+    title: 'Madurai - Rameswaram - Kanyakumari 4N 5D Tour',
     duration: '4 Nights / 5 Days',
-    destination: 'Kanyakumari, Madurai, Rameshwaram, Meenakshi Temple',
+    destination: 'Kanyakumari, Madurai, Rameswaram, Meenakshi Temple',
     activities: 'Sightseeing',
     themes: 'Religious & Pilgrimage, Culture & Heritage, Beaches and Islands',
     price: 'On Request',
@@ -277,7 +281,7 @@ const kanyakumariPackages = [
     id: 30,
     title: 'Delightful Madurai - Rameswaram - Kanyakumari 3Night 4Days Tour',
     duration: '3 Nights / 4 Days',
-    destination: 'Kanyakumari, Madurai, Rameshwaram, Kumari Amman Temple',
+    destination: 'Kanyakumari, Madurai, Rameswaram, Kumari Amman Temple',
     activities: 'Sightseeing',
     themes: 'Religious & Pilgrimage, Culture & Heritage, Beaches and Islands',
     price: 'On Request',
@@ -285,9 +289,9 @@ const kanyakumariPackages = [
   },
   {
     id: 31,
-    title: 'Madurai - Rameshwaram - Kanyakumari - Trivandrum Tour 5N 6D',
+    title: 'Madurai - Rameswaram - Kanyakumari - Trivandrum Tour 5N 6D',
     duration: '5 Nights / 6 Days',
-    destination: 'Kovalam, Trivandrum, Kanyakumari, Madurai, Rameshwaram...',
+    destination: 'Kovalam, Trivandrum, Kanyakumari, Madurai, Rameswaram...',
     activities: 'Beaches Sightseeing, Sightseeing',
     themes: 'Religious & Pilgrimage, Culture & Heritage, Beaches and Islands',
     price: 'On Request',
@@ -550,15 +554,15 @@ const kashmirPackages = [
   getDbPackage('8405')!
 ];
 
-const rameshwaramPackages = [
+const rameswaramPackages = [
   kanyakumariPackages.find(p => p.id === 28)!,
   kanyakumariPackages.find(p => p.id === 30)!,
   kanyakumariPackages.find(p => p.id === 31)!,
   // {
   //   id: 42,
-  //   title: 'Madurai To Rameshwaram 1N 2D Tour',
+  //   title: 'Madurai To Rameswaram 1N 2D Tour',
   //   duration: '1 Nights / 2 Days',
-  //   destination: 'Madurai, Rameshwaram',
+  //   destination: 'Madurai, Rameswaram',
   //   activities: 'Sightseeing',
   //   themes: 'Religious & Pilgrimage, Culture & Heritage',
   //   price: 'On Request',
@@ -567,7 +571,7 @@ const rameshwaramPackages = [
 ];
 
 // Normalize all hardcoded packages lists in TourCategory.tsx
-[shirdiPackages, punePackages, kanyakumariPackages, cherrapunjiPackages, shillongPackages, guwahatiPackages, varanasiPackages, rameshwaramPackages, goldenTrianglePackages, shimlaPackages, manaliPackages, manaliVolvoPackages, keralaHoneymoonPackages, goaHoneymoonPackages, tamilNaduHoneymoonPackages, karnatakaHoneymoonPackages, kashmirHoneymoonPackages, himachalHoneymoonPackages, kashmirPackages].forEach(arr => {
+[shirdiPackages, punePackages, kanyakumariPackages, cherrapunjiPackages, shillongPackages, guwahatiPackages, varanasiPackages, rameswaramPackages, goldenTrianglePackages, shimlaPackages, manaliPackages, manaliVolvoPackages, keralaHoneymoonPackages, goaHoneymoonPackages, tamilNaduHoneymoonPackages, karnatakaHoneymoonPackages, kashmirHoneymoonPackages, himachalHoneymoonPackages, kashmirPackages].forEach(arr => {
   arr.forEach(p => {
     if (!p) return;
     if (p.title) p.title = normalizeDurationOrder(p.title);
@@ -828,7 +832,7 @@ const TourCategory = () => {
         case 'shillong-tours': return shillongPackages;
         case 'guwahati-tours': return guwahatiPackages;
         case 'ayodhya-tours': return ayodhyaPackages;
-        case 'rameshwaram-tours': return rameshwaramPackages;
+        case 'rameswaram-tours': return rameswaramPackages;
         case 'golden-triangle-tours': return goldenTrianglePackages;
         case 'shimla-tours': return shimlaPackages;
         case 'kashmir-tours': return kashmirPackages;
@@ -850,6 +854,25 @@ const TourCategory = () => {
             const destLower = (p.overview?.destination || '').toLowerCase();
             const idNum = parseInt(p.id);
             return (idNum >= 6000 && idNum <= 6099) || idNum === 9901 || titleLower.includes('andaman') || destLower.includes('andaman');
+          }).map((p: any) => ({
+            id: parseInt(p.id),
+            title: getPackageDisplayTitle(p),
+            duration: p.overview?.duration || 'Various',
+            destination: p.overview?.destination || 'Various',
+            activities: p.overview?.activities || 'Various',
+            themes: p.overview?.themes || 'Various',
+            price: p.priceDetails?.amount || 'On Request',
+            image: p.image,
+            rating: p.rating,
+            reviews: p.reviews
+          }));
+        }
+        case 'megamalai-tours':
+        case 'theni-tours': {
+          return Object.values(packagesDatabase).filter((p: any) => {
+            const titleLower = (p.title || '').toLowerCase();
+            const destLower = (p.overview?.destination || '').toLowerCase();
+            return titleLower.includes('megamalai') || titleLower.includes('meghamalai') || titleLower.includes('theni') || destLower.includes('megamalai') || destLower.includes('meghamalai') || destLower.includes('theni');
           }).map((p: any) => ({
             id: parseInt(p.id),
             title: getPackageDisplayTitle(p),
@@ -908,7 +931,7 @@ const TourCategory = () => {
               if (isFlightOrNorth) return 1000 + getDays(pkg.duration);
 
               const isPreferred = titleLower.includes('ooty') ||
-                titleLower.includes('rameshwaram') ||
+                titleLower.includes('rameswaram') ||
                 titleLower.includes('rameswaram') ||
                 titleLower.includes('munnar') ||
                 titleLower.includes('local') ||
@@ -1301,16 +1324,7 @@ const TourCategory = () => {
                               {badge === 'MOST BOOKED' ? <Flame className="w-3.5 h-3.5" /> : null} {badge === 'MOST BOOKED' ? 'BEST SELLER' : badge}
                             </div>
 
-                            <div className="absolute top-4 right-4 bg-white text-slate-800 text-[12px] font-bold min-w-[50px] p-1.5 rounded-xl flex flex-col items-center justify-center shadow-[0_4px_12px_rgba(0,0,0,0.15)] leading-tight">
-                              <div className="flex items-center gap-1">
-                                <Star className="w-3 h-3 text-orange-400 fill-orange-400" />
-                                <span itemProp="aggregateRating" itemScope itemType="https://schema.org/AggregateRating">
-                                  <span itemProp="ratingValue">{rating}</span>
-                                  <meta itemProp="reviewCount" content={reviews.replace('K+', '000').replace('.', '')} />
-                                </span>
-                              </div>
-                              <span className="text-[9px] text-slate-500 font-bold mt-0.5">({reviews})</span>
-                            </div>
+
 
                             {/* Travelers Info */}
                             <div className="absolute bottom-4 left-4 flex items-center gap-3">
@@ -1370,26 +1384,24 @@ const TourCategory = () => {
                               </li>
                             </ul>
 
-                            {/* Trust Section */}
-                            <div className="bg-[#F2FBF5] rounded-xl p-3 mb-5 border border-[#E2F5EA] flex flex-col gap-1.5">
-                              <div className="flex items-center gap-2">
-                                <ShieldCheck className="w-3.5 h-3.5 text-[#0F6B46] flex-shrink-0" />
-                                <span className="text-[11px] font-bold text-[#1B2430]">Instant Booking Confirmation</span>
+                            {/* Action Buttons */}
+                            <div className="mt-auto pt-4 border-t border-slate-100 flex flex-col gap-3">
+                              <div className="flex flex-col sm:flex-row items-center gap-2">
+                                <a
+                                  href={`https://wa.me/917397329776?text=Hi Logaa Holidays, I am interested in the ${pkg.title} package.`}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="w-full sm:flex-1 text-center bg-[#F2FBF5] text-[#0F6B46] border border-[#E2F5EA] text-[13px] font-bold py-2 rounded-xl hover:bg-[#0F6B46] hover:text-white transition-colors"
+                                >
+                                  Enquire Now
+                                </a>
+                                <Link
+                                  to={getPackageLink(pkg)}
+                                  className="w-full sm:flex-1 text-center bg-[#0B2515] text-white text-[13px] font-bold py-2 rounded-xl hover:bg-[#0c593a] transition-colors"
+                                >
+                                  View Details
+                                </Link>
                               </div>
-                              <div className="flex items-center gap-2">
-                                <ShieldCheck className="w-3.5 h-3.5 text-[#0F6B46] flex-shrink-0" />
-                                <span className="text-[11px] font-bold text-[#1B2430]">Trusted Local Tour Operator</span>
-                              </div>
-                            </div>
-
-                            <div className="mt-auto flex items-center">
-                              <Link
-                                to={getPackageLink(pkg)}
-                                className="text-[var(--color-primary-forest)] text-[14px] font-bold flex items-center gap-1.5 hover:text-[#0c593a] transition-colors group/link"
-                                aria-label={`View details for ${pkg.title}`}
-                              >
-                                View Details <ChevronRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
-                              </Link>
                             </div>
                           </div>
                         </article>
@@ -1479,16 +1491,7 @@ const TourCategory = () => {
                                 {badge === 'MOST BOOKED' ? <Flame className="w-3.5 h-3.5" /> : null} {badge === 'MOST BOOKED' ? 'BEST SELLER' : badge}
                               </div>
 
-                              <div className="absolute top-4 right-4 bg-white text-slate-800 text-[12px] font-bold min-w-[50px] p-1.5 rounded-xl flex flex-col items-center justify-center shadow-[0_4px_12px_rgba(0,0,0,0.15)] leading-tight">
-                                <div className="flex items-center gap-1">
-                                  <Star className="w-3 h-3 text-orange-400 fill-orange-400" />
-                                  <span itemProp="aggregateRating" itemScope itemType="https://schema.org/AggregateRating">
-                                    <span itemProp="ratingValue">{rating}</span>
-                                    <meta itemProp="reviewCount" content={reviews.replace('K+', '000').replace('.', '')} />
-                                  </span>
-                                </div>
-                                <span className="text-[9px] text-slate-500 font-bold mt-0.5">({reviews})</span>
-                              </div>
+
 
                               {/* Travelers Info */}
                               <div className="absolute bottom-4 left-4 flex items-center gap-3">
@@ -1548,26 +1551,24 @@ const TourCategory = () => {
                                 </li>
                               </ul>
 
-                              {/* Trust Section */}
-                              <div className="bg-[#F2FBF5] rounded-xl p-3 mb-5 border border-[#E2F5EA] flex flex-col gap-1.5">
-                                <div className="flex items-center gap-2">
-                                  <ShieldCheck className="w-3.5 h-3.5 text-[#0F6B46] flex-shrink-0" />
-                                  <span className="text-[11px] font-bold text-[#1B2430]">Instant Booking Confirmation</span>
+                              {/* Action Buttons */}
+                              <div className="mt-auto pt-4 border-t border-slate-100 flex flex-col gap-3">
+                                <div className="flex flex-col sm:flex-row items-center gap-2">
+                                  <a
+                                    href={`https://wa.me/917397329776?text=Hi Logaa Holidays, I am interested in the ${pkg.title} package.`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-full sm:flex-1 text-center bg-[#F2FBF5] text-[#0F6B46] border border-[#E2F5EA] text-[13px] font-bold py-2 rounded-xl hover:bg-[#0F6B46] hover:text-white transition-colors"
+                                  >
+                                    Enquire Now
+                                  </a>
+                                  <Link
+                                    to={getPackageLink(pkg)}
+                                    className="w-full sm:flex-1 text-center bg-[#0B2515] text-white text-[13px] font-bold py-2 rounded-xl hover:bg-[#0c593a] transition-colors"
+                                  >
+                                    View Details
+                                  </Link>
                                 </div>
-                                <div className="flex items-center gap-2">
-                                  <ShieldCheck className="w-3.5 h-3.5 text-[#0F6B46] flex-shrink-0" />
-                                  <span className="text-[11px] font-bold text-[#1B2430]">Trusted Local Tour Operator</span>
-                                </div>
-                              </div>
-
-                              <div className="mt-auto flex items-center">
-                                <Link
-                                  to={getPackageLink(pkg)}
-                                  className="text-[var(--color-primary-forest)] text-[14px] font-bold flex items-center gap-1.5 hover:text-[#0c593a] transition-colors group/link"
-                                  aria-label={`View details for ${pkg.title}`}
-                                >
-                                  View Details <ChevronRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
-                                </Link>
                               </div>
                             </div>
                           </article>
@@ -1661,6 +1662,9 @@ const TourCategory = () => {
           </div>
 
         </div>
+
+        {/* ── Category FAQ Section ── */}
+        <CategoryFAQ category={category || ''} />
 
         {/* Floating Action Button for Saved Items */}
         {savedPackages.length > 0 && (
@@ -1766,3 +1770,117 @@ const TourCategory = () => {
 }
 
 export { TourCategory };
+
+// ── Per-category FAQ data ──────────────────────────────────────────────────
+const categoryFaqData: Record<string, { q: string; a: string }[]> = {
+  'shirdi-tours': [
+    { q: 'Is the Shirdi tour package suitable for families and senior citizens?', a: 'Yes. The Shirdi itinerary is typically 2–3 days, focused on visiting Sai Baba Temple and nearby shrines. We choose comfortable, family-friendly hotels. Short transfers keep the journey easy for senior citizens and children. We also cover Shani Shingnapur temple if interested, and our guides assist during temple darshan to ensure a smooth, organised experience.' },
+    { q: 'Can we join the Shirdi pilgrimage from Chennai or Pune?', a: 'Yes. You can join from Chennai, Pune or Mumbai. Flights to Aurangabad or Mumbai and trains to Kopargaon/Shirdi are common routes. We arrange pick-ups at these points. One popular option is flying to Pune, driving 3–4 hours to Shirdi, and returning from Mumbai by flight. We coordinate whichever city is most convenient for your travel.' },
+    { q: 'What is included in the Shirdi tour package?', a: 'Our Shirdi packages typically include accommodation in Shirdi, meals (breakfast and dinner), private or shared transport, a guided visit to Sai Baba Temple, and a visit to Shani Shingnapur. Flight or train tickets can be added as per your preference.' },
+  ],
+  'varanasi-tours': [
+    { q: 'Is the Varanasi tour safe and manageable for families and senior citizens?', a: 'Yes. Varanasi is a compact city, and we plan hotel stays near the main sites. Travel between the ghats and temples is short — by rickshaw or on foot. We avoid chaotic evening crowds where possible. For senior citizens, we focus on the sunrise boat ride on the Ganges and easy temple visits. Local guides ensure a secure, well-paced experience for all age groups.' },
+    { q: 'Can I join the Varanasi tour from Delhi or Chennai?', a: 'Absolutely. Varanasi has an international airport (Lal Bahadur Shastri Airport) and multiple railway stations. You can catch a direct flight from Delhi or Chennai to Varanasi. We will pick you up at the airport or station to start the tour. If you prefer, we can also arrange a train from Delhi or Chennai to Varanasi.' },
+    { q: 'What are the highlights of the Varanasi tour?', a: 'The highlights include a sunrise boat ride on the Ganges, the evening Ganga Aarti at Dashashwamedh Ghat, a visit to Kashi Vishwanath Temple, Sarnath (the deer park where Buddha gave his first sermon) and a walk through the ancient lanes of the old city. Our guides provide cultural and historical context at every stop.' },
+  ],
+  'golden-triangle-tours': [
+    { q: 'Is the Golden Triangle tour (Delhi–Agra–Jaipur) suitable for families?', a: 'Yes. We design the 7–8 day itinerary with plenty of breaks between sightseeing stops. Major attractions — Taj Mahal, Amber Fort and Qutub Minar — have wheelchair access or easy paths. We book comfortable 3–4★ hotels and can adjust the pace with additional rest stops and lighter activities for elderly members.' },
+    { q: 'Can I join the Golden Triangle tour from Madurai, Pune or Ahmedabad?', a: 'Yes. Many travellers book a domestic flight to Delhi first. If you are coming from Madurai, Pune or Ahmedabad, you can fly or take a train to New Delhi and we will start the tour from there. We can also arrange private transfers or connecting flight options from Mumbai or Bengaluru to reach Delhi.' },
+    { q: 'What is the best time to visit the Golden Triangle?', a: 'The best time to visit the Golden Triangle is from October to March, when the weather is pleasant and cool. Summers (April–June) are very hot, and monsoon (July–September) can be humid, though some travellers prefer the lush greenery during this period. Our team can advise on the best dates for your travel.' },
+  ],
+  'shimla-tours': [
+    { q: 'Is the Shimla tour package family-friendly and accessible for senior citizens?', a: "Yes. Shimla's town is mostly flat along Mall Road, and we stay in hotels with lifts. The drive from Chandigarh or Delhi is scenic and smooth. Daily sightseeing — a toy train ride, local markets — is limited in scope, keeping the pace gentle. Families and couples both enjoy the cool weather and heritage sites without strenuous hiking." },
+    { q: 'Can we join the Shimla tour from Delhi or Chandigarh?', a: 'Certainly. Shimla tours often start from Delhi or Chandigarh. If you fly into Delhi, we can pick you up at the airport or railway station and drive together to Shimla (8–9 hours). Alternatively, you can fly into Chandigarh (which is closer) and we will begin the tour from there. We coordinate airport and train pick-ups at either city.' },
+    { q: 'Does the Shimla package include a toy train ride?', a: 'Yes, where itinerary time permits, we include a ride on the UNESCO-listed Kalka–Shimla Toy Train — a scenic narrow-gauge railway that winds through the Himalayan foothills. This is a favourite experience for both children and adults. Specific inclusions are listed in each package itinerary.' },
+  ],
+  'manali-tours': [
+    { q: 'Is this Manali tour suitable for senior citizens?', a: 'Yes. Manali is at approximately 2,000 metres altitude, which is moderate. We ensure the itinerary includes rest stops in Kullu to allow for acclimatisation. Vehicles are spacious and stops are frequent. Hotels with minimal stairs are chosen when required. The itinerary includes light sightseeing — temples, parks and easy nature walks — so senior citizens can enjoy the Himalayas comfortably.' },
+    { q: 'What sightseeing is included in the Manali tour?', a: 'Our Manali packages cover Rohtang Pass (subject to permit availability), Solang Valley, Hadimba Devi Temple, Vashisht hot springs, Manu Temple and local Mall Road. We also include Kullu on the way, with visits to the Beas River bank and local shawl factories. All sightseeing is done in a private vehicle with a knowledgeable guide.' },
+    { q: 'What is the best time to visit Manali?', a: 'The best time to visit Manali is from March to June for pleasant weather and snowfall views at Rohtang Pass. October to February offers snowfall in town but Rohtang Pass is closed. Monsoon (July–September) brings lush greenery but also road closures due to landslides. We recommend March to June for families and honeymooners.' },
+  ],
+  'manali-volvo-tours': [
+    { q: 'What is a Manali Volvo tour package?', a: 'It means you travel overnight from Delhi to Manali in an AC Volvo sleeper bus. You board in Delhi in the evening, rest in a reclining sleeper seat, and arrive in Manali in the morning. The package includes round-trip Volvo bus tickets, 3 nights\' hotel stay in Manali, daily breakfast and dinner, and local sightseeing such as Hadimba Temple and Solang Valley. This is a budget-friendly, comfortable way to reach Manali without a separate flight.' },
+    { q: 'Is the Manali Volvo tour suitable for families and senior citizens?', a: 'Yes. The overnight journey means no daytime travel fatigue. In Manali, we stay in family-friendly hotels. Sightseeing activities — Vashisht hot springs and Mall Road — are easy. We also offer assistance at boarding and disembarkation points. The Volvo\'s air-conditioning, reclining seats and planned rest stops make it manageable even for older travellers.' },
+  ],
+  'kashmir-tours': [
+    { q: 'Is this Kashmir tour suitable for families and honeymooners?', a: "Yes. Kashmir's scenic valleys and Dal Lake houseboat are enjoyable for all ages. The itinerary includes easy sightseeing — Mughal gardens and gentle walks — and avoids high-altitude passes unless specifically requested. Accommodation includes mid-range hotels and a houseboat stay on Dal Lake, offering novelty with comfort. The weather is cool and pleasant, especially from April to June." },
+    { q: 'Can we start the Kashmir tour from Delhi or Srinagar?', a: 'You should fly or travel into Srinagar (SXR airport) to start the tour. Delhi–Srinagar flights are frequent. We will meet you at Srinagar airport or railway station. If you prefer, you can also fly into Jammu and transfer by road (approximately 8 hours) to Srinagar. Either way, our package begins once you arrive in Kashmir, and we handle all local transport.' },
+    { q: 'What is the best time to visit Kashmir?', a: 'April to June is ideal for pleasant weather, blooming gardens and Shikara rides on Dal Lake. December to February offers snowfall in Gulmarg, popular for skiing. October to November features the famous chinar leaf colours. We advise against visiting during heavy snowfall months (January–February) for families unless specifically seeking snow activities.' },
+  ],
+  'kerala-honeymoon-packages': [
+    { q: 'Is this Kerala honeymoon package romantic?', a: "Yes. Kerala's gentle backwater cruises and lush tea gardens create a deeply romantic atmosphere. The itinerary features a calm houseboat stay in Alleppey and a nature walk in Munnar. We ensure cosy stays with optional experiences such as private boat rides and spice farm visits, making it a memorable honeymoon from start to finish." },
+    { q: 'Can I join the Kerala honeymoon tour from Kochi or Trivandrum?', a: 'Certainly. Most itineraries start in Kochi (Cochin) or Trivandrum (Thiruvananthapuram). We offer pick-up from Kochi airport and railway station, or we can meet you in Trivandrum if that is more convenient. You can fly into either city, and we will handle all local transfers.' },
+    { q: 'Are private rooms and couple-specific amenities included?', a: 'Yes. Our Kerala honeymoon packages are designed exclusively for couples, featuring double or king-sized rooms, private houseboat cabins, candlelight dinners (on request), and personalised touches. We select boutique resorts and heritage properties that prioritise privacy and romance.' },
+  ],
+  'goa-honeymoon-packages': [
+    { q: 'Is this Goa package romantic for honeymooners?', a: "Yes. The Goa itinerary focuses on the best beaches and resorts. We select quieter beach stays — such as South Goa — with sunset views, ideal for couples. You can also enjoy dinner cruises or scenic coastal drives. We provide a private guide and car, so you travel at leisure. Goa's laid-back vibe and beautiful sunsets are a firm favourite among honeymooners." },
+    { q: 'Can I join the Goa package from Mumbai or Delhi?', a: "Yes. You can fly into Goa's Dabolim Airport (GOI) from Mumbai or Delhi. We can pick you up at Goa airport. Alternatively, a popular option is to fly into Mumbai and take a connecting flight or train to Goa. Once you arrive, we handle all inter-city transfers to your beach hotel." },
+    { q: 'What is included in the Goa honeymoon package?', a: 'Our Goa honeymoon packages typically include accommodation in a beachside resort or boutique hotel, daily breakfast, private transportation, sightseeing (Calangute Beach, Dudhsagar Falls, Old Goa churches), and optional activities such as a sunset dinner cruise or water sports. Customisation is available on request.' },
+  ],
+  'andaman-honeymoon-packages': [
+    { q: 'Is the Andaman package ideal for honeymoon couples?', a: "Yes. The itinerary blends beach relaxation and easy nature activities. We include calm attractions like Radhanagar Beach — ranked among the world's best — and a glass-bottom boat ride for coral viewing. Resorts on Havelock and Neil Island offer private couples' cottages with direct beach access, making it a truly romantic escape." },
+    { q: 'Can I join the Andaman tour from Chennai or Kolkata?', a: 'Certainly. You will fly into Port Blair (IXZ airport) since it is the gateway to the Andaman archipelago. Port Blair has direct flights from Chennai, Kolkata and Delhi. We will meet you at Port Blair airport to begin. All island transfers — ferries and speedboats — are pre-arranged, so after arrival you simply relax and enjoy.' },
+  ],
+  'sikkim-darjeeling-honeymoon-packages': [
+    { q: 'Is Sikkim safe and comfortable for honeymoon couples?', a: "Yes. Sikkim's weather is mild and destinations like Gangtok and Pelling are below 1,800 metres. Roads are good and the region is known for being tourist-friendly. We include short drives between scenic spots, comfortable hotels and a relaxed schedule with optional tea plantation or monastery visits — ideal for newlyweds." },
+    { q: 'Can we join the Sikkim tour from Delhi or Kolkata?', a: 'Yes. The common route is to fly to Bagdogra (near Siliguri) via Delhi or Kolkata. We will pick you up at Bagdogra airport. From there we drive approximately 5 hours to Gangtok to start the tour. Alternatively, you can take a luxury coach or train to Siliguri and we will arrange onward travel.' },
+  ],
+  'maldives-honeymoon-packages': [
+    { q: 'Is this Maldives package ideal for honeymoon couples?', a: "Absolutely. The itinerary is built for privacy and romance — you stay in a water villa or beach bungalow, enjoy private beach dinners and have ample relaxation time. Snorkelling and lagoon tours add a sense of adventure. Every detail — seaplane transfers, resort check-in — is arranged in advance, so you focus only on each other." },
+    { q: 'Can I start the Maldives trip from Chennai or Bangalore?', a: "You will fly to Malé (the Maldives) via a direct or one-stop flight from Chennai, Bangalore or Mumbai. Once you arrive at Velana International Airport, your speedboat or seaplane transfer to the resort island is included in the package. We coordinate all Maldives-side domestic transfers — you only need to book your international flight to Malé." },
+  ],
+  'karnataka-honeymoon-packages': [
+    { q: 'Is the Karnataka honeymoon package romantic?', a: "Yes. Coorg's pine forests, mist-laden coffee estates and scenic viewpoints create a very romantic atmosphere. We include hilltop restaurants, private resort stays and optional experiences such as a private picnic or bonfire on request. The cool climate and peaceful surroundings make Karnataka — especially Coorg and Chikmagalur — ideal for couples." },
+    { q: 'Can we start the Karnataka honeymoon tour from Bangalore or Chennai?', a: 'Yes. Bangalore is the primary starting point. You can fly into Bangalore directly, and we will pick you up at the airport. We can also arrange to meet you if you are arriving from Chennai or other cities. The itinerary then proceeds to Mysore, Coorg and Chikmagalur in a private vehicle.' },
+  ],
+  'kashmir-honeymoon-packages': [
+    { q: 'Is the Kashmir honeymoon package romantic?', a: "Yes. Kashmir's scenic valleys, Dal Lake houseboat, Mughal gardens and Gulmarg meadows create an exceptionally romantic setting. We include a private Shikara ride on Dal Lake, a houseboat stay with candlelight dinner, and scenic drives through Pahalgam. The cool climate, especially from April to June, adds to the romance." },
+    { q: 'Are travel arrangements comfortable for a honeymoon couple?', a: "Absolutely. We provide a private vehicle and a friendly driver-guide throughout. We schedule moderate sightseeing so you can relax and enjoy each other's company. Pick-up is from Srinagar airport, and we ensure the journey is pleasant from the moment you arrive in Kashmir." },
+  ],
+  'himachal-honeymoon-packages': [
+    { q: 'Is the Himachal (Shimla/Kufri) tour romantic for honeymooners?', a: "Yes. Shimla's quaint colonial charm and Kufri's pine forests are very romantic. We include scenic viewpoints and cosy meals at hilltop restaurants. Hotels are chosen for their character and views — many feature fireplaces. The cool climate and privacy make it ideal for couples. We can also arrange special experiences such as a private picnic or bonfire on request." },
+    { q: 'Are travel arrangements comfortable for a honeymoon couple?', a: 'Certainly. We provide a private car and a friendly driver-guide who assists you throughout. We schedule moderate sightseeing — a toy train ride or brief nature walks — so you can relax. Pick-up is from Delhi or Chandigarh, and we ensure the journey itself is pleasant, so your honeymoon begins stress-free.' },
+  ],
+  'tamil-nadu-honeymoon-packages': [
+    { q: 'Which places are covered in the Tamil Nadu honeymoon package?', a: 'Our Tamil Nadu honeymoon packages cover popular couple-friendly destinations such as Ooty (Udhagamandalam), Kodaikanal, Coonoor, Valparai and Kanyakumari. You can enjoy misty hillscapes, scenic viewpoints, boat rides on serene lakes and romantic sunsets at the southernmost tip of India — all with a private vehicle and personalised itinerary.' },
+    { q: 'Are couple-specific amenities included in the Tamil Nadu honeymoon package?', a: 'Yes. Our honeymoon packages include double or king-sized rooms in handpicked resorts, candlelight dinner (on request), personalised room decoration and couple-friendly activities. We select properties known for their privacy, views and romance to make your trip truly special.' },
+  ],
+};
+
+function CategoryFAQ({ category }: { category: string }) {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const faqs = categoryFaqData[category] || [];
+  if (faqs.length === 0) return null;
+
+  return (
+    <div className="mt-12 mb-4 max-w-4xl">
+      <div className="bg-white rounded-[2rem] p-8 shadow-sm border border-slate-100">
+        <div className="flex items-center gap-2 mb-6">
+          <Star className="w-5 h-5 text-[var(--color-primary-forest)] fill-current" />
+          <h2 className="text-xl font-bold text-slate-800">Frequently Asked Questions</h2>
+        </div>
+        <div className="flex flex-col gap-3">
+          {faqs.map((faq, i) => (
+            <div key={i} className="border border-slate-100 rounded-2xl overflow-hidden">
+              <button
+                onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left bg-[var(--color-bg-luxury)] hover:bg-slate-100 transition-colors"
+                aria-expanded={openIndex === i}
+              >
+                <span className="text-sm font-semibold text-slate-800 leading-snug">{faq.q}</span>
+                <span className={`text-[var(--color-primary-forest)] flex-shrink-0 transition-transform duration-200 ${openIndex === i ? 'rotate-180' : ''}`}>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9" /></svg>
+                </span>
+              </button>
+              {openIndex === i && (
+                <div className="px-5 py-4 bg-white border-t border-slate-100">
+                  <p className="text-sm text-slate-600 leading-relaxed">{faq.a}</p>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}

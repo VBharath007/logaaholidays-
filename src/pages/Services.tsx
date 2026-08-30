@@ -61,7 +61,14 @@ const slides = [
   }
 ];
 
+import { useSEO } from '../hooks/useSEO';
+
 export function Services() {
+  useSEO(
+    'Premium Travel Services | Logaa Holidays - Tour Operator in Madurai',
+    'Explore our premium travel services including customized tour packages, flight bookings, car and coach rentals, and passport/visa assistance.',
+    'Travel Services Madurai, Car Rental in Madurai, Tempo Traveller Rental in Madurai, Flight Booking Assistance in Madurai, Railway Ticket Booking Assistance in Madurai'
+  );
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -289,9 +296,9 @@ export function Services() {
               <p className="text-2xl font-display italic text-white">Globally</p>
             </div>
           </div>
-          <button className="bg-[var(--color-blue-ocean)] text-white font-bold px-8 py-4 rounded-full text-sm hover:bg-[var(--color-primary-emerald)] transition-colors ">
+          <Link to="/tour-packages" className="bg-[var(--color-blue-ocean)] text-white font-bold px-8 py-4 rounded-full text-sm hover:bg-[var(--color-primary-emerald)] transition-colors ">
             Discover More
-          </button>
+          </Link>
         </div>
       </section>
 
@@ -368,9 +375,9 @@ export function Services() {
                     <li>Guided Tour</li>
                   </ul>
                 </div>
-                <button className="mt-auto mb-4 bg-[var(--color-blue-ocean)] text-white font-bold px-8 py-4 rounded-full hover:bg-[var(--color-primary-emerald)] transition-colors w-full ">
+                <a href={`https://wa.me/917397329776?text=Hi Logaa Holidays, I am interested in the ${plan.name} (${plan.duration}).`} target="_blank" rel="noopener noreferrer" className="mt-auto mb-4 bg-[var(--color-blue-ocean)] text-white font-bold px-8 py-4 rounded-full hover:bg-[var(--color-primary-emerald)] transition-colors w-full text-center">
                   Book Now
-                </button>
+                </a>
               </div>
             ))}
           </div>
@@ -413,9 +420,9 @@ export function Services() {
                 </div>
               </div>
             </div>
-            <button className="mt-8 bg-[var(--color-blue-ocean)] text-white font-bold px-8 py-3 rounded-full hover:bg-[var(--color-primary-emerald)] transition-colors ">
+            <Link to="/tour-packages" className="mt-8 inline-block bg-[var(--color-blue-ocean)] text-white font-bold px-8 py-3 rounded-full hover:bg-[var(--color-primary-emerald)] transition-colors ">
               Discover More
-            </button>
+            </Link>
           </div>
           <div className="hidden sm:flex items-center justify-center">
             <div className="writing-vertical-rl text-3xl md:text-4xl font-display font-bold text-[var(--color-neutral-medium)] whitespace-nowrap opacity-20 rotate-180">

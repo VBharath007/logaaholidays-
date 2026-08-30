@@ -124,9 +124,9 @@
     font-family: var(--font-body);
     background-color: var(--theme-bg);
     color: var(--theme-text);
-    overflow-x: hidden;
+    overflow-x: clip;
     transition: background-color 1s ease-in-out;
-    user-select: none; /* Anti-copy */
+    /* DEV MODE: user-select: none; Anti-copy — temporarily disabled */
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -227,3 +227,48 @@
 }
 
 
+/* =============================================
+   MOBILE RESPONSIVENESS GLOBAL FIXES
+   ============================================= */
+
+/* Prevent horizontal overflow on all devices */
+html, body {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+/* Scroll padding to compensate for fixed floating navbar (~80px height) */
+html {
+  scroll-padding-top: 100px;
+}
+
+/* Touch-friendly tap targets — minimum 44px height */
+@media (max-width: 768px) {
+  button, a, input, select, textarea {
+    min-height: 44px;
+  }
+
+  /* Inputs: prevent iOS zoom (font-size must be >= 16px) */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="date"],
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+
+  /* Prevent long words from overflowing */
+  p, h1, h2, h3, h4, h5, h6, li, span, label {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+}
+
+/* Fix for iOS Safari rubber-banding and viewport issues */
+@supports (-webkit-touch-callout: none) {
+  .min-h-screen {
+    min-height: -webkit-fill-available;
+  }
+}

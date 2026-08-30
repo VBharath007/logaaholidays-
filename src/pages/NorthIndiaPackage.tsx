@@ -67,7 +67,7 @@ export function NorthIndiaPackage() {
           <p className="text-white/90 text-sm md:text-base font-medium tracking-wide mb-4 max-w-2xl mx-auto ">
             Discover the spiritual heart and historical wonders of India with our premium packages.
           </p>
-          <h1 className="text-6xl md:text-8xl font-display font-bold text-white mb-10 ">
+          <h1 className="text-4xl sm:text-6xl md:text-8xl font-display font-bold text-white mb-10 ">
             North India <br /> Tours
           </h1>
           <Link to="/contact" className="bg-[#48c9b0] text-white px-8 py-3 rounded-full font-bold hover:bg-[#3ba893] transition-colors tracking-wide text-lg">
@@ -101,7 +101,7 @@ export function NorthIndiaPackage() {
       <SearchPackagesModal isOpen={isSearchModalOpen} onClose={() => setIsSearchModalOpen(false)} />
 
       {/* 2. Interactive Destination Filter (Pill Layout) */}
-      <section className="pt-32 pb-16 px-6 max-w-[1400px] mx-auto overflow-hidden">
+      <section className="pt-20 sm:pt-32 pb-16 px-6 max-w-[1400px] mx-auto overflow-hidden">
         <div className="flex flex-col xl:flex-row items-center gap-8 justify-center">
 
           {/* Left Oval Image */}
@@ -189,7 +189,7 @@ export function NorthIndiaPackage() {
           {/* Shirdi Card */}
           <div className="group relative rounded-[2.5rem] overflow-hidden bg-white shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-slate-100 flex flex-col h-[450px]">
             <div className="absolute inset-0">
-              <img loading="lazy" src="/assets/maharashtra2.webp" alt="Shirdi Tour Packages" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <img loading="lazy" src="/assets/maharashtra2.webp" alt="Shirdi Tour Packages from Madurai - Logaa Holidays" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
             </div>
 
@@ -205,7 +205,7 @@ export function NorthIndiaPackage() {
           {/* Varanasi Card */}
           <div className="group relative rounded-[2.5rem] overflow-hidden bg-white shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-slate-100 flex flex-col h-[450px]">
             <div className="absolute inset-0">
-              <img loading="lazy" src="/assets/Uttar Pradesh1.webp" alt="Varanasi Tour Packages" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <img loading="lazy" src="/assets/Uttar Pradesh1.webp" alt="Varanasi Kasi Tour Packages from Madurai - Logaa Holidays" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
             </div>
 
@@ -221,7 +221,7 @@ export function NorthIndiaPackage() {
           {/* Golden Triangle Card */}
           <div className="group relative rounded-[2.5rem] overflow-hidden bg-white shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-slate-100 flex flex-col h-[450px]">
             <div className="absolute inset-0">
-              <img loading="lazy" src="/assets/dehli/dehli.webp" alt="Golden Triangle Tour Packages" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <img loading="lazy" src="/assets/dehli/dehli.webp" alt="Golden Triangle Delhi Agra Jaipur Tour Packages - Logaa Holidays" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
             </div>
 
@@ -236,6 +236,67 @@ export function NorthIndiaPackage() {
         </div>
       </section>
 
+      {/* ── FAQ Section ── */}
+      <NorthIndiaFAQ />
+
     </div>
   )
+}
+
+function NorthIndiaFAQ() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const faqs = [
+    {
+      q: 'Is the Shirdi tour package suitable for families and senior citizens?',
+      a: 'Yes. The Shirdi itinerary is typically 2–3 days, focused on visiting Sai Baba Temple and nearby shrines. We choose comfortable, family-friendly hotels in Shirdi. Short transfers keep the journey easy for senior citizens and children. We also include Shani Shingnapur temple if interested, and our guides provide assistance during temple darshan to ensure a smooth experience for all.',
+    },
+    {
+      q: 'Can we join the Shirdi pilgrimage from Chennai or Pune?',
+      a: 'Yes. You can join from Chennai, Pune or Mumbai. Flights to Aurangabad or Mumbai and trains to Kopargaon/Shirdi are common routes. We arrange pick-ups at these points. One popular option is flying to Pune, driving 3–4 hours to Shirdi, and returning from Mumbai by flight. We coordinate whichever city is most convenient for your travel.',
+    },
+    {
+      q: 'Is the Varanasi tour safe and manageable for families?',
+      a: 'Yes. Varanasi is compact, and we plan hotel stays near the main sites. Travel between ghats and temples is short — by rickshaw or on foot. We avoid chaotic evening crowds where possible. For senior citizens, we focus on the sunrise boat ride on the Ganges and easy temple visits. Local guides ensure a secure, well-paced experience suitable for all age groups.',
+    },
+    {
+      q: 'Is the Golden Triangle tour (Delhi–Agra–Jaipur) suitable for families?',
+      a: 'Yes. We design the 7–8 day itinerary with plenty of breaks between sightseeing. Major stops — Taj Mahal, Amber Fort and Qutub Minar — have wheelchair access or easy paths. We book comfortable 3–4★ hotels and can adjust the pace with extra rest stops and lighter activities for elderly members. Families enjoy the cultural highlights while seniors rest as needed.',
+    },
+    {
+      q: 'Can I join the Golden Triangle tour from Madurai, Pune or Ahmedabad?',
+      a: 'Yes. Many travellers book a domestic or international flight to Delhi first. If you are coming from Madurai, Pune or Ahmedabad, you can fly or take a train to New Delhi and we will start the tour from there. We can also arrange private transfers or connecting flight options from Mumbai or Bengaluru to reach Delhi.',
+    },
+  ];
+
+  return (
+    <section className="px-6 py-16 max-w-[900px] mx-auto">
+      <div className="bg-white rounded-[2.5rem] p-8 md:p-10 shadow-sm border border-slate-100">
+        <div className="flex items-center gap-2 mb-8">
+          <Star className="w-5 h-5 text-[#48c9b0]" />
+          <h2 className="text-2xl font-bold text-slate-900">Frequently Asked Questions</h2>
+        </div>
+        <div className="flex flex-col gap-3">
+          {faqs.map((faq, i) => (
+            <div key={i} className="border border-slate-100 rounded-2xl overflow-hidden">
+              <button
+                onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                className="w-full flex items-center justify-between gap-4 px-6 py-4 text-left bg-[#eff3f5] hover:bg-[#e3eaee] transition-colors"
+                aria-expanded={openIndex === i}
+              >
+                <span className="text-sm font-semibold text-slate-800 leading-snug">{faq.q}</span>
+                <span className={`text-[#48c9b0] flex-shrink-0 transition-transform duration-200 ${openIndex === i ? 'rotate-180' : ''}`}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9" /></svg>
+                </span>
+              </button>
+              {openIndex === i && (
+                <div className="px-6 py-4 bg-white border-t border-slate-100">
+                  <p className="text-sm text-slate-600 leading-relaxed">{faq.a}</p>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }

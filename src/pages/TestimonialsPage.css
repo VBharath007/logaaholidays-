@@ -62,6 +62,8 @@
   display: flex;
   align-items: center;
   gap: 7px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .rating-line b {
@@ -362,7 +364,7 @@
   }
 
   .review-container {
-    padding: 30px 35px;
+    padding: 24px 20px;
     border-radius: 28px;
   }
 
@@ -388,11 +390,11 @@
   }
 
   .arrow.left {
-    left: -27px;
+    left: -18px;
   }
 
   .arrow.right {
-    right: -27px;
+    right: -18px;
   }
 
   .dots {

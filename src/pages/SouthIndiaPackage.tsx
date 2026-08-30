@@ -129,6 +129,7 @@ export function SouthIndiaPackage() {
             loop
             muted
             playsInline
+            poster="/assets/south_india_hero.webp"
             className="w-full h-full object-cover object-center"
           >
             <source src="/assets/video/south india  (2).mp4" type="video/mp4" />
@@ -138,23 +139,21 @@ export function SouthIndiaPackage() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-6 pt-32 h-full flex flex-col items-center text-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 pt-20 md:pt-32 h-full flex flex-col items-center text-center justify-center md:justify-start">
 
           <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-4 py-2 rounded-full mb-6 shadow-sm border border-white/50">
             <Star className="w-4 h-4 text-[var(--color-primary-forest)] fill-current" />
             <span className="text-sm font-semibold text-[var(--color-primary-forest)] tracking-wide">Your Journey, Our Passion</span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-display font-bold text-[var(--color-primary-forest)] mb-4 leading-tight">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-display font-bold text-[var(--color-primary-forest)] mb-3 leading-tight">
             Discover the Soul of <br />
-            <span className="font-script text-6xl md:text-8xl font-normal text-[var(--color-primary-forest)] -ml-4" style={{ fontFamily: "'Great Vibes', cursive" }}>South India</span>
+            <span className="font-script text-4xl sm:text-6xl md:text-8xl font-normal text-[var(--color-primary-forest)] -ml-2 md:-ml-4" style={{ fontFamily: "'Great Vibes', cursive" }}>South India</span>
             <span className="text-[var(--color-primary-forest)]">♥</span>
           </h1>
 
-          <p className="text-lg md:text-xl font-bold text-slate-900 max-w-2xl mb-10 bg-white/60 backdrop-blur-md px-8 py-4 rounded-3xl shadow-sm border border-white/50 leading-relaxed">
-            Temples, Traditions, Nature & More.<br />
-            Unforgettable journeys across Tamil Nadu, <br />
-            Kerala & beyond.
+          <p className="text-base md:text-xl font-bold text-slate-900 max-w-2xl mb-6 bg-white/60 backdrop-blur-md px-6 py-3 rounded-3xl shadow-sm border border-white/50 leading-relaxed">
+            Temples, Traditions, Nature & More. Unforgettable journeys across Tamil Nadu, Kerala & beyond.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -185,7 +184,7 @@ export function SouthIndiaPackage() {
       <div className="max-w-7xl mx-auto px-6 mb-16 pt-16">
         <div className="flex items-center gap-2 mb-8">
           <Star className="w-5 h-5 text-[var(--color-primary-forest)] fill-current" />
-          <h2 className="text-3xl font-display font-bold text-slate-800">Explore South India by State</h2>
+          <h2 className="text-2xl md:text-3xl font-display font-bold text-slate-800">Explore South India by State</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Tamil Nadu Card */}
@@ -247,9 +246,9 @@ export function SouthIndiaPackage() {
         <div className="flex justify-between items-end mb-8">
           <div className="flex items-center gap-2">
             <Star className="w-5 h-5 text-[var(--color-primary-forest)] fill-current" />
-            <h2 className="text-3xl font-bold text-slate-800">Featured South India Packages</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-slate-800">Featured South India Packages</h2>
           </div>
-          <Link to="/tour-packages/madurai-tours" className="text-sm font-semibold text-[var(--color-primary-forest)] hover:underline flex items-center gap-1">
+          <Link to="/tour-packages/madurai-tours" className="text-sm font-semibold text-[var(--color-primary-forest)] hover:underline flex items-center gap-1 whitespace-nowrap">
             View all packages <span>→</span>
           </Link>
         </div>
@@ -274,13 +273,24 @@ export function SouthIndiaPackage() {
                   <Calendar className="w-4 h-4 text-[#48c9b0]" />
                   <span>{pkg.duration}</span>
                 </div>
-                <div className="mt-auto">
-                  <Link
-                    to={getPackageLink(pkg)}
-                    className={`${clayBtn} w-full py-2.5 flex justify-center text-sm`}
-                  >
-                    View Details
-                  </Link>
+                {/* Action Buttons */}
+                <div className="mt-auto pt-4 border-t border-slate-100 flex flex-col gap-3">
+                  <div className="flex flex-col sm:flex-row items-center gap-2">
+                    <a
+                      href={`https://wa.me/917397329776?text=Hi Logaa Holidays, I am interested in the ${pkg.title} package.`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full sm:flex-1 text-center bg-[#F2FBF5] text-[#0F6B46] border border-[#E2F5EA] text-[13px] font-bold py-2 rounded-xl hover:bg-[#0F6B46] hover:text-white transition-colors"
+                    >
+                      Enquire Now
+                    </a>
+                    <Link
+                      to={getPackageLink(pkg)}
+                      className="w-full sm:flex-1 text-center bg-[#0B2515] text-white text-[13px] font-bold py-2 rounded-xl hover:bg-[#0c593a] transition-colors"
+                    >
+                      View Details
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -307,8 +317,9 @@ export function SouthIndiaPackage() {
                 controls
                 loop
                 muted
-                autoPlay
                 playsInline
+                preload="none"
+                poster="/assets/Tamil Nadu1.webp"
                 className="w-full h-full object-cover"
               >
                 <source src="/assets/video/south india  (1).mp4" type="video/mp4" />
@@ -420,6 +431,64 @@ export function SouthIndiaPackage() {
         </div>
       </div>
 
+      {/* ── FAQ Section ── */}
+      <SouthIndiaFAQ />
+
     </div>
   );
 }
+
+function SouthIndiaFAQ() {
+  const [openIndex, setOpenIndex] = React.useState<number | null>(null);
+  const faqs = [
+    {
+      q: 'Is this South India tour package suitable for families and couples?',
+      a: 'Yes. South India offers a diverse mix of experiences — from the heritage temples of Tamil Nadu and the serene backwaters of Kerala to the misty coffee estates of Karnataka. Our packages are designed to suit families, honeymooners and senior citizens, with comfortable hotels, private transportation and a relaxed pace throughout.',
+    },
+    {
+      q: 'Can we join the South India tour from Madurai or Chennai?',
+      a: 'Absolutely. We offer pick-up from Madurai, Chennai, Coimbatore and other major Tamil Nadu cities. Our driver or guide will meet you at the station or airport and begin the tour, so you can easily join from any convenient location in South India.',
+    },
+    {
+      q: 'Is a Kerala houseboat stay included in South India packages?',
+      a: "Yes, several of our South India packages include a houseboat stay in Alleppey (Alleppey). You will experience Kerala's famous backwaters, drifting through coconut-lined canals with all meals served on board. It is a highlight that travellers of all ages enjoy.",
+    },
+    {
+      q: 'Are South India tour packages available for senior citizens?',
+      a: 'Yes. We design itineraries with senior citizens in mind — gentle sightseeing schedules, hotels with lifts and easy access, and private vehicles throughout. Destinations like Madurai, Rameswaram, Kanyakumari and Munnar are all accessible and enjoyable for older travellers.',
+    },
+  ];
+
+  return (
+    <div className="max-w-4xl mx-auto px-6 mb-16">
+      <div className="bg-white rounded-[2.5rem] p-8 md:p-10 shadow-sm border border-slate-100">
+        <div className="flex items-center gap-2 mb-8">
+          <Star className="w-5 h-5 text-[var(--color-primary-forest)] fill-current" />
+          <h2 className="text-2xl font-bold text-slate-800">Frequently Asked Questions</h2>
+        </div>
+        <div className="flex flex-col gap-3">
+          {faqs.map((faq, i) => (
+            <div key={i} className="border border-slate-100 rounded-2xl overflow-hidden">
+              <button
+                onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                className="w-full flex items-center justify-between gap-4 px-6 py-4 text-left bg-[#f8f9fa] hover:bg-[#eef4ee] transition-colors"
+                aria-expanded={openIndex === i}
+              >
+                <span className="text-sm font-semibold text-slate-800 leading-snug">{faq.q}</span>
+                <span className={`text-[var(--color-primary-forest)] flex-shrink-0 transition-transform duration-200 ${openIndex === i ? 'rotate-180' : ''}`}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9" /></svg>
+                </span>
+              </button>
+              {openIndex === i && (
+                <div className="px-6 py-4 bg-white border-t border-slate-100">
+                  <p className="text-sm text-slate-600 leading-relaxed">{faq.a}</p>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+

@@ -4015,7 +4015,7 @@ export const packagesDatabase: Record<string, any> = {
                     "• Art Gallery and Museum",
                     "• Schwartz Church",
                     "• Bangaru Kamakshi Amman Temple",
-                    "• Traditional Tanjore painting or handicraft centre, subject to availability",
+                    "• Traditional Thanjavur painting or handicraft centre, subject to availability",
                     "Return to the hotel after sightseeing.",
                     "Overnight stay in Thanjavur."
                 ]
@@ -4095,7 +4095,7 @@ export const packagesDatabase: Record<string, any> = {
             "Visit the UNESCO-listed Brihadeeswarar Temple",
             "Explore Thanjavur Maratha Palace",
             "Visit Saraswathi Mahal Library and Art Gallery",
-            "Discover traditional Tanjore paintings and handicrafts",
+            "Discover traditional Thanjavur paintings and handicrafts",
             "Visit important temples in Kumbakonam",
             "Explore Darasuram Airavatesvara Temple",
             "Visit Swamimalai Murugan Temple",
@@ -4285,8 +4285,8 @@ export const packagesDatabase: Record<string, any> = {
                     "• Brihadeeswarar Temple",
                     "• Thanjavur Maratha Palace",
                     "• Saraswathi Mahal Library",
-                    "• Tanjore Art Gallery",
-                    "• Traditional Tanjore painting centre, subject to availability",
+                    "• Thanjavur Art Gallery",
+                    "• Traditional Thanjavur painting centre, subject to availability",
                     "Overnight stay in Thanjavur."
                 ]
             },
@@ -16978,7 +16978,7 @@ export const packagesDatabase: Record<string, any> = {
                     "🛕 Brihadeeswarar Temple (UNESCO World Heritage Site)",
                     "🏛️ Thanjavur Royal Palace",
                     "🖼️ Art Gallery & Saraswathi Mahal Library (Subject to visiting hours)",
-                    "🛍️ Local Shopping (Tanjore Paintings & Handicrafts)",
+                    "🛍️ Local Shopping (Thanjavur Paintings & Handicrafts)",
                     "🕔 05:30 PM – Depart from Thanjavur",
                     "🕘 09:00 PM – Arrival & Drop at Madurai Hotel / Airport / Railway Station / Bus Stand"
                 ]
@@ -17514,7 +17514,7 @@ export const packagesDatabase: Record<string, any> = {
                     "🏛️ Thanjavur Royal Palace",
                     "📚 Saraswathi Mahal Library",
                     "🖼️ Thanjavur Art Gallery",
-                    "🛍️ Local Shopping – Tanjore Paintings, Dolls & Handicrafts",
+                    "🛍️ Local Shopping – Thanjavur Paintings, Dolls & Handicrafts",
                     "01:00 PM – Lunch Break (Self-paid)",
                     "Begin your return journey to Madurai.",
                     "05:30 PM – Arrival & Drop at Madurai Airport, Railway Station, Hotel, or Bus Stand."
@@ -21836,7 +21836,7 @@ export const packagesDatabase: Record<string, any> = {
                     "🏛️ Thanjavur Royal Palace",
                     "🎨 Thanjavur Art Gallery",
                     "📚 Saraswathi Mahal Library",
-                    "🛍️ Thanjavur Handicrafts & Tanjore Paintings",
+                    "🛍️ Thanjavur Handicrafts & Thanjavur Paintings",
                     "🏨 Overnight Stay in Thanjavur"
                 ]
             },
@@ -25544,53 +25544,53 @@ export const packagesDatabase: Record<string, any> = {
             "cancellation": "Cancellations made 7+ days before: Full refund. Within 3-7 days: 50% refund. Less than 3 days: No refund."
         }
     },
-    '1': {
-        id: '1',
-        title: 'Shirdi Flight Package From Madurai - Direct Flight - 2 Days',
-        image: '/assets/shiridi/1.avif',
-        "heroImage": "/assets/shiridi/lendibaug.webp",
-        overview: {
-            duration: '1 Nights / 2 Days',
-            destination: 'Shirdi',
-            activities: 'Museums, Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'Rs. 16500/-',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Arrival Madurai - Shirdi',
-                description: 'Departure at 08.10 a.m. from Madurai Airport and arrival 02.10 p.m. at Shirdi Airport. Transfer to hotel. After refreshment evening having Dharshan (V.I.P) of Saibaba Temple and visit other places of Gurusthan, Dwarakamai, Sai Museum, Chavadi, Lendi Garden Maruthi Temple and Nandadeep. Night halt at Shirdi.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Departure from Shirdi',
-                description: 'Morning Dharshan / Kakada Aarti of Saibaba Temple. Free time for Shopping. Starting from Shirdi at 11.00 a.m and on the way visiting Khandoba Temple. Reaching Shirdi Airport by 12.00 p.m. and Boarding flight at Shirdi Airport by 02.30 p.m. and reaching Madurai at 07.30 pm.'
-            }
-        ],
-        inclusions: [
-            'Hotel',
-            'Transportation by A/C Bus/Cab.',
-            'One night stay at Shirdi in A/C room.',
-            'Buffet Breakfast or Fixed Menu',
-            'All sightseeing and excursion as per the itinerary.',
-            'Everybody must bring Original ID Proof at the time of travel.',
-            'English, Hindi and Tamil Guide for entire trip.',
-            'Special darshan will be arranged (subject to availability)',
-            'Please be at Airport 2 hours before the departure Time.'
-        ],
-        exclusions: [
-            'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
-        ],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
+    // '1': {
+    //     id: '1',
+    //     title: 'Shirdi Flight Package From Madurai - Direct Flight - 2 Days',
+    //     image: '/assets/shiridi/1.avif',
+    //     "heroImage": "/assets/shiridi/lendibaug.webp",
+    //     overview: {
+    //         duration: '1 Nights / 2 Days',
+    //         destination: 'Shirdi',
+    //         activities: 'Museums, Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'Rs. 16500/-',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Arrival Madurai - Shirdi',
+    //             description: 'Departure at 08.10 a.m. from Madurai Airport and arrival 02.10 p.m. at Shirdi Airport. Transfer to hotel. After refreshment evening having Dharshan (V.I.P) of Saibaba Temple and visit other places of Gurusthan, Dwarakamai, Sai Museum, Chavadi, Lendi Garden Maruthi Temple and Nandadeep. Night halt at Shirdi.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Departure from Shirdi',
+    //             description: 'Morning Dharshan / Kakada Aarti of Saibaba Temple. Free time for Shopping. Starting from Shirdi at 11.00 a.m and on the way visiting Khandoba Temple. Reaching Shirdi Airport by 12.00 p.m. and Boarding flight at Shirdi Airport by 02.30 p.m. and reaching Madurai at 07.30 pm.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Hotel',
+    //         'Transportation by A/C Bus/Cab.',
+    //         'One night stay at Shirdi in A/C room.',
+    //         'Buffet Breakfast or Fixed Menu',
+    //         'All sightseeing and excursion as per the itinerary.',
+    //         'Everybody must bring Original ID Proof at the time of travel.',
+    //         'English, Hindi and Tamil Guide for entire trip.',
+    //         'Special darshan will be arranged (subject to availability)',
+    //         'Please be at Airport 2 hours before the departure Time.'
+    //     ],
+    //     exclusions: [
+    //         'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
+    //     ],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
     '2': {
         id: '2',
         title: 'Shirdi Flight Packages From Chennai - Train - Flight 3 Night - 4 Days',
@@ -25648,157 +25648,157 @@ export const packagesDatabase: Record<string, any> = {
             cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
         }
     },
-    '3': {
-        id: '3',
-        title: 'Shirdi Flight Package From Chennai - One Day',
-        image: '/assets/generated/shirdi_flight_sky.png',
-        overview: {
-            duration: '1 Day',
-            destination: 'Shirdi',
-            activities: 'Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'Rs. 10500/-',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Chennai - Shirdi',
-                description: 'Departure at 4.00/5.15 am from Chennai Airport. Arrival 6.50 am at Pune Airport. Cab will start at Pune airport by 07.00 am and reaching Shirdi at 12.00 pm Having V.I.P darshan (Subject to Availability) of Saibaba Temple and visit other places of Gurusthan, Dwarakamai, Museum, Chavadi & Lendi Garden.\nStarts from Shirdi at 4.00 pm on the way visiting Maha Ganapathy Temple (Time Permits). Reaching Pune Airport at 9.00 pm Boarding Flight at Pune Airport by 11.00 pm and reaching Chennai at 12.45 am.'
-            }
-        ],
-        inclusions: [
-            'Transportation by A/C cab.',
-            'Everybody must bring Original ID Proof at the time of travel.',
-            'Special darshan will be arranged (subject to availability)',
-            'Please be at Airport 2 hours before the departure time.',
-            'Avail this Package only with minimum of 5 - 6 Persons.',
-            'Special Fair will be applicable minimum 45 days prior to the departure.',
-            'Booking should be done with 100% Payment (No cancellation & no Refunds)',
-            'This budget package designed based on lowest Air fair and non peak days'
-        ],
-        exclusions: [
-            'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
-        ],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '4': {
-        id: '4',
-        title: 'Shirdi Flight Package Via Pune From Chennai - 2 Days',
-        image: '/assets/generated/shaniwar_wada_pune.png',
-        overview: {
-            duration: '1 Nights / 2 Days',
-            destination: 'Pune, Shirdi, Shani Shingnapur',
-            activities: 'Museums, Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'Rs. 12500/-',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Chennai - Shirdi',
-                description: 'Departure at 5.15 am from Chennai Airport. Arrival 6.50 am at Pune Airport. Bus/Cab will start at Pune airport by 07.00 am and reaching Shirdi at 01.00 pm. Next 3 hours refreshment at Hotel. Evening darshan of Saibaba Temple and visit other places of Gurusthan, Dwarakamai, Sai Museum, Chavadi, Lendi Garden. Night halt at Shirdi.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Shani Singnapur - Pune - Drop',
-                description: 'Morning dharshan / Kakada Aarti of Saibaba Temple. Starting from Shirdi at 9.00 am and on the way visiting Shanisignapoor, Renuka Devi and Maha Ganapathi Temple. Reaching Pune Airport by 9.00 pm Boarding flight at Pune Airport by 11.00 pm and reaching Chennai at 12.45 am.'
-            }
-        ],
-        inclusions: [
-            'Hotel',
-            'Transportation by A/C Bus/Cab.',
-            'One night stay at Shirdi in A/C room.',
-            'Buffet Breakfast or Fixed Menu',
-            'All sightseeing and excursion as per the itinerary.',
-            'Everybody must bring Original ID Proof at the time of travel.',
-            'English, Hindi and Tamil Guide for entire trip.',
-            'Special darshan will be arranged (subject to availability)',
-            'Please be at Airport 2 hours before the departure Time.'
-        ],
-        exclusions: [
-            'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
-        ],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '5': {
-        id: '5',
-        title: 'Shirdi Train Package From Chennai - 5 Night - 6 Days',
-        image: '/assets/generated/shani_shingnapur.png',
-        overview: {
-            duration: '5 Nights / 6 Days',
-            destination: 'Pune, Shirdi, Ganganapur, Shani Shingnapur',
-            activities: 'Museums, Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'Rs. 5500/-',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Chennai - Mumbai',
-                description: 'Departure from Chennai Central Railway station - Train No.11028 by Mumbai mail at 10.50 PM.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Pune - Devgut',
-                description: 'Reaching Pune Railway station. Drive to Devgut (Dattatreyar)'
-            },
-            {
-                day: 'Day 3',
-                title: 'Devgut - Shirdi',
-                description: 'Reaching Devgut at early morning 4.00 am After refreshment having the dharshan of Dattatreyar temple, Shanisingnapur and Renukadevi Temple. And drive to Shirdi. And refreshment at hotel. Evening 4.00pm dharshan of Sai Baba and visit the places of Gurusthan, Museum and Lendi Garden. Night halt at Shirdi.'
-            },
-            {
-                day: 'Day 4',
-                title: 'Shirdi - Pune',
-                description: 'Morning Kakkad Aarti/Dharshan visit Dwarakamai and Chavadi. Starting from shirdi at 2.00pm and drive to Pune Railway station and on the way visit Maha Ganapathy Temple. Reaching Pune Railway station at night 11.00 pm.'
-            },
-            {
-                day: 'Day 5',
-                title: 'Departure from Pune',
-                description: 'Departure from Pune Railway Station At 3.30 am'
-            },
-            {
-                day: 'Day 6',
-                title: 'Chennai',
-                description: 'Arrival at Chennai central Railway station at 5.00 am.'
-            }
-        ],
-        inclusions: [
-            'Hotel',
-            'Transportation by Non A/C bus as per seat in coach basis.',
-            'One night stay at Shirdi in Non A/C room.',
-            'Buffet Breakfast or Fixed Menu',
-            'All sight seeing and excursion as per the itinerary.',
-            'Senior citizen must bring Original ID Proof at the time of travel.',
-            'English, Hindi and Tamil Guide for entire trip.',
-            'Special darshan will be arranged(subject to availability)'
-        ],
-        exclusions: [
-            'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
-        ],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
+    // '3': {
+    //     id: '3',
+    //     title: 'Shirdi Flight Package From Chennai - One Day',
+    //     image: '/assets/generated/shirdi_flight_sky.png',
+    //     overview: {
+    //         duration: '1 Day',
+    //         destination: 'Shirdi',
+    //         activities: 'Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'Rs. 10500/-',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Chennai - Shirdi',
+    //             description: 'Departure at 4.00/5.15 am from Chennai Airport. Arrival 6.50 am at Pune Airport. Cab will start at Pune airport by 07.00 am and reaching Shirdi at 12.00 pm Having V.I.P darshan (Subject to Availability) of Saibaba Temple and visit other places of Gurusthan, Dwarakamai, Museum, Chavadi & Lendi Garden.\nStarts from Shirdi at 4.00 pm on the way visiting Maha Ganapathy Temple (Time Permits). Reaching Pune Airport at 9.00 pm Boarding Flight at Pune Airport by 11.00 pm and reaching Chennai at 12.45 am.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Transportation by A/C cab.',
+    //         'Everybody must bring Original ID Proof at the time of travel.',
+    //         'Special darshan will be arranged (subject to availability)',
+    //         'Please be at Airport 2 hours before the departure time.',
+    //         'Avail this Package only with minimum of 5 - 6 Persons.',
+    //         'Special Fair will be applicable minimum 45 days prior to the departure.',
+    //         'Booking should be done with 100% Payment (No cancellation & no Refunds)',
+    //         'This budget package designed based on lowest Air fair and non peak days'
+    //     ],
+    //     exclusions: [
+    //         'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
+    //     ],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '4': {
+    //     id: '4',
+    //     title: 'Shirdi Flight Package Via Pune From Chennai - 2 Days',
+    //     image: '/assets/generated/shaniwar_wada_pune.png',
+    //     overview: {
+    //         duration: '1 Nights / 2 Days',
+    //         destination: 'Pune, Shirdi, Shani Shingnapur',
+    //         activities: 'Museums, Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'Rs. 12500/-',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Chennai - Shirdi',
+    //             description: 'Departure at 5.15 am from Chennai Airport. Arrival 6.50 am at Pune Airport. Bus/Cab will start at Pune airport by 07.00 am and reaching Shirdi at 01.00 pm. Next 3 hours refreshment at Hotel. Evening darshan of Saibaba Temple and visit other places of Gurusthan, Dwarakamai, Sai Museum, Chavadi, Lendi Garden. Night halt at Shirdi.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Shani Singnapur - Pune - Drop',
+    //             description: 'Morning dharshan / Kakada Aarti of Saibaba Temple. Starting from Shirdi at 9.00 am and on the way visiting Shanisignapoor, Renuka Devi and Maha Ganapathi Temple. Reaching Pune Airport by 9.00 pm Boarding flight at Pune Airport by 11.00 pm and reaching Chennai at 12.45 am.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Hotel',
+    //         'Transportation by A/C Bus/Cab.',
+    //         'One night stay at Shirdi in A/C room.',
+    //         'Buffet Breakfast or Fixed Menu',
+    //         'All sightseeing and excursion as per the itinerary.',
+    //         'Everybody must bring Original ID Proof at the time of travel.',
+    //         'English, Hindi and Tamil Guide for entire trip.',
+    //         'Special darshan will be arranged (subject to availability)',
+    //         'Please be at Airport 2 hours before the departure Time.'
+    //     ],
+    //     exclusions: [
+    //         'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
+    //     ],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '5': {
+    //     id: '5',
+    //     title: 'Shirdi Train Package From Chennai - 5 Night - 6 Days',
+    //     image: '/assets/generated/shani_shingnapur.png',
+    //     overview: {
+    //         duration: '5 Nights / 6 Days',
+    //         destination: 'Pune, Shirdi, Ganganapur, Shani Shingnapur',
+    //         activities: 'Museums, Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'Rs. 5500/-',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Chennai - Mumbai',
+    //             description: 'Departure from Chennai Central Railway station - Train No.11028 by Mumbai mail at 10.50 PM.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Pune - Devgut',
+    //             description: 'Reaching Pune Railway station. Drive to Devgut (Dattatreyar)'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Devgut - Shirdi',
+    //             description: 'Reaching Devgut at early morning 4.00 am After refreshment having the dharshan of Dattatreyar temple, Shanisingnapur and Renukadevi Temple. And drive to Shirdi. And refreshment at hotel. Evening 4.00pm dharshan of Sai Baba and visit the places of Gurusthan, Museum and Lendi Garden. Night halt at Shirdi.'
+    //         },
+    //         {
+    //             day: 'Day 4',
+    //             title: 'Shirdi - Pune',
+    //             description: 'Morning Kakkad Aarti/Dharshan visit Dwarakamai and Chavadi. Starting from shirdi at 2.00pm and drive to Pune Railway station and on the way visit Maha Ganapathy Temple. Reaching Pune Railway station at night 11.00 pm.'
+    //         },
+    //         {
+    //             day: 'Day 5',
+    //             title: 'Departure from Pune',
+    //             description: 'Departure from Pune Railway Station At 3.30 am'
+    //         },
+    //         {
+    //             day: 'Day 6',
+    //             title: 'Chennai',
+    //             description: 'Arrival at Chennai central Railway station at 5.00 am.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Hotel',
+    //         'Transportation by Non A/C bus as per seat in coach basis.',
+    //         'One night stay at Shirdi in Non A/C room.',
+    //         'Buffet Breakfast or Fixed Menu',
+    //         'All sight seeing and excursion as per the itinerary.',
+    //         'Senior citizen must bring Original ID Proof at the time of travel.',
+    //         'English, Hindi and Tamil Guide for entire trip.',
+    //         'Special darshan will be arranged(subject to availability)'
+    //     ],
+    //     exclusions: [
+    //         'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
+    //     ],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
     '6': {
         id: '6',
         title: 'Shirdi Train Package From Chennai 7 Days',
@@ -26354,408 +26354,408 @@ export const packagesDatabase: Record<string, any> = {
     //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
     //     }
     // },
-    '16': {
-        id: '16',
-        title: 'Kasi Flight Package From Chennai 1 Night - 2 Days',
-        image: "/assets/kasi/card/kasicard1.webp",
-        heroImage: "/assets/kasi/kasi1.webp",
-        overview: {
-            duration: '1 Nights / 2 Days',
-            destination: 'Varanasi',
-            activities: 'Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'Rs. 18500/-',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Arrival Chennai - Varanasi',
-                description: 'Departure from Chennai Airport at 07.05 a.m. Arrival Varanasi Airport at 08.30 a.m. Transfer to hotel. Having Dharshan of Lord Kasi Vishwanath, Kasi Visalakshi and Kasi Annapoorneswari Temples. Evening visit Ganga Aarti by boating on the way visiting Manikarneka Ghat and Harichandra Ghat . Having night Sayana Arati of Kasi Viswanath Temple. Night halt at Kasi.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Departure from Varanasi',
-                description: 'Morning holy bath in river Ganga and performing Tharpanam. Having Dharshan of Kala Bhairavar Temple. Free time religious activities and shopping.\nStarting from Varanasi at 02.00 p.m. and reaching at Varanasi Airport at 04.00 p.m.\nDeparture from Varanasi Airport at 06.15 p.m. and Reaching Chennai Airport at 12.00 a.m.'
-            }
-        ],
-        inclusions: [
-            'Hotel',
-            'Transportation by A/C Bus/Cab.',
-            'One night stay at Kasi in A/c room.',
-            'Buffet Breakfast or Fixed Menu',
-            'All sightseeing and excursion as per the itinerary.',
-            'Everyone must bring Original ID Proof at the time of travel.',
-            'English, Hindi and Tamil Guide for entire trip.',
-            'Please be at Airport 2 hours before the departure Time.'
-        ],
-        exclusions: [
-            'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
-        ],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '17': {
-        id: '17',
-        title: 'Kasi Flight Package From Chennai 2 Night - 3 Days',
-        image: "/assets/kasi/card/kasicard2.webp",
-        heroImage: "/assets/kasi/kasi2.webp",
-        overview: {
-            duration: '2 Nights / 3 Days',
-            destination: 'Varanasi',
-            activities: 'Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'Rs. 23500/-',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Arrival Chennai - Varanasi',
-                description: 'Departure from Chennai Airport at 07.05 a.m. Arrival Varanasi Airport at 08.45 a.m. Transfer to hotel. Evening visit Ganga Aarti by boating on the way visiting Manikarneka Ghat and Harichandra Ghat. Having night Sayana Arati of Kasi Viswanath Temple. Night halt at Kasi.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Varanasi',
-                description: 'Morning holy bath in river Ganga and performing Tharpanam.Having Dharshan of Lord Kasi Vishwanath, Kasi Visalakshi and Kasi Annapoorneswari Temples. Night halt at Kasi.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Departure from Varanasi',
-                description: 'Morning having Dharshan of Kala Bhairavar Temple. Free time religious activities and shopping. Starting from Varanasi at 02.00 p.m. and reaching at Airport at 04.00 p.m. Departure Varanasi Airport at 06.15 p.m. and Reaching Chennai Airport at 12.00 a.m.'
-            }
-        ],
-        inclusions: [
-            'Hotel',
-            'Transportation by A/C Bus/Cab.',
-            'Two nights stay at Kasi in A/c room.',
-            'Buffet Breakfast or Fixed Menu',
-            'All sightseeing and excursion as per the itinerary.',
-            'Everyone must bring Original ID Proof at the time of travel.',
-            'English, Hindi and Tamil Guide for entire trip.',
-            'Please be at Airport 2 hours before the departure Time.'
-        ],
-        exclusions: [
-            'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
-        ],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '18': {
-        id: '18',
-        title: 'Kasi - Ayodhya Flight Package From Chennai 2 Night - 3 Days',
-        image: "/assets/kasi/card/kasicard3.webp",
-        heroImage: "/assets/kasi/kasi3.webp",
-        overview: {
-            duration: '2 Nights / 3 Days',
-            destination: 'Varanasi, Ayodhya',
-            activities: 'Museums, Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'Rs. 27500/-',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Arrival Chennai - Ayodhya',
-                description: 'Departure from Chennai Airport at 09.10 a.m. Arrival Ayodhya Airport at 11.35 a.m. Transfer to hotel. Visit the birth place Lord Rama, Shri Ramjanma Bhoomi and Hanuman Garhi Temple. Evening visit Kanak Bhawan and Ramkatha Museum. Night halt at Ayodhya.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Ayodhya - Varanasi',
-                description: 'After Breakfast starting @ 10.00 a.m. from Ayodhya and proceed to Kasi. Transfer to hotel. After refreshment having Dharshan of Lord Kasi Vishwanath, Kasi Visalakshi and Kasi Annapoorneswari Temples. Evening visit Ganga Aarti by boating on the way visiting Manikarneka Ghat and Harichandra Ghat. Having night Sayana Arati of Kasi Viswanath Temple. Night halt at Kasi.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Departure from Varanasi',
-                description: 'Morning holy bath in river Ganga and performing Tharpanam and having darshan of Kala Bhairavar Temple. Free time religious activities and shopping. Starting from Varanasi at 04.00 p.m. Reaching at Varanasi Airport at 06.00 p.m. Departure from Varanasi Airport at 08.10 p.m. Reaching Chennai Airport at 10.30 p.m.'
-            }
-        ],
-        inclusions: [
-            'Hotel',
-            'Transportation by A/C Bus/Cab.',
-            'One night stay at Ayodhya in A/c room.',
-            'One night stay at Varanasi in A/c room.',
-            'Buffet Breakfast or Fixed Menu',
-            'All sightseeing and excursion as per the itinerary.',
-            'Everyone must bring Original ID Proof at the time of travel.',
-            'English, Hindi and Tamil Guide for entire trip.',
-            'Please be at Airport 2 hours before the departure Time.'
-        ],
-        exclusions: [
-            'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
-        ],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '19': {
-        id: '19',
-        title: 'Kasi - Gaya Flight Package From Chennai 4 Night - 5 Days',
-        image: "/assets/kasi/card/kasicard4.webp",
-        heroImage: "/assets/kasi/kasi4.webp",
-        overview: {
-            duration: '4 Nights / 5 Days',
-            destination: 'Prayagraj, Varanasi, Gaya, Allahabad Fort',
-            activities: 'Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'Rs. 34500/-',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Arrival Chennai - Varanasi',
-                description: 'Departure from Chennai Airport at 07.05 a.m. Arrival Varanasi Airport at 08.30 a.m. Transfer to hotel. Having Dharshan of Lord Kasi Vishwanath, Kasi Visalakshi and Kasi Annapoorneswari Temples. Evening visit Ganga Aarti by boating on the way visiting Manikarneka Ghat and Harichandra Ghat. Having night Sayana Arati of Kasi Viswanath Temple. Night halt at Kasi.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Gaya',
-                description: 'Morning holy bath in river Ganga and performing Tharpanam. Free time shopping and religious activities. After Lunch proceed to Gaya at 02.00 p.m. and night halt at Gaya.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Gaya',
-                description: 'Early Morning perform the some rituals Srartham or Pinda dana for your ancestors (Dress Code: Ladies – Sarees & Gents – Dhoti ). Dharshan of Vishnu padam Temple and visit Vatavruksh. Afternoon drive to Kasi on the way visiting Buddha Gaya. Night halt in Kasi.'
-            },
-            {
-                day: 'Day 4',
-                title: 'Allahabad',
-                description: 'Morning drive to Allahabad. Holy bath in Triveni sangam and performing Thambathi pooja / Veni Pooja in the meeting point of holy rivers of Ganga, Yamuna and Saraswathi. Having Dharshan of Sri Sayana Anjaneyar. Return and night halt at Kasi.'
-            },
-            {
-                day: 'Day 5',
-                title: 'Departure from Varanasi',
-                description: 'Morning having Dharshan of Kala Bhairavar Temple. Free time religious activities and shopping. Starting from Varanasi at 02.00 p.m. and reaching at Varanasi Airport at 04.00 p.m. Departure from Varanasi Airport at 06.15 p.m. Reaching Chennai Airport at 12.00 a.m.'
-            }
-        ],
-        inclusions: [
-            'Hotel',
-            'Transportation by A/C Bus/Cab.',
-            'Three nights stay at Kasi and One night stay at Gaya in A/c room.',
-            'Buffet Breakfast or Fixed Menu',
-            'All sightseeing and excursion as per the itinerary.',
-            'Everyone must bring Original ID Proof at the time of travel.',
-            'English, Hindi and Tamil Guide for entire trip.',
-            'Please be at Airport 2 hours before the departure Time.'
-        ],
-        exclusions: [
-            'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
-        ],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '20': {
-        id: '20',
-        title: 'Kasi - Gaya - Allahabad - Ayodhya Flight Package From Chennai 5 Night - 6 Days',
-        image: "/assets/kasi/card/kasicard5.webp",
-        heroImage: "/assets/kasi/kasi5.webp",
-        overview: {
-            duration: '5 Nights / 6 Days',
-            destination: 'Prayagraj, Varanasi, Gaya, Ayodhya',
-            activities: 'Boating, Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'Rs. 39500/-',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Arrival Chennai - Varanasi - Ayodhya',
-                description: 'Departure from Chennai Airport at 07.05 a.m. Arrival Varanasi Airport at 08.30 a.m. and drive to Ayodhya. On arrival check in to Ayodhya Hotel, Proceed to visit the birth place of Lord Rama at Shri Ramjanma Bhoomi, Hanuman Garhi Temple. Night halt at Ayodhya'
-            },
-            {
-                day: 'Day 2',
-                title: 'Varanasi',
-                description: 'Morning after breakfast transfer to Varanasi (Kasi). On arrival Varanasi check into Hotel. After lunch proceed to Having Dharshan of Lord Kasi Vishwanath, Kasi Visalakshi and Kasi Annapoorneswari Temples. Evening visit Ganga Aarti by boating on the way visiting Manikarneka Ghat and Harichandra Ghat. Having night Sayana Arati of Kasi Viswanath Temple. Night halt at Kasi.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Gaya',
-                description: 'Morning holy bath in river Ganga and performing Tharpanam. Free time shopping and religious activities. Drive to Gaya at 02.00p.m. and night halt at Buddha Gaya.'
-            },
-            {
-                day: 'Day 4',
-                title: 'Varanasi',
-                description: 'Morning 07:00 a.m perform some rituals Srartham or Pinda dana for your ancestors. (Dress Code: Ladies – Sarees & Gents – Dhoti ). Dharshan of Vishnu padam Temple and visit Vatavruksh. Afternoon drive to Kasi on the way visiting Buddha Gaya. Night halt in Kasi.'
-            },
-            {
-                day: 'Day 5',
-                title: 'Allahabad',
-                description: 'Morning drive to Allahabad. Holy bath in Triveni sangam and performing Thambathi pooja / Veni Pooja in the meeting point of holy rivers of Ganga, Yamuna and Saraswathi. Having darshan Sri Sayana Anjaneyar. Return and night halt at Kasi.'
-            },
-            {
-                day: 'Day 6',
-                title: 'Departure from Varanasi',
-                description: 'Morning having Dharshan of Kala Bhairavar Temple. and free time for Shopping. Starting from Varanasi at 02.00 p.m. Reaching at Varanasi Airport at 04.00 p.m. Departure from Varanasi Airport at 06.15 p.m. Reaching Chennai Airport at 12.00 a.m.'
-            }
-        ],
-        inclusions: [
-            'Hotel',
-            'Transportation by A/C Bus/Cab.',
-            'Three nights stay at Kasi in A/C Dlx room',
-            'One night stay at Ayodhya in A/C Dlx room',
-            'One night stay at Gaya in A/C Dlx room',
-            'Buffet Breakfast or Fixed Menu',
-            'All sightseeing and excursion as per the itinerary.',
-            'Everyone must bring Original ID Proof at the time of travel.',
-            'English, Hindi and Tamil Guide for entire trip.',
-            'Please be at Airport 2 hours before the departure Time.'
-        ],
-        exclusions: [
-            'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
-        ],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '21': {
-        id: '21',
-        title: 'Kasi Train Package From Chennai 7 Night - 8 Days',
-        image: "/assets/kasi/card/kasicard6.webp",
-        heroImage: "/assets/kasi/kasi6.webp",
-        overview: {
-            duration: '7 Nights / 8 Days',
-            destination: 'Prayagraj, Varanasi, Gaya, Anand Bhavan',
-            activities: 'Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'Rs. 14500/-',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Arrival Chennai - Varanasi',
-                description: 'Departure from Chennai Central Railway Station by Train No: 12669, Ganga kaveri express at 5.30 pm'
-            },
-            {
-                day: 'Day 2',
-                title: 'Train Journey',
-                description: 'Train Journey.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Varanasi',
-                description: 'Reach Varanasi Junction. Transfer to hotel. Morning holy bath in river Gangas. Having the darshan of world famous Kasi Vishwanath, Vishalakshi and Annapoorneshwari Temples. Evening visit Ganga Aarti Night halt at kasi.'
-            },
-            {
-                day: 'Day 4',
-                title: 'Allahabad',
-                description: 'Morning drive to Allahabad. Holy bath in Triveni sangam and visit Anand bhavan and drive to kasi. Night halt at Kasi.'
-            },
-            {
-                day: 'Day 5',
-                title: 'Gaya',
-                description: 'Morning darshan of Kalabhairavar, Kowdi matha Temples. Evening drive to Gaya. Night halt at Gaya.'
-            },
-            {
-                day: 'Day 6',
-                title: 'Gaya',
-                description: 'Morning perform some rituals Srardham or Pindandana for your ancestors. Night Halt at Gaya.'
-            },
-            {
-                day: 'Day 7',
-                title: 'Gaya - Chennai',
-                description: 'Morning 6.00 am train from Gaya by Chennai express.'
-            },
-            {
-                day: 'Day 8',
-                title: 'Chennai',
-                description: 'Reach Chennai Egmore railway Station at 8.45 pm'
-            }
-        ],
-        inclusions: [
-            'Hotel',
-            'Transportation by Non A/C bus as per seat in coach basis.',
-            'All sightseeing and excursion as per the itinerary.',
-            'Senior citizen must bring Original ID Proof at the time of travel.',
-            'English, Hindi and Tamil Guide for entire trip.'
-        ],
-        exclusions: [
-            'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
-        ],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '22': {
-        id: '22',
-        title: 'Kasi Flight Package From Madurai 3 Days',
-        image: "/assets/kasi/card/kasicard7.webp",
-        heroImage: "/assets/kasi/kasi7.webp",
-        overview: {
-            duration: '2 Nights / 3 Days',
-            destination: 'Varanasi',
-            activities: 'Boating, Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'Rs. 23500/-',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Arrival Madurai - Varanasi',
-                description: 'Departure from Madurai Airport at 11.00 a.m. Arrival Varanasi Airport at 05.30 p.m. Transfer to hotel. Evening visit Ganga Aarti by boating on the way visiting Manikarneka Ghat and Hari Chandra Ghat. Having night Sayana Arati of Kasi Viswanath Temple. Night halt at Kasi.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Varanasi',
-                description: 'Morning holy bath in river Ganga and performing Tharpanam.Having Dharshan of Lord Kasi Vishwanath, Kasi Visalakshi and Kasi Annapoorneswari Temples. Night halt at Kasi.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Departure from Varanasi',
-                description: 'Morning having Dharshan of Kala Bhairavar Temple. Free time religious activities and shopping. Starting from Varanasi at 11.00 a.m. and reaching at Airport at 01.00 p.m. Departure Varanasi Airport at 02.55 p.m. and Reaching Madurai Airport at 08.45 p.m.'
-            }
-        ],
-        inclusions: [
-            'Hotel',
-            'Transportation by A/C Bus/Cab.',
-            'Two nights stay at Kasi in A/c room.',
-            'Buffet Breakfast or Fixed Menu',
-            'All sightseeing and excursion as per the itinerary.',
-            'Everyone must bring Original ID Proof at the time of travel.',
-            'English, Hindi and Tamil Guide for entire trip.',
-            'Please be at Airport 2 hours before the departure Time.'
-        ],
-        exclusions: [
-            'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
-        ],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
+    // '16': {
+    //     id: '16',
+    //     title: 'Kasi Flight Package From Chennai 1 Night - 2 Days',
+    //     image: "/assets/kasi/card/kasicard1.webp",
+    //     heroImage: "/assets/kasi/kasi1.webp",
+    //     overview: {
+    //         duration: '1 Nights / 2 Days',
+    //         destination: 'Varanasi',
+    //         activities: 'Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'Rs. 18500/-',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Arrival Chennai - Varanasi',
+    //             description: 'Departure from Chennai Airport at 07.05 a.m. Arrival Varanasi Airport at 08.30 a.m. Transfer to hotel. Having Dharshan of Lord Kasi Vishwanath, Kasi Visalakshi and Kasi Annapoorneswari Temples. Evening visit Ganga Aarti by boating on the way visiting Manikarneka Ghat and Harichandra Ghat . Having night Sayana Arati of Kasi Viswanath Temple. Night halt at Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Departure from Varanasi',
+    //             description: 'Morning holy bath in river Ganga and performing Tharpanam. Having Dharshan of Kala Bhairavar Temple. Free time religious activities and shopping.\nStarting from Varanasi at 02.00 p.m. and reaching at Varanasi Airport at 04.00 p.m.\nDeparture from Varanasi Airport at 06.15 p.m. and Reaching Chennai Airport at 12.00 a.m.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Hotel',
+    //         'Transportation by A/C Bus/Cab.',
+    //         'One night stay at Kasi in A/c room.',
+    //         'Buffet Breakfast or Fixed Menu',
+    //         'All sightseeing and excursion as per the itinerary.',
+    //         'Everyone must bring Original ID Proof at the time of travel.',
+    //         'English, Hindi and Tamil Guide for entire trip.',
+    //         'Please be at Airport 2 hours before the departure Time.'
+    //     ],
+    //     exclusions: [
+    //         'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
+    //     ],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '17': {
+    //     id: '17',
+    //     title: 'Kasi Flight Package From Chennai 2 Night - 3 Days',
+    //     image: "/assets/kasi/card/kasicard2.webp",
+    //     heroImage: "/assets/kasi/kasi2.webp",
+    //     overview: {
+    //         duration: '2 Nights / 3 Days',
+    //         destination: 'Varanasi',
+    //         activities: 'Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'Rs. 23500/-',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Arrival Chennai - Varanasi',
+    //             description: 'Departure from Chennai Airport at 07.05 a.m. Arrival Varanasi Airport at 08.45 a.m. Transfer to hotel. Evening visit Ganga Aarti by boating on the way visiting Manikarneka Ghat and Harichandra Ghat. Having night Sayana Arati of Kasi Viswanath Temple. Night halt at Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Varanasi',
+    //             description: 'Morning holy bath in river Ganga and performing Tharpanam.Having Dharshan of Lord Kasi Vishwanath, Kasi Visalakshi and Kasi Annapoorneswari Temples. Night halt at Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Departure from Varanasi',
+    //             description: 'Morning having Dharshan of Kala Bhairavar Temple. Free time religious activities and shopping. Starting from Varanasi at 02.00 p.m. and reaching at Airport at 04.00 p.m. Departure Varanasi Airport at 06.15 p.m. and Reaching Chennai Airport at 12.00 a.m.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Hotel',
+    //         'Transportation by A/C Bus/Cab.',
+    //         'Two nights stay at Kasi in A/c room.',
+    //         'Buffet Breakfast or Fixed Menu',
+    //         'All sightseeing and excursion as per the itinerary.',
+    //         'Everyone must bring Original ID Proof at the time of travel.',
+    //         'English, Hindi and Tamil Guide for entire trip.',
+    //         'Please be at Airport 2 hours before the departure Time.'
+    //     ],
+    //     exclusions: [
+    //         'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
+    //     ],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '18': {
+    //     id: '18',
+    //     title: 'Kasi - Ayodhya Flight Package From Chennai 2 Night - 3 Days',
+    //     image: "/assets/kasi/card/kasicard3.webp",
+    //     heroImage: "/assets/kasi/kasi3.webp",
+    //     overview: {
+    //         duration: '2 Nights / 3 Days',
+    //         destination: 'Varanasi, Ayodhya',
+    //         activities: 'Museums, Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'Rs. 27500/-',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Arrival Chennai - Ayodhya',
+    //             description: 'Departure from Chennai Airport at 09.10 a.m. Arrival Ayodhya Airport at 11.35 a.m. Transfer to hotel. Visit the birth place Lord Rama, Shri Ramjanma Bhoomi and Hanuman Garhi Temple. Evening visit Kanak Bhawan and Ramkatha Museum. Night halt at Ayodhya.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Ayodhya - Varanasi',
+    //             description: 'After Breakfast starting @ 10.00 a.m. from Ayodhya and proceed to Kasi. Transfer to hotel. After refreshment having Dharshan of Lord Kasi Vishwanath, Kasi Visalakshi and Kasi Annapoorneswari Temples. Evening visit Ganga Aarti by boating on the way visiting Manikarneka Ghat and Harichandra Ghat. Having night Sayana Arati of Kasi Viswanath Temple. Night halt at Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Departure from Varanasi',
+    //             description: 'Morning holy bath in river Ganga and performing Tharpanam and having darshan of Kala Bhairavar Temple. Free time religious activities and shopping. Starting from Varanasi at 04.00 p.m. Reaching at Varanasi Airport at 06.00 p.m. Departure from Varanasi Airport at 08.10 p.m. Reaching Chennai Airport at 10.30 p.m.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Hotel',
+    //         'Transportation by A/C Bus/Cab.',
+    //         'One night stay at Ayodhya in A/c room.',
+    //         'One night stay at Varanasi in A/c room.',
+    //         'Buffet Breakfast or Fixed Menu',
+    //         'All sightseeing and excursion as per the itinerary.',
+    //         'Everyone must bring Original ID Proof at the time of travel.',
+    //         'English, Hindi and Tamil Guide for entire trip.',
+    //         'Please be at Airport 2 hours before the departure Time.'
+    //     ],
+    //     exclusions: [
+    //         'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
+    //     ],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '19': {
+    //     id: '19',
+    //     title: 'Kasi - Gaya Flight Package From Chennai 4 Night - 5 Days',
+    //     image: "/assets/kasi/card/kasicard4.webp",
+    //     heroImage: "/assets/kasi/kasi4.webp",
+    //     overview: {
+    //         duration: '4 Nights / 5 Days',
+    //         destination: 'Prayagraj, Varanasi, Gaya, Allahabad Fort',
+    //         activities: 'Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'Rs. 34500/-',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Arrival Chennai - Varanasi',
+    //             description: 'Departure from Chennai Airport at 07.05 a.m. Arrival Varanasi Airport at 08.30 a.m. Transfer to hotel. Having Dharshan of Lord Kasi Vishwanath, Kasi Visalakshi and Kasi Annapoorneswari Temples. Evening visit Ganga Aarti by boating on the way visiting Manikarneka Ghat and Harichandra Ghat. Having night Sayana Arati of Kasi Viswanath Temple. Night halt at Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Gaya',
+    //             description: 'Morning holy bath in river Ganga and performing Tharpanam. Free time shopping and religious activities. After Lunch proceed to Gaya at 02.00 p.m. and night halt at Gaya.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Gaya',
+    //             description: 'Early Morning perform the some rituals Srartham or Pinda dana for your ancestors (Dress Code: Ladies – Sarees & Gents – Dhoti ). Dharshan of Vishnu padam Temple and visit Vatavruksh. Afternoon drive to Kasi on the way visiting Buddha Gaya. Night halt in Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 4',
+    //             title: 'Allahabad',
+    //             description: 'Morning drive to Allahabad. Holy bath in Triveni sangam and performing Thambathi pooja / Veni Pooja in the meeting point of holy rivers of Ganga, Yamuna and Saraswathi. Having Dharshan of Sri Sayana Anjaneyar. Return and night halt at Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 5',
+    //             title: 'Departure from Varanasi',
+    //             description: 'Morning having Dharshan of Kala Bhairavar Temple. Free time religious activities and shopping. Starting from Varanasi at 02.00 p.m. and reaching at Varanasi Airport at 04.00 p.m. Departure from Varanasi Airport at 06.15 p.m. Reaching Chennai Airport at 12.00 a.m.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Hotel',
+    //         'Transportation by A/C Bus/Cab.',
+    //         'Three nights stay at Kasi and One night stay at Gaya in A/c room.',
+    //         'Buffet Breakfast or Fixed Menu',
+    //         'All sightseeing and excursion as per the itinerary.',
+    //         'Everyone must bring Original ID Proof at the time of travel.',
+    //         'English, Hindi and Tamil Guide for entire trip.',
+    //         'Please be at Airport 2 hours before the departure Time.'
+    //     ],
+    //     exclusions: [
+    //         'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
+    //     ],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '20': {
+    //     id: '20',
+    //     title: 'Kasi - Gaya - Allahabad - Ayodhya Flight Package From Chennai 5 Night - 6 Days',
+    //     image: "/assets/kasi/card/kasicard5.webp",
+    //     heroImage: "/assets/kasi/kasi5.webp",
+    //     overview: {
+    //         duration: '5 Nights / 6 Days',
+    //         destination: 'Prayagraj, Varanasi, Gaya, Ayodhya',
+    //         activities: 'Boating, Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'Rs. 39500/-',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Arrival Chennai - Varanasi - Ayodhya',
+    //             description: 'Departure from Chennai Airport at 07.05 a.m. Arrival Varanasi Airport at 08.30 a.m. and drive to Ayodhya. On arrival check in to Ayodhya Hotel, Proceed to visit the birth place of Lord Rama at Shri Ramjanma Bhoomi, Hanuman Garhi Temple. Night halt at Ayodhya'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Varanasi',
+    //             description: 'Morning after breakfast transfer to Varanasi (Kasi). On arrival Varanasi check into Hotel. After lunch proceed to Having Dharshan of Lord Kasi Vishwanath, Kasi Visalakshi and Kasi Annapoorneswari Temples. Evening visit Ganga Aarti by boating on the way visiting Manikarneka Ghat and Harichandra Ghat. Having night Sayana Arati of Kasi Viswanath Temple. Night halt at Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Gaya',
+    //             description: 'Morning holy bath in river Ganga and performing Tharpanam. Free time shopping and religious activities. Drive to Gaya at 02.00p.m. and night halt at Buddha Gaya.'
+    //         },
+    //         {
+    //             day: 'Day 4',
+    //             title: 'Varanasi',
+    //             description: 'Morning 07:00 a.m perform some rituals Srartham or Pinda dana for your ancestors. (Dress Code: Ladies – Sarees & Gents – Dhoti ). Dharshan of Vishnu padam Temple and visit Vatavruksh. Afternoon drive to Kasi on the way visiting Buddha Gaya. Night halt in Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 5',
+    //             title: 'Allahabad',
+    //             description: 'Morning drive to Allahabad. Holy bath in Triveni sangam and performing Thambathi pooja / Veni Pooja in the meeting point of holy rivers of Ganga, Yamuna and Saraswathi. Having darshan Sri Sayana Anjaneyar. Return and night halt at Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 6',
+    //             title: 'Departure from Varanasi',
+    //             description: 'Morning having Dharshan of Kala Bhairavar Temple. and free time for Shopping. Starting from Varanasi at 02.00 p.m. Reaching at Varanasi Airport at 04.00 p.m. Departure from Varanasi Airport at 06.15 p.m. Reaching Chennai Airport at 12.00 a.m.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Hotel',
+    //         'Transportation by A/C Bus/Cab.',
+    //         'Three nights stay at Kasi in A/C Dlx room',
+    //         'One night stay at Ayodhya in A/C Dlx room',
+    //         'One night stay at Gaya in A/C Dlx room',
+    //         'Buffet Breakfast or Fixed Menu',
+    //         'All sightseeing and excursion as per the itinerary.',
+    //         'Everyone must bring Original ID Proof at the time of travel.',
+    //         'English, Hindi and Tamil Guide for entire trip.',
+    //         'Please be at Airport 2 hours before the departure Time.'
+    //     ],
+    //     exclusions: [
+    //         'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
+    //     ],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '21': {
+    //     id: '21',
+    //     title: 'Kasi Train Package From Chennai 7 Night - 8 Days',
+    //     image: "/assets/kasi/card/kasicard6.webp",
+    //     heroImage: "/assets/kasi/kasi6.webp",
+    //     overview: {
+    //         duration: '7 Nights / 8 Days',
+    //         destination: 'Prayagraj, Varanasi, Gaya, Anand Bhavan',
+    //         activities: 'Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'Rs. 14500/-',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Arrival Chennai - Varanasi',
+    //             description: 'Departure from Chennai Central Railway Station by Train No: 12669, Ganga kaveri express at 5.30 pm'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Train Journey',
+    //             description: 'Train Journey.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Varanasi',
+    //             description: 'Reach Varanasi Junction. Transfer to hotel. Morning holy bath in river Gangas. Having the darshan of world famous Kasi Vishwanath, Vishalakshi and Annapoorneshwari Temples. Evening visit Ganga Aarti Night halt at kasi.'
+    //         },
+    //         {
+    //             day: 'Day 4',
+    //             title: 'Allahabad',
+    //             description: 'Morning drive to Allahabad. Holy bath in Triveni sangam and visit Anand bhavan and drive to kasi. Night halt at Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 5',
+    //             title: 'Gaya',
+    //             description: 'Morning darshan of Kalabhairavar, Kowdi matha Temples. Evening drive to Gaya. Night halt at Gaya.'
+    //         },
+    //         {
+    //             day: 'Day 6',
+    //             title: 'Gaya',
+    //             description: 'Morning perform some rituals Srardham or Pindandana for your ancestors. Night Halt at Gaya.'
+    //         },
+    //         {
+    //             day: 'Day 7',
+    //             title: 'Gaya - Chennai',
+    //             description: 'Morning 6.00 am train from Gaya by Chennai express.'
+    //         },
+    //         {
+    //             day: 'Day 8',
+    //             title: 'Chennai',
+    //             description: 'Reach Chennai Egmore railway Station at 8.45 pm'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Hotel',
+    //         'Transportation by Non A/C bus as per seat in coach basis.',
+    //         'All sightseeing and excursion as per the itinerary.',
+    //         'Senior citizen must bring Original ID Proof at the time of travel.',
+    //         'English, Hindi and Tamil Guide for entire trip.'
+    //     ],
+    //     exclusions: [
+    //         'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
+    //     ],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '22': {
+    //     id: '22',
+    //     title: 'Kasi Flight Package From Madurai 3 Days',
+    //     image: "/assets/kasi/card/kasicard7.webp",
+    //     heroImage: "/assets/kasi/kasi7.webp",
+    //     overview: {
+    //         duration: '2 Nights / 3 Days',
+    //         destination: 'Varanasi',
+    //         activities: 'Boating, Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'Rs. 23500/-',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Arrival Madurai - Varanasi',
+    //             description: 'Departure from Madurai Airport at 11.00 a.m. Arrival Varanasi Airport at 05.30 p.m. Transfer to hotel. Evening visit Ganga Aarti by boating on the way visiting Manikarneka Ghat and Hari Chandra Ghat. Having night Sayana Arati of Kasi Viswanath Temple. Night halt at Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Varanasi',
+    //             description: 'Morning holy bath in river Ganga and performing Tharpanam.Having Dharshan of Lord Kasi Vishwanath, Kasi Visalakshi and Kasi Annapoorneswari Temples. Night halt at Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Departure from Varanasi',
+    //             description: 'Morning having Dharshan of Kala Bhairavar Temple. Free time religious activities and shopping. Starting from Varanasi at 11.00 a.m. and reaching at Airport at 01.00 p.m. Departure Varanasi Airport at 02.55 p.m. and Reaching Madurai Airport at 08.45 p.m.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Hotel',
+    //         'Transportation by A/C Bus/Cab.',
+    //         'Two nights stay at Kasi in A/c room.',
+    //         'Buffet Breakfast or Fixed Menu',
+    //         'All sightseeing and excursion as per the itinerary.',
+    //         'Everyone must bring Original ID Proof at the time of travel.',
+    //         'English, Hindi and Tamil Guide for entire trip.',
+    //         'Please be at Airport 2 hours before the departure Time.'
+    //     ],
+    //     exclusions: [
+    //         'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
+    //     ],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
     // '23': {
     //     id: '23',
     //     title: 'Kasi - Ayodhya Flight Package From Madurai 2 Night - 3 Days',
@@ -27061,58 +27061,58 @@ export const packagesDatabase: Record<string, any> = {
     //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
     //     }
     // },
-    '28': {
-        id: '28',
-        title: 'Madurai - Rameshwaram - Kanyakumari 4N 5D Tour',
-        image: "/assets/kaniyakumari/Thiruvalluvar statue.webp",
-        heroImage: "/assets/rameswaram/big.webp",
-        overview: {
-            duration: '4 Nights / 5 Days',
-            destination: 'Kanyakumari, Madurai, Rameshwaram, Meenakshi Temple',
-            activities: 'Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage, Beaches and Islands'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'On Request',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Madurai',
-                description: 'Morning Pick up from Madurai Station/Airport, transfer to Hotel, check In, Afternoon leave to city tour. Madurai\'s history goes back to six centuries before Christ. The Pandyan rulers made this their capital until the 14th Century and the city flowered with the genius of its writers, builders, poets and academics. Then the Nayaks ruled Madurai from the middle of the 16th Century to 1743. The ten tall Gopurams of the Meenakshi Temple were raised during their dynasty. Visiting - Sri Meenakshi Sundereswarar and Palani temples, King Tirumala\'s Palace, Vandiyur Mariamman Tank and Gandhi museum. Night halt at Madurai.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Madurai – Rameshwaram (3Hrs)',
-                description: 'Morning After Breakfast Check out Hotel, later depart to Rameshwaram - small island in the Gulf of Mannar is a major pilgrim centre. Visit to Sri Ramanathaswamy Temple - situated near the sea on the eastern side, as massive sculptured pillars on either side and has the longest corridors in the world, Kurusadai Island - It is a Marine Biosphere, a paradise for the Marine Biologists and Nature lovers. Night halt at Rameshwaram.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Rameshwaram – Kanyakumari (5Hrs)',
-                description: 'Morning After Breakfast Check out Hotel, later depart to Kanyakumari – is the land\'s end of India where the water of the Arabian Sea, the Bay of Bengal and the Indian Ocean meet. An important pilgrim centre of India. Upon arrival Check in hotel, Evening Enjoy Sunset, Night halt at Kanyakumari.'
-            },
-            {
-                day: 'Day 4',
-                title: 'Kanyakumari',
-                description: 'Morning After Breakfast start for full day sightseeing visit famous Amman Temples – a symbol of unity and sanctity – dedicated to the virgin Goddess, Kanyakumari and to its South – East lies the famous Vivekananda Rock Memorial, a blend of all the architectural styles of India. Night halt at Kanyakumari.'
-            },
-            {
-                day: 'Day 5',
-                title: 'Kanyakumari - Trivendrum (3Hrs)',
-                description: 'Morning After Breakfast, Check out hotel,Then Proceed on time to board your flight/train with sweet memories of your holiday.'
-            }
-        ],
-        inclusions: [
-            'CP (Room + Breakfast)'
-        ],
-        exclusions: [],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
+    // '28': {
+    //     id: '28',
+    //     title: 'Madurai - Rameswaram - Kanyakumari 4N 5D Tour',
+    //     image: "/assets/kaniyakumari/Thiruvalluvar statue.webp",
+    //     heroImage: "/assets/rameswaram/big.webp",
+    //     overview: {
+    //         duration: '4 Nights / 5 Days',
+    //         destination: 'Kanyakumari, Madurai, Rameswaram, Meenakshi Temple',
+    //         activities: 'Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage, Beaches and Islands'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'On Request',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Madurai',
+    //             description: 'Morning Pick up from Madurai Station/Airport, transfer to Hotel, check In, Afternoon leave to city tour. Madurai\'s history goes back to six centuries before Christ. The Pandyan rulers made this their capital until the 14th Century and the city flowered with the genius of its writers, builders, poets and academics. Then the Nayaks ruled Madurai from the middle of the 16th Century to 1743. The ten tall Gopurams of the Meenakshi Temple were raised during their dynasty. Visiting - Sri Meenakshi Sundereswarar and Palani temples, King Tirumala\'s Palace, Vandiyur Mariamman Tank and Gandhi museum. Night halt at Madurai.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Madurai – Rameswaram (3Hrs)',
+    //             description: 'Morning After Breakfast Check out Hotel, later depart to Rameswaram - small island in the Gulf of Mannar is a major pilgrim centre. Visit to Sri Ramanathaswamy Temple - situated near the sea on the eastern side, as massive sculptured pillars on either side and has the longest corridors in the world, Kurusadai Island - It is a Marine Biosphere, a paradise for the Marine Biologists and Nature lovers. Night halt at Rameswaram.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Rameswaram – Kanyakumari (5Hrs)',
+    //             description: 'Morning After Breakfast Check out Hotel, later depart to Kanyakumari – is the land\'s end of India where the water of the Arabian Sea, the Bay of Bengal and the Indian Ocean meet. An important pilgrim centre of India. Upon arrival Check in hotel, Evening Enjoy Sunset, Night halt at Kanyakumari.'
+    //         },
+    //         {
+    //             day: 'Day 4',
+    //             title: 'Kanyakumari',
+    //             description: 'Morning After Breakfast start for full day sightseeing visit famous Amman Temples – a symbol of unity and sanctity – dedicated to the virgin Goddess, Kanyakumari and to its South – East lies the famous Vivekananda Rock Memorial, a blend of all the architectural styles of India. Night halt at Kanyakumari.'
+    //         },
+    //         {
+    //             day: 'Day 5',
+    //             title: 'Kanyakumari - Trivendrum (3Hrs)',
+    //             description: 'Morning After Breakfast, Check out hotel,Then Proceed on time to board your flight/train with sweet memories of your holiday.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'CP (Room + Breakfast)'
+    //     ],
+    //     exclusions: [],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
     // '29': {
     //     id: '29',
     //     title: '10 Night - 11 Days Tamil Nadu Tour Package',
@@ -27138,12 +27138,12 @@ export const packagesDatabase: Record<string, any> = {
     //         {
     //             day: 'Day 2',
     //             title: 'Chennai – Mahabalipuram',
-    //             description: 'Morning After Breakfast Check out Hotel, later depart to Mahabalipuram. Enroute visit Kanchipuram the ancient capital of the Pallavas famous as a golden city of 1000 Temples and still has 124 shrines is one of the seven most sacred cities of India. Kanchipuram is also famous for its silks. Visit its famous temples, Kailash Nath temple, Ekambareshwaram temple, Sri Kamakshi temple etc. Thereafter continue your drive to Mamallapuram (Mahabalipuram). Upon arrival check in hotel, Rest of the day at leisure or free for your own activities, night halt at Mahabalipuram.'
+    //             description: 'Morning After Breakfast Check out Hotel, later depart to Mahabalipuram. Enroute visit Kanchipuram the ancient capital of the Pallavas famous as a golden city of 1000 Temples and still has 124 shrines is one of the seven most sacred cities of India. Kanchipuram is also famous for its silks. Visit its famous temples, Kailash Nath temple, Ekambareshwaram temple, Sri Kamakshi temple etc. Thereafter continue your drive to Mahabalipuram (Mahabalipuram). Upon arrival check in hotel, Rest of the day at leisure or free for your own activities, night halt at Mahabalipuram.'
     //         },
     //         {
     //             day: 'Day 3',
     //             title: 'Mahabalipuram – Pondicherry',
-    //             description: 'Morning After Breakfast check out Hotel, later depart for Mahabalipuram (Mamallapuram) Local Sightseeing - built in 7th century, earlier called Mahabalipuram, this ancient Pallava Fort, is today the sight of several antique sculptural marvels. In this ancient seaside town, shrines and huge sculptures cut-out of rocks more than 1200 years back during the reign of Pallava Kings in the region can be seen. At the mouth of the river Palar, on large granite hall about 1 km in length from north to south is the site of many monuments, like The Descent of Ganges also known as Arjuna\'s Penance, this open air sculpture showing the descent of the holy River, Krishna Mandap, The Rathas and the Shore temple dedicated to Lord Shiva. Noon Depart to Pondicherry, same day Arrival, Night halt at Pondicherry.'
+    //             description: 'Morning After Breakfast check out Hotel, later depart for Mahabalipuram (Mahabalipuram) Local Sightseeing - built in 7th century, earlier called Mahabalipuram, this ancient Pallava Fort, is today the sight of several antique sculptural marvels. In this ancient seaside town, shrines and huge sculptures cut-out of rocks more than 1200 years back during the reign of Pallava Kings in the region can be seen. At the mouth of the river Palar, on large granite hall about 1 km in length from north to south is the site of many monuments, like The Descent of Ganges also known as Arjuna\'s Penance, this open air sculpture showing the descent of the holy River, Krishna Mandap, The Rathas and the Shore temple dedicated to Lord Shiva. Noon Depart to Pondicherry, same day Arrival, Night halt at Pondicherry.'
     //         },
     //         {
     //             day: 'Day 4',
@@ -27167,12 +27167,12 @@ export const packagesDatabase: Record<string, any> = {
     //         },
     //         {
     //             day: 'Day 8',
-    //             title: 'Madurai – Rameshwaram',
+    //             title: 'Madurai – Rameswaram',
     //             description: 'After breakfast, depart for Rameswaram. Check in to your accommodation in Rameswaram. Visit the Ramanathaswamy Temple, one of the twelve Jyotirlinga temples, and take a holy dip in the Agni Theertham, a sacred sea. Explore the other temples in the town, such as Kothandaramaswamy Temple, Panchmukhi Hanuman Temple, and more. Explore other holy places in Rameswaram. Return back to the hotel and Overnight stay in Rameswaram.'
     //         },
     //         {
     //             day: 'Day 9',
-    //             title: 'Rameshwaram - Kanyakumari',
+    //             title: 'Rameswaram - Kanyakumari',
     //             description: 'Morning After Breakfast Check out Hotel, later depart to Kanyakumari – is the land\'s end of India where the water of the Arabian Sea, the Bay of Bengal and the Indian Ocean meet. An important pilgrim centre of India. Upon arrival Check in hotel, Evening Enjoy Sunset, Night halt at Kanyakumari.'
     //         },
     //         {
@@ -27195,110 +27195,110 @@ export const packagesDatabase: Record<string, any> = {
     //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
     //     }
     // },
-    '30': {
-        id: '30',
-        title: 'Delightful Madurai - Rameswaram - Kanyakumari 3Night 4Days Tour',
-        image: "/assets/rameswaram/sm1.webp",
-        heroImage: "/assets/rameswaram/big3.webp",
-        overview: {
-            duration: '3 Nights / 4 Days',
-            destination: 'Kanyakumari, Madurai, Rameshwaram, Kumari Amman Temple',
-            activities: 'Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage, Beaches and Islands'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'On Request',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Madurai Arrival & Sightseeing',
-                description: 'Upon your arrival at Madurai Airport or Madurai Railway Station in the early morning, you will be greeted by our local tour representative. He will transfer you to the Hotel , Check in to your accommodation in Madurai. Begin your sightseeing tour in Madurai. Visit the Meenakshi Amman Temple, a masterpiece of Dravidian architecture. Explore the Thirumalai Nayak Palace, showcasing Indo-Saracenic architecture. Visit The Koodal Azhagar Temple, Alagar Koil Temple . Evening return back to the hotel and Overnight stay in Madurai.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Madurai - Rameswaram & Sightseeing',
-                description: 'After breakfast, depart for Rameswaram. Check in to your accommodation in Rameswaram. Visit the Ramanathaswamy Temple, one of the twelve Jyotirlinga temples, and take a holy dip in the Agni Theertham, a sacred sea. Explore the other temples in the town, such as Kothandaramaswamy Temple, Panchmukhi Hanuman Temple, and more. Explore other holy places in Rameswaram. Return back to the hotel and Overnight stay in Rameswaram.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Rameswaram - Kanyakumari & Sightseeing',
-                description: 'After breakfast, check out from the hotel in Rameswaram and depart for Kanyakumari. Check in to your accommodation in Kanyakumari. Explore the Vivekananda Rock Memorial, Thiruvalluvar Statue, Kanyakumari Amman Temple and Thanumalayan Temple - Sthanumalayan Kovil. Enjoy the stunning sunset views. Later back to the Hotel and Overnight stay in Kanyakumari.'
-            },
-            {
-                day: 'Day 4',
-                title: 'Kanyakumari – Madurai',
-                description: 'Early get ready for Sunrise in Seashore. Return to your hotel, have breakfast & then check-out from the hotel. We will head to Madurai for your onward journey. Your arrival at Madurai Airport / Railway Station will mark the end of the tour.'
-            }
-        ],
-        inclusions: [
-            'CP (Room + Breakfast)'
-        ],
-        exclusions: [],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '31': {
-        id: '31',
-        title: 'Madurai - Rameshwaram - Kanyakumari - Trivandrum Tour 5N 6D',
-        image: "/assets/kaniyakumari/vattakottai fort.webp",
-        heroImage: "/assets/rameswaram/big5.webp",
-        overview: {
-            duration: '5 Nights / 6 Days',
-            destination: 'Kovalam, Trivandrum, Kanyakumari, Madurai, Rameshwaram...',
-            activities: 'Beaches Sightseeing, Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage, Beaches and Islands'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'On Request',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Arrival at Madurai and Half day City Tour',
-                description: 'Upon arrival our representative will greet you at Madurai Airport/ Railway Station and then transfer to the hotel. Check-in and relax for a while amidst the comforts of your room. The ancient city of Madurai, some 2600 years old is laid out in the banks of river Vaigai as a lotus flower with the Meenakshi temple in the centre. Afternoon city tour visiting - Meenakshi temple, King Tirumala\'s Palace, Great tank, Koodal Azhagar Temple and Gandhi museum. Overnight stay at the Hotel.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Madurai - Rameshwaram and City tour',
-                description: 'Enjoy the sumptuous breakfast. Later proceed to Rameshwaram on the way visit Pamban Bridge, then Check into the hotel. Visit Five Face Hanuman Temple, Abdulkalam House, kothandaramar temple, Ramar padam,Jyortirling darshan at Ramanathaswamy Temple, Later proceed to Dhanushkodi.. Overnight stay at the Hotel.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Rameshwaram - Kanyakumari and City tour',
-                description: 'Enjoy the sumptuous breakfast. Later proceed to Kanyakumari. Reach & check-in at the hotel and relax for a while amidst the comforts of your room. Kanyakumari - Located at the southern tip of peninsular India, it offers a unique experience of sunrise & sunset. Visit rock memorial dedicated to Swami Vivekananda, the Gandhi Memorial, Kanyakumari Bhagavathi amman temple,Suchidram Temple with exquisite sculpture & musical pillars dedicated to Brahma, Vishnu &Shiva. Overnight stay at the Hotel.'
-            },
-            {
-                day: 'Day 4',
-                title: 'Kanyakumari - Kovalam Leisure',
-                description: 'Enjoy the sumptuous breakfast. Later proceed to Kovalam on the way Padmanabhapuram Palace -Located in Thuckalay, this ancient palace is a fine example of traditional Kerala architecture. Poovar Island - A serene island near Kovalam, known for its beautiful backwaters and golden sand beaches, The Aazhimala Shiva Temple, also known as Aazhimala Siva Temple, is a beautiful Hindu temple located near Vizhinjam in the Thiruvananthapuram district of Kerala, India. & Check- in at the hotel and relax, Overnight stay at the Hotel/Resort.'
-            },
-            {
-                day: 'Day 5',
-                title: 'Kovalam - Trivadruam - Kovalam Sightseen',
-                description: 'Enjoy the sumptuous breakfast. Later proceed to Trivandrum for city tour covering Napier Museum, Sri Padmanabha Swami Temple., and Zoo. Afternoon leisure at Kovalam. Overnight stay at the Hotel/Resort'
-            },
-            {
-                day: 'Day 6',
-                title: 'Check Out and Transfers to Train Station / Airport',
-                description: 'Morning have breakfast at resort later check out Hotel and drive to nearest Airport / Railway Station for departure. Back to home with sweet memories of your tour.'
-            }
-        ],
-        inclusions: [
-            'CP (Room + Breakfast)'
-        ],
-        exclusions: [],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
+    // '30': {
+    //     id: '30',
+    //     title: 'Delightful Madurai - Rameswaram - Kanyakumari 3Night 4Days Tour',
+    //     image: "/assets/rameswaram/sm1.webp",
+    //     heroImage: "/assets/rameswaram/big3.webp",
+    //     overview: {
+    //         duration: '3 Nights / 4 Days',
+    //         destination: 'Kanyakumari, Madurai, Rameswaram, Kumari Amman Temple',
+    //         activities: 'Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage, Beaches and Islands'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'On Request',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Madurai Arrival & Sightseeing',
+    //             description: 'Upon your arrival at Madurai Airport or Madurai Railway Station in the early morning, you will be greeted by our local tour representative. He will transfer you to the Hotel , Check in to your accommodation in Madurai. Begin your sightseeing tour in Madurai. Visit the Meenakshi Amman Temple, a masterpiece of Dravidian architecture. Explore the Thirumalai Nayak Palace, showcasing Indo-Saracenic architecture. Visit The Koodal Azhagar Temple, Alagar Koil Temple . Evening return back to the hotel and Overnight stay in Madurai.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Madurai - Rameswaram & Sightseeing',
+    //             description: 'After breakfast, depart for Rameswaram. Check in to your accommodation in Rameswaram. Visit the Ramanathaswamy Temple, one of the twelve Jyotirlinga temples, and take a holy dip in the Agni Theertham, a sacred sea. Explore the other temples in the town, such as Kothandaramaswamy Temple, Panchmukhi Hanuman Temple, and more. Explore other holy places in Rameswaram. Return back to the hotel and Overnight stay in Rameswaram.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Rameswaram - Kanyakumari & Sightseeing',
+    //             description: 'After breakfast, check out from the hotel in Rameswaram and depart for Kanyakumari. Check in to your accommodation in Kanyakumari. Explore the Vivekananda Rock Memorial, Thiruvalluvar Statue, Kanyakumari Amman Temple and Thanumalayan Temple - Sthanumalayan Kovil. Enjoy the stunning sunset views. Later back to the Hotel and Overnight stay in Kanyakumari.'
+    //         },
+    //         {
+    //             day: 'Day 4',
+    //             title: 'Kanyakumari – Madurai',
+    //             description: 'Early get ready for Sunrise in Seashore. Return to your hotel, have breakfast & then check-out from the hotel. We will head to Madurai for your onward journey. Your arrival at Madurai Airport / Railway Station will mark the end of the tour.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'CP (Room + Breakfast)'
+    //     ],
+    //     exclusions: [],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '31': {
+    //     id: '31',
+    //     title: 'Madurai - Rameswaram - Kanyakumari - Trivandrum Tour 5N 6D',
+    //     image: "/assets/kaniyakumari/vattakottai fort.webp",
+    //     heroImage: "/assets/rameswaram/big5.webp",
+    //     overview: {
+    //         duration: '5 Nights / 6 Days',
+    //         destination: 'Kovalam, Trivandrum, Kanyakumari, Madurai, Rameswaram...',
+    //         activities: 'Beaches Sightseeing, Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage, Beaches and Islands'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'On Request',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Arrival at Madurai and Half day City Tour',
+    //             description: 'Upon arrival our representative will greet you at Madurai Airport/ Railway Station and then transfer to the hotel. Check-in and relax for a while amidst the comforts of your room. The ancient city of Madurai, some 2600 years old is laid out in the banks of river Vaigai as a lotus flower with the Meenakshi temple in the centre. Afternoon city tour visiting - Meenakshi temple, King Tirumala\'s Palace, Great tank, Koodal Azhagar Temple and Gandhi museum. Overnight stay at the Hotel.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Madurai - Rameswaram and City tour',
+    //             description: 'Enjoy the sumptuous breakfast. Later proceed to Rameswaram on the way visit Pamban Bridge, then Check into the hotel. Visit Five Face Hanuman Temple, Abdulkalam House, kothandaramar temple, Ramar padam,Jyortirling darshan at Ramanathaswamy Temple, Later proceed to Dhanushkodi.. Overnight stay at the Hotel.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Rameswaram - Kanyakumari and City tour',
+    //             description: 'Enjoy the sumptuous breakfast. Later proceed to Kanyakumari. Reach & check-in at the hotel and relax for a while amidst the comforts of your room. Kanyakumari - Located at the southern tip of peninsular India, it offers a unique experience of sunrise & sunset. Visit rock memorial dedicated to Swami Vivekananda, the Gandhi Memorial, Kanyakumari Bhagavathi amman temple,Suchidram Temple with exquisite sculpture & musical pillars dedicated to Brahma, Vishnu &Shiva. Overnight stay at the Hotel.'
+    //         },
+    //         {
+    //             day: 'Day 4',
+    //             title: 'Kanyakumari - Kovalam Leisure',
+    //             description: 'Enjoy the sumptuous breakfast. Later proceed to Kovalam on the way Padmanabhapuram Palace -Located in Thuckalay, this ancient palace is a fine example of traditional Kerala architecture. Poovar Island - A serene island near Kovalam, known for its beautiful backwaters and golden sand beaches, The Aazhimala Shiva Temple, also known as Aazhimala Siva Temple, is a beautiful Hindu temple located near Vizhinjam in the Thiruvananthapuram district of Kerala, India. & Check- in at the hotel and relax, Overnight stay at the Hotel/Resort.'
+    //         },
+    //         {
+    //             day: 'Day 5',
+    //             title: 'Kovalam - Trivadruam - Kovalam Sightseen',
+    //             description: 'Enjoy the sumptuous breakfast. Later proceed to Trivandrum for city tour covering Napier Museum, Sri Padmanabha Swami Temple., and Zoo. Afternoon leisure at Kovalam. Overnight stay at the Hotel/Resort'
+    //         },
+    //         {
+    //             day: 'Day 6',
+    //             title: 'Check Out and Transfers to Train Station / Airport',
+    //             description: 'Morning have breakfast at resort later check out Hotel and drive to nearest Airport / Railway Station for departure. Back to home with sweet memories of your tour.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'CP (Room + Breakfast)'
+    //     ],
+    //     exclusions: [],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
     // '32': {
     //     id: '32',
     //     title: 'Abode Of The Cloud - Shillong - 3N Tour',
@@ -27800,12 +27800,12 @@ export const packagesDatabase: Record<string, any> = {
     // },
     // '42': {
     //     id: '42',
-    //     title: 'Madurai To Rameshwaram 1N 2D Tour',
+    //     title: 'Madurai To Rameswaram 1N 2D Tour',
     //     image: "/assets/rameswaram/sm3.webp",
     //     heroImage: "/assets/rameswaram/big5.webp",
     //     overview: {
     //         duration: '1 Nights / 2 Days',
-    //         destination: 'Madurai, Rameshwaram',
+    //         destination: 'Madurai, Rameswaram',
     //         activities: 'Sightseeing',
     //         themes: 'Religious & Pilgrimage, Culture & Heritage'
     //     },
@@ -27818,12 +27818,12 @@ export const packagesDatabase: Record<string, any> = {
     //         {
     //             day: 'Day 1',
     //             title: 'Madurai - Rameswaram & Sightseeing',
-    //             description: 'Pick up from Madurai Airport or Junction Check in cab and Journey proceeding towards Rameshwaram visiting Ramanathaswamy temple - Five Faces Lord Hanuman Temple - Kothandaramaswamy Temple - Floating Stone - Agni Theertham - Dhanushkodi till entrance - Dr. APJ Abdul Kalam Memorial - Ramar Feet - stay at Rameshwaram.'
+    //             description: 'Pick up from Madurai Airport or Junction Check in cab and Journey proceeding towards Rameswaram visiting Ramanathaswamy temple - Five Faces Lord Hanuman Temple - Kothandaramaswamy Temple - Floating Stone - Agni Theertham - Dhanushkodi till entrance - Dr. APJ Abdul Kalam Memorial - Ramar Feet - stay at Rameswaram.'
     //         },
     //         {
     //             day: 'Day 2',
     //             title: 'Rameswaram - Madurai',
-    //             description: 'Pickup from Hotel at Rameshwaram and journey proceeding towards Madurai visiting local places like Lord Kallalagar Temple - Palamudhirchozai - Tiruparakundram Lord Karthik Temple - Thirumalai Naicker Palace - Meenakshi Amman Temple - Gandhi Museum [If time permits] - Drop at Madurai Airport or Junction.'
+    //             description: 'Pickup from Hotel at Rameswaram and journey proceeding towards Madurai visiting local places like Lord Kallalagar Temple - Palamudhirchozai - Tiruparakundram Lord Karthik Temple - Thirumalai Naicker Palace - Meenakshi Amman Temple - Gandhi Museum [If time permits] - Drop at Madurai Airport or Junction.'
     //         }
     //     ],
     //     inclusions: [
@@ -27837,12 +27837,12 @@ export const packagesDatabase: Record<string, any> = {
     // },
     // '43': {
     //     id: '43',
-    //     title: '6 Day Trip from Bangalore | Madurai, Rameshwaram, Kanyakumari, Kovalam & Trivandrum',
+    //     title: '6 Day Trip from Bangalore | Madurai, Rameswaram, Kanyakumari, Kovalam & Trivandrum',
     //     image: "/assets/rameswaram/sm5.webp",
     //     heroImage: "/assets/rameswaram/three.webp",
     //     overview: {
     //         duration: '5 Nights / 6 Days',
-    //         destination: 'Madurai, Rameshwaram, Kanyakumari, Kovalam, Trivandrum',
+    //         destination: 'Madurai, Rameswaram, Kanyakumari, Kovalam, Trivandrum',
     //         activities: 'Sightseeing',
     //         themes: 'Religious & Pilgrimage, Culture & Heritage'
     //     },
@@ -27854,12 +27854,12 @@ export const packagesDatabase: Record<string, any> = {
     //         },
     //         {
     //             day: 'Day 2',
-    //             title: 'Start at 9 AM - Madurai to Rameshwaram and Rameshwaram sightseeing',
+    //             title: 'Start at 9 AM - Madurai to Rameswaram and Rameswaram sightseeing',
     //             description: 'Ramanathaswamy temple, Agniteertham, Pamban bridge, Panchmukhi hanuman mandir, Dhanushkodi.'
     //         },
     //         {
     //             day: 'Day 3',
-    //             title: 'Start at 9 AM - Rameshwaram to Kanyakumari and Kanyakumari sightseeing',
+    //             title: 'Start at 9 AM - Rameswaram to Kanyakumari and Kanyakumari sightseeing',
     //             description: 'Vivekananda rock memorial, Kanyakumari beach, Sunset Point, Thiruvalluvar statue.'
     //         },
     //         {
@@ -27900,10 +27900,10 @@ export const packagesDatabase: Record<string, any> = {
     // },
     // '44': {
     //     id: '44',
-    //     title: '4 Day Trip from Bangalore| Madurai, Rameshwaram & Kanyakumari',
+    //     title: '4 Day Trip from Bangalore| Madurai, Rameswaram & Kanyakumari',
     //     image: "/assets/rameswaram/sm1.webp",
     //     heroImage: "/assets/rameswaram/big.webp",
-    //     overview: { duration: '3 Nights / 4 Days', destination: 'Madurai, Rameshwaram, Kanyakumari', activities: 'Sightseeing', themes: 'Religious & Pilgrimage', transport: 'Private Cab' },
+    //     overview: { duration: '3 Nights / 4 Days', destination: 'Madurai, Rameswaram, Kanyakumari', activities: 'Sightseeing', themes: 'Religious & Pilgrimage', transport: 'Private Cab' },
     //     priceDetails: { label: 'Starts @', amount: 'Rs. 12700/-', status: 'On Request' },
     //     itinerary: [
     //         {
@@ -27913,12 +27913,12 @@ export const packagesDatabase: Record<string, any> = {
     //         },
     //         {
     //             day: 'Day 2',
-    //             title: 'Start at 9 AM - Madurai to Rameshwaram and Rameshwaram sightseeing',
+    //             title: 'Start at 9 AM - Madurai to Rameswaram and Rameswaram sightseeing',
     //             description: 'Ramanathaswamy temple, Agniteertham, Pamban bridge, Panchmukhi hanuman mandir, Dhanushkodi.'
     //         },
     //         {
     //             day: 'Day 3',
-    //             title: 'Start at 9 AM - Rameshwaram to Kanyakumari and Kanyakumari sightseeing',
+    //             title: 'Start at 9 AM - Rameswaram to Kanyakumari and Kanyakumari sightseeing',
     //             description: 'Vivekananda rock memorial, Kanyakumari beach, Sunset Point, Tsunami monument, Thiruvalluvar statue.'
     //         },
     //         {
@@ -27949,48 +27949,48 @@ export const packagesDatabase: Record<string, any> = {
     // },
     // '45': {
     //     id: '45',
-    //     title: '9 Days Trip from Madurai | Madurai, Trichy, Thanjavur, Kumbakonam, Rameshwaram, Kanyakumari, Kovalam & Trivandrum',
+    //     title: '9 Days Trip from Madurai | Madurai, Trichy, Thanjavur, Kumbakonam, Rameswaram, Kanyakumari, Kovalam & Trivandrum',
     //     image: "/assets/rameswaram/sm4.webp",
     //     heroImage: "/assets/rameswaram/big5.webp",
-    //     overview: { duration: '8 Nights / 9 Days', destination: 'Madurai, Trichy, Thanjavur, Kumbakonam, Rameshwaram, Kanyakumari, Kovalam, Trivandrum', activities: 'Sightseeing', themes: 'Religious & Pilgrimage, Culture & Heritage' },
+    //     overview: { duration: '8 Nights / 9 Days', destination: 'Madurai, Trichy, Thanjavur, Kumbakonam, Rameswaram, Kanyakumari, Kovalam, Trivandrum', activities: 'Sightseeing', themes: 'Religious & Pilgrimage, Culture & Heritage' },
     //     priceDetails: { label: 'Starts @', amount: 'Rs. 34495/-', status: 'On Request' },
     //     itinerary: [{ day: 'Day 1', title: 'Arrival', description: 'Arrival and transfer to hotel.' }, { day: 'Day 2-9', title: 'Sightseeing', description: 'Guided tours as per itinerary.' }],
     //     inclusions: ['Hotel', 'Transportation by A/C Bus/Cab.', 'Buffet Breakfast', 'All sightseeing as per the itinerary.'],
     //     exclusions: ['Personal Expenses'],
     //     policies: { payment: '20% Advance Percentage', cancellation: 'Standard cancellation applies.' }
     // },
-    '3001': {
-        id: '3001',
-        title: 'Chennai Local Sightseeing Tour Package | Best City Highlights',
-        image: "/assets/chennai/chennai1(small).webp",
-        heroImage: "/assets/chennai/chennai1.webp",
-        overview: {
-            duration: '1 Day',
-            destination: 'Chennai',
-            activities: 'Marina Beach, Kapaleeshwarar Temple, San Thome Basilica, Fort St. George, Government Museum',
-            themes: 'Local Sightseeing, City Highlights, Culture & Heritage'
-        },
-        priceDetails: { label: 'Starts @', amount: 'Rs. 1999/-', status: 'On Request' },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Chennai City Sightseeing',
-                description: '09:00 AM - Pickup from Chennai Airport, Railway Station, Hotel, or Bus Stand. Proceed to visit the historic Fort St. George and Government Museum. Afternoon visit to the ancient Kapaleeshwarar Temple in Mylapore and San Thome Basilica. In the evening, enjoy a relaxing stroll at the famous Marina Beach. Drop back at your location by 08:00 PM.'
-            }
-        ],
-        inclusions: [
-            'Pickup & Drop from Chennai location',
-            'Private AC Cab/Sedan for sightseeing',
-            'Toll, Parking, and Driver allowance',
-            'All Taxes included'
-        ],
-        exclusions: [
-            'Food & Beverages',
-            'Monument entrance tickets & camera fees',
-            'Anything not mentioned in inclusions'
-        ],
-        policies: { payment: 'No Down Payment, No Cost EMI on 3/6 months tenure available.', cancellation: 'Standard cancellation applies.' }
-    },
+    // '3001': {
+    //     id: '3001',
+    //     title: 'Chennai Local Sightseeing Tour Package | Best City Highlights',
+    //     image: "/assets/chennai/chennai1(small).webp",
+    //     heroImage: "/assets/chennai/chennai1.webp",
+    //     overview: {
+    //         duration: '1 Day',
+    //         destination: 'Chennai',
+    //         activities: 'Marina Beach, Kapaleeshwarar Temple, San Thome Basilica, Fort St. George, Government Museum',
+    //         themes: 'Local Sightseeing, City Highlights, Culture & Heritage'
+    //     },
+    //     priceDetails: { label: 'Starts @', amount: 'Rs. 1999/-', status: 'On Request' },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Chennai City Sightseeing',
+    //             description: '09:00 AM - Pickup from Chennai Airport, Railway Station, Hotel, or Bus Stand. Proceed to visit the historic Fort St. George and Government Museum. Afternoon visit to the ancient Kapaleeshwarar Temple in Mylapore and San Thome Basilica. In the evening, enjoy a relaxing stroll at the famous Marina Beach. Drop back at your location by 08:00 PM.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Pickup & Drop from Chennai location',
+    //         'Private AC Cab/Sedan for sightseeing',
+    //         'Toll, Parking, and Driver allowance',
+    //         'All Taxes included'
+    //     ],
+    //     exclusions: [
+    //         'Food & Beverages',
+    //         'Monument entrance tickets & camera fees',
+    //         'Anything not mentioned in inclusions'
+    //     ],
+    //     policies: { payment: 'No Down Payment, No Cost EMI on 3/6 months tenure available.', cancellation: 'Standard cancellation applies.' }
+    // },
     '3002': {
         id: '3002',
         title: 'Chennai to Pondicherry Tour Package | Weekend Getaway',
@@ -28078,12 +28078,12 @@ export const packagesDatabase: Record<string, any> = {
     },
     '3004': {
         id: '3004',
-        title: 'Chennai to Rameshwaram & Kanyakumari Pilgrimage & Leisure Tour',
+        title: 'Chennai to Rameswaram & Kanyakumari Pilgrimage & Leisure Tour',
         image: "/assets/chennai/chennai3(small).webp",
         heroImage: "/assets/chennai/chennai3.webp",
         overview: {
             duration: '4 Days / 3 Nights',
-            destination: 'Rameshwaram, Kanyakumari',
+            destination: 'Rameswaram, Kanyakumari',
             activities: 'Ramanathaswamy Temple, Dhanushkodi beach, Vivekananda Rock, Thiruvalluvar Statue',
             themes: 'Religious Pilgrimage, Coastal & Beach, Culture & Heritage'
         },
@@ -28091,12 +28091,12 @@ export const packagesDatabase: Record<string, any> = {
         itinerary: [
             {
                 day: 'Day 1',
-                title: 'Chennai to Rameshwaram Arrival',
-                description: 'Pickup from Chennai and drive/train to Rameshwaram. Arrive, check in to hotel. Visit Pamban Bridge and evening Ramanathaswamy Temple visit.'
+                title: 'Chennai to Rameswaram Arrival',
+                description: 'Pickup from Chennai and drive/train to Rameswaram. Arrive, check in to hotel. Visit Pamban Bridge and evening Ramanathaswamy Temple visit.'
             },
             {
                 day: 'Day 2',
-                title: 'Dhanushkodi & Rameshwaram to Kanyakumari',
+                title: 'Dhanushkodi & Rameswaram to Kanyakumari',
                 description: 'Early morning holy bath at Agniteertham and temple darshan. After breakfast, visit Dhanushkodi Ghost Town. Proceed to Kanyakumari. Arrive and check in at hotel. Witness the gorgeous sunset.'
             },
             {
@@ -28112,7 +28112,7 @@ export const packagesDatabase: Record<string, any> = {
         ],
         inclusions: [
             'AC Sedan/SUV for the entire trip',
-            '1 Night hotel in Rameshwaram + 2 Nights hotel in Kanyakumari with breakfast',
+            '1 Night hotel in Rameswaram + 2 Nights hotel in Kanyakumari with breakfast',
             'All tolls, parking, driver allowance, and entry permit charges'
         ],
         exclusions: [
@@ -34290,9 +34290,9 @@ export const getPackageCategory = (pkg: any) => {
         return { name: 'Ayodhya Tours', slug: 'ayodhya-tours' };
     }
 
-    // Rameshwaram Tours
-    if (titleLower.includes('rameshwaram') || destLower.includes('rameshwaram') || idNum === 42) {
-        return { name: 'Rameshwaram Tours', slug: 'rameshwaram-tours' };
+    // Rameswaram Tours
+    if (titleLower.includes('rameswaram') || destLower.includes('rameswaram') || idNum === 42) {
+        return { name: 'Rameswaram Tours', slug: 'rameswaram-tours' };
     }
 
     // Kanyakumari Tours
@@ -34407,7 +34407,7 @@ const PackageDetails = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30 z-10" />
                 <img loading="lazy"
                     src={(pkg as any).heroImage || pkg.image}
-                    alt={pkg.title}
+                    alt={`${pkg.title} tour package - Logaa Holidays`}
                     className="absolute inset-0 w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 z-20 flex flex-col justify-end pb-12 px-6 max-w-7xl mx-auto">

@@ -33,7 +33,14 @@ const WaveDividerBottom = ({ className = '', fill = '#072a33' }) => (
     </div>
 );
 
+import { useSEO } from '../hooks/useSEO';
+
 export function Contact() {
+    useSEO(
+        'Contact Us | Logaa Holidays - Reach Our Madurai Office',
+        'Get in touch with Logaa Holidays for customized tour packages, flight bookings, and travel inquiries. Call or visit our travel agency in Madurai.',
+        'Contact Logaa Holidays, Travel Agency in Madurai Contact, Madurai Tour Operator Phone Number, Book Tour Packages'
+    );
     const [formData, setFormData] = useState({
         name: '', email: '', phone: '', subject: '', message: ''
     });
@@ -62,7 +69,7 @@ export function Contact() {
                 <div className="absolute inset-0">
                     <img loading="lazy"
                         src='/assets/kerala1.webp'
-                        alt="Travel Above Clouds"
+                        alt="Contact Logaa Holidays - Tour Operator and Travel Agency in Madurai"
                         className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-blue-ocean)] via-[var(--color-blue-ocean)]/60 to-[var(--color-neutral-black)]/30" />
@@ -329,7 +336,7 @@ export function Contact() {
                                 </div>
                                 <div>
                                     <p className="text-white font-bold text-sm">Call Us</p>
-                                    <p className="text-white/70 text-sm cursor-pointer hover:text-white transition-colors">+91 7397329776</p>
+                                    <a href="tel:+917397329776" className="text-white/70 text-sm cursor-pointer hover:text-white transition-colors block mt-1">+91 73973 29776</a>
                                 </div>
                             </div>
 
@@ -339,7 +346,7 @@ export function Contact() {
                                 </div>
                                 <div>
                                     <p className="text-white font-bold text-sm">Email</p>
-                                    <p className="text-white/70 text-sm break-all">Logaaholidays@gmail.com</p>
+                                    <a href="mailto:logaaholidays@gmail.com" className="text-white/70 text-sm break-all hover:text-white transition-colors block mt-1">logaaholidays@gmail.com</a>
                                 </div>
                             </div>
 
@@ -350,7 +357,7 @@ export function Contact() {
                                         <a href="https://www.instagram.com/logaaholidays/" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#dc2743] hover:to-[#bc1888] hover:border-transparent hover:scale-110 transition-all group shadow-sm">
                                             <InstagramIcon className="w-4 h-4 text-white" />
                                         </a>
-                                        <a href="https://www.facebook.com/logaaholidays1/#" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#1877F2] hover:border-[#1877F2] hover:scale-110 transition-all group shadow-sm">
+                                        <a href="https://www.facebook.com/logaaholidays" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#1877F2] hover:border-[#1877F2] hover:scale-110 transition-all group shadow-sm">
                                             <FacebookIcon className="w-4 h-4 text-white" />
                                         </a>
                                     </div>
@@ -375,16 +382,120 @@ export function Contact() {
                     </div>
                 </div>
 
-                {/* Full-width Map Section */}
+                {/* ── Our Location Section ── */}
                 <div className="max-w-6xl mx-auto px-6 mt-16">
-                    <div className="w-full h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl border border-white/10">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.237317385449!2d78.1025417!3d9.9141826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00cf2ea02ad1df%3A0xe40514c1f3d68740!2sLogaa%20Holidays!5e0!3m2!1sen!2sin!4v1786538878701!5m2!1sen!2sin" 
-                            className="w-full h-full border-0" 
-                            allowFullScreen={true} 
-                            loading="lazy" 
-                            referrerPolicy="no-referrer-when-downgrade"
-                        ></iframe>
+                    <div className="flex items-center gap-3 mb-8">
+                        <div className="w-9 h-9 rounded-full bg-[var(--color-primary-emerald)] flex items-center justify-center flex-shrink-0">
+                            <MapPin className="w-4 h-4 text-white" />
+                        </div>
+                        <h2 className="text-2xl font-bold text-white tracking-wide uppercase">Our Location</h2>
+                    </div>
+
+                    <div className="grid lg:grid-cols-5 gap-6">
+
+                        {/* Left – Map */}
+                        <div className="lg:col-span-3 w-full rounded-3xl overflow-hidden shadow-2xl border border-white/10 min-h-[320px] sm:min-h-[400px]">
+                            <iframe
+                                title="Logaa Holidays Office Location"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.237317385449!2d78.1025417!3d9.9141826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00cf2ea02ad1df%3A0xe40514c1f3d68740!2sLogaa%20Holidays!5e0!3m2!1sen!2sin!4v1786538878701!5m2!1sen!2sin"
+                                className="w-full h-full border-0 min-h-[320px] sm:min-h-[400px]"
+                                allowFullScreen={true}
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                                aria-label="Google Map showing Logaa Holidays office at Ellis Nagar, Madurai"
+                            ></iframe>
+                        </div>
+
+                        {/* Right – Office Details */}
+                        <div className="lg:col-span-2 flex flex-col gap-5">
+
+                            {/* NAP Card – structured for local SEO */}
+                            <div
+                                className="bg-white/8 backdrop-blur-md rounded-3xl p-6 border border-white/10 flex flex-col gap-1"
+                                itemScope
+                                itemType="https://schema.org/LocalBusiness"
+                            >
+                                <meta itemProp="name" content="Logaa Holidays" />
+                                <meta itemProp="telephone" content="+917397329776" />
+                                <meta itemProp="email" content="logaaholidays@gmail.com" />
+                                <div itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
+                                    <meta itemProp="streetAddress" content="T247, Sector T Type, Housing Board, Ellis Nagar" />
+                                    <meta itemProp="addressLocality" content="Madurai" />
+                                    <meta itemProp="addressRegion" content="Tamil Nadu" />
+                                    <meta itemProp="postalCode" content="625016" />
+                                    <meta itemProp="addressCountry" content="IN" />
+                                </div>
+
+                                <p className="text-white text-xs font-bold uppercase tracking-widest mb-1">Registered Office</p>
+                                <p className="text-white font-bold text-lg leading-snug mb-1">Logaa Holidays</p>
+                                <p className="text-white/90 text-sm leading-relaxed">
+                                    T247, Sector T Type, Housing Board,<br />
+                                    Ellis Nagar, Madurai,<br />
+                                    Tamil Nadu – 625016
+                                </p>
+
+                                <div className="mt-3 pt-3 border-t border-white/10 flex flex-col gap-1.5 text-sm">
+                                    <div className="flex items-center gap-2 text-white/90">
+                                        <span className="text-white font-bold text-xs w-14 flex-shrink-0">Mon–Sat</span>
+                                        <span>9:00 AM – 9:00 PM</span>
+                                    </div>
+                                    <div className="flex items-center gap-2 text-white/90">
+                                        <span className="text-white font-bold text-xs w-14 flex-shrink-0">Sunday</span>
+                                        <span>10:00 AM – 8:00 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Action Buttons */}
+                            <div className="grid grid-cols-2 gap-3">
+                                <a
+                                    href="https://maps.app.goo.gl/YF4kRXWaSmTd69Gu9"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center justify-center gap-2 bg-white/10 border border-white/20 text-white px-4 py-3 rounded-2xl text-sm font-semibold hover:bg-white hover:text-[var(--color-primary-forest)] transition-all"
+                                    aria-label="Open Logaa Holidays in Google Maps"
+                                >
+                                    <MapPin className="w-4 h-4 flex-shrink-0" />
+                                    Open in Maps
+                                </a>
+                                <a
+                                    href="https://www.google.com/maps/dir/?api=1&destination=Logaa+Holidays,+Ellis+Nagar,+Madurai,+Tamil+Nadu+625016"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center justify-center gap-2 bg-white/10 border border-white/20 text-white px-4 py-3 rounded-2xl text-sm font-semibold hover:bg-white hover:text-[var(--color-primary-forest)] transition-all"
+                                    aria-label="Get directions to Logaa Holidays"
+                                >
+                                    <Compass className="w-4 h-4 flex-shrink-0" />
+                                    Get Directions
+                                </a>
+                                <a
+                                    href="tel:+917397329776"
+                                    className="flex items-center justify-center gap-2 bg-white/10 border border-white/20 text-white px-4 py-3 rounded-2xl text-sm font-semibold hover:bg-white hover:text-[var(--color-primary-forest)] transition-all"
+                                    aria-label="Call Logaa Holidays"
+                                >
+                                    <Phone className="w-4 h-4 flex-shrink-0" />
+                                    +91 73973 29776
+                                </a>
+                                <a
+                                    href="https://wa.me/917397329776"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center justify-center gap-2 bg-[#25D366]/20 border border-[#25D366]/40 text-white px-4 py-3 rounded-2xl text-sm font-semibold hover:bg-[#25D366] hover:border-[#25D366] transition-all"
+                                    aria-label="WhatsApp Logaa Holidays"
+                                >
+                                    <svg className="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                    WhatsApp
+                                </a>
+                                <a
+                                    href="mailto:logaaholidays@gmail.com"
+                                    className="col-span-2 flex items-center justify-center gap-2 bg-white/10 border border-white/20 text-white px-4 py-3 rounded-2xl text-sm font-semibold hover:bg-white hover:text-[var(--color-primary-forest)] transition-all"
+                                    aria-label="Email Logaa Holidays"
+                                >
+                                    <Mail className="w-4 h-4 flex-shrink-0" />
+                                    logaaholidays@gmail.com
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

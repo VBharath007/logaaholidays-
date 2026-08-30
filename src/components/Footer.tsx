@@ -1,181 +1,184 @@
-import { MapPin, Phone, ChevronRight, Briefcase, Map, HeadphonesIcon, Heart } from 'lucide-react';
+import { useState } from 'react';
+import { MapPin, Phone, ChevronRight, Mail, Compass, Heart } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const columns = [
-  {
-    title: 'DESTINATIONS',
-    links: [
-      { label: 'Tamil Nadu', href: '/destination/tamilnadu/tamilnadu-tourism' },
-      { label: 'Kerala', href: '/destination/kerala/kerala-tourism' },
-      { label: 'Karnataka', href: '/destination/karnataka-tour-packages' },
-      { label: 'North India', href: '/north-india-tour-packages' },
-    ]
-  },
-  {
-    title: 'COMPANY',
-    links: [
-      { label: 'About Us', href: '/about-us' },
-      { label: 'Testimonials', href: '/testimonials' },
-      { label: 'Contact Us', href: '/contact-us' }
-    ]
-  },
-  {
-    title: 'SUPPORT',
-    links: [
-      { label: 'Car & Coach Rental', href: '/services/car-coach-rental' },
-      { label: 'Flight Booking', href: '/services/flight-booking' },
-      { label: 'Railway Ticket Booking', href: '/services/railway-ticket-booking' },
-      { label: 'Passport & Visa Service', href: '/services/passport-visa-service' },
-      { label: 'Travel Insurance Service', href: '/services/travel-insurance-service' },
-    ]
-  },
-];
+const FacebookIcon = ({ className }: { className?: string }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+  </svg>
+);
+
+const InstagramIcon = ({ className }: { className?: string }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+  </svg>
+);
+
+const WhatsAppIcon = ({ className }: { className?: string }) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884" />
+  </svg>
+);
 
 export function Footer() {
+  const [isIntlOpen, setIsIntlOpen] = useState(false);
+  const [isSupportOpen, setIsSupportOpen] = useState(false);
+
   return (
-    <footer className="w-full relative bg-[#F8F6F0] overflow-hidden pt-12 border-t border-[#EFECE3]">
+    <footer className="w-full relative bg-[#0B2515] text-white/80 pt-20 pb-8 overflow-hidden font-body">
+      
+      {/* Background Pattern - very subtle to ensure text visibility */}
+      <div className="absolute top-0 right-0 w-96 h-96 opacity-[0.02] bg-[url('/assets/mandala.png')] bg-contain bg-no-repeat rotate-45 pointer-events-none"></div>
 
-      {/* Background Image with Opacity */}
-      <img src="/assets/footerbg.png" alt="" className="absolute inset-0 w-full h-[80%] object-cover opacity-20 pointer-events-none z-0" />
-
-      {/* Top Section */}
-      <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 relative z-10 pb-16">
-
-        {/* Left: Logo & Info */}
-        <div className="flex flex-col items-center md:items-start text-center md:text-left z-20">
-          <img loading="lazy" src="/logo.png" alt="Logaa Holidays" className="h-16 w-auto mb-4" style={{ filter: 'brightness(0) saturate(100%) invert(29%) sepia(21%) saturate(2335%) hue-rotate(101deg) brightness(97%) contrast(93%)' }} />
-
-          <h3 className="font-display italic text-3xl text-black mb-4" style={{ textShadow: '0 0 10px white, 0 0 20px white' }}>Where Journey Begins</h3>
-
-          <div className="w-full h-[2px] bg-[#1F6F43]/20 my-2 mb-4"></div>
-
-          <p className="text-black text-[15px] font-bold leading-relaxed mb-6" style={{ textShadow: '0 0 8px white, 0 0 12px white' }}>
-           Your trusted partner for seamless tours, travels, and unforgettable experiences.
+      <div className="max-w-7xl mx-auto px-6 relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+        
+        {/* 1. Company Information */}
+        <div className="flex flex-col gap-6">
+          <img src="/logo.png" alt="Logaa Holidays Logo - Trusted Travel Agency and Tour Operator in Madurai" className="w-44 brightness-0 invert" />
+          <p className="text-sm leading-relaxed text-white/70 pr-4">
+            Logaa Holidays is your trusted travel partner, specializing in curated tours and unforgettable experiences across India and beyond.
           </p>
-
-          {/* <div className="bg-[#EFECE3] border border-[#E0DCD0] rounded-2xl px-5 py-4 flex items-center gap-4 w-full">
-            <div className="w-10 h-10 rounded-full bg-[#1F6F43]/10 flex items-center justify-center shrink-0">
-              <MapPin className="text-[#1F6F43] w-5 h-5" />
+          <div className="flex flex-col gap-4 text-sm mt-2">
+            <div className="flex items-start gap-3">
+              <MapPin className="w-5 h-5 text-[#48c9b0] shrink-0 mt-0.5" />
+              <span className="text-white/90">Logaa Holidays<br />T247, Sector T Type, Housing Board,<br />Ellis Nagar, Madurai, TN – 625016</span>
             </div>
-            <p className="text-[15px] font-extrabold text-black leading-snug">
-              Proudly based in Madurai, <br />
-              <span className="text-[#1F6F43] font-medium">The Temple City.</span>
-            </p>
-          </div> */}
+            <div className="flex items-center gap-3">
+              <Phone className="w-5 h-5 text-[#48c9b0] shrink-0" />
+              <a href="tel:+917397329776" className="text-white/90 hover:text-[#48c9b0] transition-colors">+91 73973 29776</a>
+            </div>
+            <div className="flex items-center gap-3">
+              <WhatsAppIcon className="w-5 h-5 text-[#25D366] shrink-0" />
+              <a href="https://wa.me/917397329776" target="_blank" rel="noopener noreferrer" className="text-white/90 hover:text-[#25D366] transition-colors">WhatsApp Us</a>
+            </div>
+            <div className="flex items-center gap-3">
+              <Mail className="w-5 h-5 text-[#48c9b0] shrink-0" />
+              <a href="mailto:logaaholidays@gmail.com" className="text-white/90 hover:text-[#48c9b0] transition-colors">logaaholidays@gmail.com</a>
+            </div>
+          </div>
+          <div className="flex items-center gap-4 mt-2">
+            <a href="https://www.instagram.com/logaaholidays/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#dc2743] hover:to-[#bc1888] hover:border-transparent hover:text-white transition-all shadow-sm">
+              <InstagramIcon className="w-4 h-4" />
+            </a>
+            <a href="https://www.facebook.com/logaaholidays" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#1877F2] hover:border-[#1877F2] hover:text-white transition-all shadow-sm">
+              <FacebookIcon className="w-4 h-4" />
+            </a>
+          </div>
         </div>
 
-        {/* Links */}
-        {columns.map((col, idx) => (
-          <div key={idx} className="flex flex-col items-center md:items-start text-center md:text-left md:pl-4 lg:pl-8">
-            <h4 className="text-[15px] font-extrabold text-black mb-4 uppercase tracking-widest" style={{ textShadow: '0 0 8px white' }}>{col.title}</h4>
-            <div className="w-8 h-0.5 bg-[#1F6F43] mb-4 opacity-60"></div>
-            <ul className="flex flex-col items-center md:items-start gap-3 w-full">
-              {col.links.map((link, i) => (
-                <li key={i} className="w-full">
-                  <Link to={link.href} className="group flex items-center justify-center md:justify-start gap-3 text-black font-bold hover:text-[#1F6F43] transition-colors text-base" style={{ textShadow: '0 0 8px white, 0 0 12px white' }}>
-                    <ChevronRight className="w-3 h-3 text-[#1F6F43] hidden md:block" />
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+        {/* 2. Tour Packages / Destinations */}
+        <div>
+          <h4 className="text-white font-bold text-lg mb-6 uppercase tracking-wider">Destinations</h4>
+          <ul className="flex flex-col gap-3">
+            <li><Link to="/south-india-tour-packages" className="flex items-center gap-2 text-white/70 hover:text-[#48c9b0] hover:translate-x-1 transition-all"><ChevronRight className="w-4 h-4 text-[#48c9b0]" /> South India</Link></li>
+            <li><Link to="/north-india-tour-packages" className="flex items-center gap-2 text-white/70 hover:text-[#48c9b0] hover:translate-x-1 transition-all"><ChevronRight className="w-4 h-4 text-[#48c9b0]" /> North India</Link></li>
+            <li><Link to="/tour-category/honeymoon" className="flex items-center gap-2 text-white/70 hover:text-[#48c9b0] hover:translate-x-1 transition-all"><ChevronRight className="w-4 h-4 text-[#48c9b0]" /> Honeymoon Packages</Link></li>
+           
+            {/* International Packages Submenu */}
+            <li className="flex flex-col">
+              <button 
+                onClick={() => setIsIntlOpen(!isIntlOpen)} 
+                className="flex items-center gap-2 text-white/70 hover:text-[#48c9b0] hover:translate-x-1 transition-all w-full text-left"
+              >
+                <ChevronRight className={`w-4 h-4 text-[#48c9b0] transition-transform duration-300 ${isIntlOpen ? 'rotate-90' : ''}`} /> 
+                International Packages
+              </button>
+              
+              <div className={`overflow-hidden transition-all duration-300 ease-in-out ${isIntlOpen ? 'max-h-64 opacity-100 mt-2' : 'max-h-0 opacity-0'}`}>
+                <ul className="flex flex-col gap-2 pl-6 border-l border-white/10 ml-2">
+                  <li><Link to="/destination/international/malaysia-tourism" className="flex items-center text-white/50 hover:text-[#48c9b0] hover:translate-x-1 transition-all text-sm py-1">Malaysia</Link></li>
+                  <li><Link to="/destination/international/singapore-tourism" className="flex items-center text-white/50 hover:text-[#48c9b0] hover:translate-x-1 transition-all text-sm py-1">Singapore</Link></li>
+                  <li><Link to="/destination/international/bali-tourism" className="flex items-center text-white/50 hover:text-[#48c9b0] hover:translate-x-1 transition-all text-sm py-1">Bali</Link></li>
+                  <li><Link to="/destination/international/thailand-tourism" className="flex items-center text-white/50 hover:text-[#48c9b0] hover:translate-x-1 transition-all text-sm py-1">Thailand</Link></li>
+                  <li><Link to="/destination/international/sri-lanka-tourism" className="flex items-center text-white/50 hover:text-[#48c9b0] hover:translate-x-1 transition-all text-sm py-1">Sri Lanka</Link></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        {/* 3. Useful Links */}
+        <div>
+          <h4 className="text-white font-bold text-lg mb-6 uppercase tracking-wider">Useful Links</h4>
+          <ul className="flex flex-col gap-3">
+            {/* Support Submenu */}
+           
+            <li><Link to="/about-us" className="flex items-center gap-2 text-white/70 hover:text-[#48c9b0] hover:translate-x-1 transition-all"><ChevronRight className="w-4 h-4 text-[#48c9b0]" /> About Us</Link></li>
+            <li><Link to="/contact-us" className="flex items-center gap-2 text-white/70 hover:text-[#48c9b0] hover:translate-x-1 transition-all"><ChevronRight className="w-4 h-4 text-[#48c9b0]" /> Contact Us</Link></li>
+            <li><Link to="/testimonials" className="flex items-center gap-2 text-white/70 hover:text-[#48c9b0] hover:translate-x-1 transition-all"><ChevronRight className="w-4 h-4 text-[#48c9b0]" /> Testimonials</Link></li>
+             <li className="flex flex-col">
+              <button 
+                onClick={() => setIsSupportOpen(!isSupportOpen)} 
+                className="flex items-center gap-2 text-white/70 hover:text-[#48c9b0] hover:translate-x-1 transition-all w-full text-left"
+              >
+                <ChevronRight className={`w-4 h-4 text-[#48c9b0] transition-transform duration-300 ${isSupportOpen ? 'rotate-90' : ''}`} /> 
+                Support
+              </button>
+              
+              <div className={`overflow-hidden transition-all duration-300 ease-in-out ${isSupportOpen ? 'max-h-64 opacity-100 mt-2' : 'max-h-0 opacity-0'}`}>
+                <ul className="flex flex-col gap-2 pl-6 border-l border-white/10 ml-2">
+                  <li><Link to="/services/car-coach-rental" className="flex items-center text-white/50 hover:text-[#48c9b0] hover:translate-x-1 transition-all text-sm py-1">Car & Coach Rental</Link></li>
+                  <li><Link to="/services/flight-booking" className="flex items-center text-white/50 hover:text-[#48c9b0] hover:translate-x-1 transition-all text-sm py-1">Flight Booking</Link></li>
+                  <li><Link to="/services/railway-ticket-booking" className="flex items-center text-white/50 hover:text-[#48c9b0] hover:translate-x-1 transition-all text-sm py-1">Railway Ticket Booking</Link></li>
+                  <li><Link to="/services/passport-visa-service" className="flex items-center text-white/50 hover:text-[#48c9b0] hover:translate-x-1 transition-all text-sm py-1">Passport & Visa</Link></li>
+                  <li><Link to="/services/travel-insurance-service" className="flex items-center text-white/50 hover:text-[#48c9b0] hover:translate-x-1 transition-all text-sm py-1">Travel Insurance</Link></li>
+                </ul>
+              </div>
+            </li>
+            
+            <li><Link to="/privacy-policy" className="flex items-center gap-2 text-white/70 hover:text-[#48c9b0] hover:translate-x-1 transition-all"><ChevronRight className="w-4 h-4 text-[#48c9b0]" /> Privacy Policy</Link></li>
+            <li><Link to="/terms-and-conditions" className="flex items-center gap-2 text-white/70 hover:text-[#48c9b0] hover:translate-x-1 transition-all"><ChevronRight className="w-4 h-4 text-[#48c9b0]" /> Terms & Conditions</Link></li>
+            <li><Link to="/cancellation-policy" className="flex items-center gap-2 text-white/70 hover:text-[#48c9b0] hover:translate-x-1 transition-all"><ChevronRight className="w-4 h-4 text-[#48c9b0]" /> Cancellation Policy</Link></li>
+          </ul>
+        </div>
+
+        {/* 4. Our Location */}
+        <div className="flex flex-col gap-4">
+          <h4 className="text-white font-bold text-lg mb-2 uppercase tracking-wider">Our Location</h4>
+          <div className="w-full h-48 rounded-2xl overflow-hidden border border-white/10 shadow-lg">
+            <iframe
+              title="Logaa Holidays Footer Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.237317385449!2d78.1025417!3d9.9141826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00cf2ea02ad1df%3A0xe40514c1f3d68740!2sLogaa%20Holidays!5e0!3m2!1sen!2sin!4v1786538878701!5m2!1sen!2sin"
+              className="w-full h-full border-0 bg-white/5"
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
-        ))}
+          <div className="grid grid-cols-2 gap-3 mt-2">
+            <a
+              href="https://maps.app.goo.gl/YF4kRXWaSmTd69Gu9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 bg-white/5 border border-white/10 hover:bg-white hover:text-black text-white text-xs font-bold py-3 rounded-xl transition-all"
+            >
+              <MapPin className="w-3.5 h-3.5 shrink-0" /> Open Map
+            </a>
+            <a
+              href="https://www.google.com/maps/dir/?api=1&destination=Logaa+Holidays,+Ellis+Nagar,+Madurai,+Tamil+Nadu+625016"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 bg-white/5 border border-white/10 hover:bg-white hover:text-black text-white text-xs font-bold py-3 rounded-xl transition-all"
+            >
+              <Compass className="w-3.5 h-3.5 shrink-0" /> Directions
+            </a>
+          </div>
+        </div>
 
       </div>
 
-      {/* Overlapping Feature Card (Crystal Clear Glassmorphism) */}
-      <div className="relative z-30 max-w-5xl mx-auto px-6 -mb-6">
-        <div className="bg-white/5 rounded-[2rem] shadow-[0_8px_32px_rgba(0,0,0,0.05)] border border-white/30 p-4 flex flex-col lg:flex-row divide-y lg:divide-y-0 lg:divide-x divide-black/5 backdrop-blur-sm">
-
-          <div className="flex-1 flex items-center gap-4 p-3 lg:px-6">
-            <div className="w-12 h-12 rounded-xl bg-transparent border-2 border-[#1F6F43] text-[#1F6F43] flex items-center justify-center shrink-0">
-              <Briefcase className="w-5 h-5" />
-            </div>
-            <div>
-              <h5 className="font-extrabold text-[15px] text-[#333] mb-1.5 tracking-wide uppercase">LOCAL EXPERTISE</h5>
-              <p className="text-sm text-[#666] leading-relaxed font-medium">In-depth knowledge of Madurai and beyond.</p>
-            </div>
-          </div>
-
-          <div className="flex-1 flex items-center gap-4 p-3 lg:px-6">
-            <div className="w-12 h-12 rounded-xl bg-transparent border-2 border-[#1F6F43] text-[#1F6F43] flex items-center justify-center shrink-0">
-              <Map className="w-5 h-5" />
-            </div>
-            <div>
-              <h5 className="font-extrabold text-[15px] text-[#333] mb-1.5 tracking-wide uppercase">CUSTOMIZABLE PACKAGES</h5>
-              <p className="text-sm text-[#666] leading-relaxed font-medium">Tailored packages to match your travel needs.</p>
-            </div>
-          </div>
-
-          <div className="flex-1 flex items-center gap-4 p-3 lg:px-6">
-            <div className="w-12 h-12 rounded-xl bg-transparent border-2 border-[#1F6F43] text-[#1F6F43] flex items-center justify-center shrink-0">
-              <HeadphonesIcon className="w-5 h-5" />
-            </div>
-            <div>
-              <h5 className="font-extrabold text-[15px] text-[#333] mb-1.5 tracking-wide uppercase">24/7 SUPPORT</h5>
-              <p className="text-sm text-[#666] leading-relaxed font-medium">We're here to assist you anytime, anywhere.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      {/* Bottom Dark Green Section */}
-      <div className="bg-[#0e3e23] pt-16 pb-8 px-6 relative overflow-hidden text-white mt-0">
-
-        {/* Subtle Mandala Background Patterns */}
-        <div className="absolute top-0 right-0 w-96 h-96 opacity-[0.03] bg-[url('/assets/mandala.png')] bg-contain bg-no-repeat rotate-45 pointer-events-none"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 opacity-[0.03] bg-[url('/assets/mandala.png')] bg-contain bg-no-repeat -rotate-45 pointer-events-none"></div>
-
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10 md:gap-4 relative z-10">
-
-          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-12 lg:gap-16">
-
-            {/* Call Us */}
-            <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-5 group text-center sm:text-left">
-              <div className="w-14 h-14 rounded-full border border-[#2A6544] bg-[#124b2b] flex items-center justify-center group-hover:bg-[#1F6F43] transition-colors shrink-0 shadow-inner">
-                <Phone className="w-6 h-6 text-[#88C69F] group-hover:text-white transition-colors" />
-              </div>
-              <div>
-                <p className="text-[#88C69F] text-sm mb-1 font-medium">Call Us</p>
-                <a href="tel:7397329776" className="font-bold text-2xl hover:text-white transition-colors tracking-wide">7397329776</a>
-              </div>
-            </div>
-
-            {/* Visit Us */}
-            <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-5 group text-center sm:text-left">
-              <div className="w-14 h-14 rounded-full border border-[#2A6544] bg-[#124b2b] flex items-center justify-center group-hover:bg-[#1F6F43] transition-colors shrink-0 shadow-inner">
-                <MapPin className="w-6 h-6 text-[#88C69F] group-hover:text-white transition-colors" />
-              </div>
-              <div className="max-w-[300px]">
-                <p className="text-[#88C69F] text-sm mb-1 font-medium">Visit Us</p>
-                <p className="text-sm text-white/90 leading-relaxed font-medium">T247, Sector T Type, Housing Board, Ellis Nagar, Madurai, Tamil Nadu 625016</p>
-              </div>
-            </div>
-
-          </div>
-
-          {/* Script Text */}
-          <div className="text-center md:text-right hidden lg:block">
-            <h2 className="font-display text-4xl text-[#88C69F] tracking-wide relative inline-block transform -rotate-2" style={{ fontFamily: '"Caveat", "Dancing Script", cursive' }}>
-              Let's Plan Your<br />Next Adventure!
-              <svg className="absolute -bottom-2 -left-4 w-full h-4 text-[#1F6F43] opacity-50" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 50 10 100 5" stroke="currentColor" fill="none" strokeWidth="2" /></svg>
-            </h2>
-          </div>
-
-        </div>
-
-        {/* Divider */}
-        <div className="max-w-6xl mx-auto h-px bg-[#1F6F43]/40 my-6"></div>
-
-        {/* Copyright */}
-        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 text-xs font-medium text-white/50 tracking-wide">
+      {/* Bottom Copyright Bar */}
+      <div className="max-w-7xl mx-auto px-6 mt-16 pt-6 border-t border-white/10 relative z-10">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-medium text-white/50 tracking-wide">
           <p>© {new Date().getFullYear()} Logaa Holidays. All rights reserved.</p>
-          <span className="hidden sm:inline">|</span>
-          <p className="flex items-center gap-1">Logaa Holidays – Trusted Tour & Travel Agency<Heart className="w-3 h-3 text-[#1F6F43] fill-[#1F6F43] mx-1" /> in Madurai</p>
+          <p className="flex items-center gap-1.5">
+            Logaa Holidays – Trusted Tour & Travel Agency
+            <Heart className="w-3.5 h-3.5 text-[#48c9b0] fill-[#48c9b0]" /> 
+            in Madurai
+          </p>
         </div>
-
       </div>
 
     </footer>

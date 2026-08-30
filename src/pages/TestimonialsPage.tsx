@@ -193,8 +193,16 @@ function ReviewCarousel() {
   )
 }
 
+import { useSEO } from '../hooks/useSEO'
+
 /* ─────────────────── MAIN PAGE ─────────────────── */
 export function TestimonialsPage() {
+  useSEO(
+    'Customer Reviews & Testimonials | Logaa Holidays',
+    'Read what our happy travelers say about Logaa Holidays. We provide the best travel experiences, tour packages, and customer service in Madurai.',
+    'Logaa Holidays Reviews, Travel Agency Madurai Reviews, Customer Testimonials, Madurai Tour Operator Reviews'
+  );
+
   return (
     <div className="bg-[var(--color-bg-luxury)] min-h-screen">
 
@@ -216,7 +224,7 @@ export function TestimonialsPage() {
 
       {/* 2. FEATURED TESTIMONIAL */}
       <section className="pt-10 pb-8 px-6 text-center max-w-5xl mx-auto relative z-20">
-        <h3 className="text-[var(--color-neutral-medium)] font-bold uppercase tracking-widest mb-2 relative z-20">Our Client Says!</h3>
+        <h3 className="text-[var(--color-neutral-medium)] font-bold uppercase tracking-widest mb-2 relative z-20">What Our Clients Say</h3>
         <h2 className="text-5xl md:text-7xl font-display font-bold text-[var(--color-blue-ocean)] italic tracking-wider opacity-10 relative z-20 pointer-events-none">TESTIMONIAL</h2>
 
         <div className="flex flex-col md:flex-row items-center gap-12 -mt-10 md:-mt-16 relative z-30">
@@ -261,7 +269,7 @@ export function TestimonialsPage() {
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-[var(--color-primary-teal)] rounded-full blur-[100px] opacity-10 -translate-x-1/2 translate-y-1/2"></div>
 
           <div className="relative z-10">
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">Join <span className="text-white/90 italic">1000+</span> Happy Travelers</h2>
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">Join <span className="text-white/90 italic">Our</span> Happy Travelers</h2>
             <p className="text-white/80 max-w-2xl mx-auto mb-12 text-lg">
               We have been organizing incredible journeys for over 2 years. Let us plan your next unforgettable adventure.
             </p>
@@ -273,7 +281,7 @@ export function TestimonialsPage() {
               </div>
               <div className="flex items-center justify-center gap-3 bg-white/10 backdrop-blur-sm px-6 py-4 rounded-full border border-white/20">
                 <Heart className="w-6 h-6 text-white" />
-                <span className="font-bold text-sm tracking-wider uppercase">99% Satisfaction</span>
+                <span className="font-bold text-sm tracking-wider uppercase">Customer Satisfaction</span>
               </div>
             </div>
 

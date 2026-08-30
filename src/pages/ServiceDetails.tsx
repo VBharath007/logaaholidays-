@@ -3,9 +3,17 @@ import { useParams, Link } from 'react-router-dom';
 import { ChevronRight, MapPin, Phone, Mail, Navigation, Plane, Globe2, TreePine, Heart } from 'lucide-react';
 import { ServiceEnquiryRouter } from '../components/forms/ServiceEnquiryRouter';
 
+import { useSEO } from '../hooks/useSEO';
+
 export function ServiceDetails() {
  const { serviceId } = useParams<{ serviceId: string }>();
  const [serviceTitle, setServiceTitle] = useState('');
+
+ useSEO(
+   `${serviceTitle ? serviceTitle + ' | ' : ''}Logaa Holidays - Travel Agency in Madurai`,
+   `Looking for ${serviceTitle ? serviceTitle : 'travel services'}? Logaa Holidays offers premium travel assistance, car rentals, and flight booking in Madurai.`,
+   `${serviceTitle}, Travel Agency in Madurai, Best Travel Agency in Madurai, Tour Operator in Madurai, Flight Booking Assistance in Madurai, Car Rental in Madurai, Cab Service in Madurai`
+ );
 
  const allServices = [
  'Car & Coach Rental',
@@ -114,14 +122,14 @@ export function ServiceDetails() {
  </p>
 
  <div className="flex flex-wrap items-center gap-4 mb-12">
- <button className="bg-[#0B408F] hover:bg-[#08306b] text-white font-bold py-4 px-8 rounded-full transition-all flex items-center gap-3 group">
+ <Link to="/tour-packages" className="bg-[#0B408F] hover:bg-[#08306b] text-white font-bold py-4 px-8 rounded-full transition-all flex items-center gap-3 group">
  Explore {serviceTitle.split(' ')[0]}
  <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
- </button>
- <button className="bg-transparent border-2 border-[#0B408F] text-[#0B408F] hover:bg-[#0B408F]/5 font-bold py-3.5 px-8 rounded-full transition-all flex items-center gap-3">
+ </Link>
+ <a href="https://wa.me/917397329776?text=Hi Logaa Holidays, I would like to plan a trip." target="_blank" rel="noopener noreferrer" className="bg-transparent border-2 border-[#0B408F] text-[#0B408F] hover:bg-[#0B408F]/5 font-bold py-3.5 px-8 rounded-full transition-all flex items-center gap-3">
  <MapPin className="w-5 h-5" />
  Plan Your Trip
- </button>
+ </a>
  </div>
 
  {/* Stats Info Card (Dark Blue) */}
@@ -141,13 +149,13 @@ export function ServiceDetails() {
  </div>
  <div className="flex flex-col items-center justify-center px-1">
  <MapPin className="w-6 h-6 text-white/80 mb-2" />
- <span className="text-2xl font-bold text-white mb-1">1000+</span>
+ <span className="text-2xl font-bold text-white mb-1">Top</span>
  <span className="text-[10px] md:text-xs text-white/70 uppercase tracking-wider">TOURIST DESTINATIONS</span>
  </div>
  <div className="flex flex-col items-center justify-center px-1 border-l border-white/20 md:border-none">
  <Heart className="w-6 h-6 text-white/80 mb-2" />
- <span className="text-2xl font-bold text-white mb-1">100%</span>
- <span className="text-[10px] md:text-xs text-white/70 uppercase tracking-wider leading-tight">Premium<br/>Service</span>
+ <span className="text-2xl font-bold text-white mb-1">Reliable</span>
+ <span className="text-[10px] md:text-xs text-white/70 uppercase tracking-wider leading-tight">Travel<br/>Service</span>
  </div>
  </div>
  </div>
@@ -186,10 +194,10 @@ export function ServiceDetails() {
  {/* Overlay Badge */}
  <div className="absolute bottom-6 left-6 bg-white text-[var(--color-deep-teal)] px-6 py-3 rounded-2xl font-bold flex items-center gap-3">
  <span className="flex items-center gap-1 text-[var(--color-brand-orange)]">
- ★ 5.0
+ Trusted Service
  </span>
  <span className="w-1 h-1 rounded-full bg-slate-300"></span>
- Premium Service
+ Logaa Holidays
  </div>
  </div>
 
@@ -318,7 +326,7 @@ export function ServiceDetails() {
  <div className="flex flex-col gap-6">
  {[
  { num: '01', title: 'Seamless Experience', desc: 'From booking to execution, we ensure every step is smooth and worry-free.' },
- { num: '02', title: 'Trusted Expertise', desc: 'Years of industry experience delivering premium travel and management services.' },
+ { num: '02', title: 'Trusted Expertise', desc: 'Local destination expertise delivering reliable travel and management services.' },
  { num: '03', title: 'Diverse Offerings', desc: 'A wide gamut of services tailored precisely to meet your unique needs.' }
  ].map((item, idx) => (
  <div key={idx} className="flex relative overflow-hidden rounded-xl bg-[var(--color-leaf-green)] group">
@@ -387,13 +395,17 @@ export function ServiceDetails() {
  </div>
  <div className="flex items-center gap-3">
  <Phone className="w-5 h-5 shrink-0" />
- <p className="text-sm">+91 7397329776</p>
+ <a href="tel:+917397329776" className="text-sm hover:underline">+91 73973 29776</a>
+ </div>
+ <div className="flex items-center gap-3">
+ <Mail className="w-5 h-5 shrink-0" />
+ <a href="mailto:logaaholidays@gmail.com" className="text-sm hover:underline break-all">logaaholidays@gmail.com</a>
  </div>
  </div>
 
- <button className="w-full mt-8 bg-[var(--color-deep-teal)] text-white font-bold py-3.5 rounded-xl transition-all flex items-center justify-center gap-2">
+ <Link to="/contact" className="w-full mt-8 bg-[var(--color-deep-teal)] text-white font-bold py-3.5 rounded-xl transition-all flex items-center justify-center gap-2 hover:opacity-90">
  Get in Touch
- </button>
+ </Link>
  </div>
 
  </div>

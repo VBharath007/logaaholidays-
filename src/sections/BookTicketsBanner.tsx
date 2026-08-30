@@ -42,6 +42,8 @@ export function BookTicketsBanner() {
             src="/assets/video/home page book now video.mp4"
             className="w-full h-full object-cover rounded-[2.5rem] transition-transform duration-1000 group-hover:scale-105"
             playsInline
+            preload="none"
+            poster="/assets/video/home page book now video poster.jpg" // Using a dummy poster path to prevent eager loading
             onEnded={() => setIsPlaying(false)}
           />
           

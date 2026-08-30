@@ -21,7 +21,7 @@ export function CTA() {
           hours.
         </p>
         <div className="mt-2 flex flex-wrap items-center justify-center gap-4">
-          <Button href="mailto:hello@logaaholiday.com">Plan My Trip</Button>
+          <Button href="mailto:logaaholidays@gmail.com">Plan My Trip</Button>
         </div>
       </div>
     </section>

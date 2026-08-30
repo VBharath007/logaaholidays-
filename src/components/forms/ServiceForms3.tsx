@@ -4,49 +4,48 @@ import { FormWrapper, TextInput, SelectInput, TextArea } from './FormComponents'
 
 export const TravelInsuranceForm = () => {
   return (
-    <FormWrapper 
-      title="Travel Insurance Enquiry" 
-      subtitle="Tell us about your trip and we'll help you explore suitable travel insurance options."
+    <FormWrapper
+      title="Travel Insurance Enquiry"
+      subtitle="Travelling soon? Get the right coverage for a worry-free journey. Share your details below."
     >
       <div className="space-y-6">
-        <h4 className="text-xl font-bold text-white mb-4">Customer Details</h4>
+        <h4 className="text-xl font-bold text-white mb-4">Contact Details</h4>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <TextInput icon={User} label="Full Name" required />
           <TextInput icon={Phone} label="Mobile Number" required />
           <TextInput icon={Mail} label="Email Address" type="email" required />
-          <TextInput icon={MapPin} label="City" required />
+          <TextInput icon={MapPin} label="City" required placeholder="Your current city" />
         </div>
 
         <h4 className="text-xl font-bold text-white mb-4 pt-4 border-t border-white/10">Trip Details</h4>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <TextInput icon={Globe2} label="Destination Country" required />
-          <SelectInput 
-            icon={Briefcase} label="Trip Type" required
+          <TextInput icon={Globe2} label="Destination Country / Region" required placeholder="e.g. Thailand, Europe" />
+          <SelectInput icon={Briefcase} label="Trip Type" required
             options={[
               { label: 'Domestic', value: 'Domestic' },
-              { label: 'International', value: 'International' }
-            ]} 
+              { label: 'International – Single Trip', value: 'International Single' },
+              { label: 'International – Multi Trip', value: 'International Multi' },
+            ]}
           />
           <TextInput icon={Calendar} label="Departure Date" type="date" required className="[color-scheme:dark]" />
           <TextInput icon={Calendar} label="Return Date" type="date" required className="[color-scheme:dark]" />
-          <TextInput icon={Users2} label="Number of Travellers" type="number" min="1" required />
+          <TextInput icon={Users2} label="Number of Travellers" type="number" min="1" defaultValue="1" required />
         </div>
 
         <h4 className="text-xl font-bold text-white mb-4 pt-4 border-t border-white/10">Coverage Preference</h4>
-        <div className="grid grid-cols-1 gap-4">
-          <SelectInput 
-            icon={ShieldCheck} label="Primary Coverage Requirement" 
-            options={[
-              { label: 'Medical Coverage', value: 'Medical' },
-              { label: 'Comprehensive Travel Cover', value: 'Comprehensive' },
-              { label: 'Trip Cancellation', value: 'Cancellation' },
-              { label: 'Not Sure – Need Guidance', value: 'Not Sure' }
-            ]} 
-          />
-        </div>
+        <SelectInput icon={ShieldCheck} label="Coverage Preference"
+          options={[
+            { label: 'Basic Coverage', value: 'Basic' },
+            { label: 'Comprehensive Coverage', value: 'Comprehensive' },
+            { label: 'Not Sure – Recommend for me', value: 'Recommend' },
+          ]}
+        />
 
-        <p className="text-xs text-white/50">* We do not promise claim approval before the actual insurer policy is issued.</p>
-        <TextArea label="Existing Medical / Special Travel Requirement" placeholder="Briefly describe if any specific conditions..." rows={3} />
+        <TextArea
+          label="Existing Medical or Special Travel Requirement (Optional)"
+          placeholder="Mention only if relevant — e.g. pre-existing condition, adventure sports planned, etc."
+          rows={3}
+        />
       </div>
     </FormWrapper>
   );
@@ -156,6 +155,102 @@ export const HotelBookingForm = () => {
 
         <p className="text-xs text-white/50">* We do not guarantee early check-in, late check-out or specific room availability until the hotel confirms it.</p>
         <TextArea label="Special Requirements & Preferred Hotel" placeholder="Honeymoon setup, wheelchair access, preferred hotel name..." rows={3} />
+      </div>
+    </FormWrapper>
+  );
+};
+
+// ── 17. BUS BOOKING ──────────────────────────────────────────────────────────
+export const BusBookingForm = () => {
+  const [returnJourney, setReturnJourney] = useState('No');
+  const [children, setChildren] = useState('0');
+  return (
+    <FormWrapper title="Bus Booking Enquiry" subtitle="Looking for a comfortable bus journey? Share your details and we will help you find the right service.">
+      <div className="space-y-6">
+        <h4 className="text-xl font-bold text-white mb-4">Passenger Contact</h4>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <TextInput icon={User} label="Full Name" required />
+          <TextInput icon={Phone} label="Mobile Number" required />
+          <TextInput icon={Mail} label="Email Address (Optional)" type="email" />
+        </div>
+        <h4 className="text-xl font-bold text-white mb-4 pt-4 border-t border-white/10">Journey Details</h4>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <TextInput icon={MapPin} label="From City" required />
+          <TextInput icon={MapPin} label="To City" required />
+          <TextInput icon={Calendar} label="Journey Date" type="date" required className="[color-scheme:dark]" />
+          <SelectInput icon={HeartHandshake} label="Return Journey" value={returnJourney} onChange={(e: any) => setReturnJourney(e.target.value)}
+            options={[{ label: 'No - One Way', value: 'No' }, { label: 'Yes - Round Trip', value: 'Yes' }]} />
+          {returnJourney === 'Yes' && <TextInput icon={Calendar} label="Return Date" type="date" className="[color-scheme:dark]" />}
+          <TextInput icon={MapPin} label="Boarding Point" placeholder="e.g. Madurai Central Bus Stand" />
+          <TextInput icon={MapPin} label="Dropping Point" placeholder="e.g. Chennai CMBT" />
+        </div>
+        <h4 className="text-xl font-bold text-white mb-4 pt-4 border-t border-white/10">Passengers</h4>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <TextInput icon={Users2} label="Adults" type="number" min="1" defaultValue="1" required />
+          <TextInput label="Children" type="number" min="0" defaultValue="0" onChange={(e: any) => setChildren(e.target.value)} />
+          <TextInput label="Total Travellers" type="number" min="1" required />
+        </div>
+        {parseInt(children) > 0 && <TextInput label="Child Age(s)" placeholder="e.g. 5, 8" />}
+        <h4 className="text-xl font-bold text-white mb-4 pt-4 border-t border-white/10">Bus Preferences</h4>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <SelectInput icon={HeartHandshake} label="AC / Non-AC" options={[
+            { label: 'AC', value: 'AC' }, { label: 'Non-AC', value: 'Non-AC' }, { label: 'No Preference', value: 'No Preference' }]} />
+          <SelectInput icon={HeartHandshake} label="Seat Type" options={[
+            { label: 'Seater', value: 'Seater' }, { label: 'Semi Sleeper', value: 'Semi Sleeper' },
+            { label: 'Sleeper', value: 'Sleeper' }, { label: 'No Preference', value: 'No Preference' }]} />
+          <SelectInput icon={HeartHandshake} label="Preferred Travel Time" options={[
+            { label: 'Morning', value: 'Morning' }, { label: 'Afternoon', value: 'Afternoon' },
+            { label: 'Evening', value: 'Evening' }, { label: 'Night', value: 'Night' }, { label: 'Any Time', value: 'Any Time' }]} />
+        </div>
+        <TextArea label="Special Request" placeholder="Seat preference, luggage, accessibility needs..." rows={3} />
+      </div>
+    </FormWrapper>
+  );
+};
+
+// ── 18. CAB / COACH RENTAL V2 ────────────────────────────────────────────────
+export const CabCoachRentalFormV2 = () => {
+  const [children, setChildren] = useState('0');
+  return (
+    <FormWrapper title="Cab / Car & Coach Rental Enquiry" subtitle="Tell us your travel requirements and we will arrange the right vehicle for your trip.">
+      <div className="space-y-6">
+        <h4 className="text-xl font-bold text-white mb-4">Contact Details</h4>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <TextInput icon={User} label="Full Name" required />
+          <TextInput icon={Phone} label="Mobile Number" required />
+          <TextInput icon={Mail} label="Email Address (Optional)" type="email" />
+        </div>
+        <h4 className="text-xl font-bold text-white mb-4 pt-4 border-t border-white/10">Trip Details</h4>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <TextInput icon={MapPin} label="Pickup Location" required />
+          <TextInput icon={MapPin} label="Drop Location" required />
+          <TextInput icon={Calendar} label="Pickup Date" type="date" required className="[color-scheme:dark]" />
+          <TextInput icon={Calendar} label="Pickup Time" type="time" className="[color-scheme:dark]" />
+          <TextInput icon={Calendar} label="Return Date" type="date" className="[color-scheme:dark]" />
+          <TextInput icon={Calendar} label="Number of Days" type="number" min="1" defaultValue="1" />
+          <SelectInput icon={FileText} label="Trip Type" required options={[
+            { label: 'Local', value: 'Local' }, { label: 'Outstation', value: 'Outstation' },
+            { label: 'One Way', value: 'One Way' }, { label: 'Round Trip', value: 'Round Trip' },
+            { label: 'Airport Transfer', value: 'Airport Transfer' }]} />
+        </div>
+        <h4 className="text-xl font-bold text-white mb-4 pt-4 border-t border-white/10">Passengers</h4>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <TextInput icon={Users2} label="Adults" type="number" min="1" defaultValue="1" required />
+          <TextInput label="Children" type="number" min="0" defaultValue="0" onChange={(e: any) => setChildren(e.target.value)} />
+          <TextInput label="Total Passengers" type="number" min="1" required />
+        </div>
+        {parseInt(children) > 0 && <TextInput label="Child Age(s)" placeholder="e.g. 5, 8" />}
+        <h4 className="text-xl font-bold text-white mb-4 pt-4 border-t border-white/10">Vehicle Preference</h4>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <SelectInput icon={HeartHandshake} label="Vehicle Type" required options={[
+            { label: 'Sedan', value: 'Sedan' }, { label: 'Ertiga', value: 'Ertiga' },
+            { label: 'Innova', value: 'Innova' }, { label: 'Innova Crysta', value: 'Innova Crysta' },
+            { label: 'Tempo Traveller', value: 'Tempo Traveller' },
+            { label: 'Mini Bus', value: 'Mini Bus' }, { label: 'Coach / Bus', value: 'Coach / Bus' }]} />
+          <TextInput icon={Briefcase} label="Approximate Luggage (Optional)" placeholder="e.g. 4 bags, 40 kg" />
+        </div>
+        <TextArea label="Route / Sightseeing Details" placeholder="Describe your route or places to visit..." rows={3} />
+        <TextArea label="Special Requirements" placeholder="AC preference, driver language, accessibility needs..." rows={2} />
       </div>
     </FormWrapper>
   );

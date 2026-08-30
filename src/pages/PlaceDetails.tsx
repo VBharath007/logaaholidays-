@@ -6,6 +6,8 @@ import { packagesDatabase, getPackageLink } from './PackageDetails';
 import { generateSlug } from '../lib/utils';
 import { ComprehensiveEnquiryForm } from '../components/ComprehensiveEnquiryForm';
 
+import { useSEO } from '../hooks/useSEO';
+
 export function PlaceDetails() {
   const { state, city: cityParam, placeId } = useParams();
   const navigate = useNavigate();
@@ -27,6 +29,12 @@ export function PlaceDetails() {
   const city = resolvedCity;
   const dest = city && destinationsData[city] ? destinationsData[city] : null;
   const place = dest?.placesToVisit.find((p: any) => p.id === placeId);
+
+  useSEO(
+    place ? `${place.name} | Places to Visit in ${dest.name} | Logaa Holidays` : 'Place Details | Logaa Holidays',
+    place ? `Discover ${place.name} in ${dest.name}. Explore entry fees, timings, distance, and sightseeing packages with Logaa Holidays.` : 'Explore top tourist attractions and sightseeing spots with Logaa Holidays.',
+    place ? `${place.name}, ${dest.name} sightseeing, Places to visit in ${dest.name}, ${place.name} timings, ${place.name} entry fee` : 'Sightseeing, Tourist Attractions'
+  );
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -134,7 +142,7 @@ export function PlaceDetails() {
   const otherPlaces = dest.placesToVisit.filter((p: any) => p.id !== placeId);
 
   const getCategoryLink = () => {
-    const specificTours = ['madurai', 'kanyakumari', 'kerala', 'rameshwaram', 'varanasi', 'shirdi', 'ayodhya', 'guwahati', 'shillong', 'cherrapunji', 'pune', 'chennai', 'munnar', 'thekkady', 'alleppey', 'vagamon', 'ooty', 'kodaikanal'];
+    const specificTours = ['madurai', 'kanyakumari', 'kerala', 'rameswaram', 'varanasi', 'shirdi', 'ayodhya', 'guwahati', 'shillong', 'cherrapunji', 'pune', 'chennai', 'munnar', 'thekkady', 'alleppey', 'vagamon', 'ooty', 'kodaikanal'];
     
     // Check placeId first if it is a major city
     if (placeId && specificTours.includes(placeId.toLowerCase())) {

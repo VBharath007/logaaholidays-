@@ -35,7 +35,7 @@ export const destinationsData: Record<string, any> = {
     placesToVisit: [
       {
         id: 'alleppey',
-        name: 'Alleppey (Alappuzha)',
+        name: 'Alleppey (Alleppey)',
         type: 'Backwaters',
         image: '/assets/KERALA/top place in kerala/aleppey.webp',
         description: 'The "Venice of the East", Alleppey is famous for its network of backwaters, houseboat cruises, and the spectacular Nehru Trophy Boat Race. A must-visit for every Kerala traveler.',
@@ -50,7 +50,7 @@ export const destinationsData: Record<string, any> = {
           sections: [
             {
               title: 'About Alleppey',
-              content: "Known as the 'Venice of the East', Alappuzha (Alleppey) is renowned for its picturesque backwaters, serene lagoons, and interconnected network of canals. It is the epicenter of Kerala's backwater tourism, attracting visitors worldwide to experience its traditional kettuvallam (houseboats) and vibrant village life along the waters."
+              content: "Known as the 'Venice of the East', Alleppey (Alleppey) is renowned for its picturesque backwaters, serene lagoons, and interconnected network of canals. It is the epicenter of Kerala's backwater tourism, attracting visitors worldwide to experience its traditional kettuvallam (houseboats) and vibrant village life along the waters."
             },
             {
               title: 'History',
@@ -354,7 +354,7 @@ export const destinationsData: Record<string, any> = {
     state: 'Kerala',
     overview: {
       title: 'Alleppey Tourism',
-      description: 'Officially known as Alappuzha, Alleppey is globally celebrated as the "Venice of the East," where life unfolds on tranquil waters.\n\n• Backwaters: A magical, ancient network of lakes, lagoons, rivers, and man-made canals.\n• Houseboats (Kettuvallam): Experience floating stays in traditional wooden boats equipped with modern amenities and local cuisine.\n• Marari Beach: A pristine and unspoiled coastline perfect for relaxation.\n• Mega Event: Hosts the spectacular Nehru Trophy Snake Boat Race every August on Punnamada Lake.'
+      description: 'Officially known as Alleppey, Alleppey is globally celebrated as the "Venice of the East," where life unfolds on tranquil waters.\n\n• Backwaters: A magical, ancient network of lakes, lagoons, rivers, and man-made canals.\n• Houseboats (Kettuvallam): Experience floating stays in traditional wooden boats equipped with modern amenities and local cuisine.\n• Marari Beach: A pristine and unspoiled coastline perfect for relaxation.\n• Mega Event: Hosts the spectacular Nehru Trophy Snake Boat Race every August on Punnamada Lake.'
     },
     history: {
       title: 'Alleppey History',
@@ -690,17 +690,17 @@ export const destinationsData: Record<string, any> = {
     ],
     popularPackages: []
   },
-  'rameshwaram-tourism': {
-    id: 'rameshwaram-tourism',
-    name: 'Rameshwaram',
+  'rameswaram-tourism': {
+    id: 'rameswaram-tourism',
+    name: 'Rameswaram',
     image: '/assets/rameswaram/big.webp',
     state: 'Tamil Nadu',
     overview: {
-      title: 'Rameshwaram Tourism',
-      description: 'Rameshwaram is a holy island town in Tamil Nadu, famous for its grand Ramanathaswamy Temple and the legendary Ram Setu. Known as the Varanasi of the South, it is one of the Char Dham pilgrimage sites.'
+      title: 'Rameswaram Tourism',
+      description: 'Rameswaram is a holy island town in Tamil Nadu, famous for its grand Ramanathaswamy Temple and the legendary Ram Setu. Known as the Varanasi of the South, it is one of the Char Dham pilgrimage sites.'
     },
     history: {
-      title: 'Rameshwaram History',
+      title: 'Rameswaram History',
       description: 'According to Hindu mythology, this is the place from where Lord Rama built a bridge across the sea to Lanka to rescue his wife Sita from her abductor Ravana.'
     },
     info: {
@@ -732,7 +732,7 @@ export const destinationsData: Record<string, any> = {
         details: {
           timings: '5:00 AM - 1:00 PM and 3:00 PM - 9:00 PM',
           entryFee: 'No fee (Special Darshan ₹50 - ₹200)',
-          distance: 'In the center of Rameshwaram Island',
+          distance: 'In the center of Rameswaram Island',
           duration: '2 - 3 Hours',
           transport: 'Auto Rickshaw, Walking',
           tips: 'It is highly recommended to take a holy dip in the Agniteertham first, followed by bathing in the 22 holy wells inside the temple before entering the main shrine. Mobile phones are strictly prohibited.',
@@ -794,7 +794,7 @@ export const destinationsData: Record<string, any> = {
         details: {
           timings: 'Open 24 Hours (Best viewed during train crossings)',
           entryFee: 'No fee',
-          distance: '15 kilometer from Rameshwaram town',
+          distance: '15 kilometer from Rameswaram town',
           duration: '1 Hour',
           transport: 'Taxi, Auto Rickshaw, Bus',
           tips: 'Try to time your visit to watch a train pass over the bridge. The wind can be extremely strong, so hold onto your hats and cameras!',
@@ -856,7 +856,7 @@ export const destinationsData: Record<string, any> = {
         details: {
           timings: '6:00 AM - 5:00 PM (Entry restricted after dark)',
           entryFee: 'No fee',
-          distance: '20 kilometer from Rameshwaram',
+          distance: '20 kilometer from Rameswaram',
           duration: '2 - 3 Hours',
           transport: 'Bus, Taxi, Private Jeeps',
           tips: 'Swimming is extremely dangerous here due to strong and unpredictable currents. The newly laid road makes the journey smooth, but the area gets very hot, so carry water.',
@@ -1112,7 +1112,7 @@ export const destinationsData: Record<string, any> = {
     },
     info: {
       idealDuration: '1 Night 2 Days',
-      nearestCity: 'Rameshwaram',
+      nearestCity: 'Rameswaram',
       bestTime: 'Through out the year',
       peakSeason: 'April to June',
       weather: 'Moderate',
@@ -1120,7 +1120,7 @@ export const destinationsData: Record<string, any> = {
       stdCode: '0452',
       languages: 'Tamil and English',
       festivals: 'Pongal, Jallikattu, Chithirai Festival, Festival of the Cradle and Avanimoolam Festival',
-      tips: 'You can visit Rameshwaram and Kanyakumari as these places are nearby.'
+      tips: 'You can visit Rameswaram and Kanyakumari as these places are nearby.'
     },
     majorAttractions: [
       {
@@ -1574,7 +1574,7 @@ export const destinationsData: Record<string, any> = {
   //   majorAttractions: [
   //     {
   //       title: 'Alleppey Backwaters',
-  //       description: 'The backwaters of Alleppey (Alappuzha) are a network of lagoons, lakes, and canals that run parallel to the Arabian Sea coast. A houseboat cruise through these backwaters is an iconic Kerala experience, offering stunning views of paddy fields, coconut groves, and village life.'
+  //       description: 'The backwaters of Alleppey (Alleppey) are a network of lagoons, lakes, and canals that run parallel to the Arabian Sea coast. A houseboat cruise through these backwaters is an iconic Kerala experience, offering stunning views of paddy fields, coconut groves, and village life.'
   //     },
   //     {
   //       title: 'Munnar Tea Gardens',
@@ -1592,7 +1592,7 @@ export const destinationsData: Record<string, any> = {
   //   placesToVisit: [
   //     {
   //       id: 'alleppey',
-  //       name: 'Alleppey (Alappuzha)',
+  //       name: 'Alleppey (Alleppey)',
   //       type: 'Backwaters',
   //       image: '/assets/KERALA/top place in kerala/aleppey.webp',
   //       description: 'The "Venice of the East", Alleppey is famous for its network of backwaters, houseboat cruises, and the spectacular Nehru Trophy Boat Race. A must-visit for every Kerala traveler.',
@@ -1607,7 +1607,7 @@ export const destinationsData: Record<string, any> = {
   //         sections: [
   //           {
   //             title: 'About Alleppey',
-  //             content: "Known as the 'Venice of the East', Alappuzha (Alleppey) is renowned for its picturesque backwaters, serene lagoons, and interconnected network of canals. It is the epicenter of Kerala's backwater tourism, attracting visitors worldwide to experience its traditional kettuvallam (houseboats) and vibrant village life along the waters."
+  //             content: "Known as the 'Venice of the East', Alleppey (Alleppey) is renowned for its picturesque backwaters, serene lagoons, and interconnected network of canals. It is the epicenter of Kerala's backwater tourism, attracting visitors worldwide to experience its traditional kettuvallam (houseboats) and vibrant village life along the waters."
   //           },
   //           {
   //             title: 'History',
@@ -1847,7 +1847,7 @@ export const destinationsData: Record<string, any> = {
     promoVideo: '/assets/video/tamil nadu (1).mp4',
     overview: {
       title: 'Tamil Nadu Tourism Overview',
-      description: 'Tamil Nadu, the "Land of Temples", is located in the southernmost part of India. Renowned for its rich Dravidian cultural heritage, ancient temples with towering Gopurams, beautiful beaches, misty hill stations, and vibrant festivals, Tamil Nadu is one of the most culturally rich and spiritually significant states in India. From the bustling cultural hubs of Chennai and Madurai to the serene coastlines of Kanyakumari and Rameshwaram, and the misty hills of Ooty and Kodaikanal, Tamil Nadu offers an incredibly diverse travel experience.'
+      description: 'Tamil Nadu, the "Land of Temples", is located in the southernmost part of India. Renowned for its rich Dravidian cultural heritage, ancient temples with towering Gopurams, beautiful beaches, misty hill stations, and vibrant festivals, Tamil Nadu is one of the most culturally rich and spiritually significant states in India. From the bustling cultural hubs of Chennai and Madurai to the serene coastlines of Kanyakumari and Rameswaram, and the misty hills of Ooty and Kodaikanal, Tamil Nadu offers an incredibly diverse travel experience.'
     },
     history: {
       title: 'Tamil Nadu Heritage & History',
@@ -1871,7 +1871,7 @@ export const destinationsData: Record<string, any> = {
         description: 'An architectural masterpiece dedicated to Goddess Meenakshi and Lord Sundareshwarar, featuring 14 magnificent gopurams and the iconic Hall of a Thousand Pillars.'
       },
       {
-        title: 'Ramanathaswamy Temple, Rameshwaram',
+        title: 'Ramanathaswamy Temple, Rameswaram',
         description: 'A sacred Char Dham pilgrimage site, renowned for its holy well water baths and the longest temple corridor in the world.'
       },
       {
@@ -1916,11 +1916,11 @@ export const destinationsData: Record<string, any> = {
         }
       },
       {
-        id: 'rameshwaram',
+        id: 'rameswaram',
         name: 'Rameswaram',
         type: 'Pilgrimage / Island',
         image: '/assets/rameswaram/big3.webp',
-        description: 'A peaceful island town steeped in Hindu mythology, Rameshwaram is one of the Char Dham pilgrimage sites and home to the magnificent Ramanathaswamy Temple.',
+        description: 'A peaceful island town steeped in Hindu mythology, Rameswaram is one of the Char Dham pilgrimage sites and home to the magnificent Ramanathaswamy Temple.',
         rating: 4.8,
         details: {
           timings: 'Temple: 5:00 AM - 1:00 PM & 3:00 PM - 9:00 PM',
@@ -1931,8 +1931,8 @@ export const destinationsData: Record<string, any> = {
           tips: 'Breathe in the tranquility at Agniteertham beach before entering the temple. Take a walk on the historic Pamban Bridge.',
           sections: [
             {
-              title: 'About Rameshwaram',
-              content: "Located on Pamban Island, Rameshwaram is separated from mainland India by the Pamban Channel. It is a highly sacred destination for both Shaivites and Vaishnavites."
+              title: 'About Rameswaram',
+              content: "Located on Pamban Island, Rameswaram is separated from mainland India by the Pamban Channel. It is a highly sacred destination for both Shaivites and Vaishnavites."
             },
             {
               title: 'History and Legend',
@@ -2549,7 +2549,7 @@ export const destinationsData: Record<string, any> = {
           transport: 'Walking, Cycling',
           tips: 'Rent a bicycle to ride around the 5km perimeter of the lake for a refreshing experience.',
           sections: [
-            { title: 'About the Lake', content: 'Kodaikanal Lake, also known as Kodai Lake, is a manmade lake located in the Kodaikanal city. Sir Vere Henry Levinge, the then Collector of Madurai, was instrumental in creating the lake in 1863. It is star-shaped, centrally located, and surrounded by lush green hills.' },
+            { title: 'About the Lake', content: 'Kodaikanal Lake, also known as Kodaikanal Lake, is a manmade lake located in the Kodaikanal city. Sir Vere Henry Levinge, the then Collector of Madurai, was instrumental in creating the lake in 1863. It is star-shaped, centrally located, and surrounded by lush green hills.' },
             { title: 'Activities', content: 'Tourists can hire rowboats and pedal boats from the Kodaikanal Boat Club. Horses and bicycles can also be hired for a ride alongside the lake.' }
           ]
         }
@@ -2564,12 +2564,12 @@ export const destinationsData: Record<string, any> = {
         details: {
           timings: '7:00 AM - 7:00 PM',
           entryFee: '₹15 per person',
-          distance: '500m from Kodai Lake',
+          distance: '500m from Kodaikanal Lake',
           duration: '1 Hour',
           transport: 'Walking',
           tips: 'Visit early in the morning to witness the sea of clouds and if lucky, the rare phenomenon of \'Brocken spectre\'.',
           sections: [
-            { title: 'About Coaker\'s Walk', content: 'Constructed by Lt. Coaker in 1872, Coaker\'s Walk is a narrow pedestrian path constructed along the edge of steep slopes on the southern side of Kodai. It provides spectacular views of the plains, Periyakulam town, and even the city of Madurai on clear days.' },
+            { title: 'About Coaker\'s Walk', content: 'Constructed by Lt. Coaker in 1872, Coaker\'s Walk is a narrow pedestrian path constructed along the edge of steep slopes on the southern side of Kodaikanal. It provides spectacular views of the plains, Periyakulam town, and even the city of Madurai on clear days.' },
             { title: 'Telescope House', content: 'There is an observatory with a telescope halfway along the walk, which visitors can use to get a closer look at the valley below.' }
           ]
         }
@@ -2584,7 +2584,7 @@ export const destinationsData: Record<string, any> = {
         details: {
           timings: '9:00 AM - 6:00 PM',
           entryFee: '₹30 (Adults), ₹15 (Children)',
-          distance: 'Near Kodai Lake',
+          distance: 'Near Kodaikanal Lake',
           duration: '1 - 2 Hours',
           transport: 'Walking',
           tips: 'The annual flower show in May is a must-see event attracting huge crowds.',
@@ -2604,7 +2604,7 @@ export const destinationsData: Record<string, any> = {
         details: {
           timings: '9:00 AM - 4:00 PM',
           entryFee: '₹5 per person',
-          distance: '7 km from Kodai Lake',
+          distance: '7 km from Kodaikanal Lake',
           duration: '30 - 45 Mins',
           transport: 'Cab',
           tips: 'The rocks are often covered in mist, so timing your visit when the sky is clear is crucial for a good view.',
@@ -2624,7 +2624,7 @@ export const destinationsData: Record<string, any> = {
         details: {
           timings: '9:00 AM - 4:30 PM',
           entryFee: '₹5 per person',
-          distance: '8.5 km from Kodai Lake',
+          distance: '8.5 km from Kodaikanal Lake',
           duration: '1 Hour',
           transport: 'Cab',
           tips: 'Deep entry into the caves is restricted due to safety reasons. Visitors can view them from a safe distance.',
@@ -2644,7 +2644,7 @@ export const destinationsData: Record<string, any> = {
         details: {
           timings: '10:00 AM - 6:00 PM',
           entryFee: 'No entry fee',
-          distance: '7.5 km from Kodai Lake',
+          distance: '7.5 km from Kodaikanal Lake',
           duration: '30 Mins',
           transport: 'Cab',
           tips: 'Great spot for nature photography. Be cautious of monkeys and do not carry open food items.',
@@ -2664,7 +2664,7 @@ export const destinationsData: Record<string, any> = {
         details: {
           timings: 'Open all day',
           entryFee: 'No entry fee',
-          distance: '8 km from Kodai Lake',
+          distance: '8 km from Kodaikanal Lake',
           duration: '15 - 30 Mins',
           transport: 'Cab, Bus',
           tips: 'A quick photo stop on your way in or out of Kodaikanal. Bathing is not recommended here as water quality varies.',
@@ -2737,11 +2737,10 @@ export const destinationsData: Record<string, any> = {
       tips: 'Always carry an umbrella as rain can be unpredictable.'
     },
     majorAttractions: [
-      { title: 'Petronas Twin Towers', description: 'Once the tallest buildings in the world, these iconic 88-story twin skyscrapers in Kuala Lumpur feature a stunning skybridge and Islamic-inspired architecture.' },
-      { title: 'Batu Caves', description: 'A prominent Hindu shrine in Selangor consisting of massive limestone caves, guarded by a towering golden statue of Lord Murugan, accessible via 272 vibrant colored steps.' },
-      { title: 'Mount Kinabalu', description: 'The highest peak in Malaysia, located in a UNESCO World Heritage site in Sabah, offering spectacular trekking and a rich diversity of flora and fauna.' },
-      { title: 'Langkawi Sky Bridge', description: 'A thrilling 125-meter curved pedestrian cable-stayed bridge suspended high above the lush rainforest of Mount Mat Cincang.' },
-      { title: 'Penang Hill', description: 'Offering panoramic views of George Town and the Penang bridge, accessible via a historic funicular railway.' }
+      { title: 'Petronas Twin Towers', description: 'Once the tallest buildings in the world, these iconic 88-story twin skyscrapers in Kuala Lumpur feature a stunning skybridge and Islamic-inspired architecture.', image: '/assets/international/malaysia/Petronas Twin Towers.png' },
+      { title: 'Batu Caves', description: 'A prominent Hindu shrine in Selangor consisting of massive limestone caves, guarded by a towering golden statue of Lord Murugan, accessible via 272 vibrant colored steps.', image: '/assets/international/malaysia/Batu Caves.png' },
+      { title: 'Mount Kinabalu', description: 'The highest peak in Malaysia, located in a UNESCO World Heritage site in Sabah, offering spectacular trekking and a rich diversity of flora and fauna.', image: '/assets/international/malaysia/Mount Kinabalu.png' },
+      { title: 'Langkawi Sky Bridge', description: 'A thrilling 125-meter curved pedestrian cable-stayed bridge suspended high above the lush rainforest of Mount Mat Cincang.', image: '/assets/international/malaysia/Langkawi Sky Bridge.png' },
     ],
     placesToVisit: [],
     popularPackages: []
@@ -2772,11 +2771,10 @@ export const destinationsData: Record<string, any> = {
       tips: 'Chewing gum is banned in Singapore. Be mindful of strict local laws.'
     },
     majorAttractions: [
-      { title: 'Gardens by the Bay', description: 'A spectacular futuristic nature park featuring the iconic Supertree Grove, the Cloud Forest, and the Flower Dome.' },
-      { title: 'Marina Bay Sands', description: 'An integrated resort notable for its striking ship-like rooftop structure featuring an infinity pool and the Skypark observation deck.' },
-      { title: 'Universal Studios Singapore', description: 'A premier theme park located on Sentosa Island, offering thrilling rides and attractions based on blockbuster movies.' },
-      { title: 'Singapore Botanic Gardens', description: 'A 164-year-old tropical garden and Singapore\'s first UNESCO World Heritage Site, famous for its National Orchid Garden.' },
-      { title: 'Singapore Flyer', description: 'One of the world\'s largest giant observation wheels, providing breathtaking 360-degree views of the city skyline and beyond.' }
+      { title: 'Gardens by the Bay', description: 'A spectacular futuristic nature park featuring the iconic Supertree Grove, the Cloud Forest, and the Flower Dome.', image: '/assets/international/singapore/Gardens by the Bay.png' },
+      { title: 'Marina Bay Sands', description: 'An integrated resort notable for its striking ship-like rooftop structure featuring an infinity pool and the Skypark observation deck.', image: '/assets/international/singapore/Marina Bay Sands.png' },
+      { title: 'Universal Studios Singapore', description: 'A premier theme park located on Sentosa Island, offering thrilling rides and attractions based on blockbuster movies.', image: '/assets/international/singapore/Universal Studios Singapore.png' },
+      { title: 'Singapore Botanic Gardens', description: 'A 164-year-old tropical garden and Singapore\'s first UNESCO World Heritage Site, famous for its National Orchid Garden.', image: '/assets/international/singapore/Singapore Botanic Gardens.png' },
     ],
     placesToVisit: [],
     popularPackages: []
@@ -2807,11 +2805,10 @@ export const destinationsData: Record<string, any> = {
       tips: 'Respect the local culture and dress modestly when visiting temples.'
     },
     majorAttractions: [
-      { title: 'Uluwatu Temple', description: 'A spectacular Balinese sea temple perched on a steep cliff 70 meters above the Indian Ocean, famous for its sunset views and traditional Kecak fire dances.' },
-      { title: 'Sacred Monkey Forest Sanctuary', description: 'A lush jungle oasis in Ubud housing over a thousand long-tailed macaques alongside ancient temple ruins covered in banyan roots.' },
-      { title: 'Tanah Lot Temple', description: 'An iconic pilgrimage site situated on a dramatic rock formation rising out of the sea, heavily photographed during sunset.' },
-      { title: 'Tegallalang Rice Terrace', description: 'Famous for its beautiful scenes of rice paddies utilizing the traditional Balinese cooperative irrigation system known as Subak.' },
-      { title: 'Mount Batur', description: 'An active volcano offering popular sunrise trekking experiences, providing stunning panoramic views of the surrounding crater lake.' }
+      { title: 'Uluwatu Temple', description: 'A spectacular Balinese sea temple perched on a steep cliff 70 meters above the Indian Ocean, famous for its sunset views and traditional Kecak fire dances.', image: '/assets/international/bali/Uluwatu Temple.png' },
+      { title: 'Sacred Monkey Forest Sanctuary', description: 'A lush jungle oasis in Ubud housing over a thousand long-tailed macaques alongside ancient temple ruins covered in banyan roots.', image: '/assets/international/bali/Sacred Monkey Forest Sanctuary.png' },
+      { title: 'Tanah Lot Temple', description: 'An iconic pilgrimage site situated on a dramatic rock formation rising out of the sea, heavily photographed during sunset.', image: '/assets/international/bali/Tanah Lot Temple.png' },
+      { title: 'Tegallalang Rice Terrace', description: 'Famous for its beautiful scenes of rice paddies utilizing the traditional Balinese cooperative irrigation system known as Subak.', image: '/assets/international/bali/Tegallalang Rice Terrace.png' },
     ],
     placesToVisit: [],
     popularPackages: []
@@ -2842,11 +2839,11 @@ export const destinationsData: Record<string, any> = {
       tips: 'Respect Thai culture, traditions, and local customs during your visit.'
     },
     majorAttractions: [
-      { title: 'The Grand Palace', description: 'The spectacular former residence of the Kings of Siam in Bangkok, featuring exquisite architecture and the highly revered Temple of the Emerald Buddha (Wat Phra Kaew).' },
-      { title: 'Phi Phi Islands', description: 'A group of stunning islands in the Andaman Sea, featuring towering limestone cliffs, turquoise waters, and vibrant marine life.' },
-      { title: 'Ayutthaya Historical Park', description: 'A UNESCO World Heritage site containing the magnificent ruins of the second capital of the Siamese Kingdom, founded in 1350.' },
-      { title: 'Wat Arun', description: 'An iconic riverside temple in Bangkok distinguished by its towering spires intricately decorated with colorful porcelain.' },
-      { title: 'Doi Suthep', description: 'A deeply sacred mountain featuring the gleaming Wat Phra That Doi Suthep temple, offering panoramic views of Chiang Mai city.' }
+      { title: 'The Grand Palace', description: 'The spectacular former residence of the Kings of Siam in Bangkok, featuring exquisite architecture and the highly revered Temple of the Emerald Buddha (Wat Phra Kaew).', image: '/assets/international/thailand/The Grand Palace.png' },
+      { title: 'Phi Phi Islands', description: 'A group of stunning islands in the Andaman Sea, featuring towering limestone cliffs, turquoise waters, and vibrant marine life.', image: '/assets/international/thailand/Phi Phi Islands.png' },
+      { title: 'Ayutthaya Historical Park', description: 'A UNESCO World Heritage site containing the magnificent ruins of the second capital of the Siamese Kingdom, founded in 1350.', image: '/assets/international/thailand/Ayutthaya Historical Park.png' },
+      { title: 'Wat Arun', description: 'An iconic riverside temple in Bangkok distinguished by its towering spires intricately decorated with colorful porcelain.', image: '/assets/international/thailand/Wat Arun.png' },
+      { title: 'Doi Suthep', description: 'A deeply sacred mountain featuring the gleaming Wat Phra That Doi Suthep temple, offering panoramic views of Chiang Mai city.', image: '/assets/international/thailand/Doi Suthep.png' }
     ],
     placesToVisit: [],
     popularPackages: []
@@ -2877,11 +2874,11 @@ export const destinationsData: Record<string, any> = {
       tips: 'Always remove shoes and hats when entering Buddhist temples.'
     },
     majorAttractions: [
-      { title: 'Sigiriya Rock Fortress', description: 'An ancient palace and fortress complex carved into a massive column of rock, renowned for its frescoes and water gardens.' },
-      { title: 'Temple of the Sacred Tooth Relic', description: 'Located in Kandy, this highly revered Buddhist temple houses the relic of the tooth of the Buddha.' },
-      { title: 'Yala National Park', description: 'Famous for having one of the highest leopard densities in the world, along with elephants, crocodiles, and diverse birdlife.' },
-      { title: 'Galle Fort', description: 'A beautifully preserved colonial-era fort built by the Portuguese and fortified by the Dutch, blending European architecture and South Asian traditions.' },
-      { title: 'Nine Arch Bridge', description: 'An iconic colonial-era railway bridge in Ella, famous for its spectacular setting amidst lush green tea fields.' }
+      { title: 'Sigiriya Rock Fortress', description: 'An ancient palace and fortress complex carved into a massive column of rock, renowned for its frescoes and water gardens.', image: '/assets/international/sri lanka/Sigiriya Rock Fortress.png' },
+      { title: 'Temple of the Sacred Tooth Relic', description: 'Located in Kandy, this highly revered Buddhist temple houses the relic of the tooth of the Buddha.', image: '/assets/international/sri lanka/Temple of the Sacred Tooth Relic.png' },
+      { title: 'Yala National Park', description: 'Famous for having one of the highest leopard densities in the world, along with elephants, crocodiles, and diverse birdlife.', image: '/assets/international/sri lanka/Yala National Park.png' },
+      { title: 'Galle Fort', description: 'A beautifully preserved colonial-era fort built by the Portuguese and fortified by the Dutch, blending European architecture and South Asian traditions.', image: '/assets/international/sri lanka/Galle Fort.png' },
+      { title: 'Nine Arch Bridge', description: 'An iconic colonial-era railway bridge in Ella, famous for its spectacular setting amidst lush green tea fields.', image: '/assets/international/sri lanka/Nine Arch Bridge.png' }
     ],
     placesToVisit: [],
     popularPackages: []

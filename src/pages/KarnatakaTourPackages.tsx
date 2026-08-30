@@ -101,7 +101,7 @@ export function KarnatakaTourPackages() {
       <div className="relative w-full h-[500px] sm:h-[600px] overflow-hidden rounded-b-[40px] shadow-[0_20px_50px_rgba(0,0,0,0.12)]">
         <img
           src="/assets/karnataka4.webp"
-          alt="Karnataka Tour Packages"
+          alt="Best Karnataka Tour Packages from Madurai - Logaa Holidays"
           className="w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-transparent" />
@@ -215,18 +215,24 @@ export function KarnatakaTourPackages() {
                     <span>{pkg.themes}</span>
                   </div>
 
-                  {/* Price + CTA */}
-                  <div className="mt-auto flex items-center justify-between gap-3">
-                    <div>
-                      <p className="text-xs text-slate-400 font-medium">Starting from</p>
-                      <p className="text-lg font-bold text-[var(--color-primary-forest)]">{pkg.price}</p>
+                  {/* Action Buttons */}
+                  <div className="mt-auto pt-4 border-t border-slate-100 flex flex-col gap-3">
+                    <div className="flex flex-col sm:flex-row items-center gap-2">
+                      <a
+                        href={`https://wa.me/917397329776?text=Hi Logaa Holidays, I am interested in the ${pkg.title} package.`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full sm:flex-1 text-center bg-[#F2FBF5] text-[#0F6B46] border border-[#E2F5EA] text-[13px] font-bold py-2 rounded-xl hover:bg-[#0F6B46] hover:text-white transition-colors"
+                      >
+                        Enquire Now
+                      </a>
+                      <Link
+                        to={getPackageLink({ id: pkg.id, title: pkg.title })}
+                        className="w-full sm:flex-1 text-center bg-[#0B2515] text-white text-[13px] font-bold py-2 rounded-xl hover:bg-[#0c593a] transition-colors"
+                      >
+                        View Details
+                      </Link>
                     </div>
-                    <Link
-                      to={getPackageLink({ id: pkg.id, title: pkg.title })}
-                      className={`${clayBtn} px-5 py-2.5 text-sm flex items-center gap-1.5 flex-shrink-0`}
-                    >
-                      View Details <ArrowRight className="w-4 h-4" />
-                    </Link>
                   </div>
                 </div>
               </div>
@@ -286,6 +292,63 @@ export function KarnatakaTourPackages() {
         </div>
       </div>
 
+      {/* ── FAQ Section ── */}
+      <KarnatakaFAQ />
+
+    </div>
+  );
+}
+
+function KarnatakaFAQ() {
+  const [openIndex, setOpenIndex] = React.useState<number | null>(null);
+  const faqs = [
+    {
+      q: 'Is this Karnataka tour package good for a family with senior citizens?',
+      a: 'Yes. The itinerary includes short drives, moderate temple visits (such as Mysore Palace) and nature spots like Coorg — all at a gentle pace. We choose hotels with lifts and easy access, and our guide assists senior travellers at each stop. The combination of city sightseeing and calm hillside resorts suits both families and honeymooners.',
+    },
+    {
+      q: 'Can we start the Karnataka tour from Bangalore or Chennai?',
+      a: 'Yes. Bangalore is the primary starting point for this tour. You can join directly in Bangalore, and we can also arrange to meet you if you are arriving by flight or train from Chennai or other cities. We will pick you up at Bangalore airport or railway station to begin the tour.',
+    },
+    {
+      q: 'Which places are covered in Karnataka tour packages?',
+      a: 'Our Karnataka packages cover Mysore, Coorg, Bangalore, Chikmagalur, Hampi and more. You can explore the magnificent Mysore Palace, the misty coffee estates of Coorg, the ancient ruins of Hampi, and the wildlife sanctuaries of Kabini — all tailored to your interests and travel dates.',
+    },
+    {
+      q: 'Are honeymoon-specific Karnataka packages available?',
+      a: 'Absolutely. We offer dedicated Karnataka honeymoon packages featuring private stays in Coorg coffee-estate resorts, romantic candlelight dinners and scenic viewpoints. Our couple-focused itineraries include Mysore, Coorg and Chikmagalur, with a private cab and personalised experiences throughout.',
+    },
+  ];
+
+  return (
+    <div className="max-w-4xl mx-auto px-6 mb-16">
+      <div className="bg-white rounded-[2.5rem] p-8 md:p-10 shadow-sm border border-slate-100">
+        <div className="flex items-center gap-2 mb-8">
+          <Star className="w-5 h-5 text-[var(--color-primary-forest)] fill-current" />
+          <h2 className="text-2xl font-bold text-slate-800">Frequently Asked Questions</h2>
+        </div>
+        <div className="flex flex-col gap-3">
+          {faqs.map((faq, i) => (
+            <div key={i} className="border border-slate-100 rounded-2xl overflow-hidden">
+              <button
+                onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                className="w-full flex items-center justify-between gap-4 px-6 py-4 text-left bg-[#f8f9fa] hover:bg-[#eef4ee] transition-colors"
+                aria-expanded={openIndex === i}
+              >
+                <span className="text-sm font-semibold text-slate-800 leading-snug">{faq.q}</span>
+                <span className={`text-[var(--color-primary-forest)] flex-shrink-0 transition-transform duration-200 ${openIndex === i ? 'rotate-180' : ''}`}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9" /></svg>
+                </span>
+              </button>
+              {openIndex === i && (
+                <div className="px-6 py-4 bg-white border-t border-slate-100">
+                  <p className="text-sm text-slate-600 leading-relaxed">{faq.a}</p>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

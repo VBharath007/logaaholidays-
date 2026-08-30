@@ -3,32 +3,23 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { MapPin, Star } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
-const filterTabs = ['All Destinations', 'Tamil Nadu', 'Kerala', 'Maharashtra', 'Uttar Pradesh']
+const filterTabs = ['All Destinations', 'South India', 'North India', 'Honeymoon Package']
 
 const allDestinations = [
+  // SOUTH INDIA - TAMIL NADU
   { 
     id: 1, 
-    state: 'Tamil Nadu', 
-    name: 'Madurai to Rameswaram 2D / 1N', 
-    location: 'Rameshwaram, Dhanushkodi', 
+    state: 'South India', 
+    name: 'Madurai Local Sightseeing One Day', 
+    location: 'Meenakshi Temple, Nayakkar Mahal', 
     price: 'Explore Tour', 
     rating: '5.0', 
-    image: '/assets/rameswaram/sm4.webp', 
-    link: '/tour-packages/rameshwaram-tours/madurai-to-rameshwaram-2d-1n-tour' 
+    image: '/assets/meenakshi amman temple.png', 
+    link: '/tour-packages/madurai-tours/madurai-one-day-tour-package-best-local-sightseeing' 
   },
   { 
     id: 2, 
-    state: 'Tamil Nadu', 
-    name: 'Madurai to Ooty 2 Days / 1 Night', 
-    location: 'Ooty, Coonoor', 
-    price: 'Explore Tour', 
-    rating: '5.0', 
-    image: '/assets/otty/ooty1(small).webp', 
-    link: '/tour-packages/ooty-tours/madurai-to-ooty-2-days-1-night-tour-package' 
-  },
-  { 
-    id: 3, 
-    state: 'Tamil Nadu', 
+    state: 'South India', 
     name: 'Madurai to Kodaikanal One Day', 
     location: 'Kodaikanal Lake, Pillar Rocks', 
     price: 'Explore Tour', 
@@ -36,29 +27,10 @@ const allDestinations = [
     image: '/assets/kodaikanal/card/kodalkanallake.webp', 
     link: '/tour-packages/kodaikanal-tours/madurai-to-kodaikanal-one-day-tour-package' 
   },
+  // SOUTH INDIA - KERALA
   { 
-    id: 4, 
-    state: 'Tamil Nadu', 
-    name: 'Chennai Local Sightseeing', 
-    location: 'Marina Beach, Mylapore', 
-    price: 'Explore Tour', 
-    rating: '5.0', 
-    image: '/assets/chennai/chennai1(small).webp', 
-    link: '/tour-packages/chennai-tours/chennai-local-sightseeing-tour-package-best-city-highlights' 
-  },
-  { 
-    id: 5, 
-    state: 'Tamil Nadu', 
-    name: 'Madurai to Kanyakumari One Day', 
-    location: 'Vivekananda Rock, Thiruvalluvar', 
-    price: 'Explore Tour', 
-    rating: '5.0', 
-    image: '/assets/kaniyakumari/vivekandhar.webp', 
-    link: '/tour-packages/kanyakumari-tours/madurai-to-kanyakumari-one-day-tour-package' 
-  },
-  { 
-    id: 6, 
-    state: 'Kerala', 
+    id: 3, 
+    state: 'South India', 
     name: 'Madurai to Munnar 2 Days / 1 Night', 
     location: 'Munnar, Mattupetty Dam', 
     price: 'Explore Tour', 
@@ -67,8 +39,40 @@ const allDestinations = [
     link: '/tour-packages/munnar-tours/madurai-to-munnar-2-days-1-night-tour-package' 
   },
   { 
+    id: 4, 
+    state: 'South India', 
+    name: 'Madurai to Kerala 3 Days / 2 Nights', 
+    location: 'Munnar, Alleppey Houseboat', 
+    price: 'Explore Tour', 
+    rating: '5.0', 
+    image: '/assets/kerala1.webp', 
+    link: '/tour-packages/kerala-tours/madurai-to-kerala-tour-package-3-days-2-nights' 
+  },
+  // SOUTH INDIA - KARNATAKA
+  { 
+    id: 5, 
+    state: 'South India', 
+    name: 'Madurai to Mysore 2 Days / 1 Night', 
+    location: 'Mysore Palace, Brindavan Gardens', 
+    price: 'Explore Tour', 
+    rating: '5.0', 
+    image: '/assets/mysore1.webp', 
+    link: '/tour-packages/mysore-tours/madurai-to-mysore-2-days-1-night-tour-package' 
+  },
+  { 
+    id: 6, 
+    state: 'South India', 
+    name: 'Madurai to Coorg 3 Days / 2 Nights', 
+    location: 'Abbey Falls, Raja\'s Seat', 
+    price: 'Explore Tour', 
+    rating: '5.0', 
+    image: '/assets/coorg11.webp', 
+    link: '/tour-packages/coorg-tours/madurai-to-coorg-3-days-2-nights-tour-package' 
+  },
+  // NORTH INDIA
+  { 
     id: 7, 
-    state: 'Maharashtra', 
+    state: 'North India', 
     name: 'Chennai to Shirdi One Day Flight', 
     location: 'Samadhi Mandir, Dwarkamai', 
     price: 'Explore Tour', 
@@ -78,13 +82,34 @@ const allDestinations = [
   },
   { 
     id: 8, 
-    state: 'Uttar Pradesh', 
+    state: 'North India', 
     name: 'Chennai to Varanasi 2 Days Flight', 
     location: 'Kashi Vishwanath, Ganga Aarti', 
     price: 'Explore Tour', 
     rating: '5.0', 
     image: '/assets/varanasi/cards/kasi1.webp', 
     link: '/tour-packages/varanasi-tours/chennai-to-varanasi-tour-package-2-days-1-night-kasi-flight-package' 
+  },
+  // HONEYMOON PACKAGE
+  { 
+    id: 9, 
+    state: 'Honeymoon Package', 
+    name: 'Ooty Honeymoon 3 Days', 
+    location: 'Ooty Lake, Botanical Garden', 
+    price: 'Explore Tour', 
+    rating: '5.0', 
+    image: '/assets/otty/ooty1(small).webp', 
+    link: '/tour-packages/ooty-tours/madurai-to-ooty-3-days-2-nights-honeymoon-tour-package' 
+  },
+  { 
+    id: 10, 
+    state: 'Honeymoon Package', 
+    name: 'Munnar Honeymoon 3 Days', 
+    location: 'Echo Point, Rose Garden', 
+    price: 'Explore Tour', 
+    rating: '5.0', 
+    image: '/assets/KERALA/322x372/MUNNAR1.webp', 
+    link: '/tour-packages/munnar-tours/madurai-to-munnar-3-days-2-nights-honeymoon-tour-package' 
   },
 ]
 
@@ -98,12 +123,12 @@ export function ExploreMore() {
   return (
     <section className="py-24 px-6 bg-[var(--color-bg-luxury)]">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-6">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 gap-4 md:gap-6">
           <div>
             <h2 className="text-4xl md:text-5xl font-display font-bold text-[var(--color-neutral-black)] mb-2">Explore more</h2>
             <p className="text-[var(--color-neutral-medium)] text-sm tracking-wide">Let's go on an adventure</p>
           </div>
-          <p className="text-[var(--color-neutral-medium)] text-sm max-w-md text-right">
+          <p className="text-[var(--color-neutral-medium)] text-sm max-w-md text-left md:text-right">
             Browse our recently featured premium pilgrimage and holiday packages complete with verified ratings and detailed itineraries.
           </p>
         </div>
@@ -123,9 +148,6 @@ export function ExploreMore() {
               {tab}
             </button>
           ))}
-          <button className="px-5 py-2 rounded-full text-xs font-bold bg-white text-[var(--color-neutral-black)] border border-[var(--color-neutral-light)] ml-auto flex items-center gap-2 hover:bg-[var(--color-bg-soft)]">
-            Filter <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
-          </button>
         </div>
 
         {/* Grid */}
@@ -139,6 +161,7 @@ export function ExploreMore() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.3 }}
+                className="relative"
               >
                 <Link to={dest.link} className="clay-card p-3 rounded-[2rem] group block h-full">
                   <div className="relative h-56 rounded-3xl overflow-hidden mb-5">
@@ -149,10 +172,6 @@ export function ExploreMore() {
                       loading="lazy"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
-                    <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-[var(--color-neutral-black)] font-bold px-3 py-1 rounded-full text-xs flex items-center gap-1 ">
-                      <Star className="w-3 h-3 text-[var(--color-blue-ocean)] fill-current" />
-                      {dest.rating}
-                    </div>
                   </div>
                   <div className="px-3 pb-3 flex justify-between items-end">
                     <div>

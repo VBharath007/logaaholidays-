@@ -91,7 +91,7 @@ export function DestinationOverview() {
         return (idNum >= 2025 && idNum <= 2099) || maduraiKeywords.some(kw => titleLower.includes(kw) || destLower.includes(kw));
       }).length;
     }
-    if (cityBase === 'rameshwaram') return 5;
+    if (cityBase === 'rameswaram') return 5;
     if (cityBase === 'shirdi') return 8;
     if (cityBase === 'pune') return 5;
     if (cityBase === 'varanasi') return 7;
@@ -153,7 +153,7 @@ export function DestinationOverview() {
     if (cityBase === 'tamilnadu') {
       return "/tour-packages/madurai-tours";
     }
-    const specificTours = ['madurai', 'kanyakumari', 'kerala', 'rameshwaram', 'varanasi', 'shirdi', 'ayodhya', 'guwahati', 'shillong', 'cherrapunji', 'pune', 'karnataka', 'andaman', 'chennai', 'munnar', 'alleppey', 'thekkady', 'vagamon', 'cochin'];
+    const specificTours = ['madurai', 'kanyakumari', 'kerala', 'rameswaram', 'varanasi', 'shirdi', 'ayodhya', 'guwahati', 'shillong', 'cherrapunji', 'pune', 'karnataka', 'andaman', 'chennai', 'munnar', 'alleppey', 'thekkady', 'vagamon', 'cochin', 'ooty', 'kodaikanal'];
     if (specificTours.includes(cityBase)) {
       return `/tour-packages/${cityBase}-tours`;
     }
@@ -178,6 +178,7 @@ export function DestinationOverview() {
             loop
             muted
             playsInline
+            poster={dest.image}
             className="absolute inset-0 w-full h-full object-cover"
           >
             <source src={dest.heroVideo} type="video/mp4" />
@@ -226,13 +227,45 @@ export function DestinationOverview() {
             {dest.majorAttractions?.length > 0 && (
               <>
                 <h2 className="text-3xl font-display font-bold text-[var(--color-blue-ocean)] mb-6">Major Attractions</h2>
-                <div className="flex flex-col gap-6">
-                  {dest.majorAttractions.map((attr: any, idx: number) => (
-                    <div key={idx} className={`${clayCard} p-6 border-l-4 border-l-[var(--color-primary-forest)]`}>
-                      <h3 className="text-xl font-bold text-slate-800 mb-2">{attr.title}</h3>
-                      <p className="text-slate-600">{attr.description}</p>
-                    </div>
-                  ))}
+                <div className="flex flex-col gap-10 mt-8">
+                  {dest.majorAttractions.map((attr: any, idx: number) => {
+                    const isEven = idx % 2 === 0;
+                    return (
+                      <div 
+                        key={idx} 
+                        className={`group relative flex flex-col md:flex-row ${isEven ? '' : 'md:flex-row-reverse'} bg-white rounded-[2rem] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.12)] transition-all duration-500 border border-slate-100/50`}
+                      >
+                        {/* Image Section */}
+                        {attr.image && (
+                          <div className="w-full md:w-2/5 lg:w-1/2 relative h-72 md:h-auto overflow-hidden bg-slate-100 shrink-0">
+                            <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-colors duration-500 z-10" />
+                            <img 
+                              src={attr.image} 
+                              alt={attr.title} 
+                              loading="lazy" 
+                              className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out" 
+                            />
+                            {/* Gradient Overlay for seamless blend on Desktop */}
+                            <div className={`hidden md:block absolute inset-0 z-10 bg-gradient-to-${isEven ? 'r' : 'l'} from-transparent via-transparent to-white w-[101%] ${isEven ? '-right-[1%]' : '-left-[1%]'}`} />
+                          </div>
+                        )}
+                        
+                        {/* Content Section */}
+                        <div className={`w-full ${attr.image ? 'md:w-3/5 lg:w-1/2' : 'w-full'} p-8 md:p-12 lg:p-16 flex flex-col justify-center relative z-20 bg-white`}>
+                          <div className="mb-4 inline-flex items-center gap-3">
+                            <span className="w-10 h-[2px] bg-teal-500 rounded-full" />
+                            <span className="text-teal-600 font-bold tracking-widest text-xs uppercase">Attraction {String(idx + 1).padStart(2, '0')}</span>
+                          </div>
+                          <h3 className="text-3xl md:text-4xl font-display font-extrabold text-slate-900 mb-6 leading-tight group-hover:text-teal-600 transition-colors duration-300">
+                            {attr.title}
+                          </h3>
+                          <p className="text-slate-600 leading-relaxed text-lg text-justify font-medium">
+                            {attr.description}
+                          </p>
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
               </>
             )}
@@ -261,7 +294,7 @@ export function DestinationOverview() {
               </div>
               <Link
                 to={`/places-to-visit/${state}/${city}`}
-                className="text-sm font-bold bg-[var(--color-primary-forest)]/10 text-[var(--color-primary-forest)] hover:bg-[var(--color-primary-forest)] hover:text-white px-5 py-2.5 rounded-full transition-all hover:scale-105 shadow-sm border border-[var(--color-primary-forest)]/25 flex items-center gap-1.5 w-fit"
+                className="hidden md:flex text-sm font-bold bg-[var(--color-primary-forest)]/10 text-[var(--color-primary-forest)] hover:bg-[var(--color-primary-forest)] hover:text-white px-5 py-2.5 rounded-full transition-all hover:scale-105 shadow-sm border border-[var(--color-primary-forest)]/25 items-center gap-1.5 w-fit"
               >
                 <span>View all</span> <ChevronRight className="w-4 h-4" />
               </Link>
@@ -295,6 +328,18 @@ export function DestinationOverview() {
               })}
               </div>
             )}
+            
+            {/* Mobile View All Button for Places */}
+            {filteredPlaces.length > 0 && (
+              <div className="mt-6 flex md:hidden justify-center w-full">
+                <Link
+                  to={`/places-to-visit/${state}/${city}`}
+                  className="w-full text-center justify-center text-sm font-bold bg-[var(--color-primary-forest)]/10 text-[var(--color-primary-forest)] hover:bg-[var(--color-primary-forest)] hover:text-white px-5 py-3.5 rounded-2xl transition-all shadow-sm border border-[var(--color-primary-forest)]/25 flex items-center gap-1.5"
+                >
+                  <span>View all places</span> <ChevronRight className="w-4 h-4" />
+                </Link>
+              </div>
+            )}
           </div>
           )}
 
@@ -319,8 +364,9 @@ export function DestinationOverview() {
                       controls
                       loop
                       muted
-                      autoPlay
                       playsInline
+                      preload="none"
+                      poster={dest.image}
                       className="w-full h-full object-cover"
                     >
                       <source src={dest.promoVideo} type="video/mp4" />
@@ -342,7 +388,7 @@ export function DestinationOverview() {
                 </div>
                 <Link
                   to={getCategoryLink()}
-                  className="text-sm font-bold bg-[var(--color-primary-forest)]/10 text-[var(--color-primary-forest)] hover:bg-[var(--color-primary-forest)] hover:text-white px-5 py-2.5 rounded-full transition-all hover:scale-105 shadow-sm border border-[var(--color-primary-forest)]/25 flex items-center gap-1.5 w-fit"
+                  className="hidden md:flex text-sm font-bold bg-[var(--color-primary-forest)]/10 text-[var(--color-primary-forest)] hover:bg-[var(--color-primary-forest)] hover:text-white px-5 py-2.5 rounded-full transition-all hover:scale-105 shadow-sm border border-[var(--color-primary-forest)]/25 items-center gap-1.5 w-fit"
                 >
                   <span>View all</span> <ChevronRight className="w-4 h-4" />
                 </Link>
@@ -350,29 +396,64 @@ export function DestinationOverview() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {featuredPackages.slice(0, 4).map((pkg: any) => (
-                  <Link key={pkg.id} to={getPackageLink(pkg)} className={`${clayCard} overflow-hidden group flex flex-col block cursor-pointer`}>
+                  <div key={pkg.id} className={`${clayCard} overflow-hidden group flex flex-col block`}>
                     <div 
                       className={`relative m-2 rounded-[2rem] overflow-hidden ${pkg.image?.includes('/assets/shiridi/') ? 'aspect-[322/372]' : 'h-48'}`}
                       style={pkg.image?.includes('/assets/shiridi/') ? { aspectRatio: '322/372' } : {}}
                     >
-                      <img loading="lazy"
-                        src={pkg.image}
-                        alt={pkg.title}
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                      />
+                      <Link to={getPackageLink(pkg)}>
+                        <img loading="lazy"
+                          src={pkg.image}
+                          alt={pkg.title}
+                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        />
+                      </Link>
                     </div>
                     <div className="p-5 pb-6 flex flex-col flex-1">
-                      <h3 className="text-lg font-bold text-[var(--color-blue-ocean)] mb-3 leading-tight group-hover:text-[var(--color-primary-forest)] transition-colors" title={pkg.title}>{pkg.title}</h3>
-                      <div className="flex items-center gap-2 text-slate-500 text-sm mb-6 mt-auto">
-                        <Clock className="w-4 h-4" />
+                      <Link to={getPackageLink(pkg)}>
+                        <h3 className="text-lg font-bold text-[#0B2515] mb-3 leading-tight group-hover:text-[#0F6B46] transition-colors" title={pkg.title}>{pkg.title}</h3>
+                      </Link>
+                      <div className="flex items-center gap-2 text-slate-500 text-sm mb-4">
+                        <Clock className="w-4 h-4 text-[#0F6B46]" />
                         <span>{pkg.duration || pkg.overview?.duration}</span>
                       </div>
-                      <div className={`${clayBtn} w-full py-3 flex justify-center text-sm`}>
-                        View Details
+                      <div className="flex items-center gap-2 text-slate-500 text-sm mb-6">
+                        <MapPin className="w-4 h-4 text-[#0F6B46]" />
+                        <span className="line-clamp-1">{pkg.destination || pkg.overview?.destination || city}</span>
+                      </div>
+
+                      {/* Action Buttons */}
+                      <div className="mt-auto pt-4 border-t border-slate-100 flex flex-col gap-3">
+                        <div className="flex flex-col sm:flex-row items-center gap-2">
+                          <a
+                            href={`https://wa.me/917397329776?text=Hi Logaa Holidays, I am interested in the ${pkg.title} package.`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full sm:flex-1 text-center bg-[#F2FBF5] text-[#0F6B46] border border-[#E2F5EA] text-[13px] font-bold py-2.5 rounded-xl hover:bg-[#0F6B46] hover:text-white transition-colors"
+                          >
+                            Enquire Now
+                          </a>
+                          <Link
+                            to={getPackageLink(pkg)}
+                            className="w-full sm:flex-1 text-center bg-[#0B2515] text-white text-[13px] font-bold py-2.5 rounded-xl hover:bg-[#0c593a] transition-colors"
+                          >
+                            View Details
+                          </Link>
+                        </div>
                       </div>
                     </div>
-                  </Link>
+                  </div>
                 ))}
+              </div>
+
+              {/* Mobile View All Button for Packages */}
+              <div className="mt-6 flex md:hidden justify-center w-full">
+                <Link
+                  to={getCategoryLink()}
+                  className="w-full text-center justify-center text-sm font-bold bg-[var(--color-primary-forest)]/10 text-[var(--color-primary-forest)] hover:bg-[var(--color-primary-forest)] hover:text-white px-5 py-3.5 rounded-2xl transition-all shadow-sm border border-[var(--color-primary-forest)]/25 flex items-center gap-1.5"
+                >
+                  <span>View all packages</span> <ChevronRight className="w-4 h-4" />
+                </Link>
               </div>
             </div>
           ) : (
@@ -428,7 +509,7 @@ export function DestinationOverview() {
             <h3 className="text-xl font-bold text-white mb-2">Get our assistance</h3>
             <p className="text-emerald-100 mb-6 text-sm">Want us to call you for easy booking?</p>
             <p className="text-white/70 text-xs uppercase tracking-wider mb-1">Or call us at</p>
-            <p className="text-2xl font-bold text-white">+91 7397329776</p>
+            <a href="tel:+917397329776" className="text-2xl font-bold text-white hover:underline">+91 73973 29776</a>
           </div>
 
         </div>

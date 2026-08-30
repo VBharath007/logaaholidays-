@@ -6,7 +6,7 @@ import {
 
 const stateDistrictsMap: Record<string, string[]> = {
  'Tamil Nadu': ['Chennai', 'Coimbatore', 'Madurai', 'Salem', 'Tiruchirappalli', 'Tirunelveli', 'Erode', 'Vellore', 'Thoothukudi', 'Dindigul', 'Thanjavur', 'Kanchipuram', 'Kanyakumari', 'Krishnagiri', 'Namakkal', 'Karur', 'Nagapattinam', 'Ramanathapuram', 'Sivagangai', 'Virudhunagar', 'Cuddalore', 'Villupuram', 'Tenkasi', 'Ranipet', 'Tirupattur', 'Ariyalur', 'Perambalur', 'Mayiladuthurai', 'Nilgiris', 'Tiruvannamalai', 'Tiruvallur', 'Dharmapuri'],
- 'Kerala': ['Thiruvananthapuram', 'Kochi', 'Kozhikode', 'Thrissur', 'Kollam', 'Palakkad', 'Kannur', 'Idukki', 'Pathanamthitta', 'Alappuzha', 'Wayanad', 'Kasaragod', 'Kottayam', 'Malappuram'],
+ 'Kerala': ['Thiruvananthapuram', 'Kochi', 'Kozhikode', 'Thrissur', 'Kollam', 'Palakkad', 'Kannur', 'Idukki', 'Pathanamthitta', 'Alleppey', 'Wayanad', 'Kasaragod', 'Kottayam', 'Malappuram'],
  'Karnataka': ['Bangalore', 'Mysore', 'Mangalore', 'Hubli', 'Belgaum', 'Shimoga', 'Dharwad', 'Tumkur', 'Chitradurga', 'Coorg', 'Hassan', 'Chikmagalur', 'Raichur', 'Bijapur', 'Gulbarga', 'Bellary', 'Udupi', 'Dakshina Kannada', 'Uttara Kannada', 'Kolar', 'Bagalkot', 'Gadag', 'Koppal', 'Haveri', 'Yadgir', 'Chamrajnagar', 'Mandya', 'Ramnagara', 'Bidar', 'Chikkaballapur'],
  'Andhra Pradesh': ['Visakhapatnam', 'Vijayawada', 'Tirupati', 'Guntur', 'Kurnool', 'Nellore', 'Rajahmundry', 'Kadapa', 'Anantapur', 'Kakinada', 'Eluru', 'Ongole', 'Chittoor', 'Srikakulam', 'Vizianagaram'],
  'Telangana': ['Hyderabad', 'Warangal', 'Nizamabad', 'Karimnagar', 'Khammam', 'Rangareddy', 'Medak', 'Nalgonda', 'Mahbubnagar', 'Adilabad'],

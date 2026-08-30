@@ -127,7 +127,7 @@ export function KeralaPackage() {
       <div className="relative w-full h-[500px] sm:h-[600px] overflow-hidden rounded-b-[40px] shadow-[0_20px_50px_rgba(0,0,0,0.12)]">
         <img
           src="/assets/bharath/kerala hero.webp"
-          alt="Kerala Tour Packages"
+          alt="Premium Kerala Tour Packages from Madurai - Logaa Holidays"
           className="w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-transparent" />
@@ -241,18 +241,24 @@ export function KeralaPackage() {
                     <span>{pkg.themes}</span>
                   </div>
 
-                  {/* Price + CTA */}
-                  <div className="mt-auto flex items-center justify-between gap-3">
-                    <div>
-                      <p className="text-xs text-slate-400 font-medium">Starting from</p>
-                      <p className="text-lg font-bold text-[var(--color-primary-forest)]">{pkg.price}</p>
+                  {/* Action Buttons */}
+                  <div className="mt-auto pt-4 border-t border-slate-100 flex flex-col gap-3">
+                    <div className="flex flex-col sm:flex-row items-center gap-2">
+                      <a
+                        href={`https://wa.me/917397329776?text=Hi Logaa Holidays, I am interested in the ${pkg.title} package.`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full sm:flex-1 text-center bg-[#F2FBF5] text-[#0F6B46] border border-[#E2F5EA] text-[13px] font-bold py-2 rounded-xl hover:bg-[#0F6B46] hover:text-white transition-colors"
+                      >
+                        Enquire Now
+                      </a>
+                      <Link
+                        to={getPackageLink({ id: pkg.id, title: pkg.title })}
+                        className="w-full sm:flex-1 text-center bg-[#0B2515] text-white text-[13px] font-bold py-2 rounded-xl hover:bg-[#0c593a] transition-colors"
+                      >
+                        View Details
+                      </Link>
                     </div>
-                    <Link
-                      to={getPackageLink({ id: pkg.id, title: pkg.title })}
-                      className={`${clayBtn} px-5 py-2.5 text-sm flex items-center gap-1.5 flex-shrink-0`}
-                    >
-                      View Details <ArrowRight className="w-4 h-4" />
-                    </Link>
                   </div>
                 </div>
               </div>
@@ -312,6 +318,63 @@ export function KeralaPackage() {
         </div>
       </div>
 
+      {/* ── FAQ Section ── */}
+      <KeralaFAQ />
+
+    </div>
+  );
+}
+
+function KeralaFAQ() {
+  const [openIndex, setOpenIndex] = React.useState<number | null>(null);
+  const faqs = [
+    {
+      q: 'Is this Kerala tour package family-friendly and romantic?',
+      a: "Yes. Kerala's gentle backwater cruises and tea gardens are ideal for families and honeymooners alike. The itinerary features a calm houseboat stay in Alleppey and a nature walk in Munnar, both of which are enjoyable for children and senior citizens. We ensure cosy stays and optional activities such as boat rides and spice farm visits, so everyone — from young children to honeymooning couples — has a memorable experience.",
+    },
+    {
+      q: 'Can I join the Kerala tour from Kochi or Trivandrum?',
+      a: 'Certainly. Most itineraries start in Kochi (Cochin) or Trivandrum (Thiruvananthapuram). We offer pick-up from Kochi airport and railway station, or we can meet you in Trivandrum if that is more convenient. You can fly into either city, and we will handle all local transfers.',
+    },
+    {
+      q: 'What makes a Kerala houseboat stay special?',
+      a: "A Kerala houseboat, known as a kettuvallam, drifts through the serene backwaters of Alleppey, offering breathtaking views of coconut-lined canals, paddy fields and rural village life. Our packages include comfortable houseboat stays with all meals, air-conditioned cabins and an experienced crew — making it a uniquely relaxing experience unlike any other in India.",
+    },
+    {
+      q: 'Are Kerala packages available for senior citizens?',
+      a: "Absolutely. We design Kerala itineraries with senior citizens in mind — choosing hotels with lifts and easy access, scheduling gentle sightseeing at a relaxed pace, and avoiding strenuous activities. The cool climate of Munnar, the calm backwaters of Alleppey and the wildlife sanctuaries of Thekkady all offer peaceful experiences that are well-suited for older travellers.",
+    },
+  ];
+
+  return (
+    <div className="max-w-4xl mx-auto px-6 mb-16">
+      <div className="bg-white rounded-[2.5rem] p-8 md:p-10 shadow-sm border border-slate-100">
+        <div className="flex items-center gap-2 mb-8">
+          <Star className="w-5 h-5 text-[var(--color-primary-forest)] fill-current" />
+          <h2 className="text-2xl font-bold text-slate-800">Frequently Asked Questions</h2>
+        </div>
+        <div className="flex flex-col gap-3">
+          {faqs.map((faq, i) => (
+            <div key={i} className="border border-slate-100 rounded-2xl overflow-hidden">
+              <button
+                onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                className="w-full flex items-center justify-between gap-4 px-6 py-4 text-left bg-[#f8f9fa] hover:bg-[#eef4ee] transition-colors"
+                aria-expanded={openIndex === i}
+              >
+                <span className="text-sm font-semibold text-slate-800 leading-snug">{faq.q}</span>
+                <span className={`text-[var(--color-primary-forest)] flex-shrink-0 transition-transform duration-200 ${openIndex === i ? 'rotate-180' : ''}`}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9" /></svg>
+                </span>
+              </button>
+              {openIndex === i && (
+                <div className="px-6 py-4 bg-white border-t border-slate-100">
+                  <p className="text-sm text-slate-600 leading-relaxed">{faq.a}</p>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

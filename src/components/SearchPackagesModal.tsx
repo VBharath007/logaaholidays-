@@ -25,7 +25,7 @@ const ALL_LOCATIONS = {
   "Meghalaya": ["Cherrapunji", "Dawki", "Shillong"],
   "Mizoram": ["Aizawl"],
   "Nagaland": ["Dimapur", "Kohima"],
-  "Tamil Nadu": ["Chennai", "Chidambaram", "Kanchipuram", "Kanyakumari", "Karaikal", "Kodaikanal", "Kumbakonam", "Madurai", "Mahabalipuram", "Ooty", "Palani", "Pondicherry", "Rameshwaram", "Thanjavur", "Tiruvallur", "Tiruvannamalai", "Trichy", "Vellore"],
+  "Tamil Nadu": ["Chennai", "Chidambaram", "Kanchipuram", "Kanyakumari", "Karaikal", "Kodaikanal", "Kumbakonam", "Madurai", "Mahabalipuram", "Ooty", "Palani", "Pondicherry", "Rameswaram", "Thanjavur", "Tiruvallur", "Tiruvannamalai", "Trichy", "Vellore"],
   "Tripura": ["Agartala"],
   "Uttar Pradesh": ["Ayodhya", "Prayagraj", "Varanasi"],
   "Uttarakhand": ["Haridwar", "Rishikesh"]

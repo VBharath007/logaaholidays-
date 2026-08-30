@@ -71,10 +71,6 @@ export function FeaturedTours() {
  </div>
 
  <div className="p-8 flex-grow flex flex-col bg-white rounded-b-[2rem]">
- <div className="flex items-center gap-1 mb-3 text-orange-400">
- <Star className="w-4 h-4 fill-current" />
- <span className="text-slate-600 font-medium text-sm ml-1">{tour.rating}</span>
- </div>
  
  <h3 className="text-2xl font-bold text-slate-800 mb-2 group-hover:text-blue-600 transition-colors">
  {tour.title}

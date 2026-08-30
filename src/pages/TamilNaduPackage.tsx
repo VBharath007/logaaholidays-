@@ -206,18 +206,24 @@ export function TamilNaduPackage() {
                     <span>{pkg.themes}</span>
                   </div>
 
-                  {/* Price + CTA */}
-                  <div className="mt-auto flex items-center justify-between gap-3">
-                    <div>
-                      <p className="text-xs text-slate-400 font-medium">Starting from</p>
-                      <p className="text-lg font-bold text-[var(--color-primary-forest)]">{pkg.price}</p>
+                  {/* Action Buttons */}
+                  <div className="mt-auto pt-4 border-t border-slate-100 flex flex-col gap-3">
+                    <div className="flex flex-col sm:flex-row items-center gap-2">
+                      <a
+                        href={`https://wa.me/917397329776?text=Hi Logaa Holidays, I am interested in the ${pkg.title} package.`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full sm:flex-1 text-center bg-[#F2FBF5] text-[#0F6B46] border border-[#E2F5EA] text-[13px] font-bold py-2 rounded-xl hover:bg-[#0F6B46] hover:text-white transition-colors"
+                      >
+                        Enquire Now
+                      </a>
+                      <Link
+                        to={getPackageLink({ id: pkg.id, title: pkg.title })}
+                        className="w-full sm:flex-1 text-center bg-[#0B2515] text-white text-[13px] font-bold py-2 rounded-xl hover:bg-[#0c593a] transition-colors"
+                      >
+                        View Details
+                      </Link>
                     </div>
-                    <Link
-                      to={getPackageLink({ id: pkg.id, title: pkg.title })}
-                      className={`${clayBtn} px-5 py-2.5 text-sm flex items-center gap-1.5 flex-shrink-0`}
-                    >
-                      View Details <ArrowRight className="w-4 h-4" />
-                    </Link>
                   </div>
                 </div>
               </div>
@@ -277,6 +283,63 @@ export function TamilNaduPackage() {
         </div>
       </div>
 
+      {/* ── FAQ Section ── */}
+      <TamilNaduFAQ />
+
+    </div>
+  );
+}
+
+function TamilNaduFAQ() {
+  const [openIndex, setOpenIndex] = React.useState<number | null>(null);
+  const faqs = [
+    {
+      q: 'Is this Tamil Nadu tour package suitable for families and couples?',
+      a: 'Yes. The tour covers heritage temples and coastal beaches, with comfortable hotels and a relaxed pace, making it ideal for both family groups and honeymooners. We tailor activities for children, adults and senior citizens — such as easy walks and optional temple visits — so travellers of all ages can enjoy it.',
+    },
+    {
+      q: 'Can we join the Tamil Nadu tour from Madurai or Chennai?',
+      a: 'Absolutely. We offer pick-up from Madurai or Chennai and coordinate train and flight arrivals into those cities. Our driver or guide will meet you at the station or airport and begin the tour, so you can easily join from any major city in Tamil Nadu.',
+    },
+    {
+      q: 'Which destinations are covered in the Tamil Nadu tour packages?',
+      a: 'Our Tamil Nadu packages cover a wide range of destinations including Chennai, Mahabalipuram, Thanjavur, Trichy, Madurai, Rameswaram and Kanyakumari. Depending on the package you choose, you can explore ancient Dravidian temples, historic forts, scenic coastal beaches and vibrant cultural heritage sites.',
+    },
+    {
+      q: 'Are Tamil Nadu tour packages available for pilgrimage groups?',
+      a: 'Yes. We have dedicated pilgrimage-focused itineraries covering the Pancha Bhuta Stalas, Meenakshi Amman Temple, Ramanathaswamy Temple and Kanyakumari. Our guides provide detailed information at each sacred site, and we ensure a comfortable, well-paced experience for senior citizens and devotees.',
+    },
+  ];
+
+  return (
+    <div className="max-w-4xl mx-auto px-6 mb-16">
+      <div className="bg-white rounded-[2.5rem] p-8 md:p-10 shadow-sm border border-slate-100">
+        <div className="flex items-center gap-2 mb-8">
+          <Star className="w-5 h-5 text-[var(--color-primary-forest)] fill-current" />
+          <h2 className="text-2xl font-bold text-slate-800">Frequently Asked Questions</h2>
+        </div>
+        <div className="flex flex-col gap-3">
+          {faqs.map((faq, i) => (
+            <div key={i} className="border border-slate-100 rounded-2xl overflow-hidden">
+              <button
+                onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                className="w-full flex items-center justify-between gap-4 px-6 py-4 text-left bg-[#f8f9fa] hover:bg-[#eef4ee] transition-colors"
+                aria-expanded={openIndex === i}
+              >
+                <span className="text-sm font-semibold text-slate-800 leading-snug">{faq.q}</span>
+                <span className={`text-[var(--color-primary-forest)] flex-shrink-0 transition-transform duration-200 ${openIndex === i ? 'rotate-180' : ''}`}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9" /></svg>
+                </span>
+              </button>
+              {openIndex === i && (
+                <div className="px-6 py-4 bg-white border-t border-slate-100">
+                  <p className="text-sm text-slate-600 leading-relaxed">{faq.a}</p>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

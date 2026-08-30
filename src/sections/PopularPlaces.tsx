@@ -41,15 +41,15 @@ export function PopularPlaces() {
   return (
     <section className="py-24 px-6 bg-[var(--color-bg-luxury)]" aria-labelledby="popular-places-heading">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-4 md:gap-6">
           <div>
             <h2 id="popular-places-heading" className="text-4xl md:text-5xl font-display font-bold text-[var(--color-neutral-black)] mb-2">
               Popular Places
             </h2>
             <p className="text-[var(--color-neutral-dark)] text-sm tracking-wide">Let's enjoy this heaven on earth</p>
           </div>
-          <p className="text-[var(--color-neutral-medium)] text-sm max-w-sm">
-            Experience handpicked destinations with the Madurai Best Travel Agency. We offer customized tour packages featuring historic temple towns, tranquil backwaters, and misty hill stations.
+          <p className="text-[var(--color-neutral-medium)] text-sm max-w-sm text-left md:text-right">
+            Explore handpicked destinations with Logaa Holidays, a trusted travel agency in Madurai. We offer customized tour packages featuring historic temple towns, tranquil backwaters, and misty hill stations.
           </p>
         </div>
 
@@ -72,7 +72,7 @@ export function PopularPlaces() {
                 <div className="relative h-64 rounded-3xl overflow-hidden mb-4">
                   <img 
                     src={place.image} 
-                    alt={`Beautiful view of ${place.name} in ${place.location}`} 
+                    alt={`${place.name} Tour Packages from Madurai - Logaa Holidays`} 
                     title={place.name}
                     loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
