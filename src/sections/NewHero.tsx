@@ -185,15 +185,22 @@ export function NewHero() {
   );
 
   return (
-    <ScrollFlyIn
-      imageUrl="assets/home hero/eroplanine.webp"
-      imageAlt="Airplane flying"
-      background={premiumBackground}
-      secondText={secondText}
-      bottomContent={searchBar}
-      className="bg-[var(--color-bg-luxury)] w-full"
-    >
-      {firstText}
-    </ScrollFlyIn>
+    <div className="flex flex-col w-full bg-[var(--color-bg-luxury)]">
+      <ScrollFlyIn
+        imageUrl="/assets/home hero/eroplanine.webp"
+        imageAlt="Airplane flying"
+        background={premiumBackground}
+        secondText={secondText}
+        bottomContent={<div className="hidden md:block">{searchBar}</div>}
+        className="w-full"
+      >
+        {firstText}
+      </ScrollFlyIn>
+
+      {/* Mobile Search Bar below the hero animation */}
+      <div className="md:hidden w-full px-6 pb-12 pt-4">
+        {searchBar}
+      </div>
+    </div>
   );
 }

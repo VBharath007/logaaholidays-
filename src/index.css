@@ -127,9 +127,9 @@
     overflow-x: clip;
     transition: background-color 1s ease-in-out;
     /* DEV MODE: user-select: none; Anti-copy — temporarily disabled */
-    -webkit-user-select: none;
+    /* -webkit-user-select: none;
     -moz-user-select: none;
-    -ms-user-select: none;
+    -ms-user-select: none; */
   }
 
   input, textarea, select, button {

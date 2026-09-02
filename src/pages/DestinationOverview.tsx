@@ -224,7 +224,9 @@ export function DestinationOverview() {
             <h2 className="text-3xl font-display font-bold text-slate-800 mb-6">{dest.history.title}</h2>
             <p className="text-slate-600 leading-relaxed text-lg mb-8">{dest.history.description}</p>
 
-            {dest.majorAttractions?.length > 0 && (
+            {dest.majorAttractions?.length > 0 && 
+             !destNameLower.includes('madurai') && 
+             !(dest.placesToVisit?.length > 0) && (
               <>
                 <h2 className="text-3xl font-display font-bold text-[var(--color-blue-ocean)] mb-6">Major Attractions</h2>
                 <div className="flex flex-col gap-10 mt-8">

@@ -18,9 +18,9 @@ const TornPaperBottom = () => (
 
 /* ─────────────────── FEATURED DATA ─────────────────── */
 const featured = {
-  name: 'Loganathan',
-  location: 'Madurai, Tamil Nadu',
-  quote: 'Logaa Holidays provided the most unforgettable pilgrimage experience for our entire family. The Shirdi trip was flawlessly organized — from the flight tickets to hotel, darshan slots, and cab arrangements. Everything was perfectly handled. I highly recommend Logaa Holidays for anyone planning a spiritual journey!',
+  name: 'Ananth',
+  location: 'India',
+  quote: 'We are traveling with Logaa Holidays. It is an 11-day program covering Madurai, Trichy, Thanjavur, Rameswaram, Thiruvananthapuram, Thekkady and Munnar. The entire package offers good vehicles and rooms. I highly recommend Logaa Holidays.',
 }
 
 /* ─────────────────── TYPES ─────────────────── */
@@ -200,7 +200,7 @@ export function TestimonialsPage() {
   useSEO(
     'Customer Reviews & Testimonials | Logaa Holidays',
     'Read what our happy travelers say about Logaa Holidays. We provide the best travel experiences, tour packages, and customer service in Madurai.',
-    'Logaa Holidays Reviews, Travel Agency Madurai Reviews, Customer Testimonials, Madurai Tour Operator Reviews'
+    'Customized Tour Packages in Madurai, Family Tour Packages from Madurai, Honeymoon Packages from Madurai'
   );
 
   return (

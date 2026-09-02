@@ -580,7 +580,7 @@ const rameswaramPackages = [
 });
 
 const ayodhyaPackages = Object.values(packagesDatabase).filter((p: any) => {
-  const titleLower = p.title.toLowerCase();
+  const titleLower = (p.title || '').toLowerCase();
   return titleLower.includes('ayodhya');
 }).map((p: any) => ({
   id: parseInt(p.id),
@@ -791,7 +791,7 @@ const TourCategory = () => {
       return 'Maldives Honeymoon';
     }
 
-    const standaloneTours = ['madurai', 'kerala', 'chennai', 'cochin', 'munnar', 'thekkady', 'alleppey', 'vagamon', 'kottayam', 'kovalam', 'karnataka', 'shimla', 'manali', 'manali-volvo', 'kashmir', 'shirdi ', 'varanasi'];
+    const standaloneTours = ['madurai', 'kerala', 'chennai', 'cochin', 'munnar', 'thekkady', 'alleppey', 'vagamon', 'kottayam', 'kovalam', 'karnataka', 'shimla', 'manali', 'manali-volvo', 'kashmir', 'shirdi', 'varanasi', 'mysore', 'coorg', 'bangalore', 'chikmagalur', 'kabini', 'hampi'];
     if (standaloneTours.includes(placeKeyword)) {
       return `${placeDisplay} Tour`;
     }
@@ -915,8 +915,8 @@ const TourCategory = () => {
             };
 
             const getPriority = (pkg: any) => {
-              const titleLower = pkg.title.toLowerCase();
-              const destLower = pkg.destination.toLowerCase();
+              const titleLower = (pkg.title || '').toLowerCase();
+              const destLower = (pkg.destination || '').toLowerCase();
 
               const isFlightOrNorth = titleLower.includes('flight') ||
                 titleLower.includes('shirdi') ||
@@ -1061,24 +1061,29 @@ const TourCategory = () => {
             .sort((a, b) => a.id - b.id);
         }
         default: {
-          const placeKeyword = category.replace('-tours', '').toLowerCase();
-          const matched = Object.values(packagesDatabase).filter((p: any) =>
-            p.title.toLowerCase().includes(placeKeyword) ||
-            (p.overview?.destination || '').toLowerCase().includes(placeKeyword)
-          ).map((p: any) => ({
-            id: parseInt(p.id),
-            title: p.title,
-            duration: p.overview.duration,
-            destination: p.overview.destination,
-            activities: p.overview.activities,
-            themes: p.overview.themes,
-            price: p.priceDetails.amount,
-            image: p.image,
-            rating: p.rating,
-            reviews: p.reviews
+          const placeKeyword = (category || '').replace(/-tours|-packages/g, '').toLowerCase();
+          
+          // Safe RegExp to match whole words. (^|[^a-zA-Z]) ensures we match the start of a word.
+          const wordRegex = new RegExp(`(^|[^a-zA-Z])${placeKeyword}([^a-zA-Z]|$)`, 'i');
+          
+          const matched = Object.values(packagesDatabase).filter((p: any) => {
+            const title = p.title || '';
+            const dest = p.overview?.destination || '';
+            return wordRegex.test(title) || wordRegex.test(dest);
+          }).map((p: any) => ({
+            id: parseInt(p.id || '0'),
+            title: p.title || '',
+            duration: p.overview?.duration || 'Various',
+            destination: p.overview?.destination || 'Various',
+            activities: p.overview?.activities || 'Various',
+            themes: p.overview?.themes || 'Various',
+            price: p.priceDetails?.amount || 'On Request',
+            image: p.image || '',
+            rating: p.rating || '5.0',
+            reviews: p.reviews || ''
           }));
 
-          return matched.length > 0 ? matched : mockPackages;
+          return matched.length > 0 ? matched : [];
         }
       }
     })();
@@ -1100,11 +1105,11 @@ const TourCategory = () => {
       }
       return p;
     });
-  }, [category, mockPackages]);
+  }, [category]);
 
   const currentPackages = useMemo(() => {
     return basePackages.filter(pkg => {
-      if (searchQuery && !pkg.title.toLowerCase().includes(searchQuery.toLowerCase()) && !(pkg.destination || '').toLowerCase().includes(searchQuery.toLowerCase())) {
+      if (searchQuery && !(pkg.title || '').toLowerCase().includes(searchQuery.toLowerCase()) && !(pkg.destination || '').toLowerCase().includes(searchQuery.toLowerCase())) {
         return false;
       }
 
@@ -1133,7 +1138,7 @@ const TourCategory = () => {
       }
 
       if (transportFilter) {
-        const titleLower = pkg.title.toLowerCase();
+        const titleLower = (pkg.title || '').toLowerCase();
         if (transportFilter === 'Flight' && !titleLower.includes('flight')) return false;
         if (transportFilter === 'Train' && !titleLower.includes('train')) return false;
       }
@@ -1670,7 +1675,7 @@ const TourCategory = () => {
         {savedPackages.length > 0 && (
           <button
             onClick={() => setIsSavedDrawerOpen(true)}
-            className="fixed bottom-8 right-8 z-50 bg-[var(--color-primary-forest)] text-white p-4 rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.2)] hover:scale-105 transition-transform flex items-center justify-center group"
+            className="fixed bottom-[165px] right-6 z-50 bg-[var(--color-primary-forest)] text-white p-4 rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.2)] hover:scale-105 transition-transform flex items-center justify-center group"
           >
             <div className="relative">
               <Heart className="w-6 h-6 fill-white" />
@@ -1715,7 +1720,24 @@ const TourCategory = () => {
               {/* List */}
               <div className="flex-1 overflow-y-auto p-6 flex flex-col gap-4">
                 {savedPackages.map(id => {
-                  const pkg = currentPackages.find(p => p.id === id) || basePackages.find(p => p.id === id);
+                  let pkg = currentPackages.find(p => p.id === id) || basePackages.find(p => p.id === id);
+                  if (!pkg) {
+                    const dbPkg = packagesDatabase[id.toString()];
+                    if (dbPkg) {
+                      pkg = {
+                        id: parseInt(dbPkg.id),
+                        title: getPackageDisplayTitle(dbPkg),
+                        duration: dbPkg.overview?.duration,
+                        destination: dbPkg.overview?.destination,
+                        activities: dbPkg.overview?.activities,
+                        themes: dbPkg.overview?.themes,
+                        price: dbPkg.priceDetails?.amount,
+                        image: dbPkg.image || dbPkg.heroImage,
+                        rating: dbPkg.rating,
+                        reviews: dbPkg.reviews
+                      };
+                    }
+                  }
                   if (!pkg) return null;
                   return (
                     <div key={id} className="flex gap-4 p-3 border border-slate-100 rounded-2xl bg-white shadow-sm hover:shadow-md transition-shadow group">

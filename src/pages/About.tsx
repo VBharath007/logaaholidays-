@@ -8,7 +8,7 @@ export function About() {
     useSEO(
         'About Us | Logaa Holidays - Trusted Travel Agency in Madurai',
         'Learn about Logaa Holidays, a premier travel agency in Madurai offering customized tour packages, flight booking, car rentals, and complete travel assistance.',
-        'About Logaa Holidays, Travel Agency in Madurai, Tour Operator in Madurai, Madurai Travel Services, Best Travel Agency'
+        'Tour Operators in Madurai, Best Tour Operator in Madurai, Travel Agents in Madurai, Domestic Tour Packages from Madurai'
     );
 
     // Scroll to top on mount
@@ -22,7 +22,8 @@ export function About() {
             {/* 1. Hero Header */}
             <section className="relative h-[60vh] md:h-[100vh] min-h-[400px] w-full flex flex-col items-center justify-center text-center">
                 <div className="absolute inset-0">
-                    <img src="/assets/about/abouthero.png" alt="Logaa Holidays - Premium Travel Agency and Tour Operator in Madurai" className="w-full h-full object-cover" />
+                    <img src="/assets/about/abouthero.png" alt="Logaa Holidays - Premium Travel Agency and Tour Operator in Madurai" className="hidden md:block w-full h-full object-cover" />
+                    <img src="/assets/about/about mobile.png" alt="Logaa Holidays - Premium Travel Agency and Tour Operator in Madurai" className="block md:hidden w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-[var(--color-bg-luxury)]" />
                 </div>
 

@@ -133,28 +133,102 @@ export const siteKnowledge: KnowledgeEntry[] = [
 // ──────────────────────────────────────────────────────
 // SEARCH FUNCTION
 // ──────────────────────────────────────────────────────
+// Helper: Calculate similarity between two strings (0 to 1) using Levenshtein distance
+function similarity(s1: string, s2: string): number {
+  let longer = s1;
+  let shorter = s2;
+  if (s1.length < s2.length) {
+    longer = s2;
+    shorter = s1;
+  }
+  const longerLength = longer.length;
+  if (longerLength === 0) {
+    return 1.0;
+  }
+  
+  const costs = new Array();
+  for (let i = 0; i <= longer.length; i++) {
+    let lastValue = i;
+    for (let j = 0; j <= shorter.length; j++) {
+      if (i === 0) {
+        costs[j] = j;
+      } else if (j > 0) {
+        let newValue = costs[j - 1];
+        if (longer.charAt(i - 1) !== shorter.charAt(j - 1)) {
+          newValue = Math.min(Math.min(newValue, lastValue), costs[j]) + 1;
+        }
+        costs[j - 1] = lastValue;
+        lastValue = newValue;
+      }
+    }
+    if (i > 0) {
+      costs[shorter.length] = lastValue;
+    }
+  }
+  return (longerLength - costs[shorter.length]) / longerLength;
+}
+
 export function searchKnowledge(query: string): KnowledgeEntry[] {
   const q = query.toLowerCase().trim();
   if (!q) return [];
+  
+  const queryWords = q.split(/\s+/);
 
   const scored = siteKnowledge.map(entry => {
     let score = 0;
-    // Exact name match
-    if (entry.name.toLowerCase() === q) score += 100;
-    // Name contains query
-    if (entry.name.toLowerCase().includes(q)) score += 50;
-    // Keywords match
+    
+    // Exact name match gets highest priority
+    if (entry.name.toLowerCase() === q) score += 1000;
+    
+    // Name contains query (exact substring)
+    if (entry.name.toLowerCase().includes(q)) score += 200;
+    
     for (const kw of entry.keywords) {
-      if (kw === q) score += 80;
-      if (kw.includes(q)) score += 30;
-      if (q.includes(kw)) score += 20;
+      const kwLower = kw.toLowerCase();
+      // Exact keyword match
+      if (kwLower === q) score += 1000;
+      
+      // Keyword contains exact query as a standalone word
+      const kwWords = kwLower.split(/\s+/);
+      if (kwWords.includes(q)) {
+         if (kwWords.length === 1) score += 800;
+         else score += 100;
+      }
+      
+      // Query contains the keyword
+      if (q.includes(kwLower)) score += 200;
+      
+      // Keyword contains the query (substring)
+      if (kwLower.includes(q)) score += 50;
+
+      // Fuzzy Matching for typos on individual words
+      for (const qw of queryWords) {
+        if (qw.length > 3) {
+          for (const kwW of kwWords) {
+            if (qw === kwW) continue; // Skip if exact match
+            const sim = similarity(qw, kwW);
+            if (sim > 0.75) { 
+              score += 80;
+            }
+          }
+        }
+      }
     }
+    
     return { entry, score };
   });
 
-  return scored
+  const validResults = scored
     .filter(s => s.score > 0)
-    .sort((a, b) => b.score - a.score)
+    .sort((a, b) => b.score - a.score);
+
+  if (validResults.length === 0) return [];
+
+  // Strict relevance filtering: Only keep results that score at least 20% of the top result.
+  // This drops irrelevant packages (e.g. Kerala Honeymoon for "ooty" search)
+  const topScore = validResults[0].score;
+  return validResults
+    .filter(s => s.score >= topScore * 0.2)
     .slice(0, 3)
     .map(s => s.entry);
 }

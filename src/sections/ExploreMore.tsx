@@ -41,33 +41,33 @@ const allDestinations = [
   { 
     id: 4, 
     state: 'South India', 
-    name: 'Madurai to Kerala 3 Days / 2 Nights', 
+    name: 'Madurai to Munnar Alleppey 3 Days', 
     location: 'Munnar, Alleppey Houseboat', 
     price: 'Explore Tour', 
     rating: '5.0', 
     image: '/assets/kerala1.webp', 
-    link: '/tour-packages/kerala-tours/madurai-to-kerala-tour-package-3-days-2-nights' 
+    link: '/tour-packages/madurai-tours/madurai-to-munnar-alleppey-3-days-2-nights-tour-package' 
   },
   // SOUTH INDIA - KARNATAKA
   { 
     id: 5, 
     state: 'South India', 
-    name: 'Madurai to Mysore 2 Days / 1 Night', 
-    location: 'Mysore Palace, Brindavan Gardens', 
+    name: 'Mysore & Coorg Package - 4 Days', 
+    location: 'Mysore Palace, Abbey Falls', 
     price: 'Explore Tour', 
     rating: '5.0', 
-    image: '/assets/mysore1.webp', 
-    link: '/tour-packages/mysore-tours/madurai-to-mysore-2-days-1-night-tour-package' 
+    image: '/assets/karnataka/mysore1.webp', 
+    link: '/tour-packages/tours/mysore-and-coorg-tour-package-4-days-3-nights' 
   },
   { 
     id: 6, 
     state: 'South India', 
-    name: 'Madurai to Coorg 3 Days / 2 Nights', 
-    location: 'Abbey Falls, Raja\'s Seat', 
+    name: 'Karnataka & Ooty Special - 5 Days', 
+    location: 'Bangalore, Mysore, Ooty', 
     price: 'Explore Tour', 
     rating: '5.0', 
-    image: '/assets/coorg11.webp', 
-    link: '/tour-packages/coorg-tours/madurai-to-coorg-3-days-2-nights-tour-package' 
+    image: '/assets/karnataka/bangalore 12.webp', 
+    link: '/tour-packages/karnataka-tours/karnataka-ooty-special-tour-package' 
   },
   // NORTH INDIA
   { 
@@ -94,12 +94,12 @@ const allDestinations = [
   { 
     id: 9, 
     state: 'Honeymoon Package', 
-    name: 'Ooty Honeymoon 3 Days', 
+    name: 'Ooty and Coonoor Honeymoon 4 Days', 
     location: 'Ooty Lake, Botanical Garden', 
     price: 'Explore Tour', 
     rating: '5.0', 
     image: '/assets/otty/ooty1(small).webp', 
-    link: '/tour-packages/ooty-tours/madurai-to-ooty-3-days-2-nights-honeymoon-tour-package' 
+    link: '/tour-packages/tamil-nadu-honeymoon-packages/enchanting-romantic-ooty-and-coonoor-honeymoon-package-4-days-3-nights' 
   },
   { 
     id: 10, 
@@ -109,7 +109,7 @@ const allDestinations = [
     price: 'Explore Tour', 
     rating: '5.0', 
     image: '/assets/KERALA/322x372/MUNNAR1.webp', 
-    link: '/tour-packages/munnar-tours/madurai-to-munnar-3-days-2-nights-honeymoon-tour-package' 
+    link: '/tour-packages/kerala-honeymoon-packages/kerala-honeymoon-package-3-days-2-nights' 
   },
 ]
 

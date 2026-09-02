@@ -78,7 +78,7 @@ const ScrollFlyIn = React.forwardRef<HTMLDivElement, ScrollFlyInProps>(
             <img
               src={imageUrl}
               alt={imageAlt}
-              className="w-auto h-auto max-w-none scale-150 md:scale-100 drop-shadow-2xl"
+              className="w-[260vw] max-w-none md:w-auto md:max-w-none h-auto object-contain drop-shadow-2xl"
               onError={(e) => {
                 e.currentTarget.src = `https://placehold.co/1200x800/000000/ffffff?text=Image+Error`;
               }}

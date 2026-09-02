@@ -883,7 +883,7 @@ export const destinationsData: Record<string, any> = {
   'kanyakumari-tourism': {
     id: 'kanyakumari-tourism',
     name: 'Kanyakumari',
-    image: '/assets/Uttarakhand1.webp',
+    image: '/assets/kanayakumari.png',
     state: 'Tamil Nadu',
     overview: {
       title: 'Kanyakumari Tourism',

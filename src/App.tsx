@@ -29,6 +29,7 @@ import { PrivacyPolicy } from './pages/PrivacyPolicy'
 import { TermsConditions } from './pages/TermsConditions'
 import { CancellationPolicy } from './pages/CancellationPolicy'
 import { NotFound } from './pages/NotFound'
+import { Gallery } from './pages/Gallery'
 
 function App() {
   useSmoothScroll();
@@ -43,6 +44,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/gallery" element={<Gallery />} />
             <Route path="/services" element={<Services />} />
             <Route path="/services/:serviceId" element={<ServiceDetails />} />
             <Route path="/north-india-tour-packages" element={<NorthIndiaPackage />} />

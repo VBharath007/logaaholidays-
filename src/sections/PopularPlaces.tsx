@@ -48,7 +48,7 @@ export function PopularPlaces() {
             </h2>
             <p className="text-[var(--color-neutral-dark)] text-sm tracking-wide">Let's enjoy this heaven on earth</p>
           </div>
-          <p className="text-[var(--color-neutral-medium)] text-sm max-w-sm text-left md:text-right">
+          <p className="text-[var(--color-neutral-medium)] text-sm max-w-sm text-justify leading-relaxed">
             Explore handpicked destinations with Logaa Holidays, a trusted travel agency in Madurai. We offer customized tour packages featuring historic temple towns, tranquil backwaters, and misty hill stations.
           </p>
         </div>

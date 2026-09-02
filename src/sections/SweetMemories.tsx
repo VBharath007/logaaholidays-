@@ -73,9 +73,9 @@ export function SweetMemories() {
  transition={{ delay: 0.6 }}
  className="absolute top-[20%] left-0 lg:-left-12 clay-badge bg-white p-3 rounded-2xl flex items-center gap-3 z-10"
  >
- <img loading="lazy" src="https://i.pravatar.cc/150?img=32" alt="User" className="w-10 h-10 rounded-full object-cover" />
+ <div className="w-10 h-10 rounded-full bg-[var(--color-primary-forest)] text-white flex items-center justify-center font-bold text-lg">K</div>
  <div>
- <p className="text-xs font-bold text-[var(--color-neutral-black)] mb-0.5">Karthik Surya</p>
+ <p className="text-xs font-bold text-[var(--color-neutral-black)] mb-0.5">Karthik</p>
  <div className="flex text-[var(--color-blue-ocean)] text-[10px]">★★★★★</div>
  </div>
  </motion.div>
@@ -88,9 +88,9 @@ export function SweetMemories() {
  transition={{ delay: 0.7 }}
  className="absolute top-[50%] right-0 lg:-right-12 clay-badge bg-white p-3 rounded-2xl flex items-center gap-3 z-10"
  >
- <img loading="lazy" src="https://i.pravatar.cc/150?img=44" alt="User" className="w-10 h-10 rounded-full object-cover" />
+ <div className="w-10 h-10 rounded-full bg-[var(--color-blue-ocean)] text-white flex items-center justify-center font-bold text-lg">P</div>
  <div>
- <p className="text-xs font-bold text-[var(--color-neutral-black)] mb-0.5">Priya Sharma</p>
+ <p className="text-xs font-bold text-[var(--color-neutral-black)] mb-0.5">Priya</p>
  <div className="flex text-[var(--color-blue-ocean)] text-[10px]">★★★★★</div>
  </div>
  </motion.div>
@@ -103,9 +103,9 @@ export function SweetMemories() {
  transition={{ delay: 0.8 }}
  className="absolute bottom-[20%] left-4 lg:left-0 clay-badge bg-white p-3 rounded-2xl flex items-center gap-3 z-10"
  >
- <img loading="lazy" src="https://i.pravatar.cc/150?img=12" alt="User" className="w-10 h-10 rounded-full object-cover" />
+ <div className="w-10 h-10 rounded-full bg-[var(--color-accent-gold)] text-white flex items-center justify-center font-bold text-lg">B</div>
  <div>
- <p className="text-xs font-bold text-[var(--color-neutral-black)] mb-0.5">Ramesh Kumar</p>
+ <p className="text-xs font-bold text-[var(--color-neutral-black)] mb-0.5">Babu</p>
  <div className="flex text-[var(--color-blue-ocean)] text-[10px]">★★★★☆</div>
  </div>
  </motion.div>

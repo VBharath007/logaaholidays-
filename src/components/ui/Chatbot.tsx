@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { MessageSquare, X, Send, Bot } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { searchKnowledge, companyInfo } from '../../data/chatbotKnowledge';
+import { searchKnowledge, siteKnowledge, companyInfo } from '../../data/chatbotKnowledge';
 import type { KnowledgeEntry } from '../../data/chatbotKnowledge';
 
 type Message = {
@@ -20,7 +20,7 @@ function generateResponse(input: string): { text: string; results?: KnowledgeEnt
   if (['hi', 'hello', 'hey', 'hai', 'vanakkam', 'helo'].includes(q)) {
     return {
       text: "Hello! 👋 Welcome to Logaa Holidays. I'm here to help you plan your perfect trip. What are you looking for — a domestic tour, honeymoon package, international holiday, or something else?",
-      options: ['South India Tour', 'Honeymoon Package', 'International Tour', 'Talk to Expert']
+      options: ['South India Tour', 'North India Tour', 'Honeymoon Package', 'International Tour']
     };
   }
 
@@ -33,7 +33,6 @@ function generateResponse(input: string): { text: string; results?: KnowledgeEnt
   if (q.includes('contact') || q.includes('phone') || q.includes('call') || q.includes('whatsapp') || q.includes('reach')) {
     return {
       text: `You can reach us anytime:\n📞 ${companyInfo.phone}\n📧 ${companyInfo.email}\n📍 ${companyInfo.address}\n\nOr click the WhatsApp button on this page to chat directly!`,
-      options: ['Talk to Expert']
     };
   }
 
@@ -48,17 +47,19 @@ function generateResponse(input: string): { text: string; results?: KnowledgeEnt
   if (q.includes('price') || q.includes('cost') || q.includes('budget') || q.includes('how much') || q.includes('rate') || q.includes('charge') || q.includes('vilai') || q.includes('pakam')) {
     return {
       text: "Package prices vary based on the destination, number of people, hotel category, and duration. For an exact quote tailored to your needs, just share your preferences and our team will get back to you quickly.",
-      options: ['Talk to Expert']
     };
   }
 
-  // Honeymoon / Couple / Romantic
+  // Honeymoon / Couple / Romantic — return ALL honeymoon categories
   if (q.includes('honeymoon') || q.includes('honey moon') || q.includes('couple') || q.includes('romantic') || q.includes('newly married') || q.includes('newly wed')) {
-    const results = searchKnowledge('honeymoon');
+    // Filter knowledge base for all entries that are honeymoon-related
+    const allHoneymoon = siteKnowledge.filter(entry =>
+      entry.keywords.some(kw => kw.includes('honeymoon')) ||
+      entry.name.toLowerCase().includes('honeymoon')
+    );
     return {
-      text: "Congratulations! 🥂 We have beautiful honeymoon packages across India and abroad. Here are some popular options:",
-      results,
-      options: ['Talk to Expert']
+      text: "Congratulations! 🥂 We have beautiful honeymoon packages across India and abroad. Choose your dream destination:",
+      results: allHoneymoon,
     };
   }
 
@@ -68,20 +69,42 @@ function generateResponse(input: string): { text: string; results?: KnowledgeEnt
     return {
       text: "We love planning family holidays! Our family packages are designed for comfort, fun, and memorable experiences for all age groups.",
       results: searchKnowledge('south india').slice(0, 3),
-      options: ['Talk to Expert']
     };
   }
 
-  // Pilgrimage / Temple / Yatra
-  if (q.includes('temple') || q.includes('pilgrimage') || q.includes('yatra') || q.includes('religious') || q.includes('spiritual') || q.includes('kovil') || q.includes('tirtha')) {
+  // Pilgrimage / Temple / Yatra / Spiritual
+  if (q.includes('temple') || q.includes('pilgrimage') || q.includes('yatra') || q.includes('religious') || q.includes('spiritual') || q.includes('devotional') || q.includes('god') || q.includes('darshan') || q.includes('kovil') || q.includes('tirtha')) {
+    const combinedResults = [
+      ...searchKnowledge('shirdi yatra'),
+      ...searchKnowledge('varanasi'),
+      ...searchKnowledge('palani tours'),
+      ...searchKnowledge('rameswaram')
+    ];
+    const uniqueResults = Array.from(new Map(combinedResults.map(item => [item.url, item])).values()).slice(0, 4);
+
     return {
-      text: "We specialize in pilgrimage and temple tours! Popular options include Rameswaram, Kanyakumari, Palani, Tiruchendur, Shirdi, and Varanasi.",
-      results: [
-        ...searchKnowledge('rameswaram'),
-        ...searchKnowledge('shirdi'),
-        ...searchKnowledge('palani')
-      ].slice(0, 3),
-      options: ['Talk to Expert']
+      text: "We specialize in spiritual and temple tours! From powerful local shrines to grand yatras across India, we arrange comfortable travel for your devotional journeys. Here are some of our popular divine packages:",
+      results: uniqueResults,
+      options: ['Custom Spiritual Tour']
+    };
+  }
+
+  // North India
+  if (q === 'north india tour' || q.includes('north india') || q.includes('kashmir') || q.includes('manali') || q.includes('shimla') || q.includes('himachal') || q.includes('rajasthan') || q.includes('golden triangle')) {
+    const allNorthIndia = siteKnowledge.filter(entry =>
+      // Exclude honeymoon packages — they have their own category
+      !entry.name.toLowerCase().includes('honeymoon') &&
+      entry.keywords.some(kw =>
+        kw === 'north india' || kw === 'north india tour' || kw === 'north india package' ||
+        kw === 'kashmir' || kw === 'manali' || kw === 'shimla' || kw === 'himachal' ||
+        kw === 'golden triangle' || kw === 'varanasi' || kw === 'varanasi tour' ||
+        kw === 'shirdi' || kw === 'shirdi yatra' || kw === 'delhi' || kw === 'agra' ||
+        kw === 'jaipur' || kw === 'manali volvo'
+      )
+    );
+    return {
+      text: "We offer wonderful North India tours! From the snow-covered valleys of Kashmir and Himachal to the heritage cities of Rajasthan and spiritual destinations like Varanasi and Shirdi. Choose your destination:",
+      results: allNorthIndia,
     };
   }
 
@@ -99,7 +122,6 @@ function generateResponse(input: string): { text: string; results?: KnowledgeEnt
     return {
       text: "Yes, we handle hotel bookings from budget to luxury 5-star properties. Just tell us your destination and dates and we'll find the best options for you.",
       results: searchKnowledge('hotel booking'),
-      options: ['Talk to Expert']
     };
   }
 
@@ -108,7 +130,6 @@ function generateResponse(input: string): { text: string; results?: KnowledgeEnt
     return {
       text: "We provide Cab and Tempo Traveller rentals for local and outstation trips — Sedan, Innova, SUV, Tempo Traveller, Mini Bus, and Luxury Coach.",
       results: searchKnowledge('cab'),
-      options: ['Talk to Expert']
     };
   }
 
@@ -117,7 +138,6 @@ function generateResponse(input: string): { text: string; results?: KnowledgeEnt
     return {
       text: "We book domestic and international flight tickets at competitive prices. Share your travel dates and we'll help you find the best options.",
       results: searchKnowledge('flight booking'),
-      options: ['Talk to Expert']
     };
   }
 
@@ -126,7 +146,6 @@ function generateResponse(input: string): { text: string; results?: KnowledgeEnt
     return {
       text: "We assist with railway ticket bookings too! Tell us your route and travel dates and we'll help you book.",
       results: searchKnowledge('railway booking'),
-      options: ['Talk to Expert']
     };
   }
 
@@ -138,14 +157,14 @@ function generateResponse(input: string): { text: string; results?: KnowledgeEnt
     return {
       text: `Great choice! Here's what I found for "${input}". Check out the details below and feel free to ask me anything specific about the itinerary, duration, or inclusions.`,
       results,
-      options: [`Enquire about ${firstName}`, 'Talk to Expert']
+      options: [`Enquire about ${firstName}`]
     };
   }
 
   // Fallback
   return {
     text: "That's a great question! I want to make sure I give you accurate information. Could you share a bit more — like the destination, number of days, or type of trip? Or you can connect directly with our travel team for a personalized recommendation.",
-    options: ['South India Tour', 'Honeymoon Package', 'International Tour', 'Talk to Expert']
+    options: ['South India Tour', 'North India Tour', 'Honeymoon Package', 'International Tour']
   };
 }
 
@@ -158,7 +177,7 @@ export function Chatbot() {
       id: 1,
       text: "Hi there! 👋 Welcome to Logaa Holidays. I can help you find the right tour package, destination info, or any service. What are you planning?",
       isBot: true,
-      options: ['South India Tour', 'Honeymoon Package', 'International Tour', 'Talk to Expert']
+      options: ['South India Tour', 'North India Tour', 'Honeymoon Package', 'International Tour']
     }
   ]);
   const messagesEndRef = useRef<HTMLDivElement>(null);
@@ -175,9 +194,9 @@ export function Chatbot() {
     setInputText('');
 
     setTimeout(() => {
-      // Special: Talk to Expert / Enquire about X
-      if (text === 'Talk to Expert' || text.startsWith('Enquire about')) {
-        const subject = text.startsWith('Enquire about') ? text.replace('Enquire about ', '') : 'a tour package';
+      // Special: Enquire about X
+      if (text.startsWith('Enquire about')) {
+        const subject = text.replace('Enquire about ', '');
         const msg = `Hi Logaa Holidays, I would like to enquire about ${subject}.`;
         window.open(`https://wa.me/${companyInfo.whatsapp}?text=${encodeURIComponent(msg)}`, '_blank');
         setMessages(prev => [...prev, {

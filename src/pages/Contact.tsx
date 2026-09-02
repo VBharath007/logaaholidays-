@@ -39,7 +39,7 @@ export function Contact() {
     useSEO(
         'Contact Us | Logaa Holidays - Reach Our Madurai Office',
         'Get in touch with Logaa Holidays for customized tour packages, flight bookings, and travel inquiries. Call or visit our travel agency in Madurai.',
-        'Contact Logaa Holidays, Travel Agency in Madurai Contact, Madurai Tour Operator Phone Number, Book Tour Packages'
+        'Group Tour Packages from Madurai, Pilgrimage Tour Packages from Madurai, South India Tour Packages from Madurai'
     );
     const [formData, setFormData] = useState({
         name: '', email: '', phone: '', subject: '', message: ''
