@@ -94,7 +94,7 @@ export function PlaceDetails() {
     
     // Step 1: Find packages that explicitly match the place keywords
     const keywordMatches = allPkgs.filter((pkg: any) => {
-      const titleLower = pkg.title.toLowerCase();
+      const titleLower = (pkg.title || '').toLowerCase();
       const destLower = (pkg.overview?.destination || '').toLowerCase();
       if (isSouthState) {
         const isNorthPackage = northKeywords.some(kw => titleLower.includes(kw) || destLower.includes(kw));
@@ -109,7 +109,7 @@ export function PlaceDetails() {
     
     // Step 2: Fallback to general city packages if no exact place matches exist
     return allPkgs.filter((pkg: any) => {
-      const titleLower = pkg.title.toLowerCase();
+      const titleLower = (pkg.title || '').toLowerCase();
       const destLower = (pkg.overview?.destination || '').toLowerCase();
       if (isSouthState) {
         const isNorthPackage = northKeywords.some(kw => titleLower.includes(kw) || destLower.includes(kw));

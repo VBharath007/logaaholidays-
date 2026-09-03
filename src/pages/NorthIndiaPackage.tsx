@@ -26,7 +26,7 @@ export function NorthIndiaPackage() {
 
   const allPkgs = Object.entries(packagesDatabase).map(([id, val]) => ({ id, ...val }));
   const filteredPackages = allPkgs.filter(pkg => {
-    const title = pkg.title.toLowerCase();
+    const title = (pkg.title || '').toLowerCase();
     const category = pkg.category?.toLowerCase() || '';
     const dests = pkg.destinations?.map((d: string) => d.toLowerCase()) || [];
 

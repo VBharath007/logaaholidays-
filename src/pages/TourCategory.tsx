@@ -1035,7 +1035,7 @@ const TourCategory = () => {
             const getPriority = (pkg: any) => {
               if (pkg.id === 3004) return 1; // Best of Tamil Nadu
               if (pkg.id === 3005) return 2; // Enchanting Tamil Nadu
-              if (pkg.title.toLowerCase().includes('local sightseeing')) return 3;
+              if ((pkg.title || '').toLowerCase().includes('local sightseeing')) return 3;
               if (pkg.duration === '1 Day') return 10;
               return 100 + getDays(pkg.duration);
             };
