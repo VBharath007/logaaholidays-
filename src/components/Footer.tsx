@@ -133,8 +133,8 @@ export function Footer() {
           <ul className="flex flex-col items-center md:items-start gap-3 w-full">
             {/* Support Submenu */}
            
-            <li><Link to="/about-us" className="flex items-center justify-center md:justify-start gap-2 text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all"><ChevronRight className="w-4 h-4 text-emerald-600" /> About Us</Link></li>
-            <li><Link to="/contact-us" className="flex items-center justify-center md:justify-start gap-2 text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all"><ChevronRight className="w-4 h-4 text-emerald-600" /> Contact Us</Link></li>
+            <li><Link to="/about" className="flex items-center justify-center md:justify-start gap-2 text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all"><ChevronRight className="w-4 h-4 text-emerald-600" /> About Us</Link></li>
+            <li><Link to="/contact" className="flex items-center justify-center md:justify-start gap-2 text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all"><ChevronRight className="w-4 h-4 text-emerald-600" /> Contact Us</Link></li>
             <li><Link to="/testimonials" className="flex items-center justify-center md:justify-start gap-2 text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all"><ChevronRight className="w-4 h-4 text-emerald-600" /> Testimonials</Link></li>
              <li><Link to="/gallery" className="flex items-center justify-center md:justify-start gap-2 text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all"><ChevronRight className="w-4 h-4 text-emerald-600" /> Gallery</Link></li>
              
@@ -144,7 +144,7 @@ export function Footer() {
                 className="flex items-center justify-center md:justify-start gap-2 text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all w-full text-center md:text-left"
               >
                 <ChevronRight className={`w-4 h-4 text-emerald-600 transition-transform duration-300 ${isSupportOpen ? 'rotate-90' : ''}`} /> 
-                Support
+                Service
               </button>
               
               <div className={`overflow-hidden transition-all duration-300 ease-in-out w-full ${isSupportOpen ? 'max-h-64 opacity-100 mt-2' : 'max-h-0 opacity-0'}`}>

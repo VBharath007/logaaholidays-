@@ -101,6 +101,7 @@ export const siteKnowledge: KnowledgeEntry[] = [
   // ──────────────────────────────────────────────────────
   // HONEYMOON PACKAGES
   // ──────────────────────────────────────────────────────
+  { name: 'Ooty and Coonoor Honeymoon Package', url: '/tamil-nadu-honeymoon-packages/enchanting-romantic-ooty-and-coonoor-honeymoon-package-4-days-3-nights', keywords: ['ooty honeymoon', 'coonoor honeymoon', 'couple trip ooty', 'romantic ooty', 'ooty package', '4 days 3 nights', 'ooty'], description: 'Enchanting romantic Ooty and Coonoor honeymoon package', type: 'package-category' },
   { name: 'Tamil Nadu Honeymoon', url: '/tour-packages/tamil-nadu-honeymoon-packages', keywords: ['tamil nadu honeymoon', 'couple trip tamil nadu', 'honeymoon south india', 'romantic tamil nadu', 'newly married tamil Nadu'], description: 'Tamil Nadu honeymoon packages', type: 'package-category' },
   { name: 'Kerala Honeymoon', url: '/tour-packages/kerala-honeymoon-packages', keywords: ['kerala honeymoon', 'kerala couple package', 'romantic kerala', 'honeymoon backwaters', 'munnar honeymoon', 'alleppey honeymoon', 'ooty coonoor honeymoon'], description: 'Kerala honeymoon packages', type: 'package-category' },
   { name: 'Karnataka Honeymoon', url: '/tour-packages/karnataka-honeymoon-packages', keywords: ['karnataka honeymoon', 'coorg honeymoon', 'coorg couple', 'romantic coorg', 'karnataka couple'], description: 'Karnataka honeymoon packages', type: 'package-category' },
@@ -128,31 +129,83 @@ export const siteKnowledge: KnowledgeEntry[] = [
   { name: 'Flight Booking', url: '/services/flight-booking', keywords: ['flight', 'air ticket', 'flight booking', 'airplane', 'airline', 'domestic flight', 'international flight'], description: 'Flight ticket booking service', type: 'service' },
   { name: 'Railway Booking', url: '/services/railway-booking', keywords: ['train', 'railway', 'rail ticket', 'irctc', 'train booking', 'railway booking'], description: 'Train ticket booking service', type: 'service' },
   { name: 'Tour Operators', url: '/services/tour-operators', keywords: ['tour operator', 'customized tour', 'custom package', 'plan my trip', 'itinerary', 'group tour', 'family tour'], description: 'Tour operator and customized package service', type: 'service' },
+  { name: 'Alleppey ', url: '/place/kerala/kerala/alleppey', keywords: ['alleppey '], description: 'Top place to visit: Alleppey ', type: 'page' },
+  { name: 'Munnar', url: '/place/kerala/kerala/munnar', keywords: ['munnar'], description: 'Top place to visit: Munnar', type: 'page' },
+  { name: 'Thekkady', url: '/place/kerala/kerala/thekkady', keywords: ['thekkady'], description: 'Top place to visit: Thekkady', type: 'page' },
+  { name: 'Vagamon', url: '/place/kerala/kerala/vagamon', keywords: ['vagamon'], description: 'Top place to visit: Vagamon', type: 'page' },
+  { name: 'Valparai', url: '/place/kerala/kerala/valparai', keywords: ['valparai'], description: 'Top place to visit: Valparai', type: 'page' },
+  { name: 'Kumarakom', url: '/place/kerala/kerala/kumarakom', keywords: ['kumarakom'], description: 'Top place to visit: Kumarakom', type: 'page' },
+  { name: 'Marayoor', url: '/place/kerala/kerala/marayoor', keywords: ['marayoor'], description: 'Top place to visit: Marayoor', type: 'page' },
+  { name: 'Cochin (Kochi)', url: '/place/kerala/kerala/cochin', keywords: ['cochin (kochi)'], description: 'Top place to visit: Cochin (Kochi)', type: 'page' },
+  { name: 'Lighthouse Beach', url: '/place/tamilnadu/kovalam/lighthouse-beach', keywords: ['lighthouse beach'], description: 'Top place to visit: Lighthouse Beach', type: 'page' },
+  { name: 'Samudra Beach', url: '/place/tamilnadu/kovalam/samudra-beach', keywords: ['samudra beach'], description: 'Top place to visit: Samudra Beach', type: 'page' },
+  { name: 'Sree Padmanabhaswamy Temple', url: '/place/tamilnadu/trivandrum/padmanabhaswamy-temple', keywords: ['sree padmanabhaswamy temple'], description: 'Top place to visit: Sree Padmanabhaswamy Temple', type: 'page' },
+  { name: 'Napier Museum', url: '/place/tamilnadu/trivandrum/napier-museum', keywords: ['napier museum'], description: 'Top place to visit: Napier Museum', type: 'page' },
+  { name: 'Ramanathaswamy Temple', url: '/place/tamilnadu/rameswaram/ramanathaswamy-temple', keywords: ['ramanathaswamy temple'], description: 'Top place to visit: Ramanathaswamy Temple', type: 'page' },
+  { name: 'Agniteertham', url: '/place/tamilnadu/rameswaram/agniteertham', keywords: ['agniteertham'], description: 'Top place to visit: Agniteertham', type: 'page' },
+  { name: 'Pamban bridge', url: '/place/tamilnadu/rameswaram/pamban-bridge', keywords: ['pamban bridge'], description: 'Top place to visit: Pamban bridge', type: 'page' },
+  { name: 'Panchmukhi hanuman mandir', url: '/place/tamilnadu/rameswaram/panchmukhi-hanuman', keywords: ['panchmukhi hanuman mandir'], description: 'Top place to visit: Panchmukhi hanuman mandir', type: 'page' },
+  { name: 'Dhanushkodi', url: '/place/tamilnadu/rameswaram/dhanushkodi', keywords: ['dhanushkodi'], description: 'Top place to visit: Dhanushkodi', type: 'page' },
+  { name: 'Vivekananda Rock Memorial', url: '/place/tamilnadu/kanyakumari/vivekananda-rock', keywords: ['vivekananda rock memorial'], description: 'Top place to visit: Vivekananda Rock Memorial', type: 'page' },
+  { name: 'Thiruvalluvar Statue', url: '/place/tamilnadu/kanyakumari/thiruvalluvar-statue', keywords: ['thiruvalluvar statue'], description: 'Top place to visit: Thiruvalluvar Statue', type: 'page' },
+  { name: 'Kanyakumari beach', url: '/place/tamilnadu/kanyakumari/kanyakumari-beach', keywords: ['kanyakumari beach'], description: 'Top place to visit: Kanyakumari beach', type: 'page' },
+  { name: 'Sunset Point', url: '/place/tamilnadu/kanyakumari/sunset-point', keywords: ['sunset point'], description: 'Top place to visit: Sunset Point', type: 'page' },
+  { name: 'Padmanabhapuram palace', url: '/place/tamilnadu/kanyakumari/padmanabhapuram-palace', keywords: ['padmanabhapuram palace'], description: 'Top place to visit: Padmanabhapuram palace', type: 'page' },
+  { name: 'Suchindram temple', url: '/place/tamilnadu/kanyakumari/suchindram-temple', keywords: ['suchindram temple'], description: 'Top place to visit: Suchindram temple', type: 'page' },
+  { name: 'Alagar Kovil', url: '/place/tamilnadu/madurai/alagar-koyil', keywords: ['alagar kovil'], description: 'Top place to visit: Alagar Kovil', type: 'page' },
+  { name: 'Gandhi Museum', url: '/place/tamilnadu/madurai/gandhi-museum', keywords: ['gandhi museum'], description: 'Top place to visit: Gandhi Museum', type: 'page' },
+  { name: 'Koodal Azhagar Temple', url: '/place/tamilnadu/madurai/koodal-algar', keywords: ['koodal azhagar temple'], description: 'Top place to visit: Koodal Azhagar Temple', type: 'page' },
+  { name: 'Kumbakkarai Falls', url: '/place/tamilnadu/madurai/kumbakarai-falls', keywords: ['kumbakkarai falls'], description: 'Top place to visit: Kumbakkarai Falls', type: 'page' },
+  { name: 'Madurai Meenakshi Amman Temple', url: '/place/tamilnadu/madurai/meenakshi-temple', keywords: ['madurai meenakshi amman temple'], description: 'Top place to visit: Madurai Meenakshi Amman Temple', type: 'page' },
+  { name: 'Yoga Narasinga Perumal', url: '/place/tamilnadu/madurai/narasingam', keywords: ['yoga narasinga perumal'], description: 'Top place to visit: Yoga Narasinga Perumal', type: 'page' },
+  { name: 'Pazhamudir Solai', url: '/place/tamilnadu/madurai/pazhamudir-solai', keywords: ['pazhamudir solai'], description: 'Top place to visit: Pazhamudir Solai', type: 'page' },
+  { name: 'Srivilliputhur Andal Temple', url: '/place/tamilnadu/madurai/srivilliputhur', keywords: ['srivilliputhur andal temple'], description: 'Top place to visit: Srivilliputhur Andal Temple', type: 'page' },
+  { name: 'Thirumalai Nayak Mahal', url: '/place/tamilnadu/madurai/thirumalai-nayak', keywords: ['thirumalai nayak mahal'], description: 'Top place to visit: Thirumalai Nayak Mahal', type: 'page' },
+  { name: 'Tirupparankundram Murugan Temple', url: '/place/tamilnadu/madurai/tirupparankundram', keywords: ['tirupparankundram murugan temple'], description: 'Top place to visit: Tirupparankundram Murugan Temple', type: 'page' },
+  { name: 'Vaigai Dam', url: '/place/tamilnadu/madurai/vaigai-dam', keywords: ['vaigai dam'], description: 'Top place to visit: Vaigai Dam', type: 'page' },
+  { name: 'Vandiyur Mariamman Teppakulam', url: '/place/tamilnadu/madurai/vandiyur-teppakulam', keywords: ['vandiyur mariamman teppakulam'], description: 'Top place to visit: Vandiyur Mariamman Teppakulam', type: 'page' },
+  { name: 'Madurai', url: '/place/tamilnadu/tamilnadu/madurai', keywords: ['madurai'], description: 'Top place to visit: Madurai', type: 'page' },
+  { name: 'Rameswaram', url: '/place/tamilnadu/tamilnadu/rameswaram', keywords: ['rameswaram'], description: 'Top place to visit: Rameswaram', type: 'page' },
+  { name: 'Kanyakumari', url: '/place/tamilnadu/tamilnadu/kanyakumari', keywords: ['kanyakumari'], description: 'Top place to visit: Kanyakumari', type: 'page' },
+  { name: 'Ooty', url: '/place/tamilnadu/tamilnadu/ooty', keywords: ['ooty'], description: 'Top place to visit: Ooty', type: 'page' },
+  { name: 'Kodaikanal', url: '/place/tamilnadu/tamilnadu/kodaikanal', keywords: ['kodaikanal'], description: 'Top place to visit: Kodaikanal', type: 'page' },
+  { name: 'Chennai', url: '/place/tamilnadu/tamilnadu/chennai', keywords: ['chennai'], description: 'Top place to visit: Chennai', type: 'page' },
+  { name: 'Samadhi Mandir', url: '/place/northindia/shirdi/samadhi-mandir', keywords: ['samadhi mandir'], description: 'Top place to visit: Samadhi Mandir', type: 'page' },
+  { name: 'Dwarkamai Mosque', url: '/place/northindia/shirdi/dwarkamai-mosque', keywords: ['dwarkamai mosque'], description: 'Top place to visit: Dwarkamai Mosque', type: 'page' },
+  { name: 'Chavadi', url: '/place/northindia/shirdi/chavadi', keywords: ['chavadi'], description: 'Top place to visit: Chavadi', type: 'page' },
+  { name: 'Gurusthan', url: '/place/northindia/shirdi/gurusthan', keywords: ['gurusthan'], description: 'Top place to visit: Gurusthan', type: 'page' },
+  { name: 'Lendi Baug (Garden)', url: '/place/northindia/shirdi/lendi-baug', keywords: ['lendi baug (garden)'], description: 'Top place to visit: Lendi Baug (Garden)', type: 'page' },
+  { name: 'Dashashwamedh Ghat', url: '/place/northindia/varanasi/dashashwamedh-ghat', keywords: ['dashashwamedh ghat'], description: 'Top place to visit: Dashashwamedh Ghat', type: 'page' },
+  { name: 'Kashi Vishwanath Temple', url: '/place/northindia/varanasi/kashi-vishwanath-temple', keywords: ['kashi vishwanath temple'], description: 'Top place to visit: Kashi Vishwanath Temple', type: 'page' },
+  { name: 'Manikarnika Ghat', url: '/place/northindia/varanasi/manikarnika-ghat', keywords: ['manikarnika ghat'], description: 'Top place to visit: Manikarnika Ghat', type: 'page' },
+  { name: 'Sarnath', url: '/place/northindia/varanasi/sarnath', keywords: ['sarnath'], description: 'Top place to visit: Sarnath', type: 'page' },
+  { name: 'Assi Ghat', url: '/place/northindia/varanasi/assi-ghat', keywords: ['assi ghat'], description: 'Top place to visit: Assi Ghat', type: 'page' },
+  { name: 'Tulsi Manas Temple', url: '/place/northindia/varanasi/tulsi-manas-temple', keywords: ['tulsi manas temple'], description: 'Top place to visit: Tulsi Manas Temple', type: 'page' },
+  { name: 'Government Botanical Garden', url: '/place/tamilnadu/ooty/ooty-botanical-garden', keywords: ['government botanical garden'], description: 'Top place to visit: Government Botanical Garden', type: 'page' },
+  { name: 'Ooty Lake', url: '/place/tamilnadu/ooty/ooty-lake', keywords: ['ooty lake'], description: 'Top place to visit: Ooty Lake', type: 'page' },
+  { name: 'Doddabetta Peak', url: '/place/tamilnadu/ooty/doddabetta-peak', keywords: ['doddabetta peak'], description: 'Top place to visit: Doddabetta Peak', type: 'page' },
+  { name: 'Kodaikanal Lake', url: '/place/tamilnadu/kodaikanal/kodaikanal-lake', keywords: ['kodaikanal lake'], description: 'Top place to visit: Kodaikanal Lake', type: 'page' },
+  { name: 'Coaker\'s Walk', url: '/place/tamilnadu/kodaikanal/coakers-walk', keywords: ['coaker\'s walk'], description: 'Top place to visit: Coaker\'s Walk', type: 'page' },
+  { name: 'Bryant Park', url: '/place/tamilnadu/kodaikanal/bryant-park', keywords: ['bryant park'], description: 'Top place to visit: Bryant Park', type: 'page' },
+  { name: 'Pillar Rocks', url: '/place/tamilnadu/kodaikanal/pillar-rocks', keywords: ['pillar rocks'], description: 'Top place to visit: Pillar Rocks', type: 'page' },
+  { name: 'Guna Caves', url: '/place/tamilnadu/kodaikanal/guna-caves', keywords: ['guna caves'], description: 'Top place to visit: Guna Caves', type: 'page' },
+  { name: 'Pine Forest', url: '/place/tamilnadu/kodaikanal/pine-forest', keywords: ['pine forest'], description: 'Top place to visit: Pine Forest', type: 'page' },
+  { name: 'Silver Cascade Falls', url: '/place/tamilnadu/kodaikanal/silver-cascade-falls', keywords: ['silver cascade falls'], description: 'Top place to visit: Silver Cascade Falls', type: 'page' },
 ];
 
 // ──────────────────────────────────────────────────────
 // SEARCH FUNCTION
 // ──────────────────────────────────────────────────────
-// Helper: Calculate similarity between two strings (0 to 1) using Levenshtein distance
 function similarity(s1: string, s2: string): number {
-  let longer = s1;
-  let shorter = s2;
-  if (s1.length < s2.length) {
-    longer = s2;
-    shorter = s1;
-  }
+  let longer = s1; let shorter = s2;
+  if (s1.length < s2.length) { longer = s2; shorter = s1; }
   const longerLength = longer.length;
-  if (longerLength === 0) {
-    return 1.0;
-  }
-  
+  if (longerLength === 0) return 1.0;
   const costs = new Array();
   for (let i = 0; i <= longer.length; i++) {
     let lastValue = i;
     for (let j = 0; j <= shorter.length; j++) {
-      if (i === 0) {
-        costs[j] = j;
-      } else if (j > 0) {
+      if (i === 0) { costs[j] = j; } else if (j > 0) {
         let newValue = costs[j - 1];
         if (longer.charAt(i - 1) !== shorter.charAt(j - 1)) {
           newValue = Math.min(Math.min(newValue, lastValue), costs[j]) + 1;
@@ -161,77 +214,111 @@ function similarity(s1: string, s2: string): number {
         lastValue = newValue;
       }
     }
-    if (i > 0) {
-      costs[shorter.length] = lastValue;
-    }
+    if (i > 0) costs[shorter.length] = lastValue;
   }
   return (longerLength - costs[shorter.length]) / longerLength;
 }
 
+const TYPO_DICTIONARY: Record<string, string> = {
+  'honeymmon': 'honeymoon', 'honeymoonn': 'honeymoon', 'honeymon': 'honeymoon', 'honymoon': 'honeymoon',
+  'kodai': 'kodaikanal', 'kodaiknal': 'kodaikanal', 'kodikanal': 'kodaikanal',
+  'muner': 'munnar', 'munaar': 'munnar', 'ootty': 'ooty',
+  'srinagr': 'srinagar', 'kasmir': 'kashmir',
+  'meenachi': 'meenakshi', 'meenackshi': 'meenakshi', 'minakshi': 'meenakshi', 'mennachi': 'meenakshi', 'menachi': 'meenakshi'
+};
+
+const SEMANTIC_MAPPING: Record<string, string[]> = {
+  'honeymoon': ['honeymoon', 'romantic', 'romance', 'couple', 'couples', 'newly married', 'romantic getaway'],
+  'family': ['family', 'kids', 'children', 'parents'],
+  'pilgrimage': ['temple', 'spiritual', 'devotional', 'religious', 'pilgrimage', 'yatra'],
+  'adventure': ['adventure', 'trekking', 'hiking', 'activities']
+};
+
+const FILLER_WORDS = ['best', 'trip', 'tour', 'package', 'packages', 'please', 'show', 'me', 'tell', 'want', 'need', 'for', 'a', 'to', 'in', 'and'];
+
 export function searchKnowledge(query: string): KnowledgeEntry[] {
-  const q = query.toLowerCase().trim();
+  let q = query.toLowerCase().replace(/[^\w\s]/gi, '').trim();
   if (!q) return [];
   
-  const queryWords = q.split(/\s+/);
+  let rawWords = q.split(/\s+/);
+  let correctedWords = rawWords.map(w => TYPO_DICTIONARY[w] || w);
+  let meaningfulWords = correctedWords.filter(w => !FILLER_WORDS.includes(w));
+  if (meaningfulWords.length === 0) meaningfulWords = correctedWords;
+
+  const isAskingForContact = correctedWords.includes('contact');
+  const isAskingForHome = correctedWords.includes('home');
+  const isAskingForAbout = correctedWords.includes('about');
+
+  const primaryKeywords = meaningfulWords.slice(0, 2);
 
   const scored = siteKnowledge.map(entry => {
     let score = 0;
+    const title = entry.name.toLowerCase();
+    const desc = entry.description.toLowerCase();
+    const kws = entry.keywords.map(k => k.toLowerCase());
+    const fullMeta = title + ' ' + desc + ' ' + kws.join(' ');
     
-    // Exact name match gets highest priority
-    if (entry.name.toLowerCase() === q) score += 1000;
-    
-    // Name contains query (exact substring)
-    if (entry.name.toLowerCase().includes(q)) score += 200;
-    
-    for (const kw of entry.keywords) {
-      const kwLower = kw.toLowerCase();
-      // Exact keyword match
-      if (kwLower === q) score += 1000;
-      
-      // Keyword contains exact query as a standalone word
-      const kwWords = kwLower.split(/\s+/);
-      if (kwWords.includes(q)) {
-         if (kwWords.length === 1) score += 800;
-         else score += 100;
-      }
-      
-      // Query contains the keyword
-      if (q.includes(kwLower)) score += 200;
-      
-      // Keyword contains the query (substring)
-      if (kwLower.includes(q)) score += 50;
+    if (title === 'contact us' && !isAskingForContact) return { entry, score: 0 };
+    if (title === 'home' && !isAskingForHome) return { entry, score: 0 };
+    if (['about us', 'services', 'testimonials'].includes(title) && !isAskingForAbout) {
+      if (entry.type === 'page') return { entry, score: 0 };
+    }
 
-      // Fuzzy Matching for typos on individual words
-      for (const qw of queryWords) {
-        if (qw.length > 3) {
-          for (const kwW of kwWords) {
-            if (qw === kwW) continue; // Skip if exact match
-            const sim = similarity(qw, kwW);
-            if (sim > 0.75) { 
-              score += 80;
-            }
-          }
-        }
-      }
+    if (primaryKeywords.length === 1) {
+       const k1 = primaryKeywords[0];
+       let k1Syns = [k1];
+       for (const [key, syns] of Object.entries(SEMANTIC_MAPPING)) {
+         if (syns.includes(k1) || key === k1) k1Syns = [...new Set([...k1Syns, ...syns])];
+       }
+       
+       const matchTitle = k1Syns.some(s => title.includes(s));
+       const matchDesc = k1Syns.some(s => desc.includes(s) || kws.some(kw => kw.includes(s)));
+       
+       if (matchTitle) score += 90;
+       else if (matchDesc) score += 70;
+       else if (k1Syns.some(s => fullMeta.includes(s))) score += 50;
+       
+       return { entry, score };
+    }
+    
+    if (primaryKeywords.length >= 2) {
+       const k1 = primaryKeywords[0];
+       const k2 = primaryKeywords[1];
+       
+       let k1Syns = [k1]; let k2Syns = [k2];
+       for (const [key, syns] of Object.entries(SEMANTIC_MAPPING)) {
+         if (syns.includes(k1) || key === k1) k1Syns = [...new Set([...k1Syns, ...syns])];
+         if (syns.includes(k2) || key === k2) k2Syns = [...new Set([...k2Syns, ...syns])];
+       }
+
+       const exactPhrase = `${k1} ${k2}`;
+       const exactPhraseRev = `${k2} ${k1}`;
+       
+       const hasK1 = k1Syns.some(s => fullMeta.includes(s));
+       const hasK2 = k2Syns.some(s => fullMeta.includes(s));
+       
+       if (!hasK1 || !hasK2) return { entry, score: 0 };
+       
+       if (title.includes(exactPhrase) || title.includes(exactPhraseRev)) score = 100;
+       else if (k1Syns.some(s => title.includes(s)) && k2Syns.some(s => title.includes(s))) score = 95;
+       else if ((k1Syns.some(s => title.includes(s) || kws.some(kw => kw.includes(s))) && k2Syns.some(s => title.includes(s) || kws.some(kw => kw.includes(s))))) score = 90;
+       else if (hasK1 && hasK2 && entry.type !== 'page') score = 85;
+       else if (k1Syns.some(s => desc.includes(s)) && k2Syns.some(s => desc.includes(s))) score = 75;
+       else score = 50; 
     }
     
     return { entry, score };
   });
 
-  const validResults = scored
-    .filter(s => s.score > 0)
-    .sort((a, b) => b.score - a.score);
-
+  const validResults = scored.filter(s => s.score > 0).sort((a, b) => b.score - a.score);
   if (validResults.length === 0) return [];
-
-  // Strict relevance filtering: Only keep results that score at least 20% of the top result.
-  // This drops irrelevant packages (e.g. Kerala Honeymoon for "ooty" search)
-  const topScore = validResults[0].score;
-  return validResults
-    .filter(s => s.score >= topScore * 0.2)
-    .slice(0, 3)
-    .map(s => s.entry);
+  
+  const exactPlace = validResults.find(s => s.score >= 95 && s.entry.type === 'page');
+  if (exactPlace) return [exactPlace.entry];
+  
+  return validResults.slice(0, 5).map(s => s.entry);
 }
+
 
 // ──────────────────────────────────────────────────────
 // STATIC COMPANY INFO

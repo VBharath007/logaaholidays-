@@ -1,4 +1,4 @@
-﻿import { useParams, Link } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { useSEO } from '../hooks/useSEO';
 import { destinationsData } from '../data/destinationsData';
 import { generateSlug } from '../lib/utils';
@@ -116,8 +116,51 @@ const PackageInquiryForm = ({ packageTitle }: { packageTitle: string }) => {
     const [focusedField, setFocusedField] = useState<string | null>(null);
     const [submitted, setSubmitted] = useState(false);
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        const form = e.currentTarget;
+        const data = new FormData(form);
+        const departure = data.get('departure')?.toString().trim() || '';
+        const name = data.get('name')?.toString().trim() || '';
+        const phone = data.get('phone')?.toString().trim() || '';
+        
+        if (departure.length < 3) {
+            alert('Departure City must be at least 3 characters long.');
+            return;
+        }
+        if (name.length < 3) {
+            alert('Full Name must be at least 3 characters long.');
+            return;
+        }
+        if (phone.length !== 10) {
+            alert('Phone Number must be exactly 10 digits.');
+            return;
+        }
+
+        
+        const now = new Date();
+        const submissionTime = now.toLocaleString('en-IN', {
+            day: '2-digit', month: 'short', year: 'numeric',
+            hour: '2-digit', minute: '2-digit', hour12: true
+        });
+
+        let message = `*New Enquiry – ${packageTitle}*\n`;
+        message += `*Submitted:* ${submissionTime}\n\n`;
+        message += `*Departure City:* ${data.get('departure')}\n`;
+        message += `*Travel Date:* ${data.get('date')}\n`;
+        message += `*Budget:* ${data.get('budget')}\n`;
+        message += `*Adults:* ${data.get('adults')}\n`;
+        message += `*Child:* ${data.get('child') || 0}\n`;
+        message += `*Infant:* ${data.get('infant') || 0}\n`;
+        message += `*Name:* ${data.get('name')}\n`;
+        message += `*Email:* ${data.get('email')}\n`;
+        message += `*Phone:* ${data.get('phone')}\n`;
+        message += `*Requirements:* ${data.get('req') || 'None'}\n`;
+
+        const whatsappNumber = '917397329776';
+        const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+        
+        window.open(whatsappUrl, '_blank');
         setSubmitted(true);
     };
 
@@ -127,11 +170,11 @@ const PackageInquiryForm = ({ packageTitle }: { packageTitle: string }) => {
                 <div className="absolute top-0 right-0 w-32 h-32 bg-[var(--color-brand-orange)]/10 rounded-full blur-[40px]" />
                 <div className="absolute bottom-0 left-0 w-32 h-32 bg-[var(--color-leaf-green)]/10 rounded-full blur-[40px]" />
                 <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-sm border border-white/20">
-                    <CheckCircle2 className="w-8 h-8 text-[var(--color-brand-orange)]" />
+                    <CheckCircle2 className="w-8 h-8 text-[var(--color-leaf-green)]" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">Inquiry Sent!</h3>
                 <p className="text-sm text-white/70">Our experts will contact you shortly regarding the <strong>{packageTitle}</strong>.</p>
-                <button onClick={() => setSubmitted(false)} className="mt-6 text-[var(--color-brand-orange)] font-bold text-sm hover:underline">Submit another inquiry</button>
+                <button onClick={() => setSubmitted(false)} className="mt-6 text-[var(--color-leaf-green)] font-bold text-sm hover:underline">Submit another inquiry</button>
             </div>
         );
     }
@@ -139,13 +182,13 @@ const PackageInquiryForm = ({ packageTitle }: { packageTitle: string }) => {
     const inputClasses = (fieldName: string) => `
     w-full bg-white/5 px-4 py-3.5 pl-11 rounded-xl border transition-all duration-300 outline-none text-sm font-medium text-white placeholder-white/40
     ${focusedField === fieldName
-            ? 'border-[var(--color-brand-orange)] bg-white/10'
+            ? 'border-[var(--color-leaf-green)] bg-white/10'
             : 'border-white/10 hover:border-white/20 hover:bg-white/10'}
   `;
 
     const iconClasses = (fieldName: string) => `
     absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 transition-all duration-300
-    ${focusedField === fieldName ? 'text-[var(--color-brand-orange)] scale-110' : 'text-white/40'}
+    ${focusedField === fieldName ? 'text-[var(--color-leaf-green)] scale-110' : 'text-white/40'}
   `;
 
     return (
@@ -165,19 +208,19 @@ const PackageInquiryForm = ({ packageTitle }: { packageTitle: string }) => {
                         {/* Departure */}
                         <div className="relative group">
                             <MapPin className={iconClasses('departure')} />
-                            <input type="text" placeholder="Departure City" className={inputClasses('departure')} onFocus={() => setFocusedField('departure')} onBlur={() => setFocusedField(null)} required />
+                            <input type="text" name="departure" placeholder="Departure City" minLength={3} onInput={(e) => { e.currentTarget.value = e.currentTarget.value.replace(/[^a-zA-Z\\s]/g, "") }} className={inputClasses('departure')} onFocus={() => setFocusedField('departure')} onBlur={() => setFocusedField(null)} required />
                         </div>
 
                         {/* Travel Date */}
                         <div className="relative group">
                             <Calendar className={iconClasses('date')} />
-                            <input type="date" className={inputClasses('date') + " [color-scheme:dark]"} onFocus={() => setFocusedField('date')} onBlur={() => setFocusedField(null)} required />
+                            <input type="date" name="date" className={inputClasses('date') + " [color-scheme:dark]"} onFocus={() => setFocusedField('date')} onBlur={() => setFocusedField(null)} required />
                         </div>
 
                         {/* Budget */}
                         <div className="relative group">
                             <CreditCard className={iconClasses('budget')} />
-                            <select className={inputClasses('budget') + " appearance-none"} onFocus={() => setFocusedField('budget')} onBlur={() => setFocusedField(null)} required>
+                            <select name="budget" className={inputClasses('budget') + " appearance-none"} onFocus={() => setFocusedField('budget')} onBlur={() => setFocusedField(null)} required>
                                 <option value="" className="bg-[var(--color-deep-teal)] text-white">Budget Level...</option>
                                 <option value="Economy" className="bg-[var(--color-deep-teal)] text-white">Economy</option>
                                 <option value="Standard" className="bg-[var(--color-deep-teal)] text-white">Standard</option>
@@ -189,26 +232,26 @@ const PackageInquiryForm = ({ packageTitle }: { packageTitle: string }) => {
                         <div className="flex gap-2">
                             <div className="relative flex-1 group">
                                 <Users2 className={iconClasses('adults')} />
-                                <input type="number" min="1" placeholder="Adults (12+)" className={inputClasses('adults')} onFocus={() => setFocusedField('adults')} onBlur={() => setFocusedField(null)} required />
+                                <input type="number" name="adults" min="1" placeholder="Adults (12+)" className={inputClasses('adults')} onFocus={() => setFocusedField('adults')} onBlur={() => setFocusedField(null)} required />
                             </div>
                             <div className="relative flex-1">
-                                <input type="number" min="0" placeholder="Child (2-12)" className="w-full bg-white/5 px-3 py-3.5 rounded-xl border border-white/10 outline-none text-sm font-medium text-white placeholder-white/60 hover:bg-white/10 focus:border-white/30 focus:bg-white/10 transition-colors" />
+                                <input type="number" name="child" min="0" placeholder="Child (2-12)" className="w-full bg-white/5 px-3 py-3.5 rounded-xl border border-white/10 outline-none text-sm font-medium text-white placeholder-white/60 hover:bg-white/10 focus:border-white/30 focus:bg-white/10 transition-colors" />
                             </div>
                             <div className="relative flex-1">
-                                <input type="number" min="0" placeholder="Infant (0-2)" className="w-full bg-white/5 px-3 py-3.5 rounded-xl border border-white/10 outline-none text-sm font-medium text-white placeholder-white/60 hover:bg-white/10 focus:border-white/30 focus:bg-white/10 transition-colors" />
+                                <input type="number" name="infant" min="0" placeholder="Infant (0-2)" className="w-full bg-white/5 px-3 py-3.5 rounded-xl border border-white/10 outline-none text-sm font-medium text-white placeholder-white/60 hover:bg-white/10 focus:border-white/30 focus:bg-white/10 transition-colors" />
                             </div>
                         </div>
 
                         {/* Name */}
                         <div className="relative group">
                             <User className={iconClasses('name')} />
-                            <input type="text" placeholder="Full Name" className={inputClasses('name')} onFocus={() => setFocusedField('name')} onBlur={() => setFocusedField(null)} required />
+                            <input type="text" name="name" placeholder="Full Name" minLength={3} onInput={(e) => { e.currentTarget.value = e.currentTarget.value.replace(/[^a-zA-Z\s]/g, '') }} className={inputClasses('name')} onFocus={() => setFocusedField('name')} onBlur={() => setFocusedField(null)} required />
                         </div>
 
                         {/* Email */}
                         <div className="relative group">
                             <Mail className={iconClasses('email')} />
-                            <input type="email" placeholder="Email Address" className={inputClasses('email')} onFocus={() => setFocusedField('email')} onBlur={() => setFocusedField(null)} required />
+                            <input type="email" name="email" placeholder="Email Address" className={inputClasses('email')} onFocus={() => setFocusedField('email')} onBlur={() => setFocusedField(null)} required />
                         </div>
 
                         {/* Phone */}
@@ -219,14 +262,14 @@ const PackageInquiryForm = ({ packageTitle }: { packageTitle: string }) => {
                             </div>
                             <div className="relative flex-1">
                                 <Phone className={iconClasses('phone')} />
-                                <input type="tel" placeholder="Phone Number" className={inputClasses('phone')} onFocus={() => setFocusedField('phone')} onBlur={() => setFocusedField(null)} required />
+                                <input type="tel" name="phone" placeholder="Phone Number" pattern="\d{10}" maxLength={10} onInput={(e) => { e.currentTarget.value = e.currentTarget.value.replace(/\D/g, '').slice(0, 10) }} className={inputClasses('phone')} onFocus={() => setFocusedField('phone')} onBlur={() => setFocusedField(null)} required />
                             </div>
                         </div>
 
                         {/* Requirements */}
                         <div className="relative mt-2 group">
-                            <MessageSquare className={`absolute left-4 top-4 w-4 h-4 transition-all duration-300 ${focusedField === 'req' ? 'text-[var(--color-brand-orange)] scale-110' : 'text-white/40'}`} />
-                            <textarea rows={3} placeholder="Special Requirements..." className={`w-full bg-white/5 pl-11 pr-4 py-3.5 rounded-xl border transition-all duration-300 outline-none text-sm font-medium text-white placeholder-white/40 resize-none ${focusedField === 'req' ? 'border-[var(--color-brand-orange)] bg-white/10' : 'border-white/10 hover:border-white/20 hover:bg-white/10'}`} onFocus={() => setFocusedField('req')} onBlur={() => setFocusedField(null)}></textarea>
+                            <MessageSquare className={`absolute left-4 top-4 w-4 h-4 transition-all duration-300 ${focusedField === 'req' ? 'text-[var(--color-leaf-green)] scale-110' : 'text-white/40'}`} />
+                            <textarea rows={3} name="req" placeholder="Special Requirements..." className={`w-full bg-white/5 pl-11 pr-4 py-3.5 rounded-xl border transition-all duration-300 outline-none text-sm font-medium text-white placeholder-white/40 resize-none ${focusedField === 'req' ? 'border-[var(--color-leaf-green)] bg-white/10' : 'border-white/10 hover:border-white/20 hover:bg-white/10'}`} onFocus={() => setFocusedField('req')} onBlur={() => setFocusedField(null)}></textarea>
                         </div>
                     </div>
 
@@ -30679,7 +30722,7 @@ export const packagesDatabase: Record<string, any> = {
         "id": "8001"
     },
     '8002': {
-        "title": "Delhi – Mathura – Vrindavan – Agra Tour Package",
+        "title": "Delhi – Mathura – Vrindavan – Agra 3 Nights / 4 Days Tour Package ",
         "badge": "Golden Triangle Tour",
         "image": "/assets/Logaa holidays/Delhi3n4d/Delhi.png",
         "heroImage": "/assets/Logaa holidays/Delhi3n4d/Delhi hero.png",
@@ -30904,7 +30947,7 @@ export const packagesDatabase: Record<string, any> = {
         "id": "8003"
     },
     '8004': {
-        "title": "Delhi – Agra – Fatehpur Sikri – Jaipur Tour Package",
+        "title": "Delhi – Agra – Fatehpur Sikri – Jaipur 5 Nights / 6 Days Tour Package",
         "badge": "Golden Triangle Tour",
         "image": "/assets/Logaa holidays/Delhi5n6d/Delhi.png",
         "heroImage": "/assets/Logaa holidays/Delhi5n6d/Delhi hero.png",
@@ -31714,447 +31757,447 @@ export const packagesDatabase: Record<string, any> = {
         // "id": "5003"
     // },
     
-    '5004': {
-        "title": "Coorg and Chikmagalur Tour – 4 Nights / 5 Days",
-        "badge": "Karnataka Tour",
-        "image": "/assets/placeholder.jpg",
-        "heroImage": "/assets/placeholder.jpg",
-        "overview": {
-            "duration": "4 Nights / 5 Days",
-            "destination": "Coorg and Chikmagalur Tour",
-            "activities": "Sightseeing, Nature, Heritage",
-            "themes": "Karnataka Tours"
-        },
-        "priceDetails": {
-            "amount": "On Request",
-            "type": "per person"
-        },
-        "itinerary": [
-            {
-                "day": "Day 01",
-                "title": "Mysore Arrival – Coorg",
-                "activities": ["Pickup from Mysore and proceed towards Coorg.", "En route, visit:", "•\tGolden Temple", "•\tNisargadhama", "•\tDubare Elephant Camp", "Continue to Coorg and check in.", "Overnight stay in Coorg."]
-            },
-            {
-                "day": "Day 02",
-                "title": "Coorg Sightseeing",
-                "activities": ["Visit:", "•\tTalakaveri", "•\tBhagamandala", "•\tAbbey Falls", "•\tMadikeri Fort", "•\tOmkareshwara Temple", "•\tRaja’s Seat", "•\tCoffee plantation, optional", "Overnight stay in Coorg."]
-            },
-            {
-                "day": "Day 03",
-                "title": "Coorg – Belur – Halebidu – Chikmagalur",
-                "activities": ["After breakfast, check out and proceed towards Chikmagalur.", "En route, visit:", "•\tBelur Chennakeshava Temple", "•\tHalebidu Hoysaleswara Temple", "•\tYagachi Dam, subject to time", "Continue to Chikmagalur.", "Overnight stay in Chikmagalur."]
-            },
-            {
-                "day": "Day 04",
-                "title": "Chikmagalur Sightseeing",
-                "activities": ["Visit:", "•\tMullayanagiri Peak", "•\tSeethalayyanagiri", "•\tBaba Budangiri", "•\tJhari Falls", "•\tHirekolale Lake", "•\tCoffee plantation", "•\tChikmagalur local market", "Overnight stay in Chikmagalur."]
-            },
-            {
-                "day": "Day 05",
-                "title": "Chikmagalur to Bangalore or Mysore Departure",
-                "activities": ["After breakfast, check out.", "Proceed to Bangalore or Mysore according to the selected package.", "Drop at Airport, Railway Station or Bus Stand."]
-            }
-        ],
-        "inclusions": ["Hotel or resort accommodation", "Daily breakfast", "Private air-conditioned vehicle", "Pickup and drop as mentioned", "Fuel charges", "Driver allowance", "Toll charges", "Parking charges", "State permit charges", "Sightseeing as per itinerary", "Assistance from Logaa Holidays"],
-        "exclusions": ["❌ Flight, train and bus tickets", "❌ Lunch and dinner unless included", "❌ Monument and attraction entrance tickets", "❌ Jungle safari and forest charges", "❌ Boating charges", "❌ Adventure activity charges", "❌ Local guide charges", "❌ Personal expenses", "❌ Camera and video charges", "❌ Travel insurance", "❌ Early check-in and late check-out", "❌ Additional sightseeing", "❌ Anything not specifically mentioned under inclusions"],
-        "highlights": ["Route: Coorg – Hassan – Belur – Halebidu – Chikmagalur", "Best For: Couples, Honeymoon Travellers, Families and Nature Lovers", "Stay: Coorg – 2 Nights", "Stay: Chikmagalur – 2 Nights"],
-        "keywords": "Karnataka tour packages from Tamil Nadu, Karnataka package from Madurai, Mysore Coorg tour from Chennai, Karnataka package from Trichy, Coorg package from Coimbatore, Mysore Coorg Kabini package, Chikmagalur family package, Hampi Badami heritage tour, Udupi Murudeshwar Gokarna package, Karnataka honeymoon package, Logaa Holidays Karnataka tour",
-        "seoTitle": "Coorg and Chikmagalur Tour – 4 Nights / 5 Days | Logaa Holidays",
-        "seoDescription": "Book Coorg and Chikmagalur Tour – 4 Nights / 5 Days with private cab, best hotels and comfortable itinerary.",
-        "faq": [
-            {
-                "question": "What places are covered in the Coorg and Chikmagalur Tour - 4 Nights / 5 Days?",
-                "questionTamil": "கூர்க் மற்றும் சிக்மகளூர் டூர் - 4 இரவுகள் / 5 நாட்களில் எந்த இடங்கள் சேர்க்கப்பட்டுள்ளன?",
-                "questionHindi": "कूर्ग और चिकमगलूर टूर - 4 रात / 5 दिन में कौन-कौन सी जगहें शामिल हैं?",
-                "answer": "The planned route is Coorg - Hassan - Belur - Halebidu - Chikmagalur. The day-wise sightseeing, overnight stays and transfers follow the package itinerary shown above.",
-                "answerTamil": "திட்டமிடப்பட்ட பயண வழித்தடம் கூர்க் - ஹாசன் - பேலூர் - ஹளேபீடு - சிக்மகளூர் ஆகும். ஒவ்வொரு நாளுக்கான சுற்றுலா இடங்கள், இரவு தங்கும் இடங்கள் மற்றும் பயண மாற்றங்கள் மேலே கொடுக்கப்பட்டுள்ள பேக்கேஜ் பயணத் திட்டத்தின்படி இருக்கும்.",
-                "answerHindi": "यात्रा का नियोजित रूट कूर्ग - हासन - बेलूर - हलेबीडु - चिकमगलूर है। दिनवार दर्शनीय स्थल, रात का ठहराव और ट्रांसफर ऊपर दिए गए पैकेज यात्रा कार्यक्रम के अनुसार होंगे।"
-            },
-            {
-                "question": "Is 4 Nights / 5 Days enough for this Coorg Chikmagalur tour?",
-                "questionTamil": "இந்த கூர்க் சிக்மகளூர் சுற்றுலாவிற்கு 4 இரவுகள் / 5 நாட்கள் போதுமானதா?",
-                "questionHindi": "क्या इस कूर्ग चिकमगलूर टूर के लिए 4 रात / 5 दिन पर्याप्त हैं?",
-                "answer": "Yes. This itinerary has been planned for 4 Nights / 5 Days. Travel time, sightseeing and hotel stays are arranged around this duration, although the order may change due to traffic, weather, temple or attraction timings and local conditions.",
-                "answerTamil": "ஆம். இந்த பயணத் திட்டம் 4 இரவுகள் / 5 நாட்களுக்கு ஏற்ப திட்டமிடப்பட்டுள்ளது. பயண நேரம், சுற்றுலா மற்றும் ஹோட்டல் தங்குதல் இந்த கால அளவை அடிப்படையாகக் கொண்டு அமைக்கப்பட்டுள்ளது. போக்குவரத்து, வானிலை, கோவில் அல்லது சுற்றுலா தலங்களின் நேரம் மற்றும் உள்ளூர் சூழ்நிலைகளால் வரிசையில் மாற்றம் ஏற்படலாம்.",
-                "answerHindi": "हाँ। यह यात्रा कार्यक्रम 4 रात / 5 दिन के लिए बनाया गया है। यात्रा समय, दर्शनीय स्थल और होटल ठहराव इसी अवधि के अनुसार तय किए गए हैं, हालांकि ट्रैफिक, मौसम, मंदिर या आकर्षण के समय और स्थानीय परिस्थितियों के कारण क्रम बदल सकता है।"
-            },
-            {
-                "question": "Can this 4 Nights / 5 Days package be changed to 3 Nights / 4 Days?",
-                "questionTamil": "இந்த 4 இரவுகள் / 5 நாட்கள் பேக்கேஜை 3 இரவுகள் / 4 நாட்களாக மாற்ற முடியுமா?",
-                "questionHindi": "क्या इस 4 रात / 5 दिन के पैकेज को 3 रात / 4 दिन में बदला जा सकता है?",
-                "answer": "Yes. A 3 Nights / 4 Days version can be prepared by reducing selected sightseeing or destinations. The full route shown in this package is planned for the listed duration, so a shorter plan will be a customised version.",
-                "answerTamil": "ஆம். சில சுற்றுலா இடங்கள் அல்லது குறிப்பிட்ட தலங்களை குறைத்து 3 இரவுகள் / 4 நாட்கள் பயணத் திட்டத்தை தயாரிக்கலாம். இந்த பேக்கேஜில் உள்ள முழு வழித்தடம் குறிப்பிடப்பட்ட கால அளவிற்காக திட்டமிடப்பட்டுள்ளது. எனவே குறுகிய கால பயணம் தனிப்பயன் திட்டமாக இருக்கும்.",
-                "answerHindi": "हाँ। कुछ दर्शनीय स्थलों या गंतव्यों को कम करके 3 रात / 4 दिन का संस्करण तैयार किया जा सकता है। इस पैकेज का पूरा रूट निर्धारित अवधि के लिए बनाया गया है, इसलिए छोटा प्लान एक कस्टमाइज्ड संस्करण होगा।"
-            },
-            {
-                "question": "Is this package suitable for families, couples, senior citizens and group trips?",
-                "questionTamil": "இந்த பேக்கேஜ் குடும்பங்கள், தம்பதிகள், மூத்த குடிமக்கள் மற்றும் குழு பயணங்களுக்கு ஏற்றதா?",
-                "questionHindi": "क्या यह पैकेज परिवारों, कपल्स, वरिष्ठ नागरिकों और ग्रुप ट्रिप के लिए उपयुक्त है?",
-                "answer": "Yes. The package can be booked by families, couples, senior citizens and small or large groups. For senior citizens, young children or large groups, the daily timing, hotel choice and vehicle can be adjusted for better comfort.",
-                "answerTamil": "ஆம். இந்த பேக்கேஜை குடும்பங்கள், தம்பதிகள், மூத்த குடிமக்கள் மற்றும் சிறிய அல்லது பெரிய குழுக்கள் முன்பதிவு செய்யலாம். மூத்த குடிமக்கள், சிறு குழந்தைகள் அல்லது பெரிய குழுக்களுக்கு அதிக வசதிக்காக தினசரி நேரம், ஹோட்டல் தேர்வு மற்றும் வாகனத்தை மாற்றியமைக்கலாம்.",
-                "answerHindi": "हाँ। इस पैकेज को परिवार, कपल्स, वरिष्ठ नागरिक और छोटे या बड़े समूह बुक कर सकते हैं। वरिष्ठ नागरिकों, छोटे बच्चों या बड़े समूहों की सुविधा के लिए दैनिक समय, होटल और वाहन का चयन बदला जा सकता है।"
-            },
-            {
-                "question": "What is normally included in this 4 Nights / 5 Days package?",
-                "questionTamil": "இந்த 4 இரவுகள் / 5 நாட்கள் பேக்கேஜில் பொதுவாக என்னென்ன சேர்க்கப்படும்?",
-                "questionHindi": "इस 4 रात / 5 दिन के पैकेज में सामान्यतः क्या-क्या शामिल होता है?",
-                "answer": "As per the package details, the plan generally includes hotel accommodation, the mentioned meal plan, private vehicle for transfers and sightseeing, driver allowance, fuel, toll, parking and applicable permits. Entry tickets, optional activities, special darshan, personal expenses and items listed under exclusions are not included unless the final quotation clearly says otherwise.",
-                "answerTamil": "பேக்கேஜ் விவரங்களின்படி, பொதுவாக ஹோட்டல் தங்குமிடம், குறிப்பிடப்பட்ட உணவு திட்டம், பயண மாற்றம் மற்றும் சுற்றுலாவிற்கான தனியார் வாகனம், டிரைவர் படி, எரிபொருள், சுங்கக் கட்டணம், பார்க்கிங் மற்றும் பொருந்தக்கூடிய அனுமதிகள் சேர்க்கப்படும். நுழைவுச் சீட்டுகள், விருப்ப செயல்பாடுகள், சிறப்பு தரிசனம், தனிப்பட்ட செலவுகள் மற்றும் விலக்கப்பட்ட பட்டியலில் உள்ளவை இறுதி quotation-ல் தெளிவாக குறிப்பிடப்படாவிட்டால் சேர்க்கப்படாது.",
-                "answerHindi": "पैकेज विवरण के अनुसार, योजना में सामान्यतः होटल आवास, उल्लिखित मील प्लान, ट्रांसफर और दर्शनीय स्थलों के लिए निजी वाहन, ड्राइवर भत्ता, ईंधन, टोल, पार्किंग और लागू परमिट शामिल होते हैं। प्रवेश टिकट, वैकल्पिक गतिविधियाँ, विशेष दर्शन, व्यक्तिगत खर्च और एक्सक्लूजन में सूचीबद्ध चीजें शामिल नहीं हैं, जब तक कि अंतिम कोटेशन में स्पष्ट रूप से न लिखा गया हो।"
-            },
-            {
-                "question": "Can I choose the hotel category, room type and vehicle?",
-                "questionTamil": "ஹோட்டல் வகை, அறை வகை மற்றும் வாகனத்தை நான் தேர்வு செய்ய முடியுமா?",
-                "questionHindi": "क्या मैं होटल कैटेगरी, रूम टाइप और वाहन चुन सकता हूँ?",
-                "answer": "Yes. You can request budget, standard, 3-star, 4-star or premium hotels where available, and the vehicle can be selected according to the number of guests and route. The final price changes based on travel date, hotel category, room sharing and vehicle type.",
-                "answerTamil": "ஆம். கிடைக்கும் வசதியைப் பொறுத்து பட்ஜெட், ஸ்டாண்டர்ட், 3-ஸ்டார், 4-ஸ்டார் அல்லது பிரீமியம் ஹோட்டல்களை கோரலாம். பயணிகளின் எண்ணிக்கை மற்றும் வழித்தடத்திற்கு ஏற்ப வாகனத்தையும் தேர்வு செய்யலாம். பயண தேதி, ஹோட்டல் வகை, அறை பகிர்வு மற்றும் வாகன வகையைப் பொறுத்து இறுதி விலை மாறும்.",
-                "answerHindi": "हाँ। उपलब्धता के अनुसार आप बजट, स्टैंडर्ड, 3-स्टार, 4-स्टार या प्रीमियम होटल चुन सकते हैं और यात्रियों की संख्या तथा रूट के अनुसार वाहन चुना जा सकता है। अंतिम कीमत यात्रा तिथि, होटल कैटेगरी, रूम शेयरिंग और वाहन के प्रकार पर निर्भर करेगी।"
-            },
-            {
-                "question": "Is this package better for couples and nature lovers?",
-                "questionTamil": "இந்த பேக்கேஜ் தம்பதிகள் மற்றும் இயற்கை விரும்புபவர்களுக்கு சிறந்ததா?",
-                "questionHindi": "क्या यह पैकेज कपल्स और प्रकृति प्रेमियों के लिए बेहतर है?",
-                "answer": "Yes. The route combines Coorg and Chikmagalur hill scenery with coffee-country experiences, and also includes the Belur and Halebidu heritage side. It works well for couples, honeymoon travellers, families and nature lovers.",
-                "answerTamil": "ஆம். இந்த வழித்தடம் கூர்க் மற்றும் சிக்மகளூரின் மலைக் காட்சிகளை காபி தோட்ட அனுபவங்களுடன் இணைக்கிறது. மேலும் பேலூர் மற்றும் ஹளேபீடு பாரம்பரிய இடங்களும் இதில் சேர்க்கப்பட்டுள்ளன. இது தம்பதிகள், ஹனிமூன் பயணிகள், குடும்பங்கள் மற்றும் இயற்கை விரும்புபவர்களுக்கு சிறந்த தேர்வாக இருக்கும்.",
-                "answerHindi": "हाँ। यह रूट कूर्ग और चिकमगलूर की पहाड़ी प्राकृतिक सुंदरता को कॉफी क्षेत्र के अनुभवों के साथ जोड़ता है और इसमें बेलूर तथा हलेबीडु की विरासत भी शामिल है। यह कपल्स, हनीमून यात्रियों, परिवारों और प्रकृति प्रेमियों के लिए अच्छा विकल्प है।"
-            },
-            {
-                "question": "Can I book this package through Logaa Holidays in Madurai?",
-                "questionTamil": "மதுரையில் உள்ள Logaa Holidays மூலம் இந்த பேக்கேஜை முன்பதிவு செய்ய முடியுமா?",
-                "questionHindi": "क्या मैं मदुरै की Logaa Holidays के माध्यम से यह पैकेज बुक कर सकता हूँ?",
-                "answer": "Yes. Logaa Holidays is based in Madurai and can arrange this Karnataka package with suitable pickup, hotel stay, private transportation and sightseeing. Depending on the route, pickup can be from Madurai or from the most convenient airport, railway station or city mentioned in the package.",
-                "answerTamil": "ஆம். Logaa Holidays மதுரையை மையமாகக் கொண்டு செயல்படுகிறது மற்றும் இந்த கர்நாடகா பேக்கேஜிற்கு பொருத்தமான பிக்கப், ஹோட்டல் தங்குமிடம், தனியார் போக்குவரத்து மற்றும் சுற்றுலா ஏற்பாடுகளை செய்ய முடியும். பயண வழித்தடத்தைப் பொறுத்து பிக்கப் மதுரையிலிருந்தோ அல்லது பேக்கேஜில் குறிப்பிடப்பட்ட வசதியான விமான நிலையம், ரயில் நிலையம் அல்லது நகரத்திலிருந்தோ ஏற்பாடு செய்யலாம்.",
-                "answerHindi": "हाँ। Logaa Holidays मदुरै में स्थित है और इस कर्नाटक पैकेज के लिए उपयुक्त पिकअप, होटल ठहराव, निजी परिवहन और दर्शनीय स्थलों की व्यवस्था कर सकती है। रूट के अनुसार पिकअप मदुरै या पैकेज में बताए गए सबसे सुविधाजनक एयरपोर्ट, रेलवे स्टेशन या शहर से किया जा सकता है।"
-            },
-            {
-                "question": "Can travellers from Chennai, Madurai, Bengaluru, Hyderabad, Mumbai and other Indian cities book this package?",
-                "questionTamil": "சென்னை, மதுரை, பெங்களூரு, ஹைதராபாத், மும்பை மற்றும் பிற இந்திய நகரங்களிலிருந்து வரும் பயணிகள் இந்த பேக்கேஜை முன்பதிவு செய்ய முடியுமா?",
-                "questionHindi": "क्या चेन्नई, मदुरै, बैंगलोर, हैदराबाद, मुंबई और अन्य भारतीय शहरों के यात्री यह पैकेज बुक कर सकते हैं?",
-                "answer": "Yes. Travellers can reach the most convenient South India airport or railway station and start the land tour from there. Logaa Holidays can customise the pickup and drop points based on flight or train timings and the selected itinerary.",
-                "answerTamil": "ஆம். பயணிகள் வசதியான தென் இந்திய விமான நிலையம் அல்லது ரயில் நிலையத்தை அடைந்து அங்கிருந்து நிலப்பரப்பு சுற்றுலாவை தொடங்கலாம். விமானம் அல்லது ரயில் நேரம் மற்றும் தேர்வு செய்யப்பட்ட பயணத் திட்டத்தைப் பொறுத்து Logaa Holidays பிக்கப் மற்றும் டிராப் இடங்களை தனிப்பயனாக்க முடியும்.",
-                "answerHindi": "हाँ। यात्री सबसे सुविधाजनक दक्षिण भारत के एयरपोर्ट या रेलवे स्टेशन तक पहुँचकर वहाँ से लैंड टूर शुरू कर सकते हैं। Logaa Holidays फ्लाइट या ट्रेन के समय और चुने गए यात्रा कार्यक्रम के अनुसार पिकअप और ड्रॉप पॉइंट को कस्टमाइज कर सकती है।"
-            },
-            {
-                "question": "Do you arrange this package for travellers from Singapore and Sri Lanka?",
-                "questionTamil": "சிங்கப்பூர் மற்றும் இலங்கையிலிருந்து வரும் பயணிகளுக்கும் இந்த பேக்கேஜை ஏற்பாடு செய்கிறீர்களா?",
-                "questionHindi": "क्या आप सिंगापुर और श्रीलंका से आने वाले यात्रियों के लिए भी यह पैकेज आयोजित करते हैं?",
-                "answer": "Yes. International travellers can book the South India land package after arriving at the most suitable airport for the route. International flights, visa and travel documents are not automatically included unless they are specifically mentioned in the final quotation.",
-                "answerTamil": "ஆம். சர்வதேச பயணிகள் இந்த வழித்தடத்திற்கு ஏற்ற விமான நிலையத்தை அடைந்த பிறகு தென் இந்திய நிலப்பரப்பு பேக்கேஜை முன்பதிவு செய்யலாம். சர்வதேச விமான டிக்கெட், விசா மற்றும் பயண ஆவணங்கள் இறுதி quotation-ல் குறிப்பாக சேர்க்கப்பட்டிருந்தால் மட்டுமே வழங்கப்படும்.",
-                "answerHindi": "हाँ। अंतरराष्ट्रीय यात्री इस रूट के लिए सबसे उपयुक्त एयरपोर्ट पर पहुँचने के बाद दक्षिण भारत का लैंड पैकेज बुक कर सकते हैं। अंतरराष्ट्रीय फ्लाइट, वीजा और यात्रा दस्तावेज अपने आप शामिल नहीं होते, जब तक कि अंतिम कोटेशन में उनका विशेष रूप से उल्लेख न किया गया हो।"
-            },
-            {
-                "question": "How is the final package cost calculated?",
-                "questionTamil": "இறுதி பேக்கேஜ் விலை எவ்வாறு கணக்கிடப்படுகிறது?",
-                "questionHindi": "अंतिम पैकेज की कीमत कैसे तय की जाती है?",
-                "answer": "The price depends on travel date, number of adults and children, hotel category, number of rooms, extra beds, vehicle type, pickup and drop points and any optional activities. Share your exact travel details with Logaa Holidays for the final quotation.",
-                "answerTamil": "பயண தேதி, பெரியவர்கள் மற்றும் குழந்தைகளின் எண்ணிக்கை, ஹோட்டல் வகை, அறைகளின் எண்ணிக்கை, கூடுதல் படுக்கைகள், வாகன வகை, பிக்கப் மற்றும் டிராப் இடங்கள் மற்றும் விருப்ப செயல்பாடுகளைப் பொறுத்து விலை கணக்கிடப்படும். இறுதி quotation பெற உங்கள் சரியான பயண விவரங்களை Logaa Holidays-க்கு தெரிவிக்கவும்.",
-                "answerHindi": "कीमत यात्रा तिथि, वयस्कों और बच्चों की संख्या, होटल कैटेगरी, कमरों की संख्या, एक्स्ट्रा बेड, वाहन के प्रकार, पिकअप और ड्रॉप पॉइंट तथा वैकल्पिक गतिविधियों पर निर्भर करती है। अंतिम कोटेशन के लिए अपनी सही यात्रा जानकारी Logaa Holidays के साथ साझा करें।"
-            }
-        ],
+    // '5004': {
+    //     "title": "Coorg and Chikmagalur Tour – 4 Nights / 5 Days",
+    //     "badge": "Karnataka Tour",
+    //     "image": "/assets/placeholder.jpg",
+    //     "heroImage": "/assets/placeholder.jpg",
+    //     "overview": {
+    //         "duration": "4 Nights / 5 Days",
+    //         "destination": "Coorg and Chikmagalur Tour",
+    //         "activities": "Sightseeing, Nature, Heritage",
+    //         "themes": "Karnataka Tours"
+    //     },
+    //     "priceDetails": {
+    //         "amount": "On Request",
+    //         "type": "per person"
+    //     },
+    //     "itinerary": [
+    //         {
+    //             "day": "Day 01",
+    //             "title": "Mysore Arrival – Coorg",
+    //             "activities": ["Pickup from Mysore and proceed towards Coorg.", "En route, visit:", "•\tGolden Temple", "•\tNisargadhama", "•\tDubare Elephant Camp", "Continue to Coorg and check in.", "Overnight stay in Coorg."]
+    //         },
+    //         {
+    //             "day": "Day 02",
+    //             "title": "Coorg Sightseeing",
+    //             "activities": ["Visit:", "•\tTalakaveri", "•\tBhagamandala", "•\tAbbey Falls", "•\tMadikeri Fort", "•\tOmkareshwara Temple", "•\tRaja’s Seat", "•\tCoffee plantation, optional", "Overnight stay in Coorg."]
+    //         },
+    //         {
+    //             "day": "Day 03",
+    //             "title": "Coorg – Belur – Halebidu – Chikmagalur",
+    //             "activities": ["After breakfast, check out and proceed towards Chikmagalur.", "En route, visit:", "•\tBelur Chennakeshava Temple", "•\tHalebidu Hoysaleswara Temple", "•\tYagachi Dam, subject to time", "Continue to Chikmagalur.", "Overnight stay in Chikmagalur."]
+    //         },
+    //         {
+    //             "day": "Day 04",
+    //             "title": "Chikmagalur Sightseeing",
+    //             "activities": ["Visit:", "•\tMullayanagiri Peak", "•\tSeethalayyanagiri", "•\tBaba Budangiri", "•\tJhari Falls", "•\tHirekolale Lake", "•\tCoffee plantation", "•\tChikmagalur local market", "Overnight stay in Chikmagalur."]
+    //         },
+    //         {
+    //             "day": "Day 05",
+    //             "title": "Chikmagalur to Bangalore or Mysore Departure",
+    //             "activities": ["After breakfast, check out.", "Proceed to Bangalore or Mysore according to the selected package.", "Drop at Airport, Railway Station or Bus Stand."]
+    //         }
+    //     ],
+    //     "inclusions": ["Hotel or resort accommodation", "Daily breakfast", "Private air-conditioned vehicle", "Pickup and drop as mentioned", "Fuel charges", "Driver allowance", "Toll charges", "Parking charges", "State permit charges", "Sightseeing as per itinerary", "Assistance from Logaa Holidays"],
+    //     "exclusions": ["❌ Flight, train and bus tickets", "❌ Lunch and dinner unless included", "❌ Monument and attraction entrance tickets", "❌ Jungle safari and forest charges", "❌ Boating charges", "❌ Adventure activity charges", "❌ Local guide charges", "❌ Personal expenses", "❌ Camera and video charges", "❌ Travel insurance", "❌ Early check-in and late check-out", "❌ Additional sightseeing", "❌ Anything not specifically mentioned under inclusions"],
+    //     "highlights": ["Route: Coorg – Hassan – Belur – Halebidu – Chikmagalur", "Best For: Couples, Honeymoon Travellers, Families and Nature Lovers", "Stay: Coorg – 2 Nights", "Stay: Chikmagalur – 2 Nights"],
+    //     "keywords": "Karnataka tour packages from Tamil Nadu, Karnataka package from Madurai, Mysore Coorg tour from Chennai, Karnataka package from Trichy, Coorg package from Coimbatore, Mysore Coorg Kabini package, Chikmagalur family package, Hampi Badami heritage tour, Udupi Murudeshwar Gokarna package, Karnataka honeymoon package, Logaa Holidays Karnataka tour",
+    //     "seoTitle": "Coorg and Chikmagalur Tour – 4 Nights / 5 Days | Logaa Holidays",
+    //     "seoDescription": "Book Coorg and Chikmagalur Tour – 4 Nights / 5 Days with private cab, best hotels and comfortable itinerary.",
+    //     "faq": [
+    //         {
+    //             "question": "What places are covered in the Coorg and Chikmagalur Tour - 4 Nights / 5 Days?",
+    //             "questionTamil": "கூர்க் மற்றும் சிக்மகளூர் டூர் - 4 இரவுகள் / 5 நாட்களில் எந்த இடங்கள் சேர்க்கப்பட்டுள்ளன?",
+    //             "questionHindi": "कूर्ग और चिकमगलूर टूर - 4 रात / 5 दिन में कौन-कौन सी जगहें शामिल हैं?",
+    //             "answer": "The planned route is Coorg - Hassan - Belur - Halebidu - Chikmagalur. The day-wise sightseeing, overnight stays and transfers follow the package itinerary shown above.",
+    //             "answerTamil": "திட்டமிடப்பட்ட பயண வழித்தடம் கூர்க் - ஹாசன் - பேலூர் - ஹளேபீடு - சிக்மகளூர் ஆகும். ஒவ்வொரு நாளுக்கான சுற்றுலா இடங்கள், இரவு தங்கும் இடங்கள் மற்றும் பயண மாற்றங்கள் மேலே கொடுக்கப்பட்டுள்ள பேக்கேஜ் பயணத் திட்டத்தின்படி இருக்கும்.",
+    //             "answerHindi": "यात्रा का नियोजित रूट कूर्ग - हासन - बेलूर - हलेबीडु - चिकमगलूर है। दिनवार दर्शनीय स्थल, रात का ठहराव और ट्रांसफर ऊपर दिए गए पैकेज यात्रा कार्यक्रम के अनुसार होंगे।"
+    //         },
+    //         {
+    //             "question": "Is 4 Nights / 5 Days enough for this Coorg Chikmagalur tour?",
+    //             "questionTamil": "இந்த கூர்க் சிக்மகளூர் சுற்றுலாவிற்கு 4 இரவுகள் / 5 நாட்கள் போதுமானதா?",
+    //             "questionHindi": "क्या इस कूर्ग चिकमगलूर टूर के लिए 4 रात / 5 दिन पर्याप्त हैं?",
+    //             "answer": "Yes. This itinerary has been planned for 4 Nights / 5 Days. Travel time, sightseeing and hotel stays are arranged around this duration, although the order may change due to traffic, weather, temple or attraction timings and local conditions.",
+    //             "answerTamil": "ஆம். இந்த பயணத் திட்டம் 4 இரவுகள் / 5 நாட்களுக்கு ஏற்ப திட்டமிடப்பட்டுள்ளது. பயண நேரம், சுற்றுலா மற்றும் ஹோட்டல் தங்குதல் இந்த கால அளவை அடிப்படையாகக் கொண்டு அமைக்கப்பட்டுள்ளது. போக்குவரத்து, வானிலை, கோவில் அல்லது சுற்றுலா தலங்களின் நேரம் மற்றும் உள்ளூர் சூழ்நிலைகளால் வரிசையில் மாற்றம் ஏற்படலாம்.",
+    //             "answerHindi": "हाँ। यह यात्रा कार्यक्रम 4 रात / 5 दिन के लिए बनाया गया है। यात्रा समय, दर्शनीय स्थल और होटल ठहराव इसी अवधि के अनुसार तय किए गए हैं, हालांकि ट्रैफिक, मौसम, मंदिर या आकर्षण के समय और स्थानीय परिस्थितियों के कारण क्रम बदल सकता है।"
+    //         },
+    //         {
+    //             "question": "Can this 4 Nights / 5 Days package be changed to 3 Nights / 4 Days?",
+    //             "questionTamil": "இந்த 4 இரவுகள் / 5 நாட்கள் பேக்கேஜை 3 இரவுகள் / 4 நாட்களாக மாற்ற முடியுமா?",
+    //             "questionHindi": "क्या इस 4 रात / 5 दिन के पैकेज को 3 रात / 4 दिन में बदला जा सकता है?",
+    //             "answer": "Yes. A 3 Nights / 4 Days version can be prepared by reducing selected sightseeing or destinations. The full route shown in this package is planned for the listed duration, so a shorter plan will be a customised version.",
+    //             "answerTamil": "ஆம். சில சுற்றுலா இடங்கள் அல்லது குறிப்பிட்ட தலங்களை குறைத்து 3 இரவுகள் / 4 நாட்கள் பயணத் திட்டத்தை தயாரிக்கலாம். இந்த பேக்கேஜில் உள்ள முழு வழித்தடம் குறிப்பிடப்பட்ட கால அளவிற்காக திட்டமிடப்பட்டுள்ளது. எனவே குறுகிய கால பயணம் தனிப்பயன் திட்டமாக இருக்கும்.",
+    //             "answerHindi": "हाँ। कुछ दर्शनीय स्थलों या गंतव्यों को कम करके 3 रात / 4 दिन का संस्करण तैयार किया जा सकता है। इस पैकेज का पूरा रूट निर्धारित अवधि के लिए बनाया गया है, इसलिए छोटा प्लान एक कस्टमाइज्ड संस्करण होगा।"
+    //         },
+    //         {
+    //             "question": "Is this package suitable for families, couples, senior citizens and group trips?",
+    //             "questionTamil": "இந்த பேக்கேஜ் குடும்பங்கள், தம்பதிகள், மூத்த குடிமக்கள் மற்றும் குழு பயணங்களுக்கு ஏற்றதா?",
+    //             "questionHindi": "क्या यह पैकेज परिवारों, कपल्स, वरिष्ठ नागरिकों और ग्रुप ट्रिप के लिए उपयुक्त है?",
+    //             "answer": "Yes. The package can be booked by families, couples, senior citizens and small or large groups. For senior citizens, young children or large groups, the daily timing, hotel choice and vehicle can be adjusted for better comfort.",
+    //             "answerTamil": "ஆம். இந்த பேக்கேஜை குடும்பங்கள், தம்பதிகள், மூத்த குடிமக்கள் மற்றும் சிறிய அல்லது பெரிய குழுக்கள் முன்பதிவு செய்யலாம். மூத்த குடிமக்கள், சிறு குழந்தைகள் அல்லது பெரிய குழுக்களுக்கு அதிக வசதிக்காக தினசரி நேரம், ஹோட்டல் தேர்வு மற்றும் வாகனத்தை மாற்றியமைக்கலாம்.",
+    //             "answerHindi": "हाँ। इस पैकेज को परिवार, कपल्स, वरिष्ठ नागरिक और छोटे या बड़े समूह बुक कर सकते हैं। वरिष्ठ नागरिकों, छोटे बच्चों या बड़े समूहों की सुविधा के लिए दैनिक समय, होटल और वाहन का चयन बदला जा सकता है।"
+    //         },
+    //         {
+    //             "question": "What is normally included in this 4 Nights / 5 Days package?",
+    //             "questionTamil": "இந்த 4 இரவுகள் / 5 நாட்கள் பேக்கேஜில் பொதுவாக என்னென்ன சேர்க்கப்படும்?",
+    //             "questionHindi": "इस 4 रात / 5 दिन के पैकेज में सामान्यतः क्या-क्या शामिल होता है?",
+    //             "answer": "As per the package details, the plan generally includes hotel accommodation, the mentioned meal plan, private vehicle for transfers and sightseeing, driver allowance, fuel, toll, parking and applicable permits. Entry tickets, optional activities, special darshan, personal expenses and items listed under exclusions are not included unless the final quotation clearly says otherwise.",
+    //             "answerTamil": "பேக்கேஜ் விவரங்களின்படி, பொதுவாக ஹோட்டல் தங்குமிடம், குறிப்பிடப்பட்ட உணவு திட்டம், பயண மாற்றம் மற்றும் சுற்றுலாவிற்கான தனியார் வாகனம், டிரைவர் படி, எரிபொருள், சுங்கக் கட்டணம், பார்க்கிங் மற்றும் பொருந்தக்கூடிய அனுமதிகள் சேர்க்கப்படும். நுழைவுச் சீட்டுகள், விருப்ப செயல்பாடுகள், சிறப்பு தரிசனம், தனிப்பட்ட செலவுகள் மற்றும் விலக்கப்பட்ட பட்டியலில் உள்ளவை இறுதி quotation-ல் தெளிவாக குறிப்பிடப்படாவிட்டால் சேர்க்கப்படாது.",
+    //             "answerHindi": "पैकेज विवरण के अनुसार, योजना में सामान्यतः होटल आवास, उल्लिखित मील प्लान, ट्रांसफर और दर्शनीय स्थलों के लिए निजी वाहन, ड्राइवर भत्ता, ईंधन, टोल, पार्किंग और लागू परमिट शामिल होते हैं। प्रवेश टिकट, वैकल्पिक गतिविधियाँ, विशेष दर्शन, व्यक्तिगत खर्च और एक्सक्लूजन में सूचीबद्ध चीजें शामिल नहीं हैं, जब तक कि अंतिम कोटेशन में स्पष्ट रूप से न लिखा गया हो।"
+    //         },
+    //         {
+    //             "question": "Can I choose the hotel category, room type and vehicle?",
+    //             "questionTamil": "ஹோட்டல் வகை, அறை வகை மற்றும் வாகனத்தை நான் தேர்வு செய்ய முடியுமா?",
+    //             "questionHindi": "क्या मैं होटल कैटेगरी, रूम टाइप और वाहन चुन सकता हूँ?",
+    //             "answer": "Yes. You can request budget, standard, 3-star, 4-star or premium hotels where available, and the vehicle can be selected according to the number of guests and route. The final price changes based on travel date, hotel category, room sharing and vehicle type.",
+    //             "answerTamil": "ஆம். கிடைக்கும் வசதியைப் பொறுத்து பட்ஜெட், ஸ்டாண்டர்ட், 3-ஸ்டார், 4-ஸ்டார் அல்லது பிரீமியம் ஹோட்டல்களை கோரலாம். பயணிகளின் எண்ணிக்கை மற்றும் வழித்தடத்திற்கு ஏற்ப வாகனத்தையும் தேர்வு செய்யலாம். பயண தேதி, ஹோட்டல் வகை, அறை பகிர்வு மற்றும் வாகன வகையைப் பொறுத்து இறுதி விலை மாறும்.",
+    //             "answerHindi": "हाँ। उपलब्धता के अनुसार आप बजट, स्टैंडर्ड, 3-स्टार, 4-स्टार या प्रीमियम होटल चुन सकते हैं और यात्रियों की संख्या तथा रूट के अनुसार वाहन चुना जा सकता है। अंतिम कीमत यात्रा तिथि, होटल कैटेगरी, रूम शेयरिंग और वाहन के प्रकार पर निर्भर करेगी।"
+    //         },
+    //         {
+    //             "question": "Is this package better for couples and nature lovers?",
+    //             "questionTamil": "இந்த பேக்கேஜ் தம்பதிகள் மற்றும் இயற்கை விரும்புபவர்களுக்கு சிறந்ததா?",
+    //             "questionHindi": "क्या यह पैकेज कपल्स और प्रकृति प्रेमियों के लिए बेहतर है?",
+    //             "answer": "Yes. The route combines Coorg and Chikmagalur hill scenery with coffee-country experiences, and also includes the Belur and Halebidu heritage side. It works well for couples, honeymoon travellers, families and nature lovers.",
+    //             "answerTamil": "ஆம். இந்த வழித்தடம் கூர்க் மற்றும் சிக்மகளூரின் மலைக் காட்சிகளை காபி தோட்ட அனுபவங்களுடன் இணைக்கிறது. மேலும் பேலூர் மற்றும் ஹளேபீடு பாரம்பரிய இடங்களும் இதில் சேர்க்கப்பட்டுள்ளன. இது தம்பதிகள், ஹனிமூன் பயணிகள், குடும்பங்கள் மற்றும் இயற்கை விரும்புபவர்களுக்கு சிறந்த தேர்வாக இருக்கும்.",
+    //             "answerHindi": "हाँ। यह रूट कूर्ग और चिकमगलूर की पहाड़ी प्राकृतिक सुंदरता को कॉफी क्षेत्र के अनुभवों के साथ जोड़ता है और इसमें बेलूर तथा हलेबीडु की विरासत भी शामिल है। यह कपल्स, हनीमून यात्रियों, परिवारों और प्रकृति प्रेमियों के लिए अच्छा विकल्प है।"
+    //         },
+    //         {
+    //             "question": "Can I book this package through Logaa Holidays in Madurai?",
+    //             "questionTamil": "மதுரையில் உள்ள Logaa Holidays மூலம் இந்த பேக்கேஜை முன்பதிவு செய்ய முடியுமா?",
+    //             "questionHindi": "क्या मैं मदुरै की Logaa Holidays के माध्यम से यह पैकेज बुक कर सकता हूँ?",
+    //             "answer": "Yes. Logaa Holidays is based in Madurai and can arrange this Karnataka package with suitable pickup, hotel stay, private transportation and sightseeing. Depending on the route, pickup can be from Madurai or from the most convenient airport, railway station or city mentioned in the package.",
+    //             "answerTamil": "ஆம். Logaa Holidays மதுரையை மையமாகக் கொண்டு செயல்படுகிறது மற்றும் இந்த கர்நாடகா பேக்கேஜிற்கு பொருத்தமான பிக்கப், ஹோட்டல் தங்குமிடம், தனியார் போக்குவரத்து மற்றும் சுற்றுலா ஏற்பாடுகளை செய்ய முடியும். பயண வழித்தடத்தைப் பொறுத்து பிக்கப் மதுரையிலிருந்தோ அல்லது பேக்கேஜில் குறிப்பிடப்பட்ட வசதியான விமான நிலையம், ரயில் நிலையம் அல்லது நகரத்திலிருந்தோ ஏற்பாடு செய்யலாம்.",
+    //             "answerHindi": "हाँ। Logaa Holidays मदुरै में स्थित है और इस कर्नाटक पैकेज के लिए उपयुक्त पिकअप, होटल ठहराव, निजी परिवहन और दर्शनीय स्थलों की व्यवस्था कर सकती है। रूट के अनुसार पिकअप मदुरै या पैकेज में बताए गए सबसे सुविधाजनक एयरपोर्ट, रेलवे स्टेशन या शहर से किया जा सकता है।"
+    //         },
+    //         {
+    //             "question": "Can travellers from Chennai, Madurai, Bengaluru, Hyderabad, Mumbai and other Indian cities book this package?",
+    //             "questionTamil": "சென்னை, மதுரை, பெங்களூரு, ஹைதராபாத், மும்பை மற்றும் பிற இந்திய நகரங்களிலிருந்து வரும் பயணிகள் இந்த பேக்கேஜை முன்பதிவு செய்ய முடியுமா?",
+    //             "questionHindi": "क्या चेन्नई, मदुरै, बैंगलोर, हैदराबाद, मुंबई और अन्य भारतीय शहरों के यात्री यह पैकेज बुक कर सकते हैं?",
+    //             "answer": "Yes. Travellers can reach the most convenient South India airport or railway station and start the land tour from there. Logaa Holidays can customise the pickup and drop points based on flight or train timings and the selected itinerary.",
+    //             "answerTamil": "ஆம். பயணிகள் வசதியான தென் இந்திய விமான நிலையம் அல்லது ரயில் நிலையத்தை அடைந்து அங்கிருந்து நிலப்பரப்பு சுற்றுலாவை தொடங்கலாம். விமானம் அல்லது ரயில் நேரம் மற்றும் தேர்வு செய்யப்பட்ட பயணத் திட்டத்தைப் பொறுத்து Logaa Holidays பிக்கப் மற்றும் டிராப் இடங்களை தனிப்பயனாக்க முடியும்.",
+    //             "answerHindi": "हाँ। यात्री सबसे सुविधाजनक दक्षिण भारत के एयरपोर्ट या रेलवे स्टेशन तक पहुँचकर वहाँ से लैंड टूर शुरू कर सकते हैं। Logaa Holidays फ्लाइट या ट्रेन के समय और चुने गए यात्रा कार्यक्रम के अनुसार पिकअप और ड्रॉप पॉइंट को कस्टमाइज कर सकती है।"
+    //         },
+    //         {
+    //             "question": "Do you arrange this package for travellers from Singapore and Sri Lanka?",
+    //             "questionTamil": "சிங்கப்பூர் மற்றும் இலங்கையிலிருந்து வரும் பயணிகளுக்கும் இந்த பேக்கேஜை ஏற்பாடு செய்கிறீர்களா?",
+    //             "questionHindi": "क्या आप सिंगापुर और श्रीलंका से आने वाले यात्रियों के लिए भी यह पैकेज आयोजित करते हैं?",
+    //             "answer": "Yes. International travellers can book the South India land package after arriving at the most suitable airport for the route. International flights, visa and travel documents are not automatically included unless they are specifically mentioned in the final quotation.",
+    //             "answerTamil": "ஆம். சர்வதேச பயணிகள் இந்த வழித்தடத்திற்கு ஏற்ற விமான நிலையத்தை அடைந்த பிறகு தென் இந்திய நிலப்பரப்பு பேக்கேஜை முன்பதிவு செய்யலாம். சர்வதேச விமான டிக்கெட், விசா மற்றும் பயண ஆவணங்கள் இறுதி quotation-ல் குறிப்பாக சேர்க்கப்பட்டிருந்தால் மட்டுமே வழங்கப்படும்.",
+    //             "answerHindi": "हाँ। अंतरराष्ट्रीय यात्री इस रूट के लिए सबसे उपयुक्त एयरपोर्ट पर पहुँचने के बाद दक्षिण भारत का लैंड पैकेज बुक कर सकते हैं। अंतरराष्ट्रीय फ्लाइट, वीजा और यात्रा दस्तावेज अपने आप शामिल नहीं होते, जब तक कि अंतिम कोटेशन में उनका विशेष रूप से उल्लेख न किया गया हो।"
+    //         },
+    //         {
+    //             "question": "How is the final package cost calculated?",
+    //             "questionTamil": "இறுதி பேக்கேஜ் விலை எவ்வாறு கணக்கிடப்படுகிறது?",
+    //             "questionHindi": "अंतिम पैकेज की कीमत कैसे तय की जाती है?",
+    //             "answer": "The price depends on travel date, number of adults and children, hotel category, number of rooms, extra beds, vehicle type, pickup and drop points and any optional activities. Share your exact travel details with Logaa Holidays for the final quotation.",
+    //             "answerTamil": "பயண தேதி, பெரியவர்கள் மற்றும் குழந்தைகளின் எண்ணிக்கை, ஹோட்டல் வகை, அறைகளின் எண்ணிக்கை, கூடுதல் படுக்கைகள், வாகன வகை, பிக்கப் மற்றும் டிராப் இடங்கள் மற்றும் விருப்ப செயல்பாடுகளைப் பொறுத்து விலை கணக்கிடப்படும். இறுதி quotation பெற உங்கள் சரியான பயண விவரங்களை Logaa Holidays-க்கு தெரிவிக்கவும்.",
+    //             "answerHindi": "कीमत यात्रा तिथि, वयस्कों और बच्चों की संख्या, होटल कैटेगरी, कमरों की संख्या, एक्स्ट्रा बेड, वाहन के प्रकार, पिकअप और ड्रॉप पॉइंट तथा वैकल्पिक गतिविधियों पर निर्भर करती है। अंतिम कोटेशन के लिए अपनी सही यात्रा जानकारी Logaa Holidays के साथ साझा करें।"
+    //         }
+    //     ],
         
-        "seo": {
-            "metaTitle": "Coorg and Chikmagalur Tour – 4 Nights / 5 Days | Logaa Holidays",
-            "metaDescription": "Explore South India with Logaa Holidays on the Coorg and Chikmagalur Tour – 4 Nights / 5 Days. Covering Coorg and Chikmagalur Tour to Coorg and Chikmagalur",
-            "canonicalUrl": "https://www.logaaholidays.com/tour-packages/coorg-tours/coorg-and-chikmagalur-tour-4-nights-5-days-2",
-            "slug": "coorg-and-chikmagalur-tour-4-nights-5-days-2"
-        },
-        "id": "5004"
-    },
-    '5005': {
-        "title": "Hampi and Badami Heritage Tour – 4 Nights / 5 Days",
-        "badge": "Karnataka Tour",
-        "image": "/assets/placeholder.jpg",
-        "heroImage": "/assets/placeholder.jpg",
-        "overview": {
-            "duration": "4 Nights / 5 Days",
-            "destination": "Hampi and Badami Heritage Tour",
-            "activities": "Sightseeing, Nature, Heritage",
-            "themes": "Karnataka Tours"
-        },
-        "priceDetails": {
-            "amount": "On Request",
-            "type": "per person"
-        },
-        "itinerary": [
-            {
-                "day": "Day 01",
-                "title": "Hospet Arrival",
-                "activities": ["Pickup from Hospet Railway Station or Bus Stand.", "Check in at the hotel.", "Depending on arrival time, visit:", "•\tTungabhadra Dam", "•\tHospet local market", "•\tSunset viewpoint", "Overnight stay in Hospet."]
-            },
-            {
-                "day": "Day 02",
-                "title": "Hampi Full-Day Sightseeing",
-                "activities": ["Visit:", "•\tVirupaksha Temple", "•\tHampi Bazaar", "•\tHemakuta Hill", "•\tVittala Temple", "•\tStone Chariot", "•\tLotus Mahal", "•\tElephant Stables", "•\tQueen’s Bath", "•\tRoyal Enclosure", "•\tHazara Rama Temple", "Local guide is recommended.", "Overnight stay in Hospet or Hampi."]
-            },
-            {
-                "day": "Day 03",
-                "title": "Hospet – Aihole – Pattadakal – Badami",
-                "activities": ["After breakfast, check out and proceed to Badami.", "En route, visit:", "•\tAihole Temple Complex", "•\tDurga Temple", "•\tLad Khan Temple", "•\tPattadakal Group of Monuments", "•\tVirupaksha Temple", "•\tMallikarjuna Temple", "Continue to Badami.", "Overnight stay in Badami."]
-            },
-            {
-                "day": "Day 04",
-                "title": "Badami Sightseeing",
-                "activities": ["Visit:", "•\tBadami Cave Temples", "•\tAgastya Lake", "•\tBhutanatha Temple", "•\tBadami Fort", "•\tArchaeological Museum, subject to opening hours", "Overnight stay in Badami."]
-            },
-            {
-                "day": "Day 05",
-                "title": "Badami Departure",
-                "activities": ["After breakfast, check out.", "Drop at Hubballi, Hospet, Badami Railway Station or preferred location according to the selected plan."]
-            }
-        ],
-        "inclusions": ["Hotel or resort accommodation", "Daily breakfast", "Private air-conditioned vehicle", "Pickup and drop as mentioned", "Fuel charges", "Driver allowance", "Toll charges", "Parking charges", "State permit charges", "Sightseeing as per itinerary", "Assistance from Logaa Holidays"],
-        "exclusions": ["❌ Flight, train and bus tickets", "❌ Lunch and dinner unless included", "❌ Monument and attraction entrance tickets", "❌ Jungle safari and forest charges", "❌ Boating charges", "❌ Adventure activity charges", "❌ Local guide charges", "❌ Personal expenses", "❌ Camera and video charges", "❌ Travel insurance", "❌ Early check-in and late check-out", "❌ Additional sightseeing", "❌ Anything not specifically mentioned under inclusions"],
-        "highlights": ["Route: Hospet – Hampi – Aihole – Pattadakal – Badami", "Best For: History Lovers, Families, Student Groups and Photography Travellers", "Stay: Hospet or Hampi – 2 Nights", "Stay: Badami – 2 Nights"],
-        "keywords": "Karnataka tour packages from Tamil Nadu, Karnataka package from Madurai, Mysore Coorg tour from Chennai, Karnataka package from Trichy, Coorg package from Coimbatore, Mysore Coorg Kabini package, Chikmagalur family package, Hampi Badami heritage tour, Udupi Murudeshwar Gokarna package, Karnataka honeymoon package, Logaa Holidays Karnataka tour",
-        "seoTitle": "Hampi and Badami Heritage Tour – 4 Nights / 5 Days | Logaa Holidays",
-        "seoDescription": "Book Hampi and Badami Heritage Tour – 4 Nights / 5 Days with private cab, best hotels and comfortable itinerary.",
-        "faq": [
-            {
-                "question": "What places are covered in the Hampi and Badami Heritage Tour - 4 Nights / 5 Days?",
-                "questionTamil": "ஹம்பி மற்றும் பாதாமி பாரம்பரிய சுற்றுலா - 4 இரவுகள் / 5 நாட்களில் எந்த இடங்கள் சேர்க்கப்பட்டுள்ளன?",
-                "questionHindi": "हम्पी और बादामी हेरिटेज टूर - 4 रात / 5 दिन में कौन-कौन सी जगहें शामिल हैं?",
-                "answer": "The planned route is Hospet - Hampi - Aihole - Pattadakal - Badami. The day-wise sightseeing, overnight stays and transfers follow the package itinerary shown above.",
-                "answerTamil": "திட்டமிடப்பட்ட பயண வழித்தடம் ஹோஸ்பேட் - ஹம்பி - ஐஹோளே - பட்டடக்கல் - பாதாமி ஆகும். ஒவ்வொரு நாளுக்கான சுற்றுலா இடங்கள், இரவு தங்கும் இடங்கள் மற்றும் பயண மாற்றங்கள் மேலே கொடுக்கப்பட்டுள்ள பேக்கேஜ் பயணத் திட்டத்தின்படி இருக்கும்.",
-                "answerHindi": "यात्रा का नियोजित रूट होसपेट - हम्पी - ऐहोले - पट्टदकल - बादामी है। दिनवार दर्शनीय स्थल, रात का ठहराव और ट्रांसफर ऊपर दिए गए पैकेज यात्रा कार्यक्रम के अनुसार होंगे।"
-            },
-            {
-                "question": "Is 4 Nights / 5 Days enough for this Hampi Badami heritage tour?",
-                "questionTamil": "இந்த ஹம்பி பாதாமி பாரம்பரிய சுற்றுலாவிற்கு 4 இரவுகள் / 5 நாட்கள் போதுமானதா?",
-                "questionHindi": "क्या इस हम्पी बादामी हेरिटेज टूर के लिए 4 रात / 5 दिन पर्याप्त हैं?",
-                "answer": "Yes. This itinerary has been planned for 4 Nights / 5 Days. Travel time, sightseeing and hotel stays are arranged around this duration, although the order may change due to traffic, weather, temple or attraction timings and local conditions.",
-                "answerTamil": "ஆம். இந்த பயணத் திட்டம் 4 இரவுகள் / 5 நாட்களுக்கு ஏற்ப திட்டமிடப்பட்டுள்ளது. பயண நேரம், சுற்றுலா மற்றும் ஹோட்டல் தங்குதல் இந்த கால அளவை அடிப்படையாகக் கொண்டு அமைக்கப்பட்டுள்ளது. போக்குவரத்து, வானிலை, கோவில் அல்லது சுற்றுலா தலங்களின் நேரம் மற்றும் உள்ளூர் சூழ்நிலைகளால் வரிசையில் மாற்றம் ஏற்படலாம்.",
-                "answerHindi": "हाँ। यह यात्रा कार्यक्रम 4 रात / 5 दिन के लिए बनाया गया है। यात्रा समय, दर्शनीय स्थल और होटल ठहराव इसी अवधि के अनुसार तय किए गए हैं, हालांकि ट्रैफिक, मौसम, मंदिर या आकर्षण के समय और स्थानीय परिस्थितियों के कारण क्रम बदल सकता है।"
-            },
-            {
-                "question": "Can this 4 Nights / 5 Days package be changed to 3 Nights / 4 Days?",
-                "questionTamil": "இந்த 4 இரவுகள் / 5 நாட்கள் பேக்கேஜை 3 இரவுகள் / 4 நாட்களாக மாற்ற முடியுமா?",
-                "questionHindi": "क्या इस 4 रात / 5 दिन के पैकेज को 3 रात / 4 दिन में बदला जा सकता है?",
-                "answer": "Yes. A 3 Nights / 4 Days version can be prepared by reducing selected sightseeing or destinations. The full route shown in this package is planned for the listed duration, so a shorter plan will be a customised version.",
-                "answerTamil": "ஆம். சில சுற்றுலா இடங்கள் அல்லது குறிப்பிட்ட தலங்களை குறைத்து 3 இரவுகள் / 4 நாட்கள் பயணத் திட்டத்தை தயாரிக்கலாம். இந்த பேக்கேஜில் உள்ள முழு வழித்தடம் குறிப்பிடப்பட்ட கால அளவிற்காக திட்டமிடப்பட்டுள்ளது. எனவே குறுகிய கால பயணம் தனிப்பயன் திட்டமாக இருக்கும்.",
-                "answerHindi": "हाँ। कुछ दर्शनीय स्थलों या गंतव्यों को कम करके 3 रात / 4 दिन का संस्करण तैयार किया जा सकता है। इस पैकेज का पूरा रूट निर्धारित अवधि के लिए बनाया गया है, इसलिए छोटा प्लान एक कस्टमाइज्ड संस्करण होगा।"
-            },
-            {
-                "question": "Is this package suitable for families, couples, senior citizens and group trips?",
-                "questionTamil": "இந்த பேக்கேஜ் குடும்பங்கள், தம்பதிகள், மூத்த குடிமக்கள் மற்றும் குழு பயணங்களுக்கு ஏற்றதா?",
-                "questionHindi": "क्या यह पैकेज परिवारों, कपल्स, वरिष्ठ नागरिकों और ग्रुप ट्रिप के लिए उपयुक्त है?",
-                "answer": "Yes. The package can be booked by families, couples, senior citizens and small or large groups. For senior citizens, young children or large groups, the daily timing, hotel choice and vehicle can be adjusted for better comfort.",
-                "answerTamil": "ஆம். இந்த பேக்கேஜை குடும்பங்கள், தம்பதிகள், மூத்த குடிமக்கள் மற்றும் சிறிய அல்லது பெரிய குழுக்கள் முன்பதிவு செய்யலாம். மூத்த குடிமக்கள், சிறு குழந்தைகள் அல்லது பெரிய குழுக்களுக்கு அதிக வசதிக்காக தினசரி நேரம், ஹோட்டல் தேர்வு மற்றும் வாகனத்தை மாற்றியமைக்கலாம்.",
-                "answerHindi": "हाँ। इस पैकेज को परिवार, कपल्स, वरिष्ठ नागरिक और छोटे या बड़े समूह बुक कर सकते हैं। वरिष्ठ नागरिकों, छोटे बच्चों या बड़े समूहों की सुविधा के लिए दैनिक समय, होटल और वाहन का चयन बदला जा सकता है।"
-            },
-            {
-                "question": "What is normally included in this 4 Nights / 5 Days package?",
-                "questionTamil": "இந்த 4 இரவுகள் / 5 நாட்கள் பேக்கேஜில் பொதுவாக என்னென்ன சேர்க்கப்படும்?",
-                "questionHindi": "इस 4 रात / 5 दिन के पैकेज में सामान्यतः क्या-क्या शामिल होता है?",
-                "answer": "As per the package details, the plan generally includes hotel accommodation, the mentioned meal plan, private vehicle for transfers and sightseeing, driver allowance, fuel, toll, parking and applicable permits. Entry tickets, optional activities, special darshan, personal expenses and items listed under exclusions are not included unless the final quotation clearly says otherwise.",
-                "answerTamil": "பேக்கேஜ் விவரங்களின்படி, பொதுவாக ஹோட்டல் தங்குமிடம், குறிப்பிடப்பட்ட உணவு திட்டம், பயண மாற்றம் மற்றும் சுற்றுலாவிற்கான தனியார் வாகனம், டிரைவர் படி, எரிபொருள், சுங்கக் கட்டணம், பார்க்கிங் மற்றும் பொருந்தக்கூடிய அனுமதிகள் சேர்க்கப்படும். நுழைவுச் சீட்டுகள், விருப்ப செயல்பாடுகள், சிறப்பு தரிசனம், தனிப்பட்ட செலவுகள் மற்றும் விலக்கப்பட்ட பட்டியலில் உள்ளவை இறுதி quotation-ல் தெளிவாக குறிப்பிடப்படாவிட்டால் சேர்க்கப்படாது.",
-                "answerHindi": "पैकेज विवरण के अनुसार, योजना में सामान्यतः होटल आवास, उल्लिखित मील प्लान, ट्रांसफर और दर्शनीय स्थलों के लिए निजी वाहन, ड्राइवर भत्ता, ईंधन, टोल, पार्किंग और लागू परमिट शामिल होते हैं। प्रवेश टिकट, वैकल्पिक गतिविधियाँ, विशेष दर्शन, व्यक्तिगत खर्च और एक्सक्लूजन में सूचीबद्ध चीजें शामिल नहीं हैं, जब तक कि अंतिम कोटेशन में स्पष्ट रूप से न लिखा गया हो।"
-            },
-            {
-                "question": "Can I choose the hotel category, room type and vehicle?",
-                "questionTamil": "ஹோட்டல் வகை, அறை வகை மற்றும் வாகனத்தை நான் தேர்வு செய்ய முடியுமா?",
-                "questionHindi": "क्या मैं होटल कैटेगरी, रूम टाइप और वाहन चुन सकता हूँ?",
-                "answer": "Yes. You can request budget, standard, 3-star, 4-star or premium hotels where available, and the vehicle can be selected according to the number of guests and route. The final price changes based on travel date, hotel category, room sharing and vehicle type.",
-                "answerTamil": "ஆம். கிடைக்கும் வசதியைப் பொறுத்து பட்ஜெட், ஸ்டாண்டர்ட், 3-ஸ்டார், 4-ஸ்டார் அல்லது பிரீமியம் ஹோட்டல்களை கோரலாம். பயணிகளின் எண்ணிக்கை மற்றும் வழித்தடத்திற்கு ஏற்ப வாகனத்தையும் தேர்வு செய்யலாம். பயண தேதி, ஹோட்டல் வகை, அறை பகிர்வு மற்றும் வாகன வகையைப் பொறுத்து இறுதி விலை மாறும்.",
-                "answerHindi": "हाँ। उपलब्धता के अनुसार आप बजट, स्टैंडर्ड, 3-स्टार, 4-स्टार या प्रीमियम होटल चुन सकते हैं और यात्रियों की संख्या तथा रूट के अनुसार वाहन चुना जा सकता है। अंतिम कीमत यात्रा तिथि, होटल कैटेगरी, रूम शेयरिंग और वाहन के प्रकार पर निर्भर करेगी।"
-            },
-            {
-                "question": "Who should choose the Hampi and Badami heritage package?",
-                "questionTamil": "ஹம்பி மற்றும் பாதாமி பாரம்பரிய பேக்கேஜை யார் தேர்வு செய்யலாம்?",
-                "questionHindi": "हम्पी और बादामी हेरिटेज पैकेज किसे चुनना चाहिए?",
-                "answer": "This route is especially suitable for families, history lovers, student groups and photography travellers. It focuses on Hampi, Aihole, Pattadakal and Badami rather than hill stations or beach destinations.",
-                "answerTamil": "இந்த வழித்தடம் குடும்பங்கள், வரலாற்று ஆர்வலர்கள், மாணவர் குழுக்கள் மற்றும் புகைப்பட ஆர்வலர்களுக்கு மிகவும் ஏற்றது. இது மலைவாசஸ்தலங்கள் அல்லது கடற்கரை இடங்களை விட ஹம்பி, ஐஹோளே, பட்டடக்கல் மற்றும் பாதாமியின் பாரம்பரிய மற்றும் வரலாற்று சிறப்புகளில் கவனம் செலுத்துகிறது.",
-                "answerHindi": "यह रूट विशेष रूप से परिवारों, इतिहास प्रेमियों, छात्र समूहों और फोटोग्राफी पसंद करने वाले यात्रियों के लिए उपयुक्त है। यह हिल स्टेशनों या बीच डेस्टिनेशन के बजाय हम्पी, ऐहोले, पट्टदकल और बादामी की विरासत और इतिहास पर केंद्रित है।"
-            },
-            {
-                "question": "Can I book this package through Logaa Holidays in Madurai?",
-                "questionTamil": "மதுரையில் உள்ள Logaa Holidays மூலம் இந்த பேக்கேஜை முன்பதிவு செய்ய முடியுமா?",
-                "questionHindi": "क्या मैं मदुरै की Logaa Holidays के माध्यम से यह पैकेज बुक कर सकता हूँ?",
-                "answer": "Yes. Logaa Holidays is based in Madurai and can arrange this Karnataka package with suitable pickup, hotel stay, private transportation and sightseeing. Depending on the route, pickup can be from Madurai or from the most convenient airport, railway station or city mentioned in the package.",
-                "answerTamil": "ஆம். Logaa Holidays மதுரையை மையமாகக் கொண்டு செயல்படுகிறது மற்றும் இந்த கர்நாடகா பேக்கேஜிற்கு பொருத்தமான பிக்கப், ஹோட்டல் தங்குமிடம், தனியார் போக்குவரத்து மற்றும் சுற்றுலா ஏற்பாடுகளை செய்ய முடியும். பயண வழித்தடத்தைப் பொறுத்து பிக்கப் மதுரையிலிருந்தோ அல்லது பேக்கேஜில் குறிப்பிடப்பட்ட வசதியான விமான நிலையம், ரயில் நிலையம் அல்லது நகரத்திலிருந்தோ ஏற்பாடு செய்யலாம்.",
-                "answerHindi": "हाँ। Logaa Holidays मदुरै में स्थित है और इस कर्नाटक पैकेज के लिए उपयुक्त पिकअप, होटल ठहराव, निजी परिवहन और दर्शनीय स्थलों की व्यवस्था कर सकती है। रूट के अनुसार पिकअप मदुरै या पैकेज में बताए गए सबसे सुविधाजनक एयरपोर्ट, रेलवे स्टेशन या शहर से किया जा सकता है।"
-            },
-            {
-                "question": "Can travellers from Delhi, Jaipur, Mumbai, Pune, Kolkata and travellers across India book this package?",
-                "questionTamil": "டெல்லி, ஜெய்ப்பூர், மும்பை, புனே, கொல்கத்தா மற்றும் இந்தியா முழுவதிலுமிருந்து வரும் பயணிகள் இந்த பேக்கேஜை முன்பதிவு செய்ய முடியுமா?",
-                "questionHindi": "क्या दिल्ली, जयपुर, मुंबई, पुणे, कोलकाता और पूरे भारत के यात्री यह पैकेज बुक कर सकते हैं?",
-                "answer": "Yes. Travellers can reach the most convenient South India airport or railway station and start the land tour from there. Logaa Holidays can customise the pickup and drop points based on flight or train timings and the selected itinerary.",
-                "answerTamil": "ஆம். பயணிகள் வசதியான தென் இந்திய விமான நிலையம் அல்லது ரயில் நிலையத்தை அடைந்து அங்கிருந்து நிலப்பரப்பு சுற்றுலாவை தொடங்கலாம். விமானம் அல்லது ரயில் நேரம் மற்றும் தேர்வு செய்யப்பட்ட பயணத் திட்டத்தைப் பொறுத்து Logaa Holidays பிக்கப் மற்றும் டிராப் இடங்களை தனிப்பயனாக்க முடியும்.",
-                "answerHindi": "हाँ। यात्री सबसे सुविधाजनक दक्षिण भारत के एयरपोर्ट या रेलवे स्टेशन तक पहुँचकर वहाँ से लैंड टूर शुरू कर सकते हैं। Logaa Holidays फ्लाइट या ट्रेन के समय और चुने गए यात्रा कार्यक्रम के अनुसार पिकअप और ड्रॉप पॉइंट को कस्टमाइज कर सकती है।"
-            },
-            {
-                "question": "Do you arrange this package for travellers from Singapore, Malaysia and Sri Lanka?",
-                "questionTamil": "சிங்கப்பூர், மலேசியா மற்றும் இலங்கையிலிருந்து வரும் பயணிகளுக்கும் இந்த பேக்கேஜை ஏற்பாடு செய்கிறீர்களா?",
-                "questionHindi": "क्या आप सिंगापुर, मलेशिया और श्रीलंका से आने वाले यात्रियों के लिए भी यह पैकेज आयोजित करते हैं?",
-                "answer": "Yes. International travellers can book the South India land package after arriving at the most suitable airport for the route. International flights, visa and travel documents are not automatically included unless they are specifically mentioned in the final quotation.",
-                "answerTamil": "ஆம். சர்வதேச பயணிகள் இந்த வழித்தடத்திற்கு ஏற்ற விமான நிலையத்தை அடைந்த பிறகு தென் இந்திய நிலப்பரப்பு பேக்கேஜை முன்பதிவு செய்யலாம். சர்வதேச விமான டிக்கெட், விசா மற்றும் பயண ஆவணங்கள் இறுதி quotation-ல் குறிப்பாக சேர்க்கப்பட்டிருந்தால் மட்டுமே வழங்கப்படும்.",
-                "answerHindi": "हाँ। अंतरराष्ट्रीय यात्री इस रूट के लिए सबसे उपयुक्त एयरपोर्ट पर पहुँचने के बाद दक्षिण भारत का लैंड पैकेज बुक कर सकते हैं। अंतरराष्ट्रीय फ्लाइट, वीजा और यात्रा दस्तावेज अपने आप शामिल नहीं होते, जब तक कि अंतिम कोटेशन में उनका विशेष रूप से उल्लेख न किया गया हो।"
-            },
-            {
-                "question": "How is the final package cost calculated?",
-                "questionTamil": "இறுதி பேக்கேஜ் விலை எவ்வாறு கணக்கிடப்படுகிறது?",
-                "questionHindi": "अंतिम पैकेज की कीमत कैसे तय की जाती है?",
-                "answer": "The price depends on travel date, number of adults and children, hotel category, number of rooms, extra beds, vehicle type, pickup and drop points and any optional activities. Share your exact travel details with Logaa Holidays for the final quotation.",
-                "answerTamil": "பயண தேதி, பெரியவர்கள் மற்றும் குழந்தைகளின் எண்ணிக்கை, ஹோட்டல் வகை, அறைகளின் எண்ணிக்கை, கூடுதல் படுக்கைகள், வாகன வகை, பிக்கப் மற்றும் டிராப் இடங்கள் மற்றும் விருப்ப செயல்பாடுகளைப் பொறுத்து விலை கணக்கிடப்படும். இறுதி quotation பெற உங்கள் சரியான பயண விவரங்களை Logaa Holidays-க்கு தெரிவிக்கவும்.",
-                "answerHindi": "कीमत यात्रा तिथि, वयस्कों और बच्चों की संख्या, होटल कैटेगरी, कमरों की संख्या, एक्स्ट्रा बेड, वाहन के प्रकार, पिकअप और ड्रॉप पॉइंट तथा वैकल्पिक गतिविधियों पर निर्भर करती है। अंतिम कोटेशन के लिए अपनी सही यात्रा जानकारी Logaa Holidays के साथ साझा करें।"
-            }
-        ],
+    //     "seo": {
+    //         "metaTitle": "Coorg and Chikmagalur Tour – 4 Nights / 5 Days | Logaa Holidays",
+    //         "metaDescription": "Explore South India with Logaa Holidays on the Coorg and Chikmagalur Tour – 4 Nights / 5 Days. Covering Coorg and Chikmagalur Tour to Coorg and Chikmagalur",
+    //         "canonicalUrl": "https://www.logaaholidays.com/tour-packages/coorg-tours/coorg-and-chikmagalur-tour-4-nights-5-days-2",
+    //         "slug": "coorg-and-chikmagalur-tour-4-nights-5-days-2"
+    //     },
+    //     "id": "5004"
+    // },
+    // '5005': {
+    //     "title": "Hampi and Badami Heritage Tour – 4 Nights / 5 Days",
+    //     "badge": "Karnataka Tour",
+    //     "image": "/assets/placeholder.jpg",
+    //     "heroImage": "/assets/placeholder.jpg",
+    //     "overview": {
+    //         "duration": "4 Nights / 5 Days",
+    //         "destination": "Hampi and Badami Heritage Tour",
+    //         "activities": "Sightseeing, Nature, Heritage",
+    //         "themes": "Karnataka Tours"
+    //     },
+    //     "priceDetails": {
+    //         "amount": "On Request",
+    //         "type": "per person"
+    //     },
+    //     "itinerary": [
+    //         {
+    //             "day": "Day 01",
+    //             "title": "Hospet Arrival",
+    //             "activities": ["Pickup from Hospet Railway Station or Bus Stand.", "Check in at the hotel.", "Depending on arrival time, visit:", "•\tTungabhadra Dam", "•\tHospet local market", "•\tSunset viewpoint", "Overnight stay in Hospet."]
+    //         },
+    //         {
+    //             "day": "Day 02",
+    //             "title": "Hampi Full-Day Sightseeing",
+    //             "activities": ["Visit:", "•\tVirupaksha Temple", "•\tHampi Bazaar", "•\tHemakuta Hill", "•\tVittala Temple", "•\tStone Chariot", "•\tLotus Mahal", "•\tElephant Stables", "•\tQueen’s Bath", "•\tRoyal Enclosure", "•\tHazara Rama Temple", "Local guide is recommended.", "Overnight stay in Hospet or Hampi."]
+    //         },
+    //         {
+    //             "day": "Day 03",
+    //             "title": "Hospet – Aihole – Pattadakal – Badami",
+    //             "activities": ["After breakfast, check out and proceed to Badami.", "En route, visit:", "•\tAihole Temple Complex", "•\tDurga Temple", "•\tLad Khan Temple", "•\tPattadakal Group of Monuments", "•\tVirupaksha Temple", "•\tMallikarjuna Temple", "Continue to Badami.", "Overnight stay in Badami."]
+    //         },
+    //         {
+    //             "day": "Day 04",
+    //             "title": "Badami Sightseeing",
+    //             "activities": ["Visit:", "•\tBadami Cave Temples", "•\tAgastya Lake", "•\tBhutanatha Temple", "•\tBadami Fort", "•\tArchaeological Museum, subject to opening hours", "Overnight stay in Badami."]
+    //         },
+    //         {
+    //             "day": "Day 05",
+    //             "title": "Badami Departure",
+    //             "activities": ["After breakfast, check out.", "Drop at Hubballi, Hospet, Badami Railway Station or preferred location according to the selected plan."]
+    //         }
+    //     ],
+    //     "inclusions": ["Hotel or resort accommodation", "Daily breakfast", "Private air-conditioned vehicle", "Pickup and drop as mentioned", "Fuel charges", "Driver allowance", "Toll charges", "Parking charges", "State permit charges", "Sightseeing as per itinerary", "Assistance from Logaa Holidays"],
+    //     "exclusions": ["❌ Flight, train and bus tickets", "❌ Lunch and dinner unless included", "❌ Monument and attraction entrance tickets", "❌ Jungle safari and forest charges", "❌ Boating charges", "❌ Adventure activity charges", "❌ Local guide charges", "❌ Personal expenses", "❌ Camera and video charges", "❌ Travel insurance", "❌ Early check-in and late check-out", "❌ Additional sightseeing", "❌ Anything not specifically mentioned under inclusions"],
+    //     "highlights": ["Route: Hospet – Hampi – Aihole – Pattadakal – Badami", "Best For: History Lovers, Families, Student Groups and Photography Travellers", "Stay: Hospet or Hampi – 2 Nights", "Stay: Badami – 2 Nights"],
+    //     "keywords": "Karnataka tour packages from Tamil Nadu, Karnataka package from Madurai, Mysore Coorg tour from Chennai, Karnataka package from Trichy, Coorg package from Coimbatore, Mysore Coorg Kabini package, Chikmagalur family package, Hampi Badami heritage tour, Udupi Murudeshwar Gokarna package, Karnataka honeymoon package, Logaa Holidays Karnataka tour",
+    //     "seoTitle": "Hampi and Badami Heritage Tour – 4 Nights / 5 Days | Logaa Holidays",
+    //     "seoDescription": "Book Hampi and Badami Heritage Tour – 4 Nights / 5 Days with private cab, best hotels and comfortable itinerary.",
+    //     "faq": [
+    //         {
+    //             "question": "What places are covered in the Hampi and Badami Heritage Tour - 4 Nights / 5 Days?",
+    //             "questionTamil": "ஹம்பி மற்றும் பாதாமி பாரம்பரிய சுற்றுலா - 4 இரவுகள் / 5 நாட்களில் எந்த இடங்கள் சேர்க்கப்பட்டுள்ளன?",
+    //             "questionHindi": "हम्पी और बादामी हेरिटेज टूर - 4 रात / 5 दिन में कौन-कौन सी जगहें शामिल हैं?",
+    //             "answer": "The planned route is Hospet - Hampi - Aihole - Pattadakal - Badami. The day-wise sightseeing, overnight stays and transfers follow the package itinerary shown above.",
+    //             "answerTamil": "திட்டமிடப்பட்ட பயண வழித்தடம் ஹோஸ்பேட் - ஹம்பி - ஐஹோளே - பட்டடக்கல் - பாதாமி ஆகும். ஒவ்வொரு நாளுக்கான சுற்றுலா இடங்கள், இரவு தங்கும் இடங்கள் மற்றும் பயண மாற்றங்கள் மேலே கொடுக்கப்பட்டுள்ள பேக்கேஜ் பயணத் திட்டத்தின்படி இருக்கும்.",
+    //             "answerHindi": "यात्रा का नियोजित रूट होसपेट - हम्पी - ऐहोले - पट्टदकल - बादामी है। दिनवार दर्शनीय स्थल, रात का ठहराव और ट्रांसफर ऊपर दिए गए पैकेज यात्रा कार्यक्रम के अनुसार होंगे।"
+    //         },
+    //         {
+    //             "question": "Is 4 Nights / 5 Days enough for this Hampi Badami heritage tour?",
+    //             "questionTamil": "இந்த ஹம்பி பாதாமி பாரம்பரிய சுற்றுலாவிற்கு 4 இரவுகள் / 5 நாட்கள் போதுமானதா?",
+    //             "questionHindi": "क्या इस हम्पी बादामी हेरिटेज टूर के लिए 4 रात / 5 दिन पर्याप्त हैं?",
+    //             "answer": "Yes. This itinerary has been planned for 4 Nights / 5 Days. Travel time, sightseeing and hotel stays are arranged around this duration, although the order may change due to traffic, weather, temple or attraction timings and local conditions.",
+    //             "answerTamil": "ஆம். இந்த பயணத் திட்டம் 4 இரவுகள் / 5 நாட்களுக்கு ஏற்ப திட்டமிடப்பட்டுள்ளது. பயண நேரம், சுற்றுலா மற்றும் ஹோட்டல் தங்குதல் இந்த கால அளவை அடிப்படையாகக் கொண்டு அமைக்கப்பட்டுள்ளது. போக்குவரத்து, வானிலை, கோவில் அல்லது சுற்றுலா தலங்களின் நேரம் மற்றும் உள்ளூர் சூழ்நிலைகளால் வரிசையில் மாற்றம் ஏற்படலாம்.",
+    //             "answerHindi": "हाँ। यह यात्रा कार्यक्रम 4 रात / 5 दिन के लिए बनाया गया है। यात्रा समय, दर्शनीय स्थल और होटल ठहराव इसी अवधि के अनुसार तय किए गए हैं, हालांकि ट्रैफिक, मौसम, मंदिर या आकर्षण के समय और स्थानीय परिस्थितियों के कारण क्रम बदल सकता है।"
+    //         },
+    //         {
+    //             "question": "Can this 4 Nights / 5 Days package be changed to 3 Nights / 4 Days?",
+    //             "questionTamil": "இந்த 4 இரவுகள் / 5 நாட்கள் பேக்கேஜை 3 இரவுகள் / 4 நாட்களாக மாற்ற முடியுமா?",
+    //             "questionHindi": "क्या इस 4 रात / 5 दिन के पैकेज को 3 रात / 4 दिन में बदला जा सकता है?",
+    //             "answer": "Yes. A 3 Nights / 4 Days version can be prepared by reducing selected sightseeing or destinations. The full route shown in this package is planned for the listed duration, so a shorter plan will be a customised version.",
+    //             "answerTamil": "ஆம். சில சுற்றுலா இடங்கள் அல்லது குறிப்பிட்ட தலங்களை குறைத்து 3 இரவுகள் / 4 நாட்கள் பயணத் திட்டத்தை தயாரிக்கலாம். இந்த பேக்கேஜில் உள்ள முழு வழித்தடம் குறிப்பிடப்பட்ட கால அளவிற்காக திட்டமிடப்பட்டுள்ளது. எனவே குறுகிய கால பயணம் தனிப்பயன் திட்டமாக இருக்கும்.",
+    //             "answerHindi": "हाँ। कुछ दर्शनीय स्थलों या गंतव्यों को कम करके 3 रात / 4 दिन का संस्करण तैयार किया जा सकता है। इस पैकेज का पूरा रूट निर्धारित अवधि के लिए बनाया गया है, इसलिए छोटा प्लान एक कस्टमाइज्ड संस्करण होगा।"
+    //         },
+    //         {
+    //             "question": "Is this package suitable for families, couples, senior citizens and group trips?",
+    //             "questionTamil": "இந்த பேக்கேஜ் குடும்பங்கள், தம்பதிகள், மூத்த குடிமக்கள் மற்றும் குழு பயணங்களுக்கு ஏற்றதா?",
+    //             "questionHindi": "क्या यह पैकेज परिवारों, कपल्स, वरिष्ठ नागरिकों और ग्रुप ट्रिप के लिए उपयुक्त है?",
+    //             "answer": "Yes. The package can be booked by families, couples, senior citizens and small or large groups. For senior citizens, young children or large groups, the daily timing, hotel choice and vehicle can be adjusted for better comfort.",
+    //             "answerTamil": "ஆம். இந்த பேக்கேஜை குடும்பங்கள், தம்பதிகள், மூத்த குடிமக்கள் மற்றும் சிறிய அல்லது பெரிய குழுக்கள் முன்பதிவு செய்யலாம். மூத்த குடிமக்கள், சிறு குழந்தைகள் அல்லது பெரிய குழுக்களுக்கு அதிக வசதிக்காக தினசரி நேரம், ஹோட்டல் தேர்வு மற்றும் வாகனத்தை மாற்றியமைக்கலாம்.",
+    //             "answerHindi": "हाँ। इस पैकेज को परिवार, कपल्स, वरिष्ठ नागरिक और छोटे या बड़े समूह बुक कर सकते हैं। वरिष्ठ नागरिकों, छोटे बच्चों या बड़े समूहों की सुविधा के लिए दैनिक समय, होटल और वाहन का चयन बदला जा सकता है।"
+    //         },
+    //         {
+    //             "question": "What is normally included in this 4 Nights / 5 Days package?",
+    //             "questionTamil": "இந்த 4 இரவுகள் / 5 நாட்கள் பேக்கேஜில் பொதுவாக என்னென்ன சேர்க்கப்படும்?",
+    //             "questionHindi": "इस 4 रात / 5 दिन के पैकेज में सामान्यतः क्या-क्या शामिल होता है?",
+    //             "answer": "As per the package details, the plan generally includes hotel accommodation, the mentioned meal plan, private vehicle for transfers and sightseeing, driver allowance, fuel, toll, parking and applicable permits. Entry tickets, optional activities, special darshan, personal expenses and items listed under exclusions are not included unless the final quotation clearly says otherwise.",
+    //             "answerTamil": "பேக்கேஜ் விவரங்களின்படி, பொதுவாக ஹோட்டல் தங்குமிடம், குறிப்பிடப்பட்ட உணவு திட்டம், பயண மாற்றம் மற்றும் சுற்றுலாவிற்கான தனியார் வாகனம், டிரைவர் படி, எரிபொருள், சுங்கக் கட்டணம், பார்க்கிங் மற்றும் பொருந்தக்கூடிய அனுமதிகள் சேர்க்கப்படும். நுழைவுச் சீட்டுகள், விருப்ப செயல்பாடுகள், சிறப்பு தரிசனம், தனிப்பட்ட செலவுகள் மற்றும் விலக்கப்பட்ட பட்டியலில் உள்ளவை இறுதி quotation-ல் தெளிவாக குறிப்பிடப்படாவிட்டால் சேர்க்கப்படாது.",
+    //             "answerHindi": "पैकेज विवरण के अनुसार, योजना में सामान्यतः होटल आवास, उल्लिखित मील प्लान, ट्रांसफर और दर्शनीय स्थलों के लिए निजी वाहन, ड्राइवर भत्ता, ईंधन, टोल, पार्किंग और लागू परमिट शामिल होते हैं। प्रवेश टिकट, वैकल्पिक गतिविधियाँ, विशेष दर्शन, व्यक्तिगत खर्च और एक्सक्लूजन में सूचीबद्ध चीजें शामिल नहीं हैं, जब तक कि अंतिम कोटेशन में स्पष्ट रूप से न लिखा गया हो।"
+    //         },
+    //         {
+    //             "question": "Can I choose the hotel category, room type and vehicle?",
+    //             "questionTamil": "ஹோட்டல் வகை, அறை வகை மற்றும் வாகனத்தை நான் தேர்வு செய்ய முடியுமா?",
+    //             "questionHindi": "क्या मैं होटल कैटेगरी, रूम टाइप और वाहन चुन सकता हूँ?",
+    //             "answer": "Yes. You can request budget, standard, 3-star, 4-star or premium hotels where available, and the vehicle can be selected according to the number of guests and route. The final price changes based on travel date, hotel category, room sharing and vehicle type.",
+    //             "answerTamil": "ஆம். கிடைக்கும் வசதியைப் பொறுத்து பட்ஜெட், ஸ்டாண்டர்ட், 3-ஸ்டார், 4-ஸ்டார் அல்லது பிரீமியம் ஹோட்டல்களை கோரலாம். பயணிகளின் எண்ணிக்கை மற்றும் வழித்தடத்திற்கு ஏற்ப வாகனத்தையும் தேர்வு செய்யலாம். பயண தேதி, ஹோட்டல் வகை, அறை பகிர்வு மற்றும் வாகன வகையைப் பொறுத்து இறுதி விலை மாறும்.",
+    //             "answerHindi": "हाँ। उपलब्धता के अनुसार आप बजट, स्टैंडर्ड, 3-स्टार, 4-स्टार या प्रीमियम होटल चुन सकते हैं और यात्रियों की संख्या तथा रूट के अनुसार वाहन चुना जा सकता है। अंतिम कीमत यात्रा तिथि, होटल कैटेगरी, रूम शेयरिंग और वाहन के प्रकार पर निर्भर करेगी।"
+    //         },
+    //         {
+    //             "question": "Who should choose the Hampi and Badami heritage package?",
+    //             "questionTamil": "ஹம்பி மற்றும் பாதாமி பாரம்பரிய பேக்கேஜை யார் தேர்வு செய்யலாம்?",
+    //             "questionHindi": "हम्पी और बादामी हेरिटेज पैकेज किसे चुनना चाहिए?",
+    //             "answer": "This route is especially suitable for families, history lovers, student groups and photography travellers. It focuses on Hampi, Aihole, Pattadakal and Badami rather than hill stations or beach destinations.",
+    //             "answerTamil": "இந்த வழித்தடம் குடும்பங்கள், வரலாற்று ஆர்வலர்கள், மாணவர் குழுக்கள் மற்றும் புகைப்பட ஆர்வலர்களுக்கு மிகவும் ஏற்றது. இது மலைவாசஸ்தலங்கள் அல்லது கடற்கரை இடங்களை விட ஹம்பி, ஐஹோளே, பட்டடக்கல் மற்றும் பாதாமியின் பாரம்பரிய மற்றும் வரலாற்று சிறப்புகளில் கவனம் செலுத்துகிறது.",
+    //             "answerHindi": "यह रूट विशेष रूप से परिवारों, इतिहास प्रेमियों, छात्र समूहों और फोटोग्राफी पसंद करने वाले यात्रियों के लिए उपयुक्त है। यह हिल स्टेशनों या बीच डेस्टिनेशन के बजाय हम्पी, ऐहोले, पट्टदकल और बादामी की विरासत और इतिहास पर केंद्रित है।"
+    //         },
+    //         {
+    //             "question": "Can I book this package through Logaa Holidays in Madurai?",
+    //             "questionTamil": "மதுரையில் உள்ள Logaa Holidays மூலம் இந்த பேக்கேஜை முன்பதிவு செய்ய முடியுமா?",
+    //             "questionHindi": "क्या मैं मदुरै की Logaa Holidays के माध्यम से यह पैकेज बुक कर सकता हूँ?",
+    //             "answer": "Yes. Logaa Holidays is based in Madurai and can arrange this Karnataka package with suitable pickup, hotel stay, private transportation and sightseeing. Depending on the route, pickup can be from Madurai or from the most convenient airport, railway station or city mentioned in the package.",
+    //             "answerTamil": "ஆம். Logaa Holidays மதுரையை மையமாகக் கொண்டு செயல்படுகிறது மற்றும் இந்த கர்நாடகா பேக்கேஜிற்கு பொருத்தமான பிக்கப், ஹோட்டல் தங்குமிடம், தனியார் போக்குவரத்து மற்றும் சுற்றுலா ஏற்பாடுகளை செய்ய முடியும். பயண வழித்தடத்தைப் பொறுத்து பிக்கப் மதுரையிலிருந்தோ அல்லது பேக்கேஜில் குறிப்பிடப்பட்ட வசதியான விமான நிலையம், ரயில் நிலையம் அல்லது நகரத்திலிருந்தோ ஏற்பாடு செய்யலாம்.",
+    //             "answerHindi": "हाँ। Logaa Holidays मदुरै में स्थित है और इस कर्नाटक पैकेज के लिए उपयुक्त पिकअप, होटल ठहराव, निजी परिवहन और दर्शनीय स्थलों की व्यवस्था कर सकती है। रूट के अनुसार पिकअप मदुरै या पैकेज में बताए गए सबसे सुविधाजनक एयरपोर्ट, रेलवे स्टेशन या शहर से किया जा सकता है।"
+    //         },
+    //         {
+    //             "question": "Can travellers from Delhi, Jaipur, Mumbai, Pune, Kolkata and travellers across India book this package?",
+    //             "questionTamil": "டெல்லி, ஜெய்ப்பூர், மும்பை, புனே, கொல்கத்தா மற்றும் இந்தியா முழுவதிலுமிருந்து வரும் பயணிகள் இந்த பேக்கேஜை முன்பதிவு செய்ய முடியுமா?",
+    //             "questionHindi": "क्या दिल्ली, जयपुर, मुंबई, पुणे, कोलकाता और पूरे भारत के यात्री यह पैकेज बुक कर सकते हैं?",
+    //             "answer": "Yes. Travellers can reach the most convenient South India airport or railway station and start the land tour from there. Logaa Holidays can customise the pickup and drop points based on flight or train timings and the selected itinerary.",
+    //             "answerTamil": "ஆம். பயணிகள் வசதியான தென் இந்திய விமான நிலையம் அல்லது ரயில் நிலையத்தை அடைந்து அங்கிருந்து நிலப்பரப்பு சுற்றுலாவை தொடங்கலாம். விமானம் அல்லது ரயில் நேரம் மற்றும் தேர்வு செய்யப்பட்ட பயணத் திட்டத்தைப் பொறுத்து Logaa Holidays பிக்கப் மற்றும் டிராப் இடங்களை தனிப்பயனாக்க முடியும்.",
+    //             "answerHindi": "हाँ। यात्री सबसे सुविधाजनक दक्षिण भारत के एयरपोर्ट या रेलवे स्टेशन तक पहुँचकर वहाँ से लैंड टूर शुरू कर सकते हैं। Logaa Holidays फ्लाइट या ट्रेन के समय और चुने गए यात्रा कार्यक्रम के अनुसार पिकअप और ड्रॉप पॉइंट को कस्टमाइज कर सकती है।"
+    //         },
+    //         {
+    //             "question": "Do you arrange this package for travellers from Singapore, Malaysia and Sri Lanka?",
+    //             "questionTamil": "சிங்கப்பூர், மலேசியா மற்றும் இலங்கையிலிருந்து வரும் பயணிகளுக்கும் இந்த பேக்கேஜை ஏற்பாடு செய்கிறீர்களா?",
+    //             "questionHindi": "क्या आप सिंगापुर, मलेशिया और श्रीलंका से आने वाले यात्रियों के लिए भी यह पैकेज आयोजित करते हैं?",
+    //             "answer": "Yes. International travellers can book the South India land package after arriving at the most suitable airport for the route. International flights, visa and travel documents are not automatically included unless they are specifically mentioned in the final quotation.",
+    //             "answerTamil": "ஆம். சர்வதேச பயணிகள் இந்த வழித்தடத்திற்கு ஏற்ற விமான நிலையத்தை அடைந்த பிறகு தென் இந்திய நிலப்பரப்பு பேக்கேஜை முன்பதிவு செய்யலாம். சர்வதேச விமான டிக்கெட், விசா மற்றும் பயண ஆவணங்கள் இறுதி quotation-ல் குறிப்பாக சேர்க்கப்பட்டிருந்தால் மட்டுமே வழங்கப்படும்.",
+    //             "answerHindi": "हाँ। अंतरराष्ट्रीय यात्री इस रूट के लिए सबसे उपयुक्त एयरपोर्ट पर पहुँचने के बाद दक्षिण भारत का लैंड पैकेज बुक कर सकते हैं। अंतरराष्ट्रीय फ्लाइट, वीजा और यात्रा दस्तावेज अपने आप शामिल नहीं होते, जब तक कि अंतिम कोटेशन में उनका विशेष रूप से उल्लेख न किया गया हो।"
+    //         },
+    //         {
+    //             "question": "How is the final package cost calculated?",
+    //             "questionTamil": "இறுதி பேக்கேஜ் விலை எவ்வாறு கணக்கிடப்படுகிறது?",
+    //             "questionHindi": "अंतिम पैकेज की कीमत कैसे तय की जाती है?",
+    //             "answer": "The price depends on travel date, number of adults and children, hotel category, number of rooms, extra beds, vehicle type, pickup and drop points and any optional activities. Share your exact travel details with Logaa Holidays for the final quotation.",
+    //             "answerTamil": "பயண தேதி, பெரியவர்கள் மற்றும் குழந்தைகளின் எண்ணிக்கை, ஹோட்டல் வகை, அறைகளின் எண்ணிக்கை, கூடுதல் படுக்கைகள், வாகன வகை, பிக்கப் மற்றும் டிராப் இடங்கள் மற்றும் விருப்ப செயல்பாடுகளைப் பொறுத்து விலை கணக்கிடப்படும். இறுதி quotation பெற உங்கள் சரியான பயண விவரங்களை Logaa Holidays-க்கு தெரிவிக்கவும்.",
+    //             "answerHindi": "कीमत यात्रा तिथि, वयस्कों और बच्चों की संख्या, होटल कैटेगरी, कमरों की संख्या, एक्स्ट्रा बेड, वाहन के प्रकार, पिकअप और ड्रॉप पॉइंट तथा वैकल्पिक गतिविधियों पर निर्भर करती है। अंतिम कोटेशन के लिए अपनी सही यात्रा जानकारी Logaa Holidays के साथ साझा करें।"
+    //         }
+    //     ],
         
-        "seo": {
-            "metaTitle": "Hampi and Badami Heritage Tour – 4 Nights / 5 | Logaa Holidays",
-            "metaDescription": "Explore South India with Logaa Holidays on the Hampi and Badami Heritage Tour – 4 Nights / 5 Days. Covering Hampi and Badami Heritage Tour to Hampi and Badami",
-            "canonicalUrl": "https://www.logaaholidays.com/tour-packages/hampi-tours/hampi-and-badami-heritage-tour-4-nights-5-days-2",
-            "slug": "hampi-and-badami-heritage-tour-4-nights-5-days-2"
-        },
-        "id": "5005"
-    },
-    '5006': {
-        "title": "Udupi, Murudeshwar and Gokarna Tour – 4 Nights / 5 Days",
-        "badge": "Karnataka Tour",
-        "image": "/assets/placeholder.jpg",
-        "heroImage": "/assets/placeholder.jpg",
-        "overview": {
-            "duration": "4 Nights / 5 Days",
-            "destination": "Udupi, Murudeshwar and Gokarna Tour",
-            "activities": "Sightseeing, Nature, Heritage",
-            "themes": "Karnataka Tours"
-        },
-        "priceDetails": {
-            "amount": "On Request",
-            "type": "per person"
-        },
-        "itinerary": [
-            {
-                "day": "Day 01",
-                "title": "Mangalore Arrival – Udupi",
-                "activities": ["Pickup from Mangalore Airport, Railway Station or Bus Stand.", "Visit:", "•\tMangaladevi Temple", "•\tKadri Manjunatha Temple", "•\tPanambur Beach, subject to time", "Proceed to Udupi.", "Visit:", "•\tUdupi Sri Krishna Temple", "•\tMalpe Beach", "Overnight stay in Udupi."]
-            },
-            {
-                "day": "Day 02",
-                "title": "Udupi – Kollur – Murudeshwar",
-                "activities": ["After breakfast, check out and proceed towards Murudeshwar.", "En route, visit:", "•\tKollur Mookambika Temple", "•\tMaravanthe Beach viewpoint", "•\tMurudeshwar Temple", "•\tShiva Statue", "•\tMurudeshwar Beach", "Overnight stay in Murudeshwar."]
-            },
-            {
-                "day": "Day 03",
-                "title": "Murudeshwar – Honnavar – Gokarna",
-                "activities": ["After breakfast, proceed towards Gokarna.", "Visit:", "•\tHonnavar Backwaters", "•\tEco Beach, subject to time", "•\tMirjan Fort", "•\tGokarna Mahabaleshwar Temple", "•\tGokarna Main Beach", "Overnight stay in Gokarna."]
-            },
-            {
-                "day": "Day 04",
-                "title": "Gokarna Beach Sightseeing",
-                "activities": ["Visit:", "•\tOm Beach", "•\tKudle Beach", "•\tHalf Moon Beach, subject to access", "•\tParadise Beach, subject to access", "•\tYana Caves, optional", "•\tSunset viewpoint", "Overnight stay in Gokarna."]
-            },
-            {
-                "day": "Day 05",
-                "title": "Gokarna to Mangalore Departure",
-                "activities": ["After breakfast, check out and proceed to Mangalore.", "Drop at Airport, Railway Station or Bus Stand."]
-            }
-        ],
-        "inclusions": ["Hotel or resort accommodation", "Daily breakfast", "Private air-conditioned vehicle", "Pickup and drop as mentioned", "Fuel charges", "Driver allowance", "Toll charges", "Parking charges", "State permit charges", "Sightseeing as per itinerary", "Assistance from Logaa Holidays"],
-        "exclusions": ["❌ Flight, train and bus tickets", "❌ Lunch and dinner unless included", "❌ Monument and attraction entrance tickets", "❌ Jungle safari and forest charges", "❌ Boating charges", "❌ Adventure activity charges", "❌ Local guide charges", "❌ Personal expenses", "❌ Camera and video charges", "❌ Travel insurance", "❌ Early check-in and late check-out", "❌ Additional sightseeing", "❌ Anything not specifically mentioned under inclusions"],
-        "highlights": ["Route: Mangalore – Udupi – Murudeshwar – Gokarna", "Best For: Families, Pilgrimage Groups, Senior Citizens and Beach Travellers", "Stay: Udupi – 1 Night", "Stay: Murudeshwar – 1 Night", "Stay: Gokarna – 2 Nights"],
-        "keywords": "Karnataka tour packages from Tamil Nadu, Karnataka package from Madurai, Mysore Coorg tour from Chennai, Karnataka package from Trichy, Coorg package from Coimbatore, Mysore Coorg Kabini package, Chikmagalur family package, Hampi Badami heritage tour, Udupi Murudeshwar Gokarna package, Karnataka honeymoon package, Logaa Holidays Karnataka tour",
-        "seoTitle": "Udupi, Murudeshwar and Gokarna Tour – 4 Nights / 5 Days | Logaa Holidays",
-        "seoDescription": "Book Udupi, Murudeshwar and Gokarna Tour – 4 Nights / 5 Days with private cab, best hotels and comfortable itinerary.",
-        "faq": [
-            {
-                "question": "What places are covered in the Udupi, Murudeshwar and Gokarna Tour - 4 Nights / 5 Days?",
-                "questionTamil": "உடுப்பி, முருடேஸ்வர் மற்றும் கோகர்ணா சுற்றுலா - 4 இரவுகள் / 5 நாட்களில் எந்த இடங்கள் சேர்க்கப்பட்டுள்ளன?",
-                "questionHindi": "उडुपी, मुरुदेश्वर और गोकर्ण टूर - 4 रात / 5 दिन में कौन-कौन सी जगहें शामिल हैं?",
-                "answer": "The planned route is Mangalore - Udupi - Murudeshwar - Gokarna. The day-wise sightseeing, overnight stays and transfers follow the package itinerary shown above.",
-                "answerTamil": "திட்டமிடப்பட்ட பயண வழித்தடம் மங்களூர் - உடுப்பி - முருடேஸ்வர் - கோகர்ணா ஆகும். ஒவ்வொரு நாளுக்கான சுற்றுலா இடங்கள், இரவு தங்கும் இடங்கள் மற்றும் பயண மாற்றங்கள் மேலே கொடுக்கப்பட்டுள்ள பேக்கேஜ் பயணத் திட்டத்தின்படி இருக்கும்.",
-                "answerHindi": "यात्रा का नियोजित रूट मैंगलोर - उडुपी - मुरुदेश्वर - गोकर्ण है। दिनवार दर्शनीय स्थल, रात का ठहराव और ट्रांसफर ऊपर दिए गए पैकेज यात्रा कार्यक्रम के अनुसार होंगे।"
-            },
-            {
-                "question": "Is 4 Nights / 5 Days enough for this Udupi Murudeshwar Gokarna tour?",
-                "questionTamil": "இந்த உடுப்பி முருடேஸ்வர் கோகர்ணா சுற்றுலாவிற்கு 4 இரவுகள் / 5 நாட்கள் போதுமானதா?",
-                "questionHindi": "क्या इस उडुपी मुरुदेश्वर गोकर्ण टूर के लिए 4 रात / 5 दिन पर्याप्त हैं?",
-                "answer": "Yes. This itinerary has been planned for 4 Nights / 5 Days. Travel time, sightseeing and hotel stays are arranged around this duration, although the order may change due to traffic, weather, temple or attraction timings and local conditions.",
-                "answerTamil": "ஆம். இந்த பயணத் திட்டம் 4 இரவுகள் / 5 நாட்களுக்கு ஏற்ப திட்டமிடப்பட்டுள்ளது. பயண நேரம், சுற்றுலா மற்றும் ஹோட்டல் தங்குதல் இந்த கால அளவை அடிப்படையாகக் கொண்டு அமைக்கப்பட்டுள்ளது. போக்குவரத்து, வானிலை, கோவில் அல்லது சுற்றுலா தலங்களின் நேரம் மற்றும் உள்ளூர் சூழ்நிலைகளால் வரிசையில் மாற்றம் ஏற்படலாம்.",
-                "answerHindi": "हाँ। यह यात्रा कार्यक्रम 4 रात / 5 दिन के लिए बनाया गया है। यात्रा समय, दर्शनीय स्थल और होटल ठहराव इसी अवधि के अनुसार तय किए गए हैं, हालांकि ट्रैफिक, मौसम, मंदिर या आकर्षण के समय और स्थानीय परिस्थितियों के कारण क्रम बदल सकता है।"
-            },
-            {
-                "question": "Can this 4 Nights / 5 Days package be changed to 3 Nights / 4 Days?",
-                "questionTamil": "இந்த 4 இரவுகள் / 5 நாட்கள் பேக்கேஜை 3 இரவுகள் / 4 நாட்களாக மாற்ற முடியுமா?",
-                "questionHindi": "क्या इस 4 रात / 5 दिन के पैकेज को 3 रात / 4 दिन में बदला जा सकता है?",
-                "answer": "Yes. A 3 Nights / 4 Days version can be prepared by reducing selected sightseeing or destinations. The full route shown in this package is planned for the listed duration, so a shorter plan will be a customised version.",
-                "answerTamil": "ஆம். சில சுற்றுலா இடங்கள் அல்லது குறிப்பிட்ட தலங்களை குறைத்து 3 இரவுகள் / 4 நாட்கள் பயணத் திட்டத்தை தயாரிக்கலாம். இந்த பேக்கேஜில் உள்ள முழு வழித்தடம் குறிப்பிடப்பட்ட கால அளவிற்காக திட்டமிடப்பட்டுள்ளது. எனவே குறுகிய கால பயணம் தனிப்பயன் திட்டமாக இருக்கும்.",
-                "answerHindi": "हाँ। कुछ दर्शनीय स्थलों या गंतव्यों को कम करके 3 रात / 4 दिन का संस्करण तैयार किया जा सकता है। इस पैकेज का पूरा रूट निर्धारित अवधि के लिए बनाया गया है, इसलिए छोटा प्लान एक कस्टमाइज्ड संस्करण होगा।"
-            },
-            {
-                "question": "Is this package suitable for families, couples, senior citizens and group trips?",
-                "questionTamil": "இந்த பேக்கேஜ் குடும்பங்கள், தம்பதிகள், மூத்த குடிமக்கள் மற்றும் குழு பயணங்களுக்கு ஏற்றதா?",
-                "questionHindi": "क्या यह पैकेज परिवारों, कपल्स, वरिष्ठ नागरिकों और ग्रुप ट्रिप के लिए उपयुक्त है?",
-                "answer": "Yes. The package can be booked by families, couples, senior citizens and small or large groups. For senior citizens, young children or large groups, the daily timing, hotel choice and vehicle can be adjusted for better comfort.",
-                "answerTamil": "ஆம். இந்த பேக்கேஜை குடும்பங்கள், தம்பதிகள், மூத்த குடிமக்கள் மற்றும் சிறிய அல்லது பெரிய குழுக்கள் முன்பதிவு செய்யலாம். மூத்த குடிமக்கள், சிறு குழந்தைகள் அல்லது பெரிய குழுக்களுக்கு அதிக வசதிக்காக தினசரி நேரம், ஹோட்டல் தேர்வு மற்றும் வாகனத்தை மாற்றியமைக்கலாம்.",
-                "answerHindi": "हाँ। इस पैकेज को परिवार, कपल्स, वरिष्ठ नागरिक और छोटे या बड़े समूह बुक कर सकते हैं। वरिष्ठ नागरिकों, छोटे बच्चों या बड़े समूहों की सुविधा के लिए दैनिक समय, होटल और वाहन का चयन बदला जा सकता है।"
-            },
-            {
-                "question": "What is normally included in this 4 Nights / 5 Days package?",
-                "questionTamil": "இந்த 4 இரவுகள் / 5 நாட்கள் பேக்கேஜில் பொதுவாக என்னென்ன சேர்க்கப்படும்?",
-                "questionHindi": "इस 4 रात / 5 दिन के पैकेज में सामान्यतः क्या-क्या शामिल होता है?",
-                "answer": "As per the package details, the plan generally includes hotel accommodation, the mentioned meal plan, private vehicle for transfers and sightseeing, driver allowance, fuel, toll, parking and applicable permits. Entry tickets, optional activities, special darshan, personal expenses and items listed under exclusions are not included unless the final quotation clearly says otherwise.",
-                "answerTamil": "பேக்கேஜ் விவரங்களின்படி, பொதுவாக ஹோட்டல் தங்குமிடம், குறிப்பிடப்பட்ட உணவு திட்டம், பயண மாற்றம் மற்றும் சுற்றுலாவிற்கான தனியார் வாகனம், டிரைவர் படி, எரிபொருள், சுங்கக் கட்டணம், பார்க்கிங் மற்றும் பொருந்தக்கூடிய அனுமதிகள் சேர்க்கப்படும். நுழைவுச் சீட்டுகள், விருப்ப செயல்பாடுகள், சிறப்பு தரிசனம், தனிப்பட்ட செலவுகள் மற்றும் விலக்கப்பட்ட பட்டியலில் உள்ளவை இறுதி quotation-ல் தெளிவாக குறிப்பிடப்படாவிட்டால் சேர்க்கப்படாது.",
-                "answerHindi": "पैकेज विवरण के अनुसार, योजना में सामान्यतः होटल आवास, उल्लिखित मील प्लान, ट्रांसफर और दर्शनीय स्थलों के लिए निजी वाहन, ड्राइवर भत्ता, ईंधन, टोल, पार्किंग और लागू परमिट शामिल होते हैं। प्रवेश टिकट, वैकल्पिक गतिविधियाँ, विशेष दर्शन, व्यक्तिगत खर्च और एक्सक्लूजन में सूचीबद्ध चीजें शामिल नहीं हैं, जब तक कि अंतिम कोटेशन में स्पष्ट रूप से न लिखा गया हो।"
-            },
-            {
-                "question": "Can I choose the hotel category, room type and vehicle?",
-                "questionTamil": "ஹோட்டல் வகை, அறை வகை மற்றும் வாகனத்தை நான் தேர்வு செய்ய முடியுமா?",
-                "questionHindi": "क्या मैं होटल कैटेगरी, रूम टाइप और वाहन चुन सकता हूँ?",
-                "answer": "Yes. You can request budget, standard, 3-star, 4-star or premium hotels where available, and the vehicle can be selected according to the number of guests and route. The final price changes based on travel date, hotel category, room sharing and vehicle type.",
-                "answerTamil": "ஆம். கிடைக்கும் வசதியைப் பொறுத்து பட்ஜெட், ஸ்டாண்டர்ட், 3-ஸ்டார், 4-ஸ்டார் அல்லது பிரீமியம் ஹோட்டல்களை கோரலாம். பயணிகளின் எண்ணிக்கை மற்றும் வழித்தடத்திற்கு ஏற்ப வாகனத்தையும் தேர்வு செய்யலாம். பயண தேதி, ஹோட்டல் வகை, அறை பகிர்வு மற்றும் வாகன வகையைப் பொறுத்து இறுதி விலை மாறும்.",
-                "answerHindi": "हाँ। उपलब्धता के अनुसार आप बजट, स्टैंडर्ड, 3-स्टार, 4-स्टार या प्रीमियम होटल चुन सकते हैं और यात्रियों की संख्या तथा रूट के अनुसार वाहन चुना जा सकता है। अंतिम कीमत यात्रा तिथि, होटल कैटेगरी, रूम शेयरिंग और वाहन के प्रकार पर निर्भर करेगी।"
-            },
-            {
-                "question": "Is this package suitable for both pilgrimage and beach travellers?",
-                "questionTamil": "இந்த பேக்கேஜ் யாத்திரை மற்றும் கடற்கரை சுற்றுலா பயணிகள் இருவருக்கும் ஏற்றதா?",
-                "questionHindi": "क्या यह पैकेज तीर्थयात्रा और समुद्र तट घूमने वाले दोनों प्रकार के यात्रियों के लिए उपयुक्त है?",
-                "answer": "Yes. The route combines important temple destinations with Karnataka coastal sightseeing and beaches. It is especially suitable for families, pilgrimage groups, senior citizens and travellers who want a temple-and-coast combination.",
-                "answerTamil": "ஆம். இந்த வழித்தடம் முக்கியமான கோவில் தலங்களை கர்நாடகா கடற்கரை சுற்றுலா மற்றும் கடற்கரைகளுடன் இணைக்கிறது. இது குடும்பங்கள், யாத்திரை குழுக்கள், மூத்த குடிமக்கள் மற்றும் கோவில் மற்றும் கடற்கரை அனுபவத்தை ஒரே பயணத்தில் விரும்புபவர்களுக்கு மிகவும் ஏற்றது.",
-                "answerHindi": "हाँ। यह रूट महत्वपूर्ण मंदिर स्थलों को कर्नाटक के तटीय दर्शनीय स्थलों और समुद्र तटों के साथ जोड़ता है। यह विशेष रूप से परिवारों, तीर्थयात्रा समूहों, वरिष्ठ नागरिकों और मंदिर तथा तट दोनों का अनुभव चाहने वाले यात्रियों के लिए उपयुक्त है।"
-            },
-            {
-                "question": "Can I book this package through Logaa Holidays in Madurai?",
-                "questionTamil": "மதுரையில் உள்ள Logaa Holidays மூலம் இந்த பேக்கேஜை முன்பதிவு செய்ய முடியுமா?",
-                "questionHindi": "क्या मैं मदुरै की Logaa Holidays के माध्यम से यह पैकेज बुक कर सकता हूँ?",
-                "answer": "Yes. Logaa Holidays is based in Madurai and can arrange this Karnataka package with suitable pickup, hotel stay, private transportation and sightseeing. Depending on the route, pickup can be from Madurai or from the most convenient airport, railway station or city mentioned in the package.",
-                "answerTamil": "ஆம். Logaa Holidays மதுரையை மையமாகக் கொண்டு செயல்படுகிறது மற்றும் இந்த கர்நாடகா பேக்கேஜிற்கு பொருத்தமான பிக்கப், ஹோட்டல் தங்குமிடம், தனியார் போக்குவரத்து மற்றும் சுற்றுலா ஏற்பாடுகளை செய்ய முடியும். பயண வழித்தடத்தைப் பொறுத்து பிக்கப் மதுரையிலிருந்தோ அல்லது பேக்கேஜில் குறிப்பிடப்பட்ட வசதியான விமான நிலையம், ரயில் நிலையம் அல்லது நகரத்திலிருந்தோ ஏற்பாடு செய்யலாம்.",
-                "answerHindi": "हाँ। Logaa Holidays मदुरै में स्थित है और इस कर्नाटक पैकेज के लिए उपयुक्त पिकअप, होटल ठहराव, निजी परिवहन और दर्शनीय स्थलों की व्यवस्था कर सकती है। रूट के अनुसार पिकअप मदुरै या पैकेज में बताए गए सबसे सुविधाजनक एयरपोर्ट, रेलवे स्टेशन या शहर से किया जा सकता है।"
-            },
-            {
-                "question": "Can travellers from Chennai, Madurai, Coimbatore, Mumbai, Delhi and other Indian cities book this package?",
-                "questionTamil": "சென்னை, மதுரை, கோயம்புத்தூர், மும்பை, டெல்லி மற்றும் பிற இந்திய நகரங்களிலிருந்து வரும் பயணிகள் இந்த பேக்கேஜை முன்பதிவு செய்ய முடியுமா?",
-                "questionHindi": "क्या चेन्नई, मदुरै, कोयंबटूर, मुंबई, दिल्ली और अन्य भारतीय शहरों के यात्री यह पैकेज बुक कर सकते हैं?",
-                "answer": "Yes. Travellers can reach the most convenient South India airport or railway station and start the land tour from there. Logaa Holidays can customise the pickup and drop points based on flight or train timings and the selected itinerary.",
-                "answerTamil": "ஆம். பயணிகள் வசதியான தென் இந்திய விமான நிலையம் அல்லது ரயில் நிலையத்தை அடைந்து அங்கிருந்து நிலப்பரப்பு சுற்றுலாவை தொடங்கலாம். விமானம் அல்லது ரயில் நேரம் மற்றும் தேர்வு செய்யப்பட்ட பயணத் திட்டத்தைப் பொறுத்து Logaa Holidays பிக்கப் மற்றும் டிராப் இடங்களை தனிப்பயனாக்க முடியும்.",
-                "answerHindi": "हाँ। यात्री सबसे सुविधाजनक दक्षिण भारत के एयरपोर्ट या रेलवे स्टेशन तक पहुँचकर वहाँ से लैंड टूर शुरू कर सकते हैं। Logaa Holidays फ्लाइट या ट्रेन के समय और चुने गए यात्रा कार्यक्रम के अनुसार पिकअप और ड्रॉप पॉइंट को कस्टमाइज कर सकती है।"
-            },
-            {
-                "question": "Do you arrange this package for travellers from Malaysia and Sri Lanka?",
-                "questionTamil": "மலேசியா மற்றும் இலங்கையிலிருந்து வரும் பயணிகளுக்கும் இந்த பேக்கேஜை ஏற்பாடு செய்கிறீர்களா?",
-                "questionHindi": "क्या आप मलेशिया और श्रीलंका से आने वाले यात्रियों के लिए भी यह पैकेज आयोजित करते हैं?",
-                "answer": "Yes. International travellers can book the South India land package after arriving at the most suitable airport for the route. International flights, visa and travel documents are not automatically included unless they are specifically mentioned in the final quotation.",
-                "answerTamil": "ஆம். சர்வதேச பயணிகள் இந்த வழித்தடத்திற்கு ஏற்ற விமான நிலையத்தை அடைந்த பிறகு தென் இந்திய நிலப்பரப்பு பேக்கேஜை முன்பதிவு செய்யலாம். சர்வதேச விமான டிக்கெட், விசா மற்றும் பயண ஆவணங்கள் இறுதி quotation-ல் குறிப்பாக சேர்க்கப்பட்டிருந்தால் மட்டுமே வழங்கப்படும்.",
-                "answerHindi": "हाँ। अंतरराष्ट्रीय यात्री इस रूट के लिए सबसे उपयुक्त एयरपोर्ट पर पहुँचने के बाद दक्षिण भारत का लैंड पैकेज बुक कर सकते हैं। अंतरराष्ट्रीय फ्लाइट, वीजा और यात्रा दस्तावेज अपने आप शामिल नहीं होते, जब तक कि अंतिम कोटेशन में उनका विशेष रूप से उल्लेख न किया गया हो।"
-            },
-            {
-                "question": "How is the final package cost calculated?",
-                "questionTamil": "இறுதி பேக்கேஜ் விலை எவ்வாறு கணக்கிடப்படுகிறது?",
-                "questionHindi": "अंतिम पैकेज की कीमत कैसे तय की जाती है?",
-                "answer": "The price depends on travel date, number of adults and children, hotel category, number of rooms, extra beds, vehicle type, pickup and drop points and any optional activities. Share your exact travel details with Logaa Holidays for the final quotation.",
-                "answerTamil": "பயண தேதி, பெரியவர்கள் மற்றும் குழந்தைகளின் எண்ணிக்கை, ஹோட்டல் வகை, அறைகளின் எண்ணிக்கை, கூடுதல் படுக்கைகள், வாகன வகை, பிக்கப் மற்றும் டிராப் இடங்கள் மற்றும் விருப்ப செயல்பாடுகளைப் பொறுத்து விலை கணக்கிடப்படும். இறுதி quotation பெற உங்கள் சரியான பயண விவரங்களை Logaa Holidays-க்கு தெரிவிக்கவும்.",
-                "answerHindi": "कीमत यात्रा तिथि, वयस्कों और बच्चों की संख्या, होटल कैटेगरी, कमरों की संख्या, एक्स्ट्रा बेड, वाहन के प्रकार, पिकअप और ड्रॉप पॉइंट तथा वैकल्पिक गतिविधियों पर निर्भर करती है। अंतिम कोटेशन के लिए अपनी सही यात्रा जानकारी Logaa Holidays के साथ साझा करें।"
-            }
-        ],
+    //     "seo": {
+    //         "metaTitle": "Hampi and Badami Heritage Tour – 4 Nights / 5 | Logaa Holidays",
+    //         "metaDescription": "Explore South India with Logaa Holidays on the Hampi and Badami Heritage Tour – 4 Nights / 5 Days. Covering Hampi and Badami Heritage Tour to Hampi and Badami",
+    //         "canonicalUrl": "https://www.logaaholidays.com/tour-packages/hampi-tours/hampi-and-badami-heritage-tour-4-nights-5-days-2",
+    //         "slug": "hampi-and-badami-heritage-tour-4-nights-5-days-2"
+    //     },
+    //     "id": "5005"
+    // },
+    // '5006': {
+    //     "title": "Udupi, Murudeshwar and Gokarna Tour – 4 Nights / 5 Days",
+    //     "badge": "Karnataka Tour",
+    //     "image": "/assets/placeholder.jpg",
+    //     "heroImage": "/assets/placeholder.jpg",
+    //     "overview": {
+    //         "duration": "4 Nights / 5 Days",
+    //         "destination": "Udupi, Murudeshwar and Gokarna Tour",
+    //         "activities": "Sightseeing, Nature, Heritage",
+    //         "themes": "Karnataka Tours"
+    //     },
+    //     "priceDetails": {
+    //         "amount": "On Request",
+    //         "type": "per person"
+    //     },
+    //     "itinerary": [
+    //         {
+    //             "day": "Day 01",
+    //             "title": "Mangalore Arrival – Udupi",
+    //             "activities": ["Pickup from Mangalore Airport, Railway Station or Bus Stand.", "Visit:", "•\tMangaladevi Temple", "•\tKadri Manjunatha Temple", "•\tPanambur Beach, subject to time", "Proceed to Udupi.", "Visit:", "•\tUdupi Sri Krishna Temple", "•\tMalpe Beach", "Overnight stay in Udupi."]
+    //         },
+    //         {
+    //             "day": "Day 02",
+    //             "title": "Udupi – Kollur – Murudeshwar",
+    //             "activities": ["After breakfast, check out and proceed towards Murudeshwar.", "En route, visit:", "•\tKollur Mookambika Temple", "•\tMaravanthe Beach viewpoint", "•\tMurudeshwar Temple", "•\tShiva Statue", "•\tMurudeshwar Beach", "Overnight stay in Murudeshwar."]
+    //         },
+    //         {
+    //             "day": "Day 03",
+    //             "title": "Murudeshwar – Honnavar – Gokarna",
+    //             "activities": ["After breakfast, proceed towards Gokarna.", "Visit:", "•\tHonnavar Backwaters", "•\tEco Beach, subject to time", "•\tMirjan Fort", "•\tGokarna Mahabaleshwar Temple", "•\tGokarna Main Beach", "Overnight stay in Gokarna."]
+    //         },
+    //         {
+    //             "day": "Day 04",
+    //             "title": "Gokarna Beach Sightseeing",
+    //             "activities": ["Visit:", "•\tOm Beach", "•\tKudle Beach", "•\tHalf Moon Beach, subject to access", "•\tParadise Beach, subject to access", "•\tYana Caves, optional", "•\tSunset viewpoint", "Overnight stay in Gokarna."]
+    //         },
+    //         {
+    //             "day": "Day 05",
+    //             "title": "Gokarna to Mangalore Departure",
+    //             "activities": ["After breakfast, check out and proceed to Mangalore.", "Drop at Airport, Railway Station or Bus Stand."]
+    //         }
+    //     ],
+    //     "inclusions": ["Hotel or resort accommodation", "Daily breakfast", "Private air-conditioned vehicle", "Pickup and drop as mentioned", "Fuel charges", "Driver allowance", "Toll charges", "Parking charges", "State permit charges", "Sightseeing as per itinerary", "Assistance from Logaa Holidays"],
+    //     "exclusions": ["❌ Flight, train and bus tickets", "❌ Lunch and dinner unless included", "❌ Monument and attraction entrance tickets", "❌ Jungle safari and forest charges", "❌ Boating charges", "❌ Adventure activity charges", "❌ Local guide charges", "❌ Personal expenses", "❌ Camera and video charges", "❌ Travel insurance", "❌ Early check-in and late check-out", "❌ Additional sightseeing", "❌ Anything not specifically mentioned under inclusions"],
+    //     "highlights": ["Route: Mangalore – Udupi – Murudeshwar – Gokarna", "Best For: Families, Pilgrimage Groups, Senior Citizens and Beach Travellers", "Stay: Udupi – 1 Night", "Stay: Murudeshwar – 1 Night", "Stay: Gokarna – 2 Nights"],
+    //     "keywords": "Karnataka tour packages from Tamil Nadu, Karnataka package from Madurai, Mysore Coorg tour from Chennai, Karnataka package from Trichy, Coorg package from Coimbatore, Mysore Coorg Kabini package, Chikmagalur family package, Hampi Badami heritage tour, Udupi Murudeshwar Gokarna package, Karnataka honeymoon package, Logaa Holidays Karnataka tour",
+    //     "seoTitle": "Udupi, Murudeshwar and Gokarna Tour – 4 Nights / 5 Days | Logaa Holidays",
+    //     "seoDescription": "Book Udupi, Murudeshwar and Gokarna Tour – 4 Nights / 5 Days with private cab, best hotels and comfortable itinerary.",
+    //     "faq": [
+    //         {
+    //             "question": "What places are covered in the Udupi, Murudeshwar and Gokarna Tour - 4 Nights / 5 Days?",
+    //             "questionTamil": "உடுப்பி, முருடேஸ்வர் மற்றும் கோகர்ணா சுற்றுலா - 4 இரவுகள் / 5 நாட்களில் எந்த இடங்கள் சேர்க்கப்பட்டுள்ளன?",
+    //             "questionHindi": "उडुपी, मुरुदेश्वर और गोकर्ण टूर - 4 रात / 5 दिन में कौन-कौन सी जगहें शामिल हैं?",
+    //             "answer": "The planned route is Mangalore - Udupi - Murudeshwar - Gokarna. The day-wise sightseeing, overnight stays and transfers follow the package itinerary shown above.",
+    //             "answerTamil": "திட்டமிடப்பட்ட பயண வழித்தடம் மங்களூர் - உடுப்பி - முருடேஸ்வர் - கோகர்ணா ஆகும். ஒவ்வொரு நாளுக்கான சுற்றுலா இடங்கள், இரவு தங்கும் இடங்கள் மற்றும் பயண மாற்றங்கள் மேலே கொடுக்கப்பட்டுள்ள பேக்கேஜ் பயணத் திட்டத்தின்படி இருக்கும்.",
+    //             "answerHindi": "यात्रा का नियोजित रूट मैंगलोर - उडुपी - मुरुदेश्वर - गोकर्ण है। दिनवार दर्शनीय स्थल, रात का ठहराव और ट्रांसफर ऊपर दिए गए पैकेज यात्रा कार्यक्रम के अनुसार होंगे।"
+    //         },
+    //         {
+    //             "question": "Is 4 Nights / 5 Days enough for this Udupi Murudeshwar Gokarna tour?",
+    //             "questionTamil": "இந்த உடுப்பி முருடேஸ்வர் கோகர்ணா சுற்றுலாவிற்கு 4 இரவுகள் / 5 நாட்கள் போதுமானதா?",
+    //             "questionHindi": "क्या इस उडुपी मुरुदेश्वर गोकर्ण टूर के लिए 4 रात / 5 दिन पर्याप्त हैं?",
+    //             "answer": "Yes. This itinerary has been planned for 4 Nights / 5 Days. Travel time, sightseeing and hotel stays are arranged around this duration, although the order may change due to traffic, weather, temple or attraction timings and local conditions.",
+    //             "answerTamil": "ஆம். இந்த பயணத் திட்டம் 4 இரவுகள் / 5 நாட்களுக்கு ஏற்ப திட்டமிடப்பட்டுள்ளது. பயண நேரம், சுற்றுலா மற்றும் ஹோட்டல் தங்குதல் இந்த கால அளவை அடிப்படையாகக் கொண்டு அமைக்கப்பட்டுள்ளது. போக்குவரத்து, வானிலை, கோவில் அல்லது சுற்றுலா தலங்களின் நேரம் மற்றும் உள்ளூர் சூழ்நிலைகளால் வரிசையில் மாற்றம் ஏற்படலாம்.",
+    //             "answerHindi": "हाँ। यह यात्रा कार्यक्रम 4 रात / 5 दिन के लिए बनाया गया है। यात्रा समय, दर्शनीय स्थल और होटल ठहराव इसी अवधि के अनुसार तय किए गए हैं, हालांकि ट्रैफिक, मौसम, मंदिर या आकर्षण के समय और स्थानीय परिस्थितियों के कारण क्रम बदल सकता है।"
+    //         },
+    //         {
+    //             "question": "Can this 4 Nights / 5 Days package be changed to 3 Nights / 4 Days?",
+    //             "questionTamil": "இந்த 4 இரவுகள் / 5 நாட்கள் பேக்கேஜை 3 இரவுகள் / 4 நாட்களாக மாற்ற முடியுமா?",
+    //             "questionHindi": "क्या इस 4 रात / 5 दिन के पैकेज को 3 रात / 4 दिन में बदला जा सकता है?",
+    //             "answer": "Yes. A 3 Nights / 4 Days version can be prepared by reducing selected sightseeing or destinations. The full route shown in this package is planned for the listed duration, so a shorter plan will be a customised version.",
+    //             "answerTamil": "ஆம். சில சுற்றுலா இடங்கள் அல்லது குறிப்பிட்ட தலங்களை குறைத்து 3 இரவுகள் / 4 நாட்கள் பயணத் திட்டத்தை தயாரிக்கலாம். இந்த பேக்கேஜில் உள்ள முழு வழித்தடம் குறிப்பிடப்பட்ட கால அளவிற்காக திட்டமிடப்பட்டுள்ளது. எனவே குறுகிய கால பயணம் தனிப்பயன் திட்டமாக இருக்கும்.",
+    //             "answerHindi": "हाँ। कुछ दर्शनीय स्थलों या गंतव्यों को कम करके 3 रात / 4 दिन का संस्करण तैयार किया जा सकता है। इस पैकेज का पूरा रूट निर्धारित अवधि के लिए बनाया गया है, इसलिए छोटा प्लान एक कस्टमाइज्ड संस्करण होगा।"
+    //         },
+    //         {
+    //             "question": "Is this package suitable for families, couples, senior citizens and group trips?",
+    //             "questionTamil": "இந்த பேக்கேஜ் குடும்பங்கள், தம்பதிகள், மூத்த குடிமக்கள் மற்றும் குழு பயணங்களுக்கு ஏற்றதா?",
+    //             "questionHindi": "क्या यह पैकेज परिवारों, कपल्स, वरिष्ठ नागरिकों और ग्रुप ट्रिप के लिए उपयुक्त है?",
+    //             "answer": "Yes. The package can be booked by families, couples, senior citizens and small or large groups. For senior citizens, young children or large groups, the daily timing, hotel choice and vehicle can be adjusted for better comfort.",
+    //             "answerTamil": "ஆம். இந்த பேக்கேஜை குடும்பங்கள், தம்பதிகள், மூத்த குடிமக்கள் மற்றும் சிறிய அல்லது பெரிய குழுக்கள் முன்பதிவு செய்யலாம். மூத்த குடிமக்கள், சிறு குழந்தைகள் அல்லது பெரிய குழுக்களுக்கு அதிக வசதிக்காக தினசரி நேரம், ஹோட்டல் தேர்வு மற்றும் வாகனத்தை மாற்றியமைக்கலாம்.",
+    //             "answerHindi": "हाँ। इस पैकेज को परिवार, कपल्स, वरिष्ठ नागरिक और छोटे या बड़े समूह बुक कर सकते हैं। वरिष्ठ नागरिकों, छोटे बच्चों या बड़े समूहों की सुविधा के लिए दैनिक समय, होटल और वाहन का चयन बदला जा सकता है।"
+    //         },
+    //         {
+    //             "question": "What is normally included in this 4 Nights / 5 Days package?",
+    //             "questionTamil": "இந்த 4 இரவுகள் / 5 நாட்கள் பேக்கேஜில் பொதுவாக என்னென்ன சேர்க்கப்படும்?",
+    //             "questionHindi": "इस 4 रात / 5 दिन के पैकेज में सामान्यतः क्या-क्या शामिल होता है?",
+    //             "answer": "As per the package details, the plan generally includes hotel accommodation, the mentioned meal plan, private vehicle for transfers and sightseeing, driver allowance, fuel, toll, parking and applicable permits. Entry tickets, optional activities, special darshan, personal expenses and items listed under exclusions are not included unless the final quotation clearly says otherwise.",
+    //             "answerTamil": "பேக்கேஜ் விவரங்களின்படி, பொதுவாக ஹோட்டல் தங்குமிடம், குறிப்பிடப்பட்ட உணவு திட்டம், பயண மாற்றம் மற்றும் சுற்றுலாவிற்கான தனியார் வாகனம், டிரைவர் படி, எரிபொருள், சுங்கக் கட்டணம், பார்க்கிங் மற்றும் பொருந்தக்கூடிய அனுமதிகள் சேர்க்கப்படும். நுழைவுச் சீட்டுகள், விருப்ப செயல்பாடுகள், சிறப்பு தரிசனம், தனிப்பட்ட செலவுகள் மற்றும் விலக்கப்பட்ட பட்டியலில் உள்ளவை இறுதி quotation-ல் தெளிவாக குறிப்பிடப்படாவிட்டால் சேர்க்கப்படாது.",
+    //             "answerHindi": "पैकेज विवरण के अनुसार, योजना में सामान्यतः होटल आवास, उल्लिखित मील प्लान, ट्रांसफर और दर्शनीय स्थलों के लिए निजी वाहन, ड्राइवर भत्ता, ईंधन, टोल, पार्किंग और लागू परमिट शामिल होते हैं। प्रवेश टिकट, वैकल्पिक गतिविधियाँ, विशेष दर्शन, व्यक्तिगत खर्च और एक्सक्लूजन में सूचीबद्ध चीजें शामिल नहीं हैं, जब तक कि अंतिम कोटेशन में स्पष्ट रूप से न लिखा गया हो।"
+    //         },
+    //         {
+    //             "question": "Can I choose the hotel category, room type and vehicle?",
+    //             "questionTamil": "ஹோட்டல் வகை, அறை வகை மற்றும் வாகனத்தை நான் தேர்வு செய்ய முடியுமா?",
+    //             "questionHindi": "क्या मैं होटल कैटेगरी, रूम टाइप और वाहन चुन सकता हूँ?",
+    //             "answer": "Yes. You can request budget, standard, 3-star, 4-star or premium hotels where available, and the vehicle can be selected according to the number of guests and route. The final price changes based on travel date, hotel category, room sharing and vehicle type.",
+    //             "answerTamil": "ஆம். கிடைக்கும் வசதியைப் பொறுத்து பட்ஜெட், ஸ்டாண்டர்ட், 3-ஸ்டார், 4-ஸ்டார் அல்லது பிரீமியம் ஹோட்டல்களை கோரலாம். பயணிகளின் எண்ணிக்கை மற்றும் வழித்தடத்திற்கு ஏற்ப வாகனத்தையும் தேர்வு செய்யலாம். பயண தேதி, ஹோட்டல் வகை, அறை பகிர்வு மற்றும் வாகன வகையைப் பொறுத்து இறுதி விலை மாறும்.",
+    //             "answerHindi": "हाँ। उपलब्धता के अनुसार आप बजट, स्टैंडर्ड, 3-स्टार, 4-स्टार या प्रीमियम होटल चुन सकते हैं और यात्रियों की संख्या तथा रूट के अनुसार वाहन चुना जा सकता है। अंतिम कीमत यात्रा तिथि, होटल कैटेगरी, रूम शेयरिंग और वाहन के प्रकार पर निर्भर करेगी।"
+    //         },
+    //         {
+    //             "question": "Is this package suitable for both pilgrimage and beach travellers?",
+    //             "questionTamil": "இந்த பேக்கேஜ் யாத்திரை மற்றும் கடற்கரை சுற்றுலா பயணிகள் இருவருக்கும் ஏற்றதா?",
+    //             "questionHindi": "क्या यह पैकेज तीर्थयात्रा और समुद्र तट घूमने वाले दोनों प्रकार के यात्रियों के लिए उपयुक्त है?",
+    //             "answer": "Yes. The route combines important temple destinations with Karnataka coastal sightseeing and beaches. It is especially suitable for families, pilgrimage groups, senior citizens and travellers who want a temple-and-coast combination.",
+    //             "answerTamil": "ஆம். இந்த வழித்தடம் முக்கியமான கோவில் தலங்களை கர்நாடகா கடற்கரை சுற்றுலா மற்றும் கடற்கரைகளுடன் இணைக்கிறது. இது குடும்பங்கள், யாத்திரை குழுக்கள், மூத்த குடிமக்கள் மற்றும் கோவில் மற்றும் கடற்கரை அனுபவத்தை ஒரே பயணத்தில் விரும்புபவர்களுக்கு மிகவும் ஏற்றது.",
+    //             "answerHindi": "हाँ। यह रूट महत्वपूर्ण मंदिर स्थलों को कर्नाटक के तटीय दर्शनीय स्थलों और समुद्र तटों के साथ जोड़ता है। यह विशेष रूप से परिवारों, तीर्थयात्रा समूहों, वरिष्ठ नागरिकों और मंदिर तथा तट दोनों का अनुभव चाहने वाले यात्रियों के लिए उपयुक्त है।"
+    //         },
+    //         {
+    //             "question": "Can I book this package through Logaa Holidays in Madurai?",
+    //             "questionTamil": "மதுரையில் உள்ள Logaa Holidays மூலம் இந்த பேக்கேஜை முன்பதிவு செய்ய முடியுமா?",
+    //             "questionHindi": "क्या मैं मदुरै की Logaa Holidays के माध्यम से यह पैकेज बुक कर सकता हूँ?",
+    //             "answer": "Yes. Logaa Holidays is based in Madurai and can arrange this Karnataka package with suitable pickup, hotel stay, private transportation and sightseeing. Depending on the route, pickup can be from Madurai or from the most convenient airport, railway station or city mentioned in the package.",
+    //             "answerTamil": "ஆம். Logaa Holidays மதுரையை மையமாகக் கொண்டு செயல்படுகிறது மற்றும் இந்த கர்நாடகா பேக்கேஜிற்கு பொருத்தமான பிக்கப், ஹோட்டல் தங்குமிடம், தனியார் போக்குவரத்து மற்றும் சுற்றுலா ஏற்பாடுகளை செய்ய முடியும். பயண வழித்தடத்தைப் பொறுத்து பிக்கப் மதுரையிலிருந்தோ அல்லது பேக்கேஜில் குறிப்பிடப்பட்ட வசதியான விமான நிலையம், ரயில் நிலையம் அல்லது நகரத்திலிருந்தோ ஏற்பாடு செய்யலாம்.",
+    //             "answerHindi": "हाँ। Logaa Holidays मदुरै में स्थित है और इस कर्नाटक पैकेज के लिए उपयुक्त पिकअप, होटल ठहराव, निजी परिवहन और दर्शनीय स्थलों की व्यवस्था कर सकती है। रूट के अनुसार पिकअप मदुरै या पैकेज में बताए गए सबसे सुविधाजनक एयरपोर्ट, रेलवे स्टेशन या शहर से किया जा सकता है।"
+    //         },
+    //         {
+    //             "question": "Can travellers from Chennai, Madurai, Coimbatore, Mumbai, Delhi and other Indian cities book this package?",
+    //             "questionTamil": "சென்னை, மதுரை, கோயம்புத்தூர், மும்பை, டெல்லி மற்றும் பிற இந்திய நகரங்களிலிருந்து வரும் பயணிகள் இந்த பேக்கேஜை முன்பதிவு செய்ய முடியுமா?",
+    //             "questionHindi": "क्या चेन्नई, मदुरै, कोयंबटूर, मुंबई, दिल्ली और अन्य भारतीय शहरों के यात्री यह पैकेज बुक कर सकते हैं?",
+    //             "answer": "Yes. Travellers can reach the most convenient South India airport or railway station and start the land tour from there. Logaa Holidays can customise the pickup and drop points based on flight or train timings and the selected itinerary.",
+    //             "answerTamil": "ஆம். பயணிகள் வசதியான தென் இந்திய விமான நிலையம் அல்லது ரயில் நிலையத்தை அடைந்து அங்கிருந்து நிலப்பரப்பு சுற்றுலாவை தொடங்கலாம். விமானம் அல்லது ரயில் நேரம் மற்றும் தேர்வு செய்யப்பட்ட பயணத் திட்டத்தைப் பொறுத்து Logaa Holidays பிக்கப் மற்றும் டிராப் இடங்களை தனிப்பயனாக்க முடியும்.",
+    //             "answerHindi": "हाँ। यात्री सबसे सुविधाजनक दक्षिण भारत के एयरपोर्ट या रेलवे स्टेशन तक पहुँचकर वहाँ से लैंड टूर शुरू कर सकते हैं। Logaa Holidays फ्लाइट या ट्रेन के समय और चुने गए यात्रा कार्यक्रम के अनुसार पिकअप और ड्रॉप पॉइंट को कस्टमाइज कर सकती है।"
+    //         },
+    //         {
+    //             "question": "Do you arrange this package for travellers from Malaysia and Sri Lanka?",
+    //             "questionTamil": "மலேசியா மற்றும் இலங்கையிலிருந்து வரும் பயணிகளுக்கும் இந்த பேக்கேஜை ஏற்பாடு செய்கிறீர்களா?",
+    //             "questionHindi": "क्या आप मलेशिया और श्रीलंका से आने वाले यात्रियों के लिए भी यह पैकेज आयोजित करते हैं?",
+    //             "answer": "Yes. International travellers can book the South India land package after arriving at the most suitable airport for the route. International flights, visa and travel documents are not automatically included unless they are specifically mentioned in the final quotation.",
+    //             "answerTamil": "ஆம். சர்வதேச பயணிகள் இந்த வழித்தடத்திற்கு ஏற்ற விமான நிலையத்தை அடைந்த பிறகு தென் இந்திய நிலப்பரப்பு பேக்கேஜை முன்பதிவு செய்யலாம். சர்வதேச விமான டிக்கெட், விசா மற்றும் பயண ஆவணங்கள் இறுதி quotation-ல் குறிப்பாக சேர்க்கப்பட்டிருந்தால் மட்டுமே வழங்கப்படும்.",
+    //             "answerHindi": "हाँ। अंतरराष्ट्रीय यात्री इस रूट के लिए सबसे उपयुक्त एयरपोर्ट पर पहुँचने के बाद दक्षिण भारत का लैंड पैकेज बुक कर सकते हैं। अंतरराष्ट्रीय फ्लाइट, वीजा और यात्रा दस्तावेज अपने आप शामिल नहीं होते, जब तक कि अंतिम कोटेशन में उनका विशेष रूप से उल्लेख न किया गया हो।"
+    //         },
+    //         {
+    //             "question": "How is the final package cost calculated?",
+    //             "questionTamil": "இறுதி பேக்கேஜ் விலை எவ்வாறு கணக்கிடப்படுகிறது?",
+    //             "questionHindi": "अंतिम पैकेज की कीमत कैसे तय की जाती है?",
+    //             "answer": "The price depends on travel date, number of adults and children, hotel category, number of rooms, extra beds, vehicle type, pickup and drop points and any optional activities. Share your exact travel details with Logaa Holidays for the final quotation.",
+    //             "answerTamil": "பயண தேதி, பெரியவர்கள் மற்றும் குழந்தைகளின் எண்ணிக்கை, ஹோட்டல் வகை, அறைகளின் எண்ணிக்கை, கூடுதல் படுக்கைகள், வாகன வகை, பிக்கப் மற்றும் டிராப் இடங்கள் மற்றும் விருப்ப செயல்பாடுகளைப் பொறுத்து விலை கணக்கிடப்படும். இறுதி quotation பெற உங்கள் சரியான பயண விவரங்களை Logaa Holidays-க்கு தெரிவிக்கவும்.",
+    //             "answerHindi": "कीमत यात्रा तिथि, वयस्कों और बच्चों की संख्या, होटल कैटेगरी, कमरों की संख्या, एक्स्ट्रा बेड, वाहन के प्रकार, पिकअप और ड्रॉप पॉइंट तथा वैकल्पिक गतिविधियों पर निर्भर करती है। अंतिम कोटेशन के लिए अपनी सही यात्रा जानकारी Logaa Holidays के साथ साझा करें।"
+    //         }
+    //     ],
         
-        "seo": {
-            "metaTitle": "Udupi, Murudeshwar and Gokarna Tour – 4 Nights | Logaa Holidays",
-            "metaDescription": "Explore South India with Logaa Holidays on the Udupi, Murudeshwar and Gokarna Tour – 4 Nights / 5 Days. Covering Udupi, Murudeshwar and Gokarna Tour to Udupi",
-            "canonicalUrl": "https://www.logaaholidays.com/tour-packages/udupi-murudeshwar-and-gokarna-tour-4-nights-5-days-2",
-            "slug": "udupi-murudeshwar-and-gokarna-tour-4-nights-5-days-2"
-        },
-        "id": "5006"
-    },
+    //     "seo": {
+    //         "metaTitle": "Udupi, Murudeshwar and Gokarna Tour – 4 Nights | Logaa Holidays",
+    //         "metaDescription": "Explore South India with Logaa Holidays on the Udupi, Murudeshwar and Gokarna Tour – 4 Nights / 5 Days. Covering Udupi, Murudeshwar and Gokarna Tour to Udupi",
+    //         "canonicalUrl": "https://www.logaaholidays.com/tour-packages/udupi-murudeshwar-and-gokarna-tour-4-nights-5-days-2",
+    //         "slug": "udupi-murudeshwar-and-gokarna-tour-4-nights-5-days-2"
+    //     },
+    //     "id": "5006"
+    // },
     '9001': {
         "title": "Kerala Honeymoon Package – 2 Nights / 3 Days",
         "image": "/assets/kerala1.webp",
@@ -36313,13 +36356,13 @@ const PackageDetails = () => {
                     className="absolute inset-0 w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 z-20 flex flex-col justify-end pb-12 px-6 max-w-7xl mx-auto">
-                    <div className="flex flex-wrap items-center gap-2 text-white/90 text-sm font-semibold mb-4 drop-shadow-md">
+                    <div className="flex flex-wrap items-center gap-2 text-white/90 text-base md:text-lg font-semibold mb-4 drop-shadow-md">
                         <Link to="/" className="hover:text-white transition-colors">Home</Link>
-                        <ChevronRight className="w-4 h-4" />
+                        <ChevronRight className="w-4 h-4 md:w-5 md:h-5" />
                         <Link to={getRegionLink()} className="hover:text-white transition-colors">Tour Packages</Link>
-                        <ChevronRight className="w-4 h-4" />
+                        <ChevronRight className="w-4 h-4 md:w-5 md:h-5" />
                         <Link to={`/tour-packages/${categoryInfo.slug}`} className="hover:text-white transition-colors">{categoryInfo.name}</Link>
-                        <ChevronRight className="w-4 h-4" />
+                        <ChevronRight className="w-4 h-4 md:w-5 md:h-5" />
                         <span className="text-white font-bold">Package Details</span>
                     </div>
                     <h1 className="text-3xl md:text-5xl font-display font-bold text-white max-w-4xl leading-tight drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)]">
@@ -36602,7 +36645,7 @@ const PackageDetails = () => {
                                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
                                     <div>
                                         <h2 className="text-2xl font-bold text-slate-800 mb-2 flex items-center gap-3">
-                                            <MessageSquare className="w-7 h-7 text-[var(--color-brand-orange)]" />
+                                            <MessageSquare className="w-7 h-7 text-[var(--color-leaf-green)]" />
                                             Frequently Asked Questions
                                         </h2>
                                         <p className="text-sm text-slate-500 md:ml-10">Common questions about this tour package</p>
@@ -36610,19 +36653,19 @@ const PackageDetails = () => {
                                     <div className="flex bg-slate-100 p-1 rounded-xl self-start md:self-auto">
                                         <button
                                             onClick={() => setFaqLang('english')}
-                                            className={`px-4 py-2 rounded-lg text-sm font-bold transition-all ${faqLang === 'english' ? 'bg-white text-[var(--color-brand-orange)] shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+                                            className={`px-4 py-2 rounded-lg text-sm font-bold transition-all ${faqLang === 'english' ? 'bg-white text-[var(--color-leaf-green)] shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
                                         >
                                             English
                                         </button>
                                         <button
                                             onClick={() => setFaqLang('tamil')}
-                                            className={`px-4 py-2 rounded-lg text-sm font-bold transition-all ${faqLang === 'tamil' ? 'bg-white text-[var(--color-brand-orange)] shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+                                            className={`px-4 py-2 rounded-lg text-sm font-bold transition-all ${faqLang === 'tamil' ? 'bg-white text-[var(--color-leaf-green)] shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
                                         >
                                             தமிழ்
                                         </button>
                                         <button
                                             onClick={() => setFaqLang('hindi')}
-                                            className={`px-4 py-2 rounded-lg text-sm font-bold transition-all ${faqLang === 'hindi' ? 'bg-white text-[var(--color-brand-orange)] shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+                                            className={`px-4 py-2 rounded-lg text-sm font-bold transition-all ${faqLang === 'hindi' ? 'bg-white text-[var(--color-leaf-green)] shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
                                         >
                                             हिंदी
                                         </button>
@@ -36674,7 +36717,7 @@ const PackageDetails = () => {
 
                     {/* Right Column (Sticky Sidebar) */}
                     <div className="w-full lg:w-[380px] flex-shrink-0">
-                        <div className="sticky top-32 space-y-6">
+                        <div className="sticky top-32 space-y-6 max-h-[85vh] overflow-y-auto hide-scrollbar pb-4">
 
                             {/* Pricing & Booking Card */}
                             <PackageInquiryForm packageTitle={pkg.title} />

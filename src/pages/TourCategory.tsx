@@ -20,10 +20,23 @@ const destinationGroups = [
   {
     region: 'North & East India',
     places: ['Shirdi Tours', 'Varanasi Tours', 'Delhi Tours', 'Agra Tours', 'Jaipur Tours', 'Shimla Tours', 'Manali Tours', 'Kashmir Tours', 'Cherrapunji Tours', 'Pune Tours', 'Shillong Tours', 'Guwahati Tours', 'Ayodhya Tours']
-  },
+  }
+];
+
+const honeymoonGroups = [
   {
-    region: 'International',
-    places: ['Malaysia Tours', 'Singapore Tours', 'Bali Tours', 'Thailand Tours', 'Sri Lanka Tours']
+    region: 'Honeymoon Destinations',
+    places: [
+      'Tamil Nadu Honeymoon Packages',
+      'Kerala Honeymoon Packages',
+      'Karnataka Honeymoon Packages',
+      'Goa Honeymoon Packages',
+      'Kashmir Honeymoon Packages',
+      'Himachal Honeymoon Packages',
+      'Sikkim Darjeeling Honeymoon Packages',
+      'Andaman Honeymoon Packages',
+      'Maldives Honeymoon Packages'
+    ]
   }
 ];
 
@@ -1223,7 +1236,23 @@ const TourCategory = () => {
         </div>
 
         <div className="bg-white/95 backdrop-blur-xl rounded-2xl p-6 mb-8 border border-slate-100 shadow-sm">
-          <h3 className="text-lg font-bold text-[var(--color-neutral-black)] mb-4">Search Packages</h3>
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="text-lg font-bold text-[var(--color-neutral-black)]">Search Packages</h3>
+            {(searchQuery || durationFilter || themeFilter || transportFilter) ? (
+              <button 
+                onClick={(e) => {
+                  e.preventDefault();
+                  setSearchQuery('');
+                  setDurationFilter('');
+                  setThemeFilter('');
+                  setTransportFilter('');
+                }}
+                className="text-sm font-bold text-red-500 hover:text-red-600 transition-colors flex items-center gap-1.5 px-3 py-1.5 rounded-lg hover:bg-red-50"
+              >
+                <X className="w-4 h-4" /> Reset
+              </button>
+            ) : null}
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
             <div className="md:col-span-1">
               <input type="text" placeholder="Where do you want to go?" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-[var(--color-blue-ocean)]/50 text-sm" />
@@ -1270,7 +1299,7 @@ const TourCategory = () => {
             <div className="flex flex-col gap-12">
 
               {/* Popular Packages */}
-              {(durationFilter === "" || durationFilter === "popular") && popularPackages.length > 0 && (
+              {/* {(durationFilter === "" || durationFilter === "popular") && popularPackages.length > 0 && (
                 <div id="popular-packages" className="scroll-mt-40">
                   <div className="flex items-center gap-3 mb-6">
                     <div className="w-1.5 h-6 bg-gradient-to-b from-orange-400 to-red-500 rounded-full"></div>
@@ -1305,7 +1334,7 @@ const TourCategory = () => {
                           <meta itemProp="description" content={pkg.activities || pkg.destination} />
                           <meta itemProp="url" content={`https://www.logaaholidays.com${getPackageLink(pkg)}`} />
 
-                          {/* Image Section */}
+                          
                           <div className="relative w-full aspect-[322/372] bg-slate-50 overflow-hidden" style={{ aspectRatio: '322/372' }}>
                             <Link
                               to={getPackageLink(pkg)}
@@ -1324,14 +1353,14 @@ const TourCategory = () => {
                               <div className="absolute inset-0 bg-gradient-to-t from-[#1B2430]/90 via-[#1B2430]/20 to-transparent pointer-events-none"></div>
                             </Link>
 
-                            {/* Badges */}
+                            
                             <div className={`absolute top-4 left-4 text-white text-[10px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-md ${badgeColor}`}>
                               {badge === 'MOST BOOKED' ? <Flame className="w-3.5 h-3.5" /> : null} {badge === 'MOST BOOKED' ? 'BEST SELLER' : badge}
                             </div>
 
 
 
-                            {/* Travelers Info */}
+                            
                             <div className="absolute bottom-4 left-4 flex items-center gap-3">
                               <div className="flex items-center text-white text-[12px] font-bold drop-shadow-md">
                                 <Star className="w-4 h-4 text-orange-400 fill-orange-400 mr-1.5" />
@@ -1339,7 +1368,7 @@ const TourCategory = () => {
                               </div>
                             </div>
 
-                            {/* Favorite Button */}
+                            
                             <button
                               onClick={(e) => { e.preventDefault(); handleSave(pkg.id); }}
                               className="absolute bottom-4 right-4 w-9 h-9 rounded-full border border-white/40 bg-black/30 backdrop-blur-md flex items-center justify-center hover:bg-red-500 hover:border-red-500 transition-all focus:outline-none"
@@ -1349,7 +1378,7 @@ const TourCategory = () => {
                             </button>
                           </div>
 
-                          {/* Details Section */}
+                         
                           <div className="flex-1 flex flex-col p-5 bg-white">
                             <Link to={getPackageLink(pkg)} className="outline-none block mb-1">
                               <h2 className="text-[18px] font-bold text-slate-900 leading-snug hover:text-[var(--color-primary-forest)] transition-colors">
@@ -1360,7 +1389,7 @@ const TourCategory = () => {
                               {pkg.activities || pkg.destination}
                             </p>
 
-                            {/* Theme Chips */}
+                           
                             <div className="flex items-center flex-wrap gap-2 mb-4">
                               {activeChips.slice(0, 3).map(chip => {
                                 if (chip === 'Religious') return <span key={chip} className="bg-[#F3E8FF] text-[#7E22CE] text-[10px] font-bold px-2.5 py-1 rounded-full">Religious</span>;
@@ -1373,7 +1402,7 @@ const TourCategory = () => {
                               })}
                             </div>
 
-                            {/* Info Pills */}
+                            
                             <ul className="flex flex-wrap items-center gap-4 mb-4" aria-label="Tour Details">
                               <li className="text-slate-700 text-[11px] font-bold flex items-center gap-1.5 cursor-default">
                                 <Clock className="w-4 h-4 text-slate-500" aria-hidden="true" />
@@ -1389,7 +1418,7 @@ const TourCategory = () => {
                               </li>
                             </ul>
 
-                            {/* Action Buttons */}
+                            
                             <div className="mt-auto pt-4 border-t border-slate-100 flex flex-col gap-3">
                               <div className="flex flex-col sm:flex-row items-center gap-2">
                                 <a
@@ -1414,7 +1443,7 @@ const TourCategory = () => {
                     })}
                   </div>
                 </div>
-              )}
+              )} */}
 
               {/* Grouped Packages */}
               {sortedDays.filter(day => durationFilter === "" || durationFilter === day.toString()).length === 0 && popularPackages.length === 0 ? (
@@ -1587,7 +1616,7 @@ const TourCategory = () => {
 
           {/* Sidebar (Right) */}
           <div className="w-full lg:w-80 flex-shrink-0">
-            <div className="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 sticky top-32">
+            <div className="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 sticky top-32 max-h-[85vh] overflow-y-auto hide-scrollbar">
 
               <div className="flex items-center gap-3 mb-6 border-b border-slate-100 pb-4">
                 <div className="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center">
@@ -1597,7 +1626,7 @@ const TourCategory = () => {
               </div>
 
               <div className="flex flex-col gap-6 mb-8">
-                {destinationGroups.map(group => (
+                {((category || '').toLowerCase().includes('honeymoon') ? honeymoonGroups : destinationGroups).map(group => (
                   <div key={group.region}>
                     <h4 className="text-[14px] font-bold text-slate-800 mb-3">{group.region}</h4>
                     <div className="flex flex-wrap gap-2">
@@ -1613,7 +1642,7 @@ const TourCategory = () => {
                                 : 'bg-white text-slate-600 border-slate-200 hover:border-[var(--color-primary-forest)] hover:text-[var(--color-primary-forest)]'
                               }`}
                           >
-                            {dest.replace(' Tours', '')}
+                            {dest.replace(' Tours', '').replace(' Honeymoon Packages', '').replace('Sikkim Darjeeling', 'Sikkim & Darjeeling')}
                           </Link>
                         )
                       })}
@@ -1622,16 +1651,7 @@ const TourCategory = () => {
                 ))}
               </div>
 
-              <div className="bg-green-50/70 rounded-2xl p-4 flex items-center gap-3 mb-8 border border-green-100/50 cursor-pointer hover:bg-green-50 transition-colors group">
-                <div className="w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Gift className="w-5 h-5 text-green-600 group-hover:scale-110 transition-transform" />
-                </div>
-                <div>
-                  <h4 className="text-[13px] font-bold text-slate-900">Explore More Destinations</h4>
-                  <p className="text-[10px] text-slate-500 font-medium">100+ Packages Available</p>
-                </div>
-                <ChevronRight className="w-4 h-4 text-green-600 ml-auto group-hover:translate-x-1 transition-transform" />
-              </div>
+
 
               <div className="space-y-6 pt-2 border-t border-slate-50">
                 <div className="flex gap-4 items-center">

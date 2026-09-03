@@ -7,18 +7,18 @@ export const inputClasses = (isFocused: boolean, hasError?: boolean) => `
   ${hasError
     ? 'border-red-400 bg-red-500/5'
     : isFocused
-      ? 'border-[var(--color-brand-orange)] bg-white/10'
+      ? 'border-[var(--color-leaf-green)] bg-white/10'
       : 'border-white/10 hover:border-white/20 hover:bg-white/10'}
 `;
 
 export const iconClasses = (isFocused: boolean) => `
   absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 transition-all duration-300
-  ${isFocused ? 'text-[var(--color-brand-orange)] scale-110' : 'text-white/40'}
+  ${isFocused ? 'text-[var(--color-leaf-green)] scale-110' : 'text-white/40'}
 `;
 
 export const labelClasses = (isFocused: boolean) => `
   block text-sm font-bold mb-2 transition-colors duration-300
-  ${isFocused ? 'text-[var(--color-brand-orange)]' : 'text-white/80'}
+  ${isFocused ? 'text-[var(--color-leaf-green)]' : 'text-white/80'}
 `;
 
 // ─── TextInput ────────────────────────────────────────────────────────────────
@@ -31,6 +31,30 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
 export const TextInput = ({ label, icon: Icon, className = '', errorMsg, ...props }: InputProps) => {
   const [focused, setFocused] = useState(false);
   const name = props.name || (label ? label.replace(/[^a-zA-Z0-9]/g, '_').toLowerCase() : undefined);
+  
+  const isPhone = label?.toLowerCase().includes('phone') || label?.toLowerCase().includes('mobile');
+  const isName = label?.toLowerCase().includes('name');
+  const isCity = label?.toLowerCase().includes('city') || label?.toLowerCase().includes('departure');
+  
+  if (isPhone) {
+    props.pattern = "\\d{10}";
+    props.maxLength = 10;
+    const oldOnInput = props.onInput;
+    props.onInput = (e) => {
+      e.currentTarget.value = e.currentTarget.value.replace(/\\D/g, '').slice(0, 10);
+      if (oldOnInput) oldOnInput(e);
+    };
+  }
+  
+  if (isName || isCity) {
+    props.minLength = 3;
+    const oldOnInput = props.onInput;
+    props.onInput = (e) => {
+      e.currentTarget.value = e.currentTarget.value.replace(/[^a-zA-Z\\s]/g, '');
+      if (oldOnInput) oldOnInput(e);
+    };
+  }
+
   return (
     <div className={`relative group ${className}`}>
       {label && (
@@ -107,11 +131,11 @@ export const TextArea = ({ label, icon: Icon, className = '', ...props }: TextAr
         </label>
       )}
       <div className="relative">
-        {Icon && <Icon className={`absolute left-4 top-4 w-4 h-4 transition-all duration-300 ${focused ? 'text-[var(--color-brand-orange)] scale-110' : 'text-white/40'}`} />}
+        {Icon && <Icon className={`absolute left-4 top-4 w-4 h-4 transition-all duration-300 ${focused ? 'text-[var(--color-leaf-green)] scale-110' : 'text-white/40'}`} />}
         <textarea
           name={name}
           {...props}
-          className={`w-full bg-white/5 pr-4 py-3.5 rounded-xl border transition-all duration-300 outline-none text-sm font-medium text-white placeholder-white/40 resize-none ${focused ? 'border-[var(--color-brand-orange)] bg-white/10' : 'border-white/10 hover:border-white/20 hover:bg-white/10'} ${Icon ? 'pl-11' : 'pl-4'}`}
+          className={`w-full bg-white/5 pr-4 py-3.5 rounded-xl border transition-all duration-300 outline-none text-sm font-medium text-white placeholder-white/40 resize-none ${focused ? 'border-[var(--color-leaf-green)] bg-white/10' : 'border-white/10 hover:border-white/20 hover:bg-white/10'} ${Icon ? 'pl-11' : 'pl-4'}`}
           onFocus={(e) => { setFocused(true); props.onFocus?.(e); }}
           onBlur={(e) => { setFocused(false); props.onBlur?.(e); }}
         />
@@ -150,6 +174,17 @@ function validateForm(form: HTMLFormElement): { valid: boolean; errors: string[]
     if (!val) {
       const label = field.closest('div')?.querySelector('label')?.textContent?.replace('*', '').trim();
       errors.push(`"${label || field.name}" is required.`);
+    }
+  });
+
+  // Length validation
+  const lengthFields = form.querySelectorAll<HTMLInputElement>('input[minLength]');
+  lengthFields.forEach(field => {
+    const val = (data.get(field.name) || '').toString().trim();
+    const minLength = parseInt(field.getAttribute('minLength') || '0', 10);
+    if (val && val.length < minLength) {
+      const label = field.closest('div')?.querySelector('label')?.textContent?.replace('*', '').trim() || field.placeholder || field.name;
+      errors.push(`"${label}" must be at least ${minLength} characters.`);
     }
   });
 

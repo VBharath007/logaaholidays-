@@ -59,7 +59,7 @@ export function PlacesToVisit() {
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 z-20 flex flex-col justify-end pt-32 pb-16 px-6 max-w-7xl mx-auto">
-          <div className="flex flex-wrap items-center gap-2 text-white/80 text-sm font-medium mb-4">
+          <div className="flex flex-wrap items-center gap-2 text-white/80 text-base md:text-lg font-medium mb-4">
             <Link to="/" className="hover:text-white transition-colors">Home</Link>
             <ChevronRight className="w-4 h-4" />
             <Link to="/south-india-package" className="hover:text-white transition-colors">Destinations</Link>
@@ -158,7 +158,7 @@ export function PlacesToVisit() {
                         to={`/place/${state}/${cityBase}/${place.id}`} 
                         className="inline-flex items-center gap-2 text-[var(--color-primary-forest)] font-bold hover:gap-4 transition-all"
                       >
-                        Explore Tour Packages <ChevronRight className="w-5 h-5" />
+                        Explore place <ChevronRight className="w-5 h-5" />
                       </Link>
                     </div>
 

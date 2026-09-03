@@ -50,9 +50,31 @@ function generateResponse(input: string): { text: string; results?: KnowledgeEnt
     };
   }
 
+  // ── INTELLIGENT SEARCH ENGINE (PRIORITY) ──────────────────────────────────
+  // Run the semantic search engine first
+  const searchEngineResults = searchKnowledge(q);
+  
+  // If it's a multi-word specific query (e.g. "ooty honeymoon") and we have results,
+  // we MUST use the intelligent search engine to avoid generic hardcoded responses.
+  const wordCount = q.split(/\s+/).length;
+  if (wordCount >= 2 && searchEngineResults.length > 0) {
+    const firstName = searchEngineResults[0].name;
+    let enquireText = firstName;
+    if (firstName.toLowerCase() === 'home' || firstName.toLowerCase().includes('contact') || firstName.toLowerCase().includes('about')) {
+      enquireText = 'Tour Packages';
+    }
+    
+    return {
+      text: `Great choice! Here's what I found for "${input}". Check out the details below and feel free to ask me anything specific about the itinerary, duration, or inclusions.`,
+      results: searchEngineResults,
+      options: [`Enquire about ${enquireText}`]
+    };
+  }
+
+  // ── FALLBACK HARDCODED CATEGORIES (GENERIC SINGLE WORD) ──────────────────
+
   // Honeymoon / Couple / Romantic — return ALL honeymoon categories
-  if (q.includes('honeymoon') || q.includes('honey moon') || q.includes('couple') || q.includes('romantic') || q.includes('newly married') || q.includes('newly wed')) {
-    // Filter knowledge base for all entries that are honeymoon-related
+  if (q === 'honeymoon' || q === 'honey moon' || q === 'couple' || q === 'romantic') {
     const allHoneymoon = siteKnowledge.filter(entry =>
       entry.keywords.some(kw => kw.includes('honeymoon')) ||
       entry.name.toLowerCase().includes('honeymoon')
@@ -64,8 +86,7 @@ function generateResponse(input: string): { text: string; results?: KnowledgeEnt
   }
 
   // Family tour
-  if (q.includes('family') || q.includes('kids') || q.includes('children') || q.includes('family tour')) {
-    const results = searchKnowledge('family tour');
+  if (q === 'family' || q === 'kids' || q === 'family tour') {
     return {
       text: "We love planning family holidays! Our family packages are designed for comfort, fun, and memorable experiences for all age groups.",
       results: searchKnowledge('south india').slice(0, 3),
@@ -73,7 +94,7 @@ function generateResponse(input: string): { text: string; results?: KnowledgeEnt
   }
 
   // Pilgrimage / Temple / Yatra / Spiritual
-  if (q.includes('temple') || q.includes('pilgrimage') || q.includes('yatra') || q.includes('religious') || q.includes('spiritual') || q.includes('devotional') || q.includes('god') || q.includes('darshan') || q.includes('kovil') || q.includes('tirtha')) {
+  if (q === 'temple' || q === 'pilgrimage' || q === 'spiritual' || q === 'yatra') {
     const combinedResults = [
       ...searchKnowledge('shirdi yatra'),
       ...searchKnowledge('varanasi'),
@@ -90,9 +111,8 @@ function generateResponse(input: string): { text: string; results?: KnowledgeEnt
   }
 
   // North India
-  if (q === 'north india tour' || q.includes('north india') || q.includes('kashmir') || q.includes('manali') || q.includes('shimla') || q.includes('himachal') || q.includes('rajasthan') || q.includes('golden triangle')) {
+  if (q === 'north india tour' || q === 'north india') {
     const allNorthIndia = siteKnowledge.filter(entry =>
-      // Exclude honeymoon packages — they have their own category
       !entry.name.toLowerCase().includes('honeymoon') &&
       entry.keywords.some(kw =>
         kw === 'north india' || kw === 'north india tour' || kw === 'north india package' ||
@@ -109,7 +129,7 @@ function generateResponse(input: string): { text: string; results?: KnowledgeEnt
   }
 
   // International
-  if (q.includes('international') || q.includes('abroad') || q.includes('foreign') || q.includes('overseas') || q.includes('foreign trip')) {
+  if (q === 'international' || q === 'abroad') {
     return {
       text: "We have great international packages! We cover Malaysia, Singapore, Bali, Thailand, and Sri Lanka. Which destination interests you?",
       results: searchKnowledge('international').slice(0, 3),
@@ -149,15 +169,18 @@ function generateResponse(input: string): { text: string; results?: KnowledgeEnt
     };
   }
 
-  // ── Semantic search on all remaining queries ──────────────────────────────
-  const results = searchKnowledge(q);
-
-  if (results.length > 0) {
-    const firstName = results[0].name;
+  // ── Final Fallback ────────────────────────────────────────────────────────
+  if (searchEngineResults.length > 0) {
+    const firstName = searchEngineResults[0].name;
+    let enquireText = firstName;
+    if (firstName.toLowerCase() === 'home' || firstName.toLowerCase().includes('contact') || firstName.toLowerCase().includes('about')) {
+      enquireText = 'Tour Packages';
+    }
+    
     return {
       text: `Great choice! Here's what I found for "${input}". Check out the details below and feel free to ask me anything specific about the itinerary, duration, or inclusions.`,
-      results,
-      options: [`Enquire about ${firstName}`]
+      results: searchEngineResults,
+      options: [`Enquire about ${enquireText}`]
     };
   }
 

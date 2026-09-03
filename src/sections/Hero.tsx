@@ -104,7 +104,7 @@ export function Hero() {
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-extrabold text-white drop-shadow-lg mb-4 md:mb-6 leading-tight">
                 {slides[currentSlide].title}
               </h1>
-              <p className="text-lg md:text-2xl text-white/90 drop-shadow-md font-medium max-w-2xl leading-relaxed">
+              <p className="text-lg md:text-2xl text-white/90 drop-shadow-md font-medium max-w-2xl mx-auto md:mx-0 leading-relaxed">
                 {slides[currentSlide].description}
               </p>
               </div>
@@ -125,7 +125,7 @@ export function Hero() {
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-extrabold text-white drop-shadow-lg mb-4 md:mb-6 leading-tight">
                 {slides[currentSlide].title}
               </h1>
-              <p className="text-lg md:text-2xl text-white/90 drop-shadow-md font-medium max-w-2xl leading-relaxed">
+              <p className="text-lg md:text-2xl text-white/90 drop-shadow-md font-medium max-w-2xl mx-auto md:ml-auto md:mr-0 leading-relaxed">
                 {slides[currentSlide].description}
               </p>
               </div>
@@ -146,7 +146,7 @@ export function Hero() {
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-extrabold text-white drop-shadow-lg mb-4 md:mb-6 leading-tight">
                 {slides[currentSlide].title}
               </h1>
-              <p className="text-lg md:text-2xl text-white/90 drop-shadow-md font-medium max-w-2xl leading-relaxed">
+              <p className="text-lg md:text-2xl text-white/90 drop-shadow-md font-medium max-w-2xl mx-auto md:mx-0 leading-relaxed">
                 {slides[currentSlide].description}
               </p>
               </div>
@@ -167,7 +167,7 @@ export function Hero() {
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-extrabold text-white drop-shadow-lg mb-4 md:mb-6 leading-tight">
                 {slides[currentSlide].title}
               </h1>
-              <p className="text-lg md:text-2xl text-white/90 drop-shadow-md font-medium max-w-2xl leading-relaxed">
+              <p className="text-lg md:text-2xl text-white/90 drop-shadow-md font-medium max-w-2xl mx-auto leading-relaxed">
                 {slides[currentSlide].description}
               </p>
               </div>
@@ -188,7 +188,7 @@ export function Hero() {
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-extrabold text-white drop-shadow-lg mb-4 md:mb-6 leading-tight">
                 {slides[currentSlide].title}
               </h1>
-              <p className="text-lg md:text-2xl text-white/90 drop-shadow-md font-medium max-w-2xl leading-relaxed">
+              <p className="text-lg md:text-2xl text-white/90 drop-shadow-md font-medium max-w-2xl mx-auto leading-relaxed">
                 {slides[currentSlide].description}
               </p>
               </div>

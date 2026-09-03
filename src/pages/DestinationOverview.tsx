@@ -191,7 +191,7 @@ export function DestinationOverview() {
           />
         )}
         <div className="absolute inset-0 z-20 flex flex-col justify-end pt-32 pb-16 px-6 max-w-7xl mx-auto">
-          <div className="flex flex-wrap items-center gap-2 text-white/80 text-sm font-medium mb-4">
+          <div className="flex flex-wrap items-center gap-2 text-white/80 text-base md:text-lg font-medium mb-4">
             <Link to="/" className="hover:text-white transition-colors">Home</Link>
             <ChevronRight className="w-4 h-4" />
             <Link to={(() => {
@@ -386,7 +386,6 @@ export function DestinationOverview() {
               <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-6 gap-3">
                 <div>
                   <h2 className="text-2xl font-bold text-[var(--color-neutral-black)]">Popular Packages</h2>
-                  <p className="text-slate-500 text-sm mt-1">{totalPackagesCount} packages available</p>
                 </div>
                 <Link
                   to={getCategoryLink()}
@@ -476,7 +475,7 @@ export function DestinationOverview() {
         <div className="w-full flex-col flex gap-8">
 
           {/* Other Info Card */}
-          <div className={`${clayCard} p-6 sticky top-32`}>
+          <div className={`${clayCard} p-6`}>
             <h3 className="text-xl font-bold text-[var(--color-blue-ocean)] mb-6 pb-4 border-b border-slate-100">Other Info</h3>
 
             <ul className="flex flex-col gap-4">

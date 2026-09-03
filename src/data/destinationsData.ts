@@ -35,7 +35,7 @@ export const destinationsData: Record<string, any> = {
     placesToVisit: [
       {
         id: 'alleppey',
-        name: 'Alleppey (Alleppey)',
+        name: 'Alleppey ',
         type: 'Backwaters',
         image: '/assets/KERALA/top place in kerala/aleppey.webp',
         description: 'The "Venice of the East", Alleppey is famous for its network of backwaters, houseboat cruises, and the spectacular Nehru Trophy Boat Race. A must-visit for every Kerala traveler.',
@@ -50,7 +50,7 @@ export const destinationsData: Record<string, any> = {
           sections: [
             {
               title: 'About Alleppey',
-              content: "Known as the 'Venice of the East', Alleppey (Alleppey) is renowned for its picturesque backwaters, serene lagoons, and interconnected network of canals. It is the epicenter of Kerala's backwater tourism, attracting visitors worldwide to experience its traditional kettuvallam (houseboats) and vibrant village life along the waters."
+              content: "Known as the 'Venice of the East', Alleppey is renowned for its picturesque backwaters, serene lagoons, and interconnected network of canals. It is the epicenter of Kerala's backwater tourism, attracting visitors worldwide to experience its traditional kettuvallam (houseboats) and vibrant village life along the waters."
             },
             {
               title: 'History',

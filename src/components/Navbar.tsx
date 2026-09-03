@@ -238,11 +238,14 @@ export function Navbar() {
                 {/* Standard Submenu */}
                 {link.submenu && (
                   <div className="absolute top-[calc(100%+1.5rem)] left-1/2 -translate-x-1/2 w-64 bg-white rounded-2xl border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 p-3 flex flex-col gap-1 z-50 shadow-xl">
-                    {link.submenu.map(sub => (
-                      <Link key={sub.label} to={sub.href} className="text-sm font-bold text-slate-700 hover:text-[var(--color-blue-ocean)] hover:bg-slate-50 px-4 py-3 rounded-xl transition-colors text-left">
+                    {link.submenu.map(sub => {
+                      const isActive = location.pathname === sub.href;
+                      return (
+                      <Link key={sub.label} to={sub.href} className={`text-sm px-4 py-3 rounded-xl transition-colors text-left ${isActive ? 'font-bold text-[var(--color-blue-ocean)] bg-blue-50' : 'font-bold text-slate-700 hover:text-[var(--color-blue-ocean)] hover:bg-slate-50'}`}>
                         {sub.label}
                       </Link>
-                    ))}
+                      );
+                    })}
                   </div>
                 )}
 
@@ -253,13 +256,16 @@ export function Navbar() {
                       <div key={cat.title} className={cat.items.length > 8 ? 'w-[360px]' : 'w-[180px]'}>
                         <h4 className="text-xs font-black uppercase tracking-widest text-[var(--color-primary-forest)] mb-4 border-b border-slate-100 pb-2">{cat.title}</h4>
                         <ul className={cat.items.length > 8 ? 'grid grid-cols-2 gap-x-6 gap-y-1' : 'flex flex-col gap-1'}>
-                          {cat.items.map(item => (
+                          {cat.items.map(item => {
+                            const isActive = location.pathname === item.href;
+                            return (
                             <li key={item.label}>
-                              <Link to={item.href} className="text-sm font-medium text-slate-600 hover:text-[var(--color-blue-ocean)] block py-2 hover:translate-x-1 transition-transform">
+                              <Link to={item.href} className={`text-sm block py-2 transition-transform ${isActive ? 'font-bold text-[var(--color-blue-ocean)] translate-x-1' : 'font-medium text-slate-600 hover:text-[var(--color-blue-ocean)] hover:translate-x-1'}`}>
                                 {item.label}
                               </Link>
                             </li>
-                          ))}
+                            );
+                          })}
                         </ul>
                       </div>
                     ))}
@@ -273,13 +279,16 @@ export function Navbar() {
                       <div key={cat.title}>
                         <h4 className="text-xs font-black uppercase tracking-widest text-[var(--color-primary-forest)] mb-4 border-b border-slate-100 pb-2">{cat.title}</h4>
                         <ul className="flex flex-col gap-1">
-                          {cat.items.map(item => (
+                          {cat.items.map(item => {
+                            const isActive = location.pathname === item.href;
+                            return (
                             <li key={item.label}>
-                              <Link to={item.href} className="text-sm font-medium text-slate-600 hover:text-[var(--color-blue-ocean)] block py-2 hover:translate-x-1 transition-transform">
+                              <Link to={item.href} className={`text-sm block py-2 transition-transform ${isActive ? 'font-bold text-[var(--color-blue-ocean)] translate-x-1' : 'font-medium text-slate-600 hover:text-[var(--color-blue-ocean)] hover:translate-x-1'}`}>
                                 {item.label}
                               </Link>
                             </li>
-                          ))}
+                            );
+                          })}
                         </ul>
                       </div>
                     ))}
@@ -370,17 +379,20 @@ export function Navbar() {
                     {link.submenu && (
                       <div className={`overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-[1000px]' : 'max-h-0'}`}>
                         <ul className="pl-4 pb-3 flex flex-col gap-1 border-l-2 border-[var(--color-blue-ocean)]/20 ml-2">
-                          {link.submenu.map(sub => (
+                          {link.submenu.map(sub => {
+                            const isActive = location.pathname === sub.href;
+                            return (
                             <li key={sub.label}>
                               <Link
                                 to={sub.href}
-                                className="block py-2.5 px-2 text-sm font-medium text-slate-500 hover:text-[var(--color-blue-ocean)] rounded-lg hover:bg-slate-50 transition-colors"
+                                className={`block py-2.5 px-2 text-sm rounded-lg transition-colors ${isActive ? 'font-bold text-[var(--color-blue-ocean)] bg-blue-50' : 'font-medium text-slate-500 hover:text-[var(--color-blue-ocean)] hover:bg-slate-50'}`}
                                 onClick={closeMobileMenu}
                               >
                                 {sub.label}
                               </Link>
                             </li>
-                          ))}
+                            );
+                          })}
                         </ul>
                       </div>
                     )}
@@ -395,17 +407,20 @@ export function Navbar() {
                                 {cat.title}
                               </h4>
                               <ul className="flex flex-col gap-0.5">
-                                {cat.items.map(item => (
+                                {cat.items.map(item => {
+                                  const isActive = location.pathname === item.href;
+                                  return (
                                   <li key={item.label}>
                                     <Link
                                       to={item.href}
-                                      className="block py-2.5 px-2 text-sm font-medium text-slate-500 hover:text-[var(--color-blue-ocean)] rounded-lg hover:bg-slate-50 transition-colors"
+                                      className={`block py-2.5 px-2 text-sm rounded-lg transition-colors ${isActive ? 'font-bold text-[var(--color-blue-ocean)] bg-blue-50' : 'font-medium text-slate-500 hover:text-[var(--color-blue-ocean)] hover:bg-slate-50'}`}
                                       onClick={closeMobileMenu}
                                     >
                                       {item.label}
                                     </Link>
                                   </li>
-                                ))}
+                                  );
+                                })}
                               </ul>
                             </div>
                           ))}
