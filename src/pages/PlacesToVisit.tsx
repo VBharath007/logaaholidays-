@@ -51,7 +51,7 @@ export function PlacesToVisit() {
     <div className="bg-[var(--color-bg-luxury)] min-h-screen pb-24 font-sans text-slate-800">
       
       {/* Hero Header */}
-      <div className="relative h-[60vh] md:h-[70vh] w-full overflow-hidden bg-slate-900 mb-12">
+      <div className="relative h-[72vh] md:h-[70vh] w-full overflow-hidden bg-slate-900 mb-12">
         <div className="absolute inset-0 bg-black/50 z-10" />
         <img loading="lazy" 
           src={dest.image} 
@@ -61,12 +61,12 @@ export function PlacesToVisit() {
         <div className="absolute inset-0 z-20 flex flex-col justify-end pt-32 pb-16 px-6 max-w-7xl mx-auto">
           <div className="flex flex-wrap items-center gap-2 text-white/80 text-base md:text-lg font-medium mb-4">
             <Link to="/" className="hover:text-white transition-colors">Home</Link>
-            <ChevronRight className="w-4 h-4" />
-            <Link to="/south-india-package" className="hover:text-white transition-colors">Destinations</Link>
-            <ChevronRight className="w-4 h-4" />
-            <Link to={`/destination/${state}/${city}`} className="hover:text-white transition-colors">{dest.name}</Link>
-            <ChevronRight className="w-4 h-4" />
-            <span className="text-white">Places to Visit</span>
+            <ChevronRight className="w-4 h-4 relative top-[-7px] md:top-0" />
+            <Link to="/south-india-package" className="hover:text-white transition-colors relative top-[-7px] md:top-0">Destinations</Link>
+            <ChevronRight className="w-4 h-4 relative top-[-7px] md:top-0" />
+            <Link to={`/destination/${state}/${city}`} className="hover:text-white transition-colors relative top-[-7px] md:top-0">{dest.name}</Link>
+            <ChevronRight className="w-4 h-4 relative top-[-7px] md:top-0" />
+            <span className="text-white relative top-[-7px] md:top-0">Places to Visit</span>
           </div>
           <h1 className="text-4xl md:text-5xl font-display font-bold text-white max-w-4xl leading-tight mb-2">
             Top {dest.placesToVisit.length} Places to Visit in {dest.name}

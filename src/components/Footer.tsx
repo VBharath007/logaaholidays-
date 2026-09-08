@@ -170,7 +170,7 @@ export function Footer() {
             Our Location
           </h4>
 
-          <div className="w-full h-48 rounded-2xl overflow-hidden border border-slate-900/10 shadow-lg">
+          <div className="w-full h-48 rounded-2xl overflow-hidden border border-slate-900/10 shadow-lg mb-12">
             <iframe
               title="Logaa Holidays Footer Map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.237317385449!2d78.1025417!3d9.9141826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00cf2ea02ad1df%3A0xe40514c1f3d68740!2sLogaa%20Holidays!5e0!3m2!1sen!2sin!4v1786538878701!5m2!1sen!2sin"

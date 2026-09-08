@@ -10,7 +10,7 @@ rameswaram_place = """
         id: 'rameswaram',
         name: 'Rameswaram City',
         type: 'City / Pilgrimage',
-        image: '/assets/rameshwaram.avif',
+        image: '/assets/rameshwaram.webp',
         description: 'Rameswaram is a significant coastal town located on Pamban Island. It is renowned for its spiritual heritage and serves as a major pilgrimage and tourist destination.',
         rating: 4.8,
         details: {
@@ -51,7 +51,7 @@ munnar_place = """
         id: 'munnar',
         name: 'Munnar Hill Station',
         type: 'Hill Station',
-        image: '/assets/munnar.avif',
+        image: '/assets/munnar.webp',
         description: 'Munnar, a prominent hill station in the Idukki district of Kerala, is well-regarded for its colonial history, mist-covered valleys, and sprawling emerald-green tea plantations.',
         rating: 4.9,
         details: {
@@ -85,7 +85,7 @@ alleppey_place = """
         id: 'alleppey',
         name: 'Alleppey (Alappuzha)',
         type: 'Backwaters / Coastal Town',
-        image: '/assets/kerala1.avif',
+        image: '/assets/kerala1.webp',
         description: 'Famously dubbed the "Venice of the East", Alleppey is internationally renowned for its intricate network of backwaters, canals, and houseboat cruises.',
         rating: 4.8,
         details: {

@@ -195,13 +195,13 @@ export function DestinationOverview() {
         <div className="absolute inset-0 z-20 flex flex-col justify-end pt-32 pb-16 px-6 max-w-7xl mx-auto">
           <div className="flex flex-wrap items-center gap-2 text-white/80 text-base md:text-lg font-medium mb-4">
             <Link to="/" className="hover:text-white transition-colors">Home</Link>
-            <ChevronRight className="w-4 h-4" />
+            <ChevronRight className="w-4 h-4 relative top-[-7px] md:top-0" />
             <Link to={(() => {
               const northCities = ['shirdi', 'varanasi', 'ayodhya', 'guwahati', 'shillong', 'cherrapunji', 'kasi', 'prayagraj'];
               return northCities.some(k => (city || '').includes(k)) ? '/north-india-tour-packages' : '/south-india-package';
             })()} className="hover:text-white transition-colors">Destinations</Link>
-            <ChevronRight className="w-4 h-4" />
-            <span className="text-white">{dest.name}</span>
+            <ChevronRight className="w-4 h-4 relative top-[-7px] md:top-0" />
+            <span className="text-white relative top-[-7px] md:top-0">{dest.name}</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-display font-bold text-white max-w-4xl leading-tight">
             {dest.name}
@@ -430,14 +430,12 @@ export function DestinationOverview() {
                       {/* Action Buttons */}
                       <div className="mt-auto pt-4 border-t border-slate-100 flex flex-col gap-3">
                         <div className="flex flex-col sm:flex-row items-center gap-2">
-                          <a
-                            href="https://wa.me/917397329776?text=Hi%20Logaa%20Holidays%2C%20I%20would%20like%20to%20know%20more%20about%20your%20tour%20packages."
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="bg-[#48c9b0] text-white px-8 py-3 rounded-full font-bold hover:bg-[#3ba893] transition-colors tracking-wide text-lg inline-flex items-center justify-center"
+                          <Link
+                            to="/contact"
+                            className="w-full sm:flex-1 text-center bg-[#48c9b0] text-white text-[13px] font-bold py-2.5 rounded-xl hover:bg-[#3ba893] transition-colors"
                           >
                             Enquire Now
-                          </a>
+                          </Link>
                           <Link
                             to={getPackageLink(pkg)}
                             className="w-full sm:flex-1 text-center bg-[#0B2515] text-white text-[13px] font-bold py-2.5 rounded-xl hover:bg-[#0c593a] transition-colors"

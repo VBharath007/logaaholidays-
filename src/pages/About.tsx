@@ -33,9 +33,9 @@ export function About() {
                             About Us
                         </h1>
                         <div className="flex items-center justify-center gap-2 text-sm font-medium text-white/90 bg-white/10 backdrop-blur-md px-6 py-3 rounded-full border border-white/20 mx-auto w-fit ">
-                            <Link to="/" className="hover:text-white transition-colors">Home</Link>
-                            <ChevronRight className="w-4 h-4" />
-                            <span className="text-white font-bold">About Us</span>
+                            <Link to="/" className="hover:text-white transition-colors relative top-[6px] md:top-0">Home</Link>
+                            <ChevronRight className="w-4 h-4 relative top-[-6px] md:top-0" />
+                            <span className="text-white font-bold relative top-[-6px] md:top-0">About Us</span>
                         </div>
                     </motion.div>
                 </div>

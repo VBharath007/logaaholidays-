@@ -16,22 +16,22 @@ updates = {
     
     # South India
     26: '/assets/generated/ramanathaswamy_temple.png',
-    27: '/assets/kerala1.avif',
+    27: '/assets/kerala1.webp',
     28: '/assets/generated/kanyakumari_beach.png',
-    29: '/assets/tamilnadu1.avif',
+    29: '/assets/tamilnadu1.webp',
     30: '/assets/generated/vivekananda_rock.png',
     31: '/assets/generated/padmanabhaswamy_temple.png',
     
     # North East
-    32: '/assets/meghalaya1.avif',
-    33: '/assets/assam1.avif',
-    34: '/assets/sikkim1.avif',
-    35: '/assets/mizoram1.avif',
-    36: '/assets/meghalaya1.avif',
-    37: '/assets/assam1.avif',
-    38: '/assets/sikkim1.avif',
-    39: '/assets/mizoram1.avif',
-    40: '/assets/assam1.avif'
+    32: '/assets/meghalaya1.webp',
+    33: '/assets/assam1.webp',
+    34: '/assets/sikkim1.webp',
+    35: '/assets/mizoram1.webp',
+    36: '/assets/meghalaya1.webp',
+    37: '/assets/assam1.webp',
+    38: '/assets/sikkim1.webp',
+    39: '/assets/mizoram1.webp',
+    40: '/assets/assam1.webp'
 }
 
 for pkg_id, new_img in updates.items():

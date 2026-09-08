@@ -1981,7 +1981,7 @@ export const destinationsData: Record<string, any> = {
         id: 'ooty',
         name: 'Ooty',
         type: 'Hill Station',
-        image: '/assets/otty/otty1.avif',
+        image: '/assets/otty/otty1.webp',
         description: 'The "Queen of Hill Stations", Ooty is a beautiful town nestled in the Nilgiri Hills. Famous for its tea plantations, colonial architecture, and the heritage Nilgiri toy train.',
         rating: 4.8,
         details: {

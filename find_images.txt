@@ -1,4 +1,4 @@
-public\assets\munnar.avif
+public\assets\munnar.webp
 public\assets\madurai 63 package\Madurai → Rameswaram → Tiruchendur → Kanyakumari 4 Days  3 Nights Tour Package -card.png
 public\assets\madurai 63 package\Madurai → Rameswaram → Tiruchendur → Kanyakumari 4 Days  3 Nights Tour Package.png
 public\assets\madurai 63 package\1918x642\Madurai → Kodaikanal → Munnar 4 Days  3 Nights Tour Package.png

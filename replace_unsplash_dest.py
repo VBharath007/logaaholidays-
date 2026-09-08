@@ -6,15 +6,15 @@ with open(file, 'r', encoding='utf-8') as f:
     content = f.read()
 
 pool = [
-    '/assets/kerala1.avif', 
-    '/assets/Tamil Nadu1.avif', 
-    '/assets/himachal.avif', 
-    '/assets/karnataka1.avif',
-    '/assets/maharashtra1.avif',
-    '/assets/manipur1.avif',
-    '/assets/megalaya1.avif',
-    '/assets/Uttar Pradesh1.avif',
-    '/assets/Uttarakhand1.avif'
+    '/assets/kerala1.webp', 
+    '/assets/Tamil Nadu1.webp', 
+    '/assets/himachal.webp', 
+    '/assets/karnataka1.webp',
+    '/assets/maharashtra1.webp',
+    '/assets/manipur1.webp',
+    '/assets/megalaya1.webp',
+    '/assets/Uttar Pradesh1.webp',
+    '/assets/Uttarakhand1.webp'
 ]
 
 def replace_img(match):

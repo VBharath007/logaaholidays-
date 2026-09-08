@@ -209,7 +209,7 @@ export function TestimonialsPage() {
       {/* 1. HERO SECTION */}
       <section className="relative w-full h-[50vh] min-h-[400px] flex overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img loading="lazy" src="/assets/otty/otty1.avif" alt="Ooty" className="w-full h-full object-cover" />
+          <img loading="lazy" src="/assets/otty/otty1.webp" alt="Ooty" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-blue-ocean)]/90 via-[var(--color-blue-ocean)]/70 to-[var(--color-accent-gold)]/80" />
         </div>
 

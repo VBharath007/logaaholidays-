@@ -12,18 +12,18 @@ files_to_update = [
 ]
 
 pool = [
-    '/assets/kerala1.avif',
-    '/assets/Tamil Nadu1.avif',
-    '/assets/himachal.avif',
-    '/assets/karnataka1.avif',
-    '/assets/maharashtra1.avif',
-    '/assets/manipur1.avif',
-    '/assets/megalaya1.avif',
-    '/assets/Mizoram1.avif',
-    '/assets/Nagaland1.avif',
-    '/assets/Tripura1.avif',
-    '/assets/Uttar Pradesh1.avif',
-    '/assets/Uttarakhand1.avif'
+    '/assets/kerala1.webp',
+    '/assets/Tamil Nadu1.webp',
+    '/assets/himachal.webp',
+    '/assets/karnataka1.webp',
+    '/assets/maharashtra1.webp',
+    '/assets/manipur1.webp',
+    '/assets/megalaya1.webp',
+    '/assets/Mizoram1.webp',
+    '/assets/Nagaland1.webp',
+    '/assets/Tripura1.webp',
+    '/assets/Uttar Pradesh1.webp',
+    '/assets/Uttarakhand1.webp'
 ]
 
 def update_files():

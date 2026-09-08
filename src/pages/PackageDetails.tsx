@@ -94,7 +94,7 @@ function renderClickableText(text: string) {
                 parts.forEach((part, i) => {
                     if (part.toLowerCase() === placeName) {
                         newResult.push(
-                            <Link key={`${placeName}-${index}-${i}`} to={url} className="text-[var(--color-blue-ocean)] font-bold hover:underline">
+                            <Link key={`${placeName}-${index}-${i}`} to={url} className="text-slate-600 font-bold hover:text-slate-800 ">
                                 {part}
                             </Link>
                         );
@@ -36348,7 +36348,7 @@ const PackageDetails = () => {
         <div className="bg-[var(--color-bg-luxury)] min-h-screen pb-24 font-sans">
 
             {/* Hero Banner Section */}
-            <div className="relative h-[60vh] md:h-[70vh] w-full overflow-hidden bg-slate-900">
+            <div className="relative h-[72vh] md:h-[74vh] w-full overflow-hidden bg-slate-900">
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30 z-10" />
                 <img loading="lazy"
                     src={(pkg as any).heroImage || pkg.image}

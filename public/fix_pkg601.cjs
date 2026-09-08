@@ -6,7 +6,7 @@ c = c.replace(/};\s*$/, `,
   '601': { 
     id: '601', 
     title: 'Golden Triangle Tour', 
-    image: '/assets/dehli/dehli.avif', 
+    image: '/assets/dehli/dehli.webp', 
     overview: { duration: '5 Nights / 6 Days', destination: 'Delhi, Agra, Jaipur', activities: 'Sightseeing, Heritage', themes: 'Culture & Heritage', transport: 'Private AC Cab' }, 
     priceDetails: { label: 'Starts @', amount: 'Rs. 25000/-', status: 'On Request' }, 
     itinerary: [

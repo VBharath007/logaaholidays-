@@ -3,35 +3,35 @@ const fs = require('fs');
 const packages = [
   {
     title: 'Madurai → Kodaikanal → Munnar 4 Days / 3 Nights Tour Package',
-    image: '/assets/munnar.avif'
+    image: '/assets/munnar.webp'
   },
   {
     title: 'Madurai → Munnar → Vagamon → Thekkady 4 Days / 3 Nights Tour Package',
-    image: '/assets/kerala1.avif'
+    image: '/assets/kerala1.webp'
   },
   {
     title: 'Madurai → Munnar → Thekkady → Kumarakom 4 Days / 3 Nights Tour Package',
-    image: '/assets/kerala6.avif'
+    image: '/assets/kerala6.webp'
   },
   {
     title: 'Madurai → Munnar → Alleppey → Kochi 4 Days / 3 Nights Tour Package',
-    image: '/assets/kerala4.avif'
+    image: '/assets/kerala4.webp'
   },
   {
     title: 'Madurai → Trichy → Thanjavur → Kumbakonam 4 Days / 3 Nights Tour Package',
-    image: '/assets/Tamil Nadu2.avif'
+    image: '/assets/Tamil Nadu2.webp'
   },
   {
     title: 'Madurai → Valparai → Athirappilly → Kochi 4 Days / 3 Nights Tour Package',
-    image: '/assets/kerala3.avif'
+    image: '/assets/kerala3.webp'
   },
   {
     title: 'Madurai → Kodaikanal → Munnar → Thekkady 5 Days / 4 Nights Tour Package',
-    image: '/assets/kerala5.avif'
+    image: '/assets/kerala5.webp'
   },
   {
     title: 'Madurai → Rameswaram → Tiruchendur → Kanyakumari 4 Days / 3 Nights Tour Package',
-    image: '/assets/rameshwaram.avif'
+    image: '/assets/rameshwaram.webp'
   }
 ];
 

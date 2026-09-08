@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { ChevronRight, Clock, Star, MapPin, IndianRupee, Car, Info, ArrowLeft, ShieldCheck, Flame, User } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Clock, Star, MapPin, IndianRupee, Car, Info, ShieldCheck, Flame, User } from 'lucide-react';
 import { destinationsData } from '../data/destinationsData';
 import { packagesDatabase, getPackageLink } from './PackageDetails';
 import { generateSlug } from '../lib/utils';
@@ -140,6 +140,14 @@ export function PlaceDetails() {
 
   // Other places in the same destination (excluding current)
   const otherPlaces = dest.placesToVisit.filter((p: any) => p.id !== placeId);
+  const otherPlacesScrollRef = useRef<HTMLDivElement>(null);
+
+  const scrollOtherPlaces = (direction: number) => {
+    otherPlacesScrollRef.current?.scrollBy({
+      left: direction * 320,
+      behavior: 'smooth'
+    });
+  };
 
   const getCategoryLink = () => {
     const specificTours = ['madurai', 'kanyakumari', 'kerala', 'rameswaram', 'varanasi', 'shirdi', 'ayodhya', 'guwahati', 'shillong', 'cherrapunji', 'pune', 'chennai', 'munnar', 'thekkady', 'alleppey', 'vagamon', 'ooty', 'kodaikanal'];
@@ -166,7 +174,7 @@ export function PlaceDetails() {
     <div className="bg-[var(--color-bg-luxury)] min-h-screen pb-24 font-sans text-slate-800">
       
       {/* Hero Banner Section */}
-      <div className="relative h-[60vh] md:h-[70vh] w-full overflow-hidden bg-slate-900 mb-12">
+      <div className="relative h-[72vh] md:h-[70vh] w-full overflow-hidden bg-slate-900 mb-12">
         <div className="absolute inset-0 bg-black/50 z-10" />
         <img loading="lazy" 
           src={place.image} 
@@ -176,14 +184,14 @@ export function PlaceDetails() {
         <div className="absolute inset-0 z-20 flex flex-col justify-end pt-32 pb-16 px-6 max-w-7xl mx-auto">
           <div className="flex flex-wrap items-center gap-2 text-white/80 text-base md:text-lg font-medium mb-4">
             <Link to="/" className="hover:text-white transition-colors">Home</Link>
-            <ChevronRight className="w-4 h-4" />
-            <span className="text-white/60">{state === 'tamilnadu' ? 'Tamil Nadu' : state}</span>
-            <ChevronRight className="w-4 h-4" />
+            <ChevronRight className="w-4 h-4 relative top-[-7px] md:top-0" />
+            <span className="text-white/60 relative top-[-7px] md:top-0">{state === 'tamilnadu' ? 'Tamil Nadu' : state}</span>
+            <ChevronRight className="w-4 h-4 relative top-[-7px] md:top-0" />
             <Link to={`/destination/${state}/${city}`} className="hover:text-white transition-colors">{dest.name}</Link>
-            <ChevronRight className="w-4 h-4" />
+            <ChevronRight className="w-4 h-4 relative top-[-7px] md:top-0" />
             <Link to={`/places-to-visit/${state}/${city}`} className="hover:text-white transition-colors">Places to Visit in {dest.name}</Link>
-            <ChevronRight className="w-4 h-4" />
-            <span className="text-white">{place.name}</span>
+            <ChevronRight className="w-4 h-4 relative top-[-7px] md:top-0" />
+            <span className="text-white relative top-[-7px] md:top-0">{place.name}</span>
           </div>
           
           <h1 className="text-5xl md:text-6xl font-display font-bold text-white max-w-4xl leading-tight mb-4">
@@ -388,16 +396,33 @@ export function PlaceDetails() {
 
       {/* Other Places Carousel/Grid Section */}
       <div className="max-w-7xl mx-auto px-6 mt-20 pt-16 border-t border-slate-200">
-        <div className="flex justify-between items-center mb-10">
+        <div className="flex flex-col gap-5 mb-8 sm:flex-row sm:items-center sm:justify-between">
           <h2 className="text-3xl font-display font-bold text-slate-800">
             {otherPlaces.length} places to visit & things to do in {dest.name}
           </h2>
-          <Link to={`/places-to-visit/${state}/${city}`} className="text-[var(--color-primary-forest)] font-semibold hover:underline flex items-center gap-1">
-            View all <ChevronRight className="w-4 h-4" />
+          <Link to={`/places-to-visit/${state}/${city}`} className="flex shrink-0 items-center gap-1 text-sm font-semibold text-[var(--color-primary-forest)] hover:underline">
+            View all <ChevronRight className="h-4 w-4" />
           </Link>
         </div>
 
-        <div className="flex overflow-x-auto gap-6 pb-8 snap-x hide-scrollbar">
+        <div className="relative">
+          <button
+            type="button"
+            onClick={() => scrollOtherPlaces(-1)}
+            aria-label="Show previous places"
+            className="absolute left-2 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-lg transition-colors hover:border-[var(--color-primary-forest)] hover:bg-[var(--color-primary-forest)] hover:text-white"
+          >
+            <ChevronLeft className="h-5 w-5" />
+          </button>
+          <button
+            type="button"
+            onClick={() => scrollOtherPlaces(1)}
+            aria-label="Show next places"
+            className="absolute right-2 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-lg transition-colors hover:border-[var(--color-primary-forest)] hover:bg-[var(--color-primary-forest)] hover:text-white"
+          >
+            <ChevronRight className="h-5 w-5" />
+          </button>
+          <div ref={otherPlacesScrollRef} className="flex snap-x gap-6 overflow-x-auto px-14 pb-8 hide-scrollbar">
           {otherPlaces.map((otherPlace: any) => {
             const cityBase = resolvedCity ? resolvedCity.replace('-tourism', '') : '';
             return (
@@ -422,6 +447,7 @@ export function PlaceDetails() {
             </Link>
           );
           })}
+          </div>
         </div>
       </div>
       
