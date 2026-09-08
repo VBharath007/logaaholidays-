@@ -1,0 +1,11 @@
+17948:         return `${days} Days / ${nights} Night${nights > 1 – 's' : ''}`;
+17955:         return `${days} Days ${nights} Night${nights > 1 – 's' : ''}`;
+17966:     newText = newText.replace(/(\d+)\s*[nN]\s*[\/\-–\s]*\s*(\d+)\s*[dD]/g, '$2D / $1N');
+17984:         if (firstKeyword.includes('→') || firstKeyword.includes('–') || firstKeyword.toLowerCase().includes(' to ')) {
+18190:                                 className={`pb-2 px-2 text-sm md:text-base font-bold whitespace-nowrap transition-colors ${activeTab === 'itinerary' – 'text-[var(--color-blue-ocean)] border-b-2 border-[var(--color-blue-ocean)]' : 'text-slate-500 hover:text-slate-800'}`}
+18196:                                 className={`pb-2 px-2 text-sm md:text-base font-bold whitespace-nowrap transition-colors ${activeTab === 'inclusions' – 'text-[var(--color-blue-ocean)] border-b-2 border-[var(--color-blue-ocean)]' : 'text-slate-500 hover:text-slate-800'}`}
+18202:                                 className={`pb-2 px-2 text-sm md:text-base font-bold whitespace-nowrap transition-colors ${activeTab === 'policies' – 'text-[var(--color-blue-ocean)] border-b-2 border-[var(--color-blue-ocean)]' : 'text-slate-500 hover:text-slate-800'}`}
+18351:                                                 Why Choose Logaa Holidays–
+18376:                                             {pkg.policies–.payment || "20% Advance at the time of booking. Balance before departure."}
+18387:                                             {pkg.policies–.cancellation || "Cancellations made 7+ days before: Full refund. Within 3-7 days: 50% refund. Less than 3 days: No refund."}
+18408:                                     <p className="text-sm font-bold text-slate-800 mb-1">Need help booking–</p>

@@ -1,0 +1,229 @@
+import { useState } from 'react';
+import { MapPin, Phone, ChevronRight, Mail, Compass, Heart } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
+const FacebookIcon = ({ className }: { className?: string }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+  </svg>
+);
+
+const InstagramIcon = ({ className }: { className?: string }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+  </svg>
+);
+
+const WhatsAppIcon = ({ className }: { className?: string }) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884" />
+  </svg>
+);
+
+export function Footer() {
+  const [isIntlOpen, setIsIntlOpen] = useState(false);
+  const [isSupportOpen, setIsSupportOpen] = useState(false);
+  const [isHoneymoonOpen, setIsHoneymoonOpen] = useState(false);
+
+  return (
+    <footer
+      className="w-full relative text-slate-800 pt-20 pb-6 overflow-hidden font-body bg-cover bg-bottom bg-no-repeat"
+      style={{ backgroundImage: "url('/assets/footer/fotter.webp')", backgroundColor: "#EFFFF0" }}
+    >
+
+      {/* Background Pattern - very subtle to ensure text visibility */}
+      <div className="absolute top-0 right-0 w-96 h-96 opacity-[0.04] bg-[url('/assets/mandala.webp')] bg-contain bg-no-repeat rotate-45 pointer-events-none invert"></div>
+
+      <div className="max-w-7xl mx-auto px-6 relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+
+        {/* 1. Company Information */}
+        <div className="flex flex-col items-center md:items-start gap-6 text-center md:text-left">
+          <img src="/logo.webp" alt="Logaa Holidays Logo - Trusted Travel Agency and Tour Operator in Madurai" className="w-44" />
+          <p className="text-sm leading-relaxed text-slate-700 px-4 md:px-0 md:pr-4">
+            Logaa Holidays is your trusted travel partner, specializing in Recommended Packages and unforgettable experiences across India and beyond.
+          </p>
+          <div className="flex flex-col items-center md:items-start gap-4 text-sm mt-2">
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-3">
+              <MapPin className="w-5 h-5 text-emerald-600 shrink-0 mt-0 md:mt-0.5" />
+              <span className="text-slate-800">Logaa Holidays<br />T247, Sector T Type, Housing Board,<br />Ellis Nagar, Madurai, TN – 625016</span>
+            </div>
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-3">
+              <Phone className="w-5 h-5 text-emerald-600 shrink-0" />
+              <a href="tel:+917397329776" className="text-slate-800 hover:text-emerald-700 transition-colors">+91 73973 29776</a>
+            </div>
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-3">
+              <WhatsAppIcon className="w-5 h-5 text-[#25D366] shrink-0" />
+              <a href="https://wa.me/917397329776" target="_blank" rel="noopener noreferrer" className="text-slate-800 hover:text-[#25D366] transition-colors">WhatsApp Us</a>
+            </div>
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-3">
+              <Mail className="w-5 h-5 text-emerald-600 shrink-0" />
+              <a href="mailto:logaaholidays@gmail.com" className="text-slate-800 hover:text-emerald-700 transition-colors">logaaholidays@gmail.com</a>
+            </div>
+          </div>
+          <div className="flex items-center justify-center md:justify-start gap-4 mt-2">
+            <a href="https://www.instagram.com/logaaholidays/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-900/5 border border-slate-900/10 flex items-center justify-center text-slate-700 hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#dc2743] hover:to-[#bc1888] hover:border-transparent hover:text-white transition-all shadow-sm">
+              <InstagramIcon className="w-4 h-4" />
+            </a>
+            <a href="https://www.facebook.com/logaaholidays" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-900/5 border border-slate-900/10 flex items-center justify-center text-slate-700 hover:bg-[#1877F2] hover:border-[#1877F2] hover:text-white transition-all shadow-sm">
+              <FacebookIcon className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+
+        {/* 2. Tour Packages / Destinations */}
+        <div className="flex flex-col items-center md:items-start text-center md:text-left">
+          <h4 className="text-slate-900 font-bold text-lg mb-6 uppercase tracking-wider">Destinations</h4>
+          <ul className="flex flex-col items-center md:items-start gap-3 w-full">
+            <li><Link to="/south-india-package" className="flex items-center gap-2 text-slate-700 hover:text-emerald-700 hover:translate-x-1 transition-all"><ChevronRight className="w-4 h-4 text-emerald-600" /> South India</Link></li>
+            <li><Link to="/north-india-tour-packages" className="flex items-center gap-2 text-slate-700 hover:text-emerald-700 hover:translate-x-1 transition-all"><ChevronRight className="w-4 h-4 text-emerald-600" /> North India</Link></li>
+
+            {/* Honeymoon Packages Submenu */}
+            <li className="flex flex-col items-center md:items-start w-full">
+              <button
+                onClick={() => setIsHoneymoonOpen(!isHoneymoonOpen)}
+                className="flex items-center justify-center md:justify-start gap-2 text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all w-full text-center md:text-left"
+              >
+                <ChevronRight className={`w-4 h-4 text-emerald-600 transition-transform duration-300 ${isHoneymoonOpen ? 'rotate-90' : ''}`} />
+                Honeymoon Packages
+              </button>
+
+              <div className={`overflow-hidden transition-all duration-300 ease-in-out w-full ${isHoneymoonOpen ? 'max-h-[500px] opacity-100 mt-2' : 'max-h-0 opacity-0'}`}>
+                <ul className="flex flex-col items-center md:items-start gap-2 md:pl-6 md:border-l border-slate-900/10 md:ml-2">
+                  <li><Link to="/tour-packages/tamil-nadu-honeymoon-packages" className="flex items-center justify-center md:justify-start text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all text-sm py-1">Tamil Nadu</Link></li>
+                  <li><Link to="/tour-packages/kerala-honeymoon-packages" className="flex items-center justify-center md:justify-start text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all text-sm py-1">Kerala</Link></li>
+                  <li><Link to="/tour-packages/karnataka-honeymoon-packages" className="flex items-center justify-center md:justify-start text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all text-sm py-1">Karnataka</Link></li>
+                  <li><Link to="/tour-packages/goa-honeymoon-packages" className="flex items-center justify-center md:justify-start text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all text-sm py-1">Goa</Link></li>
+                  <li><Link to="/tour-packages/kashmir-honeymoon-packages" className="flex items-center justify-center md:justify-start text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all text-sm py-1">Kashmir</Link></li>
+                  <li><Link to="/tour-packages/himachal-honeymoon-packages" className="flex items-center justify-center md:justify-start text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all text-sm py-1">Himachal Pradesh</Link></li>
+                  <li><Link to="/tour-packages/sikkim-darjeeling-honeymoon-packages" className="flex items-center justify-center md:justify-start text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all text-sm py-1">Sikkim & Darjeeling</Link></li>
+                  <li><Link to="/tour-packages/andaman-honeymoon-packages" className="flex items-center justify-center md:justify-start text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all text-sm py-1">Andaman</Link></li>
+                  <li><Link to="/tour-packages/maldives-honeymoon-packages" className="flex items-center justify-center md:justify-start text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all text-sm py-1">Maldives</Link></li>
+                </ul>
+              </div>
+            </li>
+
+            {/* International Packages Submenu */}
+            <li className="flex flex-col items-center md:items-start w-full">
+              <button
+                onClick={() => setIsIntlOpen(!isIntlOpen)}
+                className="flex items-center justify-center md:justify-start gap-2 text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all w-full text-center md:text-left"
+              >
+                <ChevronRight className={`w-4 h-4 text-emerald-600 transition-transform duration-300 ${isIntlOpen ? 'rotate-90' : ''}`} />
+                International Packages
+              </button>
+
+              <div className={`overflow-hidden transition-all duration-300 ease-in-out w-full ${isIntlOpen ? 'max-h-64 opacity-100 mt-2' : 'max-h-0 opacity-0'}`}>
+                <ul className="flex flex-col items-center md:items-start gap-2 md:pl-6 md:border-l border-slate-900/10 md:ml-2">
+                  <li><Link to="/destination/international/malaysia-tourism" className="flex items-center justify-center md:justify-start text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all text-sm py-1">Malaysia</Link></li>
+                  <li><Link to="/destination/international/singapore-tourism" className="flex items-center justify-center md:justify-start text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all text-sm py-1">Singapore</Link></li>
+                  <li><Link to="/destination/international/bali-tourism" className="flex items-center justify-center md:justify-start text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all text-sm py-1">Bali</Link></li>
+                  <li><Link to="/destination/international/thailand-tourism" className="flex items-center justify-center md:justify-start text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all text-sm py-1">Thailand</Link></li>
+                  <li><Link to="/destination/international/sri-lanka-tourism" className="flex items-center justify-center md:justify-start text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all text-sm py-1">Sri Lanka</Link></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        {/* 3. Useful Links */}
+        <div className="flex flex-col items-center md:items-start text-center md:text-left">
+          <h4 className="text-slate-900 font-bold text-lg mb-6 uppercase tracking-wider">Useful Links</h4>
+          <ul className="flex flex-col items-center md:items-start gap-3 w-full">
+            {/* Support Submenu */}
+
+            <li><Link to="/about" className="flex items-center justify-center md:justify-start gap-2 text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all"><ChevronRight className="w-4 h-4 text-emerald-600" /> About Us</Link></li>
+            <li><Link to="/contact" className="flex items-center justify-center md:justify-start gap-2 text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all"><ChevronRight className="w-4 h-4 text-emerald-600" /> Contact Us</Link></li>
+            <li><Link to="/testimonials" className="flex items-center justify-center md:justify-start gap-2 text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all"><ChevronRight className="w-4 h-4 text-emerald-600" /> Testimonials</Link></li>
+            <li><Link to="/gallery" className="flex items-center justify-center md:justify-start gap-2 text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all"><ChevronRight className="w-4 h-4 text-emerald-600" /> Gallery</Link></li>
+
+            <li className="flex flex-col items-center md:items-start w-full">
+              <button
+                onClick={() => setIsSupportOpen(!isSupportOpen)}
+                className="flex items-center justify-center md:justify-start gap-2 text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all w-full text-center md:text-left"
+              >
+                <ChevronRight className={`w-4 h-4 text-emerald-600 transition-transform duration-300 ${isSupportOpen ? 'rotate-90' : ''}`} />
+                Service
+              </button>
+
+              <div className={`overflow-hidden transition-all duration-300 ease-in-out w-full ${isSupportOpen ? 'max-h-64 opacity-100 mt-2' : 'max-h-0 opacity-0'}`}>
+                <ul className="flex flex-col items-center md:items-start gap-2 md:pl-6 md:border-l border-slate-900/10 md:ml-2">
+                  <li><Link to="/services/car-coach-rental" className="flex items-center justify-center md:justify-start text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all text-sm py-1">Car & Coach Rental</Link></li>
+                  <li><Link to="/services/flight-booking" className="flex items-center justify-center md:justify-start text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all text-sm py-1">Flight Booking</Link></li>
+                  <li><Link to="/services/railway-ticket-booking" className="flex items-center justify-center md:justify-start text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all text-sm py-1">Railway Ticket Booking</Link></li>
+                  <li><Link to="/services/passport-visa-service" className="flex items-center justify-center md:justify-start text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all text-sm py-1">Passport & Visa</Link></li>
+                  <li><Link to="/services/travel-insurance-service" className="flex items-center justify-center md:justify-start text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all text-sm py-1">Travel Insurance</Link></li>
+                </ul>
+              </div>
+            </li>
+
+            <li><Link to="/privacy-policy" className="flex items-center justify-center md:justify-start gap-2 text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all"><ChevronRight className="w-4 h-4 text-emerald-600" /> Privacy Policy</Link></li>
+            <li><Link to="/terms-and-conditions" className="flex items-center justify-center md:justify-start gap-2 text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all"><ChevronRight className="w-4 h-4 text-emerald-600" /> Terms & Conditions</Link></li>
+            <li><Link to="/cancellation-policy" className="flex items-center justify-center md:justify-start gap-2 text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all"><ChevronRight className="w-4 h-4 text-emerald-600" /> Cancellation Policy</Link></li>
+          </ul>
+        </div>
+
+        {/* 4. Our Location */}
+        <div className="flex flex-col items-center md:items-start text-center md:text-left gap-4 -translate-y-2 md:-translate-y-5">
+          <h4 className="text-slate-900 font-bold text-lg mb-1 uppercase tracking-wider">
+            Our Location
+          </h4>
+
+          <div className="w-full h-48 rounded-2xl overflow-hidden border border-slate-900/10 shadow-lg">
+            <iframe
+              title="Logaa Holidays Footer Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.237317385449!2d78.1025417!3d9.9141826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00cf2ea02ad1df%3A0xe40514c1f3d68740!2sLogaa%20Holidays!5e0!3m2!1sen!2sin!4v1786538878701!5m2!1sen!2sin"
+              className="w-full h-full border-0 bg-white"
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          {/* <div className="grid grid-cols-2 gap-3 mt-2 w-full">
+            <a
+              href="https://maps.app.goo.gl/YF4kRXWaSmTd69Gu9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 bg-slate-900/5 border border-slate-900/10 hover:bg-slate-900 hover:text-white text-slate-800 text-xs font-bold py-3 mb-10 rounded-xl transition-all"
+            >
+              <MapPin className="w-3.5 h-3.5 shrink-0" /> Open Map
+            </a>
+            <a
+              href="https://www.google.com/maps/dir/?api=1&destination=Logaa+Holidays,+Ellis+Nagar,+Madurai,+Tamil+Nadu+625016"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 bg-slate-900/5 border border-slate-900/10 hover:bg-slate-900 hover:text-white text-slate-800 text-xs font-bold py-3 mb-10 rounded-xl transition-all"
+            >
+              <Compass className="w-3.5 h-3.5 shrink-0" /> Directions
+            </a>
+          </div> */}
+        </div>
+
+      </div>
+
+      {/* Bottom Copyright Bar */}
+      <div className="w-full h-24 md:h-32 mt-8 md:mt-12"></div>
+
+      {/* Bottom Copyright Bar */}
+      <div className="absolute bottom-12 md:bottom-7 left-0 w-full z-10 px-6 md:px-24">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between gap-3 text-center md:text-left">
+
+          <p className="text-sm font-medium text-white/90 tracking-wide leading-relaxed drop-shadow-md">
+            © {new Date().getFullYear()} Logaa Holidays. All rights reserved.
+          </p>
+
+          <p className="text-sm font-medium text-white/90 tracking-wide flex flex-wrap items-center justify-center md:justify-end gap-1.5 leading-relaxed drop-shadow-md">
+            <span>Logaa Holidays – Trusted Tour & Travel Agency</span>
+
+            <Heart className="w-4 h-4 text-emerald-400 fill-emerald-400 shrink-0 mx-0.5" />
+
+            <span>in Madurai</span>
+          </p>
+
+        </div>
+      </div>
+
+    </footer>
+  );
+}
