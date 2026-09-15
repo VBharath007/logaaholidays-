@@ -119,7 +119,7 @@ export function NewHero() {
       <span className="text-sm md:text-base font-bold tracking-[0.3em] text-[#F28C28] uppercase mb-4 md:mb-6">
         Welcome to Logaa Holidays
       </span>
-      <h1 className="text-5xl md:text-7xl lg:text-[7.5rem] font-display font-extrabold text-white leading-[1.05] tracking-tight">
+      <h1 className="text-5xl sm:text-6xl md:text-7xl font-display font-extrabold text-white leading-[1.05] tracking-tight">
         Madurai <br className="md:hidden" />
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F28C28] to-[#fde047]">No. 1</span> <br />
         Travel Agent

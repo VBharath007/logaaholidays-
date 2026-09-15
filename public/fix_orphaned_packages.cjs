@@ -30,7 +30,7 @@ const packageHeaders = {
     themes: 'Nature & Adventure, Culture & Heritage',
   },
   '2028': {
-    title: 'Madurai to Rameshwaram One Day Tour Package',
+    title: 'Madurai to RameswaramOne Day Tour Package',
     image: '/assets/madurai%2063%20package/322x372/madurairameswaram1day.png',
     heroImage: '/assets/madurai%2063%20package/1918x642/maduraionedaypackage.png',
     duration: 'One Day',

@@ -1,9 +1,11 @@
-﻿import { useParams, Link } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { useSEO } from '../hooks/useSEO';
 import { destinationsData } from '../data/destinationsData';
 import { generateSlug } from '../lib/utils';
 import { Calendar, MapPin, Clock, CheckCircle2, XCircle, Info, ChevronRight, Phone, Home, Star, MessageSquare, ShieldCheck, User, Mail, Globe2, CreditCard, Users2, Send, Compass, Car } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { Breadcrumb } from '../components/Breadcrumb';
+
 
 // For now, we hardcode the sample Shirdi package data to serve as the template.
 // In the future, this can be fetched from an API or a central data store based on the packageId.
@@ -80,6 +82,9 @@ function renderClickableText(text: string) {
     const cleanedText = cleanText(text);
     let result: React.ReactNode[] = [cleanedText];
 
+
+
+
     sortedPlaceNames.forEach(placeName => {
         const url = lowerPlaceMap[placeName];
         // Create regex that matches placeName with word boundaries, case-insensitive
@@ -112,9 +117,29 @@ function renderClickableText(text: string) {
     return result;
 }
 
+const countryCodes = [
+  { name: 'India', code: '+91' },
+  { name: 'United States', code: '+1' },
+  { name: 'United Kingdom', code: '+44' },
+  { name: 'United Arab Emirates', code: '+971' },
+  { name: 'Singapore', code: '+65' },
+  { name: 'Malaysia', code: '+60' },
+  { name: 'Australia', code: '+61' },
+  { name: 'Canada', code: '+1' },
+  { name: 'Germany', code: '+49' },
+  { name: 'France', code: '+33' },
+  { name: 'Japan', code: '+81' },
+];
+
 const PackageInquiryForm = ({ packageTitle }: { packageTitle: string }) => {
+    const [countryCode, setCountryCode] = useState('+91');
     const [focusedField, setFocusedField] = useState<string | null>(null);
     const [submitted, setSubmitted] = useState(false);
+
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState<
+        'idle' | 'success' | 'error'
+    >('idle');
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -123,7 +148,7 @@ const PackageInquiryForm = ({ packageTitle }: { packageTitle: string }) => {
         const departure = data.get('departure')?.toString().trim() || '';
         const name = data.get('name')?.toString().trim() || '';
         const phone = data.get('phone')?.toString().trim() || '';
-        
+
         if (departure.length < 3) {
             alert('Departure City must be at least 3 characters long.');
             return;
@@ -137,7 +162,7 @@ const PackageInquiryForm = ({ packageTitle }: { packageTitle: string }) => {
             return;
         }
 
-        
+
         const now = new Date();
         const submissionTime = now.toLocaleString('en-IN', {
             day: '2-digit', month: 'short', year: 'numeric',
@@ -159,7 +184,7 @@ const PackageInquiryForm = ({ packageTitle }: { packageTitle: string }) => {
 
         const whatsappNumber = '917397329776';
         const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
-        
+
         window.open(whatsappUrl, '_blank');
         setSubmitted(true);
     };
@@ -199,87 +224,483 @@ const PackageInquiryForm = ({ packageTitle }: { packageTitle: string }) => {
             <div className="h-1 w-full bg-gradient-to-r from-transparent via-[var(--color-brand-orange)] to-transparent opacity-50"></div>
 
             <div className="p-7 relative z-10">
-                <h3 className="text-2xl font-display font-bold text-white mb-1">Plan Your Trip</h3>
-                <p className="text-xs text-white/60 mb-6">Customize your {packageTitle} experience.</p>
+                <h3 className="text-2xl font-display font-bold text-white mb-1">
+                    Plan Your Trip
+                </h3>
+
+                <p className="text-xs text-white/60 mb-6">
+                    Customize your {packageTitle} experience.
+                </p>
 
                 <form onSubmit={handleSubmit} className="space-y-3.5">
 
                     <div className="space-y-3.5">
+
                         {/* Departure */}
                         <div className="relative group">
-                            <MapPin className={iconClasses('departure')} />
-                            <input type="text" name="departure" placeholder="Departure City" minLength={3} onInput={(e) => { e.currentTarget.value = e.currentTarget.value.replace(/[^a-zA-Z\\s]/g, "") }} className={inputClasses('departure')} onFocus={() => setFocusedField('departure')} onBlur={() => setFocusedField(null)} required />
+                            <label
+                                htmlFor="departure"
+                                className="block text-white/90 text-xs font-semibold mb-1.5"
+                            >
+                                Departure City
+                            </label>
+
+                            <div className="relative">
+                                <MapPin className={iconClasses('departure')} />
+
+                                <input
+                                    id="departure"
+                                    type="text"
+                                    name="departure"
+                                    placeholder="Enter departure city"
+                                    minLength={3}
+                                    onInput={(e) => {
+                                        e.currentTarget.value =
+                                            e.currentTarget.value.replace(
+                                                /[^a-zA-Z\s]/g,
+                                                ""
+                                            );
+                                    }}
+                                    className={inputClasses('departure')}
+                                    onFocus={() => setFocusedField('departure')}
+                                    onBlur={() => setFocusedField(null)}
+                                    required
+                                />
+                            </div>
                         </div>
 
                         {/* Travel Date */}
                         <div className="relative group">
-                            <Calendar className={iconClasses('date')} />
-                            <input type="date" name="date" className={inputClasses('date') + " [color-scheme:dark]"} onFocus={() => setFocusedField('date')} onBlur={() => setFocusedField(null)} required />
+                            <label
+                                htmlFor="date"
+                                className="block text-white/90 text-xs font-semibold mb-1.5"
+                            >
+                                Travel Date
+                            </label>
+
+                            <div className="relative">
+                                <Calendar className={iconClasses('date')} />
+
+                                <input
+                                    id="date"
+                                    type="date"
+                                    name="date"
+                                    min={new Date().toISOString().split("T")[0]}
+                                    className={
+                                        inputClasses('date') +
+                                        " [color-scheme:dark]"
+                                    }
+                                    onFocus={() => setFocusedField('date')}
+                                    onBlur={() => setFocusedField(null)}
+                                    required
+                                />
+                            </div>
                         </div>
 
                         {/* Budget */}
                         <div className="relative group">
-                            <CreditCard className={iconClasses('budget')} />
-                            <select name="budget" className={inputClasses('budget') + " appearance-none"} onFocus={() => setFocusedField('budget')} onBlur={() => setFocusedField(null)} required>
-                                <option value="" className="bg-[var(--color-deep-teal)] text-white">Budget Level...</option>
-                                <option value="Economy" className="bg-[var(--color-deep-teal)] text-white">Economy</option>
-                                <option value="Standard" className="bg-[var(--color-deep-teal)] text-white">Standard</option>
-                                <option value="Luxury" className="bg-[var(--color-deep-teal)] text-white">Luxury</option>
-                            </select>
+                            <label
+                                htmlFor="budget"
+                                className="block text-white/90 text-xs font-semibold mb-1.5"
+                            >
+                                Budget Level
+                            </label>
+
+                            <div className="relative">
+                                <CreditCard className={iconClasses('budget')} />
+
+                                <select
+                                    id="budget"
+                                    name="budget"
+                                    className={
+                                        inputClasses('budget') +
+                                        " appearance-none"
+                                    }
+                                    onFocus={() => setFocusedField('budget')}
+                                    onBlur={() => setFocusedField(null)}
+                                    required
+                                >
+                                    <option
+                                        value=""
+                                        className="bg-[var(--color-deep-teal)] text-white"
+                                    >
+                                        Select budget level
+                                    </option>
+
+                                    <option
+                                        value="Economy"
+                                        className="bg-[var(--color-deep-teal)] text-white"
+                                    >
+                                        Economy
+                                    </option>
+
+                                    <option
+                                        value="Standard"
+                                        className="bg-[var(--color-deep-teal)] text-white"
+                                    >
+                                        Standard
+                                    </option>
+
+                                    <option
+                                        value="Luxury"
+                                        className="bg-[var(--color-deep-teal)] text-white"
+                                    >
+                                        Luxury
+                                    </option>
+                                </select>
+                            </div>
                         </div>
 
-                        {/* Travelers Row */}
-                        <div className="flex gap-2">
-                            <div className="relative flex-1 group">
-                                <Users2 className={iconClasses('adults')} />
-                                <input type="number" name="adults" min="1" placeholder="Adults (12+)" className={inputClasses('adults')} onFocus={() => setFocusedField('adults')} onBlur={() => setFocusedField(null)} required />
+                        {/* Travelers */}
+                        <div className="space-y-3">
+
+                            <p className="text-white/90 text-xs font-semibold">
+                                Travelers
+                            </p>
+
+                            {/* Adults */}
+                            <div className="relative group">
+                                <label
+                                    htmlFor="adults"
+                                    className="block text-white/80 text-xs mb-1.5"
+                                >
+                                    Adults <span className="text-white/50">(12+)</span>
+                                </label>
+
+                                <div className="relative">
+                                    <Users2 className={iconClasses('adults')} />
+
+                                    <input
+                                        id="adults"
+                                        type="number"
+                                        name="adults"
+                                        min="1"
+                                        placeholder="Number of adults"
+                                        className={inputClasses('adults')}
+                                        onFocus={() => setFocusedField('adults')}
+                                        onBlur={() => setFocusedField(null)}
+                                        required
+                                    />
+                                </div>
                             </div>
-                            <div className="relative flex-1">
-                                <input type="number" name="child" min="0" placeholder="Child (2-12)" className="w-full bg-white/5 px-3 py-3.5 rounded-xl border border-white/10 outline-none text-sm font-medium text-white placeholder-white/60 hover:bg-white/10 focus:border-white/30 focus:bg-white/10 transition-colors" />
+
+                            {/* Children */}
+                            <div className="relative group">
+                                <label
+                                    htmlFor="child"
+                                    className="block text-white/80 text-xs mb-1.5"
+                                >
+                                    Children <span className="text-white/50">(2–11)</span>
+                                </label>
+
+                                <input
+                                    id="child"
+                                    type="number"
+                                    name="child"
+                                    min="0"
+                                    placeholder="Number of children"
+                                    className="w-full bg-white/5 px-3 py-3.5 rounded-xl border border-white/10 outline-none text-sm font-medium text-white placeholder-white/60 hover:bg-white/10 focus:border-white/30 focus:bg-white/10 transition-colors"
+                                />
                             </div>
-                            <div className="relative flex-1">
-                                <input type="number" name="infant" min="0" placeholder="Infant (0-2)" className="w-full bg-white/5 px-3 py-3.5 rounded-xl border border-white/10 outline-none text-sm font-medium text-white placeholder-white/60 hover:bg-white/10 focus:border-white/30 focus:bg-white/10 transition-colors" />
+
+                            {/* Infants */}
+                            <div className="relative group">
+                                <label
+                                    htmlFor="infant"
+                                    className="block text-white/80 text-xs mb-1.5"
+                                >
+                                    Infants <span className="text-white/50">(Under 2)</span>
+                                </label>
+
+                                <input
+                                    id="infant"
+                                    type="number"
+                                    name="infant"
+                                    min="0"
+                                    placeholder="Number of infants"
+                                    className="w-full bg-white/5 px-3 py-3.5 rounded-xl border border-white/10 outline-none text-sm font-medium text-white placeholder-white/60 hover:bg-white/10 focus:border-white/30 focus:bg-white/10 transition-colors"
+                                />
                             </div>
+
                         </div>
 
                         {/* Name */}
                         <div className="relative group">
-                            <User className={iconClasses('name')} />
-                            <input type="text" name="name" placeholder="Full Name" minLength={3} onInput={(e) => { e.currentTarget.value = e.currentTarget.value.replace(/[^a-zA-Z\s]/g, '') }} className={inputClasses('name')} onFocus={() => setFocusedField('name')} onBlur={() => setFocusedField(null)} required />
+                            <label
+                                htmlFor="name"
+                                className="block text-white/90 text-xs font-semibold mb-1.5"
+                            >
+                                Full Name
+                            </label>
+
+                            <div className="relative">
+                                <User className={iconClasses('name')} />
+
+                                <input
+                                    id="name"
+                                    type="text"
+                                    name="name"
+                                    placeholder="Enter your full name"
+                                    minLength={3}
+                                    onInput={(e) => {
+                                        e.currentTarget.value =
+                                            e.currentTarget.value.replace(
+                                                /[^a-zA-Z\s]/g,
+                                                ''
+                                            );
+                                    }}
+                                    className={inputClasses('name')}
+                                    onFocus={() => setFocusedField('name')}
+                                    onBlur={() => setFocusedField(null)}
+                                    required
+                                />
+                            </div>
                         </div>
 
                         {/* Email */}
                         <div className="relative group">
-                            <Mail className={iconClasses('email')} />
-                            <input type="email" name="email" placeholder="Email Address" className={inputClasses('email')} onFocus={() => setFocusedField('email')} onBlur={() => setFocusedField(null)} required />
+                            <label
+                                htmlFor="email"
+                                className="block text-white/90 text-xs font-semibold mb-1.5"
+                            >
+                                Email Address
+                            </label>
+
+                            <div className="relative">
+                                <Mail className={iconClasses('email')} />
+
+                                <input
+                                    id="email"
+                                    type="email"
+                                    name="email"
+                                    placeholder="Enter your email address"
+                                    className={inputClasses('email')}
+                                    onFocus={() => setFocusedField('email')}
+                                    onBlur={() => setFocusedField(null)}
+                                    required
+                                />
+                            </div>
                         </div>
 
                         {/* Phone */}
-                        <div className="relative flex gap-2 group">
-                            <div className="relative w-20 shrink-0">
-                                <Globe2 className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-white/40" />
-                                <input type="text" defaultValue="+91" className="w-full bg-white/5 pl-8 pr-2 py-3.5 rounded-xl border border-white/10 outline-none text-sm font-medium text-white text-center" />
-                            </div>
-                            <div className="relative flex-1">
-                                <Phone className={iconClasses('phone')} />
-                                <input type="tel" name="phone" placeholder="Phone Number" pattern="\d{10}" maxLength={10} onInput={(e) => { e.currentTarget.value = e.currentTarget.value.replace(/\D/g, '').slice(0, 10) }} className={inputClasses('phone')} onFocus={() => setFocusedField('phone')} onBlur={() => setFocusedField(null)} required />
+                        <div className="relative group">
+                            <label
+                                htmlFor="phone"
+                                className="block text-white/90 text-xs font-semibold mb-1.5"
+                            >
+                                Phone Number <span className="text-red-400">*</span>
+                            </label>
+
+                            {/* ONE SINGLE BOX */}
+                            <div
+                                className={`
+      relative flex items-center w-full
+      rounded-xl
+      border
+      overflow-hidden
+      transition-all duration-300
+      ${focusedField === 'phone'
+                                        ? 'border-[var(--color-brand-orange)] ring-1 ring-[var(--color-brand-orange)]/20'
+                                        : 'border-white/10'
+                                    }
+      bg-white/5
+    `}
+                            >
+                                {/* COUNTRY CODE */}
+                             <select
+  value={countryCode}
+  onChange={(e) => setCountryCode(e.target.value)}
+  aria-label="Country code"
+  className="
+    h-full
+    w-[74px]
+    shrink-0
+    appearance-none
+    bg-transparent
+    border-0
+    outline-none
+    ring-0
+    text-white
+    text-sm
+    sm:text-base
+    font-semibold
+    leading-none
+    text-center
+    cursor-pointer
+    focus:outline-none
+    focus:ring-0
+    focus:border-0
+    px-0
+    py-0
+  "
+>
+  {countryCodes.map((country) => (
+    <option
+      key={`${country.name}-${country.code}`}
+      value={country.code}
+      className="bg-slate-900 text-white"
+    >
+      {country.code}
+    </option>
+  ))}
+</select>
+ 
+
+                                {/* DIVIDER */}
+                                <span
+                                    className={`
+        block
+        w-px
+        h-7
+        shrink-0
+        ${focusedField === 'phone'
+                                            ? 'bg-[var(--color-brand-orange)]/40'
+                                            : 'bg-white/15'
+                                        }
+      `}
+                                />
+
+                                {/* PHONE NUMBER */}
+                                <div className="relative flex-1 min-w-0 h-[58px]">
+                                    <Phone
+                                        className="
+          absolute
+          left-3
+          top-1/2
+          -translate-y-1/2
+          w-4
+          h-4
+          text-white/40
+          pointer-events-none
+        "
+                                    />
+
+                                    <input
+                                        id="phone"
+                                        type="tel"
+                                        name="phone"
+                                        placeholder="Enter 10 digit number"
+                                        pattern="[0-9]{10}"
+                                        maxLength={10}
+                                        inputMode="numeric"
+                                        onInput={(e) => {
+                                            e.currentTarget.value = e.currentTarget.value
+                                                .replace(/\D/g, '')
+                                                .slice(0, 10);
+                                        }}
+                                        className="
+          block
+          w-full
+          h-full
+          bg-transparent
+          border-0
+          outline-none
+          ring-0
+          appearance-none
+          text-white
+          placeholder-white/40
+          text-sm
+          sm:text-base
+          font-medium
+          pl-10
+          pr-4
+          focus:border-0
+          focus:outline-none
+          focus:ring-0
+        "
+                                        onFocus={() => setFocusedField('phone')}
+                                        onBlur={() => setFocusedField(null)}
+                                        required
+                                    />
+                                </div>
                             </div>
                         </div>
 
                         {/* Requirements */}
                         <div className="relative mt-2 group">
-                            <MessageSquare className={`absolute left-4 top-4 w-4 h-4 transition-all duration-300 ${focusedField === 'req' ? 'text-[var(--color-leaf-green)] scale-110' : 'text-white/40'}`} />
-                            <textarea rows={3} name="req" placeholder="Special Requirements..." className={`w-full bg-white/5 pl-11 pr-4 py-3.5 rounded-xl border transition-all duration-300 outline-none text-sm font-medium text-white placeholder-white/40 resize-none ${focusedField === 'req' ? 'border-[var(--color-leaf-green)] bg-white/10' : 'border-white/10 hover:border-white/20 hover:bg-white/10'}`} onFocus={() => setFocusedField('req')} onBlur={() => setFocusedField(null)}></textarea>
+
+                            <label
+                                htmlFor="req"
+                                className="block text-white/90 text-xs font-semibold mb-1.5"
+                            >
+                                Special Requirements
+                            </label>
+
+                            <div className="relative">
+
+                                <MessageSquare
+                                    className={`absolute left-4 top-4 w-4 h-4 transition-all duration-300 ${focusedField === 'req'
+                                        ? 'text-[var(--color-leaf-green)] scale-110'
+                                        : 'text-white/50'
+                                        }`}
+                                />
+
+                                <textarea
+                                    id="req"
+                                    rows={3}
+                                    name="req"
+                                    placeholder="Tell us about your requirements"
+                                    className={`w-full bg-white/5 pl-11 pr-4 py-3.5 rounded-xl border transition-all duration-300 outline-none text-sm font-medium text-white placeholder-white/60 resize-none ${focusedField === 'req'
+                                        ? 'border-[var(--color-leaf-green)] bg-white/10'
+                                        : 'border-white/10 hover:border-white/20 hover:bg-white/10'
+                                        }`}
+                                    onFocus={() => setFocusedField('req')}
+                                    onBlur={() => setFocusedField(null)}
+                                />
+
+                            </div>
                         </div>
+
                     </div>
 
-                    <button type="submit" className="group relative w-full overflow-hidden rounded-xl bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold py-4 mt-4 transition-all duration-300">
+                    {/* Submit */}
+                    <button
+                        type="submit"
+                        disabled={isSubmitting}
+                        className="group relative w-full overflow-hidden rounded-xl bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold py-4 mt-4 transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
+                    >
+
                         <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-brand-orange)] to-rose-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
                         <div className="relative flex items-center justify-center gap-2">
-                            <Send className="w-4 h-4 group-hover:animate-bounce" />
-                            <span>Submit Enquiry</span>
+
+                            {isSubmitting ? (
+                                <>
+                                    <span
+                                        className="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin"
+                                        aria-hidden="true"
+                                    />
+                                    <span>Sending...</span>
+                                </>
+                            ) : (
+                                <>
+                                    <Send className="w-4 h-4 group-hover:animate-bounce" />
+                                    <span>Submit Enquiry</span>
+                                </>
+                            )}
+
                         </div>
                     </button>
+
+                    {/* Status */}
+                    <div
+                        aria-live="polite"
+                        aria-atomic="true"
+                        className="mt-3"
+                    >
+                        {submitStatus === 'success' && (
+                            <div className="rounded-xl border border-green-400/30 bg-green-500/10 px-4 py-3 text-sm text-green-200">
+                                Your enquiry has been sent successfully.
+                            </div>
+                        )}
+
+                        {submitStatus === 'error' && (
+                            <div className="rounded-xl border border-red-400/30 bg-red-500/10 px-4 py-3 text-sm text-red-200">
+                                Something went wrong. Please try again.
+                            </div>
+                        )}
+                    </div>
+
                 </form>
             </div>
         </div>
@@ -476,7 +897,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "The package highlights include Golden Temple and Bylakuppe visit, Kaveri Nisargadhama, Dubare Elephant Camp, Abbey Falls, Raja’s Seat, Namdroling Monastery."
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Coorg Honeymoon Package – 2 Nights / 3 Days | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Premium Coorg Honeymoon Package – 2 Nights / 3 Days. Covering Mysore to Mysore in 2 Nights / 3 Days",
@@ -683,7 +1104,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "The package highlights include Mysore Palace and Chamundi Hills, Brindavan Gardens, Golden Temple, Bylakuppe, Nisargadhama and Dubare, Abbey Falls and Raja’s Seat, Mysore Palace."
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Mysore and Coorg Honeymoon Package – 3 Nights / | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Premium Mysore and Coorg Honeymoon Package – 3 Nights / 4 Days. Covering Mysore to Mysore in 3 Nights / 4",
@@ -904,7 +1325,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "The package highlights include Abbey Falls and Raja’s Seat, Belur and Halebidu heritage sites, Mullayanagiri Peak, Baba Budangiri, Hirekolale Lake, Namdroling Monastery."
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Coorg and Chikmagalur Honeymoon – 4 Nights / 5 | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Premium Coorg and Chikmagalur Honeymoon – 4 Nights / 5 Days. Covering Mysore to Bangalore in 4 Nights / 5",
@@ -1013,7 +1434,7 @@ export const packagesDatabase: Record<string, any> = {
                     "• Candlelight dinner",
                     "• Flower decoration",
                     "• Honeymoon cake",
-                    "• Couple photoshoot",
+                    "• Couple Photoshoot",
                     "Overnight stay in Chikmagalur."
                 ]
             },
@@ -1136,7 +1557,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "The package highlights include Mysore Palace and Brindavan Gardens, Golden Temple and Dubare, Abbey Falls and Raja’s Seat, Belur and Halebidu, Mullayanagiri and Baba Budangiri, Namdroling Monastery."
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Karnataka Honeymoon Package – 5 Nights / 6 Days | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Premium Karnataka Honeymoon Package – 5 Nights / 6 Days. Covering Bangalore to Bangalore in 5 Nights / 6",
@@ -1155,7 +1576,7 @@ export const packagesDatabase: Record<string, any> = {
         "overview": {
             "duration": "4 Nights / 5 Days",
             "destination": "Goa Arrival – North Goa – South Goa – Couple Leisure – Departure",
-            "activities": "Sightseeing, Beaches, Couple Leisure, Sunset Cruise",
+            "activities": "Sightseeing, Beaches, Couple Leisure, Sunset",
             "themes": "Honeymoon, Romantic, Beaches and Islands"
         },
         "priceDetails": {
@@ -1225,7 +1646,7 @@ export const packagesDatabase: Record<string, any> = {
                     "• Candlelight dinner",
                     "• Beachside dinner",
                     "• Couple photoshoot",
-                    "• Sunset cruise",
+                    "• Sunset",
                     "• Yacht experience",
                     "• Couple spa",
                     "• Water sports",
@@ -1265,7 +1686,6 @@ export const packagesDatabase: Record<string, any> = {
             "❌ Lunch and dinner unless included",
             "❌ Entry tickets",
             "❌ Water sports",
-            "❌ Cruise and casino charges",
             "❌ Guide charges",
             "❌ Couple activities unless included",
             "❌ Personal expenses",
@@ -1283,7 +1703,7 @@ export const packagesDatabase: Record<string, any> = {
             "Dedicated romantic leisure day",
             "Optional candlelight dinner",
             "Optional couple photoshoot",
-            "Optional sunset cruise",
+            "Optional sunset",
             "Beach and resort leisure"
         ],
         "keywords": "Goa honeymoon package 4 nights 5 days, Goa romantic package for couples, Goa couple tour 5 days, Goa honeymoon resort package, Goa honeymoon with candlelight dinner, Goa honeymoon package from Tamil Nadu, Goa honeymoon trip from Madurai, Goa couple package from Chennai, Luxury Goa honeymoon package",
@@ -1347,7 +1767,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "ये experiences विशेष रूप से शामिल किए जाने तक optional हैं। Water sports; Cruise and casino charges को exclusions के रूप में सूचीबद्ध किया गया है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Goa Honeymoon Package – 4 Nights / 5 Days | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Goa Honeymoon Package – 4 Nights / 5 Days. Covering Goa Arrival to Departure in 4 Nights / 5 Days",
@@ -1358,7 +1778,7 @@ export const packagesDatabase: Record<string, any> = {
     },
 
     '3094': {
-        
+
         "seo": {
             "metaTitle": "Coorg and Chikmagalur Tour – 4 Nights / 5 Days | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Coorg and Chikmagalur Tour – 4 Nights / 5 Days. Covering Coorg, Hassan, Belur, Halebidu, Chikmagalur to",
@@ -1545,7 +1965,7 @@ export const packagesDatabase: Record<string, any> = {
     },
 
     '3095': {
-        
+
         "seo": {
             "metaTitle": "Hampi and Badami Heritage Tour – 4 Nights / 5 | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Hampi and Badami Heritage Tour – 4 Nights / 5 Days. Covering Hospet, Hampi, Aihole, Pattadakal, Badami to",
@@ -1638,7 +2058,7 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Hampi Badami heritage tour, Aihole Pattadakal tour package, Karnataka heritage tour, UNESCO heritage sites India, 4 Nights 5 Days Hampi tour",
         "seoTitle": "Hampi and Badami Heritage Tour - 4 Nights 5 Days | Logaa Holidays",
         "seoDescription": "Discover the ancient wonders of Hampi, Badami, Aihole, and Pattadakal in this 4 Nights / 5 Days heritage tour package in Karnataka.",
-         "faq": [
+        "faq": [
             {
                 "question": "What places are covered in the Hampi and Badami Heritage Tour - 4 Nights / 5 Days?",
                 "questionTamil": "ஹம்பி மற்றும் பாதாமி பாரம்பரிய சுற்றுலா - 4 இரவுகள் / 5 நாட்களில் எந்த இடங்கள் சேர்க்கப்பட்டுள்ளன?",
@@ -1731,7 +2151,7 @@ export const packagesDatabase: Record<string, any> = {
     },
 
     '3096': {
-        
+
         "seo": {
             "metaTitle": "Udupi, Murudeshwar and Gokarna Tour – 4 Nights | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Udupi, Murudeshwar and Gokarna Tour – 4 Nights / 5 Days. Covering Mangalore, Udupi",
@@ -1823,7 +2243,7 @@ export const packagesDatabase: Record<string, any> = {
         "keywords": "Udupi Murudeshwar Gokarna tour, Karnataka coastal tour package, Mangalore to Gokarna package, Karnataka temple tour, Logaa Holidays Karnataka",
         "seoTitle": "Udupi, Murudeshwar and Gokarna Tour - 4 Nights 5 Days | Logaa Holidays",
         "seoDescription": "Experience a 4 Nights / 5 Days coastal Karnataka tour covering Udupi, Murudeshwar, and Gokarna. Perfect for pilgrimage and beach lovers.",
-         "faq": [
+        "faq": [
             {
                 "question": "What places are covered in the Udupi, Murudeshwar and Gokarna Tour - 4 Nights / 5 Days?",
                 "questionTamil": "உடுப்பி, முருடேஸ்வர் மற்றும் கோகர்ணா சுற்றுலா - 4 இரவுகள் / 5 நாட்களில் எந்த இடங்கள் சேர்க்கப்பட்டுள்ளன?",
@@ -1917,7 +2337,7 @@ export const packagesDatabase: Record<string, any> = {
 
 
     '3091': {
-        
+
         "seo": {
             "metaTitle": "Mysore and Coorg Tour Package – 3 Nights / 4 | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Mysore and Coorg Tour Package – 3 Nights / 4 Days. Covering Mysore, Bylakuppe, Coorg, Madikeri to Mysore",
@@ -2096,7 +2516,7 @@ export const packagesDatabase: Record<string, any> = {
     },
 
     '3092': {
-        
+
         "seo": {
             "metaTitle": "Bangalore, Mysore and Coorg Tour – 4 Nights / 5 | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Bangalore, Mysore and Coorg Tour – 4 Nights / 5 Days. Covering Bangalore, Mysore, Coorg to Bangalore, Mysore",
@@ -2283,7 +2703,7 @@ export const packagesDatabase: Record<string, any> = {
     },
 
     '3093': {
-        
+
         "seo": {
             "metaTitle": "Mysore, Coorg and Kabini Tour – 4 Nights / 5 | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Mysore, Coorg and Kabini Tour – 4 Nights / 5 Days. Covering Mysore, Coorg, Kabini (or Nagarhole), Bangalore to",
@@ -2471,7 +2891,7 @@ export const packagesDatabase: Record<string, any> = {
 
 
     '3090': {
-        
+
         "seo": {
             "metaTitle": "Karnataka & Ooty Special Tour Package | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Karnataka & Ooty Special Tour Package. Covering Mysore, Ooty, Coonoor, Bangalore to Mysore, Ooty, Coonoor",
@@ -2479,7 +2899,7 @@ export const packagesDatabase: Record<string, any> = {
             "slug": "karnataka-ooty-special-tour-package"
         },
         "id": "3090",
-        "title": "Karnataka & Ooty Special Tour Package",
+        "title": "Karnataka & Ooty Special Tour Package 5 Days / 4 Nights",
         "image": "/assets/karnataka/bangalore 12.webp",
         "heroImage": "/assets/karnataka/bangalore 2.webp",
         "overview": {
@@ -2672,7 +3092,7 @@ export const packagesDatabase: Record<string, any> = {
 
 
     '9012': {
-        
+
         "seo": {
             "metaTitle": "Kerala Cultural Tour Package – 9 Nights / 10 | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Kerala Cultural Tour Package – 9 Nights / 10 Days. Covering Cochin, Alleppey, Aranmula, Thekkady, Munnar to",
@@ -2936,7 +3356,7 @@ export const packagesDatabase: Record<string, any> = {
 
 
     '9006': {
-        
+
         "seo": {
             "metaTitle": "Fascinating Kerala Tour Package – 4 Nights / 5 | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Fascinating Kerala Tour Package – 4 Nights / 5 Days. Covering Cochin, Munnar, Alleppey to Cochin, Munnar",
@@ -3027,7 +3447,7 @@ export const packagesDatabase: Record<string, any> = {
                     "Upon arrival, check in at the hotel and relax.",
                     "Suggested Activities:",
                     "• Alleppey Beach",
-                    "• Backwater sunset cruise, optional",
+                    "• Backwater Sunset, optional",
                     "• Local market visit",
                     "• Ayurvedic massage, optional",
                     "• Traditional Kerala cuisine",
@@ -3193,7 +3613,7 @@ export const packagesDatabase: Record<string, any> = {
     },
 
     '9007': {
-        
+
         "seo": {
             "metaTitle": "Enchanting Kerala Tour Package – 5 Nights / 6 | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Enchanting Kerala Tour Package – 5 Nights / 6 Days. Covering Cochin, Munnar, Alleppey, Kovalam, Trivandrum",
@@ -3455,7 +3875,7 @@ export const packagesDatabase: Record<string, any> = {
     },
 
     '9008': {
-        
+
         "seo": {
             "metaTitle": "Best of Kerala Tour Package – 6 Nights / 7 Days | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Best of Kerala Tour Package – 6 Nights / 7 Days. Covering Guruvayur, Munnar, Thekkady, Alleppey, Trivandrum",
@@ -3544,7 +3964,7 @@ export const packagesDatabase: Record<string, any> = {
                     "After breakfast, check out and proceed towards Alleppey.",
                     "Guests may select either a hotel stay or a houseboat stay.",
                     "If Houseboat: Check in to a traditional private houseboat. Cruise through Alleppey’s backwaters and enjoy views of coconut-lined canals, paddy fields, and village homes. Fresh meals will be served on board.",
-                    "If Hotel: Check in at the hotel, then visit Alleppey Beach, go on a sunset cruise (optional), or shop in the local market.",
+                    "If Hotel: Check in at the hotel, then visit Alleppey Beach, go on a Sunset (optional), or shop in the local market.",
                     "Overnight stay in Alleppey."
                 ]
             },
@@ -3712,7 +4132,7 @@ export const packagesDatabase: Record<string, any> = {
     },
 
     '9009': {
-        
+
         "seo": {
             "metaTitle": "Kerala Ayurveda Wellness Tour Package – 7 | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Kerala Ayurveda Wellness Tour Package – 7 Nights / 8 Days. Covering Kottayam, Vagamon, Thekkady to Kottayam",
@@ -3951,7 +4371,7 @@ export const packagesDatabase: Record<string, any> = {
     },
 
     '9010': {
-        
+
         "seo": {
             "metaTitle": "Kerala Tour Package with Kanyakumari – 7 Nights | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Kerala Tour Package with Kanyakumari – 7 Nights / 8 Days. Covering Munnar, Thekkady, Alleppey, Kovalam",
@@ -4191,7 +4611,7 @@ export const packagesDatabase: Record<string, any> = {
     },
 
     '9011': {
-        
+
         "seo": {
             "metaTitle": "Kerala Beaches Tour Package – 8 Nights / 9 Days | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Kerala Beaches Tour Package – 8 Nights / 9 Days. Covering Cochin, Marari, Alleppey, Varkala, Kovalam",
@@ -4317,7 +4737,7 @@ export const packagesDatabase: Record<string, any> = {
             "❌ Lunch and dinner during hotel stays",
             "❌ Entry tickets for sightseeing attractions",
             "❌ Harbour cruise charges",
-            "❌ Houseboat or sunset cruise charges unless included",
+            "❌ Houseboat or Sunset charges unless included",
             "❌ Poovar boating charges",
             "❌ Ayurvedic massage and spa charges",
             "❌ Water-sports and beach activity charges",
@@ -4330,7 +4750,7 @@ export const packagesDatabase: Record<string, any> = {
         ],
         "highlights": [
             "Explore Fort Kochi and Chinese Fishing Nets",
-            "Enjoy a harbour or sunset cruise, optional",
+            "Enjoy a harbour or Sunset, optional",
             "Relax at peaceful Marari Beach",
             "Experience Alleppey’s backwaters",
             "Choose between hotel and houseboat stay",
@@ -4439,7 +4859,7 @@ export const packagesDatabase: Record<string, any> = {
 
 
     '9005': {
-        
+
         "seo": {
             "metaTitle": "Incredible Kerala Tour Package – 3 Nights / 4 | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Incredible Kerala Tour Package – 3 Nights / 4 Days. Covering Cochin, Munnar, Alleppey to Cochin, Munnar",
@@ -4511,7 +4931,7 @@ export const packagesDatabase: Record<string, any> = {
                     "Upon arrival, check in at the hotel and relax.",
                     "Suggested Activities:",
                     "• Alleppey Beach",
-                    "• Backwater sunset cruise, optional",
+                    "• Backwater Sunset, optional",
                     "• Local market visit",
                     "• Traditional Kerala food experience",
                     "• Ayurvedic massage, optional",
@@ -4693,7 +5113,7 @@ export const packagesDatabase: Record<string, any> = {
 
 
     '2095': {
-        
+
         "seo": {
             "metaTitle": "Thanjavur – Trichy – Kumbakonam Tour Package – | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Thanjavur – Trichy – Kumbakonam Tour Package – 3 Nights / 4 Days. Covering Trichy",
@@ -4906,7 +5326,7 @@ export const packagesDatabase: Record<string, any> = {
 
 
     '2094': {
-        
+
         "seo": {
             "metaTitle": "Tamil Nadu Cultural Tour Package – 8 Nights / 9 | Logaa Holidays",
             "metaDescription": "Explore an exciting international destination with Logaa Holidays on the Tamil Nadu Cultural Tour Package – 8 Nights / 9 Days. Covering Chennai, Mahabalipuram",
@@ -5184,7 +5604,7 @@ export const packagesDatabase: Record<string, any> = {
 
 
     '2093': {
-        
+
         "seo": {
             "metaTitle": "Tamil Nadu Pilgrimage Tour Package – 10 Nights | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Tamil Nadu Pilgrimage Tour Package – 10 Nights / 11 Days. Covering Chennai",
@@ -5534,7 +5954,7 @@ export const packagesDatabase: Record<string, any> = {
 
 
     '2092': {
-        
+
         "seo": {
             "metaTitle": "Tamil Nadu Beach Tour Package – 10 Nights / 11 | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Tamil Nadu Beach Tour Package – 10 Nights / 11 Days. Covering Chennai, Mahabalipuram",
@@ -5875,7 +6295,7 @@ export const packagesDatabase: Record<string, any> = {
 
 
     '2091': {
-        
+
         "seo": {
             "metaTitle": "Enchanting Tamil Nadu Tour Package – 6 Nights / | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Enchanting Tamil Nadu Tour Package – 6 Nights / 7 Days. Covering Chennai, Mahabalipuram",
@@ -6145,7 +6565,7 @@ export const packagesDatabase: Record<string, any> = {
 
 
     '2090': {
-        
+
         "seo": {
             "metaTitle": "Best of Tamil Nadu Tour Package – 6 Nights / 7 | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Best of Tamil Nadu Tour Package – 6 Nights / 7 Days. Covering Chennai, Mahabalipuram",
@@ -6408,7 +6828,7 @@ export const packagesDatabase: Record<string, any> = {
     },
 
     '8007': {
-        "title": "Delhi City Tour Package",
+        "title": "Delhi City Tour Package 2 Nights / 3 Days",
         "badge": "Golden Triangle Tour",
         "image": "/assets/SMK/Delhi City Tour.webp",
         "heroImage": "/assets/SMK hero/Delhi City Tour.webp",
@@ -6553,7 +6973,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "पैकेज में शामिल न होने पर फ्लाइट या ट्रेन टिकट, monument entry tickets, guide charges और personal expenses आमतौर पर अलग से देय होते हैं। अंतिम कोटेशन में सभी inclusions स्पष्ट रूप से बताए जाएंगे। हाँ, उपलब्धता के अनुसार hotel category, meal plan, vehicle, extra nights और sightseeing में बदलाव करके इस itinerary को परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों के लिए कस्टमाइज किया जा सकता है। रूट और होटल क्षमता उपयुक्त होने पर corporate या group requirements पर भी अलग से विचार किया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Delhi City Tour Package | Logaa Holidays",
             "metaDescription": "Discover the beauty of North India with Logaa Holidays on the Delhi City Tour Package. Covering Old Delhi and New Delhi to Old Delhi and New Delhi in 2 Nights",
@@ -6563,7 +6983,7 @@ export const packagesDatabase: Record<string, any> = {
         "id": "8007"
     },
     '8008': {
-        "title": "Delhi and Agra Heritage Package",
+        "title": "Delhi and Agra Heritage Package 3 Nights / 4 Days",
         "badge": "Golden Triangle Tour",
         "image": "/assets/SMK/Delhi & Agra Heritage.webp",
         "heroImage": "/assets/SMK hero/Delhi & Agra Heritage.webp",
@@ -6705,7 +7125,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "पैकेज में शामिल न होने पर फ्लाइट या ट्रेन टिकट, monument entry tickets, guide charges और personal expenses आमतौर पर अलग से देय होते हैं। अंतिम कोटेशन में सभी inclusions स्पष्ट रूप से बताए जाएंगे। हाँ, उपलब्धता के अनुसार hotel category, meal plan, vehicle, extra nights और sightseeing में बदलाव करके इस itinerary को परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों के लिए कस्टमाइज किया जा सकता है। रूट और होटल क्षमता उपयुक्त होने पर corporate या group requirements पर भी अलग से विचार किया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Delhi and Agra Heritage Package | Logaa Holidays",
             "metaDescription": "Discover the beauty of North India with Logaa Holidays on the Delhi and Agra Heritage Package. Covering Delhi and Agra to Delhi and Agra in 3 Nights / 4 Days",
@@ -6715,7 +7135,7 @@ export const packagesDatabase: Record<string, any> = {
         "id": "8008"
     },
     '8009': {
-        "title": "Golden Triangle Express Package",
+        "title": "Golden Triangle Express Package 4 Nights / 5 Days",
         "badge": "Golden Triangle Tour",
         "image": "/assets/SMK/Golden Triangle Express.webp",
         "heroImage": "/assets/SMK hero/Golden Triangle Express.webp",
@@ -6868,7 +7288,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "पैकेज में शामिल न होने पर फ्लाइट या ट्रेन टिकट, monument entry tickets, guide charges और personal expenses आमतौर पर अलग से देय होते हैं। अंतिम कोटेशन में सभी inclusions स्पष्ट रूप से बताए जाएंगे। हाँ, उपलब्धता के अनुसार hotel category, meal plan, vehicle, extra nights और sightseeing में बदलाव करके इस itinerary को परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों के लिए कस्टमाइज किया जा सकता है। रूट और होटल क्षमता उपयुक्त होने पर corporate या group requirements पर भी अलग से विचार किया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Golden Triangle Express Package | Logaa Holidays",
             "metaDescription": "Discover the beauty of North India with Logaa Holidays on the Golden Triangle Express Package. Covering Delhi, Agra and Jaipur to Delhi, Agra and Jaipur in 4",
@@ -6878,7 +7298,7 @@ export const packagesDatabase: Record<string, any> = {
         "id": "8009"
     },
     '8010': {
-        "title": "Classic Golden Triangle Package",
+        "title": "Classic Golden Triangle Package 5 Nights / 6 Days",
         "badge": "Golden Triangle Tour",
         "image": "/assets/SMK/Classic Golden Triangle.webp",
         "heroImage": "/assets/SMK hero/Classic Golden Triangle.webp",
@@ -7041,7 +7461,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "आमतौर पर flight या train tickets (यदि package में शामिल नहीं हैं), monument entry tickets, guide charges और personal expenses अलग से देय होते हैं। Final quotation में शामिल सेवाओं और खर्चों की स्पष्ट पुष्टि की जाएगी। हाँ। Hotel category, meal plan, vehicle, extra nights और sightseeing में बदलाव करके families, couples, senior citizens और groups के लिए itinerary को customise किया जा सकता है। Route और hotel capacity की उपलब्धता के अनुसार corporate या group requirements पर भी अलग से विचार किया जा सकता है."
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Golden Triangle Package | Logaa Holidays",
             "metaDescription": "Discover the beauty of North India with Logaa Holidays on the Classic Golden Triangle Package. Covering Delhi, Agra and Jaipur to Delhi, Agra and Jaipur in 5",
@@ -7051,7 +7471,7 @@ export const packagesDatabase: Record<string, any> = {
         "id": "8010"
     },
     '8011': {
-        "title": "North India Heritage Package",
+        "title": "North India Heritage Package 6 Nights / 7 Days",
         "badge": "Golden Triangle Tour",
         "image": "/assets/SMK/North India Heritage.webp",
         "heroImage": "/assets/SMK hero/North India Heritage.webp",
@@ -7222,7 +7642,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "आमतौर पर flight या train tickets (यदि package में शामिल नहीं हैं), monument entry tickets, guide charges और personal expenses अलग से देय होते हैं। Final quotation में शामिल सेवाओं और खर्चों की स्पष्ट पुष्टि की जाएगी। हाँ। Hotel category, meal plan, vehicle, extra nights और sightseeing में बदलाव करके families, couples, senior citizens और groups के लिए itinerary को customise किया जा सकता है। Route और hotel capacity की उपलब्धता के अनुसार corporate या group requirements पर भी अलग से विचार किया जा सकता है."
             }
         ],
-        
+
         "seo": {
             "metaTitle": "North India Heritage Package | Logaa Holidays",
             "metaDescription": "Discover the beauty of North India with Logaa Holidays on the North India Heritage Package. Covering Delhi, Mathura, Vrindavan, Agra, Jaipur, Ajmer and Pushkar",
@@ -7233,7 +7653,7 @@ export const packagesDatabase: Record<string, any> = {
     },
 
     '8401': {
-        
+
         "seo": {
             "metaTitle": "Kashmir Short Escape Package | Logaa Holidays",
             "metaDescription": "Discover the beauty of North India with Logaa Holidays on the Kashmir Short Escape Package. Covering Srinagar and Gulmarg to Srinagar and Gulmarg in 2 Nights /",
@@ -7241,7 +7661,7 @@ export const packagesDatabase: Record<string, any> = {
             "slug": "kashmir-short-escape-package"
         },
         "id": "8401",
-        "title": "Kashmir Short Escape Package",
+        "title": "Kashmir Short Escape Package 2 Nights / 3 Days",
         "image": "/assets/SMK/Kashmir Short Escape Package 2 Nights  3 Days square.webp",
         "heroImage": "/assets/SMK hero/Kashmir Short Escape Package 2 Nights 3 Days rectangle.webp",
         "rating": 4.8,
@@ -7383,7 +7803,7 @@ export const packagesDatabase: Record<string, any> = {
         ]
     },
     '8402': {
-        
+
         "seo": {
             "metaTitle": "Kashmir Highlights Package | Logaa Holidays",
             "metaDescription": "Discover the beauty of North India with Logaa Holidays on the Kashmir Highlights Package. Covering Srinagar, Gulmarg and Pahalgam to Srinagar, Gulmarg and",
@@ -7391,7 +7811,7 @@ export const packagesDatabase: Record<string, any> = {
             "slug": "kashmir-highlights-package"
         },
         "id": "8402",
-        "title": "Kashmir Highlights Package",
+        "title": "Kashmir Highlights Package 3 Nights / 4 Days",
         "image": "/assets/SMK/Beautiful Kashmir Package 4N5D square.webp",
         "heroImage": "/assets/SMK hero/Kashmir Highlights Package 3N4D rectangle.webp",
         "rating": 4.9,
@@ -7542,7 +7962,7 @@ export const packagesDatabase: Record<string, any> = {
         ]
     },
     '8403': {
-        
+
         "seo": {
             "metaTitle": "Beautiful Kashmir Package | Logaa Holidays",
             "metaDescription": "Discover the beauty of North India with Logaa Holidays on the Beautiful Kashmir Package. Covering Srinagar, Gulmarg and Pahalgam to Srinagar, Gulmarg and",
@@ -7550,7 +7970,7 @@ export const packagesDatabase: Record<string, any> = {
             "slug": "beautiful-kashmir-package"
         },
         "id": "8403",
-        "title": "Beautiful Kashmir Package",
+        "title": "Beautiful Kashmir Package 4 Nights / 5 Days",
         "image": "/assets/SMK/Kashmir Highlights Package 3 Nights  4 Days square.webp",
         "heroImage": "/assets/SMK hero/Beautiful Kashmir Package 4 Nights 5 Days rectangle.webp",
         "rating": 4.9,
@@ -7709,7 +8129,7 @@ export const packagesDatabase: Record<string, any> = {
         ]
     },
     '8404': {
-        
+
         "seo": {
             "metaTitle": "Kashmir Holiday Package | Logaa Holidays",
             "metaDescription": "Discover the beauty of North India with Logaa Holidays on the Classic Kashmir Holiday Package. Covering Srinagar, Gulmarg and Pahalgam to Srinagar, Gulmarg and",
@@ -7717,7 +8137,7 @@ export const packagesDatabase: Record<string, any> = {
             "slug": "classic-kashmir-holiday-package"
         },
         "id": "8404",
-        "title": "Classic Kashmir Holiday Package",
+        "title": "Classic Kashmir Holiday Package 5 Nights / 6 Days",
         "image": "/assets/SMK/Kashmir Highlights Package 3N 4D square.webp",
         "heroImage": "/assets/SMK hero/Beautiful Kashmir Package 4N5D rectangle.webp",
         "rating": 5.0,
@@ -7885,7 +8305,7 @@ export const packagesDatabase: Record<string, any> = {
         ]
     },
     '8405': {
-        
+
         "seo": {
             "metaTitle": "Complete Kashmir Experience | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Complete Kashmir Experience. Covering Srinagar, Gulmarg, Pahalgam and Sonamarg to Srinagar, Gulmarg",
@@ -7893,7 +8313,7 @@ export const packagesDatabase: Record<string, any> = {
             "slug": "complete-kashmir-experience"
         },
         "id": "8405",
-        "title": "Complete Kashmir Experience",
+        "title": "Complete Kashmir Experienc 6 Nights / 7 Dayse",
         "image": "/assets/SMK/Classic Kashmir Holiday Package 5N6Dsquare.webp",
         "heroImage": "/assets/SMK hero/Kashmir Highlights Package 3 Nights  4 Days rectangle.webp",
         "rating": 5.0,
@@ -8289,7 +8709,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "नहीं। Gulmarg Gondola tickets; Pony and horse rides; Local union vehicles को exclusions के रूप में सूचीबद्ध किया गया है, जब तक कि final quotation में विशेष रूप से शामिल न किया गया हो।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Kashmir Honeymoon Package – 4 Nights / 5 Days | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Kashmir Honeymoon Package – 4 Nights / 5 Days. Covering Srinagar to Srinagar in 4 Nights / 5 Days",
@@ -8523,7 +8943,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "नहीं। Gondola tickets; Pony and horse rides; Local union vehicles को exclusions के रूप में सूचीबद्ध किया गया है, जब तक कि final quotation में विशेष रूप से शामिल न किया गया हो।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Kashmir Honeymoon Package – 5 Nights / 6 Days | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Kashmir Honeymoon Package – 5 Nights / 6 Days. Covering Srinagar to Srinagar in 5 Nights / 6 Days",
@@ -8779,7 +9199,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "नहीं। Gondola tickets; Pony and horse rides; Local union-cab charges को exclusions के रूप में सूचीबद्ध किया गया है, जब तक कि final quotation में विशेष रूप से शामिल न किया गया हो।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Complete Kashmir Honeymoon Package – 6 Nights / | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Complete Kashmir Honeymoon Package – 6 Nights / 7 Days. Covering Srinagar to Srinagar in 6 Nights / 7 Days",
@@ -8962,7 +9382,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "नहीं। Nathula Pass permit और vehicle charges इस पैकेज में शामिल नहीं हैं। Permit की उपलब्धता और स्थानीय संचालन नियमों के अधीन Nathula Pass की व्यवस्था अलग से करनी होगी।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Gangtok Honeymoon Package – 2 Nights / 3 Days | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Gangtok Honeymoon Package – 2 Nights / 3 Days. Covering Gangtok to Gangtok in 2 Nights / 3 Days. Highlights",
@@ -9154,7 +9574,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "नहीं। Nathula Pass charges इस पैकेज में शामिल नहीं हैं। Permit की उपलब्धता और स्थानीय संचालन नियमों के अधीन Nathula Pass excursion की व्यवस्था अलग से करनी होगी।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Gangtok and Darjeeling Honeymoon – 3 Nights / 4 | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Gangtok and Darjeeling Honeymoon – 3 Nights / 4 Days. Covering Gangtok, Darjeeling to Gangtok, Darjeeling in",
@@ -9360,7 +9780,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "नहीं। Nathula Pass charges इस पैकेज में शामिल नहीं हैं। Permit की उपलब्धता और स्थानीय संचालन नियमों के अधीन Nathula Pass excursion की व्यवस्था अलग से करनी होगी।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Gangtok, Pelling and Darjeeling Honeymoon – 4 | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Gangtok, Pelling and Darjeeling Honeymoon – 4 Nights / 5 Days. Covering Gangtok, Pelling, Darjeeling to",
@@ -9601,7 +10021,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "नहीं। Nathula Pass permit और vehicle charges इस पैकेज में शामिल नहीं हैं। Permit की उपलब्धता और स्थानीय संचालन नियमों के अधीन Nathula Pass excursion की व्यवस्था अलग से करनी होगी।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Complete Sikkim and Darjeeling Honeymoon – 5 | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Complete Sikkim and Darjeeling Honeymoon – 5 Nights / 6 Days. Covering Gangtok, Pelling, Darjeeling to",
@@ -9668,7 +10088,7 @@ export const packagesDatabase: Record<string, any> = {
                     "• Jet skiing",
                     "• Parasailing",
                     "• Dolphin cruise",
-                    "• Sunset cruise",
+                    "• Sunset",
                     "• Couple spa",
                     "• Professional photoshoot",
                     "All activities are subject to weather, sea conditions and resort operation.",
@@ -9703,7 +10123,7 @@ export const packagesDatabase: Record<string, any> = {
             "❌ Lunch and dinner unless included in the selected meal plan",
             "❌ Water activities",
             "❌ Scuba diving",
-            "❌ Excursions and cruises",
+            "❌ Excursions",
             "❌ Couple spa",
             "❌ Photoshoot",
             "❌ Seaplane or domestic-transfer upgrade",
@@ -9720,7 +10140,7 @@ export const packagesDatabase: Record<string, any> = {
             "Selected meal-plan options",
             "Private beach access",
             "Lagoon and resort leisure",
-            "Optional sunset cruise",
+            "Optional sunset ",
             "Optional candlelight dinner",
             "Honeymoon arrangements where confirmed"
         ],
@@ -9785,7 +10205,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "Velana International Airport पर meet-and-greet assistance उपलब्ध होगी। Confirmed itinerary के अनुसार speedboat, domestic flight या seaplane द्वारा round-trip resort transfers की व्यवस्था की जाएगी। Maldives Green Tax विशेष रूप से शामिल न होने पर अतिरिक्त शुल्क पर होगा।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Maldives Beach Honeymoon Package – 2 Nights / 3 | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Maldives Beach Honeymoon Package – 2 Nights / 3 Days. Covering Maldives to Maldives in 2 Nights / 3 Days",
@@ -9846,8 +10266,8 @@ export const packagesDatabase: Record<string, any> = {
                 "activities": [
                     "After breakfast, choose an optional excursion.",
                     "Excursion Options",
-                    "• Dolphin-watching cruise",
-                    "• Sunset cruise",
+                    "• Dolphin-watching ",
+                    "• Sunset ",
                     "• Sandbank picnic",
                     "• Local-island visit",
                     "• Snorkelling excursion",
@@ -9887,7 +10307,6 @@ export const packagesDatabase: Record<string, any> = {
             "❌ Water sports",
             "❌ Diving and snorkelling excursions",
             "❌ Spa treatments",
-            "❌ Cruises",
             "❌ Photoshoot",
             "❌ Personal expenses",
             "❌ Travel insurance",
@@ -9901,7 +10320,7 @@ export const packagesDatabase: Record<string, any> = {
             "Daily breakfast",
             "Half-board, full-board and all-inclusive options",
             "Resort pool and lagoon access",
-            "Optional sunset cruise",
+            "Optional sunset ",
             "Optional candlelight dinner",
             "Optional couple spa",
             "Honeymoon benefits where confirmed"
@@ -9967,7 +10386,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "Airport meet-and-greet assistance और round-trip resort transfers उपलब्ध हैं। Maldives Green Tax final quotation में विशेष रूप से शामिल न होने पर अतिरिक्त शुल्क लगेगा."
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Maldives Beach Villa Honeymoon – 3 Nights / 4 | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Maldives Beach Villa Honeymoon – 3 Nights / 4 Days. Covering Maldives to Maldives in 3 Nights / 4 Days",
@@ -10015,7 +10434,7 @@ export const packagesDatabase: Record<string, any> = {
                     "• Resort pool",
                     "• Couple spa",
                     "• Sandbank excursion",
-                    "• Sunset cruise",
+                    "• Sunset ",
                     "Overnight stay in a beach villa."
                 ]
             },
@@ -10043,7 +10462,7 @@ export const packagesDatabase: Record<string, any> = {
                 "activities": [
                     "After breakfast, enjoy a full day at leisure.",
                     "Optional Experiences",
-                    "• Dolphin cruise",
+                    "• Dolphin ",
                     "• Snorkelling excursion",
                     "• Scuba diving",
                     "• Couple spa",
@@ -10083,7 +10502,7 @@ export const packagesDatabase: Record<string, any> = {
             "❌ Meals outside the selected meal plan",
             "❌ Premium beverages",
             "❌ Water sports and diving",
-            "❌ Excursions and cruises",
+            "❌ Excursions",
             "❌ Spa treatments",
             "❌ Photoshoot",
             "❌ Floating breakfast",
@@ -10100,7 +10519,7 @@ export const packagesDatabase: Record<string, any> = {
             "Private deck in the water villa",
             "Direct lagoon access where available",
             "Optional floating breakfast",
-            "Optional sunset cruise",
+            "Optional sunset ",
             "Optional private dinner",
             "Honeymoon benefits where confirmed"
         ],
@@ -10165,7 +10584,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "Airport meet-and-greet assistance, round-trip island-resort transfers और scheduled internal room transfer उपलब्ध हैं। Maldives Green Tax final quotation में विशेष रूप से शामिल न होने पर अतिरिक्त शुल्क लगेगा."
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Beach Villa and Water Villa Honeymoon – 4 | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Beach Villa and Water Villa Honeymoon – 4 Nights / 5 Days. Covering Maldives to Maldives in 4 Nights / 5",
@@ -10240,7 +10659,7 @@ export const packagesDatabase: Record<string, any> = {
                     "After breakfast, choose from:",
                     "• Scuba diving",
                     "• Guided snorkelling",
-                    "• Dolphin cruise",
+                    "• Dolphin ",
                     "• Sandbank picnic",
                     "• Sunset fishing",
                     "• Jet skiing",
@@ -10261,7 +10680,7 @@ export const packagesDatabase: Record<string, any> = {
                     "• Professional photoshoot",
                     "• Floating breakfast",
                     "• Private beach lunch",
-                    "• Sunset cruise",
+                    "• Sunset ",
                     "• Candlelight dinner",
                     "• Private sandbank dinner",
                     "• Romantic bath setup",
@@ -10383,7 +10802,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "Confirmed mode के अनुसार round-trip resort transfer और scheduled villa-category transfer उपलब्ध हैं। Maldives Green Tax final quotation में विशेष रूप से शामिल न होने पर अतिरिक्त शुल्क लगेगा."
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Maldives Honeymoon Package – 5 Nights / 6 Days | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Premium Maldives Honeymoon Package – 5 Nights / 6 Days. Covering Maldives to Maldives in 5 Nights / 6 Days",
@@ -10566,7 +10985,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "इस package में केवल itinerary में विशेष रूप से बताए गए sightseeing शामिल हैं। Adventure activities; जहाँ आवश्यक हो, Local union vehicles extra होंगे, जब तक कि उन्हें confirm न किया गया हो।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Shimla Honeymoon Package – 2 Nights / 3 Days | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Premium Shimla Honeymoon Package – 2 Nights / 3 Days. Covering Chandigarh to Chandigarh in 2 Nights / 3",
@@ -10773,7 +11192,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "इस package में केवल itinerary में विशेष रूप से बताए गए sightseeing शामिल हैं। Adventure activities; Ropeway tickets; Rohtang Pass permit and vehicle charges; Local union vehicles extra होंगे, जब तक कि उन्हें confirm न किया गया हो।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Manali Honeymoon Package – 3 Nights / 4 Days | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Premium Manali Honeymoon Package – 3 Nights / 4 Days. Covering Chandigarh to Chandigarh in 3 Nights / 4",
@@ -10990,7 +11409,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "इस package में केवल itinerary में विशेष रूप से बताए गए sightseeing शामिल हैं। Kufri adventure activities; Solang Valley activities; Ropeway tickets; Rohtang Pass excursion extra होंगे, जब तक कि इन्हें confirm न किया गया हो।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Shimla and Manali Honeymoon Package – 4 Nights | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Shimla and Manali Honeymoon Package – 4 Nights / 5 Days. Covering Chandigarh to Chandigarh in 4 Nights / 5",
@@ -11237,7 +11656,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "इस package में केवल itinerary में विशेष रूप से बताए गए sightseeing शामिल हैं। Adventure activities; Ropeway tickets; Rohtang Pass permit and vehicle; Local union vehicle charges extra होंगे, जब तक कि इन्हें confirm न किया गया हो।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Complete Shimla and Manali Honeymoon – 5 Nights | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Complete Shimla and Manali Honeymoon – 5 Nights / 6 Days. Covering Chandigarh to Chandigarh in 5 Nights / 6",
@@ -11255,7 +11674,7 @@ export const packagesDatabase: Record<string, any> = {
         "overview": {
             "duration": "2 Nights / 3 Days",
             "destination": "Goa Arrival – North Goa – Departure",
-            "activities": "Sightseeing, Beaches, Sunset Cruise",
+            "activities": "Sightseeing, Beaches, Sunset ",
             "themes": "Honeymoon, Romantic, Beaches and Islands"
         },
         "priceDetails": {
@@ -11301,7 +11720,7 @@ export const packagesDatabase: Record<string, any> = {
                     "• Vagator Beach",
                     "• Chapora Fort",
                     "• Snow Park, optional",
-                    "• Local flea market, subject to operation",
+                    "• Local market, subject to operation",
                     "Visit Fort Aguada and enjoy views of the Arabian Sea.",
                     "Continue to the popular beaches of Candolim, Calangute and Baga.",
                     "Later, visit Anjuna Beach, Vagator Beach and Chapora Fort, subject to time and accessibility.",
@@ -11339,7 +11758,7 @@ export const packagesDatabase: Record<string, any> = {
             "❌ Lunch and dinner unless mentioned",
             "❌ Attraction entry tickets",
             "❌ Water-sports activities",
-            "❌ Sunset cruise tickets",
+            "❌ Sunset  tickets",
             "❌ Casino entry",
             "❌ Club entry",
             "❌ Guide charges",
@@ -11356,7 +11775,7 @@ export const packagesDatabase: Record<string, any> = {
             "North Goa sightseeing",
             "Popular beaches and heritage attractions",
             "Evening beach leisure",
-            "Optional sunset cruise",
+            "Optional sunset ",
             "Optional candlelight dinner",
             "Private sightseeing vehicle"
         ],
@@ -11421,7 +11840,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "ये experiences विशेष रूप से शामिल किए जाने तक optional हैं। Water sports को exclusions के रूप में सूचीबद्ध किया गया है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Goa Honeymoon Package – 2 Nights / 3 Days | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Goa Honeymoon Package – 2 Nights / 3 Days. Covering Goa Arrival to Departure in 2 Nights / 3 Days",
@@ -11437,7 +11856,7 @@ export const packagesDatabase: Record<string, any> = {
         "overview": {
             "duration": "4 Nights / 5 Days",
             "destination": "Goa Arrival – North Goa – South Goa – Island or Adventure Experience – Goa Departure",
-            "activities": "Sightseeing, Beaches, Heritage, Sunset Cruise, Water Sports",
+            "activities": "Sightseeing, Beaches, Heritage, Sunset, Water Sports",
             "themes": "Honeymoon, Romantic, Beaches and Islands"
         },
         "priceDetails": {
@@ -11481,7 +11900,7 @@ export const packagesDatabase: Record<string, any> = {
             },
             {
                 "day": "Day 03",
-                "title": "South Goa Sightseeing and Sunset Cruise",
+                "title": "South Goa Sightseeing and Sunset",
                 "activities": [
                     "After breakfast, visit:",
                     "• Basilica of Bom Jesus",
@@ -11642,7 +12061,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "ये experiences तभी included होंगे जब इन्हें विशेष रूप से शामिल किया गया हो। Water-sports activities; Cruise tickets; Casino and club entry को exclusions के रूप में सूचीबद्ध किया गया है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Complete Goa Honeymoon Package – 4 Nights / 5 | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Complete Goa Honeymoon Package – 4 Nights / 5 Days. Covering Goa Arrival to Goa Departure in 4 Nights / 5",
@@ -11659,7 +12078,7 @@ export const packagesDatabase: Record<string, any> = {
         "overview": {
             "duration": "5 Nights / 6 Days",
             "destination": "Goa Arrival – North Goa – South Goa – Island Experience – Leisure – Goa Departure",
-            "activities": "Sightseeing, Beaches, Heritage, Sunset Cruise, Water Sports, Premium Resort",
+            "activities": "Sightseeing, Beaches, Heritage, Sunset, Water Sports, Premium Resort",
             "themes": "Honeymoon, Romantic, Beaches and Islands"
         },
         "priceDetails": {
@@ -11745,7 +12164,7 @@ export const packagesDatabase: Record<string, any> = {
                     "• Café hopping",
                     "• Local shopping",
                     "• Couple photoshoot",
-                    "• Sunset cruise",
+                    "• Sunset",
                     "• Candlelight dinner",
                     "• Casino visit, optional",
                     "Optional Premium Arrangements",
@@ -11870,7 +12289,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "ये experiences तभी included होंगे जब इन्हें विशेष रूप से शामिल किया गया हो। Water-sports activities; Cruise tickets; Casino and club entry को exclusions के रूप में सूचीबद्ध किया गया है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Goa Honeymoon Package – 5 Nights / 6 Days | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Premium Goa Honeymoon Package – 5 Nights / 6 Days. Covering Goa Arrival to Goa Departure in 5 Nights / 6",
@@ -11890,7 +12309,7 @@ export const packagesDatabase: Record<string, any> = {
         "overview": {
             "duration": "3 Nights / 4 Days",
             "destination": "Goa Arrival – North Goa – South Goa – Departure",
-            "activities": "Sightseeing, Beaches, Heritage, Cruise",
+            "activities": "Sightseeing, Beaches, Heritage",
             "themes": "Honeymoon, Romantic, Beaches and Islands"
         },
         "priceDetails": {
@@ -12061,7 +12480,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "ये experiences विशेष रूप से शामिल किए जाने तक optional हैं। Mandovi cruise tickets; Water-sport charges; Casino charges को exclusions के रूप में सूचीबद्ध किया गया है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Goa Honeymoon Package 3 Nights 4 Days | North & | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Goa Honeymoon Package 3 Nights 4 Days | North & South Goa. Covering Goa Arrival to Departure in 3 Nights / 4",
@@ -12079,7 +12498,7 @@ export const packagesDatabase: Record<string, any> = {
         "overview": {
             "duration": "3 Nights / 4 Days",
             "destination": "Goa Arrival – North Goa – South Goa – Goa Departure",
-            "activities": "Sightseeing, Beaches, Heritage, Sunset Cruise",
+            "activities": "Sightseeing, Beaches, Heritage, Sunset",
             "themes": "Honeymoon, Romantic, Beaches and Islands"
         },
         "priceDetails": {
@@ -12137,8 +12556,8 @@ export const packagesDatabase: Record<string, any> = {
                     "• Panjim city",
                     "• Fontainhas, subject to time",
                     "• Mandovi River cruise, optional",
-                    "Visit the heritage churches of Old Goa before proceeding to Miramar Beach and Dona Paula.",
-                    "Later, enjoy Panjim city sightseeing and an optional sunset cruise on the Mandovi River.",
+                    "Visit the heritage churches of Old Goa  before proceeding to Miramar Beach and Dona Paula.",
+                    "Later, enjoy Panjim city sightseeing and an optional Sunset on the Mandovi River.",
                     "Return to the accommodation.",
                     "Overnight stay in Goa."
                 ]
@@ -12193,7 +12612,7 @@ export const packagesDatabase: Record<string, any> = {
         ],
         "keywords": "Goa honeymoon packages, Goa honeymoon package from Madurai, Goa honeymoon package from Chennai, Goa honeymoon package with flight, Goa honeymoon package with train, Goa couple tour package, North and South Goa honeymoon package, Premium Goa honeymoon package, Goa beach honeymoon package, Logaa Holidays Goa honeymoon",
         "seoTitle": "Goa Honeymoon Package 3 Nights 4 Days",
-        "seoDescription": "Book a 3 Nights 4 Days Goa honeymoon package covering North Goa, South Goa, beaches, churches and optional sunset cruise.",
+        "seoDescription": "Book a 3 Nights 4 Days Goa honeymoon package covering North Goa, South Goa, beaches, churches and optional Sunset.",
         "faq": [
             {
                 "question": "Can I book the North and South Goa Honeymoon – 3 Nights / 4 Days from Madurai with Logaa Holidays?",
@@ -12252,7 +12671,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "ये experiences तभी included होंगे जब इन्हें विशेष रूप से शामिल किया गया हो। Water-sports activities; Mandovi River cruise tickets; Casino and club entry को exclusions के रूप में सूचीबद्ध किया गया है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "North and South Goa Honeymoon – 3 Nights / 4 | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the North and South Goa Honeymoon – 3 Nights / 4 Days. Covering Goa Arrival to Goa Departure in 3 Nights / 4",
@@ -12433,7 +12852,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "केवल वही ferry या cruise services covered हैं जो inclusions में विशेष रूप से mention की गई हैं; optional island excursions और water activities extra हैं।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Port Blair Honeymoon Package – 2 Nights / 3 Days | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Port Blair Honeymoon Package – 2 Nights / 3 Days. Covering Port Blair Arrival to Port Blair Departure in 2",
@@ -12625,7 +13044,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "Port Blair–Havelock–Port Blair private cruise tickets शामिल हैं। Cruise-class upgrades और वैकल्पिक water activities, जब तक विशेष रूप से शामिल न हों, अतिरिक्त शुल्क पर उपलब्ध होंगी।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Port Blair and Havelock Honeymoon – 3 Nights / | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Port Blair and Havelock Honeymoon – 3 Nights / 4 Days. Covering Port Blair to Port Blair in 3 Nights / 4",
@@ -12828,7 +13247,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "Port Blair–Havelock private cruise, Havelock–Neil Island private cruise और Neil Island–Port Blair private cruise शामिल हैं। Cruise-class upgrades और वैकल्पिक water activities, जब तक विशेष रूप से शामिल न हों, अतिरिक्त शुल्क पर उपलब्ध होंगी।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Havelock and Neil Island Honeymoon – 4 Nights / | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Havelock and Neil Island Honeymoon – 4 Nights / 5 Days. Covering Port Blair to Port Blair in 4 Nights / 5",
@@ -13061,7 +13480,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "सभी निर्धारित private cruise tickets शामिल हैं। Cruise-class upgrades और वैकल्पिक water activities, जब तक विशेष रूप से शामिल न हों, अतिरिक्त शुल्क पर उपलब्ध होंगी।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Complete Andaman Honeymoon Package – 5 Nights / | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Complete Andaman Honeymoon Package – 5 Nights / 6 Days. Covering Port Blair to Port Blair in 5 Nights / 6",
@@ -13216,7 +13635,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "आमतौर पर airfare या train fare (यदि package में शामिल नहीं हैं), special darshan tickets, pooja / Tharpanam charges और personal expenses अलग से देय होते हैं। Final quotation में शामिल सेवाओं और खर्चों की स्पष्ट पुष्टि की जाएगी। हाँ। Hotel category, meal plan, vehicle, extra nights और sightseeing में बदलाव करके families, couples, senior citizens और groups के लिए itinerary को customise किया जा सकता है। Route और hotel capacity की उपलब्धता के अनुसार corporate या group requirements पर भी अलग से विचार किया जा सकता है."
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Chennai to Varanasi Tour Package | 2 Days / 1 | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Chennai to Varanasi Tour Package | 2 Days / 1 Night Kasi Flight Package. Covering",
@@ -13361,7 +13780,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "आमतौर पर अलग से भुगतान करना होता है: यदि पैकेज में शामिल न हो तो फ्लाइट या ट्रेन का किराया, विशेष दर्शन टिकट, पूजा / तर्पण शुल्क और व्यक्तिगत खर्च। अंतिम कोटेशन में शामिल सेवाओं की स्पष्ट पुष्टि की जाएगी। हाँ। परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों के लिए होटल श्रेणी, भोजन योजना, वाहन, अतिरिक्त रातें और दर्शनीय स्थलों में बदलाव करके यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है। उपलब्धता के अनुसार कॉर्पोरेट या समूह की आवश्यकताओं पर भी अलग से विचार किया जा सकता है."
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Chennai to Ayodhya Tour Package | 2 Days / 1 | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Chennai to Ayodhya Tour Package | 2 Days / 1 Night Ayodhya Flight Package. Duration: 2",
@@ -13525,7 +13944,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "आमतौर पर अलग से भुगतान करना होता है: यदि पैकेज में शामिल न हो तो फ्लाइट या ट्रेन का किराया, विशेष दर्शन टिकट, पूजा / तर्पण शुल्क और व्यक्तिगत खर्च। अंतिम कोटेशन में शामिल सेवाओं की स्पष्ट पुष्टि की जाएगी। हाँ। परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों के लिए होटल श्रेणी, भोजन योजना, वाहन, अतिरिक्त रातें और दर्शनीय स्थलों में बदलाव करके यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है। उपलब्धता के अनुसार कॉर्पोरेट या समूह की आवश्यकताओं पर भी अलग से विचार किया जा सकता है."
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Chennai to Varanasi Tour Package | 3 Days / 2 | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Chennai to Varanasi Tour Package | 3 Days / 2 Nights Kasi Flight Package. Covering",
@@ -13699,7 +14118,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "आमतौर पर अलग से भुगतान करना होता है: यदि पैकेज में शामिल न हो तो फ्लाइट या ट्रेन का किराया, विशेष दर्शन टिकट, पूजा / तर्पण शुल्क और व्यक्तिगत खर्च। अंतिम कोटेशन में शामिल सेवाओं की स्पष्ट पुष्टि की जाएगी। हाँ। परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों के लिए होटल श्रेणी, भोजन योजना, वाहन, अतिरिक्त रातें और दर्शनीय स्थलों में बदलाव करके यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है। उपलब्धता के अनुसार कॉर्पोरेट या समूह की आवश्यकताओं पर भी अलग से विचार किया जा सकता है."
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Chennai to Kasi & Ayodhya Tour Package | 3 Days | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Chennai to Kasi & Ayodhya Tour Package | 3 Days / 2 Nights Flight Package. Covering",
@@ -13902,7 +14321,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "आमतौर पर हवाई या ट्रेन किराया, यदि विशेष रूप से शामिल न हो; विशेष दर्शन टिकट; पिंड दान, पूजा या तर्पण शुल्क; नाव की सवारी और अन्य गतिविधि शुल्क; तथा व्यक्तिगत खर्च अलग से देय होते हैं। अंतिम कोटेशन में शामिल सेवाओं की स्पष्ट पुष्टि की जाएगी। हाँ। उपलब्धता के अनुसार होटल श्रेणी, भोजन योजना, वाहन, अतिरिक्त रातें और दर्शनीय स्थलों में बदलाव करके इस यात्रा कार्यक्रम को परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों के लिए कस्टमाइज़ किया जा सकता है। कॉर्पोरेट या बड़े समूहों की आवश्यकताओं पर भी मार्ग और होटल की क्षमता के अनुसार अलग से विचार किया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Chennai to Kasi & Gaya Tour Package | 5 Days / | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Chennai to Kasi & Gaya Tour Package | 5 Days / 4 Nights Flight Package. Covering Varanasi",
@@ -14119,7 +14538,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "आमतौर पर हवाई या ट्रेन किराया, यदि विशेष रूप से शामिल न हो; विशेष दर्शन टिकट; पिंड दान, पूजा या तर्पण शुल्क; नाव की सवारी या अन्य गतिविधि शुल्क; तथा व्यक्तिगत खर्च अलग से देय होते हैं। अंतिम कोटेशन में शामिल सेवाओं की स्पष्ट पुष्टि की जाएगी। हाँ। उपलब्धता के अनुसार होटल श्रेणी, भोजन योजना, वाहन, अतिरिक्त रातें और दर्शनीय स्थलों में बदलाव करके इस यात्रा कार्यक्रम को परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों के लिए कस्टमाइज़ किया जा सकता है। कॉर्पोरेट या बड़े समूहों की आवश्यकताओं पर भी मार्ग और होटल की क्षमता के अनुसार अलग से विचार किया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Chennai to Kasi, Gaya, Prayagraj & Ayodhya Tour | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Chennai to Kasi, Gaya, Prayagraj & Ayodhya Tour Package | 6 Days / 5 Nights Flight",
@@ -14321,7 +14740,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "आमतौर पर अलग से भुगतान किए जाने वाले खर्चों में शामिल हैं: यदि विशेष रूप से शामिल न हो तो फ्लाइट या ट्रेन का किराया; विशेष दर्शन टिकट; पूजा / तर्पण शुल्क; व्यक्तिगत खर्च। अंतिम कोटेशन में शामिल सेवाओं की स्पष्ट पुष्टि की जाएगी। हाँ। होटल श्रेणी, भोजन योजना, वाहन, अतिरिक्त रातों और दर्शनीय स्थलों में बदलाव करके परिवारों, दंपतियों, वरिष्ठ नागरिकों और समूहों के लिए यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है, जो उपलब्धता पर निर्भर करेगा। कॉर्पोरेट या समूह आवश्यकताओं पर भी मार्ग और होटल क्षमता उपयुक्त होने पर अलग से विचार किया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Chennai to Kasi Train Tour Package | 8 Days / 7 | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Chennai to Kasi Train Tour Package | 8 Days / 7 Nights Pilgrimage Package. Covering",
@@ -14444,7 +14863,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerTamil": "நிச்சயமாக. வாரணாசியில் சர்வதேச விமான நிலையம் (லால் பகதூர் சாஸ்திரி விமான நிலையம்) மற்றும் பல ரயில் நிலையங்கள் உள்ளன. டெல்லி அல்லது சென்னையிலிருந்து வாரணாசிக்கு நேரடி விமானத்தில் வரலாம். சுற்றுலாவைத் தொடங்குவதற்காக விமான நிலையம் அல்லது ரயில் நிலையத்தில் உங்களை பிக்கப் செய்து கொள்வோம். நீங்கள் விரும்பினால், டெல்லி/சென்னையிலிருந்து வாரணாசிக்கு ரயில் பயணத்தையும் ஏற்பாடு செய்யலாம்."
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Kasi Tour Package | 3 Days / 2 | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai to Kasi Tour Package | 3 Days / 2 Nights Flight Package. Covering Varanasi to",
@@ -14454,7 +14873,7 @@ export const packagesDatabase: Record<string, any> = {
         "id": "2007"
     },
     '2008': {
-        "title": "Madurai to Kasi, Gaya & Prayagraj Tour Package | 5 Days / 4 Nights Flight Package",
+        "title": "Madurai to Kasi & Gaya & Prayagraj Tour Package | 5 Days / 4 Nights Flight Package",
         "image": "/assets/kasi/card/kasicard9.webp",
         "heroImage": "/assets/kasi/kasi9.webp",
         "overview": {
@@ -14648,7 +15067,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "आमतौर पर अलग से भुगतान किए जाने वाले खर्चों में शामिल हैं: यदि विशेष रूप से शामिल न हो तो फ्लाइट या ट्रेन का किराया; विशेष दर्शन टिकट; पूजा / तर्पण शुल्क; व्यक्तिगत खर्च। अंतिम कोटेशन में शामिल सेवाओं की स्पष्ट पुष्टि की जाएगी। हाँ। होटल श्रेणी, भोजन योजना, वाहन, अतिरिक्त रातों और दर्शनीय स्थलों में बदलाव करके परिवारों, दंपतियों, वरिष्ठ नागरिकों और समूहों के लिए यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है, जो उपलब्धता पर निर्भर करेगा। कॉर्पोरेट या समूह आवश्यकताओं पर भी मार्ग और होटल क्षमता उपयुक्त होने पर अलग से विचार किया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Kasi, Gaya & Prayagraj Tour Package | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai to Kasi, Gaya & Prayagraj Tour Package | 5 Days / 4 Nights Flight Package",
@@ -14658,7 +15077,7 @@ export const packagesDatabase: Record<string, any> = {
         "id": "2008"
     },
     '2009': {
-        "title": "Madurai to Kasi, Gaya, Prayagraj & Ayodhya Tour Package | 6 Days / 5 Nights Flight Package",
+        "title": "Madurai to Kasi & Gaya & Prayagraj & Ayodhya Tour Package | 6 Days / 5 Nights Flight Package",
         "image": "/assets/kasi/card/kasi10_1.webp",
         "heroImage": "/assets/kasi/kasi10.webp",
         "overview": {
@@ -14869,7 +15288,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "आमतौर पर अलग से भुगतान करना होता है: पैकेज में शामिल न होने पर हवाई या ट्रेन किराया; विशेष दर्शन टिकट; पूजा / तर्पण शुल्क; व्यक्तिगत खर्च। अंतिम कोटेशन में शामिल सुविधाओं की स्पष्ट पुष्टि की जाएगी। हाँ। होटल श्रेणी, भोजन योजना, वाहन, अतिरिक्त रातें और दर्शनीय स्थलों में बदलाव करके परिवारों, जोड़ों, वरिष्ठ नागरिकों और समूहों के लिए यात्रा कार्यक्रम को कस्टमाइज़ किया जा सकता है। उपलब्धता के अनुसार कॉर्पोरेट या समूह आवश्यकताओं पर भी अलग से विचार किया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Kasi, Gaya, Prayagraj & Ayodhya Tour | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai to Kasi, Gaya, Prayagraj & Ayodhya Tour Package | 6 Days / 5 Nights Flight",
@@ -14981,13 +15400,13 @@ export const packagesDatabase: Record<string, any> = {
     //         }
     //     ],
     //     
-        // "seo": {
-        //     "metaTitle": "Madurai to Shirdi Tour Package | 2 Days / 1 | Logaa Holidays",
-        //     "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai to Shirdi Tour Package | 2 Days / 1 Night Flight Package. Covering Shirdi to",
-        //     "canonicalUrl": "https://www.logaaholidays.com/destination/maharashtra/shirdi/madurai-to-shirdi-tour-package-2-days-1-night-flight-package",
-        //     "slug": "madurai-to-shirdi-tour-package-2-days-1-night-flight-package"
-        // },
-        // "id": "2010"
+    // "seo": {
+    //     "metaTitle": "Madurai to Shirdi Tour Package | 2 Days / 1 | Logaa Holidays",
+    //     "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai to Shirdi Tour Package | 2 Days / 1 Night Flight Package. Covering Shirdi to",
+    //     "canonicalUrl": "https://www.logaaholidays.com/destination/maharashtra/shirdi/madurai-to-shirdi-tour-package-2-days-1-night-flight-package",
+    //     "slug": "madurai-to-shirdi-tour-package-2-days-1-night-flight-package"
+    // },
+    // "id": "2010"
     // },
     '2011': {
         "title": "Chennai to Shirdi Tour Package | Train + Flight | 4 Days / 3 Nights",
@@ -15159,7 +15578,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। यात्रा कार्यक्रम को पारिवारिक यात्रा, जोड़ों, वरिष्ठ नागरिकों और समूहों की आवश्यकताओं के अनुसार कस्टमाइज़ किया जा सकता है। वाहन का आकार, होटल श्रेणी और फ्लाइट या ट्रेन कनेक्शन को कोटेशन में समायोजित किया जा सकता है। मूल पैकेज में सूचीबद्ध नहीं की गई सेवाएँ, जैसे अतिरिक्त भोजन, विशेष पूजा, अतिरिक्त दर्शनीय स्थल या अतिरिक्त परिवहन, अनुरोध किए जाने पर अतिरिक्त शुल्क के साथ उपलब्ध होंगी।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Chennai to Shirdi Tour Package | Train + Flight | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Chennai to Shirdi Tour Package | Train + Flight | 4 Days / 3 Nights. Covering Shirdi to",
@@ -15305,7 +15724,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। यात्रा कार्यक्रम को पारिवारिक यात्रा, जोड़ों, वरिष्ठ नागरिकों और समूह की आवश्यकताओं के अनुसार अनुकूलित किया जा सकता है। वाहन का आकार, होटल श्रेणी और फ्लाइट या ट्रेन कनेक्शन को कोटेशन में समायोजित किया जा सकता है। मूल पैकेज में सूचीबद्ध नहीं की गई सेवाएँ, जैसे अतिरिक्त भोजन, विशेष पूजा, अतिरिक्त दर्शनीय स्थल या अतिरिक्त परिवहन, अनुरोध किए जाने पर अतिरिक्त शुल्क के साथ उपलब्ध होंगी।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Chennai to Shirdi One Day Flight Tour Package | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Chennai to Shirdi One Day Flight Tour Package. Covering Shirdi to Shirdi in One Day",
@@ -15468,7 +15887,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। यात्रा कार्यक्रम को पारिवारिक यात्रा, जोड़ों, वरिष्ठ नागरिकों और समूह की आवश्यकताओं के अनुसार अनुकूलित किया जा सकता है। वाहन का आकार, होटल श्रेणी और फ्लाइट या ट्रेन कनेक्शन को कोटेशन में समायोजित किया जा सकता है। मूल पैकेज में सूचीबद्ध नहीं की गई सेवाएँ, जैसे अतिरिक्त भोजन, विशेष पूजा, अतिरिक्त दर्शनीय स्थल या अतिरिक्त परिवहन, अनुरोध किए जाने पर अतिरिक्त शुल्क के साथ उपलब्ध होंगी।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Chennai to Shirdi Tour Package via Pune | 2 | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Chennai to Shirdi Tour Package via Pune | 2 Days / 1 Night Flight Package. Covering",
@@ -15664,7 +16083,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। इस यात्रा कार्यक्रम को पारिवारिक यात्रा, जोड़ों, वरिष्ठ नागरिकों और समूह की आवश्यकताओं के अनुसार अनुकूलित किया जा सकता है। वाहन का आकार, होटल श्रेणी और फ्लाइट या ट्रेन कनेक्शन को quotation में बदला जा सकता है। मूल पैकेज में शामिल नहीं की गई सेवाएँ, जैसे अतिरिक्त भोजन, विशेष पूजा, अतिरिक्त दर्शनीय स्थल या अतिरिक्त परिवहन, अनुरोध करने पर अतिरिक्त शुल्क के साथ उपलब्ध होंगी।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Chennai to Shirdi Train Tour Package | 6 Days / | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Chennai to Shirdi Train Tour Package | 6 Days / 5 Nights Pilgrimage. Covering Shirdi to",
@@ -15874,7 +16293,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। इस यात्रा कार्यक्रम को पारिवारिक यात्रा, जोड़ों, वरिष्ठ नागरिकों और समूह की आवश्यकताओं के अनुसार अनुकूलित किया जा सकता है। वाहन का आकार, होटल श्रेणी और फ्लाइट या ट्रेन कनेक्शन को quotation में बदला जा सकता है। मूल पैकेज में शामिल नहीं की गई सेवाएँ, जैसे अतिरिक्त भोजन, विशेष पूजा, अतिरिक्त दर्शनीय स्थल या अतिरिक्त परिवहन, अनुरोध करने पर अतिरिक्त शुल्क के साथ उपलब्ध होंगी।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Chennai to Shirdi & Mantralayam Train Tour | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Chennai to Shirdi & Mantralayam Train Tour Package | 7 Days / 6 Nights Pilgrimage",
@@ -16100,7 +16519,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। यात्रा कार्यक्रम को पारिवारिक यात्रा, जोड़ों, वरिष्ठ नागरिकों और समूहों की आवश्यकताओं के अनुसार अनुकूलित किया जा सकता है। वाहन का आकार, होटल श्रेणी और फ्लाइट या ट्रेन कनेक्शन को कोटेशन में बदला जा सकता है। मूल पैकेज में सूचीबद्ध नहीं की गई सेवाएँ, जैसे अतिरिक्त भोजन, विशेष पूजा, अतिरिक्त दर्शनीय स्थल या अतिरिक्त परिवहन, अनुरोध करने पर अतिरिक्त शुल्क के साथ उपलब्ध होंगी।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Chennai to Shirdi, Pandharpur & Mantralayam | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Chennai to Shirdi, Pandharpur & Mantralayam Train Tour Package | 8 Days / 7 Nights",
@@ -16268,7 +16687,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। यात्रा कार्यक्रम को पारिवारिक यात्रा, जोड़ों, वरिष्ठ नागरिकों और समूहों की आवश्यकताओं के अनुसार अनुकूलित किया जा सकता है। वाहन का आकार, होटल श्रेणी और फ्लाइट या ट्रेन कनेक्शन को कोटेशन में बदला जा सकता है। मूल पैकेज में सूचीबद्ध नहीं की गई सेवाएँ, जैसे अतिरिक्त भोजन, विशेष पूजा, अतिरिक्त दर्शनीय स्थल या अतिरिक्त परिवहन, अनुरोध करने पर अतिरिक्त शुल्क के साथ उपलब्ध होंगी।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Chennai to Mumbai & Shirdi Flight Tour Package | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Chennai to Mumbai & Shirdi Flight Tour Package | 2 Days / 1 Night. Covering Shirdi to",
@@ -16454,7 +16873,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। यात्रा कार्यक्रम को पारिवारिक यात्रा, दंपतियों, वरिष्ठ नागरिकों और समूह की आवश्यकताओं के अनुसार अनुकूलित किया जा सकता है। वाहन का आकार, होटल श्रेणी और फ्लाइट या ट्रेन कनेक्शन को कोटेशन में बदला जा सकता है। मूल पैकेज में सूचीबद्ध नहीं की गई सेवाएँ, जैसे अतिरिक्त भोजन, विशेष पूजा, अतिरिक्त दर्शनीय स्थल या अतिरिक्त परिवहन, अनुरोध किए जाने पर अतिरिक्त शुल्क के साथ उपलब्ध होंगी।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Chennai to Shirdi & Nashik Flight Tour Package | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Chennai to Shirdi & Nashik Flight Tour Package | 3 Days / 2 Nights. Covering Shirdi to",
@@ -16636,7 +17055,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। यात्रा कार्यक्रम को पारिवारिक यात्रा, दंपतियों, वरिष्ठ नागरिकों और समूह की आवश्यकताओं के अनुसार अनुकूलित किया जा सकता है। वाहन का आकार, होटल श्रेणी और फ्लाइट या ट्रेन कनेक्शन को कोटेशन में बदला जा सकता है। मूल पैकेज में सूचीबद्ध नहीं की गई सेवाएँ, जैसे अतिरिक्त भोजन, विशेष पूजा, अतिरिक्त दर्शनीय स्थल या अतिरिक्त परिवहन, अनुरोध किए जाने पर अतिरिक्त शुल्क के साथ उपलब्ध होंगी।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Chennai to Shirdi & Pandharpur Flight Tour | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Chennai to Shirdi & Pandharpur Flight Tour Package | 3 Days / 2 Nights. Covering Shirdi",
@@ -16838,7 +17257,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। यात्रा कार्यक्रम को पारिवारिक यात्रा, दंपतियों, वरिष्ठ नागरिकों और समूहों की आवश्यकताओं के अनुसार अनुकूलित किया जा सकता है। वाहन का आकार, होटल श्रेणी और फ्लाइट या ट्रेन कनेक्शन को कोटेशन में समायोजित किया जा सकता है। मूल पैकेज में सूचीबद्ध नहीं की गई सेवाएँ, जैसे अतिरिक्त भोजन, विशेष पूजा, अतिरिक्त दर्शनीय स्थल या अतिरिक्त परिवहन, अनुरोध करने पर अतिरिक्त शुल्क के साथ उपलब्ध होंगी।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Chennai to Shirdi, Nashik, Ajanta & Ellora | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Chennai to Shirdi, Nashik, Ajanta & Ellora Flight Tour Package | 4 Days / 3 Nights",
@@ -17024,7 +17443,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। यात्रा कार्यक्रम को पारिवारिक यात्रा, दंपतियों, वरिष्ठ नागरिकों और समूहों की आवश्यकताओं के अनुसार अनुकूलित किया जा सकता है। वाहन का आकार, होटल श्रेणी और फ्लाइट या ट्रेन कनेक्शन को कोटेशन में समायोजित किया जा सकता है। मूल पैकेज में सूचीबद्ध नहीं की गई सेवाएँ, जैसे अतिरिक्त भोजन, विशेष पूजा, अतिरिक्त दर्शनीय स्थल या अतिरिक्त परिवहन, अनुरोध करने पर अतिरिक्त शुल्क के साथ उपलब्ध होंगी।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Chennai to Shirdi & 2 Jyotirlinga Flight Tour | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Chennai to Shirdi & 2 Jyotirlinga Flight Tour Package | 3 Days / 2 Nights. Covering",
@@ -17227,7 +17646,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। यात्रा कार्यक्रम को पारिवारिक यात्रा, जोड़ों, वरिष्ठ नागरिकों और समूह की आवश्यकताओं के अनुसार अनुकूलित किया जा सकता है। वाहन का आकार, होटल श्रेणी और फ्लाइट या ट्रेन कनेक्शन को quotation में बदला जा सकता है। मूल पैकेज में शामिल नहीं की गई सेवाएँ, जैसे अतिरिक्त भोजन, विशेष पूजा, अतिरिक्त दर्शनीय स्थल या अतिरिक्त परिवहन, अनुरोध किए जाने पर अतिरिक्त शुल्क के अधीन होंगी।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Chennai to Shirdi & 3 Jyotirlinga Flight Tour | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Chennai to Shirdi & 3 Jyotirlinga Flight Tour Package | 4 Days / 3 Nights. Covering",
@@ -17417,7 +17836,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। इस यात्रा कार्यक्रम को परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों की आवश्यकताओं के अनुसार अनुकूलित किया जा सकता है। वाहन का आकार, होटल की श्रेणी और फ्लाइट/ट्रेन कनेक्शन को quotation में बदला जा सकता है। अतिरिक्त भोजन, विशेष पूजा, अतिरिक्त sightseeing या अतिरिक्त परिवहन जैसी मूल पैकेज में शामिल नहीं की गई सेवाओं के लिए अनुरोध करने पर अलग से शुल्क लिया जाएगा।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Chennai to Shirdi & Lonavala Flight Tour | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Chennai to Shirdi & Lonavala Flight Tour Package | 3 Days / 2 Nights. Covering Shirdi to",
@@ -17596,7 +18015,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। इस यात्रा कार्यक्रम को परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों की आवश्यकताओं के अनुसार अनुकूलित किया जा सकता है। वाहन का आकार, होटल की श्रेणी और फ्लाइट/ट्रेन कनेक्शन को quotation में बदला जा सकता है। अतिरिक्त भोजन, विशेष पूजा, अतिरिक्त sightseeing या अतिरिक्त परिवहन जैसी मूल पैकेज में शामिल नहीं की गई सेवाओं के लिए अनुरोध करने पर अलग से शुल्क लिया जाएगा।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Chennai to Shirdi, Ajanta & Ellora Flight Tour | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Chennai to Shirdi, Ajanta & Ellora Flight Tour Package | 3 Days / 2 Nights. Covering",
@@ -17723,7 +18142,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। कस्टमाइज़्ड टूर प्लान उपलब्ध हैं। आपकी दर्शनीय स्थल प्राथमिकताओं, बुकिंग आवश्यकताओं और उपलब्ध समय के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है."
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai One Day Tour Package | Best Local | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai One Day Tour Package | Best Local Sightseeing. Covering Madurai to Madurai in One",
@@ -17792,7 +18211,7 @@ export const packagesDatabase: Record<string, any> = {
         "highlights": [],
         "keywords": "Book Your Madurai One Day Tour Today, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [{ "question": "Can I do the Madurai to Rameswaram trip in one day?", "questionTamil": "மதுரையிலிருந்து ராமேஸ்வரத்திற்கு ஒரு நாள் பயணமாக செல்ல முடியுமா?", "questionHindi": "क्या मैं मदुरै से रामेश्वरम की यात्रा एक दिन में कर सकता हूँ?", "answer": "Yes. This itinerary is planned as a one-day trip, with sightseeing and travel arranged according to the schedule in the package.", "answerTamil": "ஆம். இந்த பயணத்திட்டம் ஒரு நாள் பயணமாக திட்டமிடப்பட்டுள்ளது. தொகுப்பில் குறிப்பிடப்பட்டுள்ள அட்டவணைக்கு ஏற்ப பயணம் மற்றும் சுற்றுலா இடங்களை பார்வையிடும் வகையில் ஏற்பாடு செய்யப்பட்டுள்ளது.", "answerHindi": "हाँ। यह यात्रा कार्यक्रम एक दिवसीय यात्रा के रूप में तैयार किया गया है, जिसमें पैकेज में दिए गए कार्यक्रम के अनुसार यात्रा और दर्शनीय स्थलों का भ्रमण शामिल है." }, { "question": "What are the main sightseeing places covered in the Madurai to Rameswaram itinerary?", "questionTamil": "மதுரை முதல் ராமேஸ்வரம் பயணத்திட்டத்தில் இடம்பெறும் முக்கியமான சுற்றுலா இடங்கள் எவை?", "questionHindi": "मदुरै से रामेश्वरम यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?", "answer": "Key places listed in the itinerary include Sri Ramanathaswamy Temple, Agni Theertham, Pamban Road Bridge View Point, Pamban Railway Bridge View Point, Dr. A.P.J. Abdul Kalam Memorial, and Dr. A.P.J. Abdul Kalam House Museum. Sightseeing is subject to the day-wise schedule and available time.", "answerTamil": "இந்த பயணத்திட்டத்தில் ஸ்ரீ ராமநாதசுவாமி கோவில், அக்னி தீர்த்தம், பாம்பன் சாலை பாலம் View Point, பாம்பன் ரயில்வே பாலம் View Point, டாக்டர் ஏ.பி.ஜே. அப்துல் கலாம் நினைவகம் மற்றும் டாக்டர் ஏ.பி.ஜே. அப்துல் கலாம் இல்ல அருங்காட்சியகம் ஆகிய முக்கிய இடங்கள் இடம்பெறுகின்றன. சுற்றுலா பார்வைகள் தினசரி பயணத்திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்து அமையும்.", "answerHindi": "इस यात्रा कार्यक्रम में श्री रामनाथस्वामी मंदिर, अग्नि तीर्थम, पंबन रोड ब्रिज व्यू पॉइंट, पंबन रेलवे ब्रिज व्यू पॉइंट, डॉ. ए.पी.जे. अब्दुल कलाम स्मारक और डॉ. ए.पी.जे. अब्दुल कलाम हाउस म्यूज़ियम जैसे प्रमुख स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के यात्रा कार्यक्रम और उपलब्ध समय के अनुसार होगा." }, { "question": "What pickup and drop options are available for the Madurai to Rameswaram tour?", "questionTamil": "மதுரை முதல் ராமேஸ்வரம் சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?", "questionHindi": "मदुरै से रामेश्वरम टूर के लिए पिकअप और ड्रॉप की क्या सुविधाएँ उपलब्ध हैं?", "answer": "Pickup is available from your Hotel, Railway Station, Airport, or Bus Stand in Madurai, followed by travel to Rameswaram. Drop can be provided at your Hotel, Railway Station, Airport, or Bus Stand.", "answerTamil": "உங்கள் ஹோட்டல், ரயில் நிலையம், விமான நிலையம் அல்லது பேருந்து நிலையத்திலிருந்து Pickup செய்து ராமேஸ்வரத்திற்கு அழைத்துச் செல்லப்படும். ராமேஸ்வரத்தில் உங்கள் ஹோட்டல், ரயில் நிலையம், விமான நிலையம் அல்லது பேருந்து நிலையத்தில் Drop வசதி வழங்கப்படும்.", "answerHindi": "आपके होटल, रेलवे स्टेशन, एयरपोर्ट या बस स्टैंड से पिकअप की सुविधा उपलब्ध है और वहाँ से रामेश्वरम ले जाया जाएगा। ड्रॉप आपके होटल, रेलवे स्टेशन, एयरपोर्ट या बस स्टैंड पर उपलब्ध कराया जा सकता है." }, { "question": "What is included in the Madurai to Rameswaram tour package?", "questionTamil": "மதுரை முதல் ராமேஸ்வரம் சுற்றுலா தொகுப்பில் என்னென்ன வசதிகள் சேர்க்கப்பட்டுள்ளன?", "questionHindi": "मदुरै से रामेश्वरम टूर पैकेज में क्या-क्या शामिल है?", "answer": "The package includes a private A/C vehicle, pickup and drop, experienced driver, driver allowance, and parking charges.", "answerTamil": "இந்த தொகுப்பில் தனியார் ஏ.சி. வாகனம், Pickup மற்றும் Drop, அனுபவமிக்க ஓட்டுநர், ஓட்டுநர் Allowance மற்றும் பார்க்கிங் கட்டணங்கள் சேர்க்கப்பட்டுள்ளன.", "answerHindi": "इस पैकेज में निजी ए.सी. वाहन, पिकअप और ड्रॉप, अनुभवी ड्राइवर, ड्राइवर भत्ता और पार्किंग शुल्क शामिल हैं." }, { "question": "Does the Madurai to Rameswaram one day package include hotel accommodation and breakfast?", "questionTamil": "மதுரை முதல் ராமேஸ்வரம் ஒரு நாள் சுற்றுலா தொகுப்பில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?", "questionHindi": "क्या मदुरै से रामेश्वरम एक दिवसीय पैकेज में होटल में ठहरना और नाश्ता शामिल है?", "answer": "No. This is a one-day package, and no overnight hotel stay is listed. Accommodation and breakfast are not part of the stated inclusions.", "answerTamil": "இல்லை. இது ஒரு நாள் சுற்றுலா தொகுப்பாகும், இதில் இரவு நேர ஹோட்டல் தங்குமிடம் குறிப்பிடப்படவில்லை. தங்குமிடம் மற்றும் காலை உணவு இந்த தொகுப்பில் சேர்க்கப்படவில்லை.", "answerHindi": "नहीं। यह एक दिवसीय पैकेज है और इसमें रातभर होटल में ठहरने की सुविधा शामिल नहीं है। आवास और नाश्ता इस पैकेज की दी गई सुविधाओं में शामिल नहीं हैं." }, { "question": "Which costs are extra in the Madurai to Rameswaram tour package?", "questionTamil": "மதுரை முதல் ராமேஸ்வரம் சுற்றுலா தொகுப்பில் எந்த செலவுகள் கூடுதலாக இருக்கும்?", "questionHindi": "मदुरै से रामेश्वरम टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?", "answer": "Extra charges include Temple Special Darshan Tickets, Entry Fees if applicable, Meals and Beverages, Personal Expenses, and Guide Charges.", "answerTamil": "கோவில் சிறப்பு தரிசன டிக்கெட்டுகள், பொருந்தும் இடங்களில் நுழைவுக் கட்டணங்கள், உணவு மற்றும் பானங்கள், தனிப்பட்ட செலவுகள் மற்றும் வழிகாட்டி கட்டணங்கள் கூடுதல் செலவுகளாகும்.", "answerHindi": "मंदिर विशेष दर्शन टिकट, लागू होने पर प्रवेश शुल्क, भोजन और पेय पदार्थ, व्यक्तिगत खर्च और गाइड शुल्क अतिरिक्त खर्च के अंतर्गत आते हैं." }, { "question": "Can I customize the Madurai to Rameswaram day trip itinerary?", "questionTamil": "மதுரை முதல் ராமேஸ்வரம் ஒரு நாள் பயணத்திட்டத்தை தனிப்பயனாக்க முடியுமா?", "questionHindi": "क्या मैं मदुरै से रामेश्वरम एक दिवसीय यात्रा कार्यक्रम को कस्टमाइज़ कर सकता हूँ?", "answer": "Yes. Customized tour plans are available. The itinerary can be finalized according to your booking requirements and travel preferences.", "answerTamil": "ஆம். தனிப்பயனாக்கப்பட்ட சுற்றுலா திட்டங்கள் கிடைக்கின்றன. உங்கள் முன்பதிவு தேவைகள் மற்றும் பயண விருப்பங்களுக்கு ஏற்ப பயணத்திட்டத்தை இறுதி செய்யலாம்.", "answerHindi": "हाँ। कस्टमाइज़्ड टूर प्लान उपलब्ध हैं। आपकी बुकिंग आवश्यकताओं और यात्रा प्राथमिकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है." }],
-        
+
         "seo": {
             "metaTitle": "Madurai to Rameswaram One Day Tour Package | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai to Rameswaram One Day Tour Package. Covering Madurai to Rameswaram to Madurai to",
@@ -17914,7 +18333,7 @@ export const packagesDatabase: Record<string, any> = {
             }
         ]
         ,
-        
+
         "seo": {
             "metaTitle": "Madurai to Kodaikanal One Day Tour Package | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Kodaikanal One Day Tour Package. Covering Madurai to Kodaikanal to Madurai to Kodaikanal in One Day.",
@@ -18032,7 +18451,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "विवेकानंद रॉक मेमोरियल के लिए नाव के टिकट, लागू होने पर प्रवेश शुल्क, मंदिर विशेष दर्शन टिकट, भोजन और पेय पदार्थ तथा व्यक्तिगत खर्च अतिरिक्त शुल्क के अंतर्गत आते हैं."
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Kanyakumari One Day Tour Package | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai to Kanyakumari One Day Tour Package. Covering Kanyakumari to Kanyakumari in One",
@@ -18042,7 +18461,7 @@ export const packagesDatabase: Record<string, any> = {
         "id": "2028"
     },
     '2029': {
-        "title": "Madurai to Meghamalai One Day Tour Package",
+        "title": "Madurai to Megamalai One Day Tour Package",
         "image": "/assets/megamalai/megamalai 3.webp",
         "heroImage": "/assets/megamalai/megamalai 1 hero.webp",
         "overview": {
@@ -18061,9 +18480,9 @@ export const packagesDatabase: Record<string, any> = {
                 "title": "One Day Pilgrimage",
                 "activities": [
                     "🕕 06:00 AM – Pickup from Madurai Hotel / Airport / Railway Station / Bus Stand",
-                    "Proceed to Meghamalai via Theni and Chinnamanur, enjoying the scenic drive through the Western Ghats.",
-                    "📍 Meghamalai Sightseeing",
-                    "🌄 Meghamalai View Point",
+                    "Proceed to Megamalai via Theni and Chinnamanur, enjoying the scenic drive through the Western Ghats.",
+                    "📍 Megamalai Sightseeing",
+                    "🌄 Megamalai View Point",
                     "🍃 Tea Estates",
                     "💧 Manalar Dam View",
                     "🌊 Maharaja Mettu View Point",
@@ -18073,7 +18492,7 @@ export const packagesDatabase: Record<string, any> = {
                     "☕ Tea Estate Photography Points",
                     "🍽️ Lunch Break (Self-paid at a local restaurant or resort, subject to availability)",
                     "Spend leisure time enjoying the cool climate and beautiful landscapes before beginning the return journey.",
-                    "🕔 04:30 PM – Depart from Meghamalai",
+                    "🕔 04:30 PM – Depart from Megamalai",
                     "🕢 07:30 PM – Arrival & Drop at Madurai Hotel / Airport / Railway Station / Bus Stand"
                 ]
             }
@@ -18099,11 +18518,11 @@ export const packagesDatabase: Record<string, any> = {
             "Camera Fees (if applicable)"
         ],
         "highlights": [],
-        "keywords": "Madurai to Meghamalai One Day Trip, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
+        "keywords": "Madurai to Megamalai One Day Trip, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
 
         "faq": [
             {
-                "question": "Can I do the Madurai to Meghamalai trip in one day?",
+                "question": "Can I do the Madurai to Megamalai trip in one day?",
                 "questionTamil": "மதுரையிலிருந்து மேகமலைக்கு ஒரு நாள் பயணமாக செல்ல முடியுமா?",
                 "questionHindi": "क्या मैं मदुरै से मेघमलाई की यात्रा एक दिन में कर सकता हूँ?",
                 "answer": "Yes. This itinerary is planned as a one-day trip, with sightseeing and travel arranged according to the schedule in the package.",
@@ -18111,15 +18530,15 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। यह यात्रा कार्यक्रम एक दिवसीय यात्रा के रूप में तैयार किया गया है, जिसमें पैकेज में दिए गए कार्यक्रम के अनुसार यात्रा और दर्शनीय स्थलों का भ्रमण शामिल है."
             },
             {
-                "question": "What are the main sightseeing places covered in the Madurai to Meghamalai itinerary?",
+                "question": "What are the main sightseeing places covered in the Madurai to Megamalai itinerary?",
                 "questionTamil": "மதுரை முதல் மேகமலை பயணத்திட்டத்தில் இடம்பெறும் முக்கியமான சுற்றுலா இடங்கள் எவை?",
                 "questionHindi": "मदुरै से मेघमलाई यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
-                "answer": "Key places listed in the itinerary include Meghamalai View Point, Tea Estates, Manalar Dam View, Maharaja Mettu View Point, Vellimalai View Point, and Scenic Mountain View Stops. Sightseeing is subject to the day-wise schedule and available time.",
+                "answer": "Key places listed in the itinerary include Megamalai View Point, Tea Estates, Manalar Dam View, Maharaja Mettu View Point, Vellimalai View Point, and Scenic Mountain View Stops. Sightseeing is subject to the day-wise schedule and available time.",
                 "answerTamil": "இந்த பயணத்திட்டத்தில் மேகமலை View Point, தேயிலை தோட்டங்கள், மணலாறு அணை View, மகாராஜா மெட்டு View Point, வெள்ளிமலை View Point மற்றும் அழகிய மலைக் காட்சிகளை ரசிக்கும் இடங்கள் ஆகியவை இடம்பெறுகின்றன. சுற்றுலா பார்வைகள் தினசரி பயணத்திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்து அமையும்.",
                 "answerHindi": "इस यात्रा कार्यक्रम में मेघमलाई व्यू पॉइंट, चाय के बागान, मनलार बांध व्यू, महाराजा मेट्टू व्यू पॉइंट, वेल्लिमलाई व्यू पॉइंट और सुंदर पर्वतीय दृश्य वाले स्थान शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के यात्रा कार्यक्रम और उपलब्ध समय के अनुसार होगा."
             },
             {
-                "question": "What pickup and drop options are available for the Madurai to Meghamalai tour?",
+                "question": "What pickup and drop options are available for the Madurai to Megamalai tour?",
                 "questionTamil": "மதுரை முதல் மேகமலை சுற்றுலாவிற்கு என்னென்ன Pickup மற்றும் Drop வசதிகள் உள்ளன?",
                 "questionHindi": "मदुरै से मेघमलाई टूर के लिए पिकअप और ड्रॉप की क्या सुविधाएँ उपलब्ध हैं?",
                 "answer": "Pickup is scheduled at 06:00 AM from your Madurai Hotel, Airport, Railway Station, or Bus Stand. Arrival and drop at your Madurai Hotel, Airport, Railway Station, or Bus Stand is scheduled at around 07:30 PM.",
@@ -18127,7 +18546,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "सुबह 06:00 बजे मदुरै होटल, एयरपोर्ट, रेलवे स्टेशन या बस स्टैंड से पिकअप की सुविधा उपलब्ध है। शाम लगभग 07:30 बजे मदुरै होटल, एयरपोर्ट, रेलवे स्टेशन या बस स्टैंड पर वापसी और ड्रॉप की सुविधा दी जाएगी."
             },
             {
-                "question": "What is included in the Madurai to Meghamalai tour package?",
+                "question": "What is included in the Madurai to Megamalai tour package?",
                 "questionTamil": "மதுரை முதல் மேகமலை சுற்றுலா தொகுப்பில் என்னென்ன வசதிகள் சேர்க்கப்பட்டுள்ளன?",
                 "questionHindi": "मदुरै से मेघमलाई टूर पैकेज में क्या-क्या शामिल है?",
                 "answer": "The package includes a private A/C vehicle up to the hill route, subject to road conditions, along with pickup and drop, an experienced driver, parking charges, and driver allowance.",
@@ -18135,7 +18554,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "इस पैकेज में पहाड़ी मार्ग तक निजी ए.सी. वाहन शामिल है, जो सड़क की स्थिति पर निर्भर करेगा। इसके अलावा पिकअप और ड्रॉप, अनुभवी ड्राइवर, पार्किंग शुल्क और ड्राइवर भत्ता शामिल हैं."
             },
             {
-                "question": "Does the Madurai to Meghamalai one day package include hotel accommodation and breakfast?",
+                "question": "Does the Madurai to Megamalai one day package include hotel accommodation and breakfast?",
                 "questionTamil": "மதுரை முதல் மேகமலை ஒரு நாள் சுற்றுலா தொகுப்பில் ஹோட்டல் தங்குமிடம் மற்றும் காலை உணவு சேர்க்கப்பட்டுள்ளதா?",
                 "questionHindi": "क्या मदुरै से मेघमलाई एक दिवसीय पैकेज में होटल में ठहरना और नाश्ता शामिल है?",
                 "answer": "No. This is a one-day package, and no overnight hotel stay is listed. Accommodation and breakfast are not part of the stated inclusions.",
@@ -18143,7 +18562,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "नहीं। यह एक दिवसीय पैकेज है और इसमें रातभर होटल में ठहरने की सुविधा शामिल नहीं है। आवास और नाश्ता इस पैकेज की दी गई सुविधाओं में शामिल नहीं हैं."
             },
             {
-                "question": "Which costs are extra in the Madurai to Meghamalai tour package?",
+                "question": "Which costs are extra in the Madurai to Megamalai tour package?",
                 "questionTamil": "மதுரை முதல் மேகமலை சுற்றுலா தொகுப்பில் எந்த செலவுகள் கூடுதலாக இருக்கும்?",
                 "questionHindi": "मदुरै से मेघमलाई टूर पैकेज में कौन-कौन से खर्च अतिरिक्त हैं?",
                 "answer": "Extra charges include Entry Fees if applicable, Meals and Beverages, Guide Services, Personal Expenses, and Camera Fees if applicable.",
@@ -18151,12 +18570,12 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "लागू होने पर प्रवेश शुल्क, भोजन और पेय पदार्थ, गाइड सेवाएँ, व्यक्तिगत खर्च और लागू होने पर कैमरा शुल्क अतिरिक्त खर्च के अंतर्गत आते हैं."
             }
         ],
-        
+
         "seo": {
-            "metaTitle": "Madurai to Meghamalai One Day Tour Package | Logaa Holidays",
-            "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Meghamalai One Day Tour Package. Covering Madurai to Madurai in One Day.",
-            "canonicalUrl": "https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-to-meghamalai-one-day-tour-package",
-            "slug": "madurai-to-meghamalai-one-day-tour-package"
+            "metaTitle": "Madurai to Megamalai One Day Tour Package | Logaa Holidays",
+            "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Megamalai One Day Tour Package. Covering Madurai to Madurai in One Day.",
+            "canonicalUrl": "https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-to-Megamalai-one-day-tour-package",
+            "slug": "madurai-to-Megamalai-one-day-tour-package"
         },
         "id": "2029"
     },
@@ -18166,7 +18585,7 @@ export const packagesDatabase: Record<string, any> = {
         "heroImage": "/assets/thanjavur/thanjavur 2 hero.webp",
         "overview": {
             "duration": "One Day",
-            "destination": "Madurai to Trichy & Thanjavur",
+            "destination": "Trichy & Thanjavur",
             "activities": "Pilgrimage, Sightseeing",
             "themes": "Religious & Pilgrimage, Culture & Heritage"
         },
@@ -18269,7 +18688,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "स्मारक और संग्रहालय प्रवेश टिकट, मंदिर विशेष दर्शन टिकट, भोजन और पेय पदार्थ, गाइड सेवाएँ तथा व्यक्तिगत खर्च अतिरिक्त शुल्क के अंतर्गत आते हैं."
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Trichy & Thanjavur One Day Tour | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai to Trichy & Thanjavur One Day Tour Package. Covering Madurai to Trichy &",
@@ -18279,12 +18698,12 @@ export const packagesDatabase: Record<string, any> = {
         "id": "2030"
     },
     '2031': {
-        "title": "Madurai to Tiruchendur One Day Tour Package",
+        "title": "Madurai to Thiruchendur One Day Tour Package",
         "image": "/assets/thiruchendur/thiruchendur 1 hero.webp",
         "heroImage": "/assets/thiruchendur/thiruchendur 2.webp",
         "overview": {
             "duration": "One Day",
-            "destination": "Madurai",
+            "destination": "Thiruchendur",
             "activities": "Pilgrimage, Sightseeing",
             "themes": "Religious & Pilgrimage, Culture & Heritage"
         },
@@ -18404,7 +18823,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। कस्टमाइज़्ड टूर प्लान उपलब्ध हैं। आपकी बुकिंग आवश्यकताओं और यात्रा प्राथमिकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है."
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Tiruchendur One Day Tour Package | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai to Tiruchendur One Day Tour Package. Covering Madurai to Madurai in One Day",
@@ -18419,7 +18838,7 @@ export const packagesDatabase: Record<string, any> = {
         "heroImage": "/assets/KERALA/1918x642/thekkady1.webp",
         "overview": {
             "duration": "One Day",
-            "destination": "Madurai",
+            "destination": "Thekkady",
             "activities": "Nature, Wildlife, Sightseeing",
             "themes": "Nature & Adventure, Culture & Heritage"
         },
@@ -18543,7 +18962,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। कस्टमाइज़्ड टूर प्लान उपलब्ध हैं। आपकी बुकिंग आवश्यकताओं और यात्रा प्राथमिकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है."
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Thekkady One Day Tour Package | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Thekkady One Day Tour Package. Covering Madurai to Madurai in One Day. Highlights include One Day",
@@ -18701,7 +19120,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Munnar 2 Days / 1 Night Tour Package | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Munnar 2 Days / 1 Night Tour Package. Covering Madurai to Madurai in 2 Days / 1 Night. Highlights",
@@ -18852,7 +19271,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Trichy & Thanjavur 2 Days / 1 Night | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai to Trichy & Thanjavur 2 Days / 1 Night Tour Package. Covering Madurai to Madurai",
@@ -19002,7 +19421,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Tiruchendur 2 Days / 1 Night Tour | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai to Tiruchendur 2 Days / 1 Night Tour Package. Covering Madurai to Madurai in 2",
@@ -19158,7 +19577,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Kanyakumari & Trivandrum 2 Days / 1 | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai to Kanyakumari & Trivandrum 2 Days / 1 Night Tour Package. Covering Madurai to",
@@ -19173,7 +19592,7 @@ export const packagesDatabase: Record<string, any> = {
         "heroImage": "/assets/KERALA/1918x642/thekkady4.webp",
         "overview": {
             "duration": "2 Days / 1 Night",
-            "destination": "Madurai",
+            "destination": "Alleppey",
             "activities": "Nature, Backwaters, Sightseeing",
             "themes": "Nature & Adventure, Culture & Heritage"
         },
@@ -19311,7 +19730,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Thekkady & Alleppey 2 Days / 1 Night | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Thekkady & Alleppey 2 Days / 1 Night Tour Package. Covering Madurai to Madurai in 2 Days / 1 Night",
@@ -19326,7 +19745,7 @@ export const packagesDatabase: Record<string, any> = {
         "heroImage": "/assets/KERALA/1918x642/munnar3.webp",
         "overview": {
             "duration": "2 Days / 1 Night",
-            "destination": "Madurai",
+            "destination": "Marayoor",
             "activities": "Nature, Sightseeing",
             "themes": "Nature & Adventure, Culture & Heritage"
         },
@@ -19470,7 +19889,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Munnar & Marayoor 2 Days / 1 Night | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Munnar & Marayoor 2 Days / 1 Night Tour Package. Covering Madurai to Madurai in 2 Days / 1 Night",
@@ -19485,7 +19904,7 @@ export const packagesDatabase: Record<string, any> = {
         "heroImage": "/assets/KERALA/1918x642/munnar2.webp",
         "overview": {
             "duration": "3 Days / 2 Nights",
-            "destination": "Madurai",
+            "destination": "Munnar",
             "activities": "Nature, Sightseeing",
             "themes": "Nature & Adventure, Culture & Heritage"
         },
@@ -19645,7 +20064,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Munnar 3 Days / 2 Nights Tour Package | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Munnar 3 Days / 2 Nights Tour Package. Covering Madurai to Madurai in 3 Days / 2 Nights. Highlights",
@@ -19660,7 +20079,7 @@ export const packagesDatabase: Record<string, any> = {
         "heroImage": "/assets/kodaikanal/kodai3.webp",
         "overview": {
             "duration": "3 Days / 2 Nights",
-            "destination": "Madurai",
+            "destination": " Mannavanur",
             "activities": "Nature, Sightseeing",
             "themes": "Nature & Adventure, Culture & Heritage"
         },
@@ -19812,7 +20231,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "Entry Tickets, Boating Charges, Camera Fees, Lunch & Dinner और Personal Expenses के लिए अतिरिक्त शुल्क देना होगा।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Kodaikanal & Mannavanur 3 Days / 2 | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Kodaikanal & Mannavanur 3 Days / 2 Nights Tour Package. Covering Madurai to Madurai in 3 Days / 2",
@@ -19827,7 +20246,7 @@ export const packagesDatabase: Record<string, any> = {
         "heroImage": "/assets/KERALA/1918x642/thekkady3.webp",
         "overview": {
             "duration": "3 Days / 2 Nights",
-            "destination": "Madurai",
+            "destination": "Thekkady",
             "activities": "Nature, Wildlife, Sightseeing",
             "themes": "Nature & Adventure, Culture & Heritage"
         },
@@ -19984,7 +20403,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Thekkady 3 Days / 2 Nights Tour | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Thekkady 3 Days / 2 Nights Tour Package. Covering Madurai to Madurai in 3 Days / 2 Nights. Highlights",
@@ -19999,7 +20418,7 @@ export const packagesDatabase: Record<string, any> = {
         "heroImage": "/assets/KERALA/1918x642/VAGAMON2.webp",
         "overview": {
             "duration": "3 Days / 2 Nights",
-            "destination": "Madurai",
+            "destination": "Vagamon",
             "activities": "Nature, Backwaters, Sightseeing",
             "themes": "Nature & Adventure, Culture & Heritage"
         },
@@ -20156,7 +20575,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Thekkady & Vagamon 3 Days / 2 Nights | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Thekkady & Vagamon 3 Days / 2 Nights Tour Package. Covering Madurai to Madurai in 3 Days / 2 Nights",
@@ -20166,12 +20585,12 @@ export const packagesDatabase: Record<string, any> = {
         "id": "2042"
     },
     '2043': {
-        "title": "Madurai to Meghamalai 3 Days / 2 Nights Tour Package",
+        "title": "Madurai to Megamalai 3 Days / 2 Nights Tour Package",
         "image": "/assets/megamalai/megamalai 6.webp",
         "heroImage": "/assets/megamalai/megamalai 5 hero.webp",
         "overview": {
             "duration": "3 Days / 2 Nights",
-            "destination": "Madurai",
+            "destination": " Megamalai",
             "activities": "Nature, Sightseeing",
             "themes": "Nature & Adventure, Culture & Heritage"
         },
@@ -20182,44 +20601,44 @@ export const packagesDatabase: Record<string, any> = {
         "itinerary": [
             {
                 "day": "Day 01",
-                "title": "Madurai to Meghamalai",
+                "title": "Madurai to Megamalai",
                 "activities": [
                     "07:00 AM – Pickup from Madurai Airport, Railway Station, Hotel, or Bus Stand.",
-                    "Drive towards Meghamalai via Theni and Chinnamanur.",
+                    "Drive towards Megamalai via Theni and Chinnamanur.",
                     "En Route Sightseeing",
                     "🛕 Veerapandi Gowmariamman Temple",
                     "🌊 Vaigai Dam View Point (Optional)",
                     "🌄 Scenic Ghat Road Photo Stops",
-                    "Meghamalai Sightseeing",
-                    "🌿 Meghamalai Tea Estates",
+                    "Megamalai Sightseeing",
+                    "🌿 Megamalai Tea Estates",
                     "🌄 High Wavy View Point",
                     "💧 Manalar Dam View Point",
                     "📸 Tea Garden Photography",
                     "03:00 PM – Hotel Check-in.",
                     "Enjoy the peaceful hill station atmosphere.",
-                    "🏨 Overnight Stay in Meghamalai"
+                    "🏨 Overnight Stay in Megamalai"
                 ]
             },
             {
                 "day": "Day 02",
-                "title": "Full Day Meghamalai Sightseeing",
+                "title": "Full Day Megamalai Sightseeing",
                 "activities": [
                     "08:00 AM – Breakfast at Hotel.",
                     "Visit",
                     "🌄 Maharaja Mettu View Point",
                     "🌿 Vellimalai View Point",
                     "🌳 Tea Plantation Drive",
-                    "💧 Meghamalai Waterfalls (Seasonal)",
+                    "💧 Megamalai Waterfalls (Seasonal)",
                     "🌲 Forest View Points",
                     "🦋 Bird Watching & Nature Walk",
                     "☕ Tea Estate Visit",
                     "Return to the hotel.",
-                    "🏨 Overnight Stay in Meghamalai"
+                    "🏨 Overnight Stay in Megamalai"
                 ]
             },
             {
                 "day": "Day 03",
-                "title": "Meghamalai to Madurai",
+                "title": "Megamalai to Madurai",
                 "activities": [
                     "08:00 AM – Breakfast at Hotel.",
                     "Check-out from the hotel.",
@@ -20238,7 +20657,7 @@ export const packagesDatabase: Record<string, any> = {
             "Pickup & Drop from Madurai",
             "2 Nights Hotel Accommodation",
             "Complimentary Breakfast",
-            "Meghamalai Sightseeing as per Itinerary",
+            "Megamalai Sightseeing as per Itinerary",
             "Experienced Hill Driver",
             "Driver Allowance",
             "Toll & Parking Charges",
@@ -20256,7 +20675,7 @@ export const packagesDatabase: Record<string, any> = {
             "Guide Charges"
         ],
         "highlights": [
-            "3 Days / 2 Nights Meghamalai Tour",
+            "3 Days / 2 Nights Megamalai Tour",
             "Pickup & Drop from Madurai",
             "Private A/C Vehicle",
             "2 Nights Hotel Accommodation",
@@ -20267,10 +20686,10 @@ export const packagesDatabase: Record<string, any> = {
             "Experienced Hill Driver",
             "Customizable Tour Package"
         ],
-        "keywords": "Madurai to Meghamalai 3 Days / 2 Nights Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
+        "keywords": "Madurai to Megamalai 3 Days / 2 Nights Tour Package, Madurai Tour, Tamil Nadu Sightseeing, Logaa Holidays",
         "faq": [
             {
-                "question": "How long is the Madurai to Meghamalai tour?",
+                "question": "How long is the Madurai to Megamalai tour?",
                 "questionTamil": "மதுரையிலிருந்து மேகமலைக்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
                 "questionHindi": "मदुरै से मेघमलाई टूर कितने दिनों का है?",
                 "answer": "This Logaa Holidays itinerary is planned for 3 Days / 2 Nights.",
@@ -20278,10 +20697,10 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 3 दिन / 2 रातों के लिए निर्धारित है।"
             },
             {
-                "question": "What are the main sightseeing places covered in the Madurai to Meghamalai itinerary?",
+                "question": "What are the main sightseeing places covered in the Madurai to Megamalai itinerary?",
                 "questionTamil": "மதுரை முதல் மேகமலை பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
                 "questionHindi": "मदुरै से मेघमलाई यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
-                "answer": "Key places listed in the itinerary include Veerapandi Gowmariamman Temple, Vaigai Dam View Point, Meghamalai Tea Estates, High Wavy View Point, Manalar Dam View Point, and Tea Garden Photography. Sightseeing is subject to the day-wise schedule and available time.",
+                "answer": "Key places listed in the itinerary include Veerapandi Gowmariamman Temple, Vaigai Dam View Point, Megamalai Tea Estates, High Wavy View Point, Manalar Dam View Point, and Tea Garden Photography. Sightseeing is subject to the day-wise schedule and available time.",
                 "answerTamil": "இந்த பயணத் திட்டத்தில் வீரபாண்டி கௌமாரியம்மன் கோவில், வைகை அணை வியூ பாயிண்ட், மேகமலை தேயிலை தோட்டங்கள், ஹை வேவி வியூ பாயிண்ட், மணலார் அணை வியூ பாயிண்ட் மற்றும் தேயிலை தோட்ட புகைப்பட இடங்கள் ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
                 "answerHindi": "इस यात्रा कार्यक्रम में वीरपांडी गौमारियम्मन मंदिर, वैगई डैम व्यू पॉइंट, मेघमलाई चाय बागान, हाई वेवी व्यू पॉइंट, मनालार डैम व्यू पॉइंट और टी गार्डन फोटोग्राफी जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
             },
@@ -20297,7 +20716,7 @@ export const packagesDatabase: Record<string, any> = {
                 "question": "What is included in this tour package?",
                 "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
                 "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
-                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Meghamalai Sightseeing as per the itinerary, an Experienced Hill Driver, and Driver Allowance.",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Megamalai Sightseeing as per the itinerary, an Experienced Hill Driver, and Driver Allowance.",
                 "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி மேகமலை Sightseeing, அனுபவமிக்க Hill Driver மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
                 "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार मेघमलाई दर्शनीय स्थल, अनुभवी हिल ड्राइवर और ड्राइवर भत्ता शामिल हैं।"
             },
@@ -20326,12 +20745,12 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
-            "metaTitle": "Madurai to Meghamalai 3 Days / 2 Nights Tour | Logaa Holidays",
-            "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Meghamalai 3 Days / 2 Nights Tour Package. Covering Madurai to Madurai in 3 Days / 2 Nights",
-            "canonicalUrl": "https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-to-meghamalai-3-days-2-nights-tour-package",
-            "slug": "madurai-to-meghamalai-3-days-2-nights-tour-package"
+            "metaTitle": "Madurai to Megamalai 3 Days / 2 Nights Tour | Logaa Holidays",
+            "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Megamalai 3 Days / 2 Nights Tour Package. Covering Madurai to Madurai in 3 Days / 2 Nights",
+            "canonicalUrl": "https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-to-Megamalai-3-days-2-nights-tour-package",
+            "slug": "madurai-to-Megamalai-3-days-2-nights-tour-package"
         },
         "id": "2043"
     },
@@ -20341,7 +20760,7 @@ export const packagesDatabase: Record<string, any> = {
         "heroImage": "/assets/otty/ooty2.webp",
         "overview": {
             "duration": "3 Days / 2 Nights",
-            "destination": "Madurai",
+            "destination": "Coonoor",
             "activities": "Nature, Sightseeing",
             "themes": "Nature & Adventure, Culture & Heritage"
         },
@@ -20496,7 +20915,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Ooty & Coonoor 3 Days / 2 Nights | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Ooty & Coonoor 3 Days / 2 Nights Tour Package. Covering Madurai to Madurai in 3 Days / 2 Nights",
@@ -20511,7 +20930,7 @@ export const packagesDatabase: Record<string, any> = {
         "heroImage": "/assets/KERALA/1918x642/MUNNAR5.webp",
         "overview": {
             "duration": "3 Days / 2 Nights",
-            "destination": "Madurai",
+            "destination": "Thekkady",
             "activities": "Nature, Sightseeing",
             "themes": "Nature & Adventure, Culture & Heritage"
         },
@@ -20673,7 +21092,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Munnar & Thekkady 3 Days / 2 Nights | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Munnar & Thekkady 3 Days / 2 Nights Tour Package. Covering Madurai to Madurai in 3 Days / 2 Nights",
@@ -20688,7 +21107,7 @@ export const packagesDatabase: Record<string, any> = {
         "heroImage": "/assets/KERALA/1918x642/aleppey1.webp",
         "overview": {
             "duration": "3 Days / 2 Nights",
-            "destination": "Madurai",
+            "destination": "Alleppey",
             "activities": "Nature, Backwaters, Sightseeing",
             "themes": "Nature & Adventure, Culture & Heritage"
         },
@@ -20852,7 +21271,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Munnar & Alleppey 3 Days / 2 Nights | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Munnar & Alleppey 3 Days / 2 Nights Tour Package. Covering Madurai to Madurai in 3 Days / 2 Nights",
@@ -20867,7 +21286,7 @@ export const packagesDatabase: Record<string, any> = {
         "heroImage": "/assets/KERALA/1918x642/aleppey2.webp",
         "overview": {
             "duration": "3 Days / 2 Nights",
-            "destination": "Madurai",
+            "destination": "Alleppey",
             "activities": "Nature, Wildlife, Sightseeing",
             "themes": "Nature & Adventure, Culture & Heritage"
         },
@@ -21026,7 +21445,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Thekkady & Alleppey 3 Days / 2 | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Thekkady & Alleppey 3 Days / 2 Nights Tour Package. Covering Madurai to Madurai in 3 Days / 2 Nights",
@@ -21041,7 +21460,7 @@ export const packagesDatabase: Record<string, any> = {
         "heroImage": "/assets/KERALA/1918x642/VAGAMON3.webp",
         "overview": {
             "duration": "3 Days / 2 Nights",
-            "destination": "Madurai",
+            "destination": "Vagamon",
             "activities": "Nature, Sightseeing",
             "themes": "Nature & Adventure, Culture & Heritage"
         },
@@ -21207,7 +21626,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Munnar & Vagamon 3 Days / 2 Nights | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Munnar & Vagamon 3 Days / 2 Nights Tour Package. Covering Madurai to Madurai in 3 Days / 2 Nights",
@@ -21222,7 +21641,7 @@ export const packagesDatabase: Record<string, any> = {
         "heroImage": "/assets/KERALA/1918x642/munnar4.webp",
         "overview": {
             "duration": "3 Days / 2 Nights",
-            "destination": "Madurai",
+            "destination": "Marayoor",
             "activities": "Nature, Sightseeing",
             "themes": "Nature & Adventure, Culture & Heritage"
         },
@@ -21386,7 +21805,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Munnar & Marayoor 3 Days / 2 Nights | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Munnar & Marayoor 3 Days / 2 Nights Tour Package. Covering Madurai to Madurai in 3 Days / 2 Nights",
@@ -21401,7 +21820,7 @@ export const packagesDatabase: Record<string, any> = {
         "heroImage": "/assets/KERALA/1918x642/ALEPPEY3.webp",
         "overview": {
             "duration": "3 Days / 2 Nights",
-            "destination": "Madurai",
+            "destination": "Kumarakom",
             "activities": "Pilgrimage, Nature, Sightseeing",
             "themes": "Religious & Pilgrimage, Nature & Adventure"
         },
@@ -21559,7 +21978,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Thekkady & Kumarakom 3 Days / 2 | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai to Thekkady & Kumarakom 3 Days / 2 Nights Tour Package. Covering Madurai to",
@@ -21574,7 +21993,7 @@ export const packagesDatabase: Record<string, any> = {
         "heroImage": "/assets/rameswaram/dk.webp",
         "overview": {
             "duration": "3 Days / 2 Nights",
-            "destination": "Madurai",
+            "destination": "Kanyakumari",
             "activities": "Pilgrimage, Sightseeing",
             "themes": "Religious & Pilgrimage, Culture & Heritage"
         },
@@ -21734,7 +22153,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Rameswaram & Kanyakumari 3 Days / 2 | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai to Rameswaram & Kanyakumari 3 Days / 2 Nights Tour Package. Covering Madurai to",
@@ -21744,12 +22163,12 @@ export const packagesDatabase: Record<string, any> = {
         "id": "2051"
     },
     '2052': {
-        "title": "Best Madurai, Trichy, Thanjavur & Rameswaram Tour Package | 3 Days / 2 Nights",
+        "title": "Best Madurai to Trichy, Thanjavur & Rameswaram Tour Package | 3 Days / 2 Nights",
         "image": "/assets/thrichy/thrichy card 1.webp",
         "heroImage": "/assets/thrichy/thrichy 1.webp",
         "overview": {
             "duration": "3 Days / 2 Nights",
-            "destination": "Madurai",
+            "destination": "Rameswaram",
             "activities": "Pilgrimage, Sightseeing",
             "themes": "Religious & Pilgrimage, Culture & Heritage"
         },
@@ -21908,7 +22327,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Best Madurai, Trichy, Thanjavur & Rameswaram | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Best Madurai, Trichy, Thanjavur & Rameswaram Tour Package | 3 Days / 2 Nights. Covering",
@@ -21923,7 +22342,7 @@ export const packagesDatabase: Record<string, any> = {
         "heroImage": "/assets/thiruvananthapuram.webp",
         "overview": {
             "duration": "3 Days / 2 Nights",
-            "destination": "Madurai",
+            "destination": "Thiruvananthapuram",
             "activities": "Pilgrimage, Sightseeing",
             "themes": "Religious & Pilgrimage, Culture & Heritage"
         },
@@ -22079,7 +22498,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Kanyakumari & Thiruvananthapuram 3 | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai to Kanyakumari & Thiruvananthapuram 3 Days / 2 Nights Tour Package. Covering",
@@ -22090,12 +22509,12 @@ export const packagesDatabase: Record<string, any> = {
     },
 
     '2055': {
-        "title": "Madurai to Trichy, Thanjavur & Kumbakonam 3 Days / 2 Nights Tour Package",
+        "title": "Madurai to Trichy & Thanjavur & Kumbakonam 3 Days / 2 Nights Tour Package",
         "image": "/assets/thanjavur/thanjavur 6.webp",
         "heroImage": "/assets/thanjavur/thanjavur 5 hero.webp",
         "overview": {
             "duration": "3 Days / 2 Nights",
-            "destination": "Madurai",
+            "destination": "Kumbakonam",
             "activities": "Pilgrimage, Sightseeing",
             "themes": "Religious & Pilgrimage, Culture & Heritage"
         },
@@ -22248,7 +22667,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Trichy, Thanjavur & Kumbakonam 3 | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai to Trichy, Thanjavur & Kumbakonam 3 Days / 2 Nights Tour Package. Covering",
@@ -22258,7 +22677,7 @@ export const packagesDatabase: Record<string, any> = {
         "id": "2055"
     },
     '2056': {
-        "title": "Madurai to Rameswaram, Tiruchendur & Kanyakumari 4 Days / 3 Nights Tour Package",
+        "title": "Madurai to Rameswaram & Tiruchendur & Kanyakumari 4 Days / 3 Nights Tour Package",
         "image": "/assets/rameswaram/sm5.webp",
         "heroImage": "/assets/rameswaram/three.webp",
         "overview": {
@@ -22439,7 +22858,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Rameswaram, Tiruchendur & | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai to Rameswaram, Tiruchendur & Kanyakumari 4 Days / 3 Nights Tour Package. Covering",
@@ -22454,7 +22873,7 @@ export const packagesDatabase: Record<string, any> = {
         "heroImage": "/assets/kodaikanal/kodai5.webp",
         "overview": {
             "duration": "4 Days / 3 Nights",
-            "destination": "Madurai",
+            "destination": "Munnar",
             "activities": "Nature, Sightseeing",
             "themes": "Nature & Adventure, Culture & Heritage"
         },
@@ -22626,7 +23045,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Kodaikanal & Munnar 4 Days / 3 | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Kodaikanal & Munnar 4 Days / 3 Nights Tour Package. Covering Madurai to Madurai in 4 Days / 3 Nights",
@@ -22636,12 +23055,12 @@ export const packagesDatabase: Record<string, any> = {
         "id": "2057"
     },
     '2058': {
-        "title": "Madurai to Munnar, Vagamon & Thekkady 4 Days / 3 Nights Tour Package",
+        "title": "Madurai to Munnar & Vagamon & Thekkady 4 Days / 3 Nights Tour Package",
         "image": "/assets/KERALA/322x372/VAGAMON4.webp",
         "heroImage": "/assets/KERALA/1918x642/VAGAMON4.webp",
         "overview": {
             "duration": "4 Days / 3 Nights",
-            "destination": "Madurai",
+            "destination": "Thekkady",
             "activities": "Nature, Sightseeing",
             "themes": "Nature & Adventure, Culture & Heritage"
         },
@@ -22822,7 +23241,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Munnar, Vagamon & Thekkady 4 Days / | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Munnar, Vagamon & Thekkady 4 Days / 3 Nights Tour Package. Covering Madurai to Madurai in 4 Days / 3",
@@ -22837,7 +23256,7 @@ export const packagesDatabase: Record<string, any> = {
         "heroImage": "/assets/KERALA/1918x642/munnar2.webp",
         "overview": {
             "duration": "4 Days / 3 Nights",
-            "destination": "Madurai",
+            "destination": "Kumarakom",
             "activities": "Nature, Wildlife, Sightseeing",
             "themes": "Nature & Adventure, Culture & Heritage"
         },
@@ -23016,7 +23435,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Munnar, Thekkady & Kumarakom 4 Days | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Munnar, Thekkady & Kumarakom 4 Days / 3 Nights Tour Package. Covering Madurai to Madurai in 4 Days /",
@@ -23031,7 +23450,7 @@ export const packagesDatabase: Record<string, any> = {
         "heroImage": "/assets/KERALA/1918x642/ALEPPEY4.webp",
         "overview": {
             "duration": "4 Days / 3 Nights",
-            "destination": "Madurai to Munnar, Alleppey & Kochi",
+            "destination": "Kochi",
             "activities": "Nature, Backwaters, Sightseeing",
             "themes": "Nature & Adventure, Culture & Heritage"
         },
@@ -23210,7 +23629,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Munnar, Alleppey & Kochi 4 Days / 3 | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Munnar, Alleppey & Kochi 4 Days / 3 Nights Tour Package. Covering Madurai to Munnar, Alleppey & Kochi",
@@ -23220,12 +23639,12 @@ export const packagesDatabase: Record<string, any> = {
         "id": "2060"
     },
     '2061': {
-        "title": "Madurai to Trichy, Thanjavur & Kumbakonam 4 Days / 3 Nights Tour Package",
+        "title": "Madurai to Trichy & Thanjavur & Kumbakonam 4 Days / 3 Nights Tour Package",
         "image": "/assets/thanjavur/thanjavur 3.webp",
         "heroImage": "/assets/thanjavur/thanjavur 4 hero.webp",
         "overview": {
             "duration": "4 Days / 3 Nights",
-            "destination": "Madurai",
+            "destination": "Kumbakonam",
             "activities": "Pilgrimage, Sightseeing",
             "themes": "Religious & Pilgrimage, Culture & Heritage"
         },
@@ -23386,7 +23805,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Trichy, Thanjavur & Kumbakonam 4 | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai to Trichy, Thanjavur & Kumbakonam 4 Days / 3 Nights Tour Package. Covering",
@@ -23397,12 +23816,12 @@ export const packagesDatabase: Record<string, any> = {
     },
 
     '2063': {
-        "title": "Madurai to Valparai, Athirappilly & Kochi 4 Days / 3 Nights Tour Package",
+        "title": "Madurai to Valparai & Athirappilly & Kochi 4 Days / 3 Nights Tour Package",
         "image": "/assets/lonavala.webp",
         "heroImage": "/assets/Athirappilly.webp",
         "overview": {
             "duration": "4 Days / 3 Nights",
-            "destination": "Madurai -> Valparai -> Athirappilly -> Kochi  -> Madurai",
+            "destination": "Kochi",
             "activities": "Nature, Sightseeing",
             "themes": "Nature & Adventure, Culture & Heritage"
         },
@@ -23571,7 +23990,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Valparai, Athirappilly & Kochi 4 | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Valparai, Athirappilly & Kochi 4 Days / 3 Nights Tour Package. Covering Madurai -> Valparai ->",
@@ -23581,12 +24000,12 @@ export const packagesDatabase: Record<string, any> = {
         "id": "2063"
     },
     '2064': {
-        "title": "Madurai to Kodaikanal, Munnar & Thekkady 5 Days / 4 Nights Tour Package",
+        "title": "Madurai to Kodaikanal & Munnar & Thekkady 5 Days / 4 Nights Tour Package",
         "image": "/assets/kodaikanal/card/Gunacaves.webp",
         "heroImage": "/assets/kodaikanal/kodai6.webp",
         "overview": {
             "duration": "5 Days / 4 Nights",
-            "destination": "Madurai",
+            "destination": "Thekkady",
             "activities": "Nature, Sightseeing",
             "themes": "Nature & Adventure, Culture & Heritage"
         },
@@ -23778,7 +24197,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Kodaikanal, Munnar & Thekkady 5 Days | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Kodaikanal, Munnar & Thekkady 5 Days / 4 Nights Tour Package. Covering Madurai to Madurai in 5 Days /",
@@ -23900,7 +24319,7 @@ export const packagesDatabase: Record<string, any> = {
             }
         ]
         ,
-        
+
         "seo": {
             "metaTitle": "Madurai to Palani One Day Trip | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai to Palani One Day Trip. Covering Palani to Palani in One Day. Highlights include",
@@ -23915,7 +24334,7 @@ export const packagesDatabase: Record<string, any> = {
         "heroImage": "/assets/madurai/pillayarpatti hero.webp",
         "overview": {
             "duration": "Full Day (Approx. 10–12 Hours)",
-            "destination": "Pillayarpatti, Kundrakudi, Thirukoshtiyur",
+            "destination": "Thirukoshtiyur",
             "activities": "Pilgrimage, Sightseeing",
             "themes": "Religious & Pilgrimage"
         },
@@ -24015,7 +24434,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "मंदिर विशेष दर्शन टिकट, लागू होने पर प्रवेश शुल्क, भोजन और व्यक्तिगत खर्च अतिरिक्त शुल्क के अंतर्गत आते हैं."
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai – Pillayarpatti – Kundrakudi – | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai – Pillayarpatti – Kundrakudi – Thirukoshtiyur One Day Temple Tour. Covering",
@@ -24142,7 +24561,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। कस्टमाइज़्ड टूर प्लान उपलब्ध हैं। आपकी बुकिंग आवश्यकताओं और यात्रा प्राथमिकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है."
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Courtallam One Day Tour Package | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Courtallam One Day Tour Package. Covering Courtallam to Courtallam in One Day. Highlights include One",
@@ -24296,7 +24715,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "मंदिर विशेष दर्शन टिकट, प्रवेश शुल्क, दोपहर और रात का भोजन, व्यक्तिगत खर्च तथा गाइड शुल्क अतिरिक्त खर्च के अंतर्गत आते हैं."
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Rameswaram 2 Days Tour Package | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai to Rameswaram 2 Days Tour Package. Covering Rameswaram to Rameswaram in 2 Days /",
@@ -24439,7 +24858,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "विवेकानंद रॉक मेमोरियल के लिए नाव टिकट, प्रवेश टिकट और स्मारक शुल्क, मंदिर विशेष दर्शन टिकट, दोपहर और रात का भोजन तथा व्यक्तिगत खर्च अतिरिक्त शुल्क के अंतर्गत आते हैं."
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Kanyakumari 2 Days / 1 Night Tour | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai to Kanyakumari 2 Days / 1 Night Tour Package. Covering Kanyakumari to Kanyakumari",
@@ -24595,7 +25014,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। कस्टमाइज़्ड टूर प्लान उपलब्ध हैं। आपकी बुकिंग आवश्यकताओं और यात्रा प्राथमिकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है."
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Kodaikanal 2 Days / 1 Night Tour | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Kodaikanal 2 Days / 1 Night Tour Package. Covering Kodaikanal to Kodaikanal in 2 Days / 1 Night",
@@ -24747,7 +25166,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। कस्टमाइज़्ड टूर प्लान उपलब्ध हैं। आपकी बुकिंग आवश्यकताओं और यात्रा प्राथमिकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है."
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Thekkady 2 Days / 1 Night Tour | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Thekkady 2 Days / 1 Night Tour Package. Covering Thekkady to Thekkady in 2 Days / 1 Night. Highlights",
@@ -24901,7 +25320,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। कस्टमाइज़्ड टूर प्लान उपलब्ध हैं। आपकी बुकिंग आवश्यकताओं और यात्रा प्राथमिकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है."
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Vagamon 2 Days / 1 Night Tour Package | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Vagamon 2 Days / 1 Night Tour Package. Covering Vagamon to Vagamon in 2 Days / 1 Night. Highlights",
@@ -24911,12 +25330,12 @@ export const packagesDatabase: Record<string, any> = {
         "id": "2073"
     },
     '2074': {
-        "title": "Madurai to Meghamalai 2 Days / 1 Night Tour Package",
+        "title": "Madurai to Megamalai 2 Days / 1 Night Tour Package",
         "image": "/assets/megamalai/megamalai 4.webp",
         "heroImage": "/assets/megamalai/megamalai 2 hero.webp",
         "overview": {
             "duration": "2 Days / 1 Night",
-            "destination": "Meghamalai",
+            "destination": "Megamalai",
             "activities": "Nature, Sightseeing",
             "themes": "Nature & Adventure, Hill Stations & Valleys"
         },
@@ -24927,28 +25346,28 @@ export const packagesDatabase: Record<string, any> = {
         "itinerary": [
             {
                 "day": "Day 01",
-                "title": "Madurai to Meghamalai",
+                "title": "Madurai to Megamalai",
                 "activities": [
                     "07:00 AM – Pickup from Madurai Airport, Railway Station, Hotel, or Bus Stand.",
-                    "Drive to Meghamalai via Theni and Chinnamanur.",
+                    "Drive to Megamalai via Theni and Chinnamanur.",
                     "En Route Sightseeing",
                     "🌊 Veerapandi Temple & River View",
                     "🌿 Vaigai Dam View Point (Optional)",
                     "🌄 Scenic Ghat Road Photo Stops",
-                    "Meghamalai Sightseeing",
-                    "🌿 Meghamalai Tea Estates",
-                    "🌄 Meghamalai View Point",
+                    "Megamalai Sightseeing",
+                    "🌿 Megamalai Tea Estates",
+                    "🌄 Megamalai View Point",
                     "💧 Manalar Dam View Point",
                     "📸 Tea Garden Photography Stops",
                     "01:30 PM – Lunch Break (Self-paid)",
                     "03:00 PM – Hotel Check-in.",
                     "Enjoy the peaceful surroundings and cool mountain climate.",
-                    "🏨 Overnight Stay in Meghamalai"
+                    "🏨 Overnight Stay in Megamalai"
                 ]
             },
             {
                 "day": "Day 02",
-                "title": "Meghamalai Sightseeing & Return to Madurai",
+                "title": "Megamalai Sightseeing & Return to Madurai",
                 "activities": [
                     "08:00 AM – Breakfast at Hotel",
                     "Check-out from the hotel.",
@@ -24969,7 +25388,7 @@ export const packagesDatabase: Record<string, any> = {
             "Pickup & Drop from Madurai",
             "1 Night Hotel Accommodation",
             "Complimentary Breakfast",
-            "Meghamalai Sightseeing as per Itinerary",
+            "Megamalai Sightseeing as per Itinerary",
             "Experienced Driver",
             "Driver Allowance",
             "Toll & Parking Charges",
@@ -24987,13 +25406,13 @@ export const packagesDatabase: Record<string, any> = {
             "Guide Charges"
         ],
         "highlights": [
-            "2 Days / 1 Night Meghamalai Tour",
+            "2 Days / 1 Night Megamalai Tour",
             "Pickup & Drop from Madurai",
             "Private A/C Vehicle",
             "1 Night Hotel Accommodation",
             "Complimentary Breakfast",
             "🌿 Tea Estates & Mountain Viewpoints",
-            "🌄 Meghamalai View Point",
+            "🌄 Megamalai View Point",
             "💧 Manalar Dam View Point",
             "🌄 Maharaja Mettu View Point",
             "🌿 Vellimalai View Point",
@@ -25001,10 +25420,10 @@ export const packagesDatabase: Record<string, any> = {
             "Experienced Driver",
             "Customizable Tour Package"
         ],
-        "keywords": "Madurai to Meghamalai 2 Days / 1 Night Tour Package, Best Meghamalai Tour Package from Madurai | 2 Days & 1 Night, Meghamalai Tour, Tamil Nadu Hill Station, Logaa Holidays",
+        "keywords": "Madurai to Megamalai 2 Days / 1 Night Tour Package, Best Megamalai Tour Package from Madurai | 2 Days & 1 Night, Megamalai Tour, Tamil Nadu Hill Station, Logaa Holidays",
         "faq": [
             {
-                "question": "How long is the Madurai to Meghamalai tour?",
+                "question": "How long is the Madurai to Megamalai tour?",
                 "questionTamil": "மதுரையிலிருந்து மேகமலைக்கு சுற்றுலா எத்தனை நாட்கள் ஆகும்?",
                 "questionHindi": "मदुरै से मेघमलाई टूर कितने दिनों का है?",
                 "answer": "This Logaa Holidays itinerary is planned for 2 Days / 1 Night.",
@@ -25012,10 +25431,10 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "यह Logaa Holidays यात्रा कार्यक्रम 2 दिन / 1 रात के लिए निर्धारित है।"
             },
             {
-                "question": "What are the main sightseeing places covered in the Madurai to Meghamalai itinerary?",
+                "question": "What are the main sightseeing places covered in the Madurai to Megamalai itinerary?",
                 "questionTamil": "மதுரை முதல் மேகமலை பயணத் திட்டத்தில் உள்ள முக்கிய சுற்றுலா இடங்கள் என்ன?",
                 "questionHindi": "मदुरै से मेघमलाई यात्रा कार्यक्रम में कौन-कौन से प्रमुख दर्शनीय स्थल शामिल हैं?",
-                "answer": "Key places listed in the itinerary include Veerapandi Temple & River View, Vaigai Dam View Point, Meghamalai Tea Estates, Meghamalai View Point, Manalar Dam View Point, and Tea Garden Photography Stops. Sightseeing is subject to the day-wise schedule and available time.",
+                "answer": "Key places listed in the itinerary include Veerapandi Temple & River View, Vaigai Dam View Point, Megamalai Tea Estates, Megamalai View Point, Manalar Dam View Point, and Tea Garden Photography Stops. Sightseeing is subject to the day-wise schedule and available time.",
                 "answerTamil": "இந்த பயணத் திட்டத்தில் வீரபாண்டி கோவில் மற்றும் ஆற்றங்கரை காட்சி, வைகை அணை வியூ பாயிண்ட், மேகமலை தேயிலை தோட்டங்கள், மேகமலை வியூ பாயிண்ட், மணலார் அணை வியூ பாயிண்ட் மற்றும் தேயிலை தோட்ட புகைப்பட நிறுத்தங்கள் ஆகியவை முக்கிய சுற்றுலா இடங்களாக குறிப்பிடப்பட்டுள்ளன. சுற்றுலா இடங்களை பார்வையிடுவது நாள் வாரியான திட்டம் மற்றும் கிடைக்கும் நேரத்தைப் பொறுத்தது.",
                 "answerHindi": "इस यात्रा कार्यक्रम में वीरपांडी मंदिर और नदी का दृश्य, वैगई डैम व्यू पॉइंट, मेघमलाई चाय बागान, मेघमलाई व्यू पॉइंट, मनालार डैम व्यू पॉइंट और चाय बागान फोटोग्राफी स्टॉप जैसे प्रमुख दर्शनीय स्थल शामिल हैं। दर्शनीय स्थलों का भ्रमण दिन के कार्यक्रम और उपलब्ध समय पर निर्भर करता है।"
             },
@@ -25031,7 +25450,7 @@ export const packagesDatabase: Record<string, any> = {
                 "question": "What is included in this tour package?",
                 "questionTamil": "இந்த சுற்றுலா பேக்கேஜில் என்னென்ன சேர்க்கப்பட்டுள்ளது?",
                 "questionHindi": "इस टूर पैकेज में क्या-क्या शामिल है?",
-                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Meghamalai Sightseeing as per the itinerary, an Experienced Driver, and Driver Allowance.",
+                "answer": "The package includes a Private A/C Vehicle, Pickup & Drop from Madurai, Megamalai Sightseeing as per the itinerary, an Experienced Driver, and Driver Allowance.",
                 "answerTamil": "இந்த பேக்கேஜில் தனியார் A/C வாகனம், மதுரையிலிருந்து Pickup & Drop, பயணத் திட்டத்தின்படி மேகமலை Sightseeing, அனுபவமிக்க ஓட்டுநர் மற்றும் ஓட்டுநர் Allowance ஆகியவை சேர்க்கப்பட்டுள்ளன.",
                 "answerHindi": "इस पैकेज में प्राइवेट A/C वाहन, मदुरै से पिकअप और ड्रॉप, यात्रा कार्यक्रम के अनुसार मेघमलाई दर्शनीय स्थल, अनुभवी ड्राइवर और ड्राइवर भत्ता शामिल हैं।"
             },
@@ -25060,12 +25479,12 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
-            "metaTitle": "Madurai to Meghamalai 2 Days / 1 Night Tour | Logaa Holidays",
-            "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Meghamalai 2 Days / 1 Night Tour Package. Covering Meghamalai to Meghamalai in 2 Days / 1 Night",
-            "canonicalUrl": "https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-to-meghamalai-2-days-1-night-tour-package",
-            "slug": "madurai-to-meghamalai-2-days-1-night-tour-package"
+            "metaTitle": "Madurai to Megamalai 2 Days / 1 Night Tour | Logaa Holidays",
+            "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Megamalai 2 Days / 1 Night Tour Package. Covering Megamalai to Megamalai in 2 Days / 1 Night",
+            "canonicalUrl": "https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-to-Megamalai-2-days-1-night-tour-package",
+            "slug": "madurai-to-Megamalai-2-days-1-night-tour-package"
         },
         "id": "2074"
     },
@@ -25217,7 +25636,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Ooty 2 Days / 1 Night Tour Package | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Ooty 2 Days / 1 Night Tour Package. Covering Ooty to Ooty in 2 Days / 1 Night. Highlights include 2",
@@ -25375,7 +25794,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Valparai 2 Days / 1 Night Tour | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Valparai 2 Days / 1 Night Tour Package. Covering Valparai to Valparai in 2 Days / 1 Night. Highlights",
@@ -25549,7 +25968,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai to Valparai 3 Days / 2 Nights Tour | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Madurai to Valparai 3 Days / 2 Nights Tour Package. Covering Valparai to Valparai in 3 Days / 2 Nights",
@@ -25564,7 +25983,7 @@ export const packagesDatabase: Record<string, any> = {
         "heroImage": "/assets/tiruchendure.webp",
         "overview": {
             "duration": "3 Days / 2 Nights",
-            "destination": "Tiruchendur, Kanyakumari",
+            "destination": "Kanyakumari",
             "activities": "Pilgrimage, Sightseeing",
             "themes": "Religious & Pilgrimage, Culture & Heritage, Beaches and Islands"
         },
@@ -25723,7 +26142,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai → Tiruchendur → Kanyakumari 3 Days / 2 | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai → Tiruchendur → Kanyakumari 3 Days / 2 Nights Tour Package. Covering Tiruchendur",
@@ -25738,7 +26157,7 @@ export const packagesDatabase: Record<string, any> = {
         "heroImage": "/assets/kumbakonam/kumbakonam 2 hero.webp",
         "overview": {
             "duration": "3 Days / 2 Nights",
-            "destination": "Kumbakonam, Thanjavur",
+            "destination": "Kumbakonam",
             "activities": "Pilgrimage, Sightseeing",
             "themes": "Religious & Pilgrimage, Culture & Heritage"
         },
@@ -25898,7 +26317,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai → Kumbakonam Navagraha Temple Tour | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai → Kumbakonam Navagraha Temple Tour Package 3 Days / 2 Nights. Covering",
@@ -25981,7 +26400,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai → Rameswaram → Kanyakumari → | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai → Rameswaram → Kanyakumari → Thiruvananthapuram 4 Days / 3 Nights Tour Package",
@@ -26064,7 +26483,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai → Tiruchendur → Kanyakumari → | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai → Tiruchendur → Kanyakumari → Thiruvananthapuram 4 Days / 3 Nights Tour Package",
@@ -26147,7 +26566,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai → Kodaikanal → Palani → Madurai 4 Days | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai → Kodaikanal → Palani → Madurai 4 Days / 3 Nights Tour Package. Covering",
@@ -26230,7 +26649,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai → Kumbakonam → Navagraha Temples 4 Days | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai → Kumbakonam → Navagraha Temples 4 Days / 3 Nights Tour Package. Covering",
@@ -26313,7 +26732,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai → Kanyakumari → Kovalam → | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai → Kanyakumari → Kovalam → Thiruvananthapuram 4 Days / 3 Nights Tour Package",
@@ -26397,7 +26816,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai → Munnar → Thekkady → Alleppey → Kochi | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Madurai → Munnar → Thekkady → Alleppey → Kochi 5 Days / 4 Nights Tour Package. Covering Munnar, Thekkady",
@@ -26481,7 +26900,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai → Rameswaram → Tiruchendur → | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai → Rameswaram → Tiruchendur → Kanyakumari → Thiruvananthapuram 5 Days / 4 Nights",
@@ -26565,7 +26984,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai → Rameswaram → Dhanushkodi → | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai → Rameswaram → Dhanushkodi → Kanyakumari → Thiruvananthapuram 5 Days / 4 Nights",
@@ -26649,7 +27068,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। Customized tour plans उपलब्ध हैं। बुकिंग की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अंतिम रूप दिया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Madurai → Kodaikanal → Rameswaram → Kanyakumari | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai → Kodaikanal → Rameswaram → Kanyakumari → Thiruvananthapuram 5 Days / 4 Nights",
@@ -26736,7 +27155,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "हाँ। पैकेज में customized या customizable tour plans उपलब्ध हैं। Booking requirements के अनुसार itinerary को final किया जा सकता है."
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Kochi → Munnar → Thekkady → Alleppey → Kovalam | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Kochi → Munnar → Thekkady → Alleppey → Kovalam → Kanyakumari → Rameswaram → Madurai 8",
@@ -26747,7 +27166,7 @@ export const packagesDatabase: Record<string, any> = {
     },
 
     '1010': {
-        
+
         "seo": {
             "metaTitle": "Madurai to Shirdi Tour Package | 2 Days / 1 | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai to Shirdi Tour Package | 2 Days / 1 Night Direct Flight Package. Covering Shirdi",
@@ -26910,7 +27329,7 @@ export const packagesDatabase: Record<string, any> = {
         ]
     },
     '1007': {
-        
+
         "seo": {
             "metaTitle": "Madurai to Kasi Tour Package | 3 Days / 2 | Logaa Holidays",
             "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai to Kasi Tour Package | 3 Days / 2 Nights Varanasi Flight Package. Covering Kasi |",
@@ -27033,13 +27452,13 @@ export const packagesDatabase: Record<string, any> = {
     },
     // '1008': {
     //     
-        "seo": {
-            "metaTitle": "Madurai to Kasi, Gaya & Prayagraj Tour Package | Logaa Holidays",
-            "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai to Kasi, Gaya & Prayagraj Tour Package | 5 Days / 4 Nights Flight Package",
-            "canonicalUrl": "https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-to-kasi-gaya-prayagraj-tour-package-5-days-4-nights-flight-package-2",
-            "slug": "madurai-to-kasi-gaya-prayagraj-tour-package-5-days-4-nights-flight-package-2"
-        },
-        "id": "1008",
+    "seo": {
+        "metaTitle": "Madurai to Kasi, Gaya & Prayagraj Tour Package | Logaa Holidays",
+        "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai to Kasi, Gaya & Prayagraj Tour Package | 5 Days / 4 Nights Flight Package",
+        "canonicalUrl": "https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-to-kasi-gaya-prayagraj-tour-package-5-days-4-nights-flight-package-2",
+        "slug": "madurai-to-kasi-gaya-prayagraj-tour-package-5-days-4-nights-flight-package-2"
+    },
+    "id": "1008",
     //     "title": "Madurai to Kasi, Gaya & Prayagraj Tour Package | 5 Days / 4 Nights Flight Package",
     //     "image": "/assets/kasi/card/kasicard9.webp",
     //     "heroImage": "/assets/kasi/kasi9.webp",
@@ -27107,13 +27526,13 @@ export const packagesDatabase: Record<string, any> = {
     // },
     // '1009': {
     //     
-        // "seo": {
-        //     "metaTitle": "Madurai to Kasi, Gaya, Prayagraj & Ayodhya Tour | Logaa Holidays",
-        //     "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai to Kasi, Gaya, Prayagraj & Ayodhya Tour Package | 6 Days / 5 Nights Flight",
-        //     "canonicalUrl": "https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-to-kasi-gaya-prayagraj-ayodhya-tour-package-6-days-5-nights-flight-packa-2",
-        //     "slug": "madurai-to-kasi-gaya-prayagraj-ayodhya-tour-package-6-days-5-nights-flight-packa-2"
-        // },
-        // "id": "1009",
+    // "seo": {
+    //     "metaTitle": "Madurai to Kasi, Gaya, Prayagraj & Ayodhya Tour | Logaa Holidays",
+    //     "metaDescription": "Embark on a spiritually fulfilling journey with Logaa Holidays on the Madurai to Kasi, Gaya, Prayagraj & Ayodhya Tour Package | 6 Days / 5 Nights Flight",
+    //     "canonicalUrl": "https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-to-kasi-gaya-prayagraj-ayodhya-tour-package-6-days-5-nights-flight-packa-2",
+    //     "slug": "madurai-to-kasi-gaya-prayagraj-ayodhya-tour-package-6-days-5-nights-flight-packa-2"
+    // },
+    // "id": "1009",
     //     "title": "Madurai to Kasi, Gaya, Prayagraj & Ayodhya Tour Package | 6 Days / 5 Nights Flight Package",
     //     "image": "/assets/kasi/card/kasi10_1.webp",
     //     "heroImage": "/assets/kasi/kasi10.webp",
@@ -27288,46 +27707,46 @@ export const packagesDatabase: Record<string, any> = {
             cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
         }
     },
-    '3': {
-        id: '3',
-        title: 'Shirdi Flight Package From Chennai - One Day',
-        image: '/assets/generated/shirdi_flight_sky.webp',
-        overview: {
-            duration: '1 Day',
-            destination: 'Shirdi',
-            activities: 'Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'Rs. 10500/-',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Chennai - Shirdi',
-                description: 'Departure at 4.00/5.15 am from Chennai Airport. Arrival 6.50 am at Pune Airport. Cab will start at Pune airport by 07.00 am and reaching Shirdi at 12.00 pm Having V.I.P darshan (Subject to Availability) of Saibaba Temple and visit other places of Gurusthan, Dwarakamai, Museum, Chavadi & Lendi Garden.\nStarts from Shirdi at 4.00 pm on the way visiting Maha Ganapathy Temple (Time Permits). Reaching Pune Airport at 9.00 pm Boarding Flight at Pune Airport by 11.00 pm and reaching Chennai at 12.45 am.'
-            }
-        ],
-        inclusions: [
-            'Transportation by A/C cab.',
-            'Everybody must bring Original ID Proof at the time of travel.',
-            'Special darshan will be arranged (subject to availability)',
-            'Please be at Airport 2 hours before the departure time.',
-            'Avail this Package only with minimum of 5 - 6 Persons.',
-            'Special Fair will be applicable minimum 45 days prior to the departure.',
-            'Booking should be done with 100% Payment (No cancellation & no Refunds)',
-            'This budget package designed based on lowest Air fair and non peak days'
-        ],
-        exclusions: [
-            'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
-        ],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
+    // '3': {
+    //     id: '3',
+    //     title: 'Shirdi Flight Package From Chennai - One Day',
+    //     image: '/assets/generated/shirdi_flight_sky.webp',
+    //     overview: {
+    //         duration: '1 Day',
+    //         destination: 'Shirdi',
+    //         activities: 'Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'Rs. 10500/-',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Chennai - Shirdi',
+    //             description: 'Departure at 4.00/5.15 am from Chennai Airport. Arrival 6.50 am at Pune Airport. Cab will start at Pune airport by 07.00 am and reaching Shirdi at 12.00 pm Having V.I.P darshan (Subject to Availability) of Saibaba Temple and visit other places of Gurusthan, Dwarakamai, Museum, Chavadi & Lendi Garden.\nStarts from Shirdi at 4.00 pm on the way visiting Maha Ganapathy Temple (Time Permits). Reaching Pune Airport at 9.00 pm Boarding Flight at Pune Airport by 11.00 pm and reaching Chennai at 12.45 am.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Transportation by A/C cab.',
+    //         'Everybody must bring Original ID Proof at the time of travel.',
+    //         'Special darshan will be arranged (subject to availability)',
+    //         'Please be at Airport 2 hours before the departure time.',
+    //         'Avail this Package only with minimum of 5 - 6 Persons.',
+    //         'Special Fair will be applicable minimum 45 days prior to the departure.',
+    //         'Booking should be done with 100% Payment (No cancellation & no Refunds)',
+    //         'This budget package designed based on lowest Air fair and non peak days'
+    //     ],
+    //     exclusions: [
+    //         'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
+    //     ],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
     '4': {
         id: '4',
         title: 'Shirdi Flight Package Via Pune From Chennai - 2 Days',
@@ -27994,408 +28413,408 @@ export const packagesDatabase: Record<string, any> = {
     //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
     //     }
     // },
-    '16': {
-        id: '16',
-        title: 'Kasi Flight Package From Chennai 1 Night - 2 Days',
-        image: "/assets/kasi/card/kasicard1.webp",
-        heroImage: "/assets/kasi/kasi1.webp",
-        overview: {
-            duration: '1 Nights / 2 Days',
-            destination: 'Varanasi',
-            activities: 'Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'Rs. 18500/-',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Arrival Chennai - Varanasi',
-                description: 'Departure from Chennai Airport at 07.05 a.m. Arrival Varanasi Airport at 08.30 a.m. Transfer to hotel. Having Dharshan of Lord Kasi Vishwanath, Kasi Visalakshi and Kasi Annapoorneswari Temples. Evening visit Ganga Aarti by boating on the way visiting Manikarneka Ghat and Harichandra Ghat . Having night Sayana Arati of Kasi Viswanath Temple. Night halt at Kasi.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Departure from Varanasi',
-                description: 'Morning holy bath in river Ganga and performing Tharpanam. Having Dharshan of Kala Bhairavar Temple. Free time religious activities and shopping.\nStarting from Varanasi at 02.00 p.m. and reaching at Varanasi Airport at 04.00 p.m.\nDeparture from Varanasi Airport at 06.15 p.m. and Reaching Chennai Airport at 12.00 a.m.'
-            }
-        ],
-        inclusions: [
-            'Hotel',
-            'Transportation by A/C Bus/Cab.',
-            'One night stay at Kasi in A/c room.',
-            'Buffet Breakfast or Fixed Menu',
-            'All sightseeing and excursion as per the itinerary.',
-            'Everyone must bring Original ID Proof at the time of travel.',
-            'English, Hindi and Tamil Guide for entire trip.',
-            'Please be at Airport 2 hours before the departure Time.'
-        ],
-        exclusions: [
-            'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
-        ],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '17': {
-        id: '17',
-        title: 'Kasi Flight Package From Chennai 2 Night - 3 Days',
-        image: "/assets/kasi/card/kasicard2.webp",
-        heroImage: "/assets/kasi/kasi2.webp",
-        overview: {
-            duration: '2 Nights / 3 Days',
-            destination: 'Varanasi',
-            activities: 'Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'Rs. 23500/-',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Arrival Chennai - Varanasi',
-                description: 'Departure from Chennai Airport at 07.05 a.m. Arrival Varanasi Airport at 08.45 a.m. Transfer to hotel. Evening visit Ganga Aarti by boating on the way visiting Manikarneka Ghat and Harichandra Ghat. Having night Sayana Arati of Kasi Viswanath Temple. Night halt at Kasi.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Varanasi',
-                description: 'Morning holy bath in river Ganga and performing Tharpanam.Having Dharshan of Lord Kasi Vishwanath, Kasi Visalakshi and Kasi Annapoorneswari Temples. Night halt at Kasi.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Departure from Varanasi',
-                description: 'Morning having Dharshan of Kala Bhairavar Temple. Free time religious activities and shopping. Starting from Varanasi at 02.00 p.m. and reaching at Airport at 04.00 p.m. Departure Varanasi Airport at 06.15 p.m. and Reaching Chennai Airport at 12.00 a.m.'
-            }
-        ],
-        inclusions: [
-            'Hotel',
-            'Transportation by A/C Bus/Cab.',
-            'Two nights stay at Kasi in A/c room.',
-            'Buffet Breakfast or Fixed Menu',
-            'All sightseeing and excursion as per the itinerary.',
-            'Everyone must bring Original ID Proof at the time of travel.',
-            'English, Hindi and Tamil Guide for entire trip.',
-            'Please be at Airport 2 hours before the departure Time.'
-        ],
-        exclusions: [
-            'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
-        ],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '18': {
-        id: '18',
-        title: 'Kasi - Ayodhya Flight Package From Chennai 2 Night - 3 Days',
-        image: "/assets/kasi/card/kasicard3.webp",
-        heroImage: "/assets/kasi/kasi3.webp",
-        overview: {
-            duration: '2 Nights / 3 Days',
-            destination: 'Varanasi, Ayodhya',
-            activities: 'Museums, Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'Rs. 27500/-',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Arrival Chennai - Ayodhya',
-                description: 'Departure from Chennai Airport at 09.10 a.m. Arrival Ayodhya Airport at 11.35 a.m. Transfer to hotel. Visit the birth place Lord Rama, Shri Ramjanma Bhoomi and Hanuman Garhi Temple. Evening visit Kanak Bhawan and Ramkatha Museum. Night halt at Ayodhya.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Ayodhya - Varanasi',
-                description: 'After Breakfast starting @ 10.00 a.m. from Ayodhya and proceed to Kasi. Transfer to hotel. After refreshment having Dharshan of Lord Kasi Vishwanath, Kasi Visalakshi and Kasi Annapoorneswari Temples. Evening visit Ganga Aarti by boating on the way visiting Manikarneka Ghat and Harichandra Ghat. Having night Sayana Arati of Kasi Viswanath Temple. Night halt at Kasi.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Departure from Varanasi',
-                description: 'Morning holy bath in river Ganga and performing Tharpanam and having darshan of Kala Bhairavar Temple. Free time religious activities and shopping. Starting from Varanasi at 04.00 p.m. Reaching at Varanasi Airport at 06.00 p.m. Departure from Varanasi Airport at 08.10 p.m. Reaching Chennai Airport at 10.30 p.m.'
-            }
-        ],
-        inclusions: [
-            'Hotel',
-            'Transportation by A/C Bus/Cab.',
-            'One night stay at Ayodhya in A/c room.',
-            'One night stay at Varanasi in A/c room.',
-            'Buffet Breakfast or Fixed Menu',
-            'All sightseeing and excursion as per the itinerary.',
-            'Everyone must bring Original ID Proof at the time of travel.',
-            'English, Hindi and Tamil Guide for entire trip.',
-            'Please be at Airport 2 hours before the departure Time.'
-        ],
-        exclusions: [
-            'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
-        ],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '19': {
-        id: '19',
-        title: 'Kasi - Gaya Flight Package From Chennai 4 Night - 5 Days',
-        image: "/assets/kasi/card/kasicard4.webp",
-        heroImage: "/assets/kasi/kasi4.webp",
-        overview: {
-            duration: '4 Nights / 5 Days',
-            destination: 'Prayagraj, Varanasi, Gaya, Allahabad Fort',
-            activities: 'Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'Rs. 34500/-',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Arrival Chennai - Varanasi',
-                description: 'Departure from Chennai Airport at 07.05 a.m. Arrival Varanasi Airport at 08.30 a.m. Transfer to hotel. Having Dharshan of Lord Kasi Vishwanath, Kasi Visalakshi and Kasi Annapoorneswari Temples. Evening visit Ganga Aarti by boating on the way visiting Manikarneka Ghat and Harichandra Ghat. Having night Sayana Arati of Kasi Viswanath Temple. Night halt at Kasi.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Gaya',
-                description: 'Morning holy bath in river Ganga and performing Tharpanam. Free time shopping and religious activities. After Lunch proceed to Gaya at 02.00 p.m. and night halt at Gaya.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Gaya',
-                description: 'Early Morning perform the some rituals Srartham or Pinda dana for your ancestors (Dress Code: Ladies – Sarees & Gents – Dhoti ). Dharshan of Vishnu padam Temple and visit Vatavruksh. Afternoon drive to Kasi on the way visiting Buddha Gaya. Night halt in Kasi.'
-            },
-            {
-                day: 'Day 4',
-                title: 'Allahabad',
-                description: 'Morning drive to Allahabad. Holy bath in Triveni sangam and performing Thambathi pooja / Veni Pooja in the meeting point of holy rivers of Ganga, Yamuna and Saraswathi. Having Dharshan of Sri Sayana Anjaneyar. Return and night halt at Kasi.'
-            },
-            {
-                day: 'Day 5',
-                title: 'Departure from Varanasi',
-                description: 'Morning having Dharshan of Kala Bhairavar Temple. Free time religious activities and shopping. Starting from Varanasi at 02.00 p.m. and reaching at Varanasi Airport at 04.00 p.m. Departure from Varanasi Airport at 06.15 p.m. Reaching Chennai Airport at 12.00 a.m.'
-            }
-        ],
-        inclusions: [
-            'Hotel',
-            'Transportation by A/C Bus/Cab.',
-            'Three nights stay at Kasi and One night stay at Gaya in A/c room.',
-            'Buffet Breakfast or Fixed Menu',
-            'All sightseeing and excursion as per the itinerary.',
-            'Everyone must bring Original ID Proof at the time of travel.',
-            'English, Hindi and Tamil Guide for entire trip.',
-            'Please be at Airport 2 hours before the departure Time.'
-        ],
-        exclusions: [
-            'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
-        ],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '20': {
-        id: '20',
-        title: 'Kasi - Gaya - Allahabad - Ayodhya Flight Package From Chennai 5 Night - 6 Days',
-        image: "/assets/kasi/card/kasicard5.webp",
-        heroImage: "/assets/kasi/kasi5.webp",
-        overview: {
-            duration: '5 Nights / 6 Days',
-            destination: 'Prayagraj, Varanasi, Gaya, Ayodhya',
-            activities: 'Boating, Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'Rs. 39500/-',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Arrival Chennai - Varanasi - Ayodhya',
-                description: 'Departure from Chennai Airport at 07.05 a.m. Arrival Varanasi Airport at 08.30 a.m. and drive to Ayodhya. On arrival check in to Ayodhya Hotel, Proceed to visit the birth place of Lord Rama at Shri Ramjanma Bhoomi, Hanuman Garhi Temple. Night halt at Ayodhya'
-            },
-            {
-                day: 'Day 2',
-                title: 'Varanasi',
-                description: 'Morning after breakfast transfer to Varanasi (Kasi). On arrival Varanasi check into Hotel. After lunch proceed to Having Dharshan of Lord Kasi Vishwanath, Kasi Visalakshi and Kasi Annapoorneswari Temples. Evening visit Ganga Aarti by boating on the way visiting Manikarneka Ghat and Harichandra Ghat. Having night Sayana Arati of Kasi Viswanath Temple. Night halt at Kasi.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Gaya',
-                description: 'Morning holy bath in river Ganga and performing Tharpanam. Free time shopping and religious activities. Drive to Gaya at 02.00p.m. and night halt at Buddha Gaya.'
-            },
-            {
-                day: 'Day 4',
-                title: 'Varanasi',
-                description: 'Morning 07:00 a.m perform some rituals Srartham or Pinda dana for your ancestors. (Dress Code: Ladies – Sarees & Gents – Dhoti ). Dharshan of Vishnu padam Temple and visit Vatavruksh. Afternoon drive to Kasi on the way visiting Buddha Gaya. Night halt in Kasi.'
-            },
-            {
-                day: 'Day 5',
-                title: 'Allahabad',
-                description: 'Morning drive to Allahabad. Holy bath in Triveni sangam and performing Thambathi pooja / Veni Pooja in the meeting point of holy rivers of Ganga, Yamuna and Saraswathi. Having darshan Sri Sayana Anjaneyar. Return and night halt at Kasi.'
-            },
-            {
-                day: 'Day 6',
-                title: 'Departure from Varanasi',
-                description: 'Morning having Dharshan of Kala Bhairavar Temple. and free time for Shopping. Starting from Varanasi at 02.00 p.m. Reaching at Varanasi Airport at 04.00 p.m. Departure from Varanasi Airport at 06.15 p.m. Reaching Chennai Airport at 12.00 a.m.'
-            }
-        ],
-        inclusions: [
-            'Hotel',
-            'Transportation by A/C Bus/Cab.',
-            'Three nights stay at Kasi in A/C Dlx room',
-            'One night stay at Ayodhya in A/C Dlx room',
-            'One night stay at Gaya in A/C Dlx room',
-            'Buffet Breakfast or Fixed Menu',
-            'All sightseeing and excursion as per the itinerary.',
-            'Everyone must bring Original ID Proof at the time of travel.',
-            'English, Hindi and Tamil Guide for entire trip.',
-            'Please be at Airport 2 hours before the departure Time.'
-        ],
-        exclusions: [
-            'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
-        ],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '21': {
-        id: '21',
-        title: 'Kasi Train Package From Chennai 7 Night - 8 Days',
-        image: "/assets/kasi/card/kasicard6.webp",
-        heroImage: "/assets/kasi/kasi6.webp",
-        overview: {
-            duration: '7 Nights / 8 Days',
-            destination: 'Prayagraj, Varanasi, Gaya, Anand Bhavan',
-            activities: 'Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'Rs. 14500/-',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Arrival Chennai - Varanasi',
-                description: 'Departure from Chennai Central Railway Station by Train No: 12669, Ganga kaveri express at 5.30 pm'
-            },
-            {
-                day: 'Day 2',
-                title: 'Train Journey',
-                description: 'Train Journey.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Varanasi',
-                description: 'Reach Varanasi Junction. Transfer to hotel. Morning holy bath in river Gangas. Having the darshan of world famous Kasi Vishwanath, Vishalakshi and Annapoorneshwari Temples. Evening visit Ganga Aarti Night halt at kasi.'
-            },
-            {
-                day: 'Day 4',
-                title: 'Allahabad',
-                description: 'Morning drive to Allahabad. Holy bath in Triveni sangam and visit Anand bhavan and drive to kasi. Night halt at Kasi.'
-            },
-            {
-                day: 'Day 5',
-                title: 'Gaya',
-                description: 'Morning darshan of Kalabhairavar, Kowdi matha Temples. Evening drive to Gaya. Night halt at Gaya.'
-            },
-            {
-                day: 'Day 6',
-                title: 'Gaya',
-                description: 'Morning perform some rituals Srardham or Pindandana for your ancestors. Night Halt at Gaya.'
-            },
-            {
-                day: 'Day 7',
-                title: 'Gaya - Chennai',
-                description: 'Morning 6.00 am train from Gaya by Chennai express.'
-            },
-            {
-                day: 'Day 8',
-                title: 'Chennai',
-                description: 'Reach Chennai Egmore railway Station at 8.45 pm'
-            }
-        ],
-        inclusions: [
-            'Hotel',
-            'Transportation by Non A/C bus as per seat in coach basis.',
-            'All sightseeing and excursion as per the itinerary.',
-            'Senior citizen must bring Original ID Proof at the time of travel.',
-            'English, Hindi and Tamil Guide for entire trip.'
-        ],
-        exclusions: [
-            'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
-        ],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
-    '22': {
-        id: '22',
-        title: 'Kasi Flight Package From Madurai 3 Days',
-        image: "/assets/kasi/card/kasicard7.webp",
-        heroImage: "/assets/kasi/kasi7.webp",
-        overview: {
-            duration: '2 Nights / 3 Days',
-            destination: 'Varanasi',
-            activities: 'Boating, Sightseeing',
-            themes: 'Religious & Pilgrimage, Culture & Heritage'
-        },
-        priceDetails: {
-            label: 'Starts @',
-            amount: 'Rs. 23500/-',
-            status: 'On Request'
-        },
-        itinerary: [
-            {
-                day: 'Day 1',
-                title: 'Arrival Madurai - Varanasi',
-                description: 'Departure from Madurai Airport at 11.00 a.m. Arrival Varanasi Airport at 05.30 p.m. Transfer to hotel. Evening visit Ganga Aarti by boating on the way visiting Manikarneka Ghat and Hari Chandra Ghat. Having night Sayana Arati of Kasi Viswanath Temple. Night halt at Kasi.'
-            },
-            {
-                day: 'Day 2',
-                title: 'Varanasi',
-                description: 'Morning holy bath in river Ganga and performing Tharpanam.Having Dharshan of Lord Kasi Vishwanath, Kasi Visalakshi and Kasi Annapoorneswari Temples. Night halt at Kasi.'
-            },
-            {
-                day: 'Day 3',
-                title: 'Departure from Varanasi',
-                description: 'Morning having Dharshan of Kala Bhairavar Temple. Free time religious activities and shopping. Starting from Varanasi at 11.00 a.m. and reaching at Airport at 01.00 p.m. Departure Varanasi Airport at 02.55 p.m. and Reaching Madurai Airport at 08.45 p.m.'
-            }
-        ],
-        inclusions: [
-            'Hotel',
-            'Transportation by A/C Bus/Cab.',
-            'Two nights stay at Kasi in A/c room.',
-            'Buffet Breakfast or Fixed Menu',
-            'All sightseeing and excursion as per the itinerary.',
-            'Everyone must bring Original ID Proof at the time of travel.',
-            'English, Hindi and Tamil Guide for entire trip.',
-            'Please be at Airport 2 hours before the departure Time.'
-        ],
-        exclusions: [
-            'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
-        ],
-        policies: {
-            payment: '20% Advance Percentage of total booking amount',
-            cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
-        }
-    },
+    // '16': {
+    //     id: '16',
+    //     title: 'Kasi Flight Package From Chennai 1 Night - 2 Days',
+    //     image: "/assets/kasi/card/kasicard1.webp",
+    //     heroImage: "/assets/kasi/kasi1.webp",
+    //     overview: {
+    //         duration: '1 Nights / 2 Days',
+    //         destination: 'Varanasi',
+    //         activities: 'Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'Rs. 18500/-',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Arrival Chennai - Varanasi',
+    //             description: 'Departure from Chennai Airport at 07.05 a.m. Arrival Varanasi Airport at 08.30 a.m. Transfer to hotel. Having Dharshan of Lord Kasi Vishwanath, Kasi Visalakshi and Kasi Annapoorneswari Temples. Evening visit Ganga Aarti by boating on the way visiting Manikarneka Ghat and Harichandra Ghat . Having night Sayana Arati of Kasi Viswanath Temple. Night halt at Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Departure from Varanasi',
+    //             description: 'Morning holy bath in river Ganga and performing Tharpanam. Having Dharshan of Kala Bhairavar Temple. Free time religious activities and shopping.\nStarting from Varanasi at 02.00 p.m. and reaching at Varanasi Airport at 04.00 p.m.\nDeparture from Varanasi Airport at 06.15 p.m. and Reaching Chennai Airport at 12.00 a.m.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Hotel',
+    //         'Transportation by A/C Bus/Cab.',
+    //         'One night stay at Kasi in A/c room.',
+    //         'Buffet Breakfast or Fixed Menu',
+    //         'All sightseeing and excursion as per the itinerary.',
+    //         'Everyone must bring Original ID Proof at the time of travel.',
+    //         'English, Hindi and Tamil Guide for entire trip.',
+    //         'Please be at Airport 2 hours before the departure Time.'
+    //     ],
+    //     exclusions: [
+    //         'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
+    //     ],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '17': {
+    //     id: '17',
+    //     title: 'Kasi Flight Package From Chennai 2 Night - 3 Days',
+    //     image: "/assets/kasi/card/kasicard2.webp",
+    //     heroImage: "/assets/kasi/kasi2.webp",
+    //     overview: {
+    //         duration: '2 Nights / 3 Days',
+    //         destination: 'Varanasi',
+    //         activities: 'Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'Rs. 23500/-',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Arrival Chennai - Varanasi',
+    //             description: 'Departure from Chennai Airport at 07.05 a.m. Arrival Varanasi Airport at 08.45 a.m. Transfer to hotel. Evening visit Ganga Aarti by boating on the way visiting Manikarneka Ghat and Harichandra Ghat. Having night Sayana Arati of Kasi Viswanath Temple. Night halt at Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Varanasi',
+    //             description: 'Morning holy bath in river Ganga and performing Tharpanam.Having Dharshan of Lord Kasi Vishwanath, Kasi Visalakshi and Kasi Annapoorneswari Temples. Night halt at Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Departure from Varanasi',
+    //             description: 'Morning having Dharshan of Kala Bhairavar Temple. Free time religious activities and shopping. Starting from Varanasi at 02.00 p.m. and reaching at Airport at 04.00 p.m. Departure Varanasi Airport at 06.15 p.m. and Reaching Chennai Airport at 12.00 a.m.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Hotel',
+    //         'Transportation by A/C Bus/Cab.',
+    //         'Two nights stay at Kasi in A/c room.',
+    //         'Buffet Breakfast or Fixed Menu',
+    //         'All sightseeing and excursion as per the itinerary.',
+    //         'Everyone must bring Original ID Proof at the time of travel.',
+    //         'English, Hindi and Tamil Guide for entire trip.',
+    //         'Please be at Airport 2 hours before the departure Time.'
+    //     ],
+    //     exclusions: [
+    //         'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
+    //     ],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '18': {
+    //     id: '18',
+    //     title: 'Kasi - Ayodhya Flight Package From Chennai 2 Night - 3 Days',
+    //     image: "/assets/kasi/card/kasicard3.webp",
+    //     heroImage: "/assets/kasi/kasi3.webp",
+    //     overview: {
+    //         duration: '2 Nights / 3 Days',
+    //         destination: 'Varanasi, Ayodhya',
+    //         activities: 'Museums, Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'Rs. 27500/-',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Arrival Chennai - Ayodhya',
+    //             description: 'Departure from Chennai Airport at 09.10 a.m. Arrival Ayodhya Airport at 11.35 a.m. Transfer to hotel. Visit the birth place Lord Rama, Shri Ramjanma Bhoomi and Hanuman Garhi Temple. Evening visit Kanak Bhawan and Ramkatha Museum. Night halt at Ayodhya.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Ayodhya - Varanasi',
+    //             description: 'After Breakfast starting @ 10.00 a.m. from Ayodhya and proceed to Kasi. Transfer to hotel. After refreshment having Dharshan of Lord Kasi Vishwanath, Kasi Visalakshi and Kasi Annapoorneswari Temples. Evening visit Ganga Aarti by boating on the way visiting Manikarneka Ghat and Harichandra Ghat. Having night Sayana Arati of Kasi Viswanath Temple. Night halt at Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Departure from Varanasi',
+    //             description: 'Morning holy bath in river Ganga and performing Tharpanam and having darshan of Kala Bhairavar Temple. Free time religious activities and shopping. Starting from Varanasi at 04.00 p.m. Reaching at Varanasi Airport at 06.00 p.m. Departure from Varanasi Airport at 08.10 p.m. Reaching Chennai Airport at 10.30 p.m.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Hotel',
+    //         'Transportation by A/C Bus/Cab.',
+    //         'One night stay at Ayodhya in A/c room.',
+    //         'One night stay at Varanasi in A/c room.',
+    //         'Buffet Breakfast or Fixed Menu',
+    //         'All sightseeing and excursion as per the itinerary.',
+    //         'Everyone must bring Original ID Proof at the time of travel.',
+    //         'English, Hindi and Tamil Guide for entire trip.',
+    //         'Please be at Airport 2 hours before the departure Time.'
+    //     ],
+    //     exclusions: [
+    //         'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
+    //     ],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '19': {
+    //     id: '19',
+    //     title: 'Kasi - Gaya Flight Package From Chennai 4 Night - 5 Days',
+    //     image: "/assets/kasi/card/kasicard4.webp",
+    //     heroImage: "/assets/kasi/kasi4.webp",
+    //     overview: {
+    //         duration: '4 Nights / 5 Days',
+    //         destination: 'Prayagraj, Varanasi, Gaya, Allahabad Fort',
+    //         activities: 'Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'Rs. 34500/-',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Arrival Chennai - Varanasi',
+    //             description: 'Departure from Chennai Airport at 07.05 a.m. Arrival Varanasi Airport at 08.30 a.m. Transfer to hotel. Having Dharshan of Lord Kasi Vishwanath, Kasi Visalakshi and Kasi Annapoorneswari Temples. Evening visit Ganga Aarti by boating on the way visiting Manikarneka Ghat and Harichandra Ghat. Having night Sayana Arati of Kasi Viswanath Temple. Night halt at Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Gaya',
+    //             description: 'Morning holy bath in river Ganga and performing Tharpanam. Free time shopping and religious activities. After Lunch proceed to Gaya at 02.00 p.m. and night halt at Gaya.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Gaya',
+    //             description: 'Early Morning perform the some rituals Srartham or Pinda dana for your ancestors (Dress Code: Ladies – Sarees & Gents – Dhoti ). Dharshan of Vishnu padam Temple and visit Vatavruksh. Afternoon drive to Kasi on the way visiting Buddha Gaya. Night halt in Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 4',
+    //             title: 'Allahabad',
+    //             description: 'Morning drive to Allahabad. Holy bath in Triveni sangam and performing Thambathi pooja / Veni Pooja in the meeting point of holy rivers of Ganga, Yamuna and Saraswathi. Having Dharshan of Sri Sayana Anjaneyar. Return and night halt at Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 5',
+    //             title: 'Departure from Varanasi',
+    //             description: 'Morning having Dharshan of Kala Bhairavar Temple. Free time religious activities and shopping. Starting from Varanasi at 02.00 p.m. and reaching at Varanasi Airport at 04.00 p.m. Departure from Varanasi Airport at 06.15 p.m. Reaching Chennai Airport at 12.00 a.m.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Hotel',
+    //         'Transportation by A/C Bus/Cab.',
+    //         'Three nights stay at Kasi and One night stay at Gaya in A/c room.',
+    //         'Buffet Breakfast or Fixed Menu',
+    //         'All sightseeing and excursion as per the itinerary.',
+    //         'Everyone must bring Original ID Proof at the time of travel.',
+    //         'English, Hindi and Tamil Guide for entire trip.',
+    //         'Please be at Airport 2 hours before the departure Time.'
+    //     ],
+    //     exclusions: [
+    //         'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
+    //     ],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '20': {
+    //     id: '20',
+    //     title: 'Kasi - Gaya - Allahabad - Ayodhya Flight Package From Chennai 5 Night - 6 Days',
+    //     image: "/assets/kasi/card/kasicard5.webp",
+    //     heroImage: "/assets/kasi/kasi5.webp",
+    //     overview: {
+    //         duration: '5 Nights / 6 Days',
+    //         destination: 'Prayagraj, Varanasi, Gaya, Ayodhya',
+    //         activities: 'Boating, Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'Rs. 39500/-',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Arrival Chennai - Varanasi - Ayodhya',
+    //             description: 'Departure from Chennai Airport at 07.05 a.m. Arrival Varanasi Airport at 08.30 a.m. and drive to Ayodhya. On arrival check in to Ayodhya Hotel, Proceed to visit the birth place of Lord Rama at Shri Ramjanma Bhoomi, Hanuman Garhi Temple. Night halt at Ayodhya'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Varanasi',
+    //             description: 'Morning after breakfast transfer to Varanasi (Kasi). On arrival Varanasi check into Hotel. After lunch proceed to Having Dharshan of Lord Kasi Vishwanath, Kasi Visalakshi and Kasi Annapoorneswari Temples. Evening visit Ganga Aarti by boating on the way visiting Manikarneka Ghat and Harichandra Ghat. Having night Sayana Arati of Kasi Viswanath Temple. Night halt at Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Gaya',
+    //             description: 'Morning holy bath in river Ganga and performing Tharpanam. Free time shopping and religious activities. Drive to Gaya at 02.00p.m. and night halt at Buddha Gaya.'
+    //         },
+    //         {
+    //             day: 'Day 4',
+    //             title: 'Varanasi',
+    //             description: 'Morning 07:00 a.m perform some rituals Srartham or Pinda dana for your ancestors. (Dress Code: Ladies – Sarees & Gents – Dhoti ). Dharshan of Vishnu padam Temple and visit Vatavruksh. Afternoon drive to Kasi on the way visiting Buddha Gaya. Night halt in Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 5',
+    //             title: 'Allahabad',
+    //             description: 'Morning drive to Allahabad. Holy bath in Triveni sangam and performing Thambathi pooja / Veni Pooja in the meeting point of holy rivers of Ganga, Yamuna and Saraswathi. Having darshan Sri Sayana Anjaneyar. Return and night halt at Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 6',
+    //             title: 'Departure from Varanasi',
+    //             description: 'Morning having Dharshan of Kala Bhairavar Temple. and free time for Shopping. Starting from Varanasi at 02.00 p.m. Reaching at Varanasi Airport at 04.00 p.m. Departure from Varanasi Airport at 06.15 p.m. Reaching Chennai Airport at 12.00 a.m.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Hotel',
+    //         'Transportation by A/C Bus/Cab.',
+    //         'Three nights stay at Kasi in A/C Dlx room',
+    //         'One night stay at Ayodhya in A/C Dlx room',
+    //         'One night stay at Gaya in A/C Dlx room',
+    //         'Buffet Breakfast or Fixed Menu',
+    //         'All sightseeing and excursion as per the itinerary.',
+    //         'Everyone must bring Original ID Proof at the time of travel.',
+    //         'English, Hindi and Tamil Guide for entire trip.',
+    //         'Please be at Airport 2 hours before the departure Time.'
+    //     ],
+    //     exclusions: [
+    //         'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
+    //     ],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '21': {
+    //     id: '21',
+    //     title: 'Kasi Train Package From Chennai 7 Night - 8 Days',
+    //     image: "/assets/kasi/card/kasicard6.webp",
+    //     heroImage: "/assets/kasi/kasi6.webp",
+    //     overview: {
+    //         duration: '7 Nights / 8 Days',
+    //         destination: 'Prayagraj, Varanasi, Gaya, Anand Bhavan',
+    //         activities: 'Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'Rs. 14500/-',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Arrival Chennai - Varanasi',
+    //             description: 'Departure from Chennai Central Railway Station by Train No: 12669, Ganga kaveri express at 5.30 pm'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Train Journey',
+    //             description: 'Train Journey.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Varanasi',
+    //             description: 'Reach Varanasi Junction. Transfer to hotel. Morning holy bath in river Gangas. Having the darshan of world famous Kasi Vishwanath, Vishalakshi and Annapoorneshwari Temples. Evening visit Ganga Aarti Night halt at kasi.'
+    //         },
+    //         {
+    //             day: 'Day 4',
+    //             title: 'Allahabad',
+    //             description: 'Morning drive to Allahabad. Holy bath in Triveni sangam and visit Anand bhavan and drive to kasi. Night halt at Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 5',
+    //             title: 'Gaya',
+    //             description: 'Morning darshan of Kalabhairavar, Kowdi matha Temples. Evening drive to Gaya. Night halt at Gaya.'
+    //         },
+    //         {
+    //             day: 'Day 6',
+    //             title: 'Gaya',
+    //             description: 'Morning perform some rituals Srardham or Pindandana for your ancestors. Night Halt at Gaya.'
+    //         },
+    //         {
+    //             day: 'Day 7',
+    //             title: 'Gaya - Chennai',
+    //             description: 'Morning 6.00 am train from Gaya by Chennai express.'
+    //         },
+    //         {
+    //             day: 'Day 8',
+    //             title: 'Chennai',
+    //             description: 'Reach Chennai Egmore railway Station at 8.45 pm'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Hotel',
+    //         'Transportation by Non A/C bus as per seat in coach basis.',
+    //         'All sightseeing and excursion as per the itinerary.',
+    //         'Senior citizen must bring Original ID Proof at the time of travel.',
+    //         'English, Hindi and Tamil Guide for entire trip.'
+    //     ],
+    //     exclusions: [
+    //         'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
+    //     ],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
+    // '22': {
+    //     id: '22',
+    //     title: 'Kasi Flight Package From Madurai 3 Days',
+    //     image: "/assets/kasi/card/kasicard7.webp",
+    //     heroImage: "/assets/kasi/kasi7.webp",
+    //     overview: {
+    //         duration: '2 Nights / 3 Days',
+    //         destination: 'Varanasi',
+    //         activities: 'Boating, Sightseeing',
+    //         themes: 'Religious & Pilgrimage, Culture & Heritage'
+    //     },
+    //     priceDetails: {
+    //         label: 'Starts @',
+    //         amount: 'Rs. 23500/-',
+    //         status: 'On Request'
+    //     },
+    //     itinerary: [
+    //         {
+    //             day: 'Day 1',
+    //             title: 'Arrival Madurai - Varanasi',
+    //             description: 'Departure from Madurai Airport at 11.00 a.m. Arrival Varanasi Airport at 05.30 p.m. Transfer to hotel. Evening visit Ganga Aarti by boating on the way visiting Manikarneka Ghat and Hari Chandra Ghat. Having night Sayana Arati of Kasi Viswanath Temple. Night halt at Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 2',
+    //             title: 'Varanasi',
+    //             description: 'Morning holy bath in river Ganga and performing Tharpanam.Having Dharshan of Lord Kasi Vishwanath, Kasi Visalakshi and Kasi Annapoorneswari Temples. Night halt at Kasi.'
+    //         },
+    //         {
+    //             day: 'Day 3',
+    //             title: 'Departure from Varanasi',
+    //             description: 'Morning having Dharshan of Kala Bhairavar Temple. Free time religious activities and shopping. Starting from Varanasi at 11.00 a.m. and reaching at Airport at 01.00 p.m. Departure Varanasi Airport at 02.55 p.m. and Reaching Madurai Airport at 08.45 p.m.'
+    //         }
+    //     ],
+    //     inclusions: [
+    //         'Hotel',
+    //         'Transportation by A/C Bus/Cab.',
+    //         'Two nights stay at Kasi in A/c room.',
+    //         'Buffet Breakfast or Fixed Menu',
+    //         'All sightseeing and excursion as per the itinerary.',
+    //         'Everyone must bring Original ID Proof at the time of travel.',
+    //         'English, Hindi and Tamil Guide for entire trip.',
+    //         'Please be at Airport 2 hours before the departure Time.'
+    //     ],
+    //     exclusions: [
+    //         'Food, Port Rages, Tips, Phone Call from Rooms, Laundry, Insurance, Personal Expenses, Mineral water etc., and those not included “Inclusions” Head.'
+    //     ],
+    //     policies: {
+    //         payment: '20% Advance Percentage of total booking amount',
+    //         cancellation: 'Upon cancellation, refund will be made after deducting the Retention Amount.'
+    //     }
+    // },
     // '23': {
     //     id: '23',
     //     title: 'Kasi - Ayodhya Flight Package From Madurai 2 Night - 3 Days',
@@ -28703,7 +29122,7 @@ export const packagesDatabase: Record<string, any> = {
     // },
     '28': {
         id: '28',
-        title: 'Madurai - Rameshwaram - Kanyakumari 4N 5D Tour',
+        title: 'Madurai - Rameswaram- Kanyakumari 4N 5D Tour',
         image: "/assets/kaniyakumari/Thiruvalluvar statue.webp",
         heroImage: "/assets/rameswaram/big.webp",
         overview: {
@@ -28725,12 +29144,12 @@ export const packagesDatabase: Record<string, any> = {
             },
             {
                 day: 'Day 2',
-                title: 'Madurai – Rameshwaram (3Hrs)',
-                description: 'Morning After Breakfast Check out Hotel, later depart to Rameshwaram - small island in the Gulf of Mannar is a major pilgrim centre. Visit to Sri Ramanathaswamy Temple - situated near the sea on the eastern side, as massive sculptured pillars on either side and has the longest corridors in the world, Kurusadai Island - It is a Marine Biosphere, a paradise for the Marine Biologists and Nature lovers. Night halt at Rameshwaram.'
+                title: 'Madurai – Rameswaram(3Hrs)',
+                description: 'Morning After Breakfast Check out Hotel, later depart to Rameswaram- small island in the Gulf of Mannar is a major pilgrim centre. Visit to Sri Ramanathaswamy Temple - situated near the sea on the eastern side, as massive sculptured pillars on either side and has the longest corridors in the world, Kurusadai Island - It is a Marine Biosphere, a paradise for the Marine Biologists and Nature lovers. Night halt at Rameshwaram.'
             },
             {
                 day: 'Day 3',
-                title: 'Rameshwaram – Kanyakumari (5Hrs)',
+                title: 'Rameswaram– Kanyakumari (5Hrs)',
                 description: 'Morning After Breakfast Check out Hotel, later depart to Kanyakumari – is the land\'s end of India where the water of the Arabian Sea, the Bay of Bengal and the Indian Ocean meet. An important pilgrim centre of India. Upon arrival Check in hotel, Evening Enjoy Sunset, Night halt at Kanyakumari.'
             },
             {
@@ -28812,7 +29231,7 @@ export const packagesDatabase: Record<string, any> = {
     //         },
     //         {
     //             day: 'Day 9',
-    //             title: 'Rameshwaram - Kanyakumari',
+    //             title: 'Rameswaram- Kanyakumari',
     //             description: 'Morning After Breakfast Check out Hotel, later depart to Kanyakumari – is the land\'s end of India where the water of the Arabian Sea, the Bay of Bengal and the Indian Ocean meet. An important pilgrim centre of India. Upon arrival Check in hotel, Evening Enjoy Sunset, Night halt at Kanyakumari.'
     //         },
     //         {
@@ -28884,7 +29303,7 @@ export const packagesDatabase: Record<string, any> = {
     },
     '31': {
         id: '31',
-        title: 'Madurai - Rameshwaram - Kanyakumari - Trivandrum Tour 5N 6D',
+        title: 'Madurai - Rameswaram- Kanyakumari - Trivandrum Tour 5N 6D',
         image: "/assets/kaniyakumari/vattakottai fort.webp",
         heroImage: "/assets/rameswaram/big5.webp",
         overview: {
@@ -28906,12 +29325,12 @@ export const packagesDatabase: Record<string, any> = {
             },
             {
                 day: 'Day 2',
-                title: 'Madurai - Rameshwaram and City tour',
-                description: 'Enjoy the sumptuous breakfast. Later proceed to Rameshwaram on the way visit Pamban Bridge, then Check into the hotel. Visit Five Face Hanuman Temple, Abdulkalam House, kothandaramar temple, Ramar padam,Jyortirling darshan at Ramanathaswamy Temple, Later proceed to Dhanushkodi.. Overnight stay at the Hotel.'
+                title: 'Madurai - Rameswaramand City tour',
+                description: 'Enjoy the sumptuous breakfast. Later proceed to Rameswaramon the way visit Pamban Bridge, then Check into the hotel. Visit Five Face Hanuman Temple, Abdulkalam House, kothandaramar temple, Ramar padam,Jyortirling darshan at Ramanathaswamy Temple, Later proceed to Dhanushkodi.. Overnight stay at the Hotel.'
             },
             {
                 day: 'Day 3',
-                title: 'Rameshwaram - Kanyakumari and City tour',
+                title: 'Rameswaram- Kanyakumari and City tour',
                 description: 'Enjoy the sumptuous breakfast. Later proceed to Kanyakumari. Reach & check-in at the hotel and relax for a while amidst the comforts of your room. Kanyakumari - Located at the southern tip of peninsular India, it offers a unique experience of sunrise & sunset. Visit rock memorial dedicated to Swami Vivekananda, the Gandhi Memorial, Kanyakumari Bhagavathi amman temple,Suchidram Temple with exquisite sculpture & musical pillars dedicated to Brahma, Vishnu &Shiva. Overnight stay at the Hotel.'
             },
             {
@@ -29014,7 +29433,7 @@ export const packagesDatabase: Record<string, any> = {
     //         {
     //             day: 'Day 3',
     //             title: 'Shillong Sightseeing – Guwahati (100 kms / 03 hrs.)',
-    //             description: 'After breakfast Check out from hotel and visit Don Bosco Museum (Sunday Closed) & Ward’s Lake. After that drive to Guwahati. Arrive and check in at your hotel. In evening we suggest an optional tour of Golden sunset cruise on the Brahmaputra (Direct Payment by own). Overnight stay at Guwahati.'
+    //             description: 'After breakfast Check out from hotel and visit Don Bosco Museum (Sunday Closed) & Ward’s Lake. After that drive to Guwahati. Arrive and check in at your hotel. In evening we suggest an optional tour of Golden Sunset on the Brahmaputra (Direct Payment by own). Overnight stay at Guwahati.'
     //         },
     //         {
     //             day: 'Day 4',
@@ -29116,7 +29535,7 @@ export const packagesDatabase: Record<string, any> = {
     //         {
     //             day: 'Day 4',
     //             title: 'Shillong Sightseeing – Guwahati (100 kms / 3 hrs.)',
-    //             description: 'After breakfast check out from hotel and visit Don Bosco Museum (Sunday Closed) & Ward’s Lake. After that drive to Guwahati. Arrive and check in at hotel. In evening we suggest an optional tour of Golden sunset cruise on the Brahmaputra (Direct Payment by own). Overnight stay at Guwahati.'
+    //             description: 'After breakfast check out from hotel and visit Don Bosco Museum (Sunday Closed) & Ward’s Lake. After that drive to Guwahati. Arrive and check in at hotel. In evening we suggest an optional tour of Golden Sunset on the Brahmaputra (Direct Payment by own). Overnight stay at Guwahati.'
     //         },
     //         {
     //             day: 'Day 5',
@@ -29213,7 +29632,7 @@ export const packagesDatabase: Record<string, any> = {
     //         {
     //             day: 'Day 3',
     //             title: 'Shillong Sightseeing – Guwahati (100 kms / 3 hrs.)',
-    //             description: 'After breakfast visit Don Bosco Museum (Sunday Closed) & Ward’s Lake. After that drive to Guwahati. Arrive and check in at hotel. In evening we suggest an optional tour of Golden sunset cruise on the Brahmaputra (Direct Payment by own). Overnight stay at Guwahati'
+    //             description: 'After breakfast visit Don Bosco Museum (Sunday Closed) & Ward’s Lake. After that drive to Guwahati. Arrive and check in at hotel. In evening we suggest an optional tour of Golden Sunset on the Brahmaputra (Direct Payment by own). Overnight stay at Guwahati'
     //         },
     //         {
     //             day: 'Day 4',
@@ -29274,7 +29693,7 @@ export const packagesDatabase: Record<string, any> = {
     //         {
     //             day: 'Day 5',
     //             title: 'Shillong Sightseeing – Guwahati (100 kms / 3 hrs.)',
-    //             description: 'After breakfast visit Don Bosco Museum (Sunday Closed) Ward’s Lake & Lady Hydari Park. Thereafter, drive to Guwahati. Arrive and check in at hotel. In evening we suggest an optional tour of Golden sunset cruise on the Brahmaputra (Direct Payment by own). Overnight stay at Guwahati'
+    //             description: 'After breakfast visit Don Bosco Museum (Sunday Closed) Ward’s Lake & Lady Hydari Park. Thereafter, drive to Guwahati. Arrive and check in at hotel. In evening we suggest an optional tour of Golden Sunset on the Brahmaputra (Direct Payment by own). Overnight stay at Guwahati'
     //         },
     //         {
     //             day: 'Day 6',
@@ -29325,7 +29744,7 @@ export const packagesDatabase: Record<string, any> = {
     //         {
     //             day: 'Day 4',
     //             title: 'Shillong Sightseeing – Guwahati (100 kms / 3 hrs.)',
-    //             description: 'After breakfast visit Don Bosco Museum (Sunday Closed) Ward’s Lake & Lady Hydari Park. Thereafter, drive to Guwahati. Arrive and check in at hotel. In evening we suggest an optional tour of Golden sunset cruise on the Brahmaputra (Direct Payment by own). Overnight stay at Guwahati'
+    //             description: 'After breakfast visit Don Bosco Museum (Sunday Closed) Ward’s Lake & Lady Hydari Park. Thereafter, drive to Guwahati. Arrive and check in at hotel. In evening we suggest an optional tour of Golden Sunset on the Brahmaputra (Direct Payment by own). Overnight stay at Guwahati'
     //         },
     //         {
     //             day: 'Day 5',
@@ -29376,7 +29795,7 @@ export const packagesDatabase: Record<string, any> = {
     //         {
     //             day: 'Day 3',
     //             title: 'Kaziranga National Park – Guwahati (220 kms / 5 hrs.)',
-    //             description: 'After breakfast drive to Guwahati, enroute visit Maha Mritunjay Temple in Nagaon. Arrive and check in at your hotel. In evening we suggest an optional tour of Golden sunset cruise on the Brahmaputra (Direct Payment by own). Overnight stay at Guwahati.'
+    //             description: 'After breakfast drive to Guwahati, enroute visit Maha Mritunjay Temple in Nagaon. Arrive and check in at your hotel. In evening we suggest an optional tour of Golden Sunset on the Brahmaputra (Direct Payment by own). Overnight stay at Guwahati.'
     //         },
     //         {
     //             day: 'Day 4',
@@ -29440,7 +29859,7 @@ export const packagesDatabase: Record<string, any> = {
     // },
     // '42': {
     //     id: '42',
-    //     title: 'Madurai To Rameshwaram 1N 2D Tour',
+    //     title: 'Madurai To Rameswaram1N 2D Tour',
     //     image: "/assets/rameswaram/sm3.webp",
     //     heroImage: "/assets/rameswaram/big5.webp",
     //     overview: {
@@ -29458,12 +29877,12 @@ export const packagesDatabase: Record<string, any> = {
     //         {
     //             day: 'Day 1',
     //             title: 'Madurai - Rameswaram & Sightseeing',
-    //             description: 'Pick up from Madurai Airport or Junction Check in cab and Journey proceeding towards Rameshwaram visiting Ramanathaswamy temple - Five Faces Lord Hanuman Temple - Kothandaramaswamy Temple - Floating Stone - Agni Theertham - Dhanushkodi till entrance - Dr. APJ Abdul Kalam Memorial - Ramar Feet - stay at Rameshwaram.'
+    //             description: 'Pick up from Madurai Airport or Junction Check in cab and Journey proceeding towards Rameswaramvisiting Ramanathaswamy temple - Five Faces Lord Hanuman Temple - Kothandaramaswamy Temple - Floating Stone - Agni Theertham - Dhanushkodi till entrance - Dr. APJ Abdul Kalam Memorial - Ramar Feet - stay at Rameshwaram.'
     //         },
     //         {
     //             day: 'Day 2',
     //             title: 'Rameswaram - Madurai',
-    //             description: 'Pickup from Hotel at Rameshwaram and journey proceeding towards Madurai visiting local places like Lord Kallalagar Temple - Palamudhirchozai - Tiruparakundram Lord Karthik Temple - Thirumalai Naicker Palace - Meenakshi Amman Temple - Gandhi Museum [If time permits] - Drop at Madurai Airport or Junction.'
+    //             description: 'Pickup from Hotel at Rameswaramand journey proceeding towards Madurai visiting local places like Lord Kallalagar Temple - Palamudhirchozai - Tiruparakundram Lord Karthik Temple - Thirumalai Naicker Palace - Meenakshi Amman Temple - Gandhi Museum [If time permits] - Drop at Madurai Airport or Junction.'
     //         }
     //     ],
     //     inclusions: [
@@ -29494,12 +29913,12 @@ export const packagesDatabase: Record<string, any> = {
     //         },
     //         {
     //             day: 'Day 2',
-    //             title: 'Start at 9 AM - Madurai to Rameshwaram and Rameshwaram sightseeing',
+    //             title: 'Start at 9 AM - Madurai to Rameswaramand Rameswaramsightseeing',
     //             description: 'Ramanathaswamy temple, Agniteertham, Pamban bridge, Panchmukhi hanuman mandir, Dhanushkodi.'
     //         },
     //         {
     //             day: 'Day 3',
-    //             title: 'Start at 9 AM - Rameshwaram to Kanyakumari and Kanyakumari sightseeing',
+    //             title: 'Start at 9 AM - Rameswaramto Kanyakumari and Kanyakumari sightseeing',
     //             description: 'Vivekananda rock memorial, Kanyakumari beach, Sunset Point, Thiruvalluvar statue.'
     //         },
     //         {
@@ -29540,7 +29959,7 @@ export const packagesDatabase: Record<string, any> = {
     // },
     // '44': {
     //     id: '44',
-    //     title: '4 Day Trip from Bangalore| Madurai, Rameshwaram & Kanyakumari',
+    //     title: '4 Day Trip from Bangalore| Madurai, Rameswaram& Kanyakumari',
     //     image: "/assets/rameswaram/sm1.webp",
     //     heroImage: "/assets/rameswaram/big.webp",
     //     overview: { duration: '3 Nights / 4 Days', destination: 'Madurai, Rameshwaram, Kanyakumari', activities: 'Sightseeing', themes: 'Religious & Pilgrimage', transport: 'Private Cab' },
@@ -29553,12 +29972,12 @@ export const packagesDatabase: Record<string, any> = {
     //         },
     //         {
     //             day: 'Day 2',
-    //             title: 'Start at 9 AM - Madurai to Rameshwaram and Rameshwaram sightseeing',
+    //             title: 'Start at 9 AM - Madurai to Rameswaramand Rameswaramsightseeing',
     //             description: 'Ramanathaswamy temple, Agniteertham, Pamban bridge, Panchmukhi hanuman mandir, Dhanushkodi.'
     //         },
     //         {
     //             day: 'Day 3',
-    //             title: 'Start at 9 AM - Rameshwaram to Kanyakumari and Kanyakumari sightseeing',
+    //             title: 'Start at 9 AM - Rameswaramto Kanyakumari and Kanyakumari sightseeing',
     //             description: 'Vivekananda rock memorial, Kanyakumari beach, Sunset Point, Tsunami monument, Thiruvalluvar statue.'
     //         },
     //         {
@@ -29630,16 +30049,17 @@ export const packagesDatabase: Record<string, any> = {
             'Anything not mentioned in inclusions'
         ],
         policies: { payment: 'No Down Payment, No Cost EMI on 3/6 months tenure available.', cancellation: 'Standard cancellation applies.' },
-    
+
         "seo": {
             "metaTitle": " | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the .",
             "canonicalUrl": "https://www.logaaholidays.com/tour-packages/",
             "slug": ""
-        },},
+        },
+    },
     '3002': {
         id: '3002',
-        title: 'Chennai to Pondicherry Tour Package | Weekend Getaway',
+        title: 'Chennai to Pondicherry 2 Days / 1 Night Tour Package | Weekend Getaway ',
         image: "/assets/chennai/chennai2(small).webp",
         heroImage: "/assets/chennai/chennai2.webp",
         overview: {
@@ -29671,16 +30091,17 @@ export const packagesDatabase: Record<string, any> = {
             'Boating charges & Monument entry fees'
         ],
         policies: { payment: 'No Down Payment, No Cost EMI on 3/6 months tenure available.', cancellation: 'Standard cancellation applies.' },
-    
+
         "seo": {
             "metaTitle": " | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the .",
             "canonicalUrl": "-2h-2t-2t-2p-2s-2:-2/-2/-2w-2w-2w-2.-2l-2o-2g-2a-2a-2h-2o-2l-2i-2d-2a-2y-2s-2.-2c-2o-2m-2/-2t-2o-2u-2r-2--2p-2a-2c-2k-2a-2g-2e-2s-2/-2",
             "slug": "-2"
-        },},
+        },
+    },
     '3003': {
         id: '3003',
-        title: 'Chennai to Ooty & Kodaikanal Hill Station Tour Package',
+        title: 'Chennai to Ooty & Kodaikanal Hill Station Tour Package 5 Days / 4 Nights',
         image: "/assets/chennai/chennai4(small).webp",
         heroImage: "/assets/chennai/chennai4.webp",
         overview: {
@@ -29727,16 +30148,17 @@ export const packagesDatabase: Record<string, any> = {
             'Train/Flight tickets to Ooty/Coimbatore (unless opted)'
         ],
         policies: { payment: 'No Down Payment, No Cost EMI on 3/6 months tenure available.', cancellation: 'Standard cancellation applies.' },
-    
+
         "seo": {
             "metaTitle": " | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the .",
             "canonicalUrl": "-3h-3t-3t-3p-3s-3:-3/-3/-3w-3w-3w-3.-3l-3o-3g-3a-3a-3h-3o-3l-3i-3d-3a-3y-3s-3.-3c-3o-3m-3/-3t-3o-3u-3r-3--3p-3a-3c-3k-3a-3g-3e-3s-3/-3",
             "slug": "-3"
-        },},
+        },
+    },
     '3004': {
         id: '3004',
-        title: 'Chennai to Rameshwaram & Kanyakumari Pilgrimage Tour Package',
+        title: 'Chennai to Rameswaram& Kanyakumari Pilgrimage Tour Package 4 Days / 3 Nights',
         image: "/assets/chennai/chennai3(small).webp",
         heroImage: "/assets/chennai/chennai3.webp",
         overview: {
@@ -29749,12 +30171,12 @@ export const packagesDatabase: Record<string, any> = {
         itinerary: [
             {
                 day: 'Day 1',
-                title: 'Chennai to Rameshwaram Arrival',
+                title: 'Chennai to RameswaramArrival',
                 description: 'Pickup from Chennai and drive/train to Rameshwaram. Arrive, check in to hotel. Visit Pamban Bridge and evening Ramanathaswamy Temple visit.'
             },
             {
                 day: 'Day 2',
-                title: 'Dhanushkodi & Rameshwaram to Kanyakumari',
+                title: 'Dhanushkodi & Rameswaramto Kanyakumari',
                 description: 'Early morning holy bath at Agniteertham and temple darshan. After breakfast, visit Dhanushkodi Ghost Town. Proceed to Kanyakumari. Arrive and check in at hotel. Witness the gorgeous sunset.'
             },
             {
@@ -29770,7 +30192,7 @@ export const packagesDatabase: Record<string, any> = {
         ],
         inclusions: [
             'AC Sedan/SUV for the entire trip',
-            '1 Night hotel in Rameshwaram + 2 Nights hotel in Kanyakumari with breakfast',
+            '1 Night hotel in Rameswaram+ 2 Nights hotel in Kanyakumari with breakfast',
             'All tolls, parking, driver allowance, and entry permit charges'
         ],
         exclusions: [
@@ -29778,13 +30200,14 @@ export const packagesDatabase: Record<string, any> = {
             'Lunch & Dinner'
         ],
         policies: { payment: 'No Down Payment, No Cost EMI on 3/6 months tenure available.', cancellation: 'Standard cancellation applies.' },
-    
+
         "seo": {
             "metaTitle": " | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the .",
             "canonicalUrl": "-4h-4t-4t-4p-4s-4:-4/-4/-4w-4w-4w-4.-4l-4o-4g-4a-4a-4h-4o-4l-4i-4d-4a-4y-4s-4.-4c-4o-4m-4/-4t-4o-4u-4r-4--4p-4a-4c-4k-4a-4g-4e-4s-4/-4",
             "slug": "-4"
-        },},
+        },
+    },
 
     '9201': {
         "title": "Kodaikanal Honeymoon Package – 2 Nights / 3 Days",
@@ -29959,7 +30382,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "Private Madurai pickup and drop"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Kodaikanal Honeymoon Package – 2 Nights / 3 Days | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Kodaikanal Honeymoon Package – 2 Nights / 3 Days. Covering Madurai to Madurai in 2 Nights / 3 Days",
@@ -30149,7 +30572,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "नहीं। टॉय ट्रेन टिकट को पैकेज की एक्सक्लूजन सूची में रखा गया है, इसलिए इसे अलग से बुक करना होगा।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Enchanting Romantic Ooty and Coonoor Honeymoon | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Enchanting Romantic Ooty and Coonoor Honeymoon Package – 3 Nights / 4 Days. Covering Coimbatore to",
@@ -30362,7 +30785,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "Madurai pickup. Trivandrum drop."
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Romantic Kodaikanal and Kanyakumari Honeymoon | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Romantic Kodaikanal and Kanyakumari Honeymoon Package – 4 Nights / 5 Days. Covering Madurai to Trivandrum in",
@@ -30605,7 +31028,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "Coimbatore pickup. Trivandrum drop."
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Complete Tamil Nadu Honeymoon – 6 Nights / 7 | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Complete Tamil Nadu Honeymoon – 6 Nights / 7 Days. Covering Coimbatore to Trivandrum in 6 Nights / 7 Days",
@@ -30617,10 +31040,10 @@ export const packagesDatabase: Record<string, any> = {
     ,
 
     '8001': {
-        "title": "Delhi – Mathura – Vrindavan – Agra Tour Package",
+        "title": "Delhi – Mathura – Vrindavan – Agra Tour Package 2 Nights / 3 Days",
         "badge": "Golden Triangle Tour",
         "image": "/assets/Logaa holidays/Dehli2n3d/Delhi.webp",
-        "heroImage": "/assets/Logaa holidays/Dehli2n3d/Delhi hero.webp",
+        "heroImage": "/assets/SMK hero/Delhi City Tour.webp",
         "overview": {
             "duration": "2 Nights / 3 Days",
             "destination": "Delhi – Mathura – Vrindavan – Agra",
@@ -30712,7 +31135,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "फ्लाइट या ट्रेन टिकट, monument entry tickets, guide charges, lunch और व्यक्तिगत खर्च आमतौर पर अलग से भुगतान योग्य होते हैं। अंतिम quotation में शामिल सेवाओं की स्पष्ट जानकारी दी जाएगी। हाँ। होटल की श्रेणी, meal plan, वाहन, अतिरिक्त रातें और sightseeing को बदलकर परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अनुकूलित किया जा सकता है। Route और hotel capacity उपयुक्त होने पर corporate या group requirements के लिए भी अलग व्यवस्था की जा सकती है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Delhi – Mathura – Vrindavan – Agra Tour Package | Logaa Holidays",
             "metaDescription": "Discover the beauty of North India with Logaa Holidays on the Delhi – Mathura – Vrindavan – Agra Tour Package. Covering Delhi to Agra in 2 Nights / 3 Days",
@@ -30822,7 +31245,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "फ्लाइट या ट्रेन टिकट, monument entry tickets, guide charges, lunch और व्यक्तिगत खर्च आमतौर पर अलग से भुगतान योग्य होते हैं। अंतिम quotation में शामिल सेवाओं की स्पष्ट जानकारी दी जाएगी। हाँ। होटल की श्रेणी, meal plan, वाहन, अतिरिक्त रातें और sightseeing को बदलकर परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अनुकूलित किया जा सकता है। Route और hotel capacity उपयुक्त होने पर corporate या group requirements के लिए भी अलग व्यवस्था की जा सकती है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Delhi – Mathura – Vrindavan – Agra Tour Package | Logaa Holidays",
             "metaDescription": "Discover the beauty of North India with Logaa Holidays on the Delhi – Mathura – Vrindavan – Agra Tour Package. Covering Delhi to Agra in 3 Nights / 4 Days",
@@ -30832,7 +31255,7 @@ export const packagesDatabase: Record<string, any> = {
         "id": "8002"
     },
     '8003': {
-        "title": "Delhi – Agra – Fatehpur Sikri – Jaipur Tour Package",
+        "title": "Delhi – Agra – Fatehpur Sikri – Jaipur Tour Package 4 Nights / 5 Days",
         "badge": "Golden Triangle Tour",
         "image": "/assets/Logaa holidays/Delhi4n5d/Delhi.webp",
         "heroImage": "/assets/Logaa holidays/Delhi4n5d/Delhi hero.webp",
@@ -30937,7 +31360,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "फ्लाइट या ट्रेन टिकट, monument entry tickets, guide charges, lunch और व्यक्तिगत खर्च आमतौर पर अलग से भुगतान योग्य होते हैं। अंतिम quotation में शामिल सेवाओं की स्पष्ट जानकारी दी जाएगी। हाँ। होटल की श्रेणी, meal plan, वाहन, अतिरिक्त रातें और sightseeing को बदलकर परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अनुकूलित किया जा सकता है। Route और hotel capacity उपयुक्त होने पर corporate या group requirements के लिए भी अलग व्यवस्था की जा सकती है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Delhi – Agra – Fatehpur Sikri – Jaipur Tour | Logaa Holidays",
             "metaDescription": "Discover the beauty of North India with Logaa Holidays on the Delhi – Agra – Fatehpur Sikri – Jaipur Tour Package. Covering Delhi to Jaipur in 4 Nights / 5",
@@ -31057,7 +31480,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "फ्लाइट या ट्रेन टिकट, monument entry tickets, guide charges, lunch और व्यक्तिगत खर्च आमतौर पर अलग से भुगतान योग्य होते हैं। अंतिम quotation में शामिल सेवाओं की स्पष्ट जानकारी दी जाएगी। हाँ। होटल की श्रेणी, meal plan, वाहन, अतिरिक्त रातें और sightseeing को बदलकर परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अनुकूलित किया जा सकता है। Route और hotel capacity उपयुक्त होने पर corporate या group requirements के लिए भी अलग व्यवस्था की जा सकती है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Delhi – Agra – Fatehpur Sikri – Jaipur Tour | Logaa Holidays",
             "metaDescription": "Discover the beauty of North India with Logaa Holidays on the Delhi – Agra – Fatehpur Sikri – Jaipur Tour Package. Covering Delhi to Jaipur in 5 Nights / 6",
@@ -31067,7 +31490,7 @@ export const packagesDatabase: Record<string, any> = {
         "id": "8004"
     },
     '8005': {
-        "title": "Delhi – Agra – Ajmer – Pushkar – Jaipur Tour Package",
+        "title": "Delhi – Agra – Ajmer – Pushkar – Jaipur 6 Nights / 7 Days Tour Package",
         "badge": "Golden Triangle Tour",
         "image": "/assets/Logaa holidays/Delhi6n7d/Delhi.webp",
         "heroImage": "/assets/Logaa holidays/Delhi6n7d/Delhi hero.webp",
@@ -31182,7 +31605,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "फ्लाइट या ट्रेन टिकट, monument entry tickets, guide charges, lunch और व्यक्तिगत खर्च आमतौर पर अलग से भुगतान योग्य होते हैं। अंतिम quotation में शामिल सेवाओं की स्पष्ट जानकारी दी जाएगी। हाँ। होटल की श्रेणी, meal plan, वाहन, अतिरिक्त रातें और sightseeing को बदलकर परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अनुकूलित किया जा सकता है। Route और hotel capacity उपयुक्त होने पर corporate या group requirements के लिए भी अलग व्यवस्था की जा सकती है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Delhi – Agra – Ajmer – Pushkar – Jaipur Tour | Logaa Holidays",
             "metaDescription": "Discover the beauty of North India with Logaa Holidays on the Delhi – Agra – Ajmer – Pushkar – Jaipur Tour Package. Covering Delhi to Jaipur in 6 Nights / 7",
@@ -31192,7 +31615,7 @@ export const packagesDatabase: Record<string, any> = {
         "id": "8005"
     },
     '8006': {
-        "title": "Delhi – Agra – Ranthambore – Jaipur Tour Package",
+        "title": "Delhi – Agra – Ranthambore – Jaipur 6 Nights / 7 Days Tour Package",
         "badge": "Golden Triangle Tour",
         "image": "/assets/Logaa holidays/DelhiAgra6n7d/Delhi.webp",
         "heroImage": "/assets/Logaa holidays/DelhiAgra6n7d/Delhi hero.webp",
@@ -31307,7 +31730,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "फ्लाइट या ट्रेन टिकट, monument entry tickets, guide charges, lunch और व्यक्तिगत खर्च आमतौर पर अलग से भुगतान योग्य होते हैं। अंतिम quotation में शामिल सेवाओं की स्पष्ट जानकारी दी जाएगी। हाँ। होटल की श्रेणी, meal plan, वाहन, अतिरिक्त रातें और sightseeing को बदलकर परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अनुकूलित किया जा सकता है। Route और hotel capacity उपयुक्त होने पर corporate या group requirements के लिए भी अलग व्यवस्था की जा सकती है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Delhi – Agra – Ranthambore – Jaipur Tour Package | Logaa Holidays",
             "metaDescription": "Discover the beauty of North India with Logaa Holidays on the Delhi – Agra – Ranthambore – Jaipur Tour Package. Covering Delhi to Jaipur in 6 Nights / 7 Days",
@@ -31453,13 +31876,13 @@ export const packagesDatabase: Record<string, any> = {
     //     ]
     //     ,
     //     
-        // "seo": {
-        //     "metaTitle": "Mysore and Coorg Tour Package – 3 Nights / 4 | Logaa Holidays",
-        //     "metaDescription": "Explore South India with Logaa Holidays on the Mysore and Coorg Tour Package – 3 Nights / 4 Days. Covering Mysore and Coorg Tour Package to Mysore and Coorg",
-        //     "canonicalUrl": "https://www.logaaholidays.com/tour-packages/mysore-tours/mysore-and-coorg-tour-package-3-nights-4-days-2",
-        //     "slug": "mysore-and-coorg-tour-package-3-nights-4-days-2"
-        // },
-        // "id": "5001"
+    // "seo": {
+    //     "metaTitle": "Mysore and Coorg Tour Package – 3 Nights / 4 | Logaa Holidays",
+    //     "metaDescription": "Explore South India with Logaa Holidays on the Mysore and Coorg Tour Package – 3 Nights / 4 Days. Covering Mysore and Coorg Tour Package to Mysore and Coorg",
+    //     "canonicalUrl": "https://www.logaaholidays.com/tour-packages/mysore-tours/mysore-and-coorg-tour-package-3-nights-4-days-2",
+    //     "slug": "mysore-and-coorg-tour-package-3-nights-4-days-2"
+    // },
+    // "id": "5001"
     // },
     // '5002': {
     //     "title": "Bangalore, Mysore and Coorg Tour – 4 Nights / 5 Days",
@@ -31601,13 +32024,13 @@ export const packagesDatabase: Record<string, any> = {
     //     ]
     //     ,
     //     
-        // "seo": {
-        //     "metaTitle": "Bangalore, Mysore and Coorg Tour – 4 Nights / 5 | Logaa Holidays",
-        //     "metaDescription": "Explore South India with Logaa Holidays on the Bangalore, Mysore and Coorg Tour – 4 Nights / 5 Days. Covering Bangalore, Mysore and Coorg Tour to Bangalore",
-        //     "canonicalUrl": "https://www.logaaholidays.com/tour-packages/mysore-tours/bangalore-mysore-and-coorg-tour-4-nights-5-days-2",
-        //     "slug": "bangalore-mysore-and-coorg-tour-4-nights-5-days-2"
-        // },
-        // "id": "5002"
+    // "seo": {
+    //     "metaTitle": "Bangalore, Mysore and Coorg Tour – 4 Nights / 5 | Logaa Holidays",
+    //     "metaDescription": "Explore South India with Logaa Holidays on the Bangalore, Mysore and Coorg Tour – 4 Nights / 5 Days. Covering Bangalore, Mysore and Coorg Tour to Bangalore",
+    //     "canonicalUrl": "https://www.logaaholidays.com/tour-packages/mysore-tours/bangalore-mysore-and-coorg-tour-4-nights-5-days-2",
+    //     "slug": "bangalore-mysore-and-coorg-tour-4-nights-5-days-2"
+    // },
+    // "id": "5002"
     // },
     // '5003': {
     //     "title": "Mysore, Coorg and Kabini Tour – 4 Nights / 5 Days",
@@ -31748,15 +32171,15 @@ export const packagesDatabase: Record<string, any> = {
     //         }
     //     ],
     //     
-        // "seo": {
-        //     "metaTitle": "Mysore, Coorg and Kabini Tour – 4 Nights / 5 | Logaa Holidays",
-        //     "metaDescription": "Explore South India with Logaa Holidays on the Mysore, Coorg and Kabini Tour – 4 Nights / 5 Days. Covering Mysore, Coorg and Kabini Tour to Mysore, Coorg and",
-        //     "canonicalUrl": "https://www.logaaholidays.com/tour-packages/mysore-tours/mysore-coorg-and-kabini-tour-4-nights-5-days-2",
-        //     "slug": "mysore-coorg-and-kabini-tour-4-nights-5-days-2"
-        // },
-        // "id": "5003"
+    // "seo": {
+    //     "metaTitle": "Mysore, Coorg and Kabini Tour – 4 Nights / 5 | Logaa Holidays",
+    //     "metaDescription": "Explore South India with Logaa Holidays on the Mysore, Coorg and Kabini Tour – 4 Nights / 5 Days. Covering Mysore, Coorg and Kabini Tour to Mysore, Coorg and",
+    //     "canonicalUrl": "https://www.logaaholidays.com/tour-packages/mysore-tours/mysore-coorg-and-kabini-tour-4-nights-5-days-2",
+    //     "slug": "mysore-coorg-and-kabini-tour-4-nights-5-days-2"
     // },
-    
+    // "id": "5003"
+    // },
+
     // '5004': {
     //     "title": "Coorg and Chikmagalur Tour – 4 Nights / 5 Days",
     //     "badge": "Karnataka Tour",
@@ -31895,7 +32318,7 @@ export const packagesDatabase: Record<string, any> = {
     //             "answerHindi": "कीमत यात्रा तिथि, वयस्कों और बच्चों की संख्या, होटल कैटेगरी, कमरों की संख्या, एक्स्ट्रा बेड, वाहन के प्रकार, पिकअप और ड्रॉप पॉइंट तथा वैकल्पिक गतिविधियों पर निर्भर करती है। अंतिम कोटेशन के लिए अपनी सही यात्रा जानकारी Logaa Holidays के साथ साझा करें।"
     //         }
     //     ],
-        
+
     //     "seo": {
     //         "metaTitle": "Coorg and Chikmagalur Tour – 4 Nights / 5 Days | Logaa Holidays",
     //         "metaDescription": "Explore South India with Logaa Holidays on the Coorg and Chikmagalur Tour – 4 Nights / 5 Days. Covering Coorg and Chikmagalur Tour to Coorg and Chikmagalur",
@@ -32042,7 +32465,7 @@ export const packagesDatabase: Record<string, any> = {
     //             "answerHindi": "कीमत यात्रा तिथि, वयस्कों और बच्चों की संख्या, होटल कैटेगरी, कमरों की संख्या, एक्स्ट्रा बेड, वाहन के प्रकार, पिकअप और ड्रॉप पॉइंट तथा वैकल्पिक गतिविधियों पर निर्भर करती है। अंतिम कोटेशन के लिए अपनी सही यात्रा जानकारी Logaa Holidays के साथ साझा करें।"
     //         }
     //     ],
-        
+
     //     "seo": {
     //         "metaTitle": "Hampi and Badami Heritage Tour – 4 Nights / 5 | Logaa Holidays",
     //         "metaDescription": "Explore South India with Logaa Holidays on the Hampi and Badami Heritage Tour – 4 Nights / 5 Days. Covering Hampi and Badami Heritage Tour to Hampi and Badami",
@@ -32189,7 +32612,7 @@ export const packagesDatabase: Record<string, any> = {
     //             "answerHindi": "कीमत यात्रा तिथि, वयस्कों और बच्चों की संख्या, होटल कैटेगरी, कमरों की संख्या, एक्स्ट्रा बेड, वाहन के प्रकार, पिकअप और ड्रॉप पॉइंट तथा वैकल्पिक गतिविधियों पर निर्भर करती है। अंतिम कोटेशन के लिए अपनी सही यात्रा जानकारी Logaa Holidays के साथ साझा करें।"
     //         }
     //     ],
-        
+
     //     "seo": {
     //         "metaTitle": "Udupi, Murudeshwar and Gokarna Tour – 4 Nights | Logaa Holidays",
     //         "metaDescription": "Explore South India with Logaa Holidays on the Udupi, Murudeshwar and Gokarna Tour – 4 Nights / 5 Days. Covering Udupi, Murudeshwar and Gokarna Tour to Udupi",
@@ -32395,7 +32818,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "Final package price depends on travel date, hotel category and selected honeymoon inclusions. Exact room, meal plan, transport और honeymoon inclusions के लिए final quotation की जाँच की जानी चाहिए। मदुरै या तमिलनाडु के अन्य शहरों से यात्रा करने वाले travellers के लिए, inclusions में सूचीबद्ध नहीं की गई किसी भी onward flight, train, bus या transfer को अलग से जोड़ा जाना चाहिए।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Kerala Honeymoon Package – 2 Nights / 3 Days | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Kerala Honeymoon Package – 2 Nights / 3 Days. Covering Kochi to Kochi in 2 Nights / 3 Days. Highlights",
@@ -32488,7 +32911,7 @@ export const packagesDatabase: Record<string, any> = {
                     "• Backwater views",
                     "• Resort leisure",
                     "• Swimming pool, where available",
-                    "• Optional sunset cruise",
+                    "• Optional Sunset",
                     "• Optional candlelight dinner",
                     "• Couple spa, subject to availability",
                     "Spend a peaceful evening together.",
@@ -32644,7 +33067,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "Final package cost depends on room category, houseboat type and honeymoon add-ons. Exact room, meal plan, transport और honeymoon inclusions के लिए final quotation की जाँच की जानी चाहिए। मदुरै या तमिलनाडु के अन्य शहरों से यात्रा करने वाले travellers के लिए, inclusions में सूचीबद्ध नहीं की गई किसी भी onward flight, train, bus या transfer को अलग से जोड़ा जाना चाहिए।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Kerala Honeymoon Package – 3 Nights / 4 Days | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Kerala Honeymoon Package – 3 Nights / 4 Days. Covering Kochi to Kochi in 3 Nights / 4 Days. Highlights",
@@ -32757,7 +33180,7 @@ export const packagesDatabase: Record<string, any> = {
                     "• Backwater views",
                     "• Resort leisure",
                     "• Swimming pool, where available",
-                    "• Optional sunset cruise",
+                    "• Optional Sunset",
                     "• Optional candlelight dinner",
                     "• Couple spa, subject to availability",
                     "Spend a peaceful evening together.",
@@ -32929,7 +33352,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "Final package cost depends on hotel category, houseboat type and honeymoon add-ons. Exact room, meal plan, transport और honeymoon inclusions के लिए final quotation की जाँच की जानी चाहिए।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Kerala Honeymoon Package – 4 Nights / 5 Days | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Kerala Honeymoon Package – 4 Nights / 5 Days. Covering Kochi to Kochi in 4 Nights / 5 Days. Highlights",
@@ -33022,7 +33445,7 @@ export const packagesDatabase: Record<string, any> = {
                     "• Backwater views",
                     "• Resort leisure",
                     "• Swimming pool, where available",
-                    "• Optional sunset cruise",
+                    "• Optional Sunset",
                     "• Optional candlelight dinner",
                     "• Couple spa, subject to availability",
                     "Spend a peaceful evening together.",
@@ -33219,7 +33642,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "Final package cost depends on hotel category, houseboat type and honeymoon add-ons. Exact room, meal plan, transport और honeymoon inclusions के लिए final quotation की जाँच की जानी चाहिए। मदुरै या तमिलनाडु के अन्य शहरों से यात्रा करने वाले travellers के लिए, inclusions में सूचीबद्ध नहीं की गई किसी भी onward flight, train, bus या transfer को अलग से जोड़ा जाना चाहिए।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Kerala Honeymoon Package – 5 Nights / 6 Days | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Kerala Honeymoon Package – 5 Nights / 6 Days. Covering Kochi to Kochi in 5 Nights / 6 Days. Highlights",
@@ -33230,7 +33653,7 @@ export const packagesDatabase: Record<string, any> = {
     },
 
     '8201': {
-        "title": "Manali Short Holiday Package",
+        "title": "Manali Short Holiday Package 2 Nights / 3 Days",
         "badge": "Manali Tour",
         "image": "/assets/SMK/Manali Short Holiday.webp",
         "heroImage": "/assets/SMK hero/Manali Short Holiday.webp",
@@ -33325,7 +33748,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "पैकेज में शामिल न होने पर फ्लाइट या ट्रेन टिकट, एडवेंचर या स्नो एक्टिविटीज, हॉर्स राइड, विशेष स्थानीय वाहन और एंट्री टिकट आमतौर पर अलग से देय होते हैं। अंतिम कोटेशन में सभी inclusions स्पष्ट रूप से बताए जाएंगे। हाँ, उपलब्धता के अनुसार होटल श्रेणी, मील प्लान, वाहन, अतिरिक्त रातों और साइटसीइंग में बदलाव करके इस पैकेज को परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों के लिए कस्टमाइज किया जा सकता है। रूट और होटल क्षमता उपयुक्त होने पर कॉर्पोरेट या ग्रुप आवश्यकताओं पर भी अलग से विचार किया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Manali Short Holiday Package | Logaa Holidays",
             "metaDescription": "Discover the beauty of North India with Logaa Holidays on the Manali Short Holiday Package. Covering Manali, Solang Valley to Manali, Solang Valley in 2 Nights",
@@ -33335,7 +33758,7 @@ export const packagesDatabase: Record<string, any> = {
         "id": "8201"
     },
     '8202': {
-        "title": "Manali Explorer Package",
+        "title": "Manali Explorer Package 3 Nights / 4 Days",
         "badge": "Manali Tour",
         "image": "/assets/SMK/Manali Explorer Package.webp",
         "heroImage": "/assets/SMK hero/manali explore package.webp",
@@ -33435,7 +33858,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "पैकेज में शामिल न होने पर फ्लाइट या ट्रेन टिकट, एडवेंचर या स्नो एक्टिविटीज, हॉर्स राइड, विशेष स्थानीय वाहन और एंट्री टिकट आमतौर पर अलग से देय होते हैं। अंतिम कोटेशन में सभी inclusions स्पष्ट रूप से बताए जाएंगे। हाँ, उपलब्धता के अनुसार होटल श्रेणी, मील प्लान, वाहन, अतिरिक्त रातों और साइटसीइंग में बदलाव करके इस पैकेज को परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों के लिए कस्टमाइज किया जा सकता है। रूट और होटल क्षमता उपयुक्त होने पर कॉर्पोरेट या ग्रुप आवश्यकताओं पर भी अलग से विचार किया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Manali Explorer Package | Logaa Holidays",
             "metaDescription": "Discover the beauty of North India with Logaa Holidays on the Manali Explorer Package. Covering Manali, Solang Valley, Kullu, Naggar to Manali, Solang Valley",
@@ -33445,7 +33868,7 @@ export const packagesDatabase: Record<string, any> = {
         "id": "8202"
     },
     '8203': {
-        "title": "Manali with Kasol Package",
+        "title": "Manali with Kasol Package 5 Days / 4 Nights ",
         "badge": "Manali Tour",
         "image": "/assets/SMK/Manali with Kasol Package.webp",
         "heroImage": "/assets/SMK hero/Manali with Kasol Package.webp",
@@ -33550,7 +33973,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "पैकेज में शामिल न होने पर फ्लाइट या ट्रेन टिकट, एडवेंचर या स्नो एक्टिविटीज, हॉर्स राइड, विशेष स्थानीय वाहन और एंट्री टिकट आमतौर पर अलग से देय होते हैं। अंतिम कोटेशन में सभी inclusions स्पष्ट रूप से बताए जाएंगे। हाँ, उपलब्धता के अनुसार होटल श्रेणी, मील प्लान, वाहन, अतिरिक्त रातों और साइटसीइंग में बदलाव करके इस पैकेज को परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों के लिए कस्टमाइज किया जा सकता है। रूट और होटल क्षमता उपयुक्त होने पर कॉर्पोरेट या ग्रुप आवश्यकताओं पर भी अलग से विचार किया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Manali with Kasol Package | Logaa Holidays",
             "metaDescription": "Discover the beauty of North India with Logaa Holidays on the Manali with Kasol Package. Covering Manali, Solang Valley, Kullu, Kasol, Manikaran to Manali",
@@ -33560,7 +33983,7 @@ export const packagesDatabase: Record<string, any> = {
         "id": "8203"
     },
     '8204': {
-        "title": "Complete Manali Holiday Package",
+        "title": "Complete Manali Holiday Package 5 Nights / 6 Days",
         "badge": "Manali Tour",
         "image": "/assets/SMK/Complete Manali Holiday Package.webp",
         "heroImage": "/assets/SMK hero/Complete Manali Holiday Package.webp",
@@ -33670,7 +34093,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "पैकेज में शामिल न होने पर फ्लाइट या ट्रेन टिकट, एडवेंचर या स्नो एक्टिविटीज, हॉर्स राइड, विशेष स्थानीय वाहन और एंट्री टिकट आमतौर पर अलग से देय होते हैं। अंतिम कोटेशन में सभी inclusions स्पष्ट रूप से बताए जाएंगे। हाँ, उपलब्धता के अनुसार होटल श्रेणी, मील प्लान, वाहन, अतिरिक्त रातों और साइटसीइंग में बदलाव करके इस पैकेज को परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों के लिए कस्टमाइज किया जा सकता है। रूट और होटल क्षमता उपयुक्त होने पर कॉर्पोरेट या ग्रुप आवश्यकताओं पर भी अलग से विचार किया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Complete Manali Holiday Package | Logaa Holidays",
             "metaDescription": "Discover the beauty of North India with Logaa Holidays on the Complete Manali Holiday Package. Covering Manali, Solang Valley, Atal Tunnel region, Kullu",
@@ -33680,7 +34103,7 @@ export const packagesDatabase: Record<string, any> = {
         "id": "8204"
     },
     '8205': {
-        "title": "Manali, Kasol and Chandigarh Package",
+        "title": "Manali, Kasol and Chandigarh Package 6 Nights / 7 Days",
         "badge": "Manali Tour",
         "image": "/assets/SMK/Manali, Kasol and Chandigarh Package.webp",
         "heroImage": "/assets/SMK hero/Manali, Kasol and Chandigarh Package.webp",
@@ -33795,7 +34218,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "पैकेज में शामिल न होने पर फ्लाइट या ट्रेन टिकट, एडवेंचर या स्नो एक्टिविटीज, हॉर्स राइड, विशेष स्थानीय वाहन और एंट्री टिकट आमतौर पर अलग से देय होते हैं। अंतिम कोटेशन में सभी inclusions स्पष्ट रूप से बताए जाएंगे। हाँ, उपलब्धता के अनुसार होटल श्रेणी, मील प्लान, वाहन, अतिरिक्त रातों और साइटसीइंग में बदलाव करके इस पैकेज को परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों के लिए कस्टमाइज किया जा सकता है। रूट और होटल क्षमता उपयुक्त होने पर कॉर्पोरेट या ग्रुप आवश्यकताओं पर भी अलग से विचार किया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Manali, Kasol and Chandigarh Package | Logaa Holidays",
             "metaDescription": "Discover the beauty of North India with Logaa Holidays on the Manali, Kasol and Chandigarh Package. Covering Chandigarh, Manali, Solang Valley, Kullu, Naggar",
@@ -33805,7 +34228,7 @@ export const packagesDatabase: Record<string, any> = {
         "id": "8205"
     },
     '8301': {
-        "title": "Manali Short Volvo Package",
+        "title": "Manali Short Volvo Package 2 Nights / 3 Days",
         "badge": "Manali Tour",
         "image": "/assets/SMK/Manali Short Volvo Package.webp",
         "heroImage": "/assets/SMK hero/Manali Short Volvo Package.webp",
@@ -33910,7 +34333,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "पैकेज में शामिल न होने पर दिल्ली तक फ्लाइट या ट्रेन कनेक्शन, स्थानीय गतिविधियों के शुल्क, एंट्री टिकट और व्यक्तिगत खर्च आमतौर पर अलग से देय होते हैं। अंतिम कोटेशन में सभी inclusions स्पष्ट रूप से बताए जाएंगे। हाँ, उपलब्धता के अनुसार होटल श्रेणी, मील प्लान, वाहन, अतिरिक्त रातों और साइटसीइंग में बदलाव करके इस पैकेज को परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों के लिए कस्टमाइज किया जा सकता है। रूट और होटल क्षमता उपयुक्त होने पर कॉर्पोरेट या ग्रुप आवश्यकताओं पर भी अलग से विचार किया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Manali Short Volvo Package | Logaa Holidays",
             "metaDescription": "Discover the beauty of North India with Logaa Holidays on the Manali Short Volvo Package. Covering Delhi to Delhi in 2 Nights / 3 Days. Highlights include",
@@ -33920,7 +34343,7 @@ export const packagesDatabase: Record<string, any> = {
         "id": "8301"
     },
     '8302': {
-        "title": "Manali Classic Volvo Package",
+        "title": "Manali Classic Volvo Package 3 Nights / 4 Days",
         "badge": "Manali Tour",
         "image": "/assets/SMK/Manali Classic Volvo Package.webp",
         "heroImage": "/assets/SMK hero/Manali Classic Volvo Package.webp",
@@ -34030,7 +34453,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "पैकेज में शामिल न होने पर दिल्ली तक फ्लाइट या ट्रेन कनेक्शन, स्थानीय गतिविधियों के शुल्क, एंट्री टिकट और व्यक्तिगत खर्च आमतौर पर अलग से देय होते हैं। अंतिम कोटेशन में सभी inclusions स्पष्ट रूप से बताए जाएंगे। हाँ, उपलब्धता के अनुसार होटल श्रेणी, मील प्लान, वाहन, अतिरिक्त रातों और साइटसीइंग में बदलाव करके इस पैकेज को परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों के लिए कस्टमाइज किया जा सकता है। रूट और होटल क्षमता उपयुक्त होने पर कॉर्पोरेट या ग्रुप आवश्यकताओं पर भी अलग से विचार किया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Manali Classic Volvo Package | Logaa Holidays",
             "metaDescription": "Discover the beauty of North India with Logaa Holidays on the Manali Classic Volvo Package. Covering Delhi to Delhi in 3 Nights / 4 Days. Highlights include",
@@ -34040,7 +34463,7 @@ export const packagesDatabase: Record<string, any> = {
         "id": "8302"
     },
     '8303': {
-        "title": "Manali and Kasol Volvo Package",
+        "title": "Manali and Kasol Volvo Package 4 Nights / 5 Days",
         "badge": "Manali Tour",
         "image": "/assets/SMK/Manali and Kasol Volvo Package.webp",
         "heroImage": "/assets/SMK hero/Manali and Kasol Volvo Package.webp",
@@ -34155,7 +34578,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "पैकेज में शामिल न होने पर दिल्ली तक फ्लाइट या ट्रेन कनेक्शन, स्थानीय गतिविधियों के शुल्क, एंट्री टिकट और व्यक्तिगत खर्च आमतौर पर अलग से देय होते हैं। अंतिम कोटेशन में सभी inclusions स्पष्ट रूप से बताए जाएंगे। हाँ, उपलब्धता के अनुसार होटल श्रेणी, मील प्लान, वाहन, अतिरिक्त रातों और साइटसीइंग में बदलाव करके इस पैकेज को परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों के लिए कस्टमाइज किया जा सकता है। रूट और होटल क्षमता उपयुक्त होने पर कॉर्पोरेट या ग्रुप आवश्यकताओं पर भी अलग से विचार किया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Manali and Kasol Volvo Package | Logaa Holidays",
             "metaDescription": "Discover the beauty of North India with Logaa Holidays on the Manali and Kasol Volvo Package. Covering Delhi to Delhi in 4 Nights / 5 Days. Highlights include",
@@ -34165,7 +34588,7 @@ export const packagesDatabase: Record<string, any> = {
         "id": "8303"
     },
     '8304': {
-        "title": "Complete Manali Volvo Holiday",
+        "title": "Complete Manali Volvo Holiday 5 Nights / 6 Days",
         "badge": "Manali Tour",
         "image": "/assets/SMK/Complete Manali Volvo Holiday.webp",
         "heroImage": "/assets/SMK hero/Complete Manali Volvo Holiday.webp",
@@ -34285,7 +34708,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "पैकेज में शामिल न होने पर दिल्ली तक फ्लाइट या ट्रेन कनेक्शन, स्थानीय गतिविधियों के शुल्क, एंट्री टिकट और व्यक्तिगत खर्च आमतौर पर अलग से देय होते हैं। अंतिम कोटेशन में सभी inclusions स्पष्ट रूप से बताए जाएंगे। हाँ, उपलब्धता के अनुसार होटल श्रेणी, मील प्लान, वाहन, अतिरिक्त रातों और साइटसीइंग में बदलाव करके इस पैकेज को परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों के लिए कस्टमाइज किया जा सकता है। रूट और होटल क्षमता उपयुक्त होने पर कॉर्पोरेट या ग्रुप आवश्यकताओं पर भी अलग से विचार किया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Complete Manali Volvo Holiday | Logaa Holidays",
             "metaDescription": "Discover the beauty of North India with Logaa Holidays on the Complete Manali Volvo Holiday. Covering Delhi to Delhi in 5 Nights / 6 Days. Highlights include",
@@ -34296,7 +34719,7 @@ export const packagesDatabase: Record<string, any> = {
     },
 
     '8101': {
-        "title": "Shimla Highlights Package",
+        "title": "Shimla Highlights Package 2 Nights / 3 Days",
         "badge": "Shimla Tour",
         "image": "/assets/SMK/Shimla.webp",
         "heroImage": "/assets/SMK hero/Shimla.webp",
@@ -34391,7 +34814,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "पैकेज में शामिल न होने पर फ्लाइट या ट्रेन टिकट, एडवेंचर या स्नो एक्टिविटीज, हॉर्स राइड, विशेष स्थानीय वाहन और एंट्री टिकट आमतौर पर अलग से देय होते हैं। अंतिम कोटेशन में सभी inclusions स्पष्ट रूप से बताए जाएंगे। हाँ, उपलब्धता के अनुसार होटल श्रेणी, मील प्लान, वाहन, अतिरिक्त रातों और साइटसीइंग में बदलाव करके इस पैकेज को परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों के लिए कस्टमाइज किया जा सकता है। रूट और होटल क्षमता उपयुक्त होने पर कॉर्पोरेट या ग्रुप आवश्यकताओं पर भी अलग से विचार किया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Shimla Highlights Package | Logaa Holidays",
             "metaDescription": "Discover the beauty of North India with Logaa Holidays on the Shimla Highlights Package. Covering Shimla, Kufri to Shimla, Kufri in 2 Nights / 3 Days",
@@ -34401,7 +34824,7 @@ export const packagesDatabase: Record<string, any> = {
         "id": "8101"
     },
     '8102': {
-        "title": "Scenic Shimla Holiday Package",
+        "title": "Scenic Shimla Holiday Package 3 Nights / 4 Days",
         "badge": "Shimla Tour",
         "image": "/assets/SMK/Scenic.webp",
         "heroImage": "/assets/SMK hero/Scenic.webp",
@@ -34501,7 +34924,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "पैकेज में शामिल न होने पर फ्लाइट या ट्रेन टिकट, एडवेंचर या स्नो एक्टिविटीज, हॉर्स राइड, विशेष स्थानीय वाहन और एंट्री टिकट आमतौर पर अलग से देय होते हैं। अंतिम कोटेशन में सभी inclusions स्पष्ट रूप से बताए जाएंगे। हाँ, उपलब्धता के अनुसार होटल श्रेणी, मील प्लान, वाहन, अतिरिक्त रातों और साइटसीइंग में बदलाव करके इस पैकेज को परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों के लिए कस्टमाइज किया जा सकता है। रूट और होटल क्षमता उपयुक्त होने पर कॉर्पोरेट या ग्रुप आवश्यकताओं पर भी अलग से विचार किया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Scenic Shimla Holiday Package | Logaa Holidays",
             "metaDescription": "Discover the beauty of North India with Logaa Holidays on the Scenic Shimla Holiday Package. Covering Shimla, Kufri, Mashobra, Naldehra to Shimla, Kufri",
@@ -34511,7 +34934,7 @@ export const packagesDatabase: Record<string, any> = {
         "id": "8102"
     },
     '8103': {
-        "title": "Complete Shimla Leisure Package",
+        "title": "Complete Shimla Leisure Package 4 Nights / 5 Days",
         "badge": "Shimla Tour",
         "image": "/assets/SMK/Complete Shimla.webp",
         "heroImage": "/assets/SMK hero/Complete Shimla.webp",
@@ -34616,7 +35039,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "पैकेज में शामिल न होने पर फ्लाइट या ट्रेन टिकट, एडवेंचर या स्नो एक्टिविटीज, हॉर्स राइड, विशेष स्थानीय वाहन और एंट्री टिकट आमतौर पर अलग से देय होते हैं। अंतिम कोटेशन में सभी inclusions स्पष्ट रूप से बताए जाएंगे। हाँ, उपलब्धता के अनुसार होटल श्रेणी, मील प्लान, वाहन, अतिरिक्त रातों और साइटसीइंग में बदलाव करके इस पैकेज को परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों के लिए कस्टमाइज किया जा सकता है। रूट और होटल क्षमता उपयुक्त होने पर कॉर्पोरेट या ग्रुप आवश्यकताओं पर भी अलग से विचार किया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Complete Shimla Leisure Package | Logaa Holidays",
             "metaDescription": "Discover the beauty of North India with Logaa Holidays on the Complete Shimla Leisure Package. Covering Shimla, Kufri, Chail, Mashobra, Naldehra to Shimla",
@@ -34626,7 +35049,7 @@ export const packagesDatabase: Record<string, any> = {
         "id": "8103"
     },
     '8104': {
-        "title": "Best of Shimla and Manali Package",
+        "title": "Best of Shimla and Manali Package 5 Nights / 6 Days",
         "badge": "Shimla Tour",
         "image": "/assets/SMK/shimla and manali.webp",
         "heroImage": "/assets/SMK hero/shimala and manali.webp",
@@ -34736,7 +35159,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "पैकेज में शामिल न होने पर फ्लाइट या ट्रेन टिकट, एडवेंचर या स्नो एक्टिविटीज, हॉर्स राइड, विशेष स्थानीय वाहन और एंट्री टिकट आमतौर पर अलग से देय होते हैं। अंतिम कोटेशन में सभी inclusions स्पष्ट रूप से बताए जाएंगे। हाँ, उपलब्धता के अनुसार होटल श्रेणी, मील प्लान, वाहन, अतिरिक्त रातों और साइटसीइंग में बदलाव करके इस पैकेज को परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों के लिए कस्टमाइज किया जा सकता है। रूट और होटल क्षमता उपयुक्त होने पर कॉर्पोरेट या ग्रुप आवश्यकताओं पर भी अलग से विचार किया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Best of Shimla and Manali Package | Logaa Holidays",
             "metaDescription": "Discover the beauty of North India with Logaa Holidays on the Best of Shimla and Manali Package. Covering Shimla, Kufri, Kullu, Manali, Solang Valley to",
@@ -34746,7 +35169,7 @@ export const packagesDatabase: Record<string, any> = {
         "id": "8104"
     },
     '8105': {
-        "title": "Complete Himachal Package",
+        "title": "Complete Himachal Package 6 Nights / 7 Days",
         "badge": "Shimla Tour",
         "image": "/assets/SMK/Complete Himachal.webp",
         "heroImage": "/assets/SMK hero/Complete Himachal.webp",
@@ -34861,7 +35284,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "पैकेज में शामिल न होने पर फ्लाइट या ट्रेन टिकट, एडवेंचर या स्नो एक्टिविटीज, हॉर्स राइड, विशेष स्थानीय वाहन और एंट्री टिकट आमतौर पर अलग से देय होते हैं। अंतिम कोटेशन में सभी inclusions स्पष्ट रूप से बताए जाएंगे। हाँ, उपलब्धता के अनुसार होटल श्रेणी, मील प्लान, वाहन, अतिरिक्त रातों और साइटसीइंग में बदलाव करके इस पैकेज को परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों के लिए कस्टमाइज किया जा सकता है। रूट और होटल क्षमता उपयुक्त होने पर कॉर्पोरेट या ग्रुप आवश्यकताओं पर भी अलग से विचार किया जा सकता है।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Complete Himachal Package | Logaa Holidays",
             "metaDescription": "Discover the beauty of North India with Logaa Holidays on the Complete Himachal Package. Covering Shimla, Kufri, Kullu, Manali, Solang Valley, Chandigarh to",
@@ -35102,7 +35525,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "जब तक विशेष रूप से शामिल न हों, फ्लाइट टिकट, water sports और adventure activities, व्यक्तिगत खर्च और अतिरिक्त वाहन उपयोग आमतौर पर अलग से भुगतान योग्य होते हैं। अंतिम quotation में शामिल सेवाओं की स्पष्ट जानकारी दी जाएगी। हाँ। होटल की श्रेणी, meal plan, वाहन, अतिरिक्त रातें और sightseeing को बदलकर परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अनुकूलित किया जा सकता है। Corporate या बड़े समूहों के लिए भी उपयुक्त transport और group arrangements के साथ अलग quotation दिया जा सकता है। अलग cruise service इस island package में स्वतः शामिल नहीं होती और केवल तब quote की जा सकती है जब उपयुक्त cruise service operational और उपलब्ध हो।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Andaman Island Tour Package – 7 Nights / 8 Days | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Andaman Island Tour Package – 7 Nights / 8 Days. Covering Port Blair to Port Blair in 7 Nights / 8 Days",
@@ -35319,7 +35742,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "जब तक विशेष रूप से शामिल न हों, फ्लाइट टिकट, water sports और adventure activities, व्यक्तिगत खर्च और अतिरिक्त वाहन उपयोग आमतौर पर अलग से भुगतान योग्य होते हैं। अंतिम quotation में शामिल सेवाओं की स्पष्ट जानकारी दी जाएगी। हाँ। होटल की श्रेणी, meal plan, वाहन, अतिरिक्त रातें और sightseeing को बदलकर परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अनुकूलित किया जा सकता है। Corporate या बड़े समूहों के लिए भी उपयुक्त transport और group arrangements के साथ अलग quotation दिया जा सकता है। अलग cruise service इस island package में स्वतः शामिल नहीं होती और केवल तब quote की जा सकती है जब उपयुक्त cruise service operational और उपलब्ध हो।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Popular Andaman Package  – 5 Nights / 6 Days | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Popular Andaman Package  – 5 Nights / 6 Days. Covering Port Blair to Port Blair in 5 Nights / 6 Days",
@@ -35507,7 +35930,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "जब तक विशेष रूप से शामिल न हों, फ्लाइट टिकट, water sports और adventure activities, व्यक्तिगत खर्च और अतिरिक्त वाहन उपयोग आमतौर पर अलग से भुगतान योग्य होते हैं। अंतिम quotation में शामिल सेवाओं की स्पष्ट जानकारी दी जाएगी। हाँ। होटल की श्रेणी, meal plan, वाहन, अतिरिक्त रातें और sightseeing को बदलकर परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अनुकूलित किया जा सकता है। Corporate या बड़े समूहों के लिए भी उपयुक्त transport और group arrangements के साथ अलग quotation दिया जा सकता है। अलग cruise service इस island package में स्वतः शामिल नहीं होती और केवल तब quote की जा सकती है जब उपयुक्त cruise service operational और उपलब्ध हो।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Budget Andaman Package – 3 Nights / 4 Days | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Budget Andaman Package – 3 Nights / 4 Days. Covering Port Blair to Port Blair in 3 Nights / 4 Days",
@@ -35682,7 +36105,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "जब तक विशेष रूप से शामिल न हों, फ्लाइट टिकट, water sports और adventure activities, व्यक्तिगत खर्च और अतिरिक्त वाहन उपयोग आमतौर पर अलग से भुगतान योग्य होते हैं। अंतिम quotation में शामिल सेवाओं की स्पष्ट जानकारी दी जाएगी। हाँ। होटल की श्रेणी, meal plan, वाहन, अतिरिक्त रातें और sightseeing को बदलकर परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अनुकूलित किया जा सकता है। Corporate या बड़े समूहों के लिए भी उपयुक्त transport और group arrangements के साथ अलग quotation दिया जा सकता है। अलग cruise service इस island package में स्वतः शामिल नहीं होती और केवल तब quote की जा सकती है जब उपयुक्त cruise service operational और उपलब्ध हो।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Andaman Budget Tour Package – 2 Nights / 3 Days | Logaa Holidays",
             "metaDescription": "Explore South India with Logaa Holidays on the Andaman Budget Tour Package – 2 Nights / 3 Days. Covering Port Blair, Ross Island and North Bay Island to Port",
@@ -35885,7 +36308,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "जब तक विशेष रूप से शामिल न हों, फ्लाइट टिकट, water sports और adventure activities, व्यक्तिगत खर्च और अतिरिक्त वाहन उपयोग आमतौर पर अलग से भुगतान योग्य होते हैं। अंतिम quotation में शामिल सेवाओं की स्पष्ट जानकारी दी जाएगी। हाँ। होटल की श्रेणी, meal plan, वाहन, अतिरिक्त रातें और sightseeing को बदलकर परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अनुकूलित किया जा सकता है। Corporate या बड़े समूहों के लिए भी उपयुक्त transport और group arrangements के साथ अलग quotation दिया जा सकता है। अलग cruise service इस island package में स्वतः शामिल नहीं होती और केवल तब quote की जा सकती है जब उपयुक्त cruise service operational और उपलब्ध हो।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Andaman Tour Package – 4 Nights / 5 Days | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Andaman Tour Package – 4 Nights / 5 Days. Covering Port Blair to Port Blair in 4 Nights / 5 Days. Highlights",
@@ -36127,7 +36550,7 @@ export const packagesDatabase: Record<string, any> = {
                 "answerHindi": "जब तक विशेष रूप से शामिल न हों, फ्लाइट टिकट, water sports और adventure activities, व्यक्तिगत खर्च और अतिरिक्त वाहन उपयोग आमतौर पर अलग से भुगतान योग्य होते हैं। अंतिम quotation में शामिल सेवाओं की स्पष्ट जानकारी दी जाएगी। हाँ। होटल की श्रेणी, meal plan, वाहन, अतिरिक्त रातें और sightseeing को बदलकर परिवारों, कपल्स, वरिष्ठ नागरिकों और समूहों की आवश्यकताओं के अनुसार यात्रा कार्यक्रम को अनुकूलित किया जा सकता है। Corporate या बड़े समूहों के लिए भी उपयुक्त transport और group arrangements के साथ अलग quotation दिया जा सकता है। अलग cruise service इस island package में स्वतः शामिल नहीं होती और केवल तब quote की जा सकती है जब उपयुक्त cruise service operational और उपलब्ध हो।"
             }
         ],
-        
+
         "seo": {
             "metaTitle": "Andaman Tour Package – 6 Nights / 7 Days | Logaa Holidays",
             "metaDescription": "Plan a romantic getaway with Logaa Holidays on the Andaman Tour Package – 6 Nights / 7 Days. Covering Port Blair to Port Blair in 6 Nights / 7 Days. Highlights",
@@ -36214,8 +36637,82 @@ export const getPackageCategory = (pkg: any) => {
         return { name: 'Delhi Tours', slug: 'delhi-tours' };
     }
 
-    // Madurai Tours: 2025 to 2099, or containing specific keywords
-    const maduraiKeywords = ['madurai', 'kumbakonam', 'trichy', 'thiruchendur', 'megamalai', 'thanjavur'];
+    // ── Specific Tamil Nadu destination categories (must be BEFORE the broad Madurai catch-all) ──
+
+    // Kodaikanal Tours
+    if (titleLower.includes('kodaikanal') || destLower.includes('kodaikanal')) {
+        return { name: 'Kodaikanal Tours', slug: 'kodaikanal-tours' };
+    }
+
+    // Ooty Tours
+    if (titleLower.includes('ooty') || titleLower.includes('udhagamandalam') || destLower.includes('ooty')) {
+        return { name: 'Ooty Tours', slug: 'ooty-tours' };
+    }
+
+    // Rameswaram Tours
+    if (titleLower.includes('rameswaram') || titleLower.includes('rameshwaram') || destLower.includes('rameswaram')) {
+        return { name: 'Rameswaram Tours', slug: 'rameswaram-tours' };
+    }
+
+    // Kanyakumari Tours
+    if (titleLower.includes('kanyakumari') || destLower.includes('kanyakumari')) {
+        return { name: 'Kanyakumari Tours', slug: 'kanyakumari-tours' };
+    }
+
+    // Courtallam Tours
+    if (titleLower.includes('courtallam') || titleLower.includes('kuttralam') || destLower.includes('courtallam')) {
+        return { name: 'Courtallam Tours', slug: 'courtallam-tours' };
+    }
+
+    // Tiruchendur Tours
+    if (titleLower.includes('tiruchendur') || titleLower.includes('thiruchendur') || destLower.includes('tiruchendur')) {
+        return { name: 'Tiruchendur Tours', slug: 'tiruchendur-tours' };
+    }
+
+    // Palani Tours
+    if (titleLower.includes('palani') || destLower.includes('palani')) {
+        return { name: 'Palani Tours', slug: 'palani-tours' };
+    }
+
+    // Trichy Tours
+    if (titleLower.includes('trichy') || titleLower.includes('tiruchirappalli') || destLower.includes('trichy')) {
+        return { name: 'Trichy Tours', slug: 'trichy-tours' };
+    }
+
+    // Thanjavur Tours
+    if (titleLower.includes('thanjavur') || titleLower.includes('tanjore') || destLower.includes('thanjavur')) {
+        return { name: 'Thanjavur Tours', slug: 'thanjavur-tours' };
+    }
+
+    // Kumbakonam Tours
+    if (titleLower.includes('kumbakonam') || destLower.includes('kumbakonam')) {
+        return { name: 'Kumbakonam Tours', slug: 'kumbakonam-tours' };
+    }
+
+    // Megamalai Tours
+    if (titleLower.includes('megamalai') || titleLower.includes('meghamalai') || destLower.includes('megamalai')) {
+        return { name: 'Megamalai Tours', slug: 'megamalai-tours' };
+    }
+
+    // Valparai Tours
+    if (titleLower.includes('valparai') || destLower.includes('valparai')) {
+        return { name: 'Valparai Tours', slug: 'valparai-tours' };
+    }
+
+    // Mahabalipuram Tours
+    if (titleLower.includes('mahabalipuram') || titleLower.includes('mamallapuram') || destLower.includes('mahabalipuram')) {
+        return { name: 'Mahabalipuram Tours', slug: 'mahabalipuram-tours' };
+    }
+
+    // Pondicherry Tours
+    if (titleLower.includes('pondicherry') || titleLower.includes('puducherry') || destLower.includes('pondicherry')) {
+        return { name: 'Pondicherry Tours', slug: 'pondicherry-tours' };
+    }
+
+    // ──────────────────────────────────────────────────────────────────────────────
+
+    // Madurai Tours: 2025 to 2099, or containing specific keywords (broad catch-all for Madurai-based packages)
+    const maduraiKeywords = ['madurai'];
     if ((idNum >= 2025 && idNum <= 2099) || maduraiKeywords.some(kw => titleLower.includes(kw) || destLower.includes(kw))) {
         return { name: 'Madurai Tours', slug: 'madurai-tours' };
     }
@@ -36235,15 +36732,8 @@ export const getPackageCategory = (pkg: any) => {
         return { name: 'Ayodhya Tours', slug: 'ayodhya-tours' };
     }
 
-    // Rameshwaram Tours
-    if (titleLower.includes('rameshwaram') || destLower.includes('rameshwaram') || idNum === 42) {
-        return { name: 'Rameshwaram Tours', slug: 'rameshwaram-tours' };
-    }
+    // Kanyakumari Tours (fallback duplicate removed — handled above)
 
-    // Kanyakumari Tours
-    if (titleLower.includes('kanyakumari') || destLower.includes('kanyakumari')) {
-        return { name: 'Kanyakumari Tours', slug: 'kanyakumari-tours' };
-    }
 
     // Kerala Tours
     const keralaKeywords = ['munnar', 'thekkady', 'alleppey', 'vagamon', 'valparai', 'kumarakom', 'marayoor', 'kerala'];
@@ -36259,17 +36749,17 @@ export const getPackageCategory = (pkg: any) => {
 
     // Shimla Tours
     if ((idNum >= 8100 && idNum <= 8199) || titleLower.includes('shimla') || destLower.includes('shimla')) {
-        return { name: 'shimla-tours', slug: 'shimla-tours' };
+        return { name: 'Shimla Tours', slug: 'shimla-tours' };
     }
 
     // Manali Tours
     if ((idNum >= 8200 && idNum <= 8399) || titleLower.includes('manali') || destLower.includes('manali')) {
-        return { name: 'manali-tours', slug: 'manali-tours' };
+        return { name: 'Manali Tours', slug: 'manali-tours' };
     }
 
     // Kashmir Tours
     if ((idNum >= 8400 && idNum <= 8499) || titleLower.includes('kashmir') || destLower.includes('kashmir')) {
-        return { name: 'kashmir-tours', slug: 'kashmir-tours' };
+        return { name: 'Kashmir Tours', slug: 'kashmir-tours' };
     }
 
     // Andaman Tours
@@ -36348,35 +36838,68 @@ const PackageDetails = () => {
         <div className="bg-[var(--color-bg-luxury)] min-h-screen pb-24 font-sans">
 
             {/* Hero Banner Section */}
-            <div className="relative h-[72vh] md:h-[74vh] w-full overflow-hidden bg-slate-900">
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30 z-10" />
-                <img loading="lazy"
+            <div className="relative h-[68vh] md:h-[72vh] w-full overflow-hidden bg-slate-900 hero-section">
+
+                {/* Dark Overlay */}
+                <div className="absolute inset-0 z-10 bg-gradient-to-t from-black via-black/70 to-black/60" />
+
+                {/* Hero Image */}
+                <img
+                    loading="lazy"
                     src={(pkg as any).heroImage || pkg.image}
                     alt={pkg.title}
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover object-center"
                 />
-                <div className="absolute inset-0 z-20 flex flex-col justify-end pb-12 px-6 max-w-7xl mx-auto">
-                    <div className="flex flex-wrap items-center gap-2 text-white/90 text-base md:text-lg font-semibold mb-4 drop-shadow-md">
-                        <Link to="/" className="hover:text-white transition-colors">Home</Link>
-                        <ChevronRight className="w-4 h-4 md:w-5 md:h-5 relative top-[-7px] md:top-0" />
-                        <Link to={getRegionLink()} className="hover:text-white transition-colors">Tour Packages</Link>
-                        <ChevronRight className="w-4 h-4 md:w-5 md:h-5 relative top-[-7px] md:top-0" />
-                        <Link to={`/tour-packages/${categoryInfo.slug}`} className="hover:text-white transition-colors">{categoryInfo.name}</Link>
-                        <ChevronRight className="w-4 h-4 md:w-5 md:h-5 relative top-[-7px] md:top-0" />
-                        <span className="text-white font-bold relative top-[-7px] md:top-0">Package Details</span>
-                    </div>
-                    <h1 className="text-3xl md:text-5xl font-display font-bold text-white max-w-4xl leading-tight drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)]">
-                        {pkg.title}
-                    </h1>
-                    <div className="flex flex-wrap gap-4 mt-6">
-                        <div className="flex items-center gap-2 bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-white font-medium text-sm">
-                            <Clock className="w-4 h-4" /> {pkg.overview.duration}
+
+                {/* Content */}
+                <div className="absolute inset-x-0 bottom-0 z-20">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8 md:pb-12 max-[320px]:px-3 max-[320px]:pb-2">
+
+                        {/* Breadcrumb */}
+                        <div className="mb-5 md:mb-6 max-[320px]:mb-2 max-[320px]:overflow-hidden">
+                            <Breadcrumb variant="hero" />
                         </div>
-                        <div className="flex items-center gap-2 bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-white font-medium text-sm">
-                            <MapPin className="w-4 h-4" /> {pkg.overview.destination}
+
+                        {/* Title */}
+                        <h1
+                            className="
+        text-3xl
+        sm:text-3xl
+        md:text-4xl
+        lg:text-5xl
+        xl:text-5xl
+        max-[320px]:text-[22px]
+        font-display
+        font-bold
+        text-white
+        max-w-6xl
+        max-[320px]:max-w-full
+        leading-[1.05]
+        max-[320px]:leading-[1.08]
+        drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)]
+    "
+                        >
+                            {pkg.title}
+                        </h1>
+
+                        {/* Details */}
+                        <div className="flex flex-wrap gap-3 md:gap-4 mt-5 md:mt-6 max-[320px]:gap-2 max-[320px]:mt-3">
+
+                            <div className="flex items-center gap-2 bg-white/20 backdrop-blur-md px-4 md:px-4 py-2 rounded-full text-white font-medium text-xs md:text-sm max-[320px]:px-3 max-[320px]:text-[11px]">
+                                <Clock className="w-4 h-4" />
+                                {pkg.overview.duration}
+                            </div>
+
+                            <div className="flex items-center gap-2 bg-white/20 backdrop-blur-md px-4 md:px-4 py-2 rounded-full text-white font-medium text-xs md:text-sm max-[320px]:px-3 max-[320px]:text-[11px]">
+                                <MapPin className="w-4 h-4" />
+                                {pkg.overview.destination}
+                            </div>
+
                         </div>
+
                     </div>
                 </div>
+
             </div>
 
             {/* Main Content Area */}
@@ -36400,29 +36923,29 @@ const PackageDetails = () => {
 
                         {/* Quick Overview Cards */}
                         <div className={`grid grid-cols-2 ${pkg.overview.transport ? 'md:grid-cols-5' : 'md:grid-cols-4'} gap-4 mb-12`}>
-                            <div className="bg-white p-4 rounded-2xl ,0,0,0.05),-10px_-10px_30px_rgba(255,255,255,0.8)] border border-white flex flex-col items-center text-center justify-center">
-                                <Clock className="w-6 h-6 text-[var(--color-blue-ocean)] mb-2" />
+                            <div className="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center text-center justify-center">
+                                <Clock className="w-6 h-6 text-[var(--color-primary-forest)] mb-2" />
                                 <p className="text-xs text-slate-500 uppercase tracking-wider font-bold mb-1">Duration</p>
                                 <p className="text-sm font-bold text-slate-800">{pkg.overview.duration}</p>
                             </div>
-                            <div className="bg-white p-4 rounded-2xl ,0,0,0.05),-10px_-10px_30px_rgba(255,255,255,0.8)] border border-white flex flex-col items-center text-center justify-center">
-                                <MapPin className="w-6 h-6 text-orange-500 mb-2" />
+                            <div className="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center text-center justify-center">
+                                <MapPin className="w-6 h-6 text-[var(--color-primary-forest)] mb-2" />
                                 <p className="text-xs text-slate-500 uppercase tracking-wider font-bold mb-1">Destination</p>
                                 <p className="text-sm font-bold text-slate-800">{pkg.overview.destination}</p>
                             </div>
-                            <div className="bg-white p-4 rounded-2xl ,0,0,0.05),-10px_-10px_30px_rgba(255,255,255,0.8)] border border-white flex flex-col items-center text-center justify-center">
+                            <div className="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center text-center justify-center">
                                 <Calendar className="w-6 h-6 text-[var(--color-primary-forest)] mb-2" />
                                 <p className="text-xs text-slate-500 uppercase tracking-wider font-bold mb-1">Activities</p>
                                 <p className="text-sm font-bold text-slate-800">{pkg.overview.activities}</p>
                             </div>
-                            <div className="bg-white p-4 rounded-2xl ,0,0,0.05),-10px_-10px_30px_rgba(255,255,255,0.8)] border border-white flex flex-col items-center text-center justify-center">
-                                <Info className="w-6 h-6 text-purple-500 mb-2" />
+                            <div className="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center text-center justify-center">
+                                <Info className="w-6 h-6 text-[var(--color-primary-forest)] mb-2" />
                                 <p className="text-xs text-slate-500 uppercase tracking-wider font-bold mb-1">Themes</p>
                                 <p className="text-sm font-bold text-slate-800">{pkg.overview.themes}</p>
                             </div>
                             {pkg.overview.transport && (
-                                <div className="bg-white p-4 rounded-2xl ,0,0,0.05),-10px_-10px_30px_rgba(255,255,255,0.8)] border border-white flex flex-col items-center text-center justify-center">
-                                    <Car className="w-6 h-6 text-[var(--color-primary-emerald)] mb-2" />
+                                <div className="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center text-center justify-center">
+                                    <Car className="w-6 h-6 text-[var(--color-primary-forest)] mb-2" />
                                     <p className="text-xs text-slate-500 uppercase tracking-wider font-bold mb-1">Transport</p>
                                     <p className="text-sm font-bold text-slate-800">{pkg.overview.transport}</p>
                                 </div>
@@ -36458,14 +36981,14 @@ const PackageDetails = () => {
                             {/* Itinerary Tab */}
                             {activeTab === 'itinerary' && (
                                 <div className="space-y-8">
-                                    <h3 className="text-2xl font-bold text-[var(--color-neutral-black)] mb-6">Detailed Itinerary</h3>
+                                    <h2 className="text-2xl font-bold text-[var(--color-neutral-black)] mb-6">Detailed Itinerary</h2>
                                     <div className="relative border-l-2 border-slate-200 ml-3 md:ml-4 space-y-10">
                                         {pkg.itinerary.map((day: any, idx: number) => (
                                             <div key={idx} className="relative pl-8 md:pl-10">
                                                 {/* Timeline Node */}
-                                                <div className="absolute -left-[11px] top-1 w-5 h-5 rounded-full bg-[var(--color-primary-forest)] border-4 border-white " />
+                                                <div className="absolute -left-[10px] top-1 w-5 h-5 rounded-full bg-[var(--color-primary-forest)] border-4 border-white " />
 
-                                                <div className="bg-slate-50 rounded-2xl p-6 ,0,0,0.02),inset_-2px_-2px_5px_rgba(255,255,255,1)] border border-white">
+                                                <div className="bg-slate-50 rounded-2xl p-6 shadow-sm border border-slate-100">
                                                     <span className="inline-block px-3 py-1 bg-[var(--color-blue-ocean)]/10 text-[var(--color-blue-ocean)] rounded-lg text-xs font-bold mb-3 tracking-wide">
                                                         {day.day}
                                                     </span>
@@ -36498,10 +37021,10 @@ const PackageDetails = () => {
                                 <div className="space-y-12">
                                     <div className="grid md:grid-cols-2 gap-10">
                                         <div>
-                                            <h3 className="text-xl font-bold text-[var(--color-neutral-black)] mb-6 flex items-center gap-2">
+                                            <h2 className="text-xl font-bold text-[var(--color-neutral-black)] mb-6 flex items-center gap-2">
                                                 <CheckCircle2 className="w-6 h-6 text-[var(--color-primary-forest)]" />
                                                 Inclusions
-                                            </h3>
+                                            </h2>
                                             <ul className="space-y-4">
                                                 {pkg.inclusions.map((item: any, i: number) => (
                                                     <li key={i} className="flex items-start gap-3">
@@ -36512,10 +37035,10 @@ const PackageDetails = () => {
                                             </ul>
                                         </div>
                                         <div>
-                                            <h3 className="text-xl font-bold text-[var(--color-neutral-black)] mb-6 flex items-center gap-2">
+                                            <h2 className="text-xl font-bold text-[var(--color-neutral-black)] mb-6 flex items-center gap-2">
                                                 <XCircle className="w-6 h-6 text-red-500" />
                                                 Exclusions
-                                            </h3>
+                                            </h2>
                                             <ul className="space-y-4">
                                                 {pkg.exclusions.map((item: any, i: number) => (
                                                     <li key={i} className="flex items-start gap-3">
@@ -36531,10 +37054,10 @@ const PackageDetails = () => {
                                     {/* Accommodation & Languages */}
                                     <div className="grid md:grid-cols-2 gap-10 mt-12 pt-10 border-t border-slate-100">
                                         <div>
-                                            <h3 className="text-xl font-bold text-[var(--color-neutral-black)] mb-6 flex items-center gap-2">
+                                            <h2 className="text-xl font-bold text-[var(--color-neutral-black)] mb-6 flex items-center gap-2">
                                                 <Home className="w-6 h-6 text-[var(--color-primary-forest)]" />
                                                 Accommodation Options
-                                            </h3>
+                                            </h2>
                                             <div className="space-y-4">
                                                 <div className="bg-slate-50 p-5 rounded-2xl border border-slate-100 shadow-[0_4px_10px_rgba(0,0,0,0.02)]">
                                                     <div className="flex text-amber-400 mb-2">
@@ -36642,7 +37165,7 @@ const PackageDetails = () => {
                         {/* FAQ Section */}
                         {pkg.faq && Array.isArray(pkg.faq) && pkg.faq.length > 0 && (
                             <div className="mt-10 bg-white rounded-3xl p-6 md:p-10 border border-slate-100 shadow-[0_8px_30px_rgba(0,0,0,0.04)]">
-                                <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
+                                <div className="flex flex-col items-start gap-4 mb-8">
                                     <div>
                                         <h2 className="text-2xl font-bold text-slate-800 mb-2 flex items-center gap-3">
                                             <MessageSquare className="w-7 h-7 text-[var(--color-leaf-green)]" />
@@ -36650,7 +37173,7 @@ const PackageDetails = () => {
                                         </h2>
                                         <p className="text-sm text-slate-500 md:ml-10">Common questions about this tour package</p>
                                     </div>
-                                    <div className="flex bg-slate-100 p-1 rounded-xl self-start md:self-auto">
+                                    <div className="flex bg-slate-100 p-1 rounded-xl self-start md:ml-10">
                                         <button
                                             onClick={() => setFaqLang('english')}
                                             className={`px-4 py-2 rounded-lg text-sm font-bold transition-all ${faqLang === 'english' ? 'bg-white text-[var(--color-leaf-green)] shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
@@ -36716,7 +37239,7 @@ const PackageDetails = () => {
                     </div>
 
                     {/* Right Column (Sticky Sidebar) */}
-                    <div className="w-full lg:w-[380px] flex-shrink-0">
+                    <div className="w-full lg:w-[380px] flex-shrink-0 mr-12 sm:mr-16 lg:mr-0">
                         <div className="sticky top-32 space-y-6 max-h-[85vh] overflow-y-auto hide-scrollbar pb-4">
 
                             {/* Pricing & Booking Card */}

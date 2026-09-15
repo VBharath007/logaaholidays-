@@ -3,7 +3,9 @@ import { useParams, Link } from 'react-router-dom';
 import { Calendar, ChevronRight, Flame, Star, Clock, Heart, MapPin, Utensils, Activity, Send, Gift, ShieldCheck, Headphones, Share2, User, X, Eye } from 'lucide-react';
 import { generateSlug } from '../lib/utils';
 import { useSEO } from '../hooks/useSEO';
+import { Breadcrumb } from '../components/Breadcrumb';
 import { packagesDatabase, getPackageDisplayTitle, getPackageLink, normalizeDurationOrder } from './PackageDetails';
+import { destinationsData } from '../data/destinationsData';
 const destinationGroups = [
   {
     region: 'Tamil Nadu',
@@ -19,7 +21,7 @@ const destinationGroups = [
   },
   {
     region: 'North & East India',
-    places: ['Shirdi Tours', 'Varanasi Tours', 'Delhi Tours', 'Agra Tours', 'Jaipur Tours', 'Shimla Tours', 'Manali Tours', 'Kashmir Tours', 'Cherrapunji Tours', 'Pune Tours', 'Shillong Tours', 'Guwahati Tours', 'Ayodhya Tours']
+    places: ['Shirdi Tours', 'Varanasi Tours', 'Delhi Tours', 'Agra Tours', 'Jaipur Tours', 'Shimla Tours', 'Manali Tours', 'Manali Volvo Tours', 'Kashmir Tours', 'Pune Tours', 'Ayodhya Tours']
   }
 ];
 
@@ -269,7 +271,7 @@ const punePackages = [
 ];
 
 const kanyakumariPackages = [
-  
+
   {
     id: 28,
     title: 'Madurai - Rameswaram - Kanyakumari 4N 5D Tour',
@@ -752,7 +754,7 @@ const TourCategory = () => {
     if (!category) return 'Tours';
 
     // Destinations that natively start from Chennai
-    const chennaiOrigins = [ 'pune', 'ayodhya', 'kasi', 'guwahati', 'shillong', 'cherrapunji'];
+    const chennaiOrigins = ['pune', 'ayodhya', 'kasi', 'guwahati', 'shillong', 'cherrapunji'];
     const placeKeyword = category.replace('-tours', '').toLowerCase();
     const placeDisplay = placeKeyword.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
 
@@ -837,20 +839,7 @@ const TourCategory = () => {
 
     const result = (() => {
       switch (category) {
-        case 'shirdi-tours': return shirdiPackages;
-        case 'varanasi-tours': return varanasiPackages;
-        case 'pune-tours': return punePackages;
-        case 'kanyakumari-tours': return kanyakumariPackages;
-        case 'cherrapunji-tours': return cherrapunjiPackages;
-        case 'shillong-tours': return shillongPackages;
-        case 'guwahati-tours': return guwahatiPackages;
-        case 'ayodhya-tours': return ayodhyaPackages;
-        case 'rameswaram-tours': return rameswaramPackages;
-        case 'golden-triangle-tours': return goldenTrianglePackages;
-        case 'shimla-tours': return shimlaPackages;
-        case 'kashmir-tours': return kashmirPackages;
-        case 'manali-tours': return manaliPackages;
-        case 'manali-volvo-tours': return manaliVolvoPackages;
+
         case 'kerala-honeymoon-packages': return keralaHoneymoonPackages;
         case 'goa-honeymoon-packages': return goaHoneymoonPackages;
         case 'karnataka-honeymoon-packages': return karnatakaHoneymoonPackages;
@@ -860,9 +849,10 @@ const TourCategory = () => {
         case 'andaman-honeymoon-packages': return andamanHoneymoonPackages;
         case 'sikkim-darjeeling-honeymoon-packages': return sikkimHoneymoonPackages;
         case 'maldives-honeymoon-packages': return maldivesHoneymoonPackages;
+        case 'golden-triangle-tours': return goldenTrianglePackages;
         case 'andaman-island-tour':
         case 'andaman-tours': {
-          return Object.values(packagesDatabase).filter((p: any) => {
+          return Object.entries(packagesDatabase).map(([key, val]: [string, any]) => ({ ...val, id: key })).filter((p: any) => {
             const titleLower = (p.title || '').toLowerCase();
             const destLower = (p.overview?.destination || '').toLowerCase();
             const idNum = parseInt(p.id);
@@ -882,7 +872,7 @@ const TourCategory = () => {
         }
         case 'megamalai-tours':
         case 'theni-tours': {
-          return Object.values(packagesDatabase).filter((p: any) => {
+          return Object.entries(packagesDatabase).map(([key, val]: [string, any]) => ({ ...val, id: key })).filter((p: any) => {
             const titleLower = (p.title || '').toLowerCase();
             const destLower = (p.overview?.destination || '').toLowerCase();
             return titleLower.includes('megamalai') || titleLower.includes('meghamalai') || titleLower.includes('theni') || destLower.includes('megamalai') || destLower.includes('meghamalai') || destLower.includes('theni');
@@ -900,7 +890,7 @@ const TourCategory = () => {
           }));
         }
         case 'madurai-tours': {
-          return Object.values(packagesDatabase).filter((p: any) => {
+          return Object.entries(packagesDatabase).map(([key, val]: [string, any]) => ({ ...val, id: key })).filter((p: any) => {
             const titleLower = (p.title || '').toLowerCase();
             const destLower = (p.overview?.destination || '').toLowerCase();
             const idNum = parseInt(p.id);
@@ -962,7 +952,7 @@ const TourCategory = () => {
           });
         }
         case 'cochin-tours': {
-          return Object.values(packagesDatabase).filter((p: any) => {
+          return Object.entries(packagesDatabase).map(([key, val]: [string, any]) => ({ ...val, id: key })).filter((p: any) => {
             const titleLower = (p.title || '').toLowerCase();
             const destLower = (p.overview?.destination || '').toLowerCase();
             return titleLower.includes('cochin') || destLower.includes('cochin') || titleLower.includes('kochi') || destLower.includes('kochi');
@@ -991,7 +981,7 @@ const TourCategory = () => {
         }
         case 'kerala-tours': {
           const keralaKeywords = ['munnar', 'thekkady', 'alleppey', 'vagamon', 'valparai', 'kumarakom', 'marayoor', 'kerala', 'cochin', 'guruvayur', 'kottayam', 'kovalam'];
-          return Object.values(packagesDatabase).filter((p: any) => {
+          return Object.entries(packagesDatabase).map(([key, val]: [string, any]) => ({ ...val, id: key })).filter((p: any) => {
             const titleLower = (p.title || '').toLowerCase();
             const destLower = (p.overview?.destination || '').toLowerCase();
             const idNum = parseInt(p.id);
@@ -1021,7 +1011,7 @@ const TourCategory = () => {
           });
         }
         case 'chennai-tours': {
-          return Object.values(packagesDatabase).filter((p: any) => {
+          return Object.entries(packagesDatabase).map(([key, val]: [string, any]) => ({ ...val, id: key })).filter((p: any) => {
             const titleLower = (p.title || '').toLowerCase();
             const destLower = (p.overview?.destination || '').toLowerCase();
             return titleLower.includes('chennai') || destLower.includes('chennai');
@@ -1057,7 +1047,7 @@ const TourCategory = () => {
         }
         case 'karnataka-tours': {
           const karnatakaIds = ['3090', '3091', '3092', '3093', '3094', '3095', '3096'];
-          return Object.values(packagesDatabase)
+          return Object.entries(packagesDatabase).map(([key, val]: [string, any]) => ({ ...val, id: key }))
             .filter((p: any) => karnatakaIds.includes(p.id))
             .map((p: any) => ({
               id: parseInt(p.id),
@@ -1073,17 +1063,82 @@ const TourCategory = () => {
             }))
             .sort((a, b) => a.id - b.id);
         }
+        case 'manali-tours': {
+          return Object.entries(packagesDatabase).map(([key, val]: [string, any]) => ({ ...val, id: key })).filter((p: any) => {
+            const titleLower = (p.title || '').toLowerCase();
+            const destLower = (p.overview?.destination || '').toLowerCase();
+            // Only include manali packages that are NOT volvo packages
+            if (titleLower.includes('volvo')) return false;
+            return (titleLower.includes('manali') || destLower.includes('manali')) && !titleLower.includes('manali-volvo');
+          }).map((p: any) => ({
+            id: parseInt(p.id),
+            title: getPackageDisplayTitle(p),
+            duration: p.overview?.duration || 'Various',
+            destination: p.overview?.destination || 'Various',
+            activities: p.overview?.activities || 'Various',
+            themes: p.overview?.themes || 'Various',
+            price: p.priceDetails?.amount || 'On Request',
+            image: p.image,
+            rating: p.rating,
+            reviews: p.reviews
+          }));
+        }
+        case 'manali-volvo-tours': {
+          return Object.entries(packagesDatabase).map(([key, val]: [string, any]) => ({ ...val, id: key })).filter((p: any) => {
+            const titleLower = (p.title || '').toLowerCase();
+            const destLower = (p.overview?.destination || '').toLowerCase();
+            // Only include packages with "volvo" in title or destination
+            return (titleLower.includes('volvo') && (titleLower.includes('manali') || destLower.includes('manali')));
+          }).map((p: any) => ({
+            id: parseInt(p.id),
+            title: getPackageDisplayTitle(p),
+            duration: p.overview?.duration || 'Various',
+            destination: p.overview?.destination || 'Various',
+            activities: p.overview?.activities || 'Various',
+            themes: p.overview?.themes || 'Various',
+            price: p.priceDetails?.amount || 'On Request',
+            image: p.image,
+            rating: p.rating,
+            reviews: p.reviews
+          }));
+        }
         default: {
           const placeKeyword = (category || '').replace(/-tours|-packages/g, '').toLowerCase();
-          
-          // Safe RegExp to match whole words. (^|[^a-zA-Z]) ensures we match the start of a word.
-          const wordRegex = new RegExp(`(^|[^a-zA-Z])${placeKeyword}([^a-zA-Z]|$)`, 'i');
-          
-          const matched = Object.values(packagesDatabase).filter((p: any) => {
-            const title = p.title || '';
-            const dest = p.overview?.destination || '';
-            return wordRegex.test(title) || wordRegex.test(dest);
-          }).map((p: any) => ({
+
+          // Find the matching destination in destinationsData
+          const dest = Object.values(destinationsData).find((d: any) =>
+            d.id === category || d.id === `${placeKeyword}-tourism` || d.name.toLowerCase() === placeKeyword
+          );
+
+          let matched = [];
+
+          if (dest) {
+            const destNameLower = dest.name.toLowerCase();
+            const relatedKeywords = [destNameLower, ...(dest.placesToVisit || []).map((p: any) => p.name.toLowerCase())];
+
+            matched = Object.entries(packagesDatabase).map(([key, val]: [string, any]) => ({ ...val, id: key })).filter((p: any) => {
+              const titleLower = (p.title || '').toLowerCase();
+              const destLower = (p.overview?.destination || '').toLowerCase();
+              return relatedKeywords.some(keyword =>
+                titleLower.includes(keyword) || destLower.includes(keyword)
+              );
+            });
+          } else {
+            // Fallback to strict regex if no destination found
+            // Replace hyphens with spaces so 'golden-triangle' matches 'golden triangle'
+            let searchKeyword = placeKeyword.replace(/-/g, ' ');
+            if (searchKeyword === 'rameswaram') {
+              searchKeyword = 'ramesh?waram';
+            }
+            const wordRegex = new RegExp(`(^|[^a-zA-Z])${searchKeyword}([^a-zA-Z]|$)`, 'i');
+            matched = Object.entries(packagesDatabase).map(([key, val]: [string, any]) => ({ ...val, id: key })).filter((p: any) => {
+              const title = p.title || '';
+              const destStr = p.overview?.destination || '';
+              return wordRegex.test(title) || wordRegex.test(destStr);
+            });
+          }
+
+          return matched.map((p: any) => ({
             id: parseInt(p.id || '0'),
             title: p.title || '',
             duration: p.overview?.duration || 'Various',
@@ -1095,14 +1150,19 @@ const TourCategory = () => {
             rating: p.rating || '5.0',
             reviews: p.reviews || ''
           }));
-
-          return matched.length > 0 ? matched : [];
         }
       }
     })();
 
-    return result.map((p: any) => {
-      if (!p) return p;
+    const isHoneymoonCategory = (category || '').toLowerCase().includes('honeymoon');
+
+    return result.filter((p: any) => {
+      if (!p) return false;
+      if (!isHoneymoonCategory && (p.title || '').toLowerCase().includes('honeymoon')) {
+        return false;
+      }
+      return true;
+    }).map((p: any) => {
       const dbPkg = packagesDatabase[p.id.toString()];
       if (dbPkg) {
         return {
@@ -1226,20 +1286,14 @@ const TourCategory = () => {
             {categoryTitle} Packages
           </h1>
           <p className="text-slate-500 font-medium mb-4">Showing {currentPackages.length} packages</p>
-          <div className="flex items-center gap-2 text-sm font-medium text-slate-500">
-            <Link to="/" className="hover:text-[var(--color-blue-ocean)] transition-colors">Home</Link>
-            <ChevronRight className="w-4 h-4" />
-            <Link to={getRegionLink()} className="hover:text-[var(--color-blue-ocean)] transition-colors">Tour Packages</Link>
-            <ChevronRight className="w-4 h-4" />
-            <span className="text-slate-800">{categoryTitle} Packages</span>
-          </div>
+          <Breadcrumb variant="page" />
         </div>
 
         <div className="bg-white/95 backdrop-blur-xl rounded-2xl p-6 mb-8 border border-slate-100 shadow-sm">
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-lg font-bold text-[var(--color-neutral-black)]">Search Packages</h3>
             {(searchQuery || durationFilter || themeFilter || transportFilter) ? (
-              <button 
+              <button
                 onClick={(e) => {
                   e.preventDefault();
                   setSearchQuery('');
@@ -1521,19 +1575,19 @@ const TourCategory = () => {
                               </Link>
 
                               {/* Badges */}
-                              <div className={`absolute top-4 left-4 text-white text-[10px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-md ${badgeColor}`}>
+                              {/* <div className={`absolute top-4 left-4 text-white text-[10px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-md ${badgeColor}`}>
                                 {badge === 'MOST BOOKED' ? <Flame className="w-3.5 h-3.5" /> : null} {badge === 'MOST BOOKED' ? 'BEST SELLER' : badge}
-                              </div>
+                              </div> */}
 
 
 
                               {/* Travelers Info */}
-                              <div className="absolute bottom-4 left-4 flex items-center gap-3">
+                              {/* <div className="absolute bottom-4 left-4 flex items-center gap-3">
                                 <div className="flex items-center text-white text-[12px] font-bold drop-shadow-md">
                                   <Star className="w-4 h-4 text-orange-400 fill-orange-400 mr-1.5" />
                                   Rated {rating} by customers
                                 </div>
-                              </div>
+                              </div> */}
 
                               {/* Favorite Button */}
                               <button
@@ -1579,10 +1633,10 @@ const TourCategory = () => {
                                   <MapPin className="w-4 h-4 text-slate-500" aria-hidden="true" />
                                   <span className="line-clamp-1 max-w-[120px]">{pkg.destination?.split(',')[0] || 'Private Cab'}</span>
                                 </li>
-                                <li className="text-slate-700 text-[11px] font-bold flex items-center gap-1.5 cursor-default">
+                                {/* <li className="text-slate-700 text-[11px] font-bold flex items-center gap-1.5 cursor-default">
                                   <User className="w-4 h-4 text-slate-500" aria-hidden="true" />
                                   <span>Expert Guide</span>
-                                </li>
+                                </li> */}
                               </ul>
 
                               {/* Action Buttons */}
@@ -1638,8 +1692,8 @@ const TourCategory = () => {
                             key={dest}
                             to={`/tour-packages/${slug}`}
                             className={`text-[12px] font-semibold px-4 py-2 rounded-full border transition-all ${isSelected
-                                ? 'bg-[var(--color-primary-forest)] text-white border-[var(--color-primary-forest)] shadow-sm'
-                                : 'bg-white text-slate-600 border-slate-200 hover:border-[var(--color-primary-forest)] hover:text-[var(--color-primary-forest)]'
+                              ? 'bg-[var(--color-primary-forest)] text-white border-[var(--color-primary-forest)] shadow-sm'
+                              : 'bg-white text-slate-600 border-slate-200 hover:border-[var(--color-primary-forest)] hover:text-[var(--color-primary-forest)]'
                               }`}
                           >
                             {dest.replace(' Tours', '').replace(' Honeymoon Packages', '').replace('Sikkim Darjeeling', 'Sikkim & Darjeeling')}

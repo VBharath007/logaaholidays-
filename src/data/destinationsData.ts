@@ -8,7 +8,7 @@ export const destinationsData: Record<string, any> = {
     promoVideo: '/assets/video/kerala 1 (1).mp4',
     overview: {
       title: 'Kerala Tourism',
-      description: 'Known as "God\'s Own Country", Kerala is a tropical paradise on India\'s southwestern coast. With its serene Houseboat Experiencess, lush hill stations, ancient spice plantations, wildlife sanctuaries, and pristine beaches, Kerala offers an unmatched travel experience. From the misty tea gardens of Munnar to the tranquil houseboats of Alleppey and the wildlife-rich forests of Thekkady, every corner of Kerala is a visual feast.'
+      description: 'Known as "God\'s Own Country", Kerala is a tropical paradise on India\'s southwestern coast. With its serene houseboat experiences, lush hill stations, ancient spice plantations, wildlife sanctuaries, and pristine beaches, Kerala offers an unmatched travel experience. From the misty tea gardens of Munnar to the tranquil houseboats of Alleppey and the wildlife-rich forests of Thekkady, every corner of Kerala is a visual feast.'
     },
     history: {
       title: 'Kerala Heritage',
@@ -27,7 +27,7 @@ export const destinationsData: Record<string, any> = {
       tips: 'Start your Kerala trip from Cochin. Pre-book houseboats and carry light cotton clothes. Carry an umbrella during monsoon season.'
     },
     majorAttractions: [
-      { title: 'Alleppey Backwaters', description: 'The Venice of the East, famous for its houseboat cruises on the Kerala Houseboat Experiencess.' },
+      { title: 'Alleppey Backwaters', description: 'The Venice of the East, famous for its houseboat cruises on the Kerala Houseboat Experiences.' },
       { title: 'Munnar Tea Estates', description: 'Endless rolling tea plantations and mist-covered mountains at 1,600m altitude.' },
       { title: 'Periyar Wildlife Sanctuary', description: 'A spectacular wildlife reserve with boat safaris on Periyar Lake.' },
       { title: 'Cochin - Fort Kochi', description: 'A historic port city with Chinese fishing nets, colonial architecture, and vibrant culture.' }
@@ -38,7 +38,7 @@ export const destinationsData: Record<string, any> = {
         name: 'Alleppey ',
         type: 'Houseboat Experiences',
         image: '/assets/KERALA/top place in kerala/aleppey.webp',
-        description: 'The "Venice of the East", Alleppey is famous for its network of Houseboat Experiencess, houseboat cruises, and the spectacular Nehru Trophy Boat Race. A must-visit for every Kerala traveler.',
+        description: 'The "Venice of the East", Alleppey is famous for its network of backwaters, houseboat cruises, and the spectacular Nehru Trophy Boat Race. A must-visit for every Kerala traveler.',
         rating: 4.9,
         details: {
           timings: 'Open all day',
@@ -50,7 +50,7 @@ export const destinationsData: Record<string, any> = {
           sections: [
             {
               title: 'About Alleppey',
-              content: "Known as the 'Venice of the East', Alleppey is renowned for its picturesque Houseboat Experiencess, serene lagoons, and interconnected network of canals. It is the epicenter of Kerala's Houseboat Experiences tourism, attracting visitors worldwide to experience its traditional kettuvallam (houseboats) and vibrant village life along the waters."
+              content: "Known as the 'Venice of the East', Alleppey is renowned for its picturesque Houseboat Experiences, serene lagoons, and interconnected network of canals. It is the epicenter of Kerala's Houseboat Experiences tourism, attracting visitors worldwide to experience its traditional kettuvallam (houseboats) and vibrant village life along the waters."
             },
             {
               title: 'History',
@@ -237,7 +237,7 @@ export const destinationsData: Record<string, any> = {
             },
             {
               title: 'Other Details',
-              content: "The Kumarakom Bird Sanctuary is a favorite haunt of migratory birds like the Siberian Stork, egrets, darters, herons, and teals. It is best visited between November and February. The Houseboat Experiencess here are wider and feel more like a vast lake compared to the narrow canals of Alleppey."
+              content: "The Kumarakom Bird Sanctuary is a favorite haunt of migratory birds like the Siberian Stork, egrets, darters, herons, and teals. It is best visited between November and February. The Houseboat Experiences here are wider and feel more like a vast lake compared to the narrow canals of Alleppey."
             }
           ],
           popularPackages: []
@@ -354,7 +354,7 @@ export const destinationsData: Record<string, any> = {
     state: 'Kerala',
     overview: {
       title: 'Alleppey Tourism',
-      description: 'Officially known as Alleppey, Alleppey is globally celebrated as the "Venice of the East," where life unfolds on tranquil waters.\n\n• Backwaters: A magical, ancient network of lakes, lagoons, rivers, and man-made canals.\n• Houseboats (Kettuvallam): Experience floating stays in traditional wooden boats equipped with modern amenities and local cuisine.\n• Marari Beach: A pristine and unspoiled coastline perfect for relaxation.\n• Mega Event: Hosts the spectacular Nehru Trophy Snake Boat Race every August on Punnamada Lake.'
+      description: 'Officially known as Alleppey, Alleppey is globally celebrated as the "Venice of the East," where life unfolds on tranquil waters.\n\n• Backwaters: A beautiful network of lakes, rivers, and canals, perfect for a peaceful boat ride.\n• Houseboats (Kettuvallam): Experience floating stays in traditional wooden boats equipped with modern amenities and local cuisine.\n• Marari Beach: A pristine and unspoiled coastline perfect for relaxation.\n• Mega Event: Hosts the spectacular Nehru Trophy Snake Boat Race every August on Punnamada Lake.'
     },
     history: {
       title: 'Alleppey History',
@@ -385,8 +385,12 @@ export const destinationsData: Record<string, any> = {
     state: 'Kerala',
     overview: {
       title: 'Thekkady Tourism',
-      description: 'Located in the Idukki district at 900 meters, Thekkady is a highly photogenic and unique wildlife destination.\n\n• Periyar Lake: Drift silently on a boat across the 26 sq.km artificial lake to view wildlife up close.\n• Wildlife Spotting: Famous for herds of wild elephants, sambar deer, Indian bison, and wild boar drinking at the lake\'s edge.\n• Spice Plantations: Surrounded by fragrant estates of cardamom, pepper, cinnamon, and nutmeg (ideal for guided walks).\n• Culture & Adventure: Offers Kathakali dance shows, Kalaripayattu martial arts, and tribal-guided jungle treks.'
-    },
+      description: `Located in the Idukki district at an elevation of 900 meters, Thekkady is a highly photogenic and unique wildlife destination.
+
+• Periyar Lake: Enjoy a peaceful boat ride across the 26 sq. km artificial lake and experience wildlife from close range.
+• Wildlife Spotting: Spot herds of wild elephants, sambar deer, Indian bison, and wild boar near the lake's edge.
+• Spice Plantations: Explore fragrant plantations of cardamom, pepper, cinnamon, and nutmeg through guided walks.
+• Culture & Adventure: Experience traditional Kathakali dance, Kalaripayattu martial arts, and tribal-guided jungle treks.`},
     history: {
       title: 'Thekkady History',
       description: 'Thekkady’s history is a blend of ancient tribal heritage and monumental colonial engineering.\n\n• Ancient Roots: Home to indigenous tribal communities (Mannans, Paliyans) who lived in harmony with the forest for centuries.\n• Mullaperiyar Dam: Built in 1895 by British engineer John Pennycuick, this engineering marvel created the vast Periyar Lake.\n• Conservation: Declared a Game Reserve in 1899, upgraded to a Wildlife Sanctuary in 1950.\n• Project Tiger: Elevated to one of India’s premier Tiger Reserves in 1978, boasting over 900 elephants and a growing tiger population.'
@@ -469,7 +473,7 @@ export const destinationsData: Record<string, any> = {
       { title: 'Mattancherry Palace', description: 'Also known as the Dutch Palace, featuring stunning Kerala murals.' }
     ],
     placesToVisit: [],
-    popularPackages: ['9001', '9002', '9003', '9004']
+    popularPackages: ['9005']
   },
   'chennai-tourism': {
     id: 'chennai-tourism',
@@ -755,7 +759,7 @@ export const destinationsData: Record<string, any> = {
       },
       {
         id: 'agniteertham',
-        name: 'Agniteertham',
+        name: 'Agni Theertham',
         type: 'Beach / Sacred Water',
         image: '/assets/generated/agniteertham.webp',
         description: 'The sacred beach outside the Ramanathaswamy Temple where pilgrims take a holy dip before entering the temple.',
@@ -786,7 +790,7 @@ export const destinationsData: Record<string, any> = {
       },
       {
         id: 'pamban-bridge',
-        name: 'Pamban bridge',
+        name: 'Pamban Bridge',
         type: 'Landmark / Bridge',
         image: '/assets/generated/pamban_bridge.webp',
         description: 'India’s first sea bridge connecting Rameswaram Island with the mainland. The architectural marvel offers breathtaking views of the ocean.',
@@ -817,7 +821,7 @@ export const destinationsData: Record<string, any> = {
       },
       {
         id: 'panchmukhi-hanuman',
-        name: 'Panchmukhi hanuman mandir',
+        name: 'Panchmukhi Hanuman Mandir',
         type: 'Temple',
         image: '/assets/generated/panchmukhi_hanuman.webp',
         description: 'This temple is highly revered as it is believed that Lord Hanuman revealed his five-faced form here. It also houses the floating stones used to build the Ram Setu.',
@@ -947,7 +951,7 @@ export const destinationsData: Record<string, any> = {
         id: 'thiruvalluvar-statue',
         name: 'Thiruvalluvar Statue',
         type: 'Landmark',
-        image: '/assets/generated/thiruvalluvar_statue.webp',
+        image: '/assets/kaniyakumari/Thiruvalluvar statue.webp',
         description: 'A towering stone sculpture of the Tamil poet and philosopher Valluvar.',
         rating: 4.7,
         details: {
@@ -976,9 +980,9 @@ export const destinationsData: Record<string, any> = {
       },
       {
         id: 'kanyakumari-beach',
-        name: 'Kanyakumari beach',
+        name: 'Kanyakumari Beach',
         type: 'Beach',
-        image: '/assets/generated/kanyakumari_beach.webp',
+        image: '/assets/kaniyakumari/kanyakumari-beach-evening-sun.webp',
         description: 'Famous for its multi-colored sand and the stunning view of the confluence of three oceans.',
         rating: 4.5,
         details: {
@@ -1009,7 +1013,7 @@ export const destinationsData: Record<string, any> = {
         id: 'sunset-point',
         name: 'Sunset Point',
         type: 'Viewpoint',
-        image: '/assets/generated/kanyakumari_beach.webp',
+        image: '/assets/kaniyakumari/kanyakumari-sunset-beach-statue.webp',
         description: 'The most popular spot to witness the mesmerizing sunset over the Arabian Sea.',
         rating: 4.7,
         details: {
@@ -1100,15 +1104,16 @@ export const destinationsData: Record<string, any> = {
   'madurai-tourism': {
     id: 'madurai-tourism',
     name: 'Madurai',
-    image: '/assets/meenakshi amman temple.webp',
+    image: '/assets/meenakshi amman temple-732w.webp',
+    srcSet: '/assets/meenakshi amman temple-732w.webp 732w, /assets/meenakshi amman temple-732w@2x.webp 1448w',
     state: 'Tamil Nadu',
     overview: {
       title: 'Madurai Tourism',
-      description: 'With Murugan temples, cultural sites, Vandiyur Mariamman temple, Gandhi Museum, Narasingam Caves and what not, Madurai becomes a prime representative city of South India and a definite city among best places to visit in Tamilnadu. With so many sites available here which are of extreme significance ranging from the religious perspective, the historical perspective and even the artistic perspective. You must bring an artistic lens along on your next trip to Tamilnadu and make the most of the raw ancient beauty spread in the vast city of Madurai and capture it in your lens and share it with the world.'
+      description: "Madurai is one of South India's most important cultural and pilgrimage destinations. Home to the Meenakshi Amman Temple, Thiruparankundram Murugan Temple, Thirumalai Nayakkar Mahal, Gandhi Memorial Museum, and several historic sites, the city offers a rich blend of spirituality, heritage, architecture, and local culture."
     },
     history: {
       title: 'Madurai History',
-      description: 'Madurai has a rich history dating back to the 3rd century BCE. The Pandyan Dynasty made Madurai its capital city. Its name has appeared in many ancient works of Ptolemy, Strabo as well as many other prominent ancient historians. Other dynasties to have ruled over this city are Kalabhra, Cholas, Delhi Sultanate, Vijayanagar Empire, Nayaks, and other conquerors like Arcot Nawab, Chandra Sahib and Muhammed Yusuf Khan.'
+      description: 'Madurai has a rich history dating back to the 3rd century BCE. The Pandyan Dynasty made Madurai its capital city. Its name has appeared in many ancient works of Ptolemy, Strabo as well as many other prominent ancient historians. Other dynasties that ruled the city included over this city are Kalabhra, Cholas, Delhi Sultanate, Vijayanagar Empire, Nayaks, and other conquerors like Arcot Nawab, Chandra Sahib and Muhammed Yusuf Khan.'
     },
     info: {
       idealDuration: '1 Night 2 Days',
@@ -1285,7 +1290,8 @@ export const destinationsData: Record<string, any> = {
         id: 'meenakshi-temple',
         name: 'Madurai Meenakshi Amman Temple',
         type: 'Temple',
-        image: '/assets/meenakshi amman temple.webp',
+        image: '/assets/meenakshi amman temple-732w.webp',
+        srcSet: '/assets/meenakshi amman temple-732w.webp 732w, /assets/meenakshi amman temple-732w@2x.webp 1448w',
         description: 'The old Meenakshi Amman temple is in Madurai, Tamil Nadu. It is near the southern bank of the Vaigai River. This building was constructed by builders between the years 1623 and 1655, and the brilliant design is famed all over the world.',
         rating: 4.9,
         details: {
@@ -1413,7 +1419,8 @@ export const destinationsData: Record<string, any> = {
         id: 'thirumalai-nayak',
         name: 'Thirumalai Nayak Mahal',
         type: 'Palace',
-        image: '/assets/madurai/mahal.webp',
+        image: '/assets/madurai/mahal-587w.webp',
+        srcSet: '/assets/madurai/mahal-587w.webp 587w, /assets/madurai/mahal-587w@2x.webp 1174w',
         description: 'Built by King Thirumalai Nayakar in 1636 AD, you can well imagine how the Dravidian and Rajput styles merge in this house. Independent India declared this palace a national treasure, and today, it is one of the most beautiful places in peninsular South India.',
         rating: 4.7,
         details: {
@@ -1553,7 +1560,7 @@ export const destinationsData: Record<string, any> = {
   //   promoVideo: '/assets/video/kerala 1 (1).mp4',
   //   overview: {
   //     title: 'Kerala Tourism',
-  //     description: 'Known as "God\'s Own Country", Kerala is a tropical paradise on India\'s southwestern coast. With its serene Houseboat Experiencess, lush hill stations, ancient spice plantations, wildlife sanctuaries, and pristine beaches, Kerala offers an unmatched travel experience. From the misty tea gardens of Munnar to the tranquil houseboats of Alleppey and the wildlife-rich forests of Thekkady, every corner of Kerala is a visual feast.'
+  //     description: 'Known as "God\'s Own Country", Kerala is a tropical paradise on India\'s southwestern coast. With its serene Houseboat Experiences, lush hill stations, ancient spice plantations, wildlife sanctuaries, and pristine beaches, Kerala offers an unmatched travel experience. From the misty tea gardens of Munnar to the tranquil houseboats of Alleppey and the wildlife-rich forests of Thekkady, every corner of Kerala is a visual feast.'
   //   },
   //   history: {
   //     title: 'Kerala Heritage',
@@ -1574,7 +1581,7 @@ export const destinationsData: Record<string, any> = {
   //   majorAttractions: [
   //     {
   //       title: 'Alleppey Backwaters',
-  //       description: 'The Houseboat Experiencess of Alleppey (Alleppey) are a network of lagoons, lakes, and canals that run parallel to the Arabian Sea coast. A houseboat cruise through these Houseboat Experiencess is an iconic Kerala experience, offering stunning views of paddy fields, coconut groves, and village life.'
+  //       description: 'The Houseboat Experiences of Alleppey (Alleppey) are a network of lagoons, lakes, and canals that run parallel to the Arabian Sea coast. A houseboat cruise through these Houseboat Experiences is an iconic Kerala experience, offering stunning views of paddy fields, coconut groves, and village life.'
   //     },
   //     {
   //       title: 'Munnar Tea Gardens',
@@ -1595,7 +1602,7 @@ export const destinationsData: Record<string, any> = {
   //       name: 'Alleppey (Alleppey)',
   //       type: 'Backwaters',
   //       image: '/assets/KERALA/top place in kerala/aleppey.webp',
-  //       description: 'The "Venice of the East", Alleppey is famous for its network of Houseboat Experiencess, houseboat cruises, and the spectacular Nehru Trophy Boat Race. A must-visit for every Kerala traveler.',
+  //       description: 'The "Venice of the East", Alleppey is famous for its network of Houseboat Experiences, houseboat cruises, and the spectacular Nehru Trophy Boat Race. A must-visit for every Kerala traveler.',
   //       rating: 4.9,
   //       details: {
   //         timings: 'Open all day',
@@ -1607,7 +1614,7 @@ export const destinationsData: Record<string, any> = {
   //         sections: [
   //           {
   //             title: 'About Alleppey',
-  //             content: "Known as the 'Venice of the East', Alleppey (Alleppey) is renowned for its picturesque Houseboat Experiencess, serene lagoons, and interconnected network of canals. It is the epicenter of Kerala's Houseboat Experiences tourism, attracting visitors worldwide to experience its traditional kettuvallam (houseboats) and vibrant village life along the waters."
+  //             content: "Known as the 'Venice of the East', Alleppey (Alleppey) is renowned for its picturesque Houseboat Experiences, serene lagoons, and interconnected network of canals. It is the epicenter of Kerala's Houseboat Experiences tourism, attracting visitors worldwide to experience its traditional kettuvallam (houseboats) and vibrant village life along the waters."
   //           },
   //           {
   //             title: 'History',
@@ -1794,7 +1801,7 @@ export const destinationsData: Record<string, any> = {
   //           },
   //           {
   //             title: 'Other Details',
-  //             content: "The Kumarakom Bird Sanctuary is a favorite haunt of migratory birds like the Siberian Stork, egrets, darters, herons, and teals. It is best visited between November and February. The Houseboat Experiencess here are wider and feel more like a vast lake compared to the narrow canals of Alleppey."
+  //             content: "The Kumarakom Bird Sanctuary is a favorite haunt of migratory birds like the Siberian Stork, egrets, darters, herons, and teals. It is best visited between November and February. The Houseboat Experiences here are wider and feel more like a vast lake compared to the narrow canals of Alleppey."
   //           }
   //         ],
   //         popularPackages: []
@@ -1888,7 +1895,8 @@ export const destinationsData: Record<string, any> = {
         id: 'madurai',
         name: 'Madurai',
         type: 'Temple City / Culture',
-        image: '/assets/meenakshi amman temple.webp',
+        image: '/assets/meenakshi amman temple-732w.webp',
+        srcSet: '/assets/meenakshi amman temple-732w.webp 732w, /assets/meenakshi amman temple-732w@2x.webp 1448w',
         description: 'Known as the "Athens of the East", Madurai is one of India\'s oldest continuously inhabited cities. Built around the historic Meenakshi Amman Temple, it is the cultural soul of Tamil Nadu.',
         rating: 4.9,
         details: {
@@ -2505,7 +2513,7 @@ export const destinationsData: Record<string, any> = {
     state: 'Tamil Nadu',
     overview: {
       title: 'Kodaikanal Tourism',
-      description: 'Referred to as the "Princess of Hill stations", Kodaikanal is a popular tourist destination in Tamil Nadu. Known for its cool climate, beautiful lakes, and scenic valleys.'
+      description: 'Referred to as the Princess of Hill Stations, Kodaikanal is a popular tourist destination in Tamil Nadu, known for its cool climate, beautiful lakes, and scenic valleys.'
     },
     history: {
       title: 'History of Kodaikanal',

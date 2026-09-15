@@ -61,7 +61,7 @@ export const siteKnowledge: KnowledgeEntry[] = [
   { name: 'Alleppey', url: '/destination/kerala/alleppey-tourism', keywords: ['alleppey', 'alappuzha', 'houseboat', 'backwaters', 'alleppey package', 'alappuzha package'], description: 'Alleppey backwater packages', type: 'destination' },
   { name: 'Thekkady', url: '/destination/kerala/thekkady-tourism', keywords: ['thekkady', 'periyar', 'wildlife', 'elephant', 'spice garden', 'thekkady package'], description: 'Thekkady wildlife packages', type: 'destination' },
   { name: 'Vagamon', url: '/destination/kerala/vagamon-tourism', keywords: ['vagamon', 'meadows', 'vagamon package', 'vagamon tour'], description: 'Vagamon tour packages', type: 'destination' },
-  { name: 'Cochin', url: '/destination/kerala/cochin-tourism', keywords: ['cochin', 'kochi', 'fort kochi', 'kerala cruise', 'cochin package'], description: 'Cochin tourism and packages', type: 'destination' },
+  { name: 'Cochin', url: '/destination/kerala/cochin-tourism', keywords: ['cochin', 'kochi', 'fort kochi', 'kerala', 'cochin package'], description: 'Cochin tourism and packages', type: 'destination' },
   { name: 'Kumarakom Tours', url: '/tour-packages/kumarakom-tours', keywords: ['kumarakom', 'vembanad lake', 'bird sanctuary', 'kumarakom package'], description: 'Kumarakom tour packages', type: 'package-category' },
   { name: 'Athirappilly Tours', url: '/tour-packages/athirappilly-tours', keywords: ['athirappilly', 'athirappally', 'waterfall', 'chalakudy', 'athirappilly package'], description: 'Athirappilly waterfall packages', type: 'package-category' },
   { name: 'Kovalam Tours', url: '/tour-packages/kovalam-tours', keywords: ['kovalam', 'lighthouse beach', 'beach resort', 'kovalam package', 'kerala beach'], description: 'Kovalam beach packages', type: 'package-category' },
@@ -101,6 +101,7 @@ export const siteKnowledge: KnowledgeEntry[] = [
   // ──────────────────────────────────────────────────────
   // HONEYMOON PACKAGES
   // ──────────────────────────────────────────────────────
+  { name: 'Honeymoon Packages Overview', url: '/honeymoon-packages', keywords: ['honeymoon', 'honeymoon package', 'honeymoon packages', 'romantic trip', 'couple trip', 'honeymoon destinations', 'romantic holiday'], description: 'Complete handcrafted honeymoon packages collection by Logaa Holidays', type: 'package-category' },
   { name: 'Ooty and Coonoor Honeymoon Package', url: '/tamil-nadu-honeymoon-packages/enchanting-romantic-ooty-and-coonoor-honeymoon-package-4-days-3-nights', keywords: ['ooty honeymoon', 'coonoor honeymoon', 'couple trip ooty', 'romantic ooty', 'ooty package', '4 days 3 nights', 'ooty'], description: 'Enchanting romantic Ooty and Coonoor honeymoon package', type: 'package-category' },
   { name: 'Tamil Nadu Honeymoon', url: '/tour-packages/tamil-nadu-honeymoon-packages', keywords: ['tamil nadu honeymoon', 'couple trip tamil nadu', 'honeymoon south india', 'romantic tamil nadu', 'newly married tamil Nadu'], description: 'Tamil Nadu honeymoon packages', type: 'package-category' },
   { name: 'Kerala Honeymoon', url: '/tour-packages/kerala-honeymoon-packages', keywords: ['kerala honeymoon', 'kerala couple package', 'romantic kerala', 'honeymoon backwaters', 'munnar honeymoon', 'alleppey honeymoon', 'ooty coonoor honeymoon'], description: 'Kerala honeymoon packages', type: 'package-category' },

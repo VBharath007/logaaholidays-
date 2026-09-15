@@ -1,3 +1,6 @@
+# Custom 404 Error Document (returns HTTP 404 Not Found)
+ErrorDocument 404 /404.html
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
@@ -11,11 +14,20 @@
   RewriteCond %{HTTP_REFERER} !^https://(www\.)?logaaholidays\.com/ [NC]
   RewriteRule \.(gif|jpg|jpeg|png|webp|svg|mp4)$ - [F,NC,L]
 
-  # SPA Routing
+  # Allow direct access to index.html and 404.html
   RewriteRule ^index\.html$ - [L]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule . /index.html [L]
+  RewriteRule ^404\.html$ - [L]
+
+  # Allow direct access to existing physical files and directories
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # SPA Routing: Only rewrite known valid SPA routes to index.html (returns HTTP 200)
+  RewriteCond %{REQUEST_URI} ^/(about|gallery|services|north-india-tour-packages|tour-packages|packages|south-india-package|honeymoon-packages|honeymoon-package|tamil-nadu-tour-packages|kerala-tour-packages|karnataka-tour-packages|destination|places-to-visit|place|testimonials|contact|privacy-policy|terms-and-conditions|cancellation-policy)(/.*)?$ [NC]
+  RewriteRule ^ index.html [L]
+
+  # Any other non-existing URL is NOT rewritten and triggers ErrorDocument 404 (returns HTTP 404 Not Found)
 </IfModule>
 
 # Security Headers

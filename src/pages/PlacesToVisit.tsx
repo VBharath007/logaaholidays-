@@ -1,15 +1,39 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useLocation } from 'react-router-dom';
 import { ChevronRight, ChevronDown, List, Grid, MapPin } from 'lucide-react';
 import { destinationsData } from '../data/destinationsData';
 import { generateSlug } from '../lib/utils';
+import { Breadcrumb } from '../components/Breadcrumb';
 
 import { useSEO } from '../hooks/useSEO';
 
 export function PlacesToVisit() {
   const { city, state } = useParams();
-  const dest = city && destinationsData[city] ? destinationsData[city] : null;
-  const cityBase = city ? city.replace('-tourism', '') : '';
+  const location = useLocation();
+
+  // Resolve destination key: try raw city, then city + '-tourism'
+  const resolvedCityKey = (() => {
+    if (!city) return null;
+    if (destinationsData[city]) return city;
+    if (destinationsData[city + '-tourism']) return city + '-tourism';
+    return city;
+  })();
+
+  const dest = resolvedCityKey && destinationsData[resolvedCityKey] ? destinationsData[resolvedCityKey] : null;
+  const cityBase = resolvedCityKey ? resolvedCityKey.replace('-tourism', '') : (city || '');
+
+  // Determine stateSlug from the first URL path segment
+  // For new clean routes: /tamilnadu-tourism/:city → first segment = 'tamilnadu-tourism'
+  const stateSlug = (() => {
+    const firstSegment = location.pathname.replace(/^\//, '').split('/')[0];
+    // If it ends with -tourism, it's a new clean route — use it directly
+    if (firstSegment && firstSegment.endsWith('-tourism')) return firstSegment;
+    // Fallback: derive from dest state
+    if (dest?.state === 'Tamil Nadu') return 'tamilnadu-tourism';
+    if (dest?.state === 'Kerala') return 'kerala-tourism';
+    if (dest?.state === 'Karnataka') return 'karnataka-tour-packages';
+    return 'tamilnadu-tourism';
+  })();
 
   const [viewMode, setViewMode] = useState<'list' | 'grid'>('list');
   const [filterType, setFilterType] = useState('All');
@@ -41,34 +65,44 @@ export function PlacesToVisit() {
   // Get unique types for filter
   const placeTypes = ['All', ...Array.from(new Set(dest.placesToVisit.map((p: any) => p.type)))];
 
-  const filteredPlaces = dest.placesToVisit.filter((place: any) => 
+  const filteredPlaces = dest.placesToVisit.filter((place: any) =>
     filterType === 'All' || place.type === filterType
   );
 
   const clayCard = "bg-white rounded-[2.5rem] shadow-[0_10px_30px_rgba(0,0,0,0.05),-10px_-10px_30px_rgba(255,255,255,0.8),inset_2px_2px_5px_rgba(255,255,255,1)] border border-white";
 
+  const getPlaceUrl = (place: any) => {
+    const candidateKeys = [`${place.id}-tourism`, place.id];
+    const matchedDestKey = candidateKeys.find(key => destinationsData[key]);
+    if (matchedDestKey) {
+      const targetCity = destinationsData[matchedDestKey];
+      let stateSeg = 'tamilnadu';
+      if (targetCity.state === 'Kerala') stateSeg = 'kerala';
+      else if (targetCity.state === 'Karnataka') stateSeg = 'karnataka';
+      else if (targetCity.state === 'Tamil Nadu') stateSeg = 'tamilnadu';
+      else if (dest?.state === 'Kerala') stateSeg = 'kerala';
+      else if (dest?.state === 'Karnataka') stateSeg = 'karnataka';
+      return `/destination/${stateSeg}/${matchedDestKey}`;
+    }
+    return `/${stateSlug}/${cityBase}/${place.id}`;
+  };
+
   return (
     <div className="bg-[var(--color-bg-luxury)] min-h-screen pb-24 font-sans text-slate-800">
-      
+
       {/* Hero Header */}
-      <div className="relative h-[72vh] md:h-[70vh] w-full overflow-hidden bg-slate-900 mb-12">
+      <div className="relative h-[68vh] md:h-[70vh] w-full overflow-hidden bg-slate-900 mb-12 hero-section ">
         <div className="absolute inset-0 bg-black/50 z-10" />
-        <img loading="lazy" 
-          src={dest.image} 
-          alt={dest.name} 
+        <img loading="lazy"
+          src={dest.image}
+          srcSet={dest.srcSet}
+          sizes="100vw"
+          alt={dest.name}
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 z-20 flex flex-col justify-end pt-32 pb-16 px-6 max-w-7xl mx-auto">
-          <div className="flex flex-wrap items-center gap-2 text-white/80 text-base md:text-lg font-medium mb-4">
-            <Link to="/" className="hover:text-white transition-colors">Home</Link>
-            <ChevronRight className="w-4 h-4 relative top-[-7px] md:top-0" />
-            <Link to="/south-india-package" className="hover:text-white transition-colors relative top-[-7px] md:top-0">Destinations</Link>
-            <ChevronRight className="w-4 h-4 relative top-[-7px] md:top-0" />
-            <Link to={`/destination/${state}/${city}`} className="hover:text-white transition-colors relative top-[-7px] md:top-0">{dest.name}</Link>
-            <ChevronRight className="w-4 h-4 relative top-[-7px] md:top-0" />
-            <span className="text-white relative top-[-7px] md:top-0">Places to Visit</span>
-          </div>
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-white max-w-4xl leading-tight mb-2">
+        <div className="absolute inset-0 z-20 flex flex-col justify-end pt-28 md:pt-32 pb-16 px-6 max-w-7xl mx-auto">
+          <Breadcrumb variant="hero" />
+          <h1 className="text-4xl sm:text-6xl md:text-7xl font-display font-bold text-white max-w-4xl leading-tight mb-2">
             Top {dest.placesToVisit.length} Places to Visit in {dest.name}
           </h1>
           <p className="text-white/80 text-lg">
@@ -78,13 +112,13 @@ export function PlacesToVisit() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6">
-        
+
         {/* Toolbar Section */}
         <div className="flex justify-end items-center mb-12">
 
           {/* Filter Dropdown */}
           <div className="relative w-full md:w-64">
-            <button 
+            <button
               onClick={() => setIsFilterOpen(!isFilterOpen)}
               className="w-full flex items-center justify-between bg-slate-50 px-6 py-3.5 rounded-xl border border-slate-200 text-slate-700 font-medium hover:bg-slate-100 transition-colors"
             >
@@ -122,16 +156,19 @@ export function PlacesToVisit() {
             <div className="flex flex-col gap-16">
               {filteredPlaces.map((place: any, idx: number) => {
                 const isEven = idx % 2 === 0;
+                const linkUrl = getPlaceUrl(place);
                 return (
                   <div key={place.id} className={`flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-10`}>
-                    
+
                     {/* Image Block */}
-                    <Link to={`/place/${state}/${cityBase}/${place.id}`} className="w-full md:w-1/2 relative group block cursor-pointer">
+                    <Link to={linkUrl} className="w-full md:w-1/2 relative group block cursor-pointer">
                       <div className="absolute inset-0 bg-[var(--color-primary-forest)] rounded-[3rem] translate-x-4 translate-y-4 opacity-20 transition-transform group-hover:translate-x-6 group-hover:translate-y-6" />
                       <div className="relative h-[350px] lg:h-[450px] w-full rounded-[3rem] overflow-hidden shadow-2xl z-10 border-8 border-white">
-                        <img loading="lazy" 
-                          src={place.image} 
-                          alt={place.name} 
+                        <img loading="lazy"
+                          src={place.image}
+                          srcSet={place.srcSet}
+                          sizes="(max-width: 768px) 100vw, 50vw"
+                          alt={place.name}
                           className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                         />
                         <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full text-xs font-bold text-[var(--color-primary-forest)] uppercase tracking-wider">
@@ -153,9 +190,9 @@ export function PlacesToVisit() {
                       <p className="text-slate-600 text-lg leading-relaxed mb-8">
                         {place.description}
                       </p>
-                      
-                      <Link 
-                        to={`/place/${state}/${cityBase}/${place.id}`} 
+
+                      <Link
+                        to={linkUrl}
                         className="inline-flex items-center gap-2 text-[var(--color-primary-forest)] font-bold hover:gap-4 transition-all"
                       >
                         Explore place <ChevronRight className="w-5 h-5" />
@@ -169,29 +206,34 @@ export function PlacesToVisit() {
           ) : (
             // GRID VIEW (Masonry style cards)
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {filteredPlaces.map((place: any, idx: number) => (
-                <Link key={place.id} to={`/place/${state}/${cityBase}/${place.id}`} className={`${clayCard} flex flex-col overflow-hidden group block cursor-pointer`}>
-                  <div className="relative h-56 m-3 rounded-[2rem] overflow-hidden">
-                    <img loading="lazy" 
-                      src={place.image} 
-                      alt={place.name} 
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    />
-                    <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full text-[10px] font-bold text-[var(--color-primary-forest)] uppercase tracking-wider shadow-sm">
-                      {place.type}
+              {filteredPlaces.map((place: any, idx: number) => {
+                const linkUrl = getPlaceUrl(place);
+                return (
+                  <Link key={place.id} to={linkUrl} className={`${clayCard} flex flex-col overflow-hidden group block cursor-pointer`}>
+                    <div className="relative h-56 m-3 rounded-[2rem] overflow-hidden">
+                      <img loading="lazy"
+                        src={place.image}
+                        srcSet={place.srcSet}
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        alt={place.name}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      />
+                      <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full text-[10px] font-bold text-[var(--color-primary-forest)] uppercase tracking-wider shadow-sm">
+                        {place.type}
+                      </div>
                     </div>
-                  </div>
-                  <div className="p-6 pt-4 flex flex-col flex-1">
-                    <h3 className="text-xl font-bold text-slate-800 mb-3 group-hover:text-[var(--color-blue-ocean)] transition-colors">{idx + 1}. {place.name}</h3>
-                    <p className="text-slate-500 text-sm leading-relaxed mb-6 line-clamp-3 flex-1">
-                      {place.description}
-                    </p>
-                    <span className="text-[var(--color-blue-ocean)] font-bold text-sm flex items-center gap-1 mt-auto group-hover:underline">
-                      View details <ChevronRight className="w-4 h-4" />
-                    </span>
-                  </div>
-                </Link>
-              ))}
+                    <div className="p-6 pt-4 flex flex-col flex-1">
+                      <h3 className="text-xl font-bold text-slate-800 mb-3 group-hover:text-[var(--color-blue-ocean)] transition-colors">{idx + 1}. {place.name}</h3>
+                      <p className="text-slate-500 text-sm leading-relaxed mb-6 line-clamp-3 flex-1">
+                        {place.description}
+                      </p>
+                      <span className="text-[var(--color-blue-ocean)] font-bold text-sm flex items-center gap-1 mt-auto group-hover:underline">
+                        View details <ChevronRight className="w-4 h-4" />
+                      </span>
+                    </div>
+                  </Link>
+                );
+              })}
             </div>
           )}
         </div>

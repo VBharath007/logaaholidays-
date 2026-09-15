@@ -130,102 +130,288 @@ export const FlightBookingForm = () => {
   const [isInternational, setIsInternational] = useState('No');
   const [children, setChildren] = useState('0');
   const [infants, setInfants] = useState('0');
+
+  const today = new Date().toISOString().split("T")[0];
+
+const [departureDate, setDepartureDate] = useState("");
+
   
   return (
-    <FormWrapper 
-      title="Flight Booking Enquiry" 
-      subtitle="Share your travel details and our team will help you find suitable flight options."
-    >
-      <div className="space-y-6">
-        <h4 className="text-xl font-bold text-white mb-4">Passenger Contact</h4>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <TextInput icon={User} label="Full Name" required />
-          <TextInput icon={Phone} label="Mobile Number" required />
-          <TextInput icon={Mail} label="Email Address" type="email" required />
-        </div>
+    <FormWrapper
+  title="Flight Booking Enquiry"
+  subtitle="Share your travel details and our team will help you find suitable flight options."
+>
+  <div className="space-y-6">
 
-        <h4 className="text-xl font-bold text-white mb-4 pt-4 border-t border-white/10">Journey Details</h4>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <SelectInput 
-            icon={Plane} label="Trip Type" required
-            value={tripType} onChange={e => setTripType(e.target.value)}
-            options={[
-              { label: 'One Way', value: 'One Way' },
-              { label: 'Round Trip', value: 'Round Trip' },
-            ]} 
-          />
-          <SelectInput 
-            icon={Globe2} label="Domestic / International" required
-            value={isInternational} onChange={e => setIsInternational(e.target.value)}
-            options={[
-              { label: 'Domestic', value: 'No' },
-              { label: 'International', value: 'Yes' },
-            ]} 
-          />
-          <TextInput icon={MapPin} label="From / Departure Airport" required />
-          <TextInput icon={MapPin} label="To / Arrival Airport" required />
-          <TextInput icon={Calendar} label="Departure Date" type="date" required className="[color-scheme:dark]" />
-          {tripType !== 'One Way' && <TextInput icon={Calendar} label="Return Date" type="date" className="[color-scheme:dark]" />}
-        </div>
-        
-        {/* Passengers */}
-        <h4 className="text-xl font-bold text-white mb-4 pt-4 border-t border-white/10">Passengers</h4>
-        <div className="grid grid-cols-3 gap-4">
-          <TextInput icon={Users2} label="Adults" type="number" min="1" defaultValue="1" required />
-          <TextInput label="Children (2–11 yrs)" type="number" min="0" defaultValue="0"
-            onChange={(e: React.ChangeEvent<HTMLInputElement>) => setChildren(e.target.value)} />
-          <TextInput label="Infants (under 2)" type="number" min="0" defaultValue="0"
-            onChange={(e: React.ChangeEvent<HTMLInputElement>) => setInfants(e.target.value)} />
-        </div>
+    {/* Passenger Contact */}
+    <h4 className="text-xl font-bold text-white mb-4">
+      Passenger Contact
+    </h4>
 
-        {parseInt(children) > 0 && (
-          <TextInput label="Child Age(s)" placeholder="e.g. 5, 8" />
-        )}
-        {parseInt(infants) > 0 && (
-          <TextInput label="Infant Age(s) in months" placeholder="e.g. 6, 14" />
-        )}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
-        {/* Preferences */}
-        <h4 className="text-xl font-bold text-white mb-4 pt-4 border-t border-white/10">Flight Preferences</h4>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <SelectInput
-            icon={Plane} label="Preferred Departure Time"
-            options={[
-              { label: 'Morning (6 AM – 12 PM)', value: 'Morning' },
-              { label: 'Afternoon (12 PM – 6 PM)', value: 'Afternoon' },
-              { label: 'Evening (6 PM – 12 AM)', value: 'Evening' },
-              { label: 'Any Time', value: 'Any Time' },
-            ]}
-          />
-          <SelectInput
-            icon={Briefcase} label="Cabin Class" required
-            options={[
-              { label: 'Economy', value: 'Economy' },
-              { label: 'Premium Economy', value: 'Premium Economy' },
-              { label: 'Business', value: 'Business' },
-            ]}
-          />
-          <TextInput icon={Plane} label="Preferred Airline (Optional)" placeholder="e.g. IndiGo, Air India" />
-          <TextInput icon={Briefcase} label="Baggage Requirement (Optional)" placeholder="e.g. 15 kg, 30 kg" />
-        </div>
+      <TextInput
+        icon={User}
+        label="Full Name"
+        required
+      />
 
-        {isInternational === 'Yes' && (
-          <div className="bg-white/5 p-4 rounded-xl border border-white/10">
-            <h5 className="text-sm font-bold text-brand-orange mb-1">International Travel</h5>
-            <p className="text-xs text-white/60 mb-4">Please do not share your passport number at this stage. Our team will guide you through the next steps.</p>
-            <SelectInput
-              label="Passport Available?"
-              options={[
-                { label: 'Yes – Passport Ready', value: 'Yes' },
-                { label: 'No – Need Assistance', value: 'No' },
-              ]}
-            />
-          </div>
-        )}
+      <TextInput
+        icon={Phone}
+        label="Mobile Number"
+        type="number"
+        required
+        inputMode="numeric"
+        onInput={(e: any) => {
+          e.currentTarget.value = e.currentTarget.value
+            .replace(/\D/g, "")
+            .slice(0, 10);
+        }}
+      />
 
-        <TextArea label="Additional Message" placeholder="Meal preference, extra baggage, preferred airlines..." rows={3} />
+      <TextInput
+        icon={Mail}
+        label="Email Address"
+        type="email"
+        required
+      />
+
+    </div>
+
+
+    {/* Journey Details */}
+    <h4 className="text-xl font-bold text-white mb-4 pt-4 border-t border-white/10">
+      Journey Details
+    </h4>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+      <SelectInput
+        icon={Plane}
+        label="Trip Type"
+        required
+        value={tripType}
+        onChange={e => setTripType(e.target.value)}
+        options={[
+          { label: "One Way", value: "One Way" },
+          { label: "Round Trip", value: "Round Trip" },
+        ]}
+      />
+
+      <SelectInput
+        icon={Globe2}
+        label="Domestic / International"
+        required
+        value={isInternational}
+        onChange={e => setIsInternational(e.target.value)}
+        options={[
+          { label: "Domestic", value: "No" },
+          { label: "International", value: "Yes" },
+        ]}
+      />
+
+      <TextInput
+        icon={MapPin}
+        label="From / Departure Airport"
+        required
+      />
+
+      <TextInput
+        icon={MapPin}
+        label="To / Arrival Airport"
+        required
+      />
+
+      <TextInput
+        icon={Calendar}
+        label="Departure Date"
+        type="date"
+        required
+        min={today}
+        value={departureDate}
+        onChange={(e: any) => setDepartureDate(e.target.value)}
+        className="[color-scheme:dark]"
+      />
+
+      {tripType !== "One Way" && (
+        <TextInput
+          icon={Calendar}
+          label="Return Date"
+          type="date"
+          min={departureDate || today}
+          className="[color-scheme:dark]"
+        />
+      )}
+
+    </div>
+
+
+    {/* Passengers */}
+    <h4 className="text-xl font-bold text-white mb-4 pt-4 border-t border-white/10">
+      Passengers
+    </h4>
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+      <TextInput
+        icon={Users2}
+        label="Adults"
+        type="number"
+        min="1"
+        defaultValue="1"
+        required
+      />
+
+      <TextInput
+        label="Children (2–11 yrs)"
+        type="number"
+        min="0"
+        defaultValue="0"
+        onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+          setChildren(e.target.value)
+        }
+      />
+
+      <TextInput
+        label="Infants (under 2)"
+        type="number"
+        min="0"
+        defaultValue="0"
+        onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+          setInfants(e.target.value)
+        }
+      />
+
+    </div>
+
+
+    {parseInt(children) > 0 && (
+      <TextInput
+        label="Child Age(s)"
+        placeholder="e.g. 5, 8"
+        onInput={(e: any) => {
+          e.currentTarget.value = e.currentTarget.value
+            .replace(/[^0-9,\s]/g, "");
+        }}
+      />
+    )}
+
+    {parseInt(infants) > 0 && (
+      <TextInput
+        label="Infant Age(s) in months"
+        placeholder="e.g. 6, 14"
+        onInput={(e: any) => {
+          e.currentTarget.value = e.currentTarget.value
+            .replace(/[^0-9,\s]/g, "");
+        }}
+      />
+    )}
+
+
+    {/* Preferences */}
+    <h4 className="text-xl font-bold text-white mb-4 pt-4 border-t border-white/10">
+      Flight Preferences
+    </h4>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+      <SelectInput
+        icon={Plane}
+        label="Preferred Departure Time"
+        options={[
+          {
+            label: "Morning (6 AM – 12 PM)",
+            value: "Morning",
+          },
+          {
+            label: "Afternoon (12 PM – 6 PM)",
+            value: "Afternoon",
+          },
+          {
+            label: "Evening (6 PM – 12 AM)",
+            value: "Evening",
+          },
+          {
+            label: "Any Time",
+            value: "Any Time",
+          },
+        ]}
+      />
+
+      <SelectInput
+        icon={Briefcase}
+        label="Cabin Class"
+        required
+        options={[
+          {
+            label: "Economy",
+            value: "Economy",
+          },
+          {
+            label: "Premium Economy",
+            value: "Premium Economy",
+          },
+          {
+            label: "Business",
+            value: "Business",
+          },
+        ]}
+      />
+
+      <TextInput
+        icon={Plane}
+        label="Preferred Airline (Optional)"
+        placeholder="e.g. IndiGo, Air India"
+      />
+
+      <TextInput
+        icon={Briefcase}
+        label="Baggage Requirement (Optional)"
+        placeholder="e.g. 15 kg, 30 kg"
+      />
+
+    </div>
+
+
+    {/* International Travel */}
+    {isInternational === "Yes" && (
+      <div className="bg-white/5 p-4 rounded-xl border border-white/10">
+
+        <h5 className="text-sm font-bold text-brand-orange mb-1">
+          International Travel
+        </h5>
+
+        <p className="text-xs text-white/60 mb-4">
+          Please do not share your passport number at this stage. Our team will guide you through the next steps.
+        </p>
+
+        <SelectInput
+          label="Passport Available?"
+          options={[
+            {
+              label: "Yes – Passport Ready",
+              value: "Yes",
+            },
+            {
+              label: "No – Need Assistance",
+              value: "No",
+            },
+          ]}
+        />
+
       </div>
-    </FormWrapper>
+    )}
+
+
+    {/* Additional Message */}
+    <TextArea
+      label="Additional Message"
+      placeholder="Meal preference, extra baggage, preferred airlines..."
+      rows={3}
+    />
+
+  </div>
+</FormWrapper>
   );
 };
 

@@ -33,7 +33,7 @@ const newMaduraiBlock = `  'madurai-tourism': {
       stdCode: '0452',
       languages: 'Tamil and English',
       festivals: 'Pongal, Jallikattu, Chithirai Festival, Festival of the Cradle and Avanimoolam Festival',
-      tips: 'You can visit Rameshwaram and Kanyakumari as these places are nearby.'
+      tips: 'You can visit Rameswaram and Kanyakumari as these places are nearby.'
     },
     majorAttractions: [
       {

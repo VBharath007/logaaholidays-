@@ -21,7 +21,7 @@ const links: LinkItem[] = [
       {
         title: 'Tamil Nadu',
         items: [
-          { href: '/destination/tamilnadu/tamilnadu-tourism', label: 'Tamil Nadu Overview' },
+          { href: '/tamilnadu-tourism', label: 'Tamil Nadu Overview' },
           { href: '/destination/tamilnadu/madurai-tourism', label: 'Madurai' },
           { href: '/destination/tamilnadu/rameswaram-tourism', label: 'Rameswaram' },
           { href: '/destination/tamilnadu/kanyakumari-tourism', label: 'Kanyakumari' },
@@ -42,9 +42,16 @@ const links: LinkItem[] = [
         ]
       },
       {
+        title: 'Union Terriotories',
+        items: [
+          { href: '/tour-packages/pondicherry-tours', label: 'Pondicherry' }
+        ]
+      },
+
+      {
         title: 'Kerala',
         items: [
-          { href: '/destination/kerala/kerala-tourism', label: 'Kerala Overview' },
+          { href: '/kerala-tourism', label: 'Kerala Overview' },
           { href: '/destination/kerala/munnar-tourism', label: 'Munnar' },
           { href: '/destination/kerala/alleppey-tourism', label: 'Alleppey' },
           { href: '/destination/kerala/thekkady-tourism', label: 'Thekkady' },
@@ -71,7 +78,7 @@ const links: LinkItem[] = [
       {
         title: 'Andaman',
         items: [
-          { href: '/destination/andaman/andaman-tourism', label: 'Andaman & Nicobar Islands' }
+          { href: '/andaman-tourism', label: 'Andaman & Nicobar Islands' }
         ]
       }
     ]
@@ -112,7 +119,7 @@ const links: LinkItem[] = [
     ]
   },
   {
-    href: '#',
+    href: '/honeymoon-packages',
     label: 'Honeymoon Package',
     menuAlign: 'right',
     categories: [
@@ -144,7 +151,7 @@ const links: LinkItem[] = [
       }
     ]
   },
- 
+
   { href: '/testimonials', label: 'Testimonials' },
 ]
 
@@ -205,10 +212,14 @@ export function Navbar() {
             onClick={() => setMenuOpen(false)}
           >
             <img
-              loading="lazy"
-              src="/logo.png"
+              src="/logo-155w.webp"
+              srcSet="/logo-155w.webp 155w, /logo-155w@2x.webp 310w"
+              sizes="155px"
               alt="Logaa Holidays Logo - Best Travel Agency in Madurai"
-              className="h-[62px] w-auto object-contain"
+              width={124}
+              height={62}
+              className="h-[62px] w-auto aspect-[155/77] object-contain"
+              fetchPriority="high"
             />
           </Link>
 
@@ -218,11 +229,10 @@ export function Navbar() {
               <li key={link.label} className="relative group">
                 <Link
                   to={link.href}
-                  className={`flex items-center gap-1 text-base font-bold transition-colors duration-200 tracking-wide ${
-                    location.pathname === link.href
+                  className={`flex items-center gap-1 text-base font-bold transition-colors duration-200 tracking-wide ${location.pathname === link.href
                       ? 'text-[var(--color-blue-ocean)]'
                       : 'text-slate-900 hover:text-[var(--color-blue-ocean)]'
-                  }`}
+                    }`}
                 >
                   {link.label}
                   {(link.submenu || link.categories) && (
@@ -241,9 +251,9 @@ export function Navbar() {
                     {link.submenu.map(sub => {
                       const isActive = location.pathname === sub.href;
                       return (
-                      <Link key={sub.label} to={sub.href} className={`text-sm px-4 py-3 rounded-xl transition-colors text-left ${isActive ? 'font-bold text-[var(--color-blue-ocean)] bg-blue-50' : 'font-bold text-slate-700 hover:text-[var(--color-blue-ocean)] hover:bg-slate-50'}`}>
-                        {sub.label}
-                      </Link>
+                        <Link key={sub.label} to={sub.href} className={`text-sm px-4 py-3 rounded-xl transition-colors text-left ${isActive ? 'font-bold text-[var(--color-blue-ocean)] bg-blue-50' : 'font-bold text-slate-700 hover:text-[var(--color-blue-ocean)] hover:bg-slate-50'}`}>
+                          {sub.label}
+                        </Link>
                       );
                     })}
                   </div>
@@ -254,16 +264,16 @@ export function Navbar() {
                   <div className="fixed top-[100px] left-1/2 -translate-x-1/2 w-max max-w-[1100px] bg-white rounded-3xl border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 p-8 flex gap-10 z-50 cursor-default shadow-2xl">
                     {link.categories.map(cat => (
                       <div key={cat.title} className={cat.items.length > 8 ? 'w-[360px]' : 'w-[180px]'}>
-                        <h4 className="text-xs font-black uppercase tracking-widest text-[var(--color-primary-forest)] mb-4 border-b border-slate-100 pb-2">{cat.title}</h4>
+                        <h4 className="text-xs font-black capitalize tracking-widest text-[var(--color-primary-forest)] mb-4 border-b border-slate-100 pb-2">{cat.title}</h4>
                         <ul className={cat.items.length > 8 ? 'grid grid-cols-2 gap-x-6 gap-y-1' : 'flex flex-col gap-1'}>
                           {cat.items.map(item => {
                             const isActive = location.pathname === item.href;
                             return (
-                            <li key={item.label}>
-                              <Link to={item.href} className={`text-sm block py-2 transition-transform ${isActive ? 'font-bold text-[var(--color-blue-ocean)] translate-x-1' : 'font-medium text-slate-600 hover:text-[var(--color-blue-ocean)] hover:translate-x-1'}`}>
-                                {item.label}
-                              </Link>
-                            </li>
+                              <li key={item.label}>
+                                <Link to={item.href} className={`text-sm block py-2 transition-transform ${isActive ? 'font-bold text-[var(--color-blue-ocean)] translate-x-1' : 'font-medium text-slate-600 hover:text-[var(--color-blue-ocean)] hover:translate-x-1'}`}>
+                                  {item.label}
+                                </Link>
+                              </li>
                             );
                           })}
                         </ul>
@@ -277,16 +287,16 @@ export function Navbar() {
                   <div className={`absolute top-[calc(100%+1.5rem)] left-1/2 -translate-x-1/2 ${link.categories.length > 2 ? 'w-[850px] grid-cols-3' : 'w-[450px] grid-cols-2'} bg-white rounded-3xl border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 p-8 grid gap-8 z-50 cursor-default shadow-xl`}>
                     {link.categories.map(cat => (
                       <div key={cat.title}>
-                        <h4 className="text-xs font-black uppercase tracking-widest text-[var(--color-primary-forest)] mb-4 border-b border-slate-100 pb-2">{cat.title}</h4>
+                        <h4 className="text-xs font-black capitalize tracking-widest text-[var(--color-primary-forest)] mb-4 border-b border-slate-100 pb-2">{cat.title}</h4>
                         <ul className="flex flex-col gap-1">
                           {cat.items.map(item => {
                             const isActive = location.pathname === item.href;
                             return (
-                            <li key={item.label}>
-                              <Link to={item.href} className={`text-sm block py-2 transition-transform ${isActive ? 'font-bold text-[var(--color-blue-ocean)] translate-x-1' : 'font-medium text-slate-600 hover:text-[var(--color-blue-ocean)] hover:translate-x-1'}`}>
-                                {item.label}
-                              </Link>
-                            </li>
+                              <li key={item.label}>
+                                <Link to={item.href} className={`text-sm block py-2 transition-transform ${isActive ? 'font-bold text-[var(--color-blue-ocean)] translate-x-1' : 'font-medium text-slate-600 hover:text-[var(--color-blue-ocean)] hover:translate-x-1'}`}>
+                                  {item.label}
+                                </Link>
+                              </li>
                             );
                           })}
                         </ul>
@@ -302,7 +312,7 @@ export function Navbar() {
           <div className="hidden lg:block shrink-0">
             <Link
               to="/contact"
-              className="inline-flex px-6 xl:px-8 py-3 xl:py-4 text-sm font-bold text-white rounded-full transition-colors bg-[var(--color-blue-ocean)] hover:bg-[var(--color-primary-emerald)]"
+              className="inline-flex px-6 xl:px-8 py-3 xl:py-4 text-sm font-bold text-white rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-300"
             >
               Contact Us
             </Link>
@@ -329,9 +339,8 @@ export function Navbar() {
         ══════════════════════════════════════════ */}
         <div
           id="mobile-menu"
-          className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-            menuOpen ? 'max-h-[80vh] opacity-100' : 'max-h-0 opacity-0'
-          }`}
+          className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${menuOpen ? 'max-h-[80vh] opacity-100' : 'max-h-0 opacity-0'
+            }`}
           aria-hidden={!menuOpen}
         >
           {/* Scrollable menu body */}
@@ -347,14 +356,16 @@ export function Navbar() {
                     <div className="flex items-center justify-between">
                       <Link
                         to={link.href}
-                        className={`flex-1 py-3.5 px-2 text-base font-bold ${
-                          location.pathname === link.href
+                        className={`flex-1 py-3.5 px-2 text-base font-bold ${location.pathname === link.href
                             ? 'text-[var(--color-blue-ocean)]'
                             : 'text-slate-700 hover:text-[var(--color-blue-ocean)]'
-                        }`}
+                          }`}
                         onClick={(e) => {
-                          if (link.href === '#') e.preventDefault()
-                          if (!hasChildren) closeMobileMenu()
+                          if (link.href === '#') {
+                            e.preventDefault()
+                          } else {
+                            closeMobileMenu()
+                          }
                         }}
                       >
                         {link.label}
@@ -382,15 +393,15 @@ export function Navbar() {
                           {link.submenu.map(sub => {
                             const isActive = location.pathname === sub.href;
                             return (
-                            <li key={sub.label}>
-                              <Link
-                                to={sub.href}
-                                className={`block py-2.5 px-2 text-sm rounded-lg transition-colors ${isActive ? 'font-bold text-[var(--color-blue-ocean)] bg-blue-50' : 'font-medium text-slate-500 hover:text-[var(--color-blue-ocean)] hover:bg-slate-50'}`}
-                                onClick={closeMobileMenu}
-                              >
-                                {sub.label}
-                              </Link>
-                            </li>
+                              <li key={sub.label}>
+                                <Link
+                                  to={sub.href}
+                                  className={`block py-2.5 px-2 text-sm rounded-lg transition-colors ${isActive ? 'font-bold text-[var(--color-blue-ocean)] bg-blue-50' : 'font-medium text-slate-500 hover:text-[var(--color-blue-ocean)] hover:bg-slate-50'}`}
+                                  onClick={closeMobileMenu}
+                                >
+                                  {sub.label}
+                                </Link>
+                              </li>
                             );
                           })}
                         </ul>
@@ -410,15 +421,15 @@ export function Navbar() {
                                 {cat.items.map(item => {
                                   const isActive = location.pathname === item.href;
                                   return (
-                                  <li key={item.label}>
-                                    <Link
-                                      to={item.href}
-                                      className={`block py-2.5 px-2 text-sm rounded-lg transition-colors ${isActive ? 'font-bold text-[var(--color-blue-ocean)] bg-blue-50' : 'font-medium text-slate-500 hover:text-[var(--color-blue-ocean)] hover:bg-slate-50'}`}
-                                      onClick={closeMobileMenu}
-                                    >
-                                      {item.label}
-                                    </Link>
-                                  </li>
+                                    <li key={item.label}>
+                                      <Link
+                                        to={item.href}
+                                        className={`block py-2.5 px-2 text-sm rounded-lg transition-colors ${isActive ? 'font-bold text-[var(--color-blue-ocean)] bg-blue-50' : 'font-medium text-slate-500 hover:text-[var(--color-blue-ocean)] hover:bg-slate-50'}`}
+                                        onClick={closeMobileMenu}
+                                      >
+                                        {item.label}
+                                      </Link>
+                                    </li>
                                   );
                                 })}
                               </ul>
@@ -435,7 +446,7 @@ export function Navbar() {
               <li className="pt-4 pb-2 px-2">
                 <Link
                   to="/contact"
-                  className="flex justify-center w-full px-8 py-4 text-base font-bold text-white bg-[var(--color-blue-ocean)] hover:bg-[var(--color-primary-emerald)] rounded-full transition-colors"
+                  className="flex justify-center w-full px-8 py-4 text-base font-bold text-white bg-gradient-to-r from-emerald-500 to-teal-500 shadow-lg hover:shadow-xl active:scale-95 rounded-full transition-all duration-300"
                   onClick={closeMobileMenu}
                 >
                   Contact Us
@@ -447,8 +458,8 @@ export function Navbar() {
       </header>
 
       {/* Backdrop for Mobile Menu */}
-      <div 
-        className={`fixed inset-0 bg-black/40 backdrop-blur-sm z-40 lg:hidden transition-opacity duration-300 pointer-events-auto ${menuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} 
+      <div
+        className={`fixed inset-0 bg-black/40 backdrop-blur-sm z-40 lg:hidden transition-opacity duration-300 pointer-events-auto ${menuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
         onClick={() => setMenuOpen(false)}
         aria-hidden="true"
       />

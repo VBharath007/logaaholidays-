@@ -112,7 +112,7 @@ export const BusBookingForm = () => {
 export const CabCoachRentalFormV2 = () => {
   const [children, setChildren] = useState('0');
   return (
-    <FormWrapper title="Cab / Car & Coach Rental Enquiry" subtitle="Tell us your travel requirements and we will arrange the right vehicle for your trip.">
+    <FormWrapper title="Premium Car & Coach Rental Enquiry" subtitle="Tell us your travel requirements and we will arrange the right vehicle for your trip.">
       <div className="space-y-6">
         <h4 className="text-xl font-bold text-white mb-4">Contact Details</h4>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

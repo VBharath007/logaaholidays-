@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  <link rel="icon" href="/logo.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/logo.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/logo.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Critical Above-the-fold Fonts Preload -->
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/cormorant-300-normal-4.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/outfit-300-normal-1.woff2" crossorigin />
+
+  <!-- LCP resource preloads: header logo and first hero slide images must be discoverable from HTML,
+       not after JavaScript executes, to avoid "LCP request not discoverable early" warning. -->
+  <link
+    rel="preload"
+    as="image"
+    href="/logo-155w.webp"
+    imagesrcset="/logo-155w.webp 155w, /logo-155w@2x.webp 310w"
+    imagesizes="155px"
+    fetchpriority="high"
+  />
+  <link
+    rel="preload"
+    as="image"
+    href="/assets/home hero/homefirst.webp"
+    media="(min-width: 769px)"
+    fetchpriority="high"
+  />
+  <link
+    rel="preload"
+    as="image"
+    href="/assets/home hero/homeverticalone (1)-579w.webp"
+    imagesrcset="/assets/home%2520hero/homeverticalone%2520(1)-579w.webp 579w, /assets/home%2520hero/homeverticalone%2520(1)-579w@2x.webp 941w"
+    imagesizes="100vw"
+    media="(max-width: 768px)"
+    fetchpriority="high"
+  />
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Logaa Holidays is a trusted travel agency in Madurai offering customized domestic and international tour packages for families, groups, and honeymooners." />
+
+<meta name="keywords" content="Travel Agency in Madurai, Best Travel Agency in Madurai, Tour Operators in Madurai, Best Tour Operator in Madurai, Holiday Packages from Madurai, Tour Packages from Madurai, Travel Agents in Madurai, Domestic Tour Packages from Madurai, Customized Tour Packages in Madurai, Family Tour Packages from Madurai, Group Tour Packages from Madurai, Honeymoon Packages from Madurai, Pilgrimage Tour Packages from Madurai, South India Tour Packages from Madurai" />
+
+<meta name="author" content="Logaa Holidays" />
+
+  <meta property="og:title" content="Logaa Holidays | Best Travel Agency & Tour Operators in Madurai" />
+  <meta property="og:description" content="Logaa Holidays is a trusted travel agency in Madurai offering customized domestic and international tour packages for families, groups, and honeymooners." />
+  <meta property="og:url" content="https://logaaholidays.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://logaaholidays.com/og-image.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Logaa Holidays | Best Travel Agency & Tour Operators in Madurai" />
+  <meta name="twitter:description" content="Logaa Holidays is the best travel agency in Madurai, offering customized domestic and international tour packages. Book family, group, and honeymoon holiday packages from Madurai." />
+  <meta name="twitter:image" content="https://logaaholidays.com/og-image.webp" />
+
+  
+
+  <!-- Canonical URL (Homepage) -->
+  <link rel="canonical" href="https://logaaholidays.com/" />
+
+  <title>Page Not Found | Logaa Holidays</title>
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json" id="travelagency-schema">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Logaa Holidays",
+    "image": "https://logaaholidays.com/og-image.webp",
+    "@id": "https://logaaholidays.com/#travelagency",
+    "url": "https://logaaholidays.com/",
+    "telephone": "+91 73973 29776",
+    "email": "logaaholidays@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "70 Feet Road, T S Colony, Housing Board, Ellis Nagar, Madurai, Tamil Nadu - 625016",
+      "addressLocality": "Madurai",
+      "addressRegion": "Tamil Nadu",
+      "postalCode": "625016",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 9.9197,
+      "longitude": 78.1198
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "09:00",
+      "closes": "21:00"
+    },
+    "priceRange": "₹₹",
+    "areaServed": ["Madurai", "Tamil Nadu", "South India", "India"],
+    "sameAs": [
+      "https://www.facebook.com/logaaholidays",
+      "https://www.instagram.com/logaaholidays"
+    ],
+    "description": "Logaa Holidays is the best travel agency in Madurai, offering customized domestic and international tour packages. Book family, group, and honeymoon holiday packages from Madurai."
+  }
+
+  </script>
+
+  <!-- <script>
+    // Disable right-click
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    // Disable image drag and drop
+    document.addEventListener('dragstart', event => {
+      if (event.target.nodeName.toUpperCase() === 'IMG') {
+        event.preventDefault();
+      }
+    });
+
+    // Basic DevTools and Save-As Deterrent
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'F12' || e.keyCode === 123) {
+        e.preventDefault();
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C' || e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67)) {
+        e.preventDefault();
+      }
+      if (e.ctrlKey && (e.key === 'U' || e.keyCode === 85)) {
+        e.preventDefault();
+      }
+      if (e.ctrlKey && (e.key === 'S' || e.keyCode === 83)) {
+        e.preventDefault();
+      }
+    });
+  </script> -->
+ 
+  <script type="module" crossorigin src="/assets/index-CGRImJXE.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-CNC7AqOf.js">
+  <link rel="modulepreload" crossorigin href="/assets/vendor-animation-DCFvf-jT.js">
+  <link rel="modulepreload" crossorigin href="/assets/vendor-react-MPzy9xAt.js">
+  <link rel="stylesheet" crossorigin href="/assets/index-ypbQJiTi.css">
+  <meta name="robots" content="noindex, follow" />
+</head>
+
+<body>
+  <div id="root">
+  <div class="bg-[var(--color-bg-luxury,#f8f9fa)] min-h-[70vh] flex flex-col items-center justify-center text-center px-6" style="min-height: 70vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding-left: 1.5rem; padding-right: 1.5rem; background-color: var(--color-bg-luxury, #f8f9fa);">
+    <h1 class="text-8xl font-display font-bold text-[var(--color-primary-forest,#1e3d34)] mb-4" style="font-size: 6rem; line-height: 1; font-weight: 700; color: var(--color-primary-forest, #1e3d34); margin-bottom: 1rem;">404</h1>
+    <h2 class="text-3xl font-bold text-slate-800 mb-6" style="font-size: 1.875rem; font-weight: 700; color: #1e293b; margin-bottom: 1.5rem;">Page Not Found</h2>
+    <p class="text-slate-600 mb-8 max-w-md mx-auto" style="color: #475569; margin-bottom: 2rem; max-width: 28rem; margin-left: auto; margin-right: auto;">
+      Oops! The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
+    </p>
+    <a href="/" class="flex items-center gap-2 bg-[var(--color-blue-ocean,#0B408F)] text-white font-bold px-8 py-4 rounded-full hover:bg-[var(--color-primary-emerald,#059669)] transition-colors" style="display: inline-flex; align-items: center; gap: 0.5rem; background-color: var(--color-blue-ocean, #0B408F); color: #ffffff; font-weight: 700; padding: 1rem 2rem; border-radius: 9999px; text-decoration: none;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+      Back to Home
+    </a>
+  </div>
+</div>
+</body>
+
+</html>

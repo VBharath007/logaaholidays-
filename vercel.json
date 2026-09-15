@@ -1,5 +1,28 @@
 {
+  "cleanUrls": false,
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/about", "destination": "/index.html" },
+    { "source": "/gallery", "destination": "/index.html" },
+    { "source": "/services", "destination": "/index.html" },
+    { "source": "/services/:path*", "destination": "/index.html" },
+    { "source": "/north-india-tour-packages", "destination": "/index.html" },
+    { "source": "/north-india-tour-packages/:path*", "destination": "/index.html" },
+    { "source": "/tour-packages", "destination": "/index.html" },
+    { "source": "/tour-packages/:path*", "destination": "/index.html" },
+    { "source": "/packages/:path*", "destination": "/index.html" },
+    { "source": "/south-india-package", "destination": "/index.html" },
+    { "source": "/honeymoon-packages", "destination": "/index.html" },
+    { "source": "/honeymoon-package", "destination": "/index.html" },
+    { "source": "/tamil-nadu-tour-packages", "destination": "/index.html" },
+    { "source": "/kerala-tour-packages", "destination": "/index.html" },
+    { "source": "/karnataka-tour-packages", "destination": "/index.html" },
+    { "source": "/destination/:path*", "destination": "/index.html" },
+    { "source": "/places-to-visit/:path*", "destination": "/index.html" },
+    { "source": "/place/:path*", "destination": "/index.html" },
+    { "source": "/testimonials", "destination": "/index.html" },
+    { "source": "/contact", "destination": "/index.html" },
+    { "source": "/privacy-policy", "destination": "/index.html" },
+    { "source": "/terms-and-conditions", "destination": "/index.html" },
+    { "source": "/cancellation-policy", "destination": "/index.html" }
   ]
 }

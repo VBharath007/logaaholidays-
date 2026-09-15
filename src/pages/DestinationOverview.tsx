@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useMemo } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useLocation } from 'react-router-dom';
 import { ChevronRight, Phone, Clock, MapPin, Search, Calendar, Filter } from 'lucide-react';
 import { destinationsData } from '../data/destinationsData';
 import { packagesDatabase, getPackageLink } from './PackageDetails';
@@ -7,11 +7,34 @@ import { generateSlug } from '../lib/utils';
 import { useSEO } from '../hooks/useSEO';
 import { ComprehensiveEnquiryForm } from '../components/ComprehensiveEnquiryForm';
 import { useNavigate } from 'react-router-dom';
+import { Breadcrumb } from '../components/Breadcrumb';
 
 export function DestinationOverview() {
   const navigate = useNavigate();
+  const location = useLocation();
   const { state, city } = useParams();
-  const dest = city && destinationsData[city] ? destinationsData[city] : null;
+
+  // Resolve destination key: supports both old /destination/:state/:city
+  // and new clean /:stateSlug routes (e.g. /tamilnadu-tourism)
+  const destKey = (() => {
+    if (city && destinationsData[city]) return city;
+    // New clean route: first path segment IS the destinationsData key
+    const firstSegment = location.pathname.replace(/^\//, '').split('/')[0];
+    if (firstSegment && destinationsData[firstSegment]) return firstSegment;
+    return city;
+  })();
+
+  const dest = destKey && destinationsData[destKey] ? destinationsData[destKey] : null;
+  // stateSlug for building new clean URLs (e.g. "tamilnadu-tourism")
+  const stateSlug = (() => {
+    if (dest?.state === 'Tamil Nadu') return 'tamilnadu-tourism';
+    if (dest?.state === 'Kerala') return 'kerala-tourism';
+    if (dest?.state === 'Karnataka') return 'karnataka-tour-packages';
+    if (dest?.state === 'Andaman') return 'andaman-tourism';
+    return destKey || '';
+  })();
+  // cityBase strips -tourism suffix for city-level URL segment (e.g. "madurai")
+  const cityBase = destKey ? destKey.replace('-tourism', '') : '';
   const [placeFilter, setPlaceFilter] = useState('All');
 
   useSEO(
@@ -22,7 +45,7 @@ export function DestinationOverview() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [city]);
+  }, [destKey]);
 
   if (!dest) {
     return (
@@ -43,7 +66,7 @@ export function DestinationOverview() {
   const isSouthState = dest.state === 'Tamil Nadu' || dest.state === 'Kerala';
   const northKeywords = ['shirdi', 'shiridi', 'varanasi', 'kasi', 'kashi', 'ayodhya', 'pune', 'mumbai', 'nashik', 'nasik', 'pandharpur', 'mantralayam', 'delhi', 'agra', 'jaipur', 'guwahati', 'shillong', 'cherrapunji', 'sarnath', 'gaya', 'prayagraj'];
 
-  const allRelatedPackages = Object.values(packagesDatabase).filter((p: any) => {
+  const allRelatedPackages = Object.entries(packagesDatabase).map(([key, val]: [string, any]) => ({ ...val, id: key })).filter((p: any) => {
     const titleLower = (p.title || '').toLowerCase();
     const destLower = (p.overview?.destination || '').toLowerCase();
     const idNum = parseInt(p.id);
@@ -66,6 +89,11 @@ export function DestinationOverview() {
       return dest.popularPackages?.includes(p.id) || false;
     }
 
+    // Exclude honeymoon packages from normal destinations
+    if (titleLower.includes('honeymoon')) {
+      return false;
+    }
+
     return relatedKeywords.some(keyword =>
       titleLower.includes(keyword) || destLower.includes(keyword)
     );
@@ -83,9 +111,8 @@ export function DestinationOverview() {
       }).length;
     }
 
-    if (cityBase === 'kanyakumari') return 6;
     if (cityBase === 'madurai') {
-      return Object.values(packagesDatabase).filter((p: any) => {
+      return Object.entries(packagesDatabase).map(([key, val]: [string, any]) => ({ ...val, id: key })).filter((p: any) => {
         const titleLower = (p.title || '').toLowerCase();
         const destLower = (p.overview?.destination || '').toLowerCase();
         const idNum = parseInt(p.id);
@@ -93,40 +120,46 @@ export function DestinationOverview() {
         return (idNum >= 2025 && idNum <= 2099) || maduraiKeywords.some(kw => titleLower.includes(kw) || destLower.includes(kw));
       }).length;
     }
-    if (cityBase === 'rameswaram') return 5;
-    if (cityBase === 'shirdi') return 8;
-    if (cityBase === 'pune') return 5;
-    if (cityBase === 'varanasi') return 7;
 
     if (cityBase === 'kerala') {
-      return Object.values(packagesDatabase).filter((p: any) => {
+      return Object.entries(packagesDatabase).map(([key, val]: [string, any]) => ({ ...val, id: key })).filter((p: any) => {
         const titleLower = (p.title || '').toLowerCase();
+        if (dest.state !== 'Honeymoon' && titleLower.includes('honeymoon')) return false;
         return ['munnar', 'thekkady', 'alleppey', 'vagamon', 'valparai', 'kumarakom', 'marayoor', 'kerala'].some(kw => titleLower.includes(kw));
       }).length;
     }
 
     if (cityBase === 'cochin') {
-      return Object.values(packagesDatabase).filter((p: any) => {
+      return Object.entries(packagesDatabase).map(([key, val]: [string, any]) => ({ ...val, id: key })).filter((p: any) => {
         const titleLower = (p.title || '').toLowerCase();
+        if (dest.state !== 'Honeymoon' && titleLower.includes('honeymoon')) return false;
         const destLower = (p.overview?.destination || '').toLowerCase();
         return titleLower.includes('cochin') || destLower.includes('cochin') || titleLower.includes('kochi') || destLower.includes('kochi');
       }).length;
     }
 
     if (['munnar', 'alleppey', 'thekkady', 'vagamon'].includes(cityBase)) {
-      return Object.values(packagesDatabase).filter((p: any) => {
+      return Object.entries(packagesDatabase).map(([key, val]: [string, any]) => ({ ...val, id: key })).filter((p: any) => {
         const titleLower = (p.title || '').toLowerCase();
+        if (dest.state !== 'Honeymoon' && titleLower.includes('honeymoon')) return false;
         const destLower = (p.overview?.destination || '').toLowerCase();
         return titleLower.includes(cityBase) || destLower.includes(cityBase);
       }).length;
     }
 
     return allRelatedPackages.length;
-  }, [city, allRelatedPackages]);
+  }, [city, allRelatedPackages, dest.state]);
 
-  let featuredPackages = dest.popularPackages
+  let featuredPackages = (dest.popularPackages || [])
     .map((id: string) => packagesDatabase[id])
-    .filter(Boolean);
+    .filter(Boolean)
+    .filter((p: any) => {
+      // Strictly exclude honeymoon packages from featured if this isn't a Honeymoon overview
+      if (dest.state !== 'Honeymoon' && (p.title || '').toLowerCase().includes('honeymoon')) {
+        return false;
+      }
+      return true;
+    });
 
   if (featuredPackages.length < 4) {
     const existingIds = new Set(featuredPackages.map((p: any) => p.id));
@@ -150,18 +183,18 @@ export function DestinationOverview() {
   );
 
   const getCategoryLink = () => {
-    if (!city) return "/tour-packages";
-    const cityBase = city.replace('-tourism', '');
-    if (cityBase === 'tamilnadu') {
+    if (!destKey) return "/tour-packages";
+    const base = destKey.replace('-tourism', '');
+    if (base === 'tamilnadu') {
       return "/tour-packages/madurai-tours";
     }
     const specificTours = ['madurai', 'kanyakumari', 'kerala', 'rameswaram', 'varanasi', 'shirdi', 'ayodhya', 'guwahati', 'shillong', 'cherrapunji', 'pune', 'karnataka', 'andaman', 'chennai', 'munnar', 'alleppey', 'thekkady', 'vagamon', 'cochin', 'ooty', 'kodaikanal'];
-    if (specificTours.includes(cityBase)) {
-      return `/tour-packages/${cityBase}-tours`;
+    if (specificTours.includes(base)) {
+      return `/tour-packages/${base}-tours`;
     }
     // Fallbacks
     const northIndia = ['varanasi', 'shirdi', 'ayodhya', 'prayagraj', 'gaya', 'kasi', 'guwahati', 'shillong', 'cherrapunji'];
-    if (northIndia.some(keyword => cityBase.includes(keyword))) {
+    if (northIndia.some(keyword => base.includes(keyword))) {
       return "/north-india-tour-packages";
     }
     return "/south-india-package";
@@ -188,22 +221,15 @@ export function DestinationOverview() {
         ) : (
           <img loading="lazy"
             src={dest.image}
+            srcSet={dest.srcSet}
+            sizes="100vw"
             alt={dest.name}
             className="absolute inset-0 w-full h-full object-cover"
           />
         )}
-        <div className="absolute inset-0 z-20 flex flex-col justify-end pt-32 pb-16 px-6 max-w-7xl mx-auto">
-          <div className="flex flex-wrap items-center gap-2 text-white/80 text-base md:text-lg font-medium mb-4">
-            <Link to="/" className="hover:text-white transition-colors">Home</Link>
-            <ChevronRight className="w-4 h-4 relative top-[-7px] md:top-0" />
-            <Link to={(() => {
-              const northCities = ['shirdi', 'varanasi', 'ayodhya', 'guwahati', 'shillong', 'cherrapunji', 'kasi', 'prayagraj'];
-              return northCities.some(k => (city || '').includes(k)) ? '/north-india-tour-packages' : '/south-india-package';
-            })()} className="hover:text-white transition-colors">Destinations</Link>
-            <ChevronRight className="w-4 h-4 relative top-[-7px] md:top-0" />
-            <span className="text-white relative top-[-7px] md:top-0">{dest.name}</span>
-          </div>
-          <h1 className="text-4xl md:text-6xl font-display font-bold text-white max-w-4xl leading-tight">
+        <div className="absolute inset-0 z-20 flex flex-col justify-end pt-28 md:pt-32 pb-16 px-6 max-w-7xl mx-auto">
+          <Breadcrumb variant="hero" lastItemTitle={dest?.name} />
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-display font-bold text-white max-w-4xl leading-tight">
             {dest.name}
           </h1>
           <p className="text-white/90 text-lg mt-4 max-w-2xl">
@@ -221,10 +247,10 @@ export function DestinationOverview() {
           {/* Overview Section */}
           <div className="prose prose-slate max-w-none">
             <h2 className="text-3xl font-display font-bold text-slate-800 mb-6">{dest.overview.title}</h2>
-            <p className="text-slate-600 leading-relaxed text-lg mb-8">{dest.overview.description}</p>
+            <p className="text-slate-600 leading-relaxed text-lg mb-8 whitespace-pre-line">{dest.overview.description}</p>
 
             <h2 className="text-3xl font-display font-bold text-slate-800 mb-6">{dest.history.title}</h2>
-            <p className="text-slate-600 leading-relaxed text-lg mb-8">{dest.history.description}</p>
+            <p className="text-slate-600 leading-relaxed text-lg mb-8 whitespace-pre-line">{dest.history.description}</p>
 
             {dest.majorAttractions?.length > 0 &&
               !destNameLower.includes('madurai') &&
@@ -298,7 +324,13 @@ export function DestinationOverview() {
                 </div>
                 <button
                   type="button"
-                  onClick={() => navigate(`/places-to-visit/${state}/${city}`)}
+                  onClick={() => {
+                    if (cityBase === 'tamilnadu' || cityBase === 'kerala') {
+                      navigate(cityBase === 'tamilnadu' ? '/destination/tamilnadu/madurai-tourism' : '/destination/kerala/munnar-tourism');
+                    } else {
+                      navigate(`/${stateSlug}/${cityBase}`);
+                    }
+                  }}
                   className="hidden md:flex whitespace-nowrap text-sm font-bold bg-[var(--color-primary-forest)]/10 text-[var(--color-primary-forest)] hover:bg-[var(--color-primary-forest)] hover:text-white px-5 py-3.5 rounded-full transition-all hover:scale-105 shadow-sm border border-[var(--color-primary-forest)]/25 items-center justify-center gap-1.5 w-fit"
                 >
                   <span className="whitespace-nowrap">View all</span>
@@ -313,11 +345,28 @@ export function DestinationOverview() {
               ) : (
                 <div className="grid grid-cols-1 gap-6">
                   {filteredPlaces.slice(0, 4).map((place: any) => {
-                    const cityBase = city ? city.replace('-tourism', '') : '';
+                    const placeCityKey =
+                      destinationsData[`${place.id}-tourism`] ? `${place.id}-tourism` :
+                      destinationsData[place.id] ? place.id : null;
+
+                    const placeLink = (() => {
+                      if (placeCityKey) {
+                        const targetCity = destinationsData[placeCityKey];
+                        let stateSeg = 'tamilnadu';
+                        if (targetCity.state === 'Kerala') stateSeg = 'kerala';
+                        else if (targetCity.state === 'Karnataka') stateSeg = 'karnataka';
+                        else if (targetCity.state === 'Tamil Nadu') stateSeg = 'tamilnadu';
+                        else if (dest?.state === 'Kerala') stateSeg = 'kerala';
+                        else if (dest?.state === 'Karnataka') stateSeg = 'karnataka';
+                        return `/destination/${stateSeg}/${placeCityKey}`;
+                      }
+                      return `/${stateSlug}/${cityBase}/${place.id}`;
+                    })();
+
                     return (
-                      <Link key={place.id} to={`/place/${state}/${cityBase}/${place.id}`} className={`${clayCard} overflow-hidden group flex flex-col md:flex-row cursor-pointer`}>
+                      <Link key={place.id} to={placeLink} className={`${clayCard} overflow-hidden group flex flex-col md:flex-row cursor-pointer`}>
                         <div className="relative h-56 md:h-auto md:w-2/5 m-2 md:m-3 rounded-[2rem] overflow-hidden shrink-0 min-h-[200px]">
-                          <img loading="lazy" src={place.image} alt={place.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 absolute inset-0" />
+                          <img loading="lazy" src={place.image} srcSet={place.srcSet} sizes="(max-width: 768px) 100vw, 40vw" alt={place.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 absolute inset-0" />
                           <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-[var(--color-primary-forest)] z-10 shadow-sm">
                             {place.type}
                           </div>
@@ -339,7 +388,7 @@ export function DestinationOverview() {
               {filteredPlaces.length > 0 && (
                 <div className="mt-6 flex md:hidden justify-center w-full">
                   <Link
-                    to={`/places-to-visit/${state}/${city}`}
+                    to={cityBase === 'tamilnadu' ? '/destination/tamilnadu/madurai-tourism' : (cityBase === 'kerala' ? '/destination/kerala/munnar-tourism' : `/${stateSlug}/${cityBase}`)}
                     className="w-full text-center justify-center text-sm font-bold bg-[var(--color-primary-forest)]/10 text-[var(--color-primary-forest)] hover:bg-[var(--color-primary-forest)] hover:text-white px-5 py-3.5 rounded-2xl transition-all shadow-sm border border-[var(--color-primary-forest)]/25 flex items-center gap-1.5"
                   >
                     <span>View all places</span> <ChevronRight className="w-4 h-4" />
@@ -466,7 +515,11 @@ export function DestinationOverview() {
                   <h3 className="text-3xl font-display font-bold text-white mb-3">Custom {dest.name} Packages Available</h3>
                   <p className="text-white/80 max-w-2xl mx-auto">Our travel experts can design a personalized {dest.name} itinerary perfectly tailored to your requirements. Get a free quote today!</p>
                 </div>
-                <ComprehensiveEnquiryForm />
+                <ComprehensiveEnquiryForm
+                  defaultCountry={dest.state === 'International' ? 'International' : 'India'}
+                  defaultState={dest.state === 'International' ? '' : dest.state}
+                  defaultDestination={dest.name}
+                />
               </div>
             </div>
           )}
@@ -497,10 +550,6 @@ export function DestinationOverview() {
                 <span className="text-slate-500 font-medium">Major Festivals:</span>
                 <span className="text-slate-800 font-medium">{dest.info.festivals}</span>
               </li>
-              <li className="flex flex-col gap-1 mt-2 p-3 bg-amber-50 rounded-xl border border-amber-100">
-                <span className="text-amber-800 font-bold text-sm">Notes/Tips:</span>
-                <span className="text-amber-700 text-sm leading-snug">{dest.info.tips}</span>
-              </li>
             </ul>
           </div>
 
@@ -511,7 +560,7 @@ export function DestinationOverview() {
             </div>
             <h3 className="text-xl font-bold text-white mb-2">Get our assistance</h3>
             <p className="text-emerald-100 mb-6 text-sm">Want us to call you for easy booking?</p>
-            <p className="text-white/70 text-xs uppercase tracking-wider mb-1">Or call us at</p>
+            {/* <p className="text-white/70 text-xs uppercase tracking-wider mb-1">Or call us at</p> */}
             <a href="tel:+917397329776" className="text-2xl font-bold text-white hover:underline">+91 73973 29776</a>
           </div>
 

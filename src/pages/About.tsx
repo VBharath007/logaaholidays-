@@ -29,7 +29,7 @@ export function About() {
 
                 <div className="relative z-10 px-6 mt-16">
                     <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-                        <h1 className="text-5xl md:text-7xl font-bold text-white tracking-wide uppercase mb-6 font-display">
+                        <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-white tracking-wide uppercase mb-6 font-display">
                             About Us
                         </h1>
                         <div className="flex items-center justify-center gap-2 text-sm font-medium text-white/90 bg-white/10 backdrop-blur-md px-6 py-3 rounded-full border border-white/20 mx-auto w-fit ">
@@ -43,7 +43,7 @@ export function About() {
 
             {/* 2. Main Content */}
             <section className="relative z-20 -mt-14 max-w-7xl mx-auto px-6">
-                <div className="bg-white rounded-[3rem] p-8 md:p-12 ,0,0,0.05),-10px_-10px_30px_rgba(255,255,255,0.8),inset_2px_2px_5px_rgba(255,255,255,1)] border border-white">
+                <div className="bg-white rounded-3xl p-8 md:p-12 shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-white">
 
                     <div className="grid lg:grid-cols-12 gap-12 items-start">
 
@@ -67,7 +67,7 @@ export function About() {
                                     viewport={{ once: true }}
                                     className="relative z-10 text-slate-700 leading-loose"
                                 >
-                                    <span className="float-left text-6xl font-display text-[var(--color-primary-forest)] leading-none mr-3 mt-2 font-bold">A</span>
+                                    <span className="float-left text-6xl font-display text-[var(--color-primary-forest)] leading-none mr-1 mt-2 font-bold">A</span>
                                     t Logaa Holidays, we believe every holiday should be a memorable experience filled with comfort, happiness, and unforgettable moments. Based in Madurai, we are a professional travel company dedicated to offering carefully planned itineraries and comprehensive travel services tailored to your specific needs and budget.
                                 </motion.p>
 
@@ -196,33 +196,32 @@ export function About() {
 
             {/* 3. Mission & Goal */}
             <section className="max-w-7xl mx-auto px-6 mt-12 grid md:grid-cols-2 gap-8">
-                <div className="bg-[var(--color-primary-forest)] text-white rounded-[3rem] p-10 ,93,62,0.2),-10px_-10px_30px_rgba(255,255,255,0.8),inset_2px_2px_5px_rgba(255,255,255,0.1)] border border-white/10 relative overflow-hidden group">
-                    <div className="absolute -right-10 -top-10 text-white/5 group-hover:scale-110 transition-transform duration-700">
+                <div className="bg-[var(--color-primary-forest)]/5 text-slate-800 rounded-3xl p-10 shadow-sm border border-[var(--color-primary-forest)]/10 relative overflow-hidden group">
+                    <div className="absolute -right-10 -top-10 text-[var(--color-primary-forest)]/5 group-hover:scale-110 transition-transform duration-700">
                         <Target className="w-64 h-64" />
                     </div>
                     <div className="relative z-10">
-                        <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mb-6 backdrop-blur-md">
-                            <Target className="w-8 h-8 text-white" />
+                        <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm">
+                            <Target className="w-8 h-8 text-[var(--color-primary-forest)]" />
                         </div>
-                        <h3 className="text-3xl font-bold mb-4 font-display">Our Mission</h3>
-                        <p className="text-white/90 text-lg leading-relaxed">
-                            Our Mission is to Inspire, Educate and Fulfill Dreams by providing Best travel experiences.
+                        <h3 className="text-3xl font-bold mb-4 font-display text-[var(--color-primary-forest)]">Our Mission</h3>
+                        <p className="text-slate-600 text-lg leading-relaxed">
+                            Our mission is to inspire, educate and fulfill travel dreams by providing exceptional travel experiences.
                         </p>
                     </div>
                 </div>
 
-                <div className="bg-[var(--color-blue-ocean)] text-white rounded-[3rem] p-10 ,132,199,0.2),-10px_-10px_30px_rgba(255,255,255,0.8),inset_2px_2px_5px_rgba(255,255,255,0.1)] border border-white/10 relative overflow-hidden group">
-                    <div className="absolute -right-10 -top-10 text-white/5 group-hover:scale-110 transition-transform duration-700">
+                <div className="bg-[var(--color-blue-ocean)]/5 text-slate-800 rounded-3xl p-10 shadow-sm border border-[var(--color-blue-ocean)]/10 relative overflow-hidden group">
+                    <div className="absolute -right-10 -top-10 text-[var(--color-blue-ocean)]/5 group-hover:scale-110 transition-transform duration-700">
                         <Flag className="w-64 h-64" />
                     </div>
                     <div className="relative z-10">
-                        <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mb-6 backdrop-blur-md">
-                            <Flag className="w-8 h-8 text-white" />
+                        <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm">
+                            <Flag className="w-8 h-8 text-[var(--color-blue-ocean)]" />
                         </div>
-                        <h3 className="text-3xl font-bold mb-4 font-display">Our Goal</h3>
-                        <p className="text-white/90 text-lg leading-relaxed">
-                            Our Goal is to Create an environmentally and socially conscious approach to tourism that brings forth a high quality of personality and trust, in turn creating an everlasting memory.
-                        </p>
+                        <h3 className="text-3xl font-bold mb-4 font-display text-[var(--color-blue-ocean)]">Our Goal</h3>
+                        <p className="text-slate-600 text-lg leading-relaxed">
+                            Our goal is to promote environmentally and socially responsible tourism while delivering high-quality service and building lasting customer trust.                    </p>
                     </div>
                 </div>
             </section>

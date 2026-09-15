@@ -1,0 +1,263 @@
+================================================================================
+LOGAA HOLIDAYS — LUXURY HONEYMOON PACKAGES SPECIFICATION
+File: honeymoonpackage.txt
+Description: Complete implementation and architectural reference specification 
+             for the dedicated Honeymoon Packages landing page and destination 
+             network across Logaa Holidays.
+================================================================================
+
+1. BRAND & DESIGN PHILOSOPHY
+--------------------------------------------------------------------------------
+The Honeymoon Packages landing page embodies a seamless fusion of:
+  • Ultra-luxury romantic escapism (gentle curves, glassmorphism, ethereal transitions).
+  • Logaa Holidays signature visual identity:
+      - Deep forest green: #0B5D3E (--color-primary-forest)
+      - Rich emerald green: #167A58 (--color-primary-emerald)
+      - Ocean blue accent: #0284C7 (--color-blue-ocean)
+      - Soft gold highlight: #D4A017 (--color-accent-gold)
+      - Luxury background: #F5F7F9 (--color-bg-luxury)
+      - Primary typography: Cormorant Garamond serif (font-display)
+      - Secondary typography: Outfit sans-serif (font-body)
+      - Delicate script accents: Great Vibes / Italian script
+  • Elevated travel aesthetic:
+      - Smooth hover scale transforms
+      - Rich dark vignette gradients behind high-contrast text
+      - Pill badges with soft translucent backdrop blur (backdrop-blur-md)
+      - Floating trust cards and micro-interactions
+      - No generic flat Bootstrap containers; only tailored, organic, and sculptural cards.
+
+2. NAVIGATION & ROUTE INTEGRATION
+--------------------------------------------------------------------------------
+The new Honeymoon Packages landing page connects seamlessly with the existing router
+and global layout without duplicating Navbar or Footer components.
+
+• Main Landing Page Route:
+  /honeymoon-packages
+  (Alias redirect supported: /honeymoon-package -> /honeymoon-packages)
+
+• Connected Category Destination Routes:
+  1. Tamil Nadu:         /tour-packages/tamil-nadu-honeymoon-packages
+  2. Kerala:             /tour-packages/kerala-honeymoon-packages
+  3. Karnataka:          /tour-packages/karnataka-honeymoon-packages
+  4. Goa:                /tour-packages/goa-honeymoon-packages
+  5. Kashmir:            /tour-packages/kashmir-honeymoon-packages
+  6. Himachal Pradesh:   /tour-packages/himachal-honeymoon-packages
+  7. Sikkim & Darjeeling:/tour-packages/sikkim-darjeeling-honeymoon-packages
+  8. Andaman:            /tour-packages/andaman-honeymoon-packages
+  9. Maldives:           /tour-packages/maldives-honeymoon-packages
+
+• Navbar Updates:
+  The parent link for "Honeymoon Package" in Navbar.tsx changes from '#' to 
+  '/honeymoon-packages', enabling desktop and mobile users to access the overarching
+  landing experience, while retaining the existing nested category dropdown.
+
+• Footer Integration:
+  Reuses the existing Footer component, ensuring proper bottom clearance and
+  full responsiveness across desktop and mobile devices.
+
+3. PAGE ARCHITECTURE & SECTION-BY-SECTION BLUEPRINT
+--------------------------------------------------------------------------------
+
+[SECTION 1: HERO]
+• Title: "Celebrate Love Across Beautiful Destinations" / "Your Perfect Honeymoon Begins Here"
+• Eyebrow Pill: "Handcrafted Romance Across India & Beyond" with heart icon
+• Subheading:
+  "Discover handpicked honeymoon packages designed for unforgettable moments, 
+   romantic stays and beautiful journeys."
+• Background:
+  High-resolution travel imagery (/assets/home hero/honeymoon.webp) with a dark gradient
+  and emerald ambient vignette overlay ensuring crisp readability.
+• Action CTAs:
+  - Primary Button: "Explore Packages" (Smooth-scroll anchor to #destinations)
+  - Secondary Button: "Plan Your Honeymoon" (Quick link to WhatsApp consultation)
+• Trust Indicators Row:
+  - 500+ Couples Celebrated
+  - 100% Tailor-Made Itineraries
+  - Handpicked Romantic Resorts
+  - 24/7 Dedicated Concierge Support
+
+[SECTION 2: INTRODUCTION & ROMANCE PILLARS]
+• Section Header:
+  "Discover Your Dream Honeymoon Destination"
+• Overview Copy:
+  "At Logaa Holidays, we believe your honeymoon should be as extraordinary as your 
+   love story. From the misty tea gardens of Munnar and the serene houseboats of Alleppey 
+   to the snow-capped peaks of Kashmir and the turquoise lagoons of the Maldives, 
+   every itinerary is thoughtfully curated with intimate stays, private transfers, 
+   candlelit dining, and unforgettable experiences."
+• Quick Feature Cards:
+  1. Candlelit Dining & Special Surprises
+  2. Private Chauffeur & Seamless Transfers
+  3. Tailored Pacing with Zero Stress
+
+[SECTION 3: THE HONEYMOON DESTINATIONS GRID (CORE HIGHLIGHT)]
+An asymmetric, editorial-grade card layout featuring 9 iconic honeymoon destinations.
+
+Card Visual Standards:
+  • Rounded corners: 24px - 28px (rounded-3xl)
+  • Smooth zoom-in on hover (scale-105 duration-700)
+  • Gradient scrim (from-black/85 via-black/30 to-transparent)
+  • Category chip / pill badge
+  • Subtitle & romantic synopsis
+  • "Explore Packages" action button with animated chevron
+  • Full card clickability linking to the destination tour category route.
+
+Destination Specifications:
+
+1. TAMIL NADU
+   • Title: Tamil Nadu Honeymoon Packages
+   • Category: Hill Stations, Mist & Heritage
+   • Description: Explore romantic hill stations, heritage destinations, misty viewpoints, and peaceful escapes across Tamil Nadu.
+   • Key Highlights: Ooty, Kodaikanal, Yercaud, Coonoor
+   • Image Asset: /assets/TKK hero/Tamilnadu1.webp
+   • Route: /tour-packages/tamil-nadu-honeymoon-packages
+   • Layout Weight: Large Featured Card (Spans 2 columns on desktop)
+
+2. KERALA
+   • Title: Kerala Honeymoon Packages
+   • Category: Backwaters & Misty Hills
+   • Description: Experience romantic houseboats, misty Munnar hills, emerald tea gardens, and luxury stays.
+   • Key Highlights: Munnar, Alleppey Houseboat, Thekkady, Wayanad
+   • Image Asset: /assets/TKK hero/kerala1.webp
+   • Route: /tour-packages/kerala-honeymoon-packages
+   • Layout Weight: Standard Card
+
+3. KARNATAKA
+   • Title: Karnataka Honeymoon Packages
+   • Category: Coffee Estates & Forest Escapes
+   • Description: Discover romantic hill stations, coffee estates, waterfalls and peaceful royal heritage escapes.
+   • Key Highlights: Coorg, Chikmagalur, Kabini, Mysore
+   • Image Asset: /assets/TKK hero/karnataka1.webp
+   • Route: /tour-packages/karnataka-honeymoon-packages
+   • Layout Weight: Standard Card
+
+4. GOA
+   • Title: Goa Honeymoon Packages
+   • Category: Sunsets, Beaches & Cruises
+   • Description: Enjoy sun-kissed beaches, private sunset cruises, beachfront luxury resorts, and lively coastal romance.
+   • Key Highlights: North & South Goa, Mandovi Cruise, Candolim
+   • Image Asset: /assets/MG hero/goa1.webp
+   • Route: /tour-packages/goa-honeymoon-packages
+   • Layout Weight: Standard Card
+
+5. KASHMIR
+   • Title: Kashmir Honeymoon Packages
+   • Category: Paradise on Earth & Snow Valleys
+   • Description: Experience snow-covered mountains, beautiful pine valleys, Dal Lake houseboats, and breathtaking Himalayan landscapes.
+   • Key Highlights: Srinagar, Gulmarg Gondola, Pahalgam, Sonmarg
+   • Image Asset: /assets/AKS hero/Kashmir1.webp
+   • Route: /tour-packages/kashmir-honeymoon-packages
+   • Layout Weight: Large Featured Card (Spans 2 columns on desktop)
+
+6. HIMACHAL PRADESH
+   • Title: Himachal Pradesh Honeymoon Packages
+   • Category: Alpine Valleys & Snow Peaks
+   • Description: Escape into romantic mountain valleys, pine forests, snowfall, riverside retreats, and peaceful stays.
+   • Key Highlights: Manali, Shimla, Solang Valley, Kullu
+   • Image Asset: /assets/AKS hero/Himachal 1.webp
+   • Route: /tour-packages/himachal-honeymoon-packages
+   • Layout Weight: Standard Card
+
+7. SIKKIM & DARJEELING
+   • Title: Sikkim and Darjeeling Honeymoon Packages
+   • Category: Tea Gardens & Himalayan Vistas
+   • Description: Discover panoramic Kanchenjunga views, lush tea gardens, serene monasteries, and alpine lakes.
+   • Key Highlights: Gangtok, Darjeeling, Tsomgo Lake, Pelling
+   • Image Asset: /assets/AKS hero/sikim 1.webp
+   • Route: /tour-packages/sikkim-darjeeling-honeymoon-packages
+   • Layout Weight: Standard Card
+
+8. ANDAMAN
+   • Title: Andaman Honeymoon Packages
+   • Category: Turquoise Waters & Island Romance
+   • Description: Enjoy crystal clear waters, secluded island stays, radiant sunsets, and candlelit seaside dining.
+   • Key Highlights: Havelock Island, Radhanagar Beach, Neil Island
+   • Image Asset: /assets/AKS hero/Andaman1.webp
+   • Route: /tour-packages/andaman-honeymoon-packages
+   • Layout Weight: Standard Card
+
+9. MALDIVES
+   • Title: Maldives Honeymoon Packages
+   • Category: Overwater Villas & Tropical Luxury
+   • Description: Experience world-class overwater villas, turquoise ocean lagoons, and the ultimate romantic island escape.
+   • Key Highlights: Water Villas, Private Sandbanks, Coral Reefs
+   • Image Asset: /assets/MG hero/maldives1.webp
+   • Route: /tour-packages/maldives-honeymoon-packages
+   • Layout Weight: Large Featured Card (Spans 2 columns on desktop)
+
+[SECTION 4: FEATURED ROMANTIC EXPERIENCES]
+• Heading: "Every Love Story Deserves a Beautiful Journey"
+• Subheading:
+  "Thoughtful touches, bespoke romantic amenities, and intimate moments designed 
+   to celebrate the commencement of your lifelong journey together."
+• 3 Pillars:
+  1. Romantic Stays
+     "Hand-selected boutique properties, private pool villas, overwater bungalows, 
+      and plantation estates offering sheer privacy and enchanting views."
+  2. Personalized Itineraries
+     "Crafted exclusively around your preferences, balancing iconic sightseeing 
+      with relaxed mornings, candlelit evenings, and zero rush."
+  3. Memorable Experiences
+     "From flower-bed decorations and surprise honeymoon cakes to private sunset cruises 
+      and couple photoshoots in picturesque destinations."
+• Signature Inclusions Strip:
+  - Romantic Candlelight Dinners
+  - Welcome Drink & Flower Decoration
+  - Exclusive Private AC Vehicles
+  - Custom Cake & Surprise Amenities
+
+[SECTION 5: WHY CHOOSE LOGAA HOLIDAYS FOR YOUR HONEYMOON]
+• Layout: Two-column split with luxury visual showcase on left and benefits on right.
+• Left Media Card:
+  Couple travel imagery with floating glass badge:
+  "4.9 ★ Rating from 500+ Honeymoon Couples | 100% Verified Travel Partner"
+• Right Pillars:
+  1. 100% Customized Honeymoon Packages: Adjusted to match your rhythm and expectations.
+  2. Handpicked Couple-Friendly Stays: Screened for security, comfort, views, and hospitality.
+  3. Private & Discreet Chauffeurs: Courteous drivers dedicated to smooth travels.
+  4. Transparent Honest Pricing: No hidden costs, surprises, or last-minute compromises.
+  5. 24/7 Dedicated Honeymoon Concierge: Direct WhatsApp and phone support anytime.
+
+[SECTION 6: CALL TO ACTION (CTA)]
+• Headline: "Ready to Begin Your Forever Journey?"
+• Description:
+  "Let us help you plan a honeymoon filled with beautiful destinations, romantic moments 
+   and unforgettable memories. Speak to our holiday specialists today."
+• Actions:
+  - "Plan Your Honeymoon" -> WhatsApp direct booking consultation
+  - "Contact Us" -> /contact
+• Direct Assistance Callout: +91 73973 29776 | logaaholidays@gmail.com
+
+4. SEO & TECHNICAL SPECIFICATIONS
+--------------------------------------------------------------------------------
+• Page Title:
+  Honeymoon Packages | Romantic Holiday Packages | Logaa Holidays
+
+• Meta Description:
+  Discover romantic honeymoon packages from Logaa Holidays. Explore Kerala, Kashmir, 
+  Goa, Himachal, Andaman, Maldives and more with customized honeymoon travel packages.
+
+• Target Keywords:
+  honeymoon packages, romantic holiday packages, luxury honeymoon tours, kerala honeymoon, 
+  kashmir honeymoon, goa honeymoon, maldives honeymoon, andaman honeymoon, logaa holidays
+
+• Semantic HTML Structure:
+  <header> -> Hero section with single H1
+  <main>   -> Structured content sections with semantic H2s and <article> cards
+  <section>-> Dedicated sections with aria-labels
+  <aside>  -> Trust callouts
+
+• Structured Data (JSON-LD):
+  TravelAgency + ItemList schema linking all 9 honeymoon destination packages.
+
+5. RESPONSIVE BREAKPOINTS
+--------------------------------------------------------------------------------
+• Desktop (1440px - 1920px): Full asymmetric 3-column grid with featured spans.
+• Laptop (1024px - 1366px): 3-column & 2-column balanced layouts.
+• Tablet (768px - 1023px): 2-column grid, fluid padding, touch-friendly hover states.
+• Mobile (< 768px): Single-column clean vertical stack, touch targets ≥ 48px,
+  optimized media loading, zero horizontal scroll, crisp typography hierarchy.
+
+================================================================================
+END OF SPECIFICATION: honeymoonpackage.txt
+================================================================================

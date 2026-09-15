@@ -10,11 +10,11 @@ const rameshwaramData = `
     image: 'https://images.unsplash.com/photo-1627885065099-07525381a179?auto=format&fit=crop&q=80&w=1600',
     state: 'Tamil Nadu',
     overview: {
-      title: 'Rameshwaram Tourism',
-      description: 'Rameshwaram is a holy island town in Tamil Nadu, famous for its grand Ramanathaswamy Temple and the legendary Ram Setu. Known as the Varanasi of the South, it is one of the Char Dham pilgrimage sites.'
+      title: 'RameswaramTourism',
+      description: 'Rameswaramis a holy island town in Tamil Nadu, famous for its grand Ramanathaswamy Temple and the legendary Ram Setu. Known as the Varanasi of the South, it is one of the Char Dham pilgrimage sites.'
     },
     history: {
-      title: 'Rameshwaram History',
+      title: 'RameswaramHistory',
       description: 'According to Hindu mythology, this is the place from where Lord Rama built a bridge across the sea to Lanka to rescue his wife Sita from her abductor Ravana.'
     },
     info: {
@@ -132,7 +132,7 @@ if (!destContent.includes('rameshwaram-tourism')) {
     `export const destinationsData: Record<string, any> = {\n${rameshwaramData}\n${kanyakumariData}`
   );
   fs.writeFileSync('src/data/destinationsData.ts', destContent, 'utf8');
-  console.log('Added Rameshwaram & Kanyakumari data');
+  console.log('Added Rameswaram& Kanyakumari data');
 }
 
 // 2. UPDATE ALIAS LOGIC IN PackageDetails.tsx

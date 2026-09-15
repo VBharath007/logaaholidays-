@@ -13,7 +13,7 @@ const destPattern = /const destinations = \[[\s\S]*?\];/;
 const newDestinations = `const destinationGroups = [
   {
     region: 'Tamil Nadu',
-    places: ['Madurai Tours', 'Rameshwaram Tours', 'Kanyakumari Tours', 'Ooty Tours', 'Kodaikanal Tours', 'Chennai Tours']
+    places: ['Madurai Tours', 'RameswaramTours', 'Kanyakumari Tours', 'Ooty Tours', 'Kodaikanal Tours', 'Chennai Tours']
   },
   {
     region: 'Kerala',

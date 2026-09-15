@@ -332,7 +332,7 @@ export const FormWrapper = ({ title, subtitle, onSubmit, children }: any) => {
 
             {/* Where enquiry goes – info note */}
             <p className="text-xs text-white/40 mb-5">
-              📲 Your enquiry will be sent directly to our WhatsApp. Our team will respond within working hours.
+               Your enquiry will be sent directly to our WhatsApp. Our team will respond within working hours.
             </p>
 
             {/* Submit button */}

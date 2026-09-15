@@ -17,11 +17,11 @@ const newRameshwaramAndKanyakumari = `  'rameshwaram-tourism': {
     image: 'https://images.unsplash.com/photo-1627885065099-07525381a179?auto=format&fit=crop&q=80&w=1600',
     state: 'Tamil Nadu',
     overview: {
-      title: 'Rameshwaram Tourism',
-      description: 'Rameshwaram is a holy island town in Tamil Nadu, famous for its grand Ramanathaswamy Temple and the legendary Ram Setu. Known as the Varanasi of the South, it is one of the Char Dham pilgrimage sites.'
+      title: 'RameswaramTourism',
+      description: 'Rameswaramis a holy island town in Tamil Nadu, famous for its grand Ramanathaswamy Temple and the legendary Ram Setu. Known as the Varanasi of the South, it is one of the Char Dham pilgrimage sites.'
     },
     history: {
-      title: 'Rameshwaram History',
+      title: 'RameswaramHistory',
       description: 'According to Hindu mythology, this is the place from where Lord Rama built a bridge across the sea to Lanka to rescue his wife Sita from her abductor Ravana.'
     },
     info: {
@@ -53,7 +53,7 @@ const newRameshwaramAndKanyakumari = `  'rameshwaram-tourism': {
         details: {
           timings: '5:00 AM - 1:00 PM and 3:00 PM - 9:00 PM',
           entryFee: 'No fee (Special Darshan ₹50 - ₹200)',
-          distance: 'In the center of Rameshwaram Island',
+          distance: 'In the center of RameswaramIsland',
           duration: '2 - 3 Hours',
           transport: 'Auto Rickshaw, Walking',
           tips: 'It is highly recommended to take a holy dip in the Agniteertham first, followed by bathing in the 22 holy wells inside the temple before entering the main shrine. Mobile phones are strictly prohibited.',
@@ -115,7 +115,7 @@ const newRameshwaramAndKanyakumari = `  'rameshwaram-tourism': {
         details: {
           timings: 'Open 24 Hours (Best viewed during train crossings)',
           entryFee: 'No fee',
-          distance: '15 kilometer from Rameshwaram town',
+          distance: '15 kilometer from Rameswaramtown',
           duration: '1 Hour',
           transport: 'Taxi, Auto Rickshaw, Bus',
           tips: 'Try to time your visit to watch a train pass over the bridge. The wind can be extremely strong, so hold onto your hats and cameras!',
@@ -422,4 +422,4 @@ const newRameshwaramAndKanyakumari = `  'rameshwaram-tourism': {
 const updatedContent = fileContent.substring(0, rameshwaramStartIndex) + newRameshwaramAndKanyakumari + '\n' + fileContent.substring(maduraiStartIndex);
 
 fs.writeFileSync('src/data/destinationsData.ts', updatedContent, 'utf8');
-console.log('Successfully updated Rameshwaram and Kanyakumari');
+console.log('Successfully updated Rameswaramand Kanyakumari');

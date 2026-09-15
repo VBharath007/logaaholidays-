@@ -24,25 +24,33 @@ export function JourneyTimeline() {
     const container = containerRef.current
     if (!section || !container) return
 
-    // Calculate total scroll width
-    const scrollWidth = container.scrollWidth - window.innerWidth + window.innerWidth * 0.2
+    let ctx: ReturnType<typeof gsap.context> | null = null
 
-    const ctx = gsap.context(() => {
-      gsap.to(container, {
-        x: -scrollWidth,
-        ease: 'none',
-        scrollTrigger: {
-          trigger: section,
-          start: 'top top',
-          end: () => `+=${scrollWidth}`,
-          scrub: 1,
-          pin: true,
-          anticipatePin: 1,
-        },
-      })
-    }, section)
+    // Defer the scrollWidth DOM read to after the browser's first paint/layout
+    // so we don't force a synchronous reflow at effect time.
+    const rafId = requestAnimationFrame(() => {
+      const scrollWidth = container.scrollWidth - window.innerWidth + window.innerWidth * 0.2
 
-    return () => ctx.revert()
+      ctx = gsap.context(() => {
+        gsap.to(container, {
+          x: -scrollWidth,
+          ease: 'none',
+          scrollTrigger: {
+            trigger: section,
+            start: 'top top',
+            end: () => `+=${scrollWidth}`,
+            scrub: 1,
+            pin: true,
+            anticipatePin: 1,
+          },
+        })
+      }, section)
+    })
+
+    return () => {
+      cancelAnimationFrame(rafId)
+      ctx?.revert()
+    }
   }, [])
 
   return (

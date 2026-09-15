@@ -51,9 +51,9 @@ export function NorthIndiaPackage() {
     <div className="bg-[#eff3f5] min-h-screen pb-32">
 
       {/* 1. Hero Header & Search Bar */}
-      <section className="relative h-[80vh] min-h-[600px] w-full bg-slate-900 rounded-b-[4rem]">
+      <section className="relative h-[80vh] min-h-[600px] w-full bg-slate-900 rounded-b-[3rem]">
         {/* Background Aerial Image */}
-        <div className="absolute inset-0 overflow-hidden rounded-b-[4rem]">
+        <div className="absolute inset-0 overflow-hidden rounded-b-[3rem]">
           <img loading="lazy"
             src='/assets/Uttar Pradesh4.webp'
             alt="North India Heritage"
@@ -74,7 +74,7 @@ export function NorthIndiaPackage() {
             href="https://wa.me/917397329776?text=Hi%20Logaa%20Holidays%2C%20I%20would%20like%20to%20know%20more%20about%20your%20tour%20packages."
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#48c9b0] text-white px-8 py-3 rounded-full font-bold hover:bg-[#3ba893] transition-colors tracking-wide text-lg inline-flex items-center justify-center"
+            className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:opacity-90 shadow-lg text-white font-bold rounded-xl transition-transform hover:scale-[1.02] active:scale-95 px-8 py-4 flex items-center justify-center gap-2 text-lg"
           >
             Enquire Now
           </a>
@@ -107,31 +107,14 @@ export function NorthIndiaPackage() {
 
       {/* 2. Interactive Destination Filter (Pill Layout) */}
       <section className="pt-20 sm:pt-32 pb-16 px-6 max-w-[1400px] mx-auto overflow-hidden">
-        <div className="flex flex-col xl:flex-row items-center gap-8 justify-center">
-
-          {/* Left Oval Image */}
-          <div className="hidden lg:block w-72 h-[450px] rounded-[100px] overflow-hidden flex-shrink-0 relative">
-            <AnimatePresence mode="wait">
-              <motion.img
-                key={activePlaceData?.images[0]}
-                initial={{ opacity: 0, scale: 1.1 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.5 }}
-                src={activePlaceData?.images[0]}
-                alt="Destination preview"
-                className="w-full h-full object-cover"
-              />
-            </AnimatePresence>
-          </div>
-
-          {/* Center Text & Pill Tags */}
-          <div className="flex flex-col items-center justify-center min-w-[300px] max-w-lg text-center px-4">
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-slate-900 mb-8 uppercase tracking-wide">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left: Text & Pill Tags */}
+          <div className="flex flex-col items-start justify-center text-left px-4">
+            <h2 className="text-3xl md:text-5xl font-display font-bold text-slate-900 mb-8 tracking-wide">
               Choose Your<br />Destination
             </h2>
 
-            <div className="flex flex-wrap justify-center gap-3">
+            <div className="flex flex-wrap justify-start gap-3">
               {places.map((place) => (
                 <button
                   key={place.id}
@@ -147,8 +130,8 @@ export function NorthIndiaPackage() {
             </div>
           </div>
 
-          {/* Right Oval Images (Two smaller ones) */}
-          <div className="hidden lg:flex gap-6 flex-shrink-0">
+          {/* Right: Oval Images Collage */}
+          <div className="hidden lg:flex gap-6 justify-center relative">
             <div className="w-56 h-[350px] rounded-[100px] overflow-hidden relative mt-12">
               <AnimatePresence mode="wait">
                 <motion.img
@@ -163,15 +146,15 @@ export function NorthIndiaPackage() {
                 />
               </AnimatePresence>
             </div>
-            <div className="hidden xl:block w-56 h-[350px] rounded-[100px] overflow-hidden relative">
+            <div className="w-56 h-[400px] rounded-[100px] overflow-hidden relative">
               <AnimatePresence mode="wait">
                 <motion.img
-                  key={activePlaceData?.images[2] || activePlaceData?.images[0]}
-                  initial={{ opacity: 0, y: -20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 20 }}
-                  transition={{ duration: 0.5, delay: 0.2 }}
-                  src={activePlaceData?.images[2] || activePlaceData?.images[0]}
+                  key={activePlaceData?.images[0]}
+                  initial={{ opacity: 0, scale: 1.1 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.9 }}
+                  transition={{ duration: 0.5 }}
+                  src={activePlaceData?.images[0]}
                   alt="Destination preview"
                   className="w-full h-full object-cover"
                 />
@@ -184,7 +167,7 @@ export function NorthIndiaPackage() {
 
       <section className="px-6 py-16 max-w-[1200px] mx-auto">
         <div className="mb-12 text-center">
-          <h2 className="text-3xl md:text-5xl font-display font-bold text-slate-900 mb-4 uppercase tracking-wide">
+          <h2 className="text-3xl md:text-5xl font-display font-bold text-slate-900 mb-4 tracking-wide">
             Explore North India
           </h2>
           <p className="text-slate-600 font-medium">Choose your spiritual journey</p>
@@ -192,7 +175,7 @@ export function NorthIndiaPackage() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {/* Shirdi Card */}
-          <div className="group relative rounded-[2.5rem] overflow-hidden bg-white shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-slate-100 flex flex-col h-[450px]">
+          <div className="group relative rounded-3xl overflow-hidden bg-white shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-slate-100 flex flex-col h-[450px]">
             <div className="absolute inset-0">
               <img loading="lazy" src="/assets/maharashtra2.webp" alt="Shirdi Tour Packages from Madurai - Logaa Holidays" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
@@ -200,15 +183,15 @@ export function NorthIndiaPackage() {
 
             <div className="relative z-10 p-8 flex flex-col h-full justify-end text-center items-center">
               <h3 className="text-3xl font-display font-bold text-white mb-3 drop-shadow-md">Shirdi Tours</h3>
-              <p className="text-white/90 text-sm mb-8 drop-shadow-md max-w-sm">Experience the divine presence of Sai Baba with our exclusive packages.</p>
-              <Link to="/north-india-tour-packages/shirdi-tours" className="inline-flex items-center justify-center w-full bg-[#89d4cf] text-slate-900 font-bold py-4 rounded-xl hover:bg-[#72c2bd] transition-colors shadow-lg">
+              <p className="text-white/90 text-base mb-8 drop-shadow-md max-w-sm">Experience the divine presence of Sai Baba with our exclusive packages.</p>
+              <Link to="/north-india-tour-packages/shirdi-tours" className="inline-flex items-center justify-center w-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:opacity-90 text-white font-bold py-4 rounded-xl transition-transform hover:scale-[1.02] active:scale-95 shadow-lg">
                 Explore Tour
               </Link>
             </div>
           </div>
 
           {/* Varanasi Card */}
-          <div className="group relative rounded-[2.5rem] overflow-hidden bg-white shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-slate-100 flex flex-col h-[450px]">
+          <div className="group relative rounded-3xl overflow-hidden bg-white shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-slate-100 flex flex-col h-[450px]">
             <div className="absolute inset-0">
               <img loading="lazy" src="/assets/Uttar Pradesh1.webp" alt="Varanasi Kasi Tour Packages from Madurai - Logaa Holidays" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
@@ -216,15 +199,15 @@ export function NorthIndiaPackage() {
 
             <div className="relative z-10 p-8 flex flex-col h-full justify-end text-center items-center">
               <h3 className="text-3xl font-display font-bold text-white mb-3 drop-shadow-md">Varanasi Tours</h3>
-              <p className="text-white/90 text-sm mb-8 drop-shadow-md max-w-sm">Discover the spiritual heart of India with our premium Kasi packages.</p>
-              <Link to="/north-india-tour-packages/varanasi-tours" className="inline-flex items-center justify-center w-full bg-[#89d4cf] text-slate-900 font-bold py-4 rounded-xl hover:bg-[#72c2bd] transition-colors shadow-lg">
+              <p className="text-white/90 text-base mb-8 drop-shadow-md max-w-sm">Discover the spiritual heart of India with our premium Kasi packages.</p>
+              <Link to="/north-india-tour-packages/varanasi-tours" className="inline-flex items-center justify-center w-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:opacity-90 text-white font-bold py-4 rounded-xl transition-transform hover:scale-[1.02] active:scale-95 shadow-lg">
                 Explore Tour
               </Link>
             </div>
           </div>
 
           {/* Golden Triangle Card */}
-          <div className="group relative rounded-[2.5rem] overflow-hidden bg-white shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-slate-100 flex flex-col h-[450px]">
+          <div className="group relative rounded-3xl overflow-hidden bg-white shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-slate-100 flex flex-col h-[450px]">
             <div className="absolute inset-0">
               <img loading="lazy" src="/assets/dehli/dehli.webp" alt="Golden Triangle Delhi Agra Jaipur Tour Packages - Logaa Holidays" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
@@ -232,8 +215,8 @@ export function NorthIndiaPackage() {
 
             <div className="relative z-10 p-8 flex flex-col h-full justify-end text-center items-center">
               <h3 className="text-3xl font-display font-bold text-white mb-3 drop-shadow-md">Golden Triangle</h3>
-              <p className="text-white/90 text-sm mb-8 drop-shadow-md max-w-sm">Explore the majestic heritage of Delhi, Agra, and Jaipur.</p>
-              <Link to="/north-india-tour-packages/golden-triangle-tours" className="inline-flex items-center justify-center w-full bg-[#89d4cf] text-slate-900 font-bold py-4 rounded-xl hover:bg-[#72c2bd] transition-colors shadow-lg">
+              <p className="text-white/90 text-base mb-8 drop-shadow-md max-w-sm">Explore the majestic heritage of Delhi, Agra, and Jaipur.</p>
+              <Link to="/north-india-tour-packages/golden-triangle-tours" className="inline-flex items-center justify-center w-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:opacity-90 text-white font-bold py-4 rounded-xl transition-transform hover:scale-[1.02] active:scale-95 shadow-lg">
                 Explore Tour
               </Link>
             </div>
@@ -275,7 +258,7 @@ function NorthIndiaFAQ() {
 
   return (
     <section className="px-6 py-16 max-w-[900px] mx-auto">
-      <div className="bg-white rounded-[2.5rem] p-8 md:p-10 shadow-sm border border-slate-100">
+      <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-slate-100">
         <div className="flex items-center gap-2 mb-8">
           <Star className="w-5 h-5 text-[#48c9b0]" />
           <h2 className="text-2xl font-bold text-slate-900">Frequently Asked Questions</h2>

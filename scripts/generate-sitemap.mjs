@@ -24,6 +24,9 @@ const staticRoutes = [
   '/privacy-policy',
   '/terms-and-conditions',
   '/cancellation-policy',
+  '/tamilnadu-tourism',
+  '/kerala-tourism',
+  '/andaman-tourism',
 ];
 
 const packageFilePath = path.join(rootDir, 'src', 'pages', 'PackageDetails.tsx');
@@ -34,19 +37,34 @@ const packageUrls = [...new Set(
   canonicalMatches
     .map((match) => match[1])
     .filter((value) => value.startsWith(siteUrl))
-    .map((value) => new URL(value).pathname)
+    .map((value) => {
+      let route = new URL(value).pathname;
+      // Convert old /destination/... URLs to clean /tour-packages/...
+      if (route.startsWith('/destination/')) {
+        const parts = route.split('/');
+        const slug = parts[parts.length - 1];
+        let category = parts[parts.length - 2];
+        if (category && category.endsWith('-tourism')) {
+            category = category.replace('-tourism', '-tours');
+        } else if (!category) {
+            category = 'packages';
+        }
+        route = `/tour-packages/${category}/${slug}`;
+      }
+      return route;
+    })
 )];
 
 const allUrls = [...new Set([...staticRoutes, ...packageUrls])];
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  ${allUrls
-    .map((route) => {
-      const priority = route === '/' ? '1.0' : '0.8';
-      return `  <url>\n    <loc>${siteUrl}${route}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>${priority}</priority>\n  </url>`;
-    })
-    .join('\n')}
+${allUrls
+  .map((route) => {
+    const priority = route === '/' ? '1.0' : '0.8';
+    return `  <url>\n    <loc>${siteUrl}${route}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>${priority}</priority>\n  </url>`;
+  })
+  .join('\n')}
 </urlset>
 `;
 

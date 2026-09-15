@@ -16,15 +16,23 @@ interface ScrollFlyInProps extends React.HTMLAttributes<HTMLDivElement> {
 const ScrollFlyIn = React.forwardRef<HTMLDivElement, ScrollFlyInProps>(
   ({ children, secondText, bottomContent, background, imageUrl, imageAlt = "Animated image", className, ...props }, ref) => {
     const targetRef = React.useRef<HTMLDivElement>(null);
-    const screenWidth = typeof window !== 'undefined' ? window.innerWidth : 1200;
+    // Initialize with a safe default; update after mount to avoid a
+    // forced synchronous layout read during the render phase.
+    const screenWidthRef = React.useRef(1200);
+
+    React.useEffect(() => {
+      screenWidthRef.current = window.innerWidth;
+    }, []);
 
     const { scrollYProgress } = useScroll({
       target: targetRef,
       offset: ["start start", "end end"],
     });
 
-    // 0 to 0.4: Plane flies across
-    const planeX = useTransform(scrollYProgress, [0, 0.4], [`-${1.5*screenWidth}px`, `${1.5*screenWidth}px`]);
+    // Use the ref value at animation derivation time — useTransform values
+    // are computed lazily when scrollYProgress updates, so screenWidthRef.current
+    // will already be set correctly by then (after mount).
+    const planeX = useTransform(scrollYProgress, [0, 0.4], [`-${1.5*screenWidthRef.current}px`, `${1.5*screenWidthRef.current}px`]);
     const planeOpacity = useTransform(scrollYProgress, [0, 0.1, 0.3, 0.4], [0, 1, 1, 0]);
 
     // 0.35 to 0.45: First Text fades out

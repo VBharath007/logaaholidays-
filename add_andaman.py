@@ -4,8 +4,8 @@ import re
 packages_code = """
     '9601': {
         "title": "Port Blair Honeymoon Package – 2 Nights / 3 Days",
-        "image": "/assets/andaman_hero.png",
-        "heroImage": "/assets/andaman_hero.png",
+        "image": "/assets/andaman_hero.webp",
+        "heroImage": "/assets/andaman_hero.webp",
         "overview": {
             "duration": "2 Nights / 3 Days",
             "destination": "Port Blair",
@@ -119,8 +119,8 @@ packages_code = """
     '9602': {
         "title": "Port Blair and Havelock Honeymoon – 3 Nights / 4 Days",
         "badge": "Most Popular",
-        "image": "/assets/andaman_hero.png",
-        "heroImage": "/assets/andaman_hero.png",
+        "image": "/assets/andaman_hero.webp",
+        "heroImage": "/assets/andaman_hero.webp",
         "overview": {
             "duration": "3 Nights / 4 Days",
             "destination": "Port Blair, Havelock Island",
@@ -245,8 +245,8 @@ packages_code = """
     },
     '9603': {
         "title": "Havelock and Neil Island Honeymoon – 4 Nights / 5 Days",
-        "image": "/assets/andaman_hero.png",
-        "heroImage": "/assets/andaman_hero.png",
+        "image": "/assets/andaman_hero.webp",
+        "heroImage": "/assets/andaman_hero.webp",
         "overview": {
             "duration": "4 Nights / 5 Days",
             "destination": "Port Blair, Havelock Island, Neil Island",
@@ -384,8 +384,8 @@ packages_code = """
     '9604': {
         "title": "Complete Andaman Honeymoon Package – 5 Nights / 6 Days",
         "badge": "Premium",
-        "image": "/assets/andaman_hero.png",
-        "heroImage": "/assets/andaman_hero.png",
+        "image": "/assets/andaman_hero.webp",
+        "heroImage": "/assets/andaman_hero.webp",
         "overview": {
             "duration": "5 Nights / 6 Days",
             "destination": "Port Blair, Havelock Island, Neil Island",

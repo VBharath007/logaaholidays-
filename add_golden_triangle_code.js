@@ -2,8 +2,8 @@ module.exports = {
     '8001': {
         "title": "Delhi – Mathura – Vrindavan – Agra Tour Package",
         "badge": "Golden Triangle Tour",
-        "image": "/assets/Logaa holidays/Dehli2n3d/Delhi.png",
-        "heroImage": "/assets/Logaa holidays/Dehli2n3d/Delhi hero.png",
+        "image": "/assets/Logaa holidays/Dehli2n3d/Delhi.webp",
+        "heroImage": "/assets/Logaa holidays/Dehli2n3d/Delhi hero.webp",
         "overview": {
             "duration": "2 Nights / 3 Days",
             "destination": "Delhi – Mathura – Vrindavan – Agra",
@@ -42,8 +42,8 @@ module.exports = {
     '8002': {
         "title": "Delhi – Mathura – Vrindavan – Agra Tour Package",
         "badge": "Golden Triangle Tour",
-        "image": "/assets/Logaa holidays/Delhi3n4d/Delhi.png",
-        "heroImage": "/assets/Logaa holidays/Delhi3n4d/Delhi hero.png",
+        "image": "/assets/Logaa holidays/Delhi3n4d/Delhi.webp",
+        "heroImage": "/assets/Logaa holidays/Delhi3n4d/Delhi hero.webp",
         "overview": {
             "duration": "3 Nights / 4 Days",
             "destination": "Delhi – Mathura – Vrindavan – Agra",

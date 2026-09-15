@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Play, Image as ImageIcon, Video } from 'lucide-react';
+import { useSEO } from '../hooks/useSEO';
 
 const galleryItems = [
   { id: 1, type: 'image', src: '/assets/gallery/1.webp' },
@@ -22,6 +23,24 @@ const galleryItems = [
 type FilterType = 'all' | 'image' | 'video';
 
 export function Gallery() {
+  useSEO(
+    'Our Gallery | Logaa Holidays',
+    'Explore the beautiful moments and breathtaking destinations captured with Logaa Holidays across Tamil Nadu, South India and beyond.',
+    'Logaa Holidays Gallery, Tour Photos, Travel Gallery Madurai, Tamil Nadu Tourism Gallery',
+    undefined,
+    {
+      canonicalUrl: 'https://logaaholidays.com/gallery',
+      ogTitle: 'Our Gallery | Logaa Holidays',
+      ogDescription: 'Explore the beautiful moments and breathtaking destinations captured with Logaa Holidays across Tamil Nadu, South India and beyond.',
+      ogUrl: 'https://logaaholidays.com/gallery',
+      ogImage: 'https://logaaholidays.com/og-image.jpg',
+      twitterCard: 'summary_large_image',
+      twitterTitle: 'Our Gallery | Logaa Holidays',
+      twitterDescription: 'Explore the beautiful moments and breathtaking destinations captured with Logaa Holidays across Tamil Nadu, South India and beyond.',
+      twitterImage: 'https://logaaholidays.com/og-image.jpg',
+    }
+  );
+
   const [selectedItem, setSelectedItem] = useState<typeof galleryItems[0] | null>(null);
   const [filter, setFilter] = useState<FilterType>('all');
 
@@ -35,38 +54,35 @@ export function Gallery() {
             Our <span className="text-emerald-600">Gallery</span>
           </h1>
           <p className="text-lg text-slate-600 leading-relaxed mb-10">
-            Explore the beautiful moments and breathtaking destinations we've captured. From serene landscapes to exciting adventures, get a glimpse of what awaits you with Logaa Holidays.
+            See the beautiful places and happy moments we have captured. From peaceful views to fun trips, see what you can enjoy with Logaa Holidays.
           </p>
 
           {/* Filter Tabs */}
           <div className="flex flex-wrap items-center justify-center gap-4">
             <button
               onClick={() => setFilter('all')}
-              className={`px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 ${
-                filter === 'all'
+              className={`px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 ${filter === 'all'
                   ? 'bg-emerald-600 text-white shadow-lg shadow-emerald-200'
                   : 'bg-white text-slate-600 hover:bg-slate-100 hover:text-emerald-600 shadow-sm border border-slate-200'
-              }`}
+                }`}
             >
               All Media
             </button>
             <button
               onClick={() => setFilter('image')}
-              className={`flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 ${
-                filter === 'image'
+              className={`flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 ${filter === 'image'
                   ? 'bg-emerald-600 text-white shadow-lg shadow-emerald-200'
                   : 'bg-white text-slate-600 hover:bg-slate-100 hover:text-emerald-600 shadow-sm border border-slate-200'
-              }`}
+                }`}
             >
               <ImageIcon className="w-4 h-4" /> Photos
             </button>
             <button
               onClick={() => setFilter('video')}
-              className={`flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 ${
-                filter === 'video'
+              className={`flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 ${filter === 'video'
                   ? 'bg-emerald-600 text-white shadow-lg shadow-emerald-200'
                   : 'bg-white text-slate-600 hover:bg-slate-100 hover:text-emerald-600 shadow-sm border border-slate-200'
-              }`}
+                }`}
             >
               <Video className="w-4 h-4" /> Videos
             </button>

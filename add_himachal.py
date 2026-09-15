@@ -4,10 +4,10 @@ import shutil
 
 # Copy images
 images = [
-    (r"C:\Users\LOQ\.gemini\antigravity\brain\3ca0b5f2-bd14-42ed-9847-1b8fa870de5d\himachal_shimla_honeymoon_1785735435178.png", "himachal_shimla_honeymoon.png"),
-    (r"C:\Users\LOQ\.gemini\antigravity\brain\3ca0b5f2-bd14-42ed-9847-1b8fa870de5d\himachal_manali_honeymoon_1785735446255.png", "himachal_manali_honeymoon.png"),
-    (r"C:\Users\LOQ\.gemini\antigravity\brain\3ca0b5f2-bd14-42ed-9847-1b8fa870de5d\himachal_shimla_manali_drive_1785735457542.png", "himachal_shimla_manali_drive.png"),
-    (r"C:\Users\LOQ\.gemini\antigravity\brain\3ca0b5f2-bd14-42ed-9847-1b8fa870de5d\himachal_premium_snow_resort_1785735468469.png", "himachal_premium_snow_resort.png")
+    (r"C:\Users\LOQ\.gemini\antigravity\brain\3ca0b5f2-bd14-42ed-9847-1b8fa870de5d\himachal_shimla_honeymoon_1785735435178.webp", "himachal_shimla_honeymoon.webp"),
+    (r"C:\Users\LOQ\.gemini\antigravity\brain\3ca0b5f2-bd14-42ed-9847-1b8fa870de5d\himachal_manali_honeymoon_1785735446255.webp", "himachal_manali_honeymoon.webp"),
+    (r"C:\Users\LOQ\.gemini\antigravity\brain\3ca0b5f2-bd14-42ed-9847-1b8fa870de5d\himachal_shimla_manali_drive_1785735457542.webp", "himachal_shimla_manali_drive.webp"),
+    (r"C:\Users\LOQ\.gemini\antigravity\brain\3ca0b5f2-bd14-42ed-9847-1b8fa870de5d\himachal_premium_snow_resort_1785735468469.webp", "himachal_premium_snow_resort.webp")
 ]
 
 dest_dir = r"d:\HexaVisionTech\logaa holiday\public\assets\generated"
@@ -18,8 +18,8 @@ for src, dest_name in images:
 packages_code = """
     '9501': {
         "title": "Premium Shimla Honeymoon Package – 2 Nights / 3 Days",
-        "image": "/assets/generated/himachal_shimla_honeymoon.png",
-        "heroImage": "/assets/generated/himachal_shimla_honeymoon.png",
+        "image": "/assets/generated/himachal_shimla_honeymoon.webp",
+        "heroImage": "/assets/generated/himachal_shimla_honeymoon.webp",
         "overview": {
             "duration": "2 Nights / 3 Days",
             "destination": "Chandigarh, Shimla, Kufri",
@@ -135,8 +135,8 @@ packages_code = """
     '9502': {
         "title": "Premium Manali Honeymoon Package – 3 Nights / 4 Days",
         "badge": "Most Popular",
-        "image": "/assets/generated/himachal_manali_honeymoon.png",
-        "heroImage": "/assets/generated/himachal_manali_honeymoon.png",
+        "image": "/assets/generated/himachal_manali_honeymoon.webp",
+        "heroImage": "/assets/generated/himachal_manali_honeymoon.webp",
         "overview": {
             "duration": "3 Nights / 4 Days",
             "destination": "Chandigarh, Manali, Solang Valley",
@@ -276,8 +276,8 @@ packages_code = """
     },
     '9503': {
         "title": "Shimla and Manali Honeymoon Package – 4 Nights / 5 Days",
-        "image": "/assets/generated/himachal_shimla_manali_drive.png",
-        "heroImage": "/assets/generated/himachal_shimla_manali_drive.png",
+        "image": "/assets/generated/himachal_shimla_manali_drive.webp",
+        "heroImage": "/assets/generated/himachal_shimla_manali_drive.webp",
         "overview": {
             "duration": "4 Nights / 5 Days",
             "destination": "Chandigarh, Shimla, Kufri, Manali, Solang Valley",
@@ -429,8 +429,8 @@ packages_code = """
     '9504': {
         "title": "Complete Shimla and Manali Honeymoon – 5 Nights / 6 Days",
         "badge": "Premium",
-        "image": "/assets/generated/himachal_premium_snow_resort.png",
-        "heroImage": "/assets/generated/himachal_premium_snow_resort.png",
+        "image": "/assets/generated/himachal_premium_snow_resort.webp",
+        "heroImage": "/assets/generated/himachal_premium_snow_resort.webp",
         "overview": {
             "duration": "5 Nights / 6 Days",
             "destination": "Chandigarh, Shimla, Kufri, Manali, Solang Valley",

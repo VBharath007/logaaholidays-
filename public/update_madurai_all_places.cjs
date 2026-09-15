@@ -213,7 +213,7 @@ const updatedPlacesToVisit = `    placesToVisit: [
         id: 'pazhamudir-solai',
         name: 'Pazhamudir Solai',
         type: 'Temple',
-        image: '/assets/madurai/pazhamudhirsolai.jpg',
+        image: '/assets/madurai/pazhamudhirsolai.webp',
         description: 'A beautiful temple called Pazhamudhir Solai honours Lord Subramaniya. The temple is gorgeous and has huge steps in front of it. It has beautiful images of Lord Subramaniya made of wood and marble.',
         rating: 4.6,
         details: {

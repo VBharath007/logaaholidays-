@@ -5,11 +5,11 @@ const id46Pattern = /'46':\s*\{\s*id:\s*'46'[\s\S]*?itinerary:\s*\[[\s\S]*?\]\s*
 
 const newPackage46 = `'46': {
    id: '46',
-   title: '9 Days Trip from Madurai | Madurai, Trichy, Thanjavur, Kumbakonam, Rameshwaram, Kanyakumari, Kovalam & Trivandrum',
+   title: '9 Days Trip from Madurai | Madurai, Trichy, Thanjavur, Kumbakonam, Rameswaram, Kanyakumari, Kovalam & Trivandrum',
    image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&q=80&w=1600',
    overview: { 
      duration: '8 Nights / 9 Days', 
-     destination: 'Madurai, Trichy, Thanjavur, Kumbakonam, Rameshwaram, Kanyakumari, Kovalam, Trivandrum', 
+     destination: 'Madurai, Trichy, Thanjavur, Kumbakonam, Rameswaram, Kanyakumari, Kovalam, Trivandrum', 
      activities: 'Sightseeing, Temple Tours, Beach Relaxation', 
      themes: 'Religious & Pilgrimage, Culture & Heritage' 
    },
@@ -32,12 +32,12 @@ const newPackage46 = `'46': {
      },
      {
        day: 'Day 4',
-       title: 'Kumbakonam to Rameshwaram',
-       description: 'After breakfast, drive to the holy island of Rameshwaram. En route, enjoy the scenic drive over the Pamban Bridge. Visit the Ramanathaswamy Temple and Agni Theertham. Overnight stay in Rameshwaram.'
+       title: 'Kumbakonam to Rameswaram',
+       description: 'After breakfast, drive to the holy island of Rameswaram. En route, enjoy the scenic drive over the Pamban Bridge. Visit the Ramanathaswamy Temple and Agni Theertham. Overnight stay in Rameswaram.'
      },
      {
        day: 'Day 5',
-       title: 'Rameshwaram to Kanyakumari',
+       title: 'Rameswaram to Kanyakumari',
        description: 'Early morning visit to Dhanushkodi (optional). After breakfast, drive to Kanyakumari, the southernmost tip of mainland India. In the evening, witness the spectacular sunset over the confluence of three seas. Overnight stay in Kanyakumari.'
      },
      {

@@ -92,7 +92,7 @@ export const PassportVisaForm = () => (
   >
     <div className="space-y-6">
       <div className="bg-blue-500/10 border border-blue-400/20 rounded-xl p-3 text-xs text-blue-200">
-        ℹ️ Please do not share your passport number or any sensitive identity documents through this form. Our team will guide you after reviewing your enquiry.
+         Please do not share your passport number or any sensitive identity documents through this form. Our team will guide you after reviewing your enquiry.
       </div>
       <h4 className="text-xl font-bold text-white mb-4">Contact Details</h4>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

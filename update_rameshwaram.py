@@ -20,4 +20,4 @@ for place_id, img_path in image_map.items():
 
 with open(file, 'w', encoding='utf-8') as f:
     f.write(content)
-print("Updated Rameshwaram images in destinationsData.ts!")
+print("Updated Rameswaram images in destinationsData.ts!")

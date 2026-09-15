@@ -9,9 +9,21 @@ import { useSEO } from '../hooks/useSEO';
 
 export function Home() {
   useSEO(
-    'Logaa Holidays | Best Travel Agency in Madurai | South India Tour Packages',
-    'Logaa Holidays is a top-rated travel agency in Madurai offering premium tour packages, local sightseeing, honeymoon packages, and reliable cab services across South India.',
-    'Travel Agency in Madurai, Best Travel Agency in Madurai, Holiday Packages from Madurai, Tour Packages from Madurai'
+    'Logaa Holidays | Best Travel Agency & Tour Operators in Madurai',
+    'Logaa Holidays is the best travel agency in Madurai, offering customized domestic and international tour packages. Book family, group, and honeymoon holiday packages from Madurai.',
+    'Travel Agency in Madurai, Best Travel Agency in Madurai, Holiday Packages from Madurai, Tour Packages from Madurai',
+    undefined,
+    {
+      canonicalUrl: 'https://logaaholidays.com/',
+      ogTitle: 'Logaa Holidays | Best Travel Agency & Tour Operators in Madurai',
+      ogDescription: 'Logaa Holidays is the best travel agency in Madurai, offering customized domestic and international tour packages. Book family, group, and honeymoon holiday packages from Madurai.',
+      ogUrl: 'https://logaaholidays.com/',
+      ogImage: 'https://logaaholidays.com/og-image.jpg',
+      twitterCard: 'summary_large_image',
+      twitterTitle: 'Logaa Holidays | Best Travel Agency & Tour Operators in Madurai',
+      twitterDescription: 'Logaa Holidays is the best travel agency in Madurai, offering customized domestic and international tour packages. Book family, group, and honeymoon holiday packages from Madurai.',
+      twitterImage: 'https://logaaholidays.com/og-image.jpg',
+    }
   );
 
   return (

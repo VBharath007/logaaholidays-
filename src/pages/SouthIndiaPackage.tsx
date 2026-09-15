@@ -50,23 +50,20 @@ const featuredPackages = [
     id: '9201',
     title: 'Kerala Honeymoon Package',
     duration: '3 Nights / 4 Days',
-    price: '₹14,500',
     image: '/assets/bharath/kerala.webp',
-    location: 'Kerala'
+    location: 'Tamilnadu'
   },
   {
     id: '3090',
     title: 'Tamil Nadu Tour Package',
     duration: 'On Request',
-    price: 'On Request',
     image: '/assets/Tamil Nadu1.webp',
-    location: 'Tamil Nadu'
+    location: 'Tamil Nadu + Karnataka'
   },
   {
     id: '9005',
     title: 'Kerala Popular Package',
     duration: '4 Nights / 5 Days',
-    price: '₹14,500',
     image: '/assets/bharath/kerala.webp',
     location: 'Kerala'
   },
@@ -74,7 +71,6 @@ const featuredPackages = [
     id: '9006',
     title: 'Kerala Houseboat & Hills',
     duration: '5 Nights / 6 Days',
-    price: '₹18,500',
     image: '/assets/bharath/kerala hero.webp',
     location: 'Kerala'
   }
@@ -153,35 +149,37 @@ export function SouthIndiaPackage() {
           </h1>
 
           <p className="text-base md:text-xl font-bold text-slate-900 max-w-2xl mb-6 bg-white/60 backdrop-blur-md px-6 py-3 rounded-3xl shadow-sm border border-white/50 leading-relaxed">
-            Temples, Traditions, Nature & More. Unforgettable journeys across Tamil Nadu, Kerala & beyond.
+            Temples, Traditions, Nature & More. Unforgettable journeys across Tamil Nadu & Kerala.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className={`${clayBtn} px-8 py-4 flex items-center gap-2 text-lg`}>
-              Start Your Journey <span className="text-xl">→</span>
-            </button>
-            <button className={`${clayBtnSecondary} px-8 py-4 flex items-center gap-2 text-lg`}>
-              <MapPin className="w-5 h-5" /> Explore Destinations
-            </button>
+            <a
+              href="https://wa.me/917397329776?text=Hello%20Logaa%20Holidays%2C%20I%20would%20like%20to%20enquire%20about%20South%20India%20tour%20packages."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:opacity-90 shadow-lg text-white font-bold rounded-xl transition-transform hover:scale-[1.02] active:scale-95 px-8 py-4 flex items-center gap-2 text-lg"
+            >
+              Enquire Now <span className="text-xl">→</span>
+            </a>
           </div>
         </div>
 
         {/* Floating Card (Right Side) */}
-        <div className="absolute top-1/2 right-10 md:right-20 transform -translate-y-1/2 hidden lg:block animate-bounce-slow">
+        <Link to="/destination/tamilnadu/madurai-tourism" className="absolute top-1/2 right-10 md:right-20 transform -translate-y-1/2 hidden lg:block animate-bounce-slow hover:scale-105 transition-transform cursor-pointer">
           <div className="bg-white/90 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-white/50 flex items-center gap-4">
             <div className="w-12 h-12 bg-[var(--color-primary-forest)] rounded-full flex items-center justify-center text-white shadow-lg">
               <MapPin className="w-6 h-6" />
             </div>
             <div>
-              <h4 className="font-bold text-slate-800">Madurai</h4>
+              <p className="font-bold text-slate-800 text-lg">Madurai</p>
               <p className="text-sm text-slate-600 flex items-center gap-1">The Heart of Tamil Nadu <span className="text-red-500 text-xs">♥</span></p>
             </div>
           </div>
-        </div>
+        </Link>
       </div>
 
       {/* Explore South India by State Section */}
-      <div className="max-w-7xl mx-auto px-6 mb-16 pt-16">
+      <div className="max-w-7xl mx-auto px-6 mb-16 pt-16 relative z-20">
         <div className="flex items-center gap-2 mb-8">
           <Star className="w-5 h-5 text-[var(--color-primary-forest)] fill-current" />
           <h2 className="text-2xl md:text-3xl font-display font-bold text-slate-800">Explore South India by State</h2>
@@ -199,12 +197,11 @@ export function SouthIndiaPackage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
             <div className="absolute bottom-6 left-8 right-8 text-white z-10">
-              <span className="text-xs font-black uppercase tracking-widest text-[var(--color-primary-emerald)] mb-2 block">Land of Temples</span>
+              <span className="text-xs font-black capitalize tracking-widest text-[#7fff00] mb-2 block">Land of Temples</span>
               <h3 className="text-3xl font-display font-bold mb-3">Tamil Nadu Overview</h3>
               <p className="text-white/80 text-sm leading-relaxed line-clamp-2">
-                Discover ancient Dravidian architecture, towering temple gopurams, misty Nilgiri hills, and rich cultural heritage.
-              </p>
-              <div className="mt-4 flex items-center gap-2 font-bold text-sm text-[var(--color-primary-emerald)]">
+                See big temples, beautiful hills, beaches, and many amazing places. </p>
+              <div className="mt-4 flex items-center gap-2 font-bold text-sm text-[#7fff00]">
                 Explore State <span>→</span>
               </div>
             </div>
@@ -222,12 +219,12 @@ export function SouthIndiaPackage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
             <div className="absolute bottom-6 left-8 right-8 text-white z-10">
-              <span className="text-xs font-black uppercase tracking-widest text-[var(--color-primary-emerald)] mb-2 block">God's Own Country</span>
+              <span className="text-xs font-black capitalize tracking-widest text-[#FFDF00] mb-2 block">Paradise of Nature</span>
               <h3 className="text-3xl font-display font-bold mb-3">Kerala Overview</h3>
               <p className="text-white/80 text-sm leading-relaxed line-clamp-2">
-                Immerse yourself in tranquil backwaters, green tea valleys, wildlife sanctuaries, and palm-lined beaches.
+                Enjoy green nature, rivers, tea gardens, animals, and beautiful beaches.
               </p>
-              <div className="mt-4 flex items-center gap-2 font-bold text-sm text-[var(--color-primary-emerald)]">
+              <div className="mt-4 flex items-center gap-2 font-bold text-sm text-[#FFDF00]">
                 Explore State <span>→</span>
               </div>
             </div>
@@ -242,7 +239,7 @@ export function SouthIndiaPackage() {
 
 
       {/* Featured Packages Section */}
-      <div className="max-w-7xl mx-auto px-6 mb-16">
+      <div className="max-w-7xl mx-auto px-6 mb-16 relative z-20">
         <div className="flex justify-between items-end mb-8">
           <div className="flex items-center gap-2">
             <Star className="w-5 h-5 text-[var(--color-primary-forest)] fill-current" />
@@ -292,7 +289,7 @@ export function SouthIndiaPackage() {
       </div>
 
       {/* Experience South India Video Section */}
-      <div className="max-w-7xl mx-auto px-6 mb-16">
+      <div className="max-w-7xl mx-auto px-6 mb-16 relative z-20">
         <div className="bg-white rounded-[3rem] p-8 md:p-12 shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-slate-100 flex flex-col lg:flex-row items-center gap-10">
           <div className="w-full lg:w-[35%] flex flex-col justify-center">
             <span className="text-xs font-black uppercase tracking-widest text-[var(--color-primary-forest)] mb-3">Visual Journey</span>
@@ -315,7 +312,7 @@ export function SouthIndiaPackage() {
                 poster="/assets/Tamil Nadu1.webp"
                 className="w-full h-full object-cover"
               >
-                <source src="/assets/video/south india  (1).mp4" type="video/mp4" />
+                <source src="/assets/video/south india (1).mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -324,52 +321,87 @@ export function SouthIndiaPackage() {
       </div>
 
       {/* Info & Features Banner */}
-      <div className="max-w-7xl mx-auto px-6 mb-16">
-        <div className={`${clayCard} p-6 md:p-8 rounded-3xl grid grid-cols-1 md:grid-cols-4 gap-6 divide-y md:divide-y-0 md:divide-x divide-slate-200/50`}>
+      <div className="max-w-7xl mx-auto px-6 mb-16 relative z-20">
+        <div
+          className={`${clayCard} p-6 md:p-8 rounded-3xl grid grid-cols-1 md:grid-cols-4 gap-6 divide-y md:divide-y-0 md:divide-x divide-slate-200/50`}
+        >
+
+          {/* Clear Pricing */}
           <div className="flex items-center gap-4 pt-4 md:pt-0">
             <div className="w-12 h-12 rounded-xl bg-[#e8f5e9] text-[var(--color-primary-forest)] flex items-center justify-center flex-shrink-0">
               <CheckCircle2 className="w-6 h-6" />
             </div>
+
             <div>
-              <h4 className="font-bold text-slate-800 text-sm">Best Price Guarantee</h4>
-              <p className="text-xs text-slate-500">We match the best prices</p>
+              <h3 className="font-bold text-slate-800 text-sm">
+                Clear Pricing
+              </h3>
+
+              <p className="text-xs text-slate-500">
+                Simple and transparent quotes
+              </p>
             </div>
           </div>
 
+
+          {/* Travel Assistance */}
           <div className="flex items-center gap-4 pt-4 md:pt-0 md:pl-6">
             <div className="w-12 h-12 rounded-xl bg-[#e8f5e9] text-[var(--color-primary-forest)] flex items-center justify-center flex-shrink-0">
               <HeadphonesIcon className="w-6 h-6" />
             </div>
+
             <div>
-              <h4 className="font-bold text-slate-800 text-sm">24/7 Travel Support</h4>
-              <p className="text-xs text-slate-500">Always here when you need us</p>
+              <h3 className="font-bold text-slate-800 text-sm">
+                Travel Assistance
+              </h3>
+
+              <p className="text-xs text-slate-500">
+                We're here to help with your trip
+              </p>
             </div>
           </div>
 
+
+          {/* Secure Enquiry */}
           <div className="flex items-center gap-4 pt-4 md:pt-0 md:pl-6">
             <div className="w-12 h-12 rounded-xl bg-[#e8f5e9] text-[var(--color-primary-forest)] flex items-center justify-center flex-shrink-0">
               <ShieldCheck className="w-6 h-6" />
             </div>
+
             <div>
-              <h4 className="font-bold text-slate-800 text-sm">Secure Bookings</h4>
-              <p className="text-xs text-slate-500">Your data is 100% protected</p>
+              <h3 className="font-bold text-slate-800 text-sm">
+                Secure Enquiry
+              </h3>
+
+              <p className="text-xs text-slate-500">
+                Your details are handled with care
+              </p>
             </div>
           </div>
 
+
+          {/* Trusted Travel */}
           <div className="flex items-center gap-4 pt-4 md:pt-0 md:pl-6">
             <div className="w-12 h-12 rounded-xl bg-[#e8f5e9] text-[var(--color-primary-forest)] flex items-center justify-center flex-shrink-0">
               <Star className="w-6 h-6" />
             </div>
+
             <div>
-              <h4 className="font-bold text-slate-800 text-sm">Trusted by Millions</h4>
-              <p className="text-xs text-slate-500">10M+ happy travelers worldwide</p>
+              <h3 className="font-bold text-slate-800 text-sm">
+                Trusted Travel Experiences
+              </h3>
+
+              <p className="text-xs text-slate-500">
+                Helping travelers explore India
+              </p>
             </div>
           </div>
+
         </div>
       </div>
 
       {/* Why Book With Logaa Holidays */}
-      <div className="max-w-7xl mx-auto px-6 mb-12">
+      <div className="max-w-7xl mx-auto px-6 mb-12 relative z-20">
         <div className="flex flex-col lg:flex-row gap-8 items-stretch">
 
           <div className="flex-1 flex flex-col justify-center">
@@ -378,28 +410,28 @@ export function SouthIndiaPackage() {
               <div className="flex gap-3">
                 <MapPin className="w-8 h-8 text-[var(--color-primary-forest)] flex-shrink-0" />
                 <div>
-                  <h4 className="font-bold text-slate-800 text-sm mb-1">Local Expertise</h4>
+                  <h3 className="font-bold text-slate-800 text-sm mb-1">Local Expertise</h3>
                   <p className="text-xs text-slate-500">In-depth knowledge<br />of South India</p>
                 </div>
               </div>
               <div className="flex gap-3">
                 <Map className="w-8 h-8 text-[var(--color-primary-forest)] flex-shrink-0" />
                 <div>
-                  <h4 className="font-bold text-slate-800 text-sm mb-1">Customized Trips</h4>
-                  <p className="text-xs text-slate-500">Tailor-made itineraries<br />just for you</p>
+                  <h3 className="font-bold text-slate-800 text-sm mb-1">Customized Trips</h3>
+                  <p className="text-xs text-slate-500">Tour Packages Made for You<br />just for you</p>
                 </div>
               </div>
               <div className="flex gap-3">
                 <Building2 className="w-8 h-8 text-[var(--color-primary-forest)] flex-shrink-0" />
                 <div>
-                  <h4 className="font-bold text-slate-800 text-sm mb-1">Handpicked Stays</h4>
+                  <h3 className="font-bold text-slate-800 text-sm mb-1">Handpicked Stays</h3>
                   <p className="text-xs text-slate-500">Quality stays for a<br />memorable trip</p>
                 </div>
               </div>
               <div className="flex gap-3">
                 <Users className="w-8 h-8 text-[var(--color-primary-forest)] flex-shrink-0" />
                 <div>
-                  <h4 className="font-bold text-slate-800 text-sm mb-1">Authentic Experiences</h4>
+                  <h3 className="font-bold text-slate-800 text-sm mb-1">Authentic Experiences</h3>
                   <p className="text-xs text-slate-500">Real experiences,<br />real connections</p>
                 </div>
               </div>
@@ -407,18 +439,23 @@ export function SouthIndiaPackage() {
           </div>
 
           <div className="lg:w-[400px]">
-            <div className="bg-[var(--color-primary-forest)] rounded-3xl p-8 text-white h-full relative overflow-hidden shadow-2xl">
+            <a
+              href="https://wa.me/917397329776?text=Hello%20Logaa%20Holidays%2C%20I%20would%20like%20to%20plan%20my%20perfect%20getaway%20for%20a%20South%20India%20tour%20package."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-[var(--color-primary-forest)] hover:bg-[#198450] rounded-3xl p-8 text-white h-full relative overflow-hidden shadow-2xl hover:scale-[1.02] hover:shadow-[0_20px_40px_rgba(11,37,21,0.4)] transition-all duration-300 group cursor-pointer"
+            >
               <div className="relative z-10">
                 <h3 className="text-2xl font-bold mb-4">Let's Plan Your<br />Perfect Getaway!</h3>
                 <p className="text-white/80 text-sm max-w-[200px]">Amazing places are waiting for you.</p>
               </div>
               {/* Decorative Temple Outline / Sketch */}
-              <div className="absolute bottom-0 right-0 w-48 h-48 opacity-20 pointer-events-none">
+              <div className="absolute bottom-0 right-0 w-48 h-48 opacity-20 pointer-events-none group-hover:opacity-30 transition-opacity">
                 <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full transform translate-x-4 translate-y-4">
                   <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
                 </svg>
               </div>
-            </div>
+            </a>
           </div>
 
         </div>
@@ -453,7 +490,7 @@ function SouthIndiaFAQ() {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto px-6 mb-16">
+    <div className="max-w-4xl mx-auto px-6 mb-16 relative z-20">
       <div className="bg-white rounded-[2.5rem] p-8 md:p-10 shadow-sm border border-slate-100">
         <div className="flex items-center gap-2 mb-8">
           <Star className="w-5 h-5 text-[var(--color-primary-forest)] fill-current" />

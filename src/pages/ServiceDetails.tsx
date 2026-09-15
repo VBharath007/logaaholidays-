@@ -11,7 +11,9 @@ export function ServiceDetails() {
 
   useSEO(
     `${serviceTitle ? serviceTitle + ' | ' : ''}Logaa Holidays - Travel Agency in Madurai`,
-    `Looking for ${serviceTitle ? serviceTitle : 'travel services'}? Logaa Holidays offers premium travel assistance, car rentals, and flight booking in Madurai.`,
+    serviceId === 'car-coach-rental'
+      ? 'Explore beautiful places of culture, and easy car and coach travel with Logaa Holidays across Tamil Nadu.'
+      : `Looking for ${serviceTitle ? serviceTitle : 'travel services'}? Logaa Holidays offers travel assistance, car rentals, and flight booking in Madurai.`,
     `${serviceTitle}, Travel Agency in Madurai, Best Travel Agency in Madurai, Tour Operator in Madurai, Flight Booking Assistance in Madurai, Car Rental in Madurai, Cab Service in Madurai`
   );
 
@@ -25,9 +27,15 @@ export function ServiceDetails() {
 
   useEffect(() => {
     if (serviceId) {
-      const words = serviceId.split('-');
-      const formattedTitle = words.map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-      setServiceTitle(formattedTitle.includes('Visa') ? 'Passport & Visa Services' : formattedTitle);
+      if (serviceId === 'car-coach-rental') {
+        setServiceTitle('Car & Coach Rental');
+      } else if (serviceId === 'passport-visa-service') {
+        setServiceTitle('Passport & Visa Services');
+      } else {
+        const words = serviceId.split('-');
+        const formattedTitle = words.map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+        setServiceTitle(formattedTitle);
+      }
       window.scrollTo(0, 0);
     }
   }, [serviceId]);
@@ -37,15 +45,15 @@ export function ServiceDetails() {
       case 'tour-operators':
         return '/assets/Mizoram2.webp'; // Taj Mahal
       case 'car-coach-rental':
-        return '/assets/services/car2.png'; // Luxury SUV in landscape
+        return '/assets/services/car2.webp'; // Luxury SUV in landscape
       case 'flight-booking':
-        return '/assets/services/flight.png';
+        return '/assets/services/flight 1.webp';
       case 'railway-ticket-booking':
-        return '/assets/services/train 2.png'; // Train station
+        return '/assets/services/train 2.webp'; // Train station
       case 'passport-visa-service':
-        return '/assets/services/visa.png';
+        return '/assets/services/visa.webp';
       case 'travel-insurance-service':
-        return '/assets/services/travelinsurane.png';
+        return '/assets/services/travelinsurane.webp';
       case 'event-management':
         return '/assets/Uttar Pradesh1.webp'; // Beautiful event setup
       case 'hotel-booking':
@@ -60,15 +68,15 @@ export function ServiceDetails() {
       case 'tour-operators':
         return '/assets/megalaya1.webp'; // Kerala backwaters boat
       case 'car-coach-rental':
-        return '/assets/services/car 2.png'; // Premium car interior
+        return '/assets/services/car 2.webp'; // Premium car interior
       case 'flight-booking':
-        return '/assets/services/aeroplane outside view.mp4';
+        return '/assets/services/flight.webp';
       case 'railway-ticket-booking':
-        return '/assets/services/train 1.png'; // Inside a train
+        return '/assets/services/train 1.webp'; // Inside a train
       case 'passport-visa-service':
-        return '/assets/services/visa.png';
+        return '/assets/services/pass port.webp';
       case 'travel-insurance-service':
-        return '/assets/services/insurance.png';
+        return '/assets/services/travel insurance.webp';
       case 'event-management':
         return '/assets/karnataka1.webp'; // Crowd celebration
       case 'hotel-booking':
@@ -118,7 +126,15 @@ export function ServiceDetails() {
             </div>
 
             <p className="text-slate-600 text-lg md:text-xl max-w-md leading-relaxed mb-10 font-medium">
-              Explore the <span className="font-bold text-[#1E4D8C]">incredible</span> diversity, rich culture, and premium <span className="font-bold text-[#1E4D8C]">{serviceTitle.toLowerCase()}</span> with Logaa Holidays across Tamil Nadu and beyond.
+              {serviceId === 'car-coach-rental' ? (
+                <>
+                  Explore beautiful<span className="font-bold text-[#1E4D8C]"> places of culture </span>and easy <span className="font-bold text-[#1E4D8C]">car and coach</span> travel with Logaa Holidays across Tamil Nadu.
+                </>
+              ) : (
+                <>
+                  Explore the <span className="font-bold text-[#1E4D8C]">incredible</span> diversity, rich culture, and premium <span className="font-bold text-[#1E4D8C]">{serviceTitle.toLowerCase()}</span> with Logaa Holidays across Tamil Nadu and beyond.
+                </>
+              )}
             </p>
 
             <div className="flex flex-wrap items-center gap-4 mb-12">
@@ -212,11 +228,13 @@ export function ServiceDetails() {
               {serviceId === 'car-coach-rental' ? (
                 <>
                   <p className="mb-6">
-                    The Tamil Nadu based Logaa Holidays offers reliable car & coach rental services to its clients. Making your trip as comfortable as possible is the aim of a rental automobile or bus. In your car, you would reach your desired location promptly. We take care to make sure your trip is both safe and enjoyable. Our fleet of vehicles is kept in good condition. Because of our cars' excellent maintenance and restoration, clients may travel in comfort.
+                    Logaa Holidays, based in Tamil Nadu, offers reliable car and coach rental services. Our well-maintained fleet
+                    ensures a safe, comfortable, and enjoyable joumey. We provide suitable vehicles based on the number of passengers, travel
+                    route, and customer requirements.
                   </p>
-                  <p>
+                  {/* <p>
                     Depending on the specific interests of the clients and the number of people touring, we provide a variety of cars. Additionally, the vehicles we own are well-kept and in great condition. We are committed to meeting all of your travel needs.
-                  </p>
+                  </p> */}
                 </>
               ) : serviceId === 'event-management' ? (
                 <>
@@ -230,11 +248,13 @@ export function ServiceDetails() {
               ) : serviceId === 'flight-booking' ? (
                 <>
                   <p className="mb-6">
-                    Logaa Holidays is a prominent Tour & Travel Agent in Tamil Nadu privileged of serving a large number of esteemed clients. We provide Airline Ticketing Services in order to assist clients with cheap airline tickets. We are associated with some of the leading airline and can assist you in getting quicker tickets.
+                    Logaa Holidays is a trusted tour and travel agency in Tamil Nadu, serving individual travellers, families, and
+                    groups. We help customers find suitable domestic and intemational flight options based on their schedule and budget.
                   </p>
                   <p>
-                    As per your requirements you can choose your seats. We have Airline Ticketing Services for any number of groups, individuals or families. Whether you want an instant ticket or an advanced ticket, we have services for all.
+                    Seat selection and fare availability are subject to airline rules.
                   </p>
+
                 </>
               ) : serviceId === 'hotel-booking' ? (
                 <>
@@ -248,19 +268,20 @@ export function ServiceDetails() {
               ) : serviceId === 'passport-visa-service' ? (
                 <>
                   <p className="mb-6">
-                    Logaa Holidays is an approved Passport & Visa Services Agency. Our key services are new or renewal of passports with us instead of waiting in line at the post office. Unassertive passport renewal online directions & our capable experts will make it a stress-free procedure. We've formed a long-term association with Embassies and Consulates around the world. We keep our circumstances tension-free to follow and offer a free Document Pre-Check.
-                  </p>
-                  <p>
-                    Our services comprise New Passport, Child Passport, Passport Renewal, Lost/Stolen Passport, and Add Pages to Passport. Apart from this, we can support you to get a visa in nearly every key country in the world.
-                  </p>
+                    Logaa Holidays provides guidance and assistance for passport and visa applications. We help customers understand
+                    documentation, appointment, and application requirements. Final approval is issued only by the relevant government authority,
+                    embassy, or consulate.</p>
+
                 </>
               ) : serviceId === 'railway-ticket-booking' ? (
                 <>
                   <p className="mb-6">
-                    To book a train, get in touch with Logaa Holidays. We are a business that provides railway ticket booking in Tamil Nadu. With our support, you can always reserve your train tickets. Kindly let us know the date of your trip, the number of berths you'd like to reserve, and your desired travel class.
+                    Contact Logaa Holidays for assistance with railway ticket bookings. Share your travel date, passenger count,
+                    boarding station, destination, and preferred class.
                   </p>
                   <p>
-                    We can immediately book a suitable ticket for you using the information you have provided. We could also be able to tatkal-book tickets. Contact us right away to book a train in India. We are renowned for providing train ticketing services that are incredibly rapid and responsive.
+                    We can immediately book a suitable ticket for you using the information you have provided. We can also assist with Tatkal bookings, subject to
+                    availability and IRCTC rules. Contact us right away to book a train in India. We are renowned for providing train ticketing services that are incredibly rapid and responsive.
                   </p>
                 </>
               ) : serviceId === 'tour-operators' ? (
@@ -270,12 +291,13 @@ export function ServiceDetails() {
               ) : serviceId === 'travel-insurance-service' ? (
                 <>
                   <p className="mb-6">
-                    Are you an avid traveller and want travel insurance that has maximum policy coverage to keep your baggage and belongings safe both from misplacement and theft? Then we at Logaa Holidays can help you choose the right travel insurance according to your budget. Our team of travel professionals can guide you through the process of selecting the most reasonably-priced insurance plans that can also benefit senior citizens.
+                    Are you looking for travel insurance for your upcoming journey? Logaa Holidays can help you compare suitable options
+                    based on your destination, travel duration, age, and coverage requirements. Our team will guide you in selecting an appropriate plan
+                    based on your needs and budget.
                   </p>
                   <h4 className="text-xl font-bold text-[var(--color-deep-teal)] mb-4 font-display">Widest Options Available</h4>
                   <p>
-                    Not only do we help you choose from a widegamut of travel insurance options but we also offer you our professional consultancy services. When you book travel insurance from us, you will be taken aback by its benefits which shall keep you stress-free during your holidays. Call us to ensure your baggage and travel from now on.
-                  </p>
+                    Not only do we help you choose from a wide range of travel insurance options, but we also offer you our professional consultancy services. When you book travel insurance from us, our suitable plans can help keep you stress-free during your holidays.</p>
                 </>
               ) : (
                 <p className="mb-6">
@@ -363,8 +385,8 @@ export function ServiceDetails() {
                     <Link
                       to={`/services/${slug}`}
                       className={`block px-5 py-3.5 rounded-xl font-bold text-sm transition-all duration-300 ${isActive
-                          ? 'bg-white text-[var(--color-deep-teal)] pl-7'
-                          : 'bg-transparent text-[var(--color-soft-blue)] hover:bg-white/10 hover:text-white hover:pl-7 border border-transparent hover:border-white/10'
+                        ? 'bg-white text-[var(--color-deep-teal)] pl-7'
+                        : 'bg-transparent text-[var(--color-soft-blue)] hover:bg-white/10 hover:text-white hover:pl-7 border border-transparent hover:border-white/10'
                         }`}
                     >
                       <div className="flex items-center justify-between">

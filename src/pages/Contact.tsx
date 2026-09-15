@@ -12,17 +12,17 @@ const WaveDivider = ({ className = '', fill = '#072a33', flip = false }) => (
 );
 
 const FacebookIcon = ({ className }: { className?: string }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-  </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+    </svg>
 );
 
 const InstagramIcon = ({ className }: { className?: string }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
-    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
-  </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+    </svg>
 );
 
 const WaveDividerBottom = ({ className = '', fill = '#072a33' }) => (
@@ -45,20 +45,406 @@ export function Contact() {
         name: '', email: '', phone: '', subject: '', message: ''
     });
 
+    const [selectedCountry, setSelectedCountry] = useState('');
+    const [selectedState, setSelectedState] = useState('');
+    const [selectedCity, setSelectedCity] = useState('');
+    const [otherCountry, setOtherCountry] = useState('');
+
+    const indiaStates = [
+        'Andhra Pradesh',
+        'Arunachal Pradesh',
+        'Assam',
+        'Bihar',
+        'Chhattisgarh',
+        'Goa',
+        'Gujarat',
+        'Haryana',
+        'Himachal Pradesh',
+        'Jharkhand',
+        'Karnataka',
+        'Kerala',
+        'Madhya Pradesh',
+        'Maharashtra',
+        'Manipur',
+        'Meghalaya',
+        'Mizoram',
+        'Nagaland',
+        'Odisha',
+        'Punjab',
+        'Rajasthan',
+        'Sikkim',
+        'Tamil Nadu',
+        'Telangana',
+        'Tripura',
+        'Uttar Pradesh',
+        'Uttarakhand',
+        'West Bengal',
+        'Andaman and Nicobar Islands',
+        'Chandigarh',
+        'Dadra and Nagar Haveli and Daman and Diu',
+        'Delhi',
+        'Jammu and Kashmir',
+        'Ladakh',
+        'Lakshadweep',
+        'Puducherry',
+    ];
+
+    const stateCities: Record<string, string[]> = {
+        'Tamil Nadu': [
+            'Ariyalur',
+            'Chengalpattu',
+            'Chennai',
+            'Coimbatore',
+            'Cuddalore',
+            'Dharmapuri',
+            'Dindigul',
+            'Erode',
+            'Kallakurichi',
+            'Kanchipuram',
+            'Kanniyakumari',
+            'Karur',
+            'Krishnagiri',
+            'Madurai',
+            'Mayiladuthurai',
+            'Nagapattinam',
+            'Namakkal',
+            'Nilgiris',
+            'Perambalur',
+            'Pudukkottai',
+            'Ramanathapuram',
+            'Ranipet',
+            'Salem',
+            'Sivaganga',
+            'Tenkasi',
+            'Thanjavur',
+            'Theni',
+            'Thoothukudi',
+            'Tiruchirappalli',
+            'Tirunelveli',
+            'Tirupathur',
+            'Tiruppur',
+            'Tiruvallur',
+            'Tiruvannamalai',
+            'Tiruvarur',
+            'Vellore',
+            'Viluppuram',
+            'Virudhunagar',
+        ],
+
+        'Kerala': [
+            'Alappuzha',
+            'Ernakulam',
+            'Idukki',
+            'Kannur',
+            'Kasaragod',
+            'Kollam',
+            'Kottayam',
+            'Kozhikode',
+            'Malappuram',
+            'Palakkad',
+            'Pathanamthitta',
+            'Thiruvananthapuram',
+            'Thrissur',
+            'Wayanad',
+        ],
+
+        'Karnataka': [
+            'Bagalkot',
+            'Ballari',
+            'Bengaluru',
+            'Belagavi',
+            'Bidar',
+            'Chamarajanagar',
+            'Chikkaballapur',
+            'Chikkamagaluru',
+            'Chitradurga',
+            'Dakshina Kannada',
+            'Davanagere',
+            'Dharwad',
+            'Gadag',
+            'Hassan',
+            'Haveri',
+            'Kalaburagi',
+            'Kodagu',
+            'Kolar',
+            'Koppal',
+            'Mandya',
+            'Mysuru',
+            'Raichur',
+            'Ramanagara',
+            'Shivamogga',
+            'Tumakuru',
+            'Udupi',
+            'Uttara Kannada',
+            'Vijayapura',
+            'Yadgir',
+        ],
+
+        'Andhra Pradesh': [
+            'Anantapur',
+            'Chittoor',
+            'Eluru',
+            'Guntur',
+            'Kadapa',
+            'Kakinada',
+            'Kurnool',
+            'Nellore',
+            'Prakasam',
+            'Srikakulam',
+            'Tirupati',
+            'Vijayawada',
+            'Visakhapatnam',
+            'Vizianagaram',
+        ],
+
+        'Telangana': [
+            'Adilabad',
+            'Hyderabad',
+            'Jagtial',
+            'Karimnagar',
+            'Khammam',
+            'Mahbubnagar',
+            'Medak',
+            'Nalgonda',
+            'Nizamabad',
+            'Rangareddy',
+            'Sangareddy',
+            'Siddipet',
+            'Suryapet',
+            'Warangal',
+        ],
+
+        'Maharashtra': [
+            'Ahmednagar',
+            'Aurangabad',
+            'Amravati',
+            'Chandrapur',
+            'Jalgaon',
+            'Kolhapur',
+            'Mumbai',
+            'Nagpur',
+            'Nashik',
+            'Navi Mumbai',
+            'Pune',
+            'Solapur',
+            'Thane',
+        ],
+
+        'Gujarat': [
+            'Ahmedabad',
+            'Anand',
+            'Bhavnagar',
+            'Gandhinagar',
+            'Jamnagar',
+            'Junagadh',
+            'Rajkot',
+            'Surat',
+            'Vadodara',
+            'Vapi',
+        ],
+
+        'Rajasthan': [
+            'Ajmer',
+            'Alwar',
+            'Bikaner',
+            'Jaipur',
+            'Jaisalmer',
+            'Jodhpur',
+            'Kota',
+            'Pushkar',
+            'Udaipur',
+        ],
+
+        'Uttar Pradesh': [
+            'Agra',
+            'Ayodhya',
+            'Ghaziabad',
+            'Kanpur',
+            'Lucknow',
+            'Mathura',
+            'Meerut',
+            'Prayagraj',
+            'Varanasi',
+        ],
+
+        'West Bengal': [
+            'Asansol',
+            'Darjeeling',
+            'Durgapur',
+            'Howrah',
+            'Kolkata',
+            'Siliguri',
+        ],
+
+        'Goa': [
+            'Panaji',
+            'Margao',
+            'Vasco da Gama',
+            'Mapusa',
+        ],
+
+        'Punjab': [
+            'Amritsar',
+            'Chandigarh',
+            'Jalandhar',
+            'Ludhiana',
+            'Patiala',
+        ],
+
+        'Haryana': [
+            'Faridabad',
+            'Gurugram',
+            'Hisar',
+            'Panipat',
+            'Rohtak',
+            'Sonipat',
+        ],
+
+        'Delhi': [
+            'New Delhi',
+            'Delhi',
+        ],
+
+        'Odisha': [
+            'Bhubaneswar',
+            'Cuttack',
+            'Puri',
+            'Rourkela',
+            'Sambalpur',
+        ],
+
+        'Bihar': [
+            'Bhagalpur',
+            'Gaya',
+            'Muzaffarpur',
+            'Patna',
+        ],
+
+        'Jharkhand': [
+            'Bokaro',
+            'Dhanbad',
+            'Jamshedpur',
+            'Ranchi',
+        ],
+
+        'Chhattisgarh': [
+            'Bilaspur',
+            'Durg',
+            'Korba',
+            'Raipur',
+        ],
+
+        'Madhya Pradesh': [
+            'Bhopal',
+            'Gwalior',
+            'Indore',
+            'Jabalpur',
+            'Ujjain',
+        ],
+
+        'Uttarakhand': [
+            'Dehradun',
+            'Haridwar',
+            'Nainital',
+            'Rishikesh',
+        ],
+
+        'Himachal Pradesh': [
+            'Dharamshala',
+            'Kullu',
+            'Manali',
+            'Shimla',
+        ],
+
+        'Assam': [
+            'Dibrugarh',
+            'Guwahati',
+            'Jorhat',
+            'Silchar',
+        ],
+
+        'Jammu and Kashmir': [
+            'Jammu',
+            'Srinagar',
+            'Gulmarg',
+            'Pahalgam',
+        ],
+
+        'Sikkim': [
+            'Gangtok',
+            'Namchi',
+            'Pelling',
+        ],
+    };
+
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        const form = e.currentTarget;
-        const name = (form.elements.namedItem('name') as HTMLInputElement)?.value || '';
-        const email = (form.elements.namedItem('email') as HTMLInputElement)?.value || '';
-        const country = (form.elements.namedItem('country') as HTMLSelectElement)?.value || '';
-        const state = (form.elements.namedItem('state') as HTMLSelectElement)?.value || '';
-        const city = (form.elements.namedItem('city') as HTMLInputElement)?.value || '';
-        const phone = (form.elements.namedItem('phone') as HTMLInputElement)?.value || '';
-        const details = (form.elements.namedItem('details') as HTMLTextAreaElement)?.value || '';
 
-        const text = `*New Contact Enquiry*%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Phone:* ${phone}%0A*Location:* ${city}, ${state}, ${country}%0A*Enquiry:* ${details}`;
-        
-        window.open(`https://wa.me/917397329776?text=${text}`, '_blank');
+        setIsSubmitting(true);
+        setSubmitStatus("idle");
+
+        const form = e.currentTarget;
+        const formData = new FormData(form);
+
+        const data = {
+            name: formData.get("name")?.toString().trim() || '',
+            email: formData.get("email")?.toString().trim() || '',
+            country: formData.get("country")?.toString() || '',
+            otherCountry: formData.get("otherCountry")?.toString().trim() || '',
+            state: formData.get("state")?.toString().trim() || '',
+            city: formData.get("city")?.toString().trim() || '',
+            phone: formData.get("phone")?.toString().trim() || '',
+            details: formData.get("details")?.toString().trim() || '',
+        };
+
+        const countryDisplay = data.country === 'Other' ? (data.otherCountry || 'Other') : (data.country || 'India');
+        const locationParts = [data.city, data.state, countryDisplay].filter(Boolean).join(', ');
+
+        const now = new Date();
+        const submissionTime = now.toLocaleString('en-IN', {
+            day: '2-digit', month: 'short', year: 'numeric',
+            hour: '2-digit', minute: '2-digit', hour12: true
+        });
+
+        let message = `*New Contact Enquiry – Logaa Holidays*\n`;
+        message += `*Submitted:* ${submissionTime}\n\n`;
+        message += `*Name:* ${data.name}\n`;
+        message += `*Phone:* ${data.phone}\n`;
+        message += `*Email:* ${data.email}\n`;
+        if (locationParts) {
+            message += `*Location:* ${locationParts}\n`;
+        }
+        if (data.details) {
+            message += `*Enquiry Details:* ${data.details}\n`;
+        }
+
+        const whatsappNumber = '917397329776';
+        const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+        // Open WhatsApp directly in user activation stack
+        window.open(whatsappUrl, '_blank');
+
+        // Fire-and-forget API notification if a backend endpoint exists
+        fetch("/api/contact", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ ...data, submissionTime }),
+        }).catch(() => {
+            // Ignore missing backend on static SPA
+        });
+
+        setSubmitStatus("success");
+        setIsSubmitting(false);
+        form.reset();
+        setSelectedCountry('');
+        setSelectedState('');
+        setSelectedCity('');
+        setOtherCountry('');
     };
 
     return (
@@ -78,8 +464,8 @@ export function Contact() {
                 <div className="relative z-10 px-6 mt-16 max-w-4xl mx-auto">
                     <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
                         <p className="font-display text-4xl md:text-5xl text-white/90 italic tracking-wide mb-4 text-shadow">We're Here For You</p>
-                        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white tracking-tighter uppercase mb-6 ">
-                            CONTACT US
+                        <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-white tracking-tighter uppercase mb-6 ">
+                            Contact <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-300">Us</span>
                         </h1>
                         <p className="text-lg md:text-xl text-white/90 font-medium tracking-widest ">
                             Logaa Holidays - Customized Domestic & International Tour Packages From Madurai.
@@ -215,12 +601,12 @@ export function Contact() {
             </section> */}
 
             {/* 6. CONTACT SECTION (CONTACT US) */}
-            <section className="relative w-full pt-32 pb-40 bg-[var(--color-blue-ocean)]">
+            <section className="relative w-full pt-32 pb-20 bg-[var(--color-blue-ocean)]">
                 <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-3 gap-16">
 
                     {/* Contact Form (Claymorphism Inset) */}
                     <div className="lg:col-span-2">
-                        <h3 className="text-white/90 font-bold tracking-widest uppercase mb-8 text-2xl">Plan Your Next Adventure</h3>
+                        <h2 className="text-white/90 font-bold tracking-widest capitalize mb-8 text-2xl">Plan Your Next Adventure</h2>
                         <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div className="col-span-1">
                                 <input
@@ -240,82 +626,292 @@ export function Contact() {
                                     className="w-full bg-[var(--color-primary-forest)] text-white placeholder-cyan-100/50 px-6 py-4 rounded-2xl outline-none focus:ring-2 focus:ring-[var(--color-accent-gold)]/50 border border-white/10 transition-all"
                                 />
                             </div>
+                            {/* Country */}
                             <div className="col-span-1">
+                                <label
+                                    htmlFor="country"
+                                    className="block text-white font-semibold text-sm mb-2"
+                                >
+                                    Country <span className="text-red-300">*</span>
+                                </label>
+
                                 <select
+                                    id="country"
                                     name="country"
                                     required
-                                    defaultValue=""
-                                    className="w-full bg-[var(--color-primary-forest)] text-white placeholder-cyan-100/50 px-6 py-4 rounded-2xl outline-none focus:ring-2 focus:ring-[var(--color-accent-gold)]/50 border border-white/10 transition-all appearance-none"
+                                    value={selectedCountry}
+                                    onChange={(e) => {
+                                        setSelectedCountry(e.target.value);
+                                        setSelectedState('');
+                                        setSelectedCity('');
+                                        setOtherCountry('');
+                                    }}
+                                    className="w-full bg-[var(--color-primary-forest)] text-white px-6 py-4 rounded-2xl outline-none focus:ring-2 focus:ring-[var(--color-accent-gold)]/70 border border-white/20 transition-all appearance-none"
                                 >
-                                    <option value="" disabled>Select Country *</option>
-                                    <option value="India">India</option>
-                                    <option value="USA">USA</option>
-                                    <option value="UK">UK</option>
-                                    <option value="UAE">UAE</option>
-                                    <option value="Other">Other</option>
+                                    <option value="" disabled className="text-gray-900">
+                                        Select your country
+                                    </option>
+                                    <option value="India" className="text-gray-900">
+                                        India
+                                    </option>
+                                    <option value="Other" className="text-gray-900">
+                                        Other
+                                    </option>
                                 </select>
                             </div>
+
+                            {/* Other Country - Only visible when Other is selected */}
+                            {selectedCountry === 'Other' && (
+                                <div className="col-span-1">
+                                    <label
+                                        htmlFor="otherCountry"
+                                        className="block text-white font-semibold text-sm mb-2"
+                                    >
+                                        Other Country <span className="text-red-300">*</span>
+                                    </label>
+                                    <input
+                                        id="otherCountry"
+                                        name="otherCountry"
+                                        type="text"
+                                        placeholder="Enter your country"
+                                        required
+                                        autoComplete="country-name"
+                                        value={otherCountry}
+                                        onChange={(e) => setOtherCountry(e.target.value)}
+                                        className="w-full bg-[var(--color-primary-forest)] text-white placeholder-white/60 px-6 py-4 rounded-2xl outline-none focus:ring-2 focus:ring-[var(--color-accent-gold)]/70 border border-white/20 transition-all"
+                                    />
+                                </div>
+                            )}
+
+                            {/* State */}
                             <div className="col-span-1">
-                                <select
-                                    name="state"
-                                    required
-                                    defaultValue=""
-                                    className="w-full bg-[var(--color-primary-forest)] text-white placeholder-cyan-100/50 px-6 py-4 rounded-2xl outline-none focus:ring-2 focus:ring-[var(--color-accent-gold)]/50 border border-white/10 transition-all appearance-none"
+                                <label
+                                    htmlFor="state"
+                                    className="block text-white font-semibold text-sm mb-2"
                                 >
-                                    <option value="" disabled>Select State *</option>
-                                    <option value="Tamil Nadu">Tamil Nadu</option>
-                                    <option value="Kerala">Kerala</option>
-                                    <option value="Karnataka">Karnataka</option>
-                                    <option value="Maharashtra">Maharashtra</option>
-                                    <option value="Delhi">Delhi</option>
-                                    <option value="Other">Other</option>
-                                </select>
+                                    State <span className="text-red-300">*</span>
+                                </label>
+
+                                {selectedCountry === 'India' ? (
+                                    <select
+                                        id="state"
+                                        name="state"
+                                        required
+                                        value={selectedState}
+                                        onChange={(e) => {
+                                            setSelectedState(e.target.value);
+                                            setSelectedCity('');
+                                        }}
+                                        className="w-full bg-[var(--color-primary-forest)] text-white px-6 py-4 rounded-2xl outline-none focus:ring-2 focus:ring-[var(--color-accent-gold)]/70 border border-white/20 transition-all appearance-none"
+                                    >
+                                        <option value="" disabled className="text-gray-900">
+                                            Select your state
+                                        </option>
+                                        {indiaStates.map((state) => (
+                                            <option key={state} value={state} className="text-gray-900">
+                                                {state}
+                                            </option>
+                                        ))}
+                                    </select>
+                                ) : (
+                                    <input
+                                        id="state"
+                                        name="state"
+                                        type="text"
+                                        placeholder="Enter your state"
+                                        required
+                                        autoComplete="address-level1"
+                                        value={selectedState}
+                                        onChange={(e) => {
+                                            setSelectedState(e.target.value);
+                                            setSelectedCity('');
+                                        }}
+                                        className="w-full bg-[var(--color-primary-forest)] text-white placeholder-white/60 px-6 py-4 rounded-2xl outline-none focus:ring-2 focus:ring-[var(--color-accent-gold)]/70 border border-white/20 transition-all"
+                                    />
+                                )}
+                            </div>
+
+                            {/* City */}
+                            <div className="col-span-1">
+                                <label
+                                    htmlFor="city"
+                                    className="block text-white font-semibold text-sm mb-2"
+                                >
+                                    City <span className="text-red-300">*</span>
+                                </label>
+
+                                {selectedCountry === 'India' && stateCities[selectedState] ? (
+                                    <select
+                                        id="city"
+                                        name="city"
+                                        required
+                                        value={selectedCity}
+                                        onChange={(e) => setSelectedCity(e.target.value)}
+                                        className="w-full bg-[var(--color-primary-forest)] text-white px-6 py-4 rounded-2xl outline-none focus:ring-2 focus:ring-[var(--color-accent-gold)]/70 border border-white/20 transition-all appearance-none"
+                                    >
+                                        <option value="" disabled className="text-gray-900">
+                                            Select your city
+                                        </option>
+                                        {stateCities[selectedState].map((city) => (
+                                            <option key={city} value={city} className="text-gray-900">
+                                                {city}
+                                            </option>
+                                        ))}
+                                    </select>
+                                ) : (
+                                    <input
+                                        id="city"
+                                        name="city"
+                                        type="text"
+                                        placeholder={selectedCountry === 'India' ? 'Select state first' : 'Enter your city'}
+                                        required
+                                        autoComplete="address-level2"
+                                        value={selectedCity}
+                                        onChange={(e) => setSelectedCity(e.target.value)}
+                                        disabled={selectedCountry === 'India' && !selectedState}
+                                        className="w-full bg-[var(--color-primary-forest)] text-white placeholder-white/60 px-6 py-4 rounded-2xl outline-none focus:ring-2 focus:ring-[var(--color-accent-gold)]/70 border border-white/20 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                                    />
+                                )}
                             </div>
                             <div className="col-span-1">
+                                <label
+                                    htmlFor="phone"
+                                    className="block text-white font-semibold text-sm mb-2"
+                                >
+                                    Phone / Mobile <span className="text-red-300">*</span>
+                                </label>
+
                                 <input
-                                    name="city"
-                                    type="text"
-                                    placeholder="City"
-                                    className="w-full bg-[var(--color-primary-forest)] text-white placeholder-cyan-100/50 px-6 py-4 rounded-2xl outline-none focus:ring-2 focus:ring-[var(--color-accent-gold)]/50 border border-white/10 transition-all"
-                                />
-                            </div>
-                            <div className="col-span-1">
-                                <input
+                                    id="phone"
                                     name="phone"
                                     type="tel"
-                                    placeholder="Phone / Mobile *"
+                                    placeholder="Enter your mobile number"
                                     required
-                                    className="w-full bg-[var(--color-primary-forest)] text-white placeholder-cyan-100/50 px-6 py-4 rounded-2xl outline-none focus:ring-2 focus:ring-[var(--color-accent-gold)]/50 border border-white/10 transition-all"
+                                    autoComplete="tel"
+                                    inputMode="numeric"
+                                    maxLength={10}
+                                    pattern="[0-9]{10}"
+                                    onInput={(e) => {
+                                        e.currentTarget.value = e.currentTarget.value
+                                            .replace(/\D/g, "")
+                                            .slice(0, 10);
+                                    }}
+                                    className="w-full bg-[var(--color-primary-forest)] text-white placeholder-white/60 px-6 py-4 rounded-2xl outline-none focus:ring-2 focus:ring-[var(--color-accent-gold)]/70 border border-white/20 transition-all"
                                 />
                             </div>
+
+                            {/* Enquiry Details */}
                             <div className="col-span-1 md:col-span-2">
+                                <label
+                                    htmlFor="details"
+                                    className="block text-white font-semibold text-sm mb-2"
+                                >
+                                    Enquiry Details <span className="text-red-300">*</span>
+                                </label>
+
                                 <textarea
+                                    id="details"
                                     name="details"
-                                    placeholder="Enquiry Details *"
+                                    placeholder="Tell us about your travel plan"
                                     required
                                     rows={5}
-                                    className="w-full bg-[var(--color-primary-forest)] text-white placeholder-cyan-100/50 px-6 py-4 rounded-3xl outline-none focus:ring-2 focus:ring-[var(--color-accent-gold)]/50 border border-white/10 transition-all resize-none"
+                                    className="w-full bg-[var(--color-primary-forest)] text-white placeholder-white/60 px-6 py-4 rounded-3xl outline-none focus:ring-2 focus:ring-[var(--color-accent-gold)]/70 border border-white/20 transition-all resize-none"
                                 ></textarea>
                             </div>
 
-                            <div className="col-span-1 md:col-span-2 flex flex-col sm:flex-row items-center justify-between gap-6 mt-4">
-                                <label className="flex items-center gap-3 text-white/70 text-sm cursor-pointer group">
-                                    <div className="w-5 h-5 rounded bg-[var(--color-primary-forest)] ,0,0,0.5),inset_-3px_-3px_6px_rgba(255,255,255,0.05)] flex items-center justify-center">
-                                        <CheckCircle2 className="w-3 h-3 text-white opacity-0 group-hover:opacity-50 transition-opacity" />
-                                    </div>
-                                    I agree to the Terms & Conditions
-                                </label>
+                            {/* Terms + Submit */}
+                            <div className="col-span-1 md:col-span-2 flex flex-col sm:flex-row items-start sm:items-center justify-start gap-6 mt-4">
 
-                                <button type="submit" className="bg-white/10 border border-white/20 text-white backdrop-blur-md px-10 py-4 rounded-full font-bold hover:bg-white hover:text-[var(--color-primary-forest)] transition-all uppercase tracking-wider text-sm flex items-center gap-3 w-full sm:w-auto justify-center">
-                                    Send Message <Send className="w-4 h-4" />
+                                {/* Accessible Checkbox */}
+                                <div className="flex items-start gap-3">
+
+                                    <input
+                                        id="terms"
+                                        name="terms"
+                                        type="checkbox"
+                                        required
+                                        className="mt-0.5 w-5 h-5 shrink-0 rounded border-white/40 bg-[var(--color-primary-forest)] text-[var(--color-accent-gold)] focus:ring-2 focus:ring-[var(--color-accent-gold)]"
+                                    />
+
+                                    <label
+                                        htmlFor="terms"
+                                        className="text-white/80 text-sm leading-6 cursor-pointer"
+                                    >
+                                        I agree to the{" "}
+                                        <a
+                                            href="/terms-and-conditions"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="text-white underline underline-offset-2 hover:text-[var(--color-accent-gold)] transition-colors"
+                                        >
+                                            Terms & Conditions
+                                        </a>{" "}
+                                        and{" "}
+                                        <a
+                                            href="/privacy-policy"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="text-white underline underline-offset-2 hover:text-[var(--color-accent-gold)] transition-colors"
+                                        >
+                                            Privacy Policy
+                                        </a>
+                                        .
+                                    </label>
+
+                                </div>
+
+                                {/* Submit Button */}
+                                <button
+                                    type="submit"
+                                    disabled={isSubmitting}
+                                    aria-label={
+                                        isSubmitting
+                                            ? "Sending your enquiry"
+                                            : "Send enquiry"
+                                    }
+                                    className="bg-gradient-to-r from-emerald-500 to-teal-500 text-white shadow-lg hover:shadow-xl hover:scale-105 px-10 py-4 rounded-full font-bold transition-all uppercase tracking-wider text-sm flex items-center gap-3 w-full sm:w-auto justify-center disabled:opacity-60 disabled:cursor-not-allowed"
+                                >
+                                    {isSubmitting ? (
+                                        <>
+                                            <span
+                                                className="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin"
+                                                aria-hidden="true"
+                                            />
+                                            Sending...
+                                        </>
+                                    ) : (
+                                        <>
+                                            Send Message
+                                            <Send className="w-4 h-4" aria-hidden="true" />
+                                        </>
+                                    )}
                                 </button>
+                            </div>
+
+                            {/* Submission Status */}
+                            <div
+                                className="col-span-1 md:col-span-2"
+                                aria-live="polite"
+                                aria-atomic="true"
+                            >
+                                {submitStatus === "success" && (
+                                    <div className="rounded-xl border border-emerald-300/30 bg-emerald-500/10 px-5 py-3 text-sm text-emerald-100">
+                                        Your enquiry has been sent successfully. We will contact you soon.
+                                    </div>
+                                )}
+
+                                {submitStatus === "error" && (
+                                    <div className="rounded-xl border border-red-300/30 bg-red-500/10 px-5 py-3 text-sm text-red-100">
+                                        Something went wrong while sending your enquiry. Please try again.
+                                    </div>
+                                )}
                             </div>
                         </form>
                     </div>
 
                     {/* Contact Info */}
                     <div className="lg:col-span-1 pt-16">
-                        <h3 className="text-white font-bold tracking-widest uppercase mb-8 text-xl border-b border-white/10 pb-4">Contact Info</h3>
+                        <h2 className="text-white font-bold tracking-widest capitalize mb-8 text-xl border-b border-white/10 pb-4">Contact Info</h2>
 
                         <div className="space-y-6 mb-10">
                             <div className="flex items-start gap-4 group">
@@ -326,7 +922,9 @@ export function Contact() {
                                     <p className="text-white font-bold text-sm">Contact Person</p>
                                     <p className="text-white/70 text-sm">Mr. Loganathan</p>
                                     <p className="text-white font-bold text-sm mt-4">Address</p>
-                                    <p className="text-white/70 text-sm">D No.T247, Ellis Nagar , Housing Board Sector T Type, Madurai, Tamil Nadu, India - 625016</p>
+                                    <p className="text-white/70 text-sm">
+                                     T247, Sector T Type, Housing Board, Ellis Nagar, Madurai,Tamil Nadu – 625016
+                                    </p>
                                 </div>
                             </div>
 
@@ -354,12 +952,14 @@ export function Contact() {
                                 <div className="w-full">
                                     <p className="text-white font-bold text-sm mb-4">Follow Us</p>
                                     <div className="flex items-center gap-4">
-                                        <a href="https://www.instagram.com/logaaholidays/" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#dc2743] hover:to-[#bc1888] hover:border-transparent hover:scale-110 transition-all group shadow-sm">
-                                            <InstagramIcon className="w-4 h-4 text-white" />
-                                        </a>
-                                        <a href="https://www.facebook.com/logaaholidays" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#1877F2] hover:border-[#1877F2] hover:scale-110 transition-all group shadow-sm">
-                                            <FacebookIcon className="w-4 h-4 text-white" />
-                                        </a>
+                                       <div className="flex items-center justify-center md:justify-start w-full gap-5 mt-6">
+            <a href="https://www.instagram.com/logaaholidays/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] flex items-center justify-center text-white shadow-md hover:scale-125 transition-transform duration-300 animate-zoom-in-out">
+              <InstagramIcon className="w-6 h-8" />
+            </a>
+            <a href="https://www.facebook.com/logaaholidays" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#1877F2] flex items-center justify-center text-white shadow-md hover:scale-125 transition-transform duration-300 animate-zoom-in-out" style={{ animationDelay: '0.75s' }}>
+              <FacebookIcon className="w-6 h-8 fill-white" />
+            </a>
+          </div>
                                     </div>
                                 </div>
                             </div>
@@ -388,7 +988,7 @@ export function Contact() {
                         <div className="w-9 h-9 rounded-full bg-[var(--color-primary-emerald)] flex items-center justify-center flex-shrink-0">
                             <MapPin className="w-4 h-4 text-white" />
                         </div>
-                        <h2 className="text-2xl font-bold text-white tracking-wide uppercase">Our Location</h2>
+                        <h2 className="text-2xl font-bold text-white tracking-wide capitalize">Our Location</h2>
                     </div>
 
                     <div className="grid lg:grid-cols-5 gap-6">
@@ -426,7 +1026,7 @@ export function Contact() {
                                     <meta itemProp="addressCountry" content="IN" />
                                 </div>
 
-                                <p className="text-white text-xs font-bold uppercase tracking-widest mb-1">Registered Office</p>
+                                <p className="text-white text-xs font-bold capitalize tracking-widest mb-1">Registered Office</p>
                                 <p className="text-white font-bold text-lg leading-snug mb-1">Logaa Holidays</p>
                                 <p className="text-white/90 text-sm leading-relaxed">
                                     T247, Sector T Type, Housing Board,<br />
@@ -436,28 +1036,14 @@ export function Contact() {
 
                                 <div className="mt-3 pt-3 border-t border-white/10 flex flex-col gap-1.5 text-sm">
                                     <div className="flex items-center gap-2 text-white/90">
-                                        <span className="text-white font-bold text-xs w-14 flex-shrink-0">Mon–Sat</span>
-                                        <span>9:00 AM – 9:00 PM</span>
-                                    </div>
-                                    <div className="flex items-center gap-2 text-white/90">
-                                        <span className="text-white font-bold text-xs w-14 flex-shrink-0">Sunday</span>
-                                        <span>10:00 AM – 8:00 PM</span>
+                                        <span className="text-white font-bold text-xs w-14 flex-shrink-0">Mon–Sun</span>
+                                        <span>24 hours</span>
                                     </div>
                                 </div>
                             </div>
 
                             {/* Action Buttons */}
-                            <div className="grid grid-cols-2 gap-3">
-                                <a
-                                    href="https://maps.app.goo.gl/YF4kRXWaSmTd69Gu9"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="flex items-center justify-center gap-2 bg-white/10 border border-white/20 text-white px-4 py-3 rounded-2xl text-sm font-semibold hover:bg-white hover:text-[var(--color-primary-forest)] transition-all"
-                                    aria-label="Open Logaa Holidays in Google Maps"
-                                >
-                                    <MapPin className="w-4 h-4 flex-shrink-0" />
-                                    Open in Maps
-                                </a>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                                 <a
                                     href="https://www.google.com/maps/dir/?api=1&destination=Logaa+Holidays,+Ellis+Nagar,+Madurai,+Tamil+Nadu+625016"
                                     target="_blank"
@@ -483,12 +1069,12 @@ export function Contact() {
                                     className="flex items-center justify-center gap-2 bg-[#25D366]/20 border border-[#25D366]/40 text-white px-4 py-3 rounded-2xl text-sm font-semibold hover:bg-[#25D366] hover:border-[#25D366] transition-all"
                                     aria-label="WhatsApp Logaa Holidays"
                                 >
-                                    <svg className="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                    <svg className="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg>
                                     WhatsApp
                                 </a>
                                 <a
                                     href="mailto:logaaholidays@gmail.com"
-                                    className="col-span-2 flex items-center justify-center gap-2 bg-white/10 border border-white/20 text-white px-4 py-3 rounded-2xl text-sm font-semibold hover:bg-white hover:text-[var(--color-primary-forest)] transition-all"
+                                    className="flex items-center justify-center gap-2 bg-white/10 border border-white/20 text-white px-4 py-3 rounded-2xl text-sm font-semibold hover:bg-white hover:text-[var(--color-primary-forest)] transition-all"
                                     aria-label="Email Logaa Holidays"
                                 >
                                     <Mail className="w-4 h-4 flex-shrink-0" />

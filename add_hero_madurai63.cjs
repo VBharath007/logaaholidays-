@@ -10,7 +10,7 @@ for (let i = 0; i < lines.length; i++) {
   newLines.push(line);
   
   // Look for image line pointing to 322x372 madurai 63 package
-  if (line.match(/^\s*(?:"image"|image)\s*:\s*['"]\/assets\/madurai(?:%20|\s)63(?:%20|\s)package\/322x372\/(.*?)(?:\.png|\.jpeg|\.jpg|\.PNG|\.avif)['"],?\s*$/i)) {
+  if (line.match(/^\s*(?:"image"|image)\s*:\s*['"]\/assets\/madurai(?:%20|\s)63(?:%20|\s)package\/322x372\/(.*?)(?:\.webp|\.jpeg|\.jpg|\.webp|\.avif)['"],?\s*$/i)) {
     
     // Check if the next line is already a heroImage
     if (i + 1 < lines.length && lines[i + 1].match(/^\s*(?:"heroImage"|heroImage)\s*:/)) {

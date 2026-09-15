@@ -45,7 +45,7 @@ export const destinations: Destination[] = [
     accent: '#22d3ee',
     accentSoft: '#67e8f9',
     gradient: 'from-cyan-950 via-cyan-700 to-amber-300',
-    highlights: ['Palolem beach', 'Fontainhas quarter', 'Sunset river cruises'],
+    highlights: ['Palolem beach', 'Fontainhas quarter', 'Sunset'],
   },
   {
     id: 'rajasthan',

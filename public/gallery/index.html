@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  <link rel="icon" href="/logo.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/logo.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/logo.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Critical Above-the-fold Fonts Preload -->
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/cormorant-300-normal-4.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/outfit-300-normal-1.woff2" crossorigin />
+
+  <!-- LCP resource preloads: header logo and first hero slide images must be discoverable from HTML,
+       not after JavaScript executes, to avoid "LCP request not discoverable early" warning. -->
+  <link
+    rel="preload"
+    as="image"
+    href="/logo-155w.webp"
+    imagesrcset="/logo-155w.webp 155w, /logo-155w@2x.webp 310w"
+    imagesizes="155px"
+    fetchpriority="high"
+  />
+  <link
+    rel="preload"
+    as="image"
+    href="/assets/home hero/homefirst.webp"
+    media="(min-width: 769px)"
+    fetchpriority="high"
+  />
+  <link
+    rel="preload"
+    as="image"
+    href="/assets/home hero/homeverticalone (1)-579w.webp"
+    imagesrcset="/assets/home%2520hero/homeverticalone%2520(1)-579w.webp 579w, /assets/home%2520hero/homeverticalone%2520(1)-579w@2x.webp 941w"
+    imagesizes="100vw"
+    media="(max-width: 768px)"
+    fetchpriority="high"
+  />
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Logaa Holidays is a trusted travel agency in Madurai offering customized domestic and international tour packages for families, groups, and honeymooners." />
+
+<meta name="keywords" content="Travel Agency in Madurai, Best Travel Agency in Madurai, Tour Operators in Madurai, Best Tour Operator in Madurai, Holiday Packages from Madurai, Tour Packages from Madurai, Travel Agents in Madurai, Domestic Tour Packages from Madurai, Customized Tour Packages in Madurai, Family Tour Packages from Madurai, Group Tour Packages from Madurai, Honeymoon Packages from Madurai, Pilgrimage Tour Packages from Madurai, South India Tour Packages from Madurai" />
+
+<meta name="author" content="Logaa Holidays" />
+
+  <meta property="og:title" content="Our Gallery | Logaa Holidays" />
+  <meta property="og:description" content="Explore the beautiful moments and breathtaking destinations captured with Logaa Holidays across Tamil Nadu, South India and beyond." />
+  <meta property="og:url" content="https://logaaholidays.com/gallery" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://logaaholidays.com/og-image.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Our Gallery | Logaa Holidays" />
+  <meta name="twitter:description" content="Explore the beautiful moments and breathtaking destinations captured with Logaa Holidays across Tamil Nadu, South India and beyond." />
+  <meta name="twitter:image" content="https://logaaholidays.com/og-image.webp" />
+
+  
+
+  <!-- Canonical URL (Homepage) -->
+  <link rel="canonical" href="https://logaaholidays.com/gallery" />
+
+  <title>Our Gallery | Logaa Holidays</title>
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json" id="travelagency-schema">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Logaa Holidays",
+    "image": "https://logaaholidays.com/og-image.webp",
+    "@id": "https://logaaholidays.com/#travelagency",
+    "url": "https://logaaholidays.com/",
+    "telephone": "+91 73973 29776",
+    "email": "logaaholidays@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "70 Feet Road, T S Colony, Housing Board, Ellis Nagar, Madurai, Tamil Nadu - 625016",
+      "addressLocality": "Madurai",
+      "addressRegion": "Tamil Nadu",
+      "postalCode": "625016",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 9.9197,
+      "longitude": 78.1198
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "09:00",
+      "closes": "21:00"
+    },
+    "priceRange": "₹₹",
+    "areaServed": ["Madurai", "Tamil Nadu", "South India", "India"],
+    "sameAs": [
+      "https://www.facebook.com/logaaholidays",
+      "https://www.instagram.com/logaaholidays"
+    ],
+    "description": "Logaa Holidays is the best travel agency in Madurai, offering customized domestic and international tour packages. Book family, group, and honeymoon holiday packages from Madurai."
+  }
+
+  </script>
+
+  <!-- <script>
+    // Disable right-click
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    // Disable image drag and drop
+    document.addEventListener('dragstart', event => {
+      if (event.target.nodeName.toUpperCase() === 'IMG') {
+        event.preventDefault();
+      }
+    });
+
+    // Basic DevTools and Save-As Deterrent
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'F12' || e.keyCode === 123) {
+        e.preventDefault();
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C' || e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67)) {
+        e.preventDefault();
+      }
+      if (e.ctrlKey && (e.key === 'U' || e.keyCode === 85)) {
+        e.preventDefault();
+      }
+      if (e.ctrlKey && (e.key === 'S' || e.keyCode === 83)) {
+        e.preventDefault();
+      }
+    });
+  </script> -->
+ 
+  <script type="module" crossorigin src="/assets/index-CGRImJXE.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-CNC7AqOf.js">
+  <link rel="modulepreload" crossorigin href="/assets/vendor-animation-DCFvf-jT.js">
+  <link rel="modulepreload" crossorigin href="/assets/vendor-react-MPzy9xAt.js">
+  <link rel="stylesheet" crossorigin href="/assets/index-ypbQJiTi.css">
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>

@@ -107,8 +107,20 @@ function ReviewCarousel() {
       else setVisibleCards(3)
     }
     checkSize()
-    window.addEventListener('resize', checkSize)
-    return () => window.removeEventListener('resize', checkSize)
+
+    // Debounce: only re-check layout 150ms after the last resize event fires,
+    // preventing repeated forced layout reads during continuous resize drags.
+    let debounceTimer: ReturnType<typeof setTimeout>
+    const debouncedCheck = () => {
+      clearTimeout(debounceTimer)
+      debounceTimer = setTimeout(checkSize, 150)
+    }
+
+    window.addEventListener('resize', debouncedCheck)
+    return () => {
+      window.removeEventListener('resize', debouncedCheck)
+      clearTimeout(debounceTimer)
+    }
   }, [])
 
   /* Auto slide */
@@ -225,7 +237,6 @@ export function TestimonialsPage() {
       {/* 2. FEATURED TESTIMONIAL */}
       <section className="pt-10 pb-8 px-6 text-center max-w-5xl mx-auto relative z-20">
         <h3 className="text-[var(--color-neutral-medium)] font-bold uppercase tracking-widest mb-2 relative z-20">What Our Clients Say</h3>
-        <h2 className="text-5xl md:text-7xl font-display font-bold text-[var(--color-blue-ocean)] italic tracking-wider opacity-10 relative z-20 pointer-events-none">TESTIMONIAL</h2>
 
         <div className="flex flex-col md:flex-row items-center gap-12 -mt-10 md:-mt-16 relative z-30">
           <div className="relative">
@@ -252,7 +263,7 @@ export function TestimonialsPage() {
       <section className="py-10 px-6 max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-display font-bold text-[var(--color-blue-ocean)] mb-2">More <span className="text-[var(--color-blue-ocean)] italic font-normal">Success Stories</span></h2>
-          <p className="text-[var(--color-neutral-medium)]">Read what thousands of happy travelers have experienced.</p>
+          <p className="text-[var(--color-neutral-medium)]">Read what our happy travellers have experienced.</p>
         </div>
 
         <div className="review-section">
@@ -263,21 +274,21 @@ export function TestimonialsPage() {
       </section>
 
       {/* 4. TRUST BANNER */}
-      <section className="pt-10 pb-4 px-6 max-w-6xl mx-auto">
+      <section className="pt-6 pb-10 px-6 max-w-6xl mx-auto">
         <div className="p-12 md:p-16 text-white text-center relative overflow-hidden bg-[var(--color-primary-forest)] rounded-[3rem]">
           <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--color-blue-ocean)] rounded-full blur-[100px] opacity-10 translate-x-1/2 -translate-y-1/2"></div>
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-[var(--color-primary-teal)] rounded-full blur-[100px] opacity-10 -translate-x-1/2 translate-y-1/2"></div>
 
           <div className="relative z-10">
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">Join <span className="text-white/90 italic">Our</span> Happy Travelers</h2>
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">Join <span className="text-white/90 italic">Our</span> Happy Travellers</h2>
             <p className="text-white/80 max-w-2xl mx-auto mb-12 text-lg">
-              We have been organizing incredible journeys for over 2 years. Let us plan your next unforgettable adventure.
+              We have been creating memorable journeys since 2025. Let us plan your next unforgettable adventure.
             </p>
 
             <div className="flex flex-col sm:flex-row justify-center gap-6 mb-12">
               <div className="flex items-center justify-center gap-3 bg-white/10 backdrop-blur-sm px-6 py-4 rounded-full border border-white/20">
                 <ShieldCheck className="w-6 h-6 text-[#b5d536]" />
-                <span className="font-bold text-sm tracking-wider uppercase">Verified Agency</span>
+                <span className="font-bold text-sm tracking-wider uppercase">Trusted Travel Service</span>
               </div>
               <div className="flex items-center justify-center gap-3 bg-white/10 backdrop-blur-sm px-6 py-4 rounded-full border border-white/20">
                 <Heart className="w-6 h-6 text-white" />
@@ -285,7 +296,7 @@ export function TestimonialsPage() {
               </div>
             </div>
 
-            <Link to="/south-india-package" className="inline-block bg-white/10 border border-white/20 text-white backdrop-blur-md px-10 py-5 rounded-full font-bold text-lg hover:bg-white hover:text-[var(--color-primary-forest)] transition-all">
+            <Link to="/" className="inline-block bg-white/10 border border-white/20 text-white backdrop-blur-md px-10 py-5 rounded-full font-bold text-lg hover:bg-white hover:text-[var(--color-primary-forest)] transition-all">
               Plan Your Trip Now
             </Link>
           </div>

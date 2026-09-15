@@ -1,1244 +1,1262 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
+  <url>
     <loc>https://www.logaaholidays.com/</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/about</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/gallery</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/services</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/south-india-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tamil-nadu-tour-packages</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/kerala-tour-packages</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/karnataka-tour-packages</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/testimonials</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/contact</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/privacy-policy</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/terms-and-conditions</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/cancellation-policy</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.logaaholidays.com/tamilnadu-tourism</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.logaaholidays.com/kerala-tourism</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.logaaholidays.com/andaman-tourism</loc>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/karnataka-honeymoon-packages/premium-coorg-honeymoon-package-2-nights-3-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/karnataka-honeymoon-packages/premium-mysore-and-coorg-honeymoon-package-3-nights-4-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/karnataka-honeymoon-packages/premium-coorg-and-chikmagalur-honeymoon-4-nights-5-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/karnataka-honeymoon-packages/premium-karnataka-honeymoon-package-5-nights-6-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/goa-honeymoon-packages/goa-honeymoon-package-4-nights-5-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/coorg-tours/coorg-and-chikmagalur-tour-4-nights-5-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/hampi-tours/hampi-and-badami-heritage-tour-4-nights-5-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/udupi-murudeshwar-and-gokarna-tour-4-nights-5-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/mysore-tours/mysore-and-coorg-tour-package-3-nights-4-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/mysore-tours/bangalore-mysore-and-coorg-tour-4-nights-5-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/mysore-tours/mysore-coorg-and-kabini-tour-4-nights-5-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/ooty-tours/karnataka-ooty-special-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/kerala-cultural-tour-package-9-nights-10-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/fascinating-kerala-tour-package-4-nights-5-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/enchanting-kerala-tour-package-5-nights-6-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/best-of-kerala-tour-package-6-nights-7-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/kerala-ayurveda-wellness-tour-package-7-nights-8-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/kanyakumari-tours/kerala-tour-package-with-kanyakumari-7-nights-8-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/kerala-beaches-tour-package-8-nights-9-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/incredible-kerala-tour-package-3-nights-4-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/trichy-tours/thanjavur-trichy-kumbakonam-tour-package-3-nights-4-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/tamil-nadu-cultural-tour-package-8-nights-9-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/tamil-nadu-pilgrimage-tour-package-10-nights-11-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/tamil-nadu-beach-tour-package-10-nights-11-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/enchanting-tamil-nadu-tour-package-6-nights-7-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/best-of-tamil-nadu-tour-package-6-nights-7-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/delhi-city-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages/golden-triangle-tours/delhi-and-agra-heritage-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages/golden-triangle-tours/golden-triangle-express-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages/golden-triangle-tours/classic-golden-triangle-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/north-india-heritage-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages/kashmir-short-escape-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages/kashmir-highlights-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages/beautiful-kashmir-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages/classic-kashmir-holiday-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages/complete-kashmir-experience</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/karnataka-honeymoon-packages/kashmir-honeymoon-package-4-nights-5-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/karnataka-honeymoon-packages/kashmir-honeymoon-package-5-nights-6-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/karnataka-honeymoon-packages/complete-kashmir-honeymoon-package-6-nights-7-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/gangtok-honeymoon-package-2-nights-3-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/sikkim-darjeeling-honeymoon-packages/gangtok-and-darjeeling-honeymoon-3-nights-4-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/sikkim-darjeeling-honeymoon-packages/gangtok-pelling-and-darjeeling-honeymoon-4-nights-5-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/sikkim-darjeeling-honeymoon-packages/complete-sikkim-and-darjeeling-honeymoon-5-nights-6-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/maldives-honeymoon-packages/maldives-beach-honeymoon-package-2-nights-3-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/maldives-honeymoon-packages/maldives-beach-villa-honeymoon-3-nights-4-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/beach-villa-and-water-villa-honeymoon-4-nights-5-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/maldives-honeymoon-packages/premium-maldives-honeymoon-package-5-nights-6-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages/premium-shimla-honeymoon-package-2-nights-3-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages/premium-manali-honeymoon-package-3-nights-4-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages/shimla-and-manali-honeymoon-package-4-nights-5-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages/complete-shimla-and-manali-honeymoon-5-nights-6-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/goa-honeymoon-packages/goa-honeymoon-package-2-nights-3-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/goa-honeymoon-packages/complete-goa-honeymoon-package-4-nights-5-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/goa-honeymoon-packages/premium-goa-honeymoon-package-5-nights-6-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/goa-honeymoon-packages/goa-honeymoon-package-3-nights-4-days-north-south-goa</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/goa-honeymoon-packages/north-and-south-goa-honeymoon-3-nights-4-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/port-blair-honeymoon-package-2-nights-3-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/port-blair-and-havelock-honeymoon-3-nights-4-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/havelock-and-neil-island-honeymoon-4-nights-5-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/andaman-honeymoon-packages/complete-andaman-honeymoon-package-5-nights-6-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.logaaholidays.com/destination/uttar-pradesh/varanasi/chennai-to-varanasi-tour-package-2-days-1-night-kasi-flight-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.logaaholidays.com/tour-packages/varanasi/chennai-to-varanasi-tour-package-2-days-1-night-kasi-flight-package</loc>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/chennai-to-ayodhya-tour-package-2-days-1-night-ayodhya-flight-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.logaaholidays.com/destination/uttar-pradesh/varanasi/chennai-to-varanasi-tour-package-3-days-2-nights-kasi-flight-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.logaaholidays.com/tour-packages/varanasi/chennai-to-varanasi-tour-package-3-days-2-nights-kasi-flight-package</loc>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/chennai-to-kasi-ayodhya-tour-package-3-days-2-nights-flight-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/chennai-to-kasi-gaya-tour-package-5-days-4-nights-flight-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/chennai-to-kasi-gaya-prayagraj-ayodhya-tour-package-6-days-5-nights-flight-packa</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/chennai-to-kasi-train-tour-package-8-days-7-nights-pilgrimage-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-to-kasi-tour-package-3-days-2-nights-flight-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-to-kasi-gaya-prayagraj-tour-package-5-days-4-nights-flight-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-to-kasi-gaya-prayagraj-ayodhya-tour-package-6-days-5-nights-flight-packa</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.logaaholidays.com/destination/maharashtra/shirdi/madurai-to-shirdi-tour-package-2-days-1-night-flight-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.logaaholidays.com/tour-packages/shirdi/madurai-to-shirdi-tour-package-2-days-1-night-flight-package</loc>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.logaaholidays.com/destination/maharashtra/shirdi/chennai-to-shirdi-tour-package-train-flight-4-days-3-nights</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.logaaholidays.com/tour-packages/shirdi/chennai-to-shirdi-tour-package-train-flight-4-days-3-nights</loc>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.logaaholidays.com/destination/maharashtra/shirdi/chennai-to-shirdi-one-day-flight-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.logaaholidays.com/tour-packages/shirdi/chennai-to-shirdi-one-day-flight-tour-package</loc>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.logaaholidays.com/destination/maharashtra/shirdi/chennai-to-shirdi-tour-package-via-pune-2-days-1-night-flight-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.logaaholidays.com/tour-packages/shirdi/chennai-to-shirdi-tour-package-via-pune-2-days-1-night-flight-package</loc>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.logaaholidays.com/destination/maharashtra/shirdi/chennai-to-shirdi-train-tour-package-6-days-5-nights-pilgrimage</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.logaaholidays.com/tour-packages/shirdi/chennai-to-shirdi-train-tour-package-6-days-5-nights-pilgrimage</loc>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.logaaholidays.com/destination/maharashtra/shirdi/chennai-to-shirdi-mantralayam-train-tour-package-7-days-6-nights-pilgrimage</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.logaaholidays.com/tour-packages/shirdi/chennai-to-shirdi-mantralayam-train-tour-package-7-days-6-nights-pilgrimage</loc>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.logaaholidays.com/destination/maharashtra/shirdi/chennai-to-shirdi-pandharpur-mantralayam-train-tour-package-8-days-7-nights</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.logaaholidays.com/tour-packages/shirdi/chennai-to-shirdi-pandharpur-mantralayam-train-tour-package-8-days-7-nights</loc>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.logaaholidays.com/destination/maharashtra/shirdi/chennai-to-mumbai-shirdi-flight-tour-package-2-days-1-night</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.logaaholidays.com/tour-packages/shirdi/chennai-to-mumbai-shirdi-flight-tour-package-2-days-1-night</loc>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.logaaholidays.com/destination/maharashtra/shirdi/chennai-to-shirdi-nashik-flight-tour-package-3-days-2-nights</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.logaaholidays.com/tour-packages/shirdi/chennai-to-shirdi-nashik-flight-tour-package-3-days-2-nights</loc>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.logaaholidays.com/destination/maharashtra/shirdi/chennai-to-shirdi-pandharpur-flight-tour-package-3-days-2-nights</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.logaaholidays.com/tour-packages/shirdi/chennai-to-shirdi-pandharpur-flight-tour-package-3-days-2-nights</loc>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.logaaholidays.com/destination/maharashtra/shirdi/chennai-to-shirdi-nashik-ajanta-ellora-flight-tour-package-4-days-3-nights</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.logaaholidays.com/tour-packages/shirdi/chennai-to-shirdi-nashik-ajanta-ellora-flight-tour-package-4-days-3-nights</loc>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.logaaholidays.com/destination/maharashtra/shirdi/chennai-to-shirdi-2-jyotirlinga-flight-tour-package-3-days-2-nights</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.logaaholidays.com/tour-packages/shirdi/chennai-to-shirdi-2-jyotirlinga-flight-tour-package-3-days-2-nights</loc>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.logaaholidays.com/destination/maharashtra/shirdi/chennai-to-shirdi-3-jyotirlinga-flight-tour-package-4-days-3-nights</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.logaaholidays.com/tour-packages/shirdi/chennai-to-shirdi-3-jyotirlinga-flight-tour-package-4-days-3-nights</loc>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.logaaholidays.com/destination/maharashtra/shirdi/chennai-to-shirdi-lonavala-flight-tour-package-3-days-2-nights</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.logaaholidays.com/tour-packages/shirdi/chennai-to-shirdi-lonavala-flight-tour-package-3-days-2-nights</loc>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.logaaholidays.com/destination/maharashtra/shirdi/chennai-to-shirdi-ajanta-ellora-flight-tour-package-3-days-2-nights</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.logaaholidays.com/tour-packages/shirdi/chennai-to-shirdi-ajanta-ellora-flight-tour-package-3-days-2-nights</loc>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-one-day-tour-package-best-local-sightseeing</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/rameswaram-tours/madurai-to-rameswaram-one-day-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/kodaikanal-tours/madurai-to-kodaikanal-one-day-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/kanyakumari-tours/madurai-to-kanyakumari-one-day-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-to-meghamalai-one-day-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-to-Megamalai-one-day-tour-package</loc>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-to-trichy-thanjavur-one-day-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-to-tiruchendur-one-day-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/thekkady-tours/madurai-to-thekkady-one-day-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/munnar-tours/madurai-to-munnar-2-days-1-night-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-to-trichy-thanjavur-2-days-1-night-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-to-tiruchendur-2-days-1-night-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/kanyakumari-tours/madurai-to-kanyakumari-trivandrum-2-days-1-night-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/alleppey-tours/madurai-to-thekkady-alleppey-2-days-1-night-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/munnar-tours/madurai-to-munnar-marayoor-2-days-1-night-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/munnar-tours/madurai-to-munnar-3-days-2-nights-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/kodaikanal-tours/madurai-to-kodaikanal-mannavanur-3-days-2-nights-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/thekkady-tours/madurai-to-thekkady-3-days-2-nights-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/thekkady-tours/madurai-to-thekkady-vagamon-3-days-2-nights-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-to-meghamalai-3-days-2-nights-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-to-Megamalai-3-days-2-nights-tour-package</loc>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/ooty-tours/madurai-to-ooty-coonoor-3-days-2-nights-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/munnar-tours/madurai-to-munnar-thekkady-3-days-2-nights-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/munnar-tours/madurai-to-munnar-alleppey-3-days-2-nights-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/alleppey-tours/madurai-to-thekkady-alleppey-3-days-2-nights-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/munnar-tours/madurai-to-munnar-vagamon-3-days-2-nights-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/munnar-tours/madurai-to-munnar-marayoor-3-days-2-nights-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/thekkady-tours/madurai-to-thekkady-kumarakom-3-days-2-nights-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/rameswaram-tours/madurai-to-rameswaram-kanyakumari-3-days-2-nights-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/rameswaram-tours/best-madurai-trichy-thanjavur-rameswaram-tour-package-3-days-2-nights</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/kanyakumari-tours/madurai-to-kanyakumari-thiruvananthapuram-3-days-2-nights-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-to-trichy-thanjavur-kumbakonam-3-days-2-nights-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/rameswaram-tours/madurai-to-rameswaram-tiruchendur-kanyakumari-4-days-3-nights-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/munnar-tours/madurai-to-kodaikanal-munnar-4-days-3-nights-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/munnar-tours/madurai-to-munnar-vagamon-thekkady-4-days-3-nights-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/munnar-tours/madurai-to-munnar-thekkady-kumarakom-4-days-3-nights-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/munnar-tours/madurai-to-munnar-alleppey-kochi-4-days-3-nights-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-to-trichy-thanjavur-kumbakonam-4-days-3-nights-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/athirappilly-tours/madurai-to-valparai-athirappilly-kochi-4-days-3-nights-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/munnar-tours/madurai-to-kodaikanal-munnar-thekkady-5-days-4-nights-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-to-palani-one-day-trip</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-pillayarpatti-kundrakudi-thirukoshtiyur-one-day-temple-tour</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-to-courtallam-one-day-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/rameswaram-tours/madurai-to-rameswaram-2-days-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/kanyakumari-tours/madurai-to-kanyakumari-2-days-1-night-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/kodaikanal-tours/madurai-to-kodaikanal-2-days-1-night-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/thekkady-tours/madurai-to-thekkady-2-days-1-night-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/vagamon-tours/madurai-to-vagamon-2-days-1-night-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-to-meghamalai-2-days-1-night-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-to-Megamalai-2-days-1-night-tour-package</loc>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/ooty-tours/madurai-to-ooty-2-days-1-night-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-to-valparai-2-days-1-night-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-to-valparai-3-days-2-nights-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/kanyakumari-tours/madurai-tiruchendur-kanyakumari-3-days-2-nights-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-kumbakonam-navagraha-temple-tour-package-3-days-2-nights</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/rameswaram-tours/madurai-rameswaram-kanyakumari-thiruvananthapuram-4-days-3-nights-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/kanyakumari-tours/madurai-tiruchendur-kanyakumari-thiruvananthapuram-4-days-3-nights-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/kodaikanal-tours/madurai-kodaikanal-palani-madurai-4-days-3-nights-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-kumbakonam-navagraha-temples-4-days-3-nights-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/kovalam-tours/madurai-kanyakumari-kovalam-thiruvananthapuram-4-days-3-nights-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/munnar-tours/madurai-munnar-thekkady-alleppey-kochi-5-days-4-nights-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/rameswaram-tours/madurai-rameswaram-tiruchendur-kanyakumari-thiruvananthapuram-5-days-4-nights-to</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/rameswaram-tours/madurai-rameswaram-dhanushkodi-kanyakumari-thiruvananthapuram-5-days-4-nights-to</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/kodaikanal-tours/madurai-kodaikanal-rameswaram-kanyakumari-thiruvananthapuram-5-days-4-nights-tou</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/munnar-tours/kochi-munnar-thekkady-alleppey-kovalam-kanyakumari-rameswaram-madurai-8-days-7-n</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.logaaholidays.com/destination/maharashtra/shirdi/madurai-to-shirdi-tour-package-2-days-1-night-direct-flight-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.logaaholidays.com/tour-packages/shirdi/madurai-to-shirdi-tour-package-2-days-1-night-direct-flight-package</loc>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.logaaholidays.com/destination/uttar-pradesh/varanasi/madurai-to-kasi-tour-package-3-days-2-nights-varanasi-flight-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.logaaholidays.com/tour-packages/varanasi/madurai-to-kasi-tour-package-3-days-2-nights-varanasi-flight-package</loc>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-to-kasi-gaya-prayagraj-tour-package-5-days-4-nights-flight-package-2</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/madurai-tours/madurai-to-kasi-gaya-prayagraj-ayodhya-tour-package-6-days-5-nights-flight-packa-2</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/tamil-nadu-honeymoon-packages/kodaikanal-honeymoon-package-2-nights-3-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/tamil-nadu-honeymoon-packages/enchanting-romantic-ooty-and-coonoor-honeymoon-package-3-nights-4-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/tamil-nadu-honeymoon-packages/romantic-kodaikanal-and-kanyakumari-honeymoon-package-4-nights-5-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/tamil-nadu-honeymoon-packages/complete-tamil-nadu-honeymoon-6-nights-7-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages/golden-triangle-tours/delhi-mathura-vrindavan-agra-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages/golden-triangle-tours/delhi-mathura-vrindavan-agra-tour-package-2</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages/golden-triangle-tours/delhi-agra-fatehpur-sikri-jaipur-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages/golden-triangle-tours/delhi-agra-fatehpur-sikri-jaipur-tour-package-2</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages/golden-triangle-tours/delhi-agra-ajmer-pushkar-jaipur-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages/golden-triangle-tours/delhi-agra-ranthambore-jaipur-tour-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/mysore-tours/mysore-and-coorg-tour-package-3-nights-4-days-2</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/mysore-tours/bangalore-mysore-and-coorg-tour-4-nights-5-days-2</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/mysore-tours/mysore-coorg-and-kabini-tour-4-nights-5-days-2</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/coorg-tours/coorg-and-chikmagalur-tour-4-nights-5-days-2</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/hampi-tours/hampi-and-badami-heritage-tour-4-nights-5-days-2</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/udupi-murudeshwar-and-gokarna-tour-4-nights-5-days-2</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/kerala-honeymoon-packages/kerala-honeymoon-package-2-nights-3-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/kerala-honeymoon-packages/kerala-honeymoon-package-3-nights-4-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/kerala-honeymoon-packages/kerala-honeymoon-package-4-nights-5-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/tour-packages/kerala-honeymoon-packages/kerala-honeymoon-package-5-nights-6-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages/manali-short-holiday-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages/manali-explorer-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages/manali-with-kasol-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages/complete-manali-holiday-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages/manali-kasol-and-chandigarh-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages/manali-short-volvo-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages/manali-classic-volvo-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages/manali-and-kasol-volvo-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages/complete-manali-volvo-holiday</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages/shimla-highlights-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages/scenic-shimla-holiday-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages/complete-shimla-leisure-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages/best-of-shimla-and-manali-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.logaaholidays.com/north-india-tour-packages/complete-himachal-package</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.logaaholidays.com/destination/andaman/andaman-tourism/andaman-island-tour-package-7-nights-8-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.logaaholidays.com/tour-packages/andaman-tours/andaman-island-tour-package-7-nights-8-days</loc>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.logaaholidays.com/destination/andaman/andaman-tourism/popular-andaman-package-5-nights-6-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.logaaholidays.com/tour-packages/andaman-tours/popular-andaman-package-5-nights-6-days</loc>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.logaaholidays.com/destination/andaman/andaman-tourism/budget-andaman-package-3-nights-4-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.logaaholidays.com/tour-packages/andaman-tours/budget-andaman-package-3-nights-4-days</loc>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.logaaholidays.com/destination/andaman/andaman-tourism/andaman-budget-tour-package-2-nights-3-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.logaaholidays.com/tour-packages/andaman-tours/andaman-budget-tour-package-2-nights-3-days</loc>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.logaaholidays.com/destination/andaman/andaman-tourism/andaman-tour-package-4-nights-5-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.logaaholidays.com/tour-packages/andaman-tours/andaman-tour-package-4-nights-5-days</loc>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.logaaholidays.com/destination/andaman/andaman-tourism/andaman-tour-package-6-nights-7-days</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.logaaholidays.com/tour-packages/andaman-tours/andaman-tour-package-6-nights-7-days</loc>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

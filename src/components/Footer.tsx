@@ -36,13 +36,19 @@ export function Footer() {
       {/* Background Pattern - very subtle to ensure text visibility */}
       <div className="absolute top-0 right-0 w-96 h-96 opacity-[0.04] bg-[url('/assets/mandala.webp')] bg-contain bg-no-repeat rotate-45 pointer-events-none invert"></div>
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+      <div className="max-w-7xl mx-auto px-6 relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-34">
 
-        {/* 1. Company Information */}
         <div className="flex flex-col items-center md:items-start gap-6 text-center md:text-left">
-          <img src="/logo.webp" alt="Logaa Holidays Logo - Trusted Travel Agency and Tour Operator in Madurai" className="w-44" />
+          <img
+            src="/logo-155w.webp"
+            srcSet="/logo-155w.webp 155w, /logo-155w@2x.webp 310w"
+            sizes="(max-width: 768px) 155px, 176px"
+            loading="lazy"
+            alt="Logaa Holidays Logo - Trusted Travel Agency and Tour Operator in Madurai"
+            className="w-44"
+          />
           <p className="text-sm leading-relaxed text-slate-700 px-4 md:px-0 md:pr-4">
-            Logaa Holidays is your trusted travel partner, specializing in Recommended Packages and unforgettable experiences across India and beyond.
+            Logaa Holidays is your trusted travel partner, specializing in Customised Tour Packages and unforgettable experiences across India and beyond.
           </p>
           <div className="flex flex-col items-center md:items-start gap-4 text-sm mt-2">
             <div className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-3">
@@ -62,25 +68,25 @@ export function Footer() {
               <a href="mailto:logaaholidays@gmail.com" className="text-slate-800 hover:text-emerald-700 transition-colors">logaaholidays@gmail.com</a>
             </div>
           </div>
-          <div className="flex items-center justify-center md:justify-start gap-4 mt-2">
-            <a href="https://www.instagram.com/logaaholidays/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-900/5 border border-slate-900/10 flex items-center justify-center text-slate-700 hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#dc2743] hover:to-[#bc1888] hover:border-transparent hover:text-white transition-all shadow-sm">
-              <InstagramIcon className="w-4 h-4" />
+          <div className="flex items-center justify-center md:justify-start w-full gap-5 mt-6">
+            <a href="https://www.instagram.com/logaaholidays/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] flex items-center justify-center text-white shadow-md hover:scale-125 transition-transform duration-300 animate-zoom-in-out">
+              <InstagramIcon className="w-6 h-8" />
             </a>
-            <a href="https://www.facebook.com/logaaholidays" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-900/5 border border-slate-900/10 flex items-center justify-center text-slate-700 hover:bg-[#1877F2] hover:border-[#1877F2] hover:text-white transition-all shadow-sm">
-              <FacebookIcon className="w-4 h-4" />
+            <a href="https://www.facebook.com/logaaholidays" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#1877F2] flex items-center justify-center text-white shadow-md hover:scale-125 transition-transform duration-300 animate-zoom-in-out" style={{ animationDelay: '0.75s' }}>
+              <FacebookIcon className="w-6 h-8 fill-white" />
             </a>
           </div>
         </div>
 
         {/* 2. Tour Packages / Destinations */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
-          <h4 className="text-slate-900 font-bold text-lg mb-6 uppercase tracking-wider">Destinations</h4>
+          <h3 className="text-slate-900 font-bold text-lg mb-6 uppercase tracking-wider">Destinations</h3>
           <ul className="flex flex-col items-center md:items-start gap-3 w-full">
             <li><Link to="/south-india-package" className="flex items-center gap-2 text-slate-700 hover:text-emerald-700 hover:translate-x-1 transition-all"><ChevronRight className="w-4 h-4 text-emerald-600" /> South India</Link></li>
             <li><Link to="/north-india-tour-packages" className="flex items-center gap-2 text-slate-700 hover:text-emerald-700 hover:translate-x-1 transition-all"><ChevronRight className="w-4 h-4 text-emerald-600" /> North India</Link></li>
 
             {/* Honeymoon Packages Submenu */}
-            <li className="flex flex-col items-center md:items-start w-full">
+              <li className="flex flex-col items-center md:items-start w-full">
               <button
                 onClick={() => setIsHoneymoonOpen(!isHoneymoonOpen)}
                 className="flex items-center justify-center md:justify-start gap-2 text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all w-full text-center md:text-left"
@@ -91,6 +97,7 @@ export function Footer() {
 
               <div className={`overflow-hidden transition-all duration-300 ease-in-out w-full ${isHoneymoonOpen ? 'max-h-[500px] opacity-100 mt-2' : 'max-h-0 opacity-0'}`}>
                 <ul className="flex flex-col items-center md:items-start gap-2 md:pl-6 md:border-l border-slate-900/10 md:ml-2">
+                  <li><Link to="/honeymoon-packages" className="flex items-center justify-center md:justify-start font-semibold text-emerald-700 hover:text-emerald-900 md:hover:translate-x-1 transition-all text-sm py-1">All Honeymoon Packages</Link></li>
                   <li><Link to="/tour-packages/tamil-nadu-honeymoon-packages" className="flex items-center justify-center md:justify-start text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all text-sm py-1">Tamil Nadu</Link></li>
                   <li><Link to="/tour-packages/kerala-honeymoon-packages" className="flex items-center justify-center md:justify-start text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all text-sm py-1">Kerala</Link></li>
                   <li><Link to="/tour-packages/karnataka-honeymoon-packages" className="flex items-center justify-center md:justify-start text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all text-sm py-1">Karnataka</Link></li>
@@ -129,7 +136,7 @@ export function Footer() {
 
         {/* 3. Useful Links */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
-          <h4 className="text-slate-900 font-bold text-lg mb-6 uppercase tracking-wider">Useful Links</h4>
+          <h3 className="text-slate-900 font-bold text-lg mb-6 uppercase tracking-wider">Useful Links</h3>
           <ul className="flex flex-col items-center md:items-start gap-3 w-full">
             {/* Support Submenu */}
 
@@ -141,7 +148,7 @@ export function Footer() {
             <li className="flex flex-col items-center md:items-start w-full">
               <button
                 onClick={() => setIsSupportOpen(!isSupportOpen)}
-                className="flex items-center justify-center md:justify-start gap-2 text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all w-full text-center md:text-left"
+                className="flex items-center justify-center md:justify-start gap-2 text-slate-700 hover:text-emerald-700 md:hover:translate-x-1 transition-all w-full"
               >
                 <ChevronRight className={`w-4 h-4 text-emerald-600 transition-transform duration-300 ${isSupportOpen ? 'rotate-90' : ''}`} />
                 Service
@@ -165,12 +172,12 @@ export function Footer() {
         </div>
 
         {/* 4. Our Location */}
-        <div className="flex flex-col items-center md:items-start text-center md:text-left gap-4 -translate-y-2 md:-translate-y-5">
-          <h4 className="text-slate-900 font-bold text-lg mb-1 uppercase tracking-wider">
+        <div className="flex flex-col items-center md:items-start text-center md:text-left gap-4">
+          <h3 className="text-slate-900 font-bold text-lg mb-1 uppercase tracking-wider">
             Our Location
-          </h4>
+          </h3>
 
-          <div className="w-full h-48 rounded-2xl overflow-hidden border border-slate-900/10 shadow-lg mb-12">
+          <div className="w-full h-64 rounded-2xl overflow-hidden border border-slate-900/10 shadow-lg mb-12">
             <iframe
               title="Logaa Holidays Footer Map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.237317385449!2d78.1025417!3d9.9141826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00cf2ea02ad1df%3A0xe40514c1f3d68740!2sLogaa%20Holidays!5e0!3m2!1sen!2sin!4v1786538878701!5m2!1sen!2sin"
@@ -206,7 +213,7 @@ export function Footer() {
       <div className="w-full h-24 md:h-32 mt-8 md:mt-12"></div>
 
       {/* Bottom Copyright Bar */}
-      <div className="absolute bottom-12 md:bottom-7 left-0 w-full z-10 px-6 md:px-24">
+      <div className="absolute bottom-18 md:bottom-7 left-0 w-full z-10 px-6 md:px-24">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between gap-3 text-center md:text-left">
 
           <p className="text-sm font-medium text-white/90 tracking-wide leading-relaxed drop-shadow-md">
@@ -214,11 +221,11 @@ export function Footer() {
           </p>
 
           <p className="text-sm font-medium text-white/90 tracking-wide flex flex-wrap items-center justify-center md:justify-end gap-1.5 leading-relaxed drop-shadow-md">
-            <span>Logaa Holidays – Trusted Tour & Travel Agency</span>
+            <span>Best Travel Agency in Madurai</span>
 
-            <Heart className="w-4 h-4 text-emerald-400 fill-emerald-400 shrink-0 mx-0.5" />
+           
 
-            <span>in Madurai</span>
+            <span></span>
           </p>
 
         </div>

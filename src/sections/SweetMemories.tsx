@@ -13,7 +13,7 @@ export function SweetMemories() {
 
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                     {/* Left Content */}
-                    <div className="space-y-12">
+                    <div className="space-y-10">
                         {[
                             { icon: Compass, title: 'Immerse in Ancient Heritage', desc: 'Walk through the historic temple streets of Madurai and feel the vibrant culture that has thrived for centuries.' },
                             { icon: Calendar, title: 'Authentic Local Experiences', desc: 'From the majestic Meenakshi Amman Temple to hidden local spots, explore Tamil Nadu like a true local.' },
@@ -42,16 +42,16 @@ export function SweetMemories() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, margin: "100px" }}
                             transition={{ delay: 0.5 }}
-                            className="pt-4"
+                            className="pt-2"
                         >
-                            <Link to="/about" className="inline-flex px-8 py-3.5 text-sm font-bold text-white clay-btn-secondary">
-                                About Details
+                            <Link to="/about" className="inline-flex px-8 py-3.5 text-sm font-bold text-white rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                                Learn More
                             </Link>
                         </motion.div>
                     </div>
 
-                    {/* Right Image with Floating Badges */}
-                    <div className="relative flex justify-center lg:justify-end">
+                    {/* Right Image with Testimonials */}
+                    <div className="flex flex-col items-center lg:items-end w-full">
                         <motion.div
                             initial={{ opacity: 0, scale: 0.95 }}
                             whileInView={{ opacity: 1, scale: 1 }}
@@ -59,56 +59,61 @@ export function SweetMemories() {
                             className="relative w-full max-w-[400px] aspect-[4/5] rounded-[3rem] overflow-hidden clay-card p-2"
                         >
                             <img loading="lazy"
-                                src='/assets/meenakshi amman temple.webp'
+                                src='/assets/meenakshi amman temple-732w.webp'
+                                srcSet="/assets/meenakshi amman temple-732w.webp 732w, /assets/meenakshi amman temple-732w@2x.webp 1448w"
+                                sizes="(max-width: 768px) 100vw, 400px"
                                 alt="Madurai Meenakshi Amman Temple Tour Packages - Logaa Holidays"
                                 className="w-full h-full object-cover rounded-[2.5rem]"
                             />
                         </motion.div>
 
-                        {/* Floating Badge 1 */}
-                        <motion.div
-                            initial={{ opacity: 0, x: -20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true, margin: "100px" }}
-                            transition={{ delay: 0.6 }}
-                            className="absolute top-[20%] left-0 lg:-left-12 clay-badge bg-white p-3 rounded-2xl flex items-center gap-3 z-10"
-                        >
-                            <div className="w-10 h-10 rounded-full bg-[var(--color-primary-forest)] text-white flex items-center justify-center font-bold text-lg">K</div>
-                            <div>
-                                <p className="text-xs font-bold text-[var(--color-neutral-black)] mb-0.5">Karthik</p>
-                                <div className="flex text-[var(--color-blue-ocean)] text-[10px]">★★★★★</div>
-                            </div>
-                        </motion.div>
+                        {/* Structured Testimonials Row */}
+                        <div className="flex flex-wrap justify-center gap-4 mt-8 w-full max-w-[400px]">
+                            {/* Badge 1 */}
+                            <motion.div
+                                initial={{ opacity: 0, y: 10 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true, margin: "100px" }}
+                                transition={{ delay: 0.6 }}
+                                className="clay-badge bg-white p-3 rounded-2xl flex items-center gap-3 shrink-0"
+                            >
+                                <div className="w-10 h-10 rounded-full bg-[var(--color-primary-forest)] text-white flex items-center justify-center font-bold text-lg">K</div>
+                                <div>
+                                    <p className="text-xs font-bold text-[var(--color-neutral-black)] mb-0.5">Karthik</p>
+                                    <div className="flex text-[var(--color-blue-ocean)] text-[10px]">★★★★★</div>
+                                </div>
+                            </motion.div>
 
-                        {/* Floating Badge 2 */}
-                        <motion.div
-                            initial={{ opacity: 0, x: 20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true, margin: "100px" }}
-                            transition={{ delay: 0.7 }}
-                            className="absolute top-[50%] right-0 lg:-right-12 clay-badge bg-white p-3 rounded-2xl flex items-center gap-3 z-10"
-                        >
-                            <div className="w-10 h-10 rounded-full bg-[var(--color-blue-ocean)] text-white flex items-center justify-center font-bold text-lg">P</div>
-                            <div>
-                                <p className="text-xs font-bold text-[var(--color-neutral-black)] mb-0.5">Priya</p>
-                                <div className="flex text-[var(--color-blue-ocean)] text-[10px]">★★★★★</div>
-                            </div>
-                        </motion.div>
+                            {/* Badge 2 */}
+                            <motion.div
+                                initial={{ opacity: 0, y: 10 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true, margin: "100px" }}
+                                transition={{ delay: 0.7 }}
+                                className="clay-badge bg-white p-3 rounded-2xl flex items-center gap-3 shrink-0"
+                            >
+                                <div className="w-10 h-10 rounded-full bg-[var(--color-blue-ocean)] text-white flex items-center justify-center font-bold text-lg">P</div>
+                                <div>
+                                    <p className="text-xs font-bold text-[var(--color-neutral-black)] mb-0.5">Priya</p>
+                                    <div className="flex text-[var(--color-blue-ocean)] text-[10px]">★★★★★</div>
+                                </div>
+                            </motion.div>
 
-                        {/* Floating Badge 3 */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true, margin: "100px" }}
-                            transition={{ delay: 0.8 }}
-                            className="absolute bottom-[20%] left-4 lg:left-0 clay-badge bg-white p-3 rounded-2xl flex items-center gap-3 z-10"
-                        >
-                            <div className="w-10 h-10 rounded-full bg-[var(--color-accent-gold)] text-white flex items-center justify-center font-bold text-lg">B</div>
-                            <div>
-                                <p className="text-xs font-bold text-[var(--color-neutral-black)] mb-0.5">Babu</p>
-                                <div className="flex text-[var(--color-blue-ocean)] text-[10px]">★★★★☆</div>
-                            </div>
-                        </motion.div>
+                            {/* Badge 3 */}
+                            <motion.div
+                                initial={{ opacity: 0, y: 10 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true, margin: "100px" }}
+                                transition={{ delay: 0.8 }}
+                                className="clay-badge bg-white p-3 rounded-2xl flex items-center gap-3 shrink-0"
+                            >
+                                <div className="w-10 h-10 rounded-full bg-[var(--color-accent-gold)] text-white flex items-center justify-center font-bold text-lg">B</div>
+                                <div>
+                                    <p className="text-xs font-bold text-[var(--color-neutral-black)] mb-0.5">Babu</p>
+                                    <div className="flex text-[var(--color-blue-ocean)] text-[10px]">★★★★☆</div>
+                                </div>
+                            </motion.div>
+                        </div>
                     </div>
                 </div>
             </div>
